@@ -689,7 +689,7 @@ void oled_init(void)
 	oled_debug_init();			  // OLED显示DEBUG信息初始化
 }
 
-/// @brief 因为要调用静态函数，所以只能写在这里。最好不要修改库文件
+/// @brief 展示所有图像
 /// @param img
 void OLED_Print_Img128X64(uint8 img[ROW][COL])
 {

@@ -11,6 +11,7 @@ void BrushlessInit(void)
 	MotorLimit	   limit;
 	limit.maxRPM	 = 0;	 // 根据需要修改
 	limit.maxCurrent = 0;
+
 	for (size_t i = 0; i < UES_BRUSHLESS_NUM; i++) {
 		Motor[i].enable	   = false;
 		Motor[i].begin	   = false;
@@ -65,7 +66,7 @@ void BrushlessPositionMode(BrushlessType* motor)
 {
 	float setPulseTotal		 = (motor->valueSet.angle * PULSEPERROUND) / 360;
 
-	motor->valueSet.speed	 = PIDOperation(&motor->posPID, (float)motor->pulse.pulseTotal, setPulseTotal);
+	motor->valueSet.speed	 = PIDOperation(&motor->posPID, (float) motor->pulse.pulseTotal, setPulseTotal);
 	motor->valueSet.current += PIDOperation(&motor->rpmPID, motor->valueNow.speed, motor->valueSet.speed);
 	PIDOperation(&motor->currentPID, motor->valueNow.current, motor->valueSet.current);	   // TODO 不知道能不能写电流环
 };
@@ -86,7 +87,7 @@ void BrushlessCurrentMode(BrushlessType* motor)
 // 锁位置
 void BrushlessLockPosition(BrushlessType* motor)
 {
-	motor->valueSet.speed	 = PIDOperation(&motor->posPID, (float)motor->pulse.pulseTotal, (float)motor->pulse.pulseLock);
+	motor->valueSet.speed	 = PIDOperation(&motor->posPID, (float) motor->pulse.pulseTotal, (float) motor->pulse.pulseLock);
 	motor->valueSet.current += PIDOperation(&motor->rpmPID, motor->valueNow.speed, motor->valueSet.speed);
 	PIDOperation(&motor->currentPID, motor->valueNow.current, motor->valueSet.current);	   // TODO 不知道能不能写电流环
 };

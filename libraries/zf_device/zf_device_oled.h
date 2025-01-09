@@ -157,9 +157,7 @@ void oled_init(void);																				  // OLED 初始化函数
 #define oled_displayimage03x(p, x) (oled_show_gray_image(0, 0, (p), MT9V03X_W, MT9V03X_H, 128, 64, (x)))
 //===================================================定义 OLED 扩展配置=================================================
 
-// 因为要调用静态函数，所以只能写在这里。最好不要修改库文件
 #define ROW 100
 #define COL 152
 void OLED_Print_Img128X64(uint8 img[ROW][COL]);
-
 #endif

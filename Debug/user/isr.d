@@ -1,7 +1,5 @@
 isr.o :	../user/isr.c
 ../user/isr.c :
-isr.o :	..\user\isr_config.h
-..\user\isr_config.h :
 isr.o :	..\user\isr.h
 ..\user\isr.h :
 isr.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\libraries\\zf_common\zf_common_headfile.h"
@@ -158,6 +156,8 @@ isr.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\libraries\\infineon_l
 "D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\libraries\\infineon_libraries\\Infra\\Sfr\\TC26B\\_Reg\ifxAsclin_reg.h" :
 isr.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\libraries\\infineon_libraries\\Infra\\Sfr\\TC26B\\_Reg\IfxAsclin_regdef.h"
 "D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\libraries\\infineon_libraries\\Infra\\Sfr\\TC26B\\_Reg\IfxAsclin_regdef.h" :
+isr.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\user\isr_config.h"
+"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\user\isr_config.h" :
 isr.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\libraries\\zf_common\zf_common_clock.h"
 "D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\libraries\\zf_common\zf_common_clock.h" :
 isr.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\libraries\\zf_common\zf_common_typedef.h"
