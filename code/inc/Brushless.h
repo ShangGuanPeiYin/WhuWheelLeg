@@ -4,6 +4,16 @@
 #include "Pid.h"
 #include "zf_common_typedef.h"
 
+// 无刷电机串口初始化
+#define SMALL_DRIVER_UART	  (UART_2)
+#define SMALL_DRIVER_BAUDRATE (460800)
+#define SMALL_DRIVER_RX		  (UART2_TX_P10_5)
+#define SMALL_DRIVER_TX		  (UART2_RX_P10_6)
+
+//  P10-5 6 串口
+//  P21-6 7 Uart
+
+// 无刷电机控制
 #define UES_BRUSHLESS_NUM 2		  // 使用数量
 #define PULSEPERROUND	  1024	  // 电机每转一圈的脉冲数
 #define PULSETIME		  9999	  // 两次读取脉冲数之间的时间，秒 TODO
@@ -67,6 +77,18 @@ typedef struct _Brushless {
 	PIDType posPID, rpmPID, currentPID;	   // 三环PID 对脉冲、速度、电流闭环
 } BrushlessType;
 
+//
+typedef struct {
+	uint8 send_data_buffer[7];		 // 发送缓冲数组 字节包为7字节
+	uint8 receive_data_buffer[7];	 // 接收缓冲数组
+	uint8 receive_data_count;		 // 接收计数
+	uint8 sum_check_data;			 // 和校验位
+
+	int16 receive_left_speed_data;	   // 接收到的左侧电机速度数据
+	int16 receive_right_speed_data;	   // 接收到的右侧电机速度数据
+} small_device_value_struct;
+extern small_device_value_struct motor_value;
+
 extern BrushlessType Motor[UES_BRUSHLESS_NUM];
 
 void BrushlessInit(void);							 // 电机初始化
@@ -78,5 +100,10 @@ void BrushlessPositionMode(BrushlessType* motor);	 // 位置模式
 void BrushlessCurrentMode(BrushlessType* motor);	 // 电流模式
 void BrushlessLockPosition(BrushlessType* motor);	 // 锁到当前位置
 void BrushlessSentCurrent(BrushlessType* motor);	 // 发送电流
+
+void uart_control_callback(void);								  // 无刷驱动 串口接收回调函数
+void small_driver_set_duty(int16 left_duty, int16 right_duty);	  // 无刷驱动 设置电机占空比
+void small_driver_get_speed(void);								  // 无刷驱动 获取速度信息
+void small_driver_uart_init(void);								  // 无刷驱动 串口通讯初始化
 
 #endif

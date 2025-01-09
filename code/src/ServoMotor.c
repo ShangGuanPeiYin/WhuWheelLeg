@@ -7,10 +7,10 @@ ServoType Servo[4];
 void ServoInit(void)
 {
 	// PWM引脚配置
-	Servo[0].pin	   = ATOM0_CH1_P33_9;	 // 注意引脚顺序
-	Servo[1].pin	   = ATOM0_CH2_P33_11;
-	Servo[2].pin	   = ATOM0_CH4_P20_3;
-	Servo[3].pin	   = ATOM0_CH3_P14_2;
+	Servo[0].pin	   = FL_CHANNEL;
+	Servo[1].pin	   = FR_CHANNEL;
+	Servo[2].pin	   = BL_CHANNEL;
+	Servo[3].pin	   = BR_CHANNEL;
 
 	// 初始化舵机数据
 	Servo[0].joint	   = Fl;
@@ -46,6 +46,7 @@ void ServoInit(void)
 	Servo[3].PWMSet	   = 0;
 
 	// 引脚初始化 PWM频率200Hz
+
 	for (size_t i = 0; i < 4; i++) pwm_init(Servo[i].pin, 200, Servo[i].angleMid);
 }
 

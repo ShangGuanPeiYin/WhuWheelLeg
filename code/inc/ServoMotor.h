@@ -4,6 +4,12 @@
 #include "zf_common_typedef.h"
 #include "zf_driver_pwm.h"
 
+// 舵机初始化
+#define FL_CHANNEL ATOM0_CH1_P33_9	   // 前左舵机pwm引脚
+#define FR_CHANNEL ATOM0_CH2_P33_11	   // 前右舵机pwm引脚
+#define BL_CHANNEL ATOM0_CH4_P20_3	   // 后左舵机pwm引脚
+#define BR_CHANNEL ATOM0_CH3_P14_2	   // 后右舵机pwm引脚
+
 #define ANGLEMAX  180						   // 舵机范围，最大角度
 #define ANGLE2PWM (PWM_DUTY_MAX / ANGLEMAX)	   // 单位转化。角度°，转化为PWM
 
