@@ -1,6 +1,6 @@
 	; Module start
 	.compiler_version	"TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler v1.1r8 Build 22011964"
-	.compiler_invocation	"ctc -f cc1528a --dep-file=libraries/zf_device/zf_device_wifi_uart.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc26xb -D__CPU_TC26XB__ --core=tc1.6.x --fp-model=+float -D__CPU__=tc26xb -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\code -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\code\\\\inc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Configurations -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B\\\\_Reg -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If\\\\Ccu6If -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\StdIf -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Math -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Asc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6 -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Timer -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\CStart -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Irq -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Dma -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12 -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\IncrEnc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\SpiMaster -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Adc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Impl -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib\\\\DataHandling -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_PinMap -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_common -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_components -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_device -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_driver -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\user -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o libraries/zf_device/zf_device_wifi_uart.src ../libraries/zf_device/zf_device_wifi_uart.c"
+	.compiler_invocation	"ctc -f cc2316a --dep-file=libraries/zf_device/zf_device_wifi_uart.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc26xb -D__CPU_TC26XB__ --core=tc1.6.x --fp-model=+float -D__CPU__=tc26xb -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\code -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\code\\\\inc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Configurations -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B\\\\_Reg -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If\\\\Ccu6If -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\StdIf -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Math -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Asc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6 -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Timer -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\CStart -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Irq -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Dma -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12 -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\IncrEnc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\SpiMaster -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Adc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Impl -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib\\\\DataHandling -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_PinMap -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_common -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_components -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_device -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_driver -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\user -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o libraries/zf_device/zf_device_wifi_uart.src ../libraries/zf_device/zf_device_wifi_uart.c"
 	.compiler_name		"ctc"
 	;source	'../libraries/zf_device/zf_device_wifi_uart.c'
 
@@ -3399,7 +3399,7 @@ wifi_uart_data:	.type	object
 	.sdecl	'.debug_info',debug
 	.sect	'.debug_info'
 .L224:
-	.word	105844
+	.word	105839
 	.half	3
 	.word	.L225
 	.byte	4
@@ -7610,18 +7610,18 @@ wifi_uart_data:	.type	object
 	.word	21804
 	.byte	29
 	.word	21817
-	.byte	0,6,0,0,17,24,103,9,1,18
+	.byte	0,6,0,0,17,24,100,9,1,18
 	.byte	'UART_0',0,0,18
 	.byte	'UART_1',0,1,18
 	.byte	'UART_2',0,2,18
 	.byte	'UART_3',0,3,0,21
 	.word	630
 	.byte	25
-	.byte	'uart_write_byte',0,24,118,9,1,1,1,1,5
-	.byte	'uartn',0,24,118,62
+	.byte	'uart_write_byte',0,24,114,6,1,1,1,1,5
+	.byte	'uartn',0,24,114,38
 	.word	26517
 	.byte	5
-	.byte	'dat',0,24,118,81
+	.byte	'dat',0,24,114,57
 	.word	26559
 	.byte	0,21
 	.word	630
@@ -7629,41 +7629,41 @@ wifi_uart_data:	.type	object
 	.byte	3
 	.word	26615
 	.byte	25
-	.byte	'uart_write_buffer',0,24,119,9,1,1,1,1,5
-	.byte	'uartn',0,24,119,62
+	.byte	'uart_write_buffer',0,24,115,6,1,1,1,1,5
+	.byte	'uartn',0,24,115,40
 	.word	26517
 	.byte	5
-	.byte	'buff',0,24,119,82
+	.byte	'buff',0,24,115,60
 	.word	26620
 	.byte	5
-	.byte	'len',0,24,119,95
+	.byte	'len',0,24,115,73
 	.word	10291
 	.byte	0,25
-	.byte	'uart_write_string',0,24,120,9,1,1,1,1,5
-	.byte	'uartn',0,24,120,62
+	.byte	'uart_write_string',0,24,116,6,1,1,1,1,5
+	.byte	'uartn',0,24,116,40
 	.word	26517
 	.byte	5
-	.byte	'str',0,24,120,81
+	.byte	'str',0,24,116,59
 	.word	22181
 	.byte	0
 .L457:
 	.byte	3
 	.word	630
 	.byte	22
-	.byte	'uart_query_byte',0,24,123,9
+	.byte	'uart_query_byte',0,24,119,7
 	.word	630
 	.byte	1,1,1,1,5
-	.byte	'uartn',0,24,123,62
+	.byte	'uartn',0,24,119,39
 	.word	26517
 	.byte	5
-	.byte	'dat',0,24,123,76
+	.byte	'dat',0,24,119,53
 	.word	26744
 	.byte	0,25
-	.byte	'uart_rx_interrupt',0,24,126,9,1,1,1,1,5
-	.byte	'uartn',0,24,126,62
+	.byte	'uart_rx_interrupt',0,24,122,6,1,1,1,1,5
+	.byte	'uartn',0,24,122,40
 	.word	26517
 	.byte	5
-	.byte	'status',0,24,126,76
+	.byte	'status',0,24,122,54
 	.word	10291
 	.byte	0,17,24,43,9,1,18
 	.byte	'UART0_TX_P14_0',0,0,18
@@ -7691,7 +7691,7 @@ wifi_uart_data:	.type	object
 	.byte	'UART3_TX_P15_7',0,22,18
 	.byte	'UART3_TX_P20_0',0,23,18
 	.byte	'UART3_TX_P20_3',0,24,18
-	.byte	'UART3_TX_P21_7',0,25,0,17,24,77,9,1,18
+	.byte	'UART3_TX_P21_7',0,25,0,17,24,75,9,1,18
 	.byte	'UART0_RX_P14_1',0,0,18
 	.byte	'UART0_RX_P15_3',0,1,18
 	.byte	'UART1_RX_P02_3',0,2,18
@@ -7709,17 +7709,17 @@ wifi_uart_data:	.type	object
 	.byte	'UART3_RX_P15_7',0,14,18
 	.byte	'UART3_RX_P20_3',0,15,18
 	.byte	'UART3_RX_P21_6',0,16,0,25
-	.byte	'uart_init',0,24,129,1,9,1,1,1,1,5
-	.byte	'uartn',0,24,129,1,62
+	.byte	'uart_init',0,24,125,6,1,1,1,1,5
+	.byte	'uartn',0,24,125,32
 	.word	26517
 	.byte	5
-	.byte	'baud',0,24,129,1,76
+	.byte	'baud',0,24,125,46
 	.word	10291
 	.byte	5
-	.byte	'tx_pin',0,24,129,1,99
+	.byte	'tx_pin',0,24,125,69
 	.word	26860
 	.byte	5
-	.byte	'rx_pin',0,24,129,1,124
+	.byte	'rx_pin',0,24,125,94
 	.word	27312
 	.byte	0,17,25,53,9,1,18
 	.byte	'NO_WIRELESS',0,0,18
@@ -7733,10 +7733,10 @@ wifi_uart_data:	.type	object
 	.byte	25
 	.byte	'set_wireless_type',0,25,91,8,1,1,1,1,5
 	.byte	'type_set',0,25,91,53
-	.word	27690
+	.word	27685
 	.byte	5
 	.byte	'wireless_callback',0,25,91,81
-	.word	27783
+	.word	27778
 	.byte	0,3
 	.word	191
 .L400:
@@ -7784,10 +7784,10 @@ wifi_uart_data:	.type	object
 	.byte	'__ptrdiff_t',0,27,1,1
 	.word	471
 	.byte	33,1,3
-	.word	28200
+	.word	28195
 	.byte	31
 	.byte	'__codeptr',0,27,1,1
-	.word	28202
+	.word	28197
 	.byte	31
 	.byte	'__intptr_t',0,27,1,1
 	.word	471
@@ -7801,31 +7801,31 @@ wifi_uart_data:	.type	object
 	.byte	'_iob_flag_t',0,28,82,25
 	.word	647
 	.byte	31
-	.byte	'boolean',0,29,101,29
+	.byte	'boolean',0,29,98,23
 	.word	630
 	.byte	31
-	.byte	'uint8',0,29,105,29
+	.byte	'uint8',0,29,102,23
 	.word	630
 	.byte	31
-	.byte	'uint16',0,29,109,29
+	.byte	'uint16',0,29,106,24
 	.word	647
 	.byte	31
-	.byte	'uint32',0,29,113,29
+	.byte	'uint32',0,29,110,23
 	.word	10291
 	.byte	31
-	.byte	'uint64',0,29,118,29
+	.byte	'uint64',0,29,115,28
 	.word	337
 	.byte	31
-	.byte	'sint16',0,29,126,29
+	.byte	'sint16',0,29,123,15
 	.word	18019
 	.byte	31
-	.byte	'sint32',0,29,131,1,29
+	.byte	'sint32',0,29,128,1,16
 	.word	18032
 	.byte	31
-	.byte	'sint64',0,29,138,1,29
+	.byte	'sint64',0,29,135,1,19
 	.word	21992
 	.byte	31
-	.byte	'float32',0,29,167,1,29
+	.byte	'float32',0,29,164,1,15
 	.word	251
 	.byte	31
 	.byte	'pvoid',0,30,57,28
@@ -7849,16 +7849,16 @@ wifi_uart_data:	.type	object
 	.byte	'Ifx_RxSel_g',0,6,18
 	.byte	'Ifx_RxSel_h',0,7,0,31
 	.byte	'Ifx_RxSel',0,30,140,1,3
-	.word	28512
+	.word	28507
 	.byte	17,30,164,1,9,1,18
 	.byte	'Ifx_DataBufferMode_normal',0,0,18
 	.byte	'Ifx_DataBufferMode_timeStampSingle',0,1,0,31
 	.byte	'Ifx_DataBufferMode',0,30,169,1,2
-	.word	28650
+	.word	28645
 	.byte	7
 	.byte	'char',0,1,6,31
 	.byte	'int8',0,31,54,29
-	.word	28750
+	.word	28745
 	.byte	31
 	.byte	'int16',0,31,55,29
 	.word	18019
@@ -8055,18 +8055,18 @@ wifi_uart_data:	.type	object
 	.word	8587
 	.byte	31
 	.byte	'Ifx_P',0,6,139,6,3
-	.word	30231
+	.word	30226
 	.byte	17,32,236,10,9,1,18
 	.byte	'IfxScu_CCUCON0_CLKSEL_fBack',0,0,18
 	.byte	'IfxScu_CCUCON0_CLKSEL_fPll',0,1,0,31
 	.byte	'IfxScu_CCUCON0_CLKSEL',0,32,240,10,3
-	.word	30251
+	.word	30246
 	.byte	17,32,250,10,9,1,18
 	.byte	'IfxScu_WDTCON1_IR_divBy16384',0,0,18
 	.byte	'IfxScu_WDTCON1_IR_divBy256',0,1,18
 	.byte	'IfxScu_WDTCON1_IR_divBy64',0,2,0,31
 	.byte	'IfxScu_WDTCON1_IR',0,32,255,10,3
-	.word	30348
+	.word	30343
 	.byte	10
 	.byte	'_Ifx_SCU_ACCEN0_Bits',0,4,45,16,4,11
 	.byte	'EN0',0,1
@@ -8166,14 +8166,14 @@ wifi_uart_data:	.type	object
 	.word	630
 	.byte	1,0,2,35,3,0,31
 	.byte	'Ifx_SCU_ACCEN0_Bits',0,4,79,3
-	.word	30470
+	.word	30465
 	.byte	10
 	.byte	'_Ifx_SCU_ACCEN1_Bits',0,4,82,16,4,11
 	.byte	'reserved_0',0,4
 	.word	455
 	.byte	32,0,2,35,0,0,31
 	.byte	'Ifx_SCU_ACCEN1_Bits',0,4,85,3
-	.word	31027
+	.word	31022
 	.byte	10
 	.byte	'_Ifx_SCU_ARSTDIS_Bits',0,4,88,16,4,11
 	.byte	'STM0DIS',0,1
@@ -8189,7 +8189,7 @@ wifi_uart_data:	.type	object
 	.word	455
 	.byte	29,0,2,35,0,0,31
 	.byte	'Ifx_SCU_ARSTDIS_Bits',0,4,94,3
-	.word	31104
+	.word	31099
 	.byte	10
 	.byte	'_Ifx_SCU_CCUCON0_Bits',0,4,97,16,4,11
 	.byte	'BAUD1DIV',0,1
@@ -8229,7 +8229,7 @@ wifi_uart_data:	.type	object
 	.word	630
 	.byte	1,0,2,35,3,0,31
 	.byte	'Ifx_SCU_CCUCON0_Bits',0,4,111,3
-	.word	31240
+	.word	31235
 	.byte	10
 	.byte	'_Ifx_SCU_CCUCON1_Bits',0,4,114,16,4,11
 	.byte	'CANDIV',0,1
@@ -8263,7 +8263,7 @@ wifi_uart_data:	.type	object
 	.word	630
 	.byte	1,0,2,35,3,0,31
 	.byte	'Ifx_SCU_CCUCON1_Bits',0,4,126,3
-	.word	31520
+	.word	31515
 	.byte	10
 	.byte	'_Ifx_SCU_CCUCON2_Bits',0,4,129,1,16,4,11
 	.byte	'BBBDIV',0,1
@@ -8279,7 +8279,7 @@ wifi_uart_data:	.type	object
 	.word	630
 	.byte	1,0,2,35,3,0,31
 	.byte	'Ifx_SCU_CCUCON2_Bits',0,4,135,1,3
-	.word	31758
+	.word	31753
 	.byte	10
 	.byte	'_Ifx_SCU_CCUCON3_Bits',0,4,138,1,16,4,11
 	.byte	'PLLDIV',0,1
@@ -8313,7 +8313,7 @@ wifi_uart_data:	.type	object
 	.word	630
 	.byte	1,0,2,35,3,0,31
 	.byte	'Ifx_SCU_CCUCON3_Bits',0,4,150,1,3
-	.word	31886
+	.word	31881
 	.byte	10
 	.byte	'_Ifx_SCU_CCUCON4_Bits',0,4,153,1,16,4,11
 	.byte	'SPBDIV',0,1
@@ -8347,7 +8347,7 @@ wifi_uart_data:	.type	object
 	.word	630
 	.byte	1,0,2,35,3,0,31
 	.byte	'Ifx_SCU_CCUCON4_Bits',0,4,165,1,3
-	.word	32129
+	.word	32124
 	.byte	10
 	.byte	'_Ifx_SCU_CCUCON5_Bits',0,4,168,1,16,4,11
 	.byte	'MAXDIV',0,1
@@ -8363,7 +8363,7 @@ wifi_uart_data:	.type	object
 	.word	630
 	.byte	1,0,2,35,3,0,31
 	.byte	'Ifx_SCU_CCUCON5_Bits',0,4,174,1,3
-	.word	32364
+	.word	32359
 	.byte	10
 	.byte	'_Ifx_SCU_CCUCON6_Bits',0,4,177,1,16,4,11
 	.byte	'CPU0DIV',0,1
@@ -8373,7 +8373,7 @@ wifi_uart_data:	.type	object
 	.word	455
 	.byte	26,0,2,35,0,0,31
 	.byte	'Ifx_SCU_CCUCON6_Bits',0,4,181,1,3
-	.word	32492
+	.word	32487
 	.byte	10
 	.byte	'_Ifx_SCU_CCUCON7_Bits',0,4,184,1,16,4,11
 	.byte	'CPU1DIV',0,1
@@ -8383,7 +8383,7 @@ wifi_uart_data:	.type	object
 	.word	455
 	.byte	26,0,2,35,0,0,31
 	.byte	'Ifx_SCU_CCUCON7_Bits',0,4,188,1,3
-	.word	32592
+	.word	32587
 	.byte	10
 	.byte	'_Ifx_SCU_CHIPID_Bits',0,4,191,1,16,4,11
 	.byte	'CHREV',0,1
@@ -8414,7 +8414,7 @@ wifi_uart_data:	.type	object
 	.word	630
 	.byte	1,0,2,35,3,0,31
 	.byte	'Ifx_SCU_CHIPID_Bits',0,4,202,1,3
-	.word	32692
+	.word	32687
 	.byte	10
 	.byte	'_Ifx_SCU_DTSCON_Bits',0,4,205,1,16,4,11
 	.byte	'PWD',0,1
@@ -8436,7 +8436,7 @@ wifi_uart_data:	.type	object
 	.word	630
 	.byte	1,0,2,35,3,0,31
 	.byte	'Ifx_SCU_DTSCON_Bits',0,4,213,1,3
-	.word	32900
+	.word	32895
 	.byte	10
 	.byte	'_Ifx_SCU_DTSLIM_Bits',0,4,216,1,16,4,11
 	.byte	'LOWER',0,2
@@ -8461,7 +8461,7 @@ wifi_uart_data:	.type	object
 	.word	630
 	.byte	1,0,2,35,3,0,31
 	.byte	'Ifx_SCU_DTSLIM_Bits',0,4,225,1,3
-	.word	33065
+	.word	33060
 	.byte	10
 	.byte	'_Ifx_SCU_DTSSTAT_Bits',0,4,228,1,16,4,11
 	.byte	'RESULT',0,2
@@ -8480,7 +8480,7 @@ wifi_uart_data:	.type	object
 	.word	647
 	.byte	16,0,2,35,2,0,31
 	.byte	'Ifx_SCU_DTSSTAT_Bits',0,4,235,1,3
-	.word	33248
+	.word	33243
 	.byte	10
 	.byte	'_Ifx_SCU_EICR_Bits',0,4,238,1,16,4,11
 	.byte	'reserved_0',0,1
@@ -8535,7 +8535,7 @@ wifi_uart_data:	.type	object
 	.word	630
 	.byte	1,0,2,35,3,0,31
 	.byte	'Ifx_SCU_EICR_Bits',0,4,129,2,3
-	.word	33402
+	.word	33397
 	.byte	10
 	.byte	'_Ifx_SCU_EIFR_Bits',0,4,132,2,16,4,11
 	.byte	'INTF0',0,1
@@ -8566,7 +8566,7 @@ wifi_uart_data:	.type	object
 	.word	455
 	.byte	24,0,2,35,0,0,31
 	.byte	'Ifx_SCU_EIFR_Bits',0,4,143,2,3
-	.word	33766
+	.word	33761
 	.byte	10
 	.byte	'_Ifx_SCU_EMSR_Bits',0,4,146,2,16,4,11
 	.byte	'POL',0,1
@@ -8603,7 +8603,7 @@ wifi_uart_data:	.type	object
 	.word	630
 	.byte	4,0,2,35,3,0,31
 	.byte	'Ifx_SCU_EMSR_Bits',0,4,159,2,3
-	.word	33977
+	.word	33972
 	.byte	10
 	.byte	'_Ifx_SCU_ESRCFG_Bits',0,4,162,2,16,4,11
 	.byte	'reserved_0',0,1
@@ -8616,7 +8616,7 @@ wifi_uart_data:	.type	object
 	.word	455
 	.byte	23,0,2,35,0,0,31
 	.byte	'Ifx_SCU_ESRCFG_Bits',0,4,167,2,3
-	.word	34229
+	.word	34224
 	.byte	10
 	.byte	'_Ifx_SCU_ESROCFG_Bits',0,4,170,2,16,4,11
 	.byte	'ARI',0,1
@@ -8629,7 +8629,7 @@ wifi_uart_data:	.type	object
 	.word	455
 	.byte	30,0,2,35,0,0,31
 	.byte	'Ifx_SCU_ESROCFG_Bits',0,4,175,2,3
-	.word	34347
+	.word	34342
 	.byte	10
 	.byte	'_Ifx_SCU_EVR13CON_Bits',0,4,178,2,16,4,11
 	.byte	'reserved_0',0,4
@@ -8648,7 +8648,7 @@ wifi_uart_data:	.type	object
 	.word	630
 	.byte	1,0,2,35,3,0,31
 	.byte	'Ifx_SCU_EVR13CON_Bits',0,4,185,2,3
-	.word	34458
+	.word	34453
 	.byte	10
 	.byte	'_Ifx_SCU_EVR33CON_Bits',0,4,188,2,16,4,11
 	.byte	'reserved_0',0,4
@@ -8667,7 +8667,7 @@ wifi_uart_data:	.type	object
 	.word	630
 	.byte	1,0,2,35,3,0,31
 	.byte	'Ifx_SCU_EVR33CON_Bits',0,4,195,2,3
-	.word	34621
+	.word	34616
 	.byte	10
 	.byte	'_Ifx_SCU_EVRADCSTAT_Bits',0,4,198,2,16,4,11
 	.byte	'ADC13V',0,1
@@ -8686,7 +8686,7 @@ wifi_uart_data:	.type	object
 	.word	630
 	.byte	1,0,2,35,3,0,31
 	.byte	'Ifx_SCU_EVRADCSTAT_Bits',0,4,205,2,3
-	.word	34784
+	.word	34779
 	.byte	10
 	.byte	'_Ifx_SCU_EVRDVSTAT_Bits',0,4,208,2,16,4,11
 	.byte	'DVS13TRIM',0,1
@@ -8705,7 +8705,7 @@ wifi_uart_data:	.type	object
 	.word	630
 	.byte	1,0,2,35,3,0,31
 	.byte	'Ifx_SCU_EVRDVSTAT_Bits',0,4,215,2,3
-	.word	34942
+	.word	34937
 	.byte	10
 	.byte	'_Ifx_SCU_EVRMONCTRL_Bits',0,4,218,2,16,4,11
 	.byte	'EVR13OVMOD',0,1
@@ -8745,7 +8745,7 @@ wifi_uart_data:	.type	object
 	.word	647
 	.byte	10,0,2,35,2,0,31
 	.byte	'Ifx_SCU_EVRMONCTRL_Bits',0,4,232,2,3
-	.word	35107
+	.word	35102
 	.byte	10
 	.byte	'_Ifx_SCU_EVROSCCTRL_Bits',0,4,235,2,16,4,11
 	.byte	'OSCTRIM',0,2
@@ -8773,7 +8773,7 @@ wifi_uart_data:	.type	object
 	.word	630
 	.byte	1,0,2,35,3,0,31
 	.byte	'Ifx_SCU_EVROSCCTRL_Bits',0,4,245,2,3
-	.word	35436
+	.word	35431
 	.byte	10
 	.byte	'_Ifx_SCU_EVROVMON_Bits',0,4,248,2,16,4,11
 	.byte	'EVR13OVVAL',0,1
@@ -8792,7 +8792,7 @@ wifi_uart_data:	.type	object
 	.word	630
 	.byte	1,0,2,35,3,0,31
 	.byte	'Ifx_SCU_EVROVMON_Bits',0,4,255,2,3
-	.word	35657
+	.word	35652
 	.byte	10
 	.byte	'_Ifx_SCU_EVRRSTCON_Bits',0,4,130,3,16,4,11
 	.byte	'RST13TRIM',0,1
@@ -8826,7 +8826,7 @@ wifi_uart_data:	.type	object
 	.word	630
 	.byte	1,0,2,35,3,0,31
 	.byte	'Ifx_SCU_EVRRSTCON_Bits',0,4,142,3,3
-	.word	35820
+	.word	35815
 	.byte	10
 	.byte	'_Ifx_SCU_EVRSDCOEFF1_Bits',0,4,145,3,16,4,11
 	.byte	'SD5P',0,1
@@ -8845,7 +8845,7 @@ wifi_uart_data:	.type	object
 	.word	630
 	.byte	1,0,2,35,3,0,31
 	.byte	'Ifx_SCU_EVRSDCOEFF1_Bits',0,4,152,3,3
-	.word	36092
+	.word	36087
 	.byte	10
 	.byte	'_Ifx_SCU_EVRSDCOEFF2_Bits',0,4,155,3,16,4,11
 	.byte	'SD33P',0,1
@@ -8864,7 +8864,7 @@ wifi_uart_data:	.type	object
 	.word	630
 	.byte	1,0,2,35,3,0,31
 	.byte	'Ifx_SCU_EVRSDCOEFF2_Bits',0,4,162,3,3
-	.word	36245
+	.word	36240
 	.byte	10
 	.byte	'_Ifx_SCU_EVRSDCOEFF3_Bits',0,4,165,3,16,4,11
 	.byte	'CT5REG0',0,1
@@ -8883,7 +8883,7 @@ wifi_uart_data:	.type	object
 	.word	630
 	.byte	1,0,2,35,3,0,31
 	.byte	'Ifx_SCU_EVRSDCOEFF3_Bits',0,4,172,3,3
-	.word	36401
+	.word	36396
 	.byte	10
 	.byte	'_Ifx_SCU_EVRSDCOEFF4_Bits',0,4,175,3,16,4,11
 	.byte	'CT5REG3',0,1
@@ -8899,7 +8899,7 @@ wifi_uart_data:	.type	object
 	.word	630
 	.byte	1,0,2,35,3,0,31
 	.byte	'Ifx_SCU_EVRSDCOEFF4_Bits',0,4,181,3,3
-	.word	36563
+	.word	36558
 	.byte	10
 	.byte	'_Ifx_SCU_EVRSDCOEFF5_Bits',0,4,184,3,16,4,11
 	.byte	'CT33REG0',0,1
@@ -8918,7 +8918,7 @@ wifi_uart_data:	.type	object
 	.word	630
 	.byte	1,0,2,35,3,0,31
 	.byte	'Ifx_SCU_EVRSDCOEFF5_Bits',0,4,191,3,3
-	.word	36706
+	.word	36701
 	.byte	10
 	.byte	'_Ifx_SCU_EVRSDCOEFF6_Bits',0,4,194,3,16,4,11
 	.byte	'CT33REG3',0,1
@@ -8934,7 +8934,7 @@ wifi_uart_data:	.type	object
 	.word	630
 	.byte	1,0,2,35,3,0,31
 	.byte	'Ifx_SCU_EVRSDCOEFF6_Bits',0,4,200,3,3
-	.word	36871
+	.word	36866
 	.byte	10
 	.byte	'_Ifx_SCU_EVRSDCTRL1_Bits',0,4,203,3,16,4,11
 	.byte	'SDFREQSPRD',0,2
@@ -8956,7 +8956,7 @@ wifi_uart_data:	.type	object
 	.word	630
 	.byte	1,0,2,35,3,0,31
 	.byte	'Ifx_SCU_EVRSDCTRL1_Bits',0,4,211,3,3
-	.word	37016
+	.word	37011
 	.byte	10
 	.byte	'_Ifx_SCU_EVRSDCTRL2_Bits',0,4,214,3,16,4,11
 	.byte	'DRVP',0,1
@@ -8978,7 +8978,7 @@ wifi_uart_data:	.type	object
 	.word	630
 	.byte	1,0,2,35,3,0,31
 	.byte	'Ifx_SCU_EVRSDCTRL2_Bits',0,4,222,3,3
-	.word	37197
+	.word	37192
 	.byte	10
 	.byte	'_Ifx_SCU_EVRSDCTRL3_Bits',0,4,225,3,16,4,11
 	.byte	'SDPWMPRE',0,1
@@ -8997,7 +8997,7 @@ wifi_uart_data:	.type	object
 	.word	630
 	.byte	1,0,2,35,3,0,31
 	.byte	'Ifx_SCU_EVRSDCTRL3_Bits',0,4,232,3,3
-	.word	37371
+	.word	37366
 	.byte	10
 	.byte	'_Ifx_SCU_EVRSDCTRL4_Bits',0,4,235,3,16,4,11
 	.byte	'reserved_0',0,1
@@ -9013,7 +9013,7 @@ wifi_uart_data:	.type	object
 	.word	630
 	.byte	1,0,2,35,3,0,31
 	.byte	'Ifx_SCU_EVRSDCTRL4_Bits',0,4,241,3,3
-	.word	37531
+	.word	37526
 	.byte	10
 	.byte	'_Ifx_SCU_EVRSTAT_Bits',0,4,244,3,16,4,11
 	.byte	'EVR13',0,1
@@ -9053,7 +9053,7 @@ wifi_uart_data:	.type	object
 	.word	455
 	.byte	21,0,2,35,0,0,31
 	.byte	'Ifx_SCU_EVRSTAT_Bits',0,4,130,4,3
-	.word	37675
+	.word	37670
 	.byte	10
 	.byte	'_Ifx_SCU_EVRTRIM_Bits',0,4,133,4,16,4,11
 	.byte	'EVR13TRIM',0,1
@@ -9069,7 +9069,7 @@ wifi_uart_data:	.type	object
 	.word	630
 	.byte	1,0,2,35,3,0,31
 	.byte	'Ifx_SCU_EVRTRIM_Bits',0,4,139,4,3
-	.word	37949
+	.word	37944
 	.byte	10
 	.byte	'_Ifx_SCU_EVRUVMON_Bits',0,4,142,4,16,4,11
 	.byte	'EVR13UVVAL',0,1
@@ -9088,7 +9088,7 @@ wifi_uart_data:	.type	object
 	.word	630
 	.byte	1,0,2,35,3,0,31
 	.byte	'Ifx_SCU_EVRUVMON_Bits',0,4,149,4,3
-	.word	38088
+	.word	38083
 	.byte	10
 	.byte	'_Ifx_SCU_EXTCON_Bits',0,4,152,4,16,4,11
 	.byte	'EN0',0,1
@@ -9119,7 +9119,7 @@ wifi_uart_data:	.type	object
 	.word	630
 	.byte	8,0,2,35,3,0,31
 	.byte	'Ifx_SCU_EXTCON_Bits',0,4,163,4,3
-	.word	38251
+	.word	38246
 	.byte	10
 	.byte	'_Ifx_SCU_FDR_Bits',0,4,166,4,16,4,11
 	.byte	'STEP',0,2
@@ -9141,7 +9141,7 @@ wifi_uart_data:	.type	object
 	.word	630
 	.byte	1,0,2,35,3,0,31
 	.byte	'Ifx_SCU_FDR_Bits',0,4,174,4,3
-	.word	38469
+	.word	38464
 	.byte	10
 	.byte	'_Ifx_SCU_FMR_Bits',0,4,177,4,16,4,11
 	.byte	'FS0',0,1
@@ -9199,7 +9199,7 @@ wifi_uart_data:	.type	object
 	.word	630
 	.byte	8,0,2,35,3,0,31
 	.byte	'Ifx_SCU_FMR_Bits',0,4,197,4,3
-	.word	38632
+	.word	38627
 	.byte	10
 	.byte	'_Ifx_SCU_ID_Bits',0,4,200,4,16,4,11
 	.byte	'MODREV',0,1
@@ -9212,7 +9212,7 @@ wifi_uart_data:	.type	object
 	.word	647
 	.byte	16,0,2,35,2,0,31
 	.byte	'Ifx_SCU_ID_Bits',0,4,205,4,3
-	.word	38968
+	.word	38963
 	.byte	10
 	.byte	'_Ifx_SCU_IGCR_Bits',0,4,208,4,16,4,11
 	.byte	'IPEN00',0,1
@@ -9282,7 +9282,7 @@ wifi_uart_data:	.type	object
 	.word	630
 	.byte	2,0,2,35,3,0,31
 	.byte	'Ifx_SCU_IGCR_Bits',0,4,232,4,3
-	.word	39075
+	.word	39070
 	.byte	10
 	.byte	'_Ifx_SCU_IN_Bits',0,4,235,4,16,4,11
 	.byte	'P0',0,1
@@ -9295,7 +9295,7 @@ wifi_uart_data:	.type	object
 	.word	455
 	.byte	30,0,2,35,0,0,31
 	.byte	'Ifx_SCU_IN_Bits',0,4,240,4,3
-	.word	39527
+	.word	39522
 	.byte	10
 	.byte	'_Ifx_SCU_IOCR_Bits',0,4,243,4,16,4,11
 	.byte	'reserved_0',0,1
@@ -9314,7 +9314,7 @@ wifi_uart_data:	.type	object
 	.word	647
 	.byte	16,0,2,35,2,0,31
 	.byte	'Ifx_SCU_IOCR_Bits',0,4,250,4,3
-	.word	39626
+	.word	39621
 	.byte	10
 	.byte	'_Ifx_SCU_LBISTCTRL0_Bits',0,4,253,4,16,4,11
 	.byte	'LBISTREQ',0,1
@@ -9330,7 +9330,7 @@ wifi_uart_data:	.type	object
 	.word	647
 	.byte	16,0,2,35,2,0,31
 	.byte	'Ifx_SCU_LBISTCTRL0_Bits',0,4,131,5,3
-	.word	39776
+	.word	39771
 	.byte	10
 	.byte	'_Ifx_SCU_LBISTCTRL1_Bits',0,4,134,5,16,4,11
 	.byte	'SEED',0,4
@@ -9349,7 +9349,7 @@ wifi_uart_data:	.type	object
 	.word	630
 	.byte	4,0,2,35,3,0,31
 	.byte	'Ifx_SCU_LBISTCTRL1_Bits',0,4,141,5,3
-	.word	39925
+	.word	39920
 	.byte	10
 	.byte	'_Ifx_SCU_LBISTCTRL2_Bits',0,4,144,5,16,4,11
 	.byte	'SIGNATURE',0,4
@@ -9362,7 +9362,7 @@ wifi_uart_data:	.type	object
 	.word	630
 	.byte	1,0,2,35,3,0,31
 	.byte	'Ifx_SCU_LBISTCTRL2_Bits',0,4,149,5,3
-	.word	40086
+	.word	40081
 	.byte	10
 	.byte	'_Ifx_SCU_LCLCON_Bits',0,4,152,5,16,4,11
 	.byte	'reserved_0',0,2
@@ -9378,7 +9378,7 @@ wifi_uart_data:	.type	object
 	.word	630
 	.byte	1,0,2,35,3,0,31
 	.byte	'Ifx_SCU_LCLCON_Bits',0,4,158,5,3
-	.word	40216
+	.word	40211
 	.byte	10
 	.byte	'_Ifx_SCU_LCLTEST_Bits',0,4,161,5,16,4,11
 	.byte	'LCLT0',0,1
@@ -9391,7 +9391,7 @@ wifi_uart_data:	.type	object
 	.word	455
 	.byte	30,0,2,35,0,0,31
 	.byte	'Ifx_SCU_LCLTEST_Bits',0,4,166,5,3
-	.word	40348
+	.word	40343
 	.byte	10
 	.byte	'_Ifx_SCU_MANID_Bits',0,4,169,5,16,4,11
 	.byte	'DEPT',0,1
@@ -9404,7 +9404,7 @@ wifi_uart_data:	.type	object
 	.word	647
 	.byte	16,0,2,35,2,0,31
 	.byte	'Ifx_SCU_MANID_Bits',0,4,174,5,3
-	.word	40463
+	.word	40458
 	.byte	10
 	.byte	'_Ifx_SCU_OMR_Bits',0,4,177,5,16,4,11
 	.byte	'PS0',0,1
@@ -9426,7 +9426,7 @@ wifi_uart_data:	.type	object
 	.word	647
 	.byte	14,0,2,35,2,0,31
 	.byte	'Ifx_SCU_OMR_Bits',0,4,185,5,3
-	.word	40574
+	.word	40569
 	.byte	10
 	.byte	'_Ifx_SCU_OSCCON_Bits',0,4,188,5,16,4,11
 	.byte	'reserved_0',0,1
@@ -9487,7 +9487,7 @@ wifi_uart_data:	.type	object
 	.word	630
 	.byte	4,0,2,35,3,0,31
 	.byte	'Ifx_SCU_OSCCON_Bits',0,4,209,5,3
-	.word	40732
+	.word	40727
 	.byte	10
 	.byte	'_Ifx_SCU_OUT_Bits',0,4,212,5,16,4,11
 	.byte	'P0',0,1
@@ -9500,7 +9500,7 @@ wifi_uart_data:	.type	object
 	.word	455
 	.byte	30,0,2,35,0,0,31
 	.byte	'Ifx_SCU_OUT_Bits',0,4,217,5,3
-	.word	41144
+	.word	41139
 	.byte	10
 	.byte	'_Ifx_SCU_OVCCON_Bits',0,4,220,5,16,4,11
 	.byte	'CSEL0',0,1
@@ -9537,7 +9537,7 @@ wifi_uart_data:	.type	object
 	.word	630
 	.byte	6,0,2,35,3,0,31
 	.byte	'Ifx_SCU_OVCCON_Bits',0,4,233,5,3
-	.word	41245
+	.word	41240
 	.byte	10
 	.byte	'_Ifx_SCU_OVCENABLE_Bits',0,4,236,5,16,4,11
 	.byte	'OVEN0',0,1
@@ -9553,7 +9553,7 @@ wifi_uart_data:	.type	object
 	.word	455
 	.byte	29,0,2,35,0,0,31
 	.byte	'Ifx_SCU_OVCENABLE_Bits',0,4,242,5,3
-	.word	41512
+	.word	41507
 	.byte	10
 	.byte	'_Ifx_SCU_PDISC_Bits',0,4,245,5,16,4,11
 	.byte	'PDIS0',0,1
@@ -9566,7 +9566,7 @@ wifi_uart_data:	.type	object
 	.word	455
 	.byte	30,0,2,35,0,0,31
 	.byte	'Ifx_SCU_PDISC_Bits',0,4,250,5,3
-	.word	41648
+	.word	41643
 	.byte	10
 	.byte	'_Ifx_SCU_PDR_Bits',0,4,253,5,16,4,11
 	.byte	'PD0',0,1
@@ -9585,7 +9585,7 @@ wifi_uart_data:	.type	object
 	.word	455
 	.byte	24,0,2,35,0,0,31
 	.byte	'Ifx_SCU_PDR_Bits',0,4,132,6,3
-	.word	41759
+	.word	41754
 	.byte	10
 	.byte	'_Ifx_SCU_PDRR_Bits',0,4,135,6,16,4,11
 	.byte	'PDR0',0,1
@@ -9616,7 +9616,7 @@ wifi_uart_data:	.type	object
 	.word	455
 	.byte	24,0,2,35,0,0,31
 	.byte	'Ifx_SCU_PDRR_Bits',0,4,146,6,3
-	.word	41892
+	.word	41887
 	.byte	10
 	.byte	'_Ifx_SCU_PLLCON0_Bits',0,4,149,6,16,4,11
 	.byte	'VCOBYP',0,1
@@ -9665,7 +9665,7 @@ wifi_uart_data:	.type	object
 	.word	630
 	.byte	4,0,2,35,3,0,31
 	.byte	'Ifx_SCU_PLLCON0_Bits',0,4,166,6,3
-	.word	42095
+	.word	42090
 	.byte	10
 	.byte	'_Ifx_SCU_PLLCON1_Bits',0,4,169,6,16,4,11
 	.byte	'K2DIV',0,1
@@ -9687,7 +9687,7 @@ wifi_uart_data:	.type	object
 	.word	647
 	.byte	9,0,2,35,2,0,31
 	.byte	'Ifx_SCU_PLLCON1_Bits',0,4,177,6,3
-	.word	42451
+	.word	42446
 	.byte	10
 	.byte	'_Ifx_SCU_PLLCON2_Bits',0,4,180,6,16,4,11
 	.byte	'MODCFG',0,2
@@ -9697,7 +9697,7 @@ wifi_uart_data:	.type	object
 	.word	647
 	.byte	16,0,2,35,2,0,31
 	.byte	'Ifx_SCU_PLLCON2_Bits',0,4,184,6,3
-	.word	42629
+	.word	42624
 	.byte	10
 	.byte	'_Ifx_SCU_PLLERAYCON0_Bits',0,4,187,6,16,4,11
 	.byte	'VCOBYP',0,1
@@ -9746,7 +9746,7 @@ wifi_uart_data:	.type	object
 	.word	630
 	.byte	4,0,2,35,3,0,31
 	.byte	'Ifx_SCU_PLLERAYCON0_Bits',0,4,204,6,3
-	.word	42729
+	.word	42724
 	.byte	10
 	.byte	'_Ifx_SCU_PLLERAYCON1_Bits',0,4,207,6,16,4,11
 	.byte	'K2DIV',0,1
@@ -9768,7 +9768,7 @@ wifi_uart_data:	.type	object
 	.word	647
 	.byte	9,0,2,35,2,0,31
 	.byte	'Ifx_SCU_PLLERAYCON1_Bits',0,4,215,6,3
-	.word	43099
+	.word	43094
 	.byte	10
 	.byte	'_Ifx_SCU_PLLERAYSTAT_Bits',0,4,218,6,16,4,11
 	.byte	'VCOBYST',0,1
@@ -9793,7 +9793,7 @@ wifi_uart_data:	.type	object
 	.word	455
 	.byte	26,0,2,35,0,0,31
 	.byte	'Ifx_SCU_PLLERAYSTAT_Bits',0,4,227,6,3
-	.word	43285
+	.word	43280
 	.byte	10
 	.byte	'_Ifx_SCU_PLLSTAT_Bits',0,4,230,6,16,4,11
 	.byte	'VCOBYST',0,1
@@ -9824,7 +9824,7 @@ wifi_uart_data:	.type	object
 	.word	455
 	.byte	24,0,2,35,0,0,31
 	.byte	'Ifx_SCU_PLLSTAT_Bits',0,4,241,6,3
-	.word	43483
+	.word	43478
 	.byte	10
 	.byte	'_Ifx_SCU_PMCSR_Bits',0,4,244,6,16,4,11
 	.byte	'REQSLP',0,1
@@ -9843,7 +9843,7 @@ wifi_uart_data:	.type	object
 	.word	455
 	.byte	21,0,2,35,0,0,31
 	.byte	'Ifx_SCU_PMCSR_Bits',0,4,251,6,3
-	.word	43716
+	.word	43711
 	.byte	10
 	.byte	'_Ifx_SCU_PMSWCR0_Bits',0,4,254,6,16,4,11
 	.byte	'reserved_0',0,1
@@ -9922,7 +9922,7 @@ wifi_uart_data:	.type	object
 	.word	630
 	.byte	1,0,2,35,3,0,31
 	.byte	'Ifx_SCU_PMSWCR0_Bits',0,4,153,7,3
-	.word	43868
+	.word	43863
 	.byte	10
 	.byte	'_Ifx_SCU_PMSWCR1_Bits',0,4,156,7,16,4,11
 	.byte	'SCRSTEN',0,1
@@ -9962,7 +9962,7 @@ wifi_uart_data:	.type	object
 	.word	630
 	.byte	1,0,2,35,3,0,31
 	.byte	'Ifx_SCU_PMSWCR1_Bits',0,4,170,7,3
-	.word	44435
+	.word	44430
 	.byte	10
 	.byte	'_Ifx_SCU_PMSWCR2_Bits',0,4,173,7,16,4,11
 	.byte	'SCRINT',0,1
@@ -10002,7 +10002,7 @@ wifi_uart_data:	.type	object
 	.word	630
 	.byte	1,0,2,35,3,0,31
 	.byte	'Ifx_SCU_PMSWCR2_Bits',0,4,187,7,3
-	.word	44729
+	.word	44724
 	.byte	10
 	.byte	'_Ifx_SCU_PMSWSTAT_Bits',0,4,190,7,16,4,11
 	.byte	'reserved_0',0,1
@@ -10072,7 +10072,7 @@ wifi_uart_data:	.type	object
 	.word	630
 	.byte	4,0,2,35,3,0,31
 	.byte	'Ifx_SCU_PMSWSTAT_Bits',0,4,214,7,3
-	.word	45007
+	.word	45002
 	.byte	10
 	.byte	'_Ifx_SCU_PMSWSTATCLR_Bits',0,4,217,7,16,4,11
 	.byte	'reserved_0',0,1
@@ -10109,7 +10109,7 @@ wifi_uart_data:	.type	object
 	.word	647
 	.byte	14,0,2,35,2,0,31
 	.byte	'Ifx_SCU_PMSWSTATCLR_Bits',0,4,230,7,3
-	.word	45503
+	.word	45498
 	.byte	10
 	.byte	'_Ifx_SCU_RSTCON2_Bits',0,4,233,7,16,4,11
 	.byte	'reserved_0',0,1
@@ -10137,7 +10137,7 @@ wifi_uart_data:	.type	object
 	.word	647
 	.byte	16,0,2,35,2,0,31
 	.byte	'Ifx_SCU_RSTCON2_Bits',0,4,243,7,3
-	.word	45816
+	.word	45811
 	.byte	10
 	.byte	'_Ifx_SCU_RSTCON_Bits',0,4,246,7,16,4,11
 	.byte	'ESR0',0,1
@@ -10168,7 +10168,7 @@ wifi_uart_data:	.type	object
 	.word	647
 	.byte	16,0,2,35,2,0,31
 	.byte	'Ifx_SCU_RSTCON_Bits',0,4,129,8,3
-	.word	46025
+	.word	46020
 	.byte	10
 	.byte	'_Ifx_SCU_RSTSTAT_Bits',0,4,132,8,16,4,11
 	.byte	'ESR0',0,1
@@ -10235,7 +10235,7 @@ wifi_uart_data:	.type	object
 	.word	630
 	.byte	3,0,2,35,3,0,31
 	.byte	'Ifx_SCU_RSTSTAT_Bits',0,4,155,8,3
-	.word	46236
+	.word	46231
 	.byte	10
 	.byte	'_Ifx_SCU_SAFECON_Bits',0,4,158,8,16,4,11
 	.byte	'HBT',0,1
@@ -10245,7 +10245,7 @@ wifi_uart_data:	.type	object
 	.word	455
 	.byte	31,0,2,35,0,0,31
 	.byte	'Ifx_SCU_SAFECON_Bits',0,4,162,8,3
-	.word	46668
+	.word	46663
 	.byte	10
 	.byte	'_Ifx_SCU_STSTAT_Bits',0,4,165,8,16,4,11
 	.byte	'HWCFG',0,1
@@ -10282,7 +10282,7 @@ wifi_uart_data:	.type	object
 	.word	630
 	.byte	7,0,2,35,3,0,31
 	.byte	'Ifx_SCU_STSTAT_Bits',0,4,178,8,3
-	.word	46764
+	.word	46759
 	.byte	10
 	.byte	'_Ifx_SCU_SWRSTCON_Bits',0,4,181,8,16,4,11
 	.byte	'reserved_0',0,1
@@ -10295,7 +10295,7 @@ wifi_uart_data:	.type	object
 	.word	455
 	.byte	30,0,2,35,0,0,31
 	.byte	'Ifx_SCU_SWRSTCON_Bits',0,4,186,8,3
-	.word	47024
+	.word	47019
 	.byte	10
 	.byte	'_Ifx_SCU_SYSCON_Bits',0,4,189,8,16,4,11
 	.byte	'CCTRIG0',0,1
@@ -10320,7 +10320,7 @@ wifi_uart_data:	.type	object
 	.word	455
 	.byte	23,0,2,35,0,0,31
 	.byte	'Ifx_SCU_SYSCON_Bits',0,4,198,8,3
-	.word	47149
+	.word	47144
 	.byte	10
 	.byte	'_Ifx_SCU_TRAPCLR_Bits',0,4,201,8,16,4,11
 	.byte	'ESR0T',0,1
@@ -10339,7 +10339,7 @@ wifi_uart_data:	.type	object
 	.word	455
 	.byte	28,0,2,35,0,0,31
 	.byte	'Ifx_SCU_TRAPCLR_Bits',0,4,208,8,3
-	.word	47346
+	.word	47341
 	.byte	10
 	.byte	'_Ifx_SCU_TRAPDIS_Bits',0,4,211,8,16,4,11
 	.byte	'ESR0T',0,1
@@ -10358,7 +10358,7 @@ wifi_uart_data:	.type	object
 	.word	455
 	.byte	28,0,2,35,0,0,31
 	.byte	'Ifx_SCU_TRAPDIS_Bits',0,4,218,8,3
-	.word	47499
+	.word	47494
 	.byte	10
 	.byte	'_Ifx_SCU_TRAPSET_Bits',0,4,221,8,16,4,11
 	.byte	'ESR0T',0,1
@@ -10377,7 +10377,7 @@ wifi_uart_data:	.type	object
 	.word	455
 	.byte	28,0,2,35,0,0,31
 	.byte	'Ifx_SCU_TRAPSET_Bits',0,4,228,8,3
-	.word	47652
+	.word	47647
 	.byte	10
 	.byte	'_Ifx_SCU_TRAPSTAT_Bits',0,4,231,8,16,4,11
 	.byte	'ESR0T',0,1
@@ -10396,7 +10396,7 @@ wifi_uart_data:	.type	object
 	.word	455
 	.byte	28,0,2,35,0,0,31
 	.byte	'Ifx_SCU_TRAPSTAT_Bits',0,4,238,8,3
-	.word	47805
+	.word	47800
 	.byte	31
 	.byte	'Ifx_SCU_WDTCPU_CON0_Bits',0,4,247,8,3
 	.word	494
@@ -10421,7 +10421,7 @@ wifi_uart_data:	.type	object
 	.word	478
 	.byte	16,0,2,35,0,0,31
 	.byte	'Ifx_SCU_WDTS_CON0_Bits',0,4,159,9,3
-	.word	48060
+	.word	48055
 	.byte	10
 	.byte	'_Ifx_SCU_WDTS_CON1_Bits',0,4,162,9,16,4,11
 	.byte	'CLRIRF',0,1
@@ -10458,7 +10458,7 @@ wifi_uart_data:	.type	object
 	.word	647
 	.byte	16,0,2,35,2,0,31
 	.byte	'Ifx_SCU_WDTS_CON1_Bits',0,4,175,9,3
-	.word	48186
+	.word	48181
 	.byte	10
 	.byte	'_Ifx_SCU_WDTS_SR_Bits',0,4,178,9,16,4,11
 	.byte	'AE',0,1
@@ -10495,7 +10495,7 @@ wifi_uart_data:	.type	object
 	.word	647
 	.byte	16,0,2,35,2,0,31
 	.byte	'Ifx_SCU_WDTS_SR_Bits',0,4,191,9,3
-	.word	48438
+	.word	48433
 	.byte	12,4,199,9,9,4,13
 	.byte	'U',0
 	.word	455
@@ -10504,10 +10504,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	30470
+	.word	30465
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_ACCEN0',0,4,204,9,3
-	.word	48657
+	.word	48652
 	.byte	12,4,207,9,9,4,13
 	.byte	'U',0
 	.word	455
@@ -10516,10 +10516,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	31027
+	.word	31022
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_ACCEN1',0,4,212,9,3
-	.word	48721
+	.word	48716
 	.byte	12,4,215,9,9,4,13
 	.byte	'U',0
 	.word	455
@@ -10528,10 +10528,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	31104
+	.word	31099
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_ARSTDIS',0,4,220,9,3
-	.word	48785
+	.word	48780
 	.byte	12,4,223,9,9,4,13
 	.byte	'U',0
 	.word	455
@@ -10540,10 +10540,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	31240
+	.word	31235
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_CCUCON0',0,4,228,9,3
-	.word	48850
+	.word	48845
 	.byte	12,4,231,9,9,4,13
 	.byte	'U',0
 	.word	455
@@ -10552,10 +10552,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	31520
+	.word	31515
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_CCUCON1',0,4,236,9,3
-	.word	48915
+	.word	48910
 	.byte	12,4,239,9,9,4,13
 	.byte	'U',0
 	.word	455
@@ -10564,10 +10564,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	31758
+	.word	31753
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_CCUCON2',0,4,244,9,3
-	.word	48980
+	.word	48975
 	.byte	12,4,247,9,9,4,13
 	.byte	'U',0
 	.word	455
@@ -10576,10 +10576,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	31886
+	.word	31881
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_CCUCON3',0,4,252,9,3
-	.word	49045
+	.word	49040
 	.byte	12,4,255,9,9,4,13
 	.byte	'U',0
 	.word	455
@@ -10588,10 +10588,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	32129
+	.word	32124
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_CCUCON4',0,4,132,10,3
-	.word	49110
+	.word	49105
 	.byte	12,4,135,10,9,4,13
 	.byte	'U',0
 	.word	455
@@ -10600,10 +10600,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	32364
+	.word	32359
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_CCUCON5',0,4,140,10,3
-	.word	49175
+	.word	49170
 	.byte	12,4,143,10,9,4,13
 	.byte	'U',0
 	.word	455
@@ -10612,10 +10612,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	32492
+	.word	32487
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_CCUCON6',0,4,148,10,3
-	.word	49240
+	.word	49235
 	.byte	12,4,151,10,9,4,13
 	.byte	'U',0
 	.word	455
@@ -10624,10 +10624,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	32592
+	.word	32587
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_CCUCON7',0,4,156,10,3
-	.word	49305
+	.word	49300
 	.byte	12,4,159,10,9,4,13
 	.byte	'U',0
 	.word	455
@@ -10636,10 +10636,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	32692
+	.word	32687
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_CHIPID',0,4,164,10,3
-	.word	49370
+	.word	49365
 	.byte	12,4,167,10,9,4,13
 	.byte	'U',0
 	.word	455
@@ -10648,10 +10648,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	32900
+	.word	32895
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_DTSCON',0,4,172,10,3
-	.word	49434
+	.word	49429
 	.byte	12,4,175,10,9,4,13
 	.byte	'U',0
 	.word	455
@@ -10660,10 +10660,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	33065
+	.word	33060
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_DTSLIM',0,4,180,10,3
-	.word	49498
+	.word	49493
 	.byte	12,4,183,10,9,4,13
 	.byte	'U',0
 	.word	455
@@ -10672,10 +10672,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	33248
+	.word	33243
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_DTSSTAT',0,4,188,10,3
-	.word	49562
+	.word	49557
 	.byte	12,4,191,10,9,4,13
 	.byte	'U',0
 	.word	455
@@ -10684,10 +10684,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	33402
+	.word	33397
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_EICR',0,4,196,10,3
-	.word	49627
+	.word	49622
 	.byte	12,4,199,10,9,4,13
 	.byte	'U',0
 	.word	455
@@ -10696,10 +10696,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	33766
+	.word	33761
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_EIFR',0,4,204,10,3
-	.word	49689
+	.word	49684
 	.byte	12,4,207,10,9,4,13
 	.byte	'U',0
 	.word	455
@@ -10708,10 +10708,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	33977
+	.word	33972
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_EMSR',0,4,212,10,3
-	.word	49751
+	.word	49746
 	.byte	12,4,215,10,9,4,13
 	.byte	'U',0
 	.word	455
@@ -10720,10 +10720,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	34229
+	.word	34224
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_ESRCFG',0,4,220,10,3
-	.word	49813
+	.word	49808
 	.byte	12,4,223,10,9,4,13
 	.byte	'U',0
 	.word	455
@@ -10732,10 +10732,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	34347
+	.word	34342
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_ESROCFG',0,4,228,10,3
-	.word	49877
+	.word	49872
 	.byte	12,4,231,10,9,4,13
 	.byte	'U',0
 	.word	455
@@ -10744,10 +10744,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	34458
+	.word	34453
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_EVR13CON',0,4,236,10,3
-	.word	49942
+	.word	49937
 	.byte	12,4,239,10,9,4,13
 	.byte	'U',0
 	.word	455
@@ -10756,10 +10756,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	34621
+	.word	34616
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_EVR33CON',0,4,244,10,3
-	.word	50008
+	.word	50003
 	.byte	12,4,247,10,9,4,13
 	.byte	'U',0
 	.word	455
@@ -10768,10 +10768,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	34784
+	.word	34779
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_EVRADCSTAT',0,4,252,10,3
-	.word	50074
+	.word	50069
 	.byte	12,4,255,10,9,4,13
 	.byte	'U',0
 	.word	455
@@ -10780,10 +10780,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	34942
+	.word	34937
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_EVRDVSTAT',0,4,132,11,3
-	.word	50142
+	.word	50137
 	.byte	12,4,135,11,9,4,13
 	.byte	'U',0
 	.word	455
@@ -10792,10 +10792,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	35107
+	.word	35102
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_EVRMONCTRL',0,4,140,11,3
-	.word	50209
+	.word	50204
 	.byte	12,4,143,11,9,4,13
 	.byte	'U',0
 	.word	455
@@ -10804,10 +10804,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	35436
+	.word	35431
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_EVROSCCTRL',0,4,148,11,3
-	.word	50277
+	.word	50272
 	.byte	12,4,151,11,9,4,13
 	.byte	'U',0
 	.word	455
@@ -10816,10 +10816,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	35657
+	.word	35652
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_EVROVMON',0,4,156,11,3
-	.word	50345
+	.word	50340
 	.byte	12,4,159,11,9,4,13
 	.byte	'U',0
 	.word	455
@@ -10828,10 +10828,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	35820
+	.word	35815
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_EVRRSTCON',0,4,164,11,3
-	.word	50411
+	.word	50406
 	.byte	12,4,167,11,9,4,13
 	.byte	'U',0
 	.word	455
@@ -10840,10 +10840,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	36092
+	.word	36087
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_EVRSDCOEFF1',0,4,172,11,3
-	.word	50478
+	.word	50473
 	.byte	12,4,175,11,9,4,13
 	.byte	'U',0
 	.word	455
@@ -10852,10 +10852,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	36245
+	.word	36240
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_EVRSDCOEFF2',0,4,180,11,3
-	.word	50547
+	.word	50542
 	.byte	12,4,183,11,9,4,13
 	.byte	'U',0
 	.word	455
@@ -10864,10 +10864,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	36401
+	.word	36396
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_EVRSDCOEFF3',0,4,188,11,3
-	.word	50616
+	.word	50611
 	.byte	12,4,191,11,9,4,13
 	.byte	'U',0
 	.word	455
@@ -10876,10 +10876,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	36563
+	.word	36558
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_EVRSDCOEFF4',0,4,196,11,3
-	.word	50685
+	.word	50680
 	.byte	12,4,199,11,9,4,13
 	.byte	'U',0
 	.word	455
@@ -10888,10 +10888,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	36706
+	.word	36701
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_EVRSDCOEFF5',0,4,204,11,3
-	.word	50754
+	.word	50749
 	.byte	12,4,207,11,9,4,13
 	.byte	'U',0
 	.word	455
@@ -10900,10 +10900,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	36871
+	.word	36866
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_EVRSDCOEFF6',0,4,212,11,3
-	.word	50823
+	.word	50818
 	.byte	12,4,215,11,9,4,13
 	.byte	'U',0
 	.word	455
@@ -10912,10 +10912,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	37016
+	.word	37011
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_EVRSDCTRL1',0,4,220,11,3
-	.word	50892
+	.word	50887
 	.byte	12,4,223,11,9,4,13
 	.byte	'U',0
 	.word	455
@@ -10924,10 +10924,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	37197
+	.word	37192
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_EVRSDCTRL2',0,4,228,11,3
-	.word	50960
+	.word	50955
 	.byte	12,4,231,11,9,4,13
 	.byte	'U',0
 	.word	455
@@ -10936,10 +10936,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	37371
+	.word	37366
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_EVRSDCTRL3',0,4,236,11,3
-	.word	51028
+	.word	51023
 	.byte	12,4,239,11,9,4,13
 	.byte	'U',0
 	.word	455
@@ -10948,10 +10948,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	37531
+	.word	37526
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_EVRSDCTRL4',0,4,244,11,3
-	.word	51096
+	.word	51091
 	.byte	12,4,247,11,9,4,13
 	.byte	'U',0
 	.word	455
@@ -10960,10 +10960,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	37675
+	.word	37670
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_EVRSTAT',0,4,252,11,3
-	.word	51164
+	.word	51159
 	.byte	12,4,255,11,9,4,13
 	.byte	'U',0
 	.word	455
@@ -10972,10 +10972,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	37949
+	.word	37944
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_EVRTRIM',0,4,132,12,3
-	.word	51229
+	.word	51224
 	.byte	12,4,135,12,9,4,13
 	.byte	'U',0
 	.word	455
@@ -10984,10 +10984,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	38088
+	.word	38083
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_EVRUVMON',0,4,140,12,3
-	.word	51294
+	.word	51289
 	.byte	12,4,143,12,9,4,13
 	.byte	'U',0
 	.word	455
@@ -10996,10 +10996,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	38251
+	.word	38246
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_EXTCON',0,4,148,12,3
-	.word	51360
+	.word	51355
 	.byte	12,4,151,12,9,4,13
 	.byte	'U',0
 	.word	455
@@ -11008,10 +11008,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	38469
+	.word	38464
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_FDR',0,4,156,12,3
-	.word	51424
+	.word	51419
 	.byte	12,4,159,12,9,4,13
 	.byte	'U',0
 	.word	455
@@ -11020,10 +11020,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	38632
+	.word	38627
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_FMR',0,4,164,12,3
-	.word	51485
+	.word	51480
 	.byte	12,4,167,12,9,4,13
 	.byte	'U',0
 	.word	455
@@ -11032,10 +11032,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	38968
+	.word	38963
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_ID',0,4,172,12,3
-	.word	51546
+	.word	51541
 	.byte	12,4,175,12,9,4,13
 	.byte	'U',0
 	.word	455
@@ -11044,10 +11044,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	39075
+	.word	39070
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_IGCR',0,4,180,12,3
-	.word	51606
+	.word	51601
 	.byte	12,4,183,12,9,4,13
 	.byte	'U',0
 	.word	455
@@ -11056,10 +11056,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	39527
+	.word	39522
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_IN',0,4,188,12,3
-	.word	51668
+	.word	51663
 	.byte	12,4,191,12,9,4,13
 	.byte	'U',0
 	.word	455
@@ -11068,10 +11068,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	39626
+	.word	39621
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_IOCR',0,4,196,12,3
-	.word	51728
+	.word	51723
 	.byte	12,4,199,12,9,4,13
 	.byte	'U',0
 	.word	455
@@ -11080,10 +11080,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	39776
+	.word	39771
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_LBISTCTRL0',0,4,204,12,3
-	.word	51790
+	.word	51785
 	.byte	12,4,207,12,9,4,13
 	.byte	'U',0
 	.word	455
@@ -11092,10 +11092,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	39925
+	.word	39920
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_LBISTCTRL1',0,4,212,12,3
-	.word	51858
+	.word	51853
 	.byte	12,4,215,12,9,4,13
 	.byte	'U',0
 	.word	455
@@ -11104,10 +11104,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	40086
+	.word	40081
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_LBISTCTRL2',0,4,220,12,3
-	.word	51926
+	.word	51921
 	.byte	12,4,223,12,9,4,13
 	.byte	'U',0
 	.word	455
@@ -11116,10 +11116,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	40216
+	.word	40211
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_LCLCON',0,4,228,12,3
-	.word	51994
+	.word	51989
 	.byte	12,4,231,12,9,4,13
 	.byte	'U',0
 	.word	455
@@ -11128,10 +11128,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	40348
+	.word	40343
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_LCLTEST',0,4,236,12,3
-	.word	52058
+	.word	52053
 	.byte	12,4,239,12,9,4,13
 	.byte	'U',0
 	.word	455
@@ -11140,10 +11140,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	40463
+	.word	40458
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_MANID',0,4,244,12,3
-	.word	52123
+	.word	52118
 	.byte	12,4,247,12,9,4,13
 	.byte	'U',0
 	.word	455
@@ -11152,10 +11152,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	40574
+	.word	40569
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_OMR',0,4,252,12,3
-	.word	52186
+	.word	52181
 	.byte	12,4,255,12,9,4,13
 	.byte	'U',0
 	.word	455
@@ -11164,10 +11164,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	40732
+	.word	40727
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_OSCCON',0,4,132,13,3
-	.word	52247
+	.word	52242
 	.byte	12,4,135,13,9,4,13
 	.byte	'U',0
 	.word	455
@@ -11176,10 +11176,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	41144
+	.word	41139
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_OUT',0,4,140,13,3
-	.word	52311
+	.word	52306
 	.byte	12,4,143,13,9,4,13
 	.byte	'U',0
 	.word	455
@@ -11188,10 +11188,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	41245
+	.word	41240
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_OVCCON',0,4,148,13,3
-	.word	52372
+	.word	52367
 	.byte	12,4,151,13,9,4,13
 	.byte	'U',0
 	.word	455
@@ -11200,10 +11200,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	41512
+	.word	41507
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_OVCENABLE',0,4,156,13,3
-	.word	52436
+	.word	52431
 	.byte	12,4,159,13,9,4,13
 	.byte	'U',0
 	.word	455
@@ -11212,10 +11212,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	41648
+	.word	41643
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_PDISC',0,4,164,13,3
-	.word	52503
+	.word	52498
 	.byte	12,4,167,13,9,4,13
 	.byte	'U',0
 	.word	455
@@ -11224,10 +11224,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	41759
+	.word	41754
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_PDR',0,4,172,13,3
-	.word	52566
+	.word	52561
 	.byte	12,4,175,13,9,4,13
 	.byte	'U',0
 	.word	455
@@ -11236,10 +11236,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	41892
+	.word	41887
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_PDRR',0,4,180,13,3
-	.word	52627
+	.word	52622
 	.byte	12,4,183,13,9,4,13
 	.byte	'U',0
 	.word	455
@@ -11248,10 +11248,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	42095
+	.word	42090
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_PLLCON0',0,4,188,13,3
-	.word	52689
+	.word	52684
 	.byte	12,4,191,13,9,4,13
 	.byte	'U',0
 	.word	455
@@ -11260,10 +11260,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	42451
+	.word	42446
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_PLLCON1',0,4,196,13,3
-	.word	52754
+	.word	52749
 	.byte	12,4,199,13,9,4,13
 	.byte	'U',0
 	.word	455
@@ -11272,10 +11272,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	42629
+	.word	42624
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_PLLCON2',0,4,204,13,3
-	.word	52819
+	.word	52814
 	.byte	12,4,207,13,9,4,13
 	.byte	'U',0
 	.word	455
@@ -11284,10 +11284,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	42729
+	.word	42724
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_PLLERAYCON0',0,4,212,13,3
-	.word	52884
+	.word	52879
 	.byte	12,4,215,13,9,4,13
 	.byte	'U',0
 	.word	455
@@ -11296,10 +11296,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	43099
+	.word	43094
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_PLLERAYCON1',0,4,220,13,3
-	.word	52953
+	.word	52948
 	.byte	12,4,223,13,9,4,13
 	.byte	'U',0
 	.word	455
@@ -11308,10 +11308,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	43285
+	.word	43280
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_PLLERAYSTAT',0,4,228,13,3
-	.word	53022
+	.word	53017
 	.byte	12,4,231,13,9,4,13
 	.byte	'U',0
 	.word	455
@@ -11320,10 +11320,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	43483
+	.word	43478
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_PLLSTAT',0,4,236,13,3
-	.word	53091
+	.word	53086
 	.byte	12,4,239,13,9,4,13
 	.byte	'U',0
 	.word	455
@@ -11332,10 +11332,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	43716
+	.word	43711
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_PMCSR',0,4,244,13,3
-	.word	53156
+	.word	53151
 	.byte	12,4,247,13,9,4,13
 	.byte	'U',0
 	.word	455
@@ -11344,10 +11344,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	43868
+	.word	43863
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_PMSWCR0',0,4,252,13,3
-	.word	53219
+	.word	53214
 	.byte	12,4,255,13,9,4,13
 	.byte	'U',0
 	.word	455
@@ -11356,10 +11356,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	44435
+	.word	44430
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_PMSWCR1',0,4,132,14,3
-	.word	53284
+	.word	53279
 	.byte	12,4,135,14,9,4,13
 	.byte	'U',0
 	.word	455
@@ -11368,10 +11368,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	44729
+	.word	44724
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_PMSWCR2',0,4,140,14,3
-	.word	53349
+	.word	53344
 	.byte	12,4,143,14,9,4,13
 	.byte	'U',0
 	.word	455
@@ -11380,10 +11380,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	45007
+	.word	45002
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_PMSWSTAT',0,4,148,14,3
-	.word	53414
+	.word	53409
 	.byte	12,4,151,14,9,4,13
 	.byte	'U',0
 	.word	455
@@ -11392,10 +11392,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	45503
+	.word	45498
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_PMSWSTATCLR',0,4,156,14,3
-	.word	53480
+	.word	53475
 	.byte	12,4,159,14,9,4,13
 	.byte	'U',0
 	.word	455
@@ -11404,10 +11404,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	46025
+	.word	46020
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_RSTCON',0,4,164,14,3
-	.word	53549
+	.word	53544
 	.byte	12,4,167,14,9,4,13
 	.byte	'U',0
 	.word	455
@@ -11416,10 +11416,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	45816
+	.word	45811
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_RSTCON2',0,4,172,14,3
-	.word	53613
+	.word	53608
 	.byte	12,4,175,14,9,4,13
 	.byte	'U',0
 	.word	455
@@ -11428,10 +11428,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	46236
+	.word	46231
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_RSTSTAT',0,4,180,14,3
-	.word	53678
+	.word	53673
 	.byte	12,4,183,14,9,4,13
 	.byte	'U',0
 	.word	455
@@ -11440,10 +11440,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	46668
+	.word	46663
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_SAFECON',0,4,188,14,3
-	.word	53743
+	.word	53738
 	.byte	12,4,191,14,9,4,13
 	.byte	'U',0
 	.word	455
@@ -11452,10 +11452,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	46764
+	.word	46759
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_STSTAT',0,4,196,14,3
-	.word	53808
+	.word	53803
 	.byte	12,4,199,14,9,4,13
 	.byte	'U',0
 	.word	455
@@ -11464,10 +11464,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	47024
+	.word	47019
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_SWRSTCON',0,4,204,14,3
-	.word	53872
+	.word	53867
 	.byte	12,4,207,14,9,4,13
 	.byte	'U',0
 	.word	455
@@ -11476,10 +11476,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	47149
+	.word	47144
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_SYSCON',0,4,212,14,3
-	.word	53938
+	.word	53933
 	.byte	12,4,215,14,9,4,13
 	.byte	'U',0
 	.word	455
@@ -11488,10 +11488,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	47346
+	.word	47341
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_TRAPCLR',0,4,220,14,3
-	.word	54002
+	.word	53997
 	.byte	12,4,223,14,9,4,13
 	.byte	'U',0
 	.word	455
@@ -11500,10 +11500,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	47499
+	.word	47494
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_TRAPDIS',0,4,228,14,3
-	.word	54067
+	.word	54062
 	.byte	12,4,231,14,9,4,13
 	.byte	'U',0
 	.word	455
@@ -11512,10 +11512,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	47652
+	.word	47647
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_TRAPSET',0,4,236,14,3
-	.word	54132
+	.word	54127
 	.byte	12,4,239,14,9,4,13
 	.byte	'U',0
 	.word	455
@@ -11524,10 +11524,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	47805
+	.word	47800
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_TRAPSTAT',0,4,244,14,3
-	.word	54197
+	.word	54192
 	.byte	31
 	.byte	'Ifx_SCU_WDTCPU_CON0',0,4,252,14,3
 	.word	590
@@ -11545,10 +11545,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	48060
+	.word	48055
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_WDTS_CON0',0,4,148,15,3
-	.word	54348
+	.word	54343
 	.byte	12,4,151,15,9,4,13
 	.byte	'U',0
 	.word	455
@@ -11557,10 +11557,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	48186
+	.word	48181
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_WDTS_CON1',0,4,156,15,3
-	.word	54415
+	.word	54410
 	.byte	12,4,159,15,9,4,13
 	.byte	'U',0
 	.word	455
@@ -11569,42 +11569,42 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	48438
+	.word	48433
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SCU_WDTS_SR',0,4,164,15,3
-	.word	54482
+	.word	54477
 	.byte	14
 	.word	1144
 	.byte	31
 	.byte	'Ifx_SCU_WDTCPU',0,4,180,15,3
-	.word	54547
+	.word	54542
 	.byte	10
 	.byte	'_Ifx_SCU_WDTS',0,4,183,15,25,12,13
 	.byte	'CON0',0
-	.word	54348
+	.word	54343
 	.byte	4,2,35,0,13
 	.byte	'CON1',0
-	.word	54415
+	.word	54410
 	.byte	4,2,35,4,13
 	.byte	'SR',0
-	.word	54482
+	.word	54477
 	.byte	4,2,35,8,0,14
-	.word	54576
+	.word	54571
 	.byte	31
 	.byte	'Ifx_SCU_WDTS',0,4,188,15,3
-	.word	54637
+	.word	54632
 	.byte	15,8
-	.word	49813
+	.word	49808
 	.byte	16,1,0,15,20
 	.word	630
 	.byte	16,19,0,15,8
-	.word	53156
+	.word	53151
 	.byte	16,1,0,14
-	.word	54576
+	.word	54571
 	.byte	15,24
 	.word	1144
 	.byte	16,1,0,14
-	.word	54696
+	.word	54691
 	.byte	15,16
 	.word	630
 	.byte	16,15,0,15,28
@@ -11612,9 +11612,9 @@ wifi_uart_data:	.type	object
 	.byte	16,27,0,15,40
 	.word	630
 	.byte	16,39,0,15,16
-	.word	49627
+	.word	49622
 	.byte	16,3,0,15,16
-	.word	51606
+	.word	51601
 	.byte	16,3,0,15,180,3
 	.word	630
 	.byte	16,179,3,0,10
@@ -11623,324 +11623,324 @@ wifi_uart_data:	.type	object
 	.word	4267
 	.byte	8,2,35,0,13
 	.byte	'ID',0
-	.word	51546
+	.word	51541
 	.byte	4,2,35,8,13
 	.byte	'reserved_C',0
 	.word	2448
 	.byte	4,2,35,12,13
 	.byte	'OSCCON',0
-	.word	52247
+	.word	52242
 	.byte	4,2,35,16,13
 	.byte	'PLLSTAT',0
-	.word	53091
+	.word	53086
 	.byte	4,2,35,20,13
 	.byte	'PLLCON0',0
-	.word	52689
+	.word	52684
 	.byte	4,2,35,24,13
 	.byte	'PLLCON1',0
-	.word	52754
+	.word	52749
 	.byte	4,2,35,28,13
 	.byte	'PLLCON2',0
-	.word	52819
+	.word	52814
 	.byte	4,2,35,32,13
 	.byte	'PLLERAYSTAT',0
-	.word	53022
+	.word	53017
 	.byte	4,2,35,36,13
 	.byte	'PLLERAYCON0',0
-	.word	52884
+	.word	52879
 	.byte	4,2,35,40,13
 	.byte	'PLLERAYCON1',0
-	.word	52953
+	.word	52948
 	.byte	4,2,35,44,13
 	.byte	'CCUCON0',0
-	.word	48850
+	.word	48845
 	.byte	4,2,35,48,13
 	.byte	'CCUCON1',0
-	.word	48915
+	.word	48910
 	.byte	4,2,35,52,13
 	.byte	'FDR',0
-	.word	51424
+	.word	51419
 	.byte	4,2,35,56,13
 	.byte	'EXTCON',0
-	.word	51360
+	.word	51355
 	.byte	4,2,35,60,13
 	.byte	'CCUCON2',0
-	.word	48980
+	.word	48975
 	.byte	4,2,35,64,13
 	.byte	'CCUCON3',0
-	.word	49045
+	.word	49040
 	.byte	4,2,35,68,13
 	.byte	'CCUCON4',0
-	.word	49110
+	.word	49105
 	.byte	4,2,35,72,13
 	.byte	'CCUCON5',0
-	.word	49175
+	.word	49170
 	.byte	4,2,35,76,13
 	.byte	'RSTSTAT',0
-	.word	53678
+	.word	53673
 	.byte	4,2,35,80,13
 	.byte	'reserved_54',0
 	.word	2448
 	.byte	4,2,35,84,13
 	.byte	'RSTCON',0
-	.word	53549
+	.word	53544
 	.byte	4,2,35,88,13
 	.byte	'ARSTDIS',0
-	.word	48785
+	.word	48780
 	.byte	4,2,35,92,13
 	.byte	'SWRSTCON',0
-	.word	53872
+	.word	53867
 	.byte	4,2,35,96,13
 	.byte	'RSTCON2',0
-	.word	53613
+	.word	53608
 	.byte	4,2,35,100,13
 	.byte	'reserved_68',0
 	.word	2448
 	.byte	4,2,35,104,13
 	.byte	'EVRRSTCON',0
-	.word	50411
+	.word	50406
 	.byte	4,2,35,108,13
 	.byte	'ESRCFG',0
-	.word	54664
+	.word	54659
 	.byte	8,2,35,112,13
 	.byte	'ESROCFG',0
-	.word	49877
+	.word	49872
 	.byte	4,2,35,120,13
 	.byte	'SYSCON',0
-	.word	53938
+	.word	53933
 	.byte	4,2,35,124,13
 	.byte	'CCUCON6',0
-	.word	49240
+	.word	49235
 	.byte	4,3,35,128,1,13
 	.byte	'CCUCON7',0
-	.word	49305
+	.word	49300
 	.byte	4,3,35,132,1,13
 	.byte	'reserved_88',0
-	.word	54673
+	.word	54668
 	.byte	20,3,35,136,1,13
 	.byte	'PDR',0
-	.word	52566
+	.word	52561
 	.byte	4,3,35,156,1,13
 	.byte	'IOCR',0
-	.word	51728
+	.word	51723
 	.byte	4,3,35,160,1,13
 	.byte	'OUT',0
-	.word	52311
+	.word	52306
 	.byte	4,3,35,164,1,13
 	.byte	'OMR',0
-	.word	52186
+	.word	52181
 	.byte	4,3,35,168,1,13
 	.byte	'IN',0
-	.word	51668
+	.word	51663
 	.byte	4,3,35,172,1,13
 	.byte	'EVRSTAT',0
-	.word	51164
+	.word	51159
 	.byte	4,3,35,176,1,13
 	.byte	'EVRDVSTAT',0
-	.word	50142
+	.word	50137
 	.byte	4,3,35,180,1,13
 	.byte	'EVR13CON',0
-	.word	49942
+	.word	49937
 	.byte	4,3,35,184,1,13
 	.byte	'EVR33CON',0
-	.word	50008
+	.word	50003
 	.byte	4,3,35,188,1,13
 	.byte	'STSTAT',0
-	.word	53808
+	.word	53803
 	.byte	4,3,35,192,1,13
 	.byte	'reserved_C4',0
 	.word	2448
 	.byte	4,3,35,196,1,13
 	.byte	'PMSWCR0',0
-	.word	53219
+	.word	53214
 	.byte	4,3,35,200,1,13
 	.byte	'PMSWSTAT',0
-	.word	53414
+	.word	53409
 	.byte	4,3,35,204,1,13
 	.byte	'PMSWSTATCLR',0
-	.word	53480
+	.word	53475
 	.byte	4,3,35,208,1,13
 	.byte	'PMCSR',0
-	.word	54682
+	.word	54677
 	.byte	8,3,35,212,1,13
 	.byte	'reserved_DC',0
 	.word	2448
 	.byte	4,3,35,220,1,13
 	.byte	'DTSSTAT',0
-	.word	49562
+	.word	49557
 	.byte	4,3,35,224,1,13
 	.byte	'DTSCON',0
-	.word	49434
+	.word	49429
 	.byte	4,3,35,228,1,13
 	.byte	'PMSWCR1',0
-	.word	53284
+	.word	53279
 	.byte	4,3,35,232,1,13
 	.byte	'PMSWCR2',0
-	.word	53349
+	.word	53344
 	.byte	4,3,35,236,1,13
 	.byte	'WDTS',0
-	.word	54691
+	.word	54686
 	.byte	12,3,35,240,1,13
 	.byte	'EMSR',0
-	.word	49751
+	.word	49746
 	.byte	4,3,35,252,1,13
 	.byte	'WDTCPU',0
-	.word	54705
+	.word	54700
 	.byte	24,3,35,128,2,13
 	.byte	'reserved_118',0
 	.word	4607
 	.byte	12,3,35,152,2,13
 	.byte	'TRAPSTAT',0
-	.word	54197
+	.word	54192
 	.byte	4,3,35,164,2,13
 	.byte	'TRAPSET',0
-	.word	54132
+	.word	54127
 	.byte	4,3,35,168,2,13
 	.byte	'TRAPCLR',0
-	.word	54002
+	.word	53997
 	.byte	4,3,35,172,2,13
 	.byte	'TRAPDIS',0
-	.word	54067
+	.word	54062
 	.byte	4,3,35,176,2,13
 	.byte	'reserved_134',0
 	.word	2448
 	.byte	4,3,35,180,2,13
 	.byte	'LCLCON1',0
-	.word	51994
+	.word	51989
 	.byte	4,3,35,184,2,13
 	.byte	'LCLTEST',0
-	.word	52058
+	.word	52053
 	.byte	4,3,35,188,2,13
 	.byte	'CHIPID',0
-	.word	49370
+	.word	49365
 	.byte	4,3,35,192,2,13
 	.byte	'MANID',0
-	.word	52123
+	.word	52118
 	.byte	4,3,35,196,2,13
 	.byte	'reserved_148',0
 	.word	4267
 	.byte	8,3,35,200,2,13
 	.byte	'SAFECON',0
-	.word	53743
+	.word	53738
 	.byte	4,3,35,208,2,13
 	.byte	'reserved_154',0
-	.word	54710
+	.word	54705
 	.byte	16,3,35,212,2,13
 	.byte	'LBISTCTRL0',0
-	.word	51790
+	.word	51785
 	.byte	4,3,35,228,2,13
 	.byte	'LBISTCTRL1',0
-	.word	51858
+	.word	51853
 	.byte	4,3,35,232,2,13
 	.byte	'LBISTCTRL2',0
-	.word	51926
+	.word	51921
 	.byte	4,3,35,236,2,13
 	.byte	'reserved_170',0
-	.word	54719
+	.word	54714
 	.byte	28,3,35,240,2,13
 	.byte	'PDISC',0
-	.word	52503
+	.word	52498
 	.byte	4,3,35,140,3,13
 	.byte	'reserved_190',0
 	.word	4267
 	.byte	8,3,35,144,3,13
 	.byte	'EVRTRIM',0
-	.word	51229
+	.word	51224
 	.byte	4,3,35,152,3,13
 	.byte	'EVRADCSTAT',0
-	.word	50074
+	.word	50069
 	.byte	4,3,35,156,3,13
 	.byte	'EVRUVMON',0
-	.word	51294
+	.word	51289
 	.byte	4,3,35,160,3,13
 	.byte	'EVROVMON',0
-	.word	50345
+	.word	50340
 	.byte	4,3,35,164,3,13
 	.byte	'EVRMONCTRL',0
-	.word	50209
+	.word	50204
 	.byte	4,3,35,168,3,13
 	.byte	'reserved_1AC',0
 	.word	2448
 	.byte	4,3,35,172,3,13
 	.byte	'EVRSDCTRL1',0
-	.word	50892
+	.word	50887
 	.byte	4,3,35,176,3,13
 	.byte	'EVRSDCTRL2',0
-	.word	50960
+	.word	50955
 	.byte	4,3,35,180,3,13
 	.byte	'EVRSDCTRL3',0
-	.word	51028
+	.word	51023
 	.byte	4,3,35,184,3,13
 	.byte	'EVRSDCTRL4',0
-	.word	51096
+	.word	51091
 	.byte	4,3,35,188,3,13
 	.byte	'EVRSDCOEFF1',0
-	.word	50478
+	.word	50473
 	.byte	4,3,35,192,3,13
 	.byte	'EVRSDCOEFF2',0
-	.word	50547
+	.word	50542
 	.byte	4,3,35,196,3,13
 	.byte	'EVRSDCOEFF3',0
-	.word	50616
+	.word	50611
 	.byte	4,3,35,200,3,13
 	.byte	'EVRSDCOEFF4',0
-	.word	50685
+	.word	50680
 	.byte	4,3,35,204,3,13
 	.byte	'EVRSDCOEFF5',0
-	.word	50754
+	.word	50749
 	.byte	4,3,35,208,3,13
 	.byte	'EVRSDCOEFF6',0
-	.word	50823
+	.word	50818
 	.byte	4,3,35,212,3,13
 	.byte	'EVROSCCTRL',0
-	.word	50277
+	.word	50272
 	.byte	4,3,35,216,3,13
 	.byte	'reserved_1DC',0
 	.word	2448
 	.byte	4,3,35,220,3,13
 	.byte	'OVCENABLE',0
-	.word	52436
+	.word	52431
 	.byte	4,3,35,224,3,13
 	.byte	'OVCCON',0
-	.word	52372
+	.word	52367
 	.byte	4,3,35,228,3,13
 	.byte	'reserved_1E8',0
-	.word	54728
+	.word	54723
 	.byte	40,3,35,232,3,13
 	.byte	'EICR',0
-	.word	54737
+	.word	54732
 	.byte	16,3,35,144,4,13
 	.byte	'EIFR',0
-	.word	49689
+	.word	49684
 	.byte	4,3,35,160,4,13
 	.byte	'FMR',0
-	.word	51485
+	.word	51480
 	.byte	4,3,35,164,4,13
 	.byte	'PDRR',0
-	.word	52627
+	.word	52622
 	.byte	4,3,35,168,4,13
 	.byte	'IGCR',0
-	.word	54746
+	.word	54741
 	.byte	16,3,35,172,4,13
 	.byte	'reserved_23C',0
 	.word	2448
 	.byte	4,3,35,188,4,13
 	.byte	'DTSLIM',0
-	.word	49498
+	.word	49493
 	.byte	4,3,35,192,4,13
 	.byte	'reserved_244',0
-	.word	54755
+	.word	54750
 	.byte	180,3,3,35,196,4,13
 	.byte	'ACCEN1',0
-	.word	48721
+	.word	48716
 	.byte	4,3,35,248,7,13
 	.byte	'ACCEN0',0
-	.word	48657
+	.word	48652
 	.byte	4,3,35,252,7,0,14
-	.word	54766
+	.word	54761
 	.byte	31
 	.byte	'Ifx_SCU',0,4,181,16,3
-	.word	56756
+	.word	56751
 	.byte	31
 	.byte	'IfxPort_InputMode',0,5,89,3
 	.word	9200
@@ -11964,7 +11964,7 @@ wifi_uart_data:	.type	object
 	.byte	'IfxPort_PadDriver_ttlSpeed3',0,10,18
 	.byte	'IfxPort_PadDriver_ttlSpeed4',0,11,0,31
 	.byte	'IfxPort_PadDriver',0,5,158,1,3
-	.word	56859
+	.word	56854
 	.byte	31
 	.byte	'IfxPort_State',0,5,178,1,3
 	.word	9788
@@ -11976,7 +11976,7 @@ wifi_uart_data:	.type	object
 	.word	630
 	.byte	1,2,35,4,0,31
 	.byte	'IfxPort_Pin',0,5,194,1,3
-	.word	57324
+	.word	57319
 	.byte	31
 	.byte	'gpio_pin_enum',0,23,89,2
 	.word	23585
@@ -12152,19 +12152,19 @@ wifi_uart_data:	.type	object
 	.word	13412
 	.byte	31
 	.byte	'Ifx_ASCLIN_LIN',0,13,140,5,3
-	.word	59050
+	.word	59045
 	.byte	14
 	.word	17029
 	.byte	31
 	.byte	'Ifx_ASCLIN',0,13,181,5,3
-	.word	59079
+	.word	59074
 	.byte	10
 	.byte	'_Ifx_CPU_A_Bits',0,33,45,16,4,11
 	.byte	'ADDR',0,4
 	.word	478
 	.byte	32,0,2,35,0,0,31
 	.byte	'Ifx_CPU_A_Bits',0,33,48,3
-	.word	59104
+	.word	59099
 	.byte	10
 	.byte	'_Ifx_CPU_BIV_Bits',0,33,51,16,4,11
 	.byte	'VSS',0,4
@@ -12174,7 +12174,7 @@ wifi_uart_data:	.type	object
 	.word	478
 	.byte	31,0,2,35,0,0,31
 	.byte	'Ifx_CPU_BIV_Bits',0,33,55,3
-	.word	59165
+	.word	59160
 	.byte	10
 	.byte	'_Ifx_CPU_BTV_Bits',0,33,58,16,4,11
 	.byte	'reserved_0',0,4
@@ -12184,7 +12184,7 @@ wifi_uart_data:	.type	object
 	.word	478
 	.byte	31,0,2,35,0,0,31
 	.byte	'Ifx_CPU_BTV_Bits',0,33,62,3
-	.word	59244
+	.word	59239
 	.byte	10
 	.byte	'_Ifx_CPU_CCNT_Bits',0,33,65,16,4,11
 	.byte	'CountValue',0,4
@@ -12194,7 +12194,7 @@ wifi_uart_data:	.type	object
 	.word	478
 	.byte	1,0,2,35,0,0,31
 	.byte	'Ifx_CPU_CCNT_Bits',0,33,69,3
-	.word	59330
+	.word	59325
 	.byte	10
 	.byte	'_Ifx_CPU_CCTRL_Bits',0,33,72,16,4,11
 	.byte	'CM',0,4
@@ -12216,7 +12216,7 @@ wifi_uart_data:	.type	object
 	.word	478
 	.byte	21,0,2,35,0,0,31
 	.byte	'Ifx_CPU_CCTRL_Bits',0,33,80,3
-	.word	59419
+	.word	59414
 	.byte	10
 	.byte	'_Ifx_CPU_COMPAT_Bits',0,33,83,16,4,11
 	.byte	'reserved_0',0,4
@@ -12232,7 +12232,7 @@ wifi_uart_data:	.type	object
 	.word	478
 	.byte	27,0,2,35,0,0,31
 	.byte	'Ifx_CPU_COMPAT_Bits',0,33,89,3
-	.word	59565
+	.word	59560
 	.byte	10
 	.byte	'_Ifx_CPU_CORE_ID_Bits',0,33,92,16,4,11
 	.byte	'CORE_ID',0,4
@@ -12242,7 +12242,7 @@ wifi_uart_data:	.type	object
 	.word	478
 	.byte	29,0,2,35,0,0,31
 	.byte	'Ifx_CPU_CORE_ID_Bits',0,33,96,3
-	.word	59692
+	.word	59687
 	.byte	10
 	.byte	'_Ifx_CPU_CPR_L_Bits',0,33,99,16,4,11
 	.byte	'reserved_0',0,4
@@ -12252,7 +12252,7 @@ wifi_uart_data:	.type	object
 	.word	478
 	.byte	29,0,2,35,0,0,31
 	.byte	'Ifx_CPU_CPR_L_Bits',0,33,103,3
-	.word	59790
+	.word	59785
 	.byte	10
 	.byte	'_Ifx_CPU_CPR_U_Bits',0,33,106,16,4,11
 	.byte	'reserved_0',0,4
@@ -12262,7 +12262,7 @@ wifi_uart_data:	.type	object
 	.word	478
 	.byte	29,0,2,35,0,0,31
 	.byte	'Ifx_CPU_CPR_U_Bits',0,33,110,3
-	.word	59883
+	.word	59878
 	.byte	10
 	.byte	'_Ifx_CPU_CPU_ID_Bits',0,33,113,16,4,11
 	.byte	'MODREV',0,4
@@ -12275,7 +12275,7 @@ wifi_uart_data:	.type	object
 	.word	478
 	.byte	16,0,2,35,0,0,31
 	.byte	'Ifx_CPU_CPU_ID_Bits',0,33,118,3
-	.word	59976
+	.word	59971
 	.byte	10
 	.byte	'_Ifx_CPU_CPXE_Bits',0,33,121,16,4,11
 	.byte	'XE',0,4
@@ -12285,7 +12285,7 @@ wifi_uart_data:	.type	object
 	.word	478
 	.byte	24,0,2,35,0,0,31
 	.byte	'Ifx_CPU_CPXE_Bits',0,33,125,3
-	.word	60083
+	.word	60078
 	.byte	10
 	.byte	'_Ifx_CPU_CREVT_Bits',0,33,128,1,16,4,11
 	.byte	'EVTA',0,4
@@ -12307,7 +12307,7 @@ wifi_uart_data:	.type	object
 	.word	478
 	.byte	24,0,2,35,0,0,31
 	.byte	'Ifx_CPU_CREVT_Bits',0,33,136,1,3
-	.word	60170
+	.word	60165
 	.byte	10
 	.byte	'_Ifx_CPU_CUS_ID_Bits',0,33,139,1,16,4,11
 	.byte	'CID',0,4
@@ -12317,14 +12317,14 @@ wifi_uart_data:	.type	object
 	.word	478
 	.byte	29,0,2,35,0,0,31
 	.byte	'Ifx_CPU_CUS_ID_Bits',0,33,143,1,3
-	.word	60324
+	.word	60319
 	.byte	10
 	.byte	'_Ifx_CPU_D_Bits',0,33,146,1,16,4,11
 	.byte	'DATA',0,4
 	.word	478
 	.byte	32,0,2,35,0,0,31
 	.byte	'Ifx_CPU_D_Bits',0,33,149,1,3
-	.word	60418
+	.word	60413
 	.byte	10
 	.byte	'_Ifx_CPU_DATR_Bits',0,33,152,1,16,4,11
 	.byte	'reserved_0',0,4
@@ -12355,7 +12355,7 @@ wifi_uart_data:	.type	object
 	.word	478
 	.byte	16,0,2,35,0,0,31
 	.byte	'Ifx_CPU_DATR_Bits',0,33,163,1,3
-	.word	60481
+	.word	60476
 	.byte	10
 	.byte	'_Ifx_CPU_DBGSR_Bits',0,33,166,1,16,4,11
 	.byte	'DE',0,4
@@ -12386,7 +12386,7 @@ wifi_uart_data:	.type	object
 	.word	478
 	.byte	19,0,2,35,0,0,31
 	.byte	'Ifx_CPU_DBGSR_Bits',0,33,177,1,3
-	.word	60699
+	.word	60694
 	.byte	10
 	.byte	'_Ifx_CPU_DBGTCR_Bits',0,33,180,1,16,4,11
 	.byte	'DTA',0,4
@@ -12396,7 +12396,7 @@ wifi_uart_data:	.type	object
 	.word	478
 	.byte	31,0,2,35,0,0,31
 	.byte	'Ifx_CPU_DBGTCR_Bits',0,33,184,1,3
-	.word	60914
+	.word	60909
 	.byte	10
 	.byte	'_Ifx_CPU_DCON0_Bits',0,33,187,1,16,4,11
 	.byte	'reserved_0',0,4
@@ -12409,7 +12409,7 @@ wifi_uart_data:	.type	object
 	.word	478
 	.byte	30,0,2,35,0,0,31
 	.byte	'Ifx_CPU_DCON0_Bits',0,33,192,1,3
-	.word	61008
+	.word	61003
 	.byte	10
 	.byte	'_Ifx_CPU_DCON2_Bits',0,33,195,1,16,4,11
 	.byte	'DCACHE_SZE',0,4
@@ -12419,7 +12419,7 @@ wifi_uart_data:	.type	object
 	.word	478
 	.byte	16,0,2,35,0,0,31
 	.byte	'Ifx_CPU_DCON2_Bits',0,33,199,1,3
-	.word	61124
+	.word	61119
 	.byte	10
 	.byte	'_Ifx_CPU_DCX_Bits',0,33,202,1,16,4,11
 	.byte	'reserved_0',0,4
@@ -12429,21 +12429,21 @@ wifi_uart_data:	.type	object
 	.word	478
 	.byte	26,0,2,35,0,0,31
 	.byte	'Ifx_CPU_DCX_Bits',0,33,206,1,3
-	.word	61225
+	.word	61220
 	.byte	10
 	.byte	'_Ifx_CPU_DEADD_Bits',0,33,209,1,16,4,11
 	.byte	'ERROR_ADDRESS',0,4
 	.word	478
 	.byte	32,0,2,35,0,0,31
 	.byte	'Ifx_CPU_DEADD_Bits',0,33,212,1,3
-	.word	61318
+	.word	61313
 	.byte	10
 	.byte	'_Ifx_CPU_DIEAR_Bits',0,33,215,1,16,4,11
 	.byte	'TA',0,4
 	.word	478
 	.byte	32,0,2,35,0,0,31
 	.byte	'Ifx_CPU_DIEAR_Bits',0,33,218,1,3
-	.word	61398
+	.word	61393
 	.byte	10
 	.byte	'_Ifx_CPU_DIETR_Bits',0,33,221,1,16,4,11
 	.byte	'IED',0,4
@@ -12477,7 +12477,7 @@ wifi_uart_data:	.type	object
 	.word	478
 	.byte	18,0,2,35,0,0,31
 	.byte	'Ifx_CPU_DIETR_Bits',0,33,233,1,3
-	.word	61467
+	.word	61462
 	.byte	10
 	.byte	'_Ifx_CPU_DMS_Bits',0,33,236,1,16,4,11
 	.byte	'reserved_0',0,4
@@ -12487,7 +12487,7 @@ wifi_uart_data:	.type	object
 	.word	478
 	.byte	31,0,2,35,0,0,31
 	.byte	'Ifx_CPU_DMS_Bits',0,33,240,1,3
-	.word	61696
+	.word	61691
 	.byte	10
 	.byte	'_Ifx_CPU_DPR_L_Bits',0,33,243,1,16,4,11
 	.byte	'reserved_0',0,4
@@ -12497,7 +12497,7 @@ wifi_uart_data:	.type	object
 	.word	478
 	.byte	29,0,2,35,0,0,31
 	.byte	'Ifx_CPU_DPR_L_Bits',0,33,247,1,3
-	.word	61789
+	.word	61784
 	.byte	10
 	.byte	'_Ifx_CPU_DPR_U_Bits',0,33,250,1,16,4,11
 	.byte	'reserved_0',0,4
@@ -12507,7 +12507,7 @@ wifi_uart_data:	.type	object
 	.word	478
 	.byte	29,0,2,35,0,0,31
 	.byte	'Ifx_CPU_DPR_U_Bits',0,33,254,1,3
-	.word	61884
+	.word	61879
 	.byte	10
 	.byte	'_Ifx_CPU_DPRE_Bits',0,33,129,2,16,4,11
 	.byte	'RE',0,4
@@ -12517,7 +12517,7 @@ wifi_uart_data:	.type	object
 	.word	478
 	.byte	16,0,2,35,0,0,31
 	.byte	'Ifx_CPU_DPRE_Bits',0,33,133,2,3
-	.word	61979
+	.word	61974
 	.byte	10
 	.byte	'_Ifx_CPU_DPWE_Bits',0,33,136,2,16,4,11
 	.byte	'WE',0,4
@@ -12527,7 +12527,7 @@ wifi_uart_data:	.type	object
 	.word	478
 	.byte	16,0,2,35,0,0,31
 	.byte	'Ifx_CPU_DPWE_Bits',0,33,140,2,3
-	.word	62069
+	.word	62064
 	.byte	10
 	.byte	'_Ifx_CPU_DSTR_Bits',0,33,143,2,16,4,11
 	.byte	'SRE',0,4
@@ -12579,7 +12579,7 @@ wifi_uart_data:	.type	object
 	.word	478
 	.byte	7,0,2,35,0,0,31
 	.byte	'Ifx_CPU_DSTR_Bits',0,33,161,2,3
-	.word	62159
+	.word	62154
 	.byte	10
 	.byte	'_Ifx_CPU_EXEVT_Bits',0,33,164,2,16,4,11
 	.byte	'EVTA',0,4
@@ -12601,7 +12601,7 @@ wifi_uart_data:	.type	object
 	.word	478
 	.byte	24,0,2,35,0,0,31
 	.byte	'Ifx_CPU_EXEVT_Bits',0,33,172,2,3
-	.word	62483
+	.word	62478
 	.byte	10
 	.byte	'_Ifx_CPU_FCX_Bits',0,33,175,2,16,4,11
 	.byte	'FCXO',0,4
@@ -12614,7 +12614,7 @@ wifi_uart_data:	.type	object
 	.word	478
 	.byte	12,0,2,35,0,0,31
 	.byte	'Ifx_CPU_FCX_Bits',0,33,180,2,3
-	.word	62637
+	.word	62632
 	.byte	10
 	.byte	'_Ifx_CPU_FPU_TRAP_CON_Bits',0,33,183,2,16,4,11
 	.byte	'TST',0,4
@@ -12669,7 +12669,7 @@ wifi_uart_data:	.type	object
 	.word	478
 	.byte	1,0,2,35,0,0,31
 	.byte	'Ifx_CPU_FPU_TRAP_CON_Bits',0,33,202,2,3
-	.word	62743
+	.word	62738
 	.byte	10
 	.byte	'_Ifx_CPU_FPU_TRAP_OPC_Bits',0,33,205,2,16,4,11
 	.byte	'OPC',0,4
@@ -12688,35 +12688,35 @@ wifi_uart_data:	.type	object
 	.word	478
 	.byte	12,0,2,35,0,0,31
 	.byte	'Ifx_CPU_FPU_TRAP_OPC_Bits',0,33,212,2,3
-	.word	63092
+	.word	63087
 	.byte	10
 	.byte	'_Ifx_CPU_FPU_TRAP_PC_Bits',0,33,215,2,16,4,11
 	.byte	'PC',0,4
 	.word	478
 	.byte	32,0,2,35,0,0,31
 	.byte	'Ifx_CPU_FPU_TRAP_PC_Bits',0,33,218,2,3
-	.word	63252
+	.word	63247
 	.byte	10
 	.byte	'_Ifx_CPU_FPU_TRAP_SRC1_Bits',0,33,221,2,16,4,11
 	.byte	'SRC1',0,4
 	.word	478
 	.byte	32,0,2,35,0,0,31
 	.byte	'Ifx_CPU_FPU_TRAP_SRC1_Bits',0,33,224,2,3
-	.word	63333
+	.word	63328
 	.byte	10
 	.byte	'_Ifx_CPU_FPU_TRAP_SRC2_Bits',0,33,227,2,16,4,11
 	.byte	'SRC2',0,4
 	.word	478
 	.byte	32,0,2,35,0,0,31
 	.byte	'Ifx_CPU_FPU_TRAP_SRC2_Bits',0,33,230,2,3
-	.word	63420
+	.word	63415
 	.byte	10
 	.byte	'_Ifx_CPU_FPU_TRAP_SRC3_Bits',0,33,233,2,16,4,11
 	.byte	'SRC3',0,4
 	.word	478
 	.byte	32,0,2,35,0,0,31
 	.byte	'Ifx_CPU_FPU_TRAP_SRC3_Bits',0,33,236,2,3
-	.word	63507
+	.word	63502
 	.byte	10
 	.byte	'_Ifx_CPU_ICNT_Bits',0,33,239,2,16,4,11
 	.byte	'CountValue',0,4
@@ -12726,7 +12726,7 @@ wifi_uart_data:	.type	object
 	.word	478
 	.byte	1,0,2,35,0,0,31
 	.byte	'Ifx_CPU_ICNT_Bits',0,33,243,2,3
-	.word	63594
+	.word	63589
 	.byte	10
 	.byte	'_Ifx_CPU_ICR_Bits',0,33,246,2,16,4,11
 	.byte	'CCPN',0,4
@@ -12745,14 +12745,14 @@ wifi_uart_data:	.type	object
 	.word	478
 	.byte	6,0,2,35,0,0,31
 	.byte	'Ifx_CPU_ICR_Bits',0,33,253,2,3
-	.word	63685
+	.word	63680
 	.byte	10
 	.byte	'_Ifx_CPU_ISP_Bits',0,33,128,3,16,4,11
 	.byte	'ISP',0,4
 	.word	478
 	.byte	32,0,2,35,0,0,31
 	.byte	'Ifx_CPU_ISP_Bits',0,33,131,3,3
-	.word	63828
+	.word	63823
 	.byte	10
 	.byte	'_Ifx_CPU_LCX_Bits',0,33,134,3,16,4,11
 	.byte	'LCXO',0,4
@@ -12765,7 +12765,7 @@ wifi_uart_data:	.type	object
 	.word	478
 	.byte	12,0,2,35,0,0,31
 	.byte	'Ifx_CPU_LCX_Bits',0,33,139,3,3
-	.word	63894
+	.word	63889
 	.byte	10
 	.byte	'_Ifx_CPU_M1CNT_Bits',0,33,142,3,16,4,11
 	.byte	'CountValue',0,4
@@ -12775,7 +12775,7 @@ wifi_uart_data:	.type	object
 	.word	478
 	.byte	1,0,2,35,0,0,31
 	.byte	'Ifx_CPU_M1CNT_Bits',0,33,146,3,3
-	.word	64000
+	.word	63995
 	.byte	10
 	.byte	'_Ifx_CPU_M2CNT_Bits',0,33,149,3,16,4,11
 	.byte	'CountValue',0,4
@@ -12785,7 +12785,7 @@ wifi_uart_data:	.type	object
 	.word	478
 	.byte	1,0,2,35,0,0,31
 	.byte	'Ifx_CPU_M2CNT_Bits',0,33,153,3,3
-	.word	64093
+	.word	64088
 	.byte	10
 	.byte	'_Ifx_CPU_M3CNT_Bits',0,33,156,3,16,4,11
 	.byte	'CountValue',0,4
@@ -12795,7 +12795,7 @@ wifi_uart_data:	.type	object
 	.word	478
 	.byte	1,0,2,35,0,0,31
 	.byte	'Ifx_CPU_M3CNT_Bits',0,33,160,3,3
-	.word	64186
+	.word	64181
 	.byte	10
 	.byte	'_Ifx_CPU_PC_Bits',0,33,163,3,16,4,11
 	.byte	'reserved_0',0,4
@@ -12805,7 +12805,7 @@ wifi_uart_data:	.type	object
 	.word	478
 	.byte	31,0,2,35,0,0,31
 	.byte	'Ifx_CPU_PC_Bits',0,33,167,3,3
-	.word	64279
+	.word	64274
 	.byte	10
 	.byte	'_Ifx_CPU_PCON0_Bits',0,33,170,3,16,4,11
 	.byte	'reserved_0',0,4
@@ -12818,7 +12818,7 @@ wifi_uart_data:	.type	object
 	.word	478
 	.byte	30,0,2,35,0,0,31
 	.byte	'Ifx_CPU_PCON0_Bits',0,33,175,3,3
-	.word	64364
+	.word	64359
 	.byte	10
 	.byte	'_Ifx_CPU_PCON1_Bits',0,33,178,3,16,4,11
 	.byte	'PCINV',0,4
@@ -12831,7 +12831,7 @@ wifi_uart_data:	.type	object
 	.word	478
 	.byte	30,0,2,35,0,0,31
 	.byte	'Ifx_CPU_PCON1_Bits',0,33,183,3,3
-	.word	64480
+	.word	64475
 	.byte	10
 	.byte	'_Ifx_CPU_PCON2_Bits',0,33,186,3,16,4,11
 	.byte	'PCACHE_SZE',0,4
@@ -12841,7 +12841,7 @@ wifi_uart_data:	.type	object
 	.word	478
 	.byte	16,0,2,35,0,0,31
 	.byte	'Ifx_CPU_PCON2_Bits',0,33,190,3,3
-	.word	64591
+	.word	64586
 	.byte	10
 	.byte	'_Ifx_CPU_PCXI_Bits',0,33,193,3,16,4,11
 	.byte	'PCXO',0,4
@@ -12860,14 +12860,14 @@ wifi_uart_data:	.type	object
 	.word	478
 	.byte	10,0,2,35,0,0,31
 	.byte	'Ifx_CPU_PCXI_Bits',0,33,200,3,3
-	.word	64692
+	.word	64687
 	.byte	10
 	.byte	'_Ifx_CPU_PIEAR_Bits',0,33,203,3,16,4,11
 	.byte	'TA',0,4
 	.word	478
 	.byte	32,0,2,35,0,0,31
 	.byte	'Ifx_CPU_PIEAR_Bits',0,33,206,3,3
-	.word	64822
+	.word	64817
 	.byte	10
 	.byte	'_Ifx_CPU_PIETR_Bits',0,33,209,3,16,4,11
 	.byte	'IED',0,4
@@ -12901,7 +12901,7 @@ wifi_uart_data:	.type	object
 	.word	478
 	.byte	18,0,2,35,0,0,31
 	.byte	'Ifx_CPU_PIETR_Bits',0,33,221,3,3
-	.word	64891
+	.word	64886
 	.byte	10
 	.byte	'_Ifx_CPU_PMA0_Bits',0,33,224,3,16,4,11
 	.byte	'reserved_0',0,4
@@ -12914,7 +12914,7 @@ wifi_uart_data:	.type	object
 	.word	478
 	.byte	16,0,2,35,0,0,31
 	.byte	'Ifx_CPU_PMA0_Bits',0,33,229,3,3
-	.word	65120
+	.word	65115
 	.byte	10
 	.byte	'_Ifx_CPU_PMA1_Bits',0,33,232,3,16,4,11
 	.byte	'reserved_0',0,4
@@ -12927,7 +12927,7 @@ wifi_uart_data:	.type	object
 	.word	478
 	.byte	16,0,2,35,0,0,31
 	.byte	'Ifx_CPU_PMA1_Bits',0,33,237,3,3
-	.word	65233
+	.word	65228
 	.byte	10
 	.byte	'_Ifx_CPU_PMA2_Bits',0,33,240,3,16,4,11
 	.byte	'PSI',0,4
@@ -12937,7 +12937,7 @@ wifi_uart_data:	.type	object
 	.word	478
 	.byte	16,0,2,35,0,0,31
 	.byte	'Ifx_CPU_PMA2_Bits',0,33,244,3,3
-	.word	65346
+	.word	65341
 	.byte	10
 	.byte	'_Ifx_CPU_PSTR_Bits',0,33,247,3,16,4,11
 	.byte	'FRE',0,4
@@ -12965,7 +12965,7 @@ wifi_uart_data:	.type	object
 	.word	478
 	.byte	17,0,2,35,0,0,31
 	.byte	'Ifx_CPU_PSTR_Bits',0,33,129,4,3
-	.word	65437
+	.word	65432
 	.byte	10
 	.byte	'_Ifx_CPU_PSW_Bits',0,33,132,4,16,4,11
 	.byte	'CDC',0,4
@@ -13008,7 +13008,7 @@ wifi_uart_data:	.type	object
 	.word	478
 	.byte	1,0,2,35,0,0,31
 	.byte	'Ifx_CPU_PSW_Bits',0,33,147,4,3
-	.word	65640
+	.word	65635
 	.byte	10
 	.byte	'_Ifx_CPU_SEGEN_Bits',0,33,150,4,16,4,11
 	.byte	'ADFLIP',0,4
@@ -13024,7 +13024,7 @@ wifi_uart_data:	.type	object
 	.word	478
 	.byte	1,0,2,35,0,0,31
 	.byte	'Ifx_CPU_SEGEN_Bits',0,33,156,4,3
-	.word	65883
+	.word	65878
 	.byte	10
 	.byte	'_Ifx_CPU_SMACON_Bits',0,33,159,4,16,4,11
 	.byte	'PC',0,4
@@ -13058,35 +13058,35 @@ wifi_uart_data:	.type	object
 	.word	478
 	.byte	7,0,2,35,0,0,31
 	.byte	'Ifx_CPU_SMACON_Bits',0,33,171,4,3
-	.word	66011
+	.word	66006
 	.byte	10
 	.byte	'_Ifx_CPU_SPROT_ACCENA_Bits',0,33,174,4,16,4,11
 	.byte	'EN',0,4
 	.word	455
 	.byte	32,0,2,35,0,0,31
 	.byte	'Ifx_CPU_SPROT_ACCENA_Bits',0,33,177,4,3
-	.word	66252
+	.word	66247
 	.byte	10
 	.byte	'_Ifx_CPU_SPROT_ACCENB_Bits',0,33,180,4,16,4,11
 	.byte	'reserved_0',0,4
 	.word	455
 	.byte	32,0,2,35,0,0,31
 	.byte	'Ifx_CPU_SPROT_ACCENB_Bits',0,33,183,4,3
-	.word	66335
+	.word	66330
 	.byte	10
 	.byte	'_Ifx_CPU_SPROT_RGN_ACCENA_Bits',0,33,186,4,16,4,11
 	.byte	'EN',0,4
 	.word	455
 	.byte	32,0,2,35,0,0,31
 	.byte	'Ifx_CPU_SPROT_RGN_ACCENA_Bits',0,33,189,4,3
-	.word	66426
+	.word	66421
 	.byte	10
 	.byte	'_Ifx_CPU_SPROT_RGN_ACCENB_Bits',0,33,192,4,16,4,11
 	.byte	'reserved_0',0,4
 	.word	455
 	.byte	32,0,2,35,0,0,31
 	.byte	'Ifx_CPU_SPROT_RGN_ACCENB_Bits',0,33,195,4,3
-	.word	66517
+	.word	66512
 	.byte	10
 	.byte	'_Ifx_CPU_SPROT_RGN_LA_Bits',0,33,198,4,16,4,11
 	.byte	'reserved_0',0,1
@@ -13096,7 +13096,7 @@ wifi_uart_data:	.type	object
 	.word	455
 	.byte	27,0,2,35,0,0,31
 	.byte	'Ifx_CPU_SPROT_RGN_LA_Bits',0,33,202,4,3
-	.word	66616
+	.word	66611
 	.byte	10
 	.byte	'_Ifx_CPU_SPROT_RGN_UA_Bits',0,33,205,4,16,4,11
 	.byte	'reserved_0',0,1
@@ -13106,7 +13106,7 @@ wifi_uart_data:	.type	object
 	.word	455
 	.byte	27,0,2,35,0,0,31
 	.byte	'Ifx_CPU_SPROT_RGN_UA_Bits',0,33,209,4,3
-	.word	66723
+	.word	66718
 	.byte	10
 	.byte	'_Ifx_CPU_SWEVT_Bits',0,33,212,4,16,4,11
 	.byte	'EVTA',0,4
@@ -13128,7 +13128,7 @@ wifi_uart_data:	.type	object
 	.word	478
 	.byte	24,0,2,35,0,0,31
 	.byte	'Ifx_CPU_SWEVT_Bits',0,33,220,4,3
-	.word	66830
+	.word	66825
 	.byte	10
 	.byte	'_Ifx_CPU_SYSCON_Bits',0,33,223,4,16,4,11
 	.byte	'FCDSF',0,4
@@ -13150,7 +13150,7 @@ wifi_uart_data:	.type	object
 	.word	478
 	.byte	27,0,2,35,0,0,31
 	.byte	'Ifx_CPU_SYSCON_Bits',0,33,231,4,3
-	.word	66984
+	.word	66979
 	.byte	10
 	.byte	'_Ifx_CPU_TASK_ASI_Bits',0,33,234,4,16,4,11
 	.byte	'ASI',0,4
@@ -13160,7 +13160,7 @@ wifi_uart_data:	.type	object
 	.word	478
 	.byte	27,0,2,35,0,0,31
 	.byte	'Ifx_CPU_TASK_ASI_Bits',0,33,238,4,3
-	.word	67145
+	.word	67140
 	.byte	10
 	.byte	'_Ifx_CPU_TPS_CON_Bits',0,33,241,4,16,4,11
 	.byte	'TEXP0',0,4
@@ -13182,21 +13182,21 @@ wifi_uart_data:	.type	object
 	.word	478
 	.byte	15,0,2,35,0,0,31
 	.byte	'Ifx_CPU_TPS_CON_Bits',0,33,249,4,3
-	.word	67243
+	.word	67238
 	.byte	10
 	.byte	'_Ifx_CPU_TPS_TIMER_Bits',0,33,252,4,16,4,11
 	.byte	'Timer',0,4
 	.word	478
 	.byte	32,0,2,35,0,0,31
 	.byte	'Ifx_CPU_TPS_TIMER_Bits',0,33,255,4,3
-	.word	67415
+	.word	67410
 	.byte	10
 	.byte	'_Ifx_CPU_TR_ADR_Bits',0,33,130,5,16,4,11
 	.byte	'ADDR',0,4
 	.word	478
 	.byte	32,0,2,35,0,0,31
 	.byte	'Ifx_CPU_TR_ADR_Bits',0,33,133,5,3
-	.word	67495
+	.word	67490
 	.byte	10
 	.byte	'_Ifx_CPU_TR_EVT_Bits',0,33,136,5,16,4,11
 	.byte	'EVTA',0,4
@@ -13245,7 +13245,7 @@ wifi_uart_data:	.type	object
 	.word	478
 	.byte	3,0,2,35,0,0,31
 	.byte	'Ifx_CPU_TR_EVT_Bits',0,33,153,5,3
-	.word	67568
+	.word	67563
 	.byte	10
 	.byte	'_Ifx_CPU_TRIG_ACC_Bits',0,33,156,5,16,4,11
 	.byte	'T0',0,4
@@ -13276,7 +13276,7 @@ wifi_uart_data:	.type	object
 	.word	478
 	.byte	24,0,2,35,0,0,31
 	.byte	'Ifx_CPU_TRIG_ACC_Bits',0,33,167,5,3
-	.word	67886
+	.word	67881
 	.byte	12,33,175,5,9,4,13
 	.byte	'U',0
 	.word	455
@@ -13285,10 +13285,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	59104
+	.word	59099
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_CPU_A',0,33,180,5,3
-	.word	68081
+	.word	68076
 	.byte	12,33,183,5,9,4,13
 	.byte	'U',0
 	.word	455
@@ -13297,10 +13297,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	59165
+	.word	59160
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_CPU_BIV',0,33,188,5,3
-	.word	68140
+	.word	68135
 	.byte	12,33,191,5,9,4,13
 	.byte	'U',0
 	.word	455
@@ -13309,10 +13309,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	59244
+	.word	59239
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_CPU_BTV',0,33,196,5,3
-	.word	68201
+	.word	68196
 	.byte	12,33,199,5,9,4,13
 	.byte	'U',0
 	.word	455
@@ -13321,10 +13321,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	59330
+	.word	59325
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_CPU_CCNT',0,33,204,5,3
-	.word	68262
+	.word	68257
 	.byte	12,33,207,5,9,4,13
 	.byte	'U',0
 	.word	455
@@ -13333,10 +13333,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	59419
+	.word	59414
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_CPU_CCTRL',0,33,212,5,3
-	.word	68324
+	.word	68319
 	.byte	12,33,215,5,9,4,13
 	.byte	'U',0
 	.word	455
@@ -13345,10 +13345,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	59565
+	.word	59560
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_CPU_COMPAT',0,33,220,5,3
-	.word	68387
+	.word	68382
 	.byte	12,33,223,5,9,4,13
 	.byte	'U',0
 	.word	455
@@ -13357,10 +13357,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	59692
+	.word	59687
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_CPU_CORE_ID',0,33,228,5,3
-	.word	68451
+	.word	68446
 	.byte	12,33,231,5,9,4,13
 	.byte	'U',0
 	.word	455
@@ -13369,10 +13369,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	59790
+	.word	59785
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_CPU_CPR_L',0,33,236,5,3
-	.word	68516
+	.word	68511
 	.byte	12,33,239,5,9,4,13
 	.byte	'U',0
 	.word	455
@@ -13381,10 +13381,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	59883
+	.word	59878
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_CPU_CPR_U',0,33,244,5,3
-	.word	68579
+	.word	68574
 	.byte	12,33,247,5,9,4,13
 	.byte	'U',0
 	.word	455
@@ -13393,10 +13393,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	59976
+	.word	59971
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_CPU_CPU_ID',0,33,252,5,3
-	.word	68642
+	.word	68637
 	.byte	12,33,255,5,9,4,13
 	.byte	'U',0
 	.word	455
@@ -13405,10 +13405,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	60083
+	.word	60078
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_CPU_CPXE',0,33,132,6,3
-	.word	68706
+	.word	68701
 	.byte	12,33,135,6,9,4,13
 	.byte	'U',0
 	.word	455
@@ -13417,10 +13417,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	60170
+	.word	60165
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_CPU_CREVT',0,33,140,6,3
-	.word	68768
+	.word	68763
 	.byte	12,33,143,6,9,4,13
 	.byte	'U',0
 	.word	455
@@ -13429,10 +13429,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	60324
+	.word	60319
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_CPU_CUS_ID',0,33,148,6,3
-	.word	68831
+	.word	68826
 	.byte	12,33,151,6,9,4,13
 	.byte	'U',0
 	.word	455
@@ -13441,10 +13441,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	60418
+	.word	60413
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_CPU_D',0,33,156,6,3
-	.word	68895
+	.word	68890
 	.byte	12,33,159,6,9,4,13
 	.byte	'U',0
 	.word	455
@@ -13453,10 +13453,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	60481
+	.word	60476
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_CPU_DATR',0,33,164,6,3
-	.word	68954
+	.word	68949
 	.byte	12,33,167,6,9,4,13
 	.byte	'U',0
 	.word	455
@@ -13465,10 +13465,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	60699
+	.word	60694
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_CPU_DBGSR',0,33,172,6,3
-	.word	69016
+	.word	69011
 	.byte	12,33,175,6,9,4,13
 	.byte	'U',0
 	.word	455
@@ -13477,10 +13477,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	60914
+	.word	60909
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_CPU_DBGTCR',0,33,180,6,3
-	.word	69079
+	.word	69074
 	.byte	12,33,183,6,9,4,13
 	.byte	'U',0
 	.word	455
@@ -13489,10 +13489,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	61008
+	.word	61003
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_CPU_DCON0',0,33,188,6,3
-	.word	69143
+	.word	69138
 	.byte	12,33,191,6,9,4,13
 	.byte	'U',0
 	.word	455
@@ -13501,10 +13501,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	61124
+	.word	61119
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_CPU_DCON2',0,33,196,6,3
-	.word	69206
+	.word	69201
 	.byte	12,33,199,6,9,4,13
 	.byte	'U',0
 	.word	455
@@ -13513,10 +13513,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	61225
+	.word	61220
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_CPU_DCX',0,33,204,6,3
-	.word	69269
+	.word	69264
 	.byte	12,33,207,6,9,4,13
 	.byte	'U',0
 	.word	455
@@ -13525,10 +13525,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	61318
+	.word	61313
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_CPU_DEADD',0,33,212,6,3
-	.word	69330
+	.word	69325
 	.byte	12,33,215,6,9,4,13
 	.byte	'U',0
 	.word	455
@@ -13537,10 +13537,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	61398
+	.word	61393
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_CPU_DIEAR',0,33,220,6,3
-	.word	69393
+	.word	69388
 	.byte	12,33,223,6,9,4,13
 	.byte	'U',0
 	.word	455
@@ -13549,10 +13549,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	61467
+	.word	61462
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_CPU_DIETR',0,33,228,6,3
-	.word	69456
+	.word	69451
 	.byte	12,33,231,6,9,4,13
 	.byte	'U',0
 	.word	455
@@ -13561,10 +13561,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	61696
+	.word	61691
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_CPU_DMS',0,33,236,6,3
-	.word	69519
+	.word	69514
 	.byte	12,33,239,6,9,4,13
 	.byte	'U',0
 	.word	455
@@ -13573,10 +13573,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	61789
+	.word	61784
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_CPU_DPR_L',0,33,244,6,3
-	.word	69580
+	.word	69575
 	.byte	12,33,247,6,9,4,13
 	.byte	'U',0
 	.word	455
@@ -13585,10 +13585,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	61884
+	.word	61879
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_CPU_DPR_U',0,33,252,6,3
-	.word	69643
+	.word	69638
 	.byte	12,33,255,6,9,4,13
 	.byte	'U',0
 	.word	455
@@ -13597,10 +13597,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	61979
+	.word	61974
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_CPU_DPRE',0,33,132,7,3
-	.word	69706
+	.word	69701
 	.byte	12,33,135,7,9,4,13
 	.byte	'U',0
 	.word	455
@@ -13609,10 +13609,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	62069
+	.word	62064
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_CPU_DPWE',0,33,140,7,3
-	.word	69768
+	.word	69763
 	.byte	12,33,143,7,9,4,13
 	.byte	'U',0
 	.word	455
@@ -13621,10 +13621,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	62159
+	.word	62154
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_CPU_DSTR',0,33,148,7,3
-	.word	69830
+	.word	69825
 	.byte	12,33,151,7,9,4,13
 	.byte	'U',0
 	.word	455
@@ -13633,10 +13633,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	62483
+	.word	62478
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_CPU_EXEVT',0,33,156,7,3
-	.word	69892
+	.word	69887
 	.byte	12,33,159,7,9,4,13
 	.byte	'U',0
 	.word	455
@@ -13645,10 +13645,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	62637
+	.word	62632
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_CPU_FCX',0,33,164,7,3
-	.word	69955
+	.word	69950
 	.byte	12,33,167,7,9,4,13
 	.byte	'U',0
 	.word	455
@@ -13657,10 +13657,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	62743
+	.word	62738
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_CPU_FPU_TRAP_CON',0,33,172,7,3
-	.word	70016
+	.word	70011
 	.byte	12,33,175,7,9,4,13
 	.byte	'U',0
 	.word	455
@@ -13669,10 +13669,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	63092
+	.word	63087
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_CPU_FPU_TRAP_OPC',0,33,180,7,3
-	.word	70086
+	.word	70081
 	.byte	12,33,183,7,9,4,13
 	.byte	'U',0
 	.word	455
@@ -13681,10 +13681,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	63252
+	.word	63247
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_CPU_FPU_TRAP_PC',0,33,188,7,3
-	.word	70156
+	.word	70151
 	.byte	12,33,191,7,9,4,13
 	.byte	'U',0
 	.word	455
@@ -13693,10 +13693,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	63333
+	.word	63328
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_CPU_FPU_TRAP_SRC1',0,33,196,7,3
-	.word	70225
+	.word	70220
 	.byte	12,33,199,7,9,4,13
 	.byte	'U',0
 	.word	455
@@ -13705,10 +13705,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	63420
+	.word	63415
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_CPU_FPU_TRAP_SRC2',0,33,204,7,3
-	.word	70296
+	.word	70291
 	.byte	12,33,207,7,9,4,13
 	.byte	'U',0
 	.word	455
@@ -13717,10 +13717,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	63507
+	.word	63502
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_CPU_FPU_TRAP_SRC3',0,33,212,7,3
-	.word	70367
+	.word	70362
 	.byte	12,33,215,7,9,4,13
 	.byte	'U',0
 	.word	455
@@ -13729,10 +13729,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	63594
+	.word	63589
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_CPU_ICNT',0,33,220,7,3
-	.word	70438
+	.word	70433
 	.byte	12,33,223,7,9,4,13
 	.byte	'U',0
 	.word	455
@@ -13741,10 +13741,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	63685
+	.word	63680
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_CPU_ICR',0,33,228,7,3
-	.word	70500
+	.word	70495
 	.byte	12,33,231,7,9,4,13
 	.byte	'U',0
 	.word	455
@@ -13753,10 +13753,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	63828
+	.word	63823
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_CPU_ISP',0,33,236,7,3
-	.word	70561
+	.word	70556
 	.byte	12,33,239,7,9,4,13
 	.byte	'U',0
 	.word	455
@@ -13765,10 +13765,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	63894
+	.word	63889
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_CPU_LCX',0,33,244,7,3
-	.word	70622
+	.word	70617
 	.byte	12,33,247,7,9,4,13
 	.byte	'U',0
 	.word	455
@@ -13777,10 +13777,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	64000
+	.word	63995
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_CPU_M1CNT',0,33,252,7,3
-	.word	70683
+	.word	70678
 	.byte	12,33,255,7,9,4,13
 	.byte	'U',0
 	.word	455
@@ -13789,10 +13789,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	64093
+	.word	64088
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_CPU_M2CNT',0,33,132,8,3
-	.word	70746
+	.word	70741
 	.byte	12,33,135,8,9,4,13
 	.byte	'U',0
 	.word	455
@@ -13801,10 +13801,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	64186
+	.word	64181
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_CPU_M3CNT',0,33,140,8,3
-	.word	70809
+	.word	70804
 	.byte	12,33,143,8,9,4,13
 	.byte	'U',0
 	.word	455
@@ -13813,10 +13813,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	64279
+	.word	64274
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_CPU_PC',0,33,148,8,3
-	.word	70872
+	.word	70867
 	.byte	12,33,151,8,9,4,13
 	.byte	'U',0
 	.word	455
@@ -13825,10 +13825,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	64364
+	.word	64359
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_CPU_PCON0',0,33,156,8,3
-	.word	70932
+	.word	70927
 	.byte	12,33,159,8,9,4,13
 	.byte	'U',0
 	.word	455
@@ -13837,10 +13837,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	64480
+	.word	64475
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_CPU_PCON1',0,33,164,8,3
-	.word	70995
+	.word	70990
 	.byte	12,33,167,8,9,4,13
 	.byte	'U',0
 	.word	455
@@ -13849,10 +13849,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	64591
+	.word	64586
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_CPU_PCON2',0,33,172,8,3
-	.word	71058
+	.word	71053
 	.byte	12,33,175,8,9,4,13
 	.byte	'U',0
 	.word	455
@@ -13861,10 +13861,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	64692
+	.word	64687
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_CPU_PCXI',0,33,180,8,3
-	.word	71121
+	.word	71116
 	.byte	12,33,183,8,9,4,13
 	.byte	'U',0
 	.word	455
@@ -13873,10 +13873,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	64822
+	.word	64817
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_CPU_PIEAR',0,33,188,8,3
-	.word	71183
+	.word	71178
 	.byte	12,33,191,8,9,4,13
 	.byte	'U',0
 	.word	455
@@ -13885,10 +13885,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	64891
+	.word	64886
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_CPU_PIETR',0,33,196,8,3
-	.word	71246
+	.word	71241
 	.byte	12,33,199,8,9,4,13
 	.byte	'U',0
 	.word	455
@@ -13897,10 +13897,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	65120
+	.word	65115
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_CPU_PMA0',0,33,204,8,3
-	.word	71309
+	.word	71304
 	.byte	12,33,207,8,9,4,13
 	.byte	'U',0
 	.word	455
@@ -13909,10 +13909,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	65233
+	.word	65228
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_CPU_PMA1',0,33,212,8,3
-	.word	71371
+	.word	71366
 	.byte	12,33,215,8,9,4,13
 	.byte	'U',0
 	.word	455
@@ -13921,10 +13921,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	65346
+	.word	65341
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_CPU_PMA2',0,33,220,8,3
-	.word	71433
+	.word	71428
 	.byte	12,33,223,8,9,4,13
 	.byte	'U',0
 	.word	455
@@ -13933,10 +13933,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	65437
+	.word	65432
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_CPU_PSTR',0,33,228,8,3
-	.word	71495
+	.word	71490
 	.byte	12,33,231,8,9,4,13
 	.byte	'U',0
 	.word	455
@@ -13945,10 +13945,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	65640
+	.word	65635
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_CPU_PSW',0,33,236,8,3
-	.word	71557
+	.word	71552
 	.byte	12,33,239,8,9,4,13
 	.byte	'U',0
 	.word	455
@@ -13957,10 +13957,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	65883
+	.word	65878
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_CPU_SEGEN',0,33,244,8,3
-	.word	71618
+	.word	71613
 	.byte	12,33,247,8,9,4,13
 	.byte	'U',0
 	.word	455
@@ -13969,10 +13969,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	66011
+	.word	66006
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_CPU_SMACON',0,33,252,8,3
-	.word	71681
+	.word	71676
 	.byte	12,33,255,8,9,4,13
 	.byte	'U',0
 	.word	455
@@ -13981,10 +13981,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	66252
+	.word	66247
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_CPU_SPROT_ACCENA',0,33,132,9,3
-	.word	71745
+	.word	71740
 	.byte	12,33,135,9,9,4,13
 	.byte	'U',0
 	.word	455
@@ -13993,10 +13993,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	66335
+	.word	66330
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_CPU_SPROT_ACCENB',0,33,140,9,3
-	.word	71815
+	.word	71810
 	.byte	12,33,143,9,9,4,13
 	.byte	'U',0
 	.word	455
@@ -14005,10 +14005,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	66426
+	.word	66421
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_CPU_SPROT_RGN_ACCENA',0,33,148,9,3
-	.word	71885
+	.word	71880
 	.byte	12,33,151,9,9,4,13
 	.byte	'U',0
 	.word	455
@@ -14017,10 +14017,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	66517
+	.word	66512
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_CPU_SPROT_RGN_ACCENB',0,33,156,9,3
-	.word	71959
+	.word	71954
 	.byte	12,33,159,9,9,4,13
 	.byte	'U',0
 	.word	455
@@ -14029,10 +14029,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	66616
+	.word	66611
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_CPU_SPROT_RGN_LA',0,33,164,9,3
-	.word	72033
+	.word	72028
 	.byte	12,33,167,9,9,4,13
 	.byte	'U',0
 	.word	455
@@ -14041,10 +14041,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	66723
+	.word	66718
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_CPU_SPROT_RGN_UA',0,33,172,9,3
-	.word	72103
+	.word	72098
 	.byte	12,33,175,9,9,4,13
 	.byte	'U',0
 	.word	455
@@ -14053,10 +14053,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	66830
+	.word	66825
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_CPU_SWEVT',0,33,180,9,3
-	.word	72173
+	.word	72168
 	.byte	12,33,183,9,9,4,13
 	.byte	'U',0
 	.word	455
@@ -14065,10 +14065,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	66984
+	.word	66979
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_CPU_SYSCON',0,33,188,9,3
-	.word	72236
+	.word	72231
 	.byte	12,33,191,9,9,4,13
 	.byte	'U',0
 	.word	455
@@ -14077,10 +14077,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	67145
+	.word	67140
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_CPU_TASK_ASI',0,33,196,9,3
-	.word	72300
+	.word	72295
 	.byte	12,33,199,9,9,4,13
 	.byte	'U',0
 	.word	455
@@ -14089,10 +14089,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	67243
+	.word	67238
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_CPU_TPS_CON',0,33,204,9,3
-	.word	72366
+	.word	72361
 	.byte	12,33,207,9,9,4,13
 	.byte	'U',0
 	.word	455
@@ -14101,10 +14101,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	67415
+	.word	67410
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_CPU_TPS_TIMER',0,33,212,9,3
-	.word	72431
+	.word	72426
 	.byte	12,33,215,9,9,4,13
 	.byte	'U',0
 	.word	455
@@ -14113,10 +14113,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	67495
+	.word	67490
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_CPU_TR_ADR',0,33,220,9,3
-	.word	72498
+	.word	72493
 	.byte	12,33,223,9,9,4,13
 	.byte	'U',0
 	.word	455
@@ -14125,10 +14125,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	67568
+	.word	67563
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_CPU_TR_EVT',0,33,228,9,3
-	.word	72562
+	.word	72557
 	.byte	12,33,231,9,9,4,13
 	.byte	'U',0
 	.word	455
@@ -14137,78 +14137,78 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	67886
+	.word	67881
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_CPU_TRIG_ACC',0,33,236,9,3
-	.word	72626
+	.word	72621
 	.byte	10
 	.byte	'_Ifx_CPU_CPR',0,33,247,9,25,8,13
 	.byte	'L',0
-	.word	68516
+	.word	68511
 	.byte	4,2,35,0,13
 	.byte	'U',0
-	.word	68579
+	.word	68574
 	.byte	4,2,35,4,0,14
-	.word	72692
+	.word	72687
 	.byte	31
 	.byte	'Ifx_CPU_CPR',0,33,251,9,3
-	.word	72734
+	.word	72729
 	.byte	10
 	.byte	'_Ifx_CPU_DPR',0,33,254,9,25,8,13
 	.byte	'L',0
-	.word	69580
+	.word	69575
 	.byte	4,2,35,0,13
 	.byte	'U',0
-	.word	69643
+	.word	69638
 	.byte	4,2,35,4,0,14
-	.word	72760
+	.word	72755
 	.byte	31
 	.byte	'Ifx_CPU_DPR',0,33,130,10,3
-	.word	72802
+	.word	72797
 	.byte	10
 	.byte	'_Ifx_CPU_SPROT_RGN',0,33,133,10,25,16,13
 	.byte	'LA',0
-	.word	72033
+	.word	72028
 	.byte	4,2,35,0,13
 	.byte	'UA',0
-	.word	72103
+	.word	72098
 	.byte	4,2,35,4,13
 	.byte	'ACCENA',0
-	.word	71885
+	.word	71880
 	.byte	4,2,35,8,13
 	.byte	'ACCENB',0
-	.word	71959
+	.word	71954
 	.byte	4,2,35,12,0,14
-	.word	72828
+	.word	72823
 	.byte	31
 	.byte	'Ifx_CPU_SPROT_RGN',0,33,139,10,3
-	.word	72910
+	.word	72905
 	.byte	15,12
-	.word	72431
+	.word	72426
 	.byte	16,2,0,10
 	.byte	'_Ifx_CPU_TPS',0,33,142,10,25,16,13
 	.byte	'CON',0
-	.word	72366
+	.word	72361
 	.byte	4,2,35,0,13
 	.byte	'TIMER',0
-	.word	72942
+	.word	72937
 	.byte	12,2,35,4,0,14
-	.word	72951
+	.word	72946
 	.byte	31
 	.byte	'Ifx_CPU_TPS',0,33,146,10,3
-	.word	72999
+	.word	72994
 	.byte	10
 	.byte	'_Ifx_CPU_TR',0,33,149,10,25,8,13
 	.byte	'EVT',0
-	.word	72562
+	.word	72557
 	.byte	4,2,35,0,13
 	.byte	'ADR',0
-	.word	72498
+	.word	72493
 	.byte	4,2,35,4,0,14
-	.word	73025
+	.word	73020
 	.byte	31
 	.byte	'Ifx_CPU_TR',0,33,153,10,3
-	.word	73070
+	.word	73065
 	.byte	15,176,32
 	.word	630
 	.byte	16,175,32,0,15,208,223,1
@@ -14226,33 +14226,33 @@ wifi_uart_data:	.type	object
 	.byte	16,251,23,0,15,228,63
 	.word	630
 	.byte	16,227,63,0,15,128,1
-	.word	72760
+	.word	72755
 	.byte	16,15,0,14
-	.word	73185
+	.word	73180
 	.byte	15,128,31
 	.word	630
 	.byte	16,255,30,0,15,64
-	.word	72692
+	.word	72687
 	.byte	16,7,0,14
-	.word	73211
+	.word	73206
 	.byte	15,192,31
 	.word	630
 	.byte	16,191,31,0,15,16
-	.word	68706
+	.word	68701
 	.byte	16,3,0,15,16
-	.word	69706
+	.word	69701
 	.byte	16,3,0,15,16
-	.word	69768
+	.word	69763
 	.byte	16,3,0,15,208,7
 	.word	630
 	.byte	16,207,7,0,14
-	.word	72951
+	.word	72946
 	.byte	15,240,23
 	.word	630
 	.byte	16,239,23,0,15,64
-	.word	73025
+	.word	73020
 	.byte	16,7,0,14
-	.word	73290
+	.word	73285
 	.byte	15,192,23
 	.word	630
 	.byte	16,191,23,0,15,232,1
@@ -14262,293 +14262,293 @@ wifi_uart_data:	.type	object
 	.byte	16,179,1,0,15,172,1
 	.word	630
 	.byte	16,171,1,0,15,64
-	.word	68895
+	.word	68890
 	.byte	16,15,0,15,64
 	.word	630
 	.byte	16,63,0,15,64
-	.word	68081
+	.word	68076
 	.byte	16,15,0,10
 	.byte	'_Ifx_CPU',0,33,166,10,25,128,128,4,13
 	.byte	'reserved_0',0
-	.word	73095
+	.word	73090
 	.byte	176,32,2,35,0,13
 	.byte	'SEGEN',0
-	.word	71618
+	.word	71613
 	.byte	4,3,35,176,32,13
 	.byte	'reserved_1034',0
-	.word	73106
+	.word	73101
 	.byte	208,223,1,3,35,180,32,13
 	.byte	'TASK_ASI',0
-	.word	72300
+	.word	72295
 	.byte	4,4,35,132,128,2,13
 	.byte	'reserved_8008',0
-	.word	73119
+	.word	73114
 	.byte	248,1,4,35,136,128,2,13
 	.byte	'PMA0',0
-	.word	71309
+	.word	71304
 	.byte	4,4,35,128,130,2,13
 	.byte	'PMA1',0
-	.word	71371
+	.word	71366
 	.byte	4,4,35,132,130,2,13
 	.byte	'PMA2',0
-	.word	71433
+	.word	71428
 	.byte	4,4,35,136,130,2,13
 	.byte	'reserved_810C',0
-	.word	73130
+	.word	73125
 	.byte	244,29,4,35,140,130,2,13
 	.byte	'DCON2',0
-	.word	69206
+	.word	69201
 	.byte	4,4,35,128,160,2,13
 	.byte	'reserved_9004',0
 	.word	4267
 	.byte	8,4,35,132,160,2,13
 	.byte	'SMACON',0
-	.word	71681
+	.word	71676
 	.byte	4,4,35,140,160,2,13
 	.byte	'DSTR',0
-	.word	69830
+	.word	69825
 	.byte	4,4,35,144,160,2,13
 	.byte	'reserved_9014',0
 	.word	2448
 	.byte	4,4,35,148,160,2,13
 	.byte	'DATR',0
-	.word	68954
+	.word	68949
 	.byte	4,4,35,152,160,2,13
 	.byte	'DEADD',0
-	.word	69330
+	.word	69325
 	.byte	4,4,35,156,160,2,13
 	.byte	'DIEAR',0
-	.word	69393
+	.word	69388
 	.byte	4,4,35,160,160,2,13
 	.byte	'DIETR',0
-	.word	69456
+	.word	69451
 	.byte	4,4,35,164,160,2,13
 	.byte	'reserved_9028',0
 	.word	3638
 	.byte	24,4,35,168,160,2,13
 	.byte	'DCON0',0
-	.word	69143
+	.word	69138
 	.byte	4,4,35,192,160,2,13
 	.byte	'reserved_9044',0
-	.word	73141
+	.word	73136
 	.byte	188,3,4,35,196,160,2,13
 	.byte	'PSTR',0
-	.word	71495
+	.word	71490
 	.byte	4,4,35,128,164,2,13
 	.byte	'PCON1',0
-	.word	70995
+	.word	70990
 	.byte	4,4,35,132,164,2,13
 	.byte	'PCON2',0
-	.word	71058
+	.word	71053
 	.byte	4,4,35,136,164,2,13
 	.byte	'PCON0',0
-	.word	70932
+	.word	70927
 	.byte	4,4,35,140,164,2,13
 	.byte	'PIEAR',0
-	.word	71183
+	.word	71178
 	.byte	4,4,35,144,164,2,13
 	.byte	'PIETR',0
-	.word	71246
+	.word	71241
 	.byte	4,4,35,148,164,2,13
 	.byte	'reserved_9218',0
-	.word	73152
+	.word	73147
 	.byte	232,3,4,35,152,164,2,13
 	.byte	'COMPAT',0
-	.word	68387
+	.word	68382
 	.byte	4,4,35,128,168,2,13
 	.byte	'reserved_9404',0
-	.word	73163
+	.word	73158
 	.byte	252,23,4,35,132,168,2,13
 	.byte	'FPU_TRAP_CON',0
-	.word	70016
+	.word	70011
 	.byte	4,4,35,128,192,2,13
 	.byte	'FPU_TRAP_PC',0
-	.word	70156
+	.word	70151
 	.byte	4,4,35,132,192,2,13
 	.byte	'FPU_TRAP_OPC',0
-	.word	70086
+	.word	70081
 	.byte	4,4,35,136,192,2,13
 	.byte	'reserved_A00C',0
 	.word	2448
 	.byte	4,4,35,140,192,2,13
 	.byte	'FPU_TRAP_SRC1',0
-	.word	70225
+	.word	70220
 	.byte	4,4,35,144,192,2,13
 	.byte	'FPU_TRAP_SRC2',0
-	.word	70296
+	.word	70291
 	.byte	4,4,35,148,192,2,13
 	.byte	'FPU_TRAP_SRC3',0
-	.word	70367
+	.word	70362
 	.byte	4,4,35,152,192,2,13
 	.byte	'reserved_A01C',0
-	.word	73174
+	.word	73169
 	.byte	228,63,4,35,156,192,2,13
 	.byte	'DPR',0
-	.word	73195
+	.word	73190
 	.byte	128,1,4,35,128,128,3,13
 	.byte	'reserved_C080',0
-	.word	73200
+	.word	73195
 	.byte	128,31,4,35,128,129,3,13
 	.byte	'CPR',0
-	.word	73220
+	.word	73215
 	.byte	64,4,35,128,160,3,13
 	.byte	'reserved_D040',0
-	.word	73225
+	.word	73220
 	.byte	192,31,4,35,192,160,3,13
 	.byte	'CPXE',0
-	.word	73236
+	.word	73231
 	.byte	16,4,35,128,192,3,13
 	.byte	'DPRE',0
-	.word	73245
+	.word	73240
 	.byte	16,4,35,144,192,3,13
 	.byte	'DPWE',0
-	.word	73254
+	.word	73249
 	.byte	16,4,35,160,192,3,13
 	.byte	'reserved_E030',0
-	.word	73263
+	.word	73258
 	.byte	208,7,4,35,176,192,3,13
 	.byte	'TPS',0
-	.word	73274
+	.word	73269
 	.byte	16,4,35,128,200,3,13
 	.byte	'reserved_E410',0
-	.word	73279
+	.word	73274
 	.byte	240,23,4,35,144,200,3,13
 	.byte	'TR',0
-	.word	73299
+	.word	73294
 	.byte	64,4,35,128,224,3,13
 	.byte	'reserved_F040',0
-	.word	73304
+	.word	73299
 	.byte	192,23,4,35,192,224,3,13
 	.byte	'CCTRL',0
-	.word	68324
+	.word	68319
 	.byte	4,4,35,128,248,3,13
 	.byte	'CCNT',0
-	.word	68262
+	.word	68257
 	.byte	4,4,35,132,248,3,13
 	.byte	'ICNT',0
-	.word	70438
+	.word	70433
 	.byte	4,4,35,136,248,3,13
 	.byte	'M1CNT',0
-	.word	70683
+	.word	70678
 	.byte	4,4,35,140,248,3,13
 	.byte	'M2CNT',0
-	.word	70746
+	.word	70741
 	.byte	4,4,35,144,248,3,13
 	.byte	'M3CNT',0
-	.word	70809
+	.word	70804
 	.byte	4,4,35,148,248,3,13
 	.byte	'reserved_FC18',0
-	.word	73315
+	.word	73310
 	.byte	232,1,4,35,152,248,3,13
 	.byte	'DBGSR',0
-	.word	69016
+	.word	69011
 	.byte	4,4,35,128,250,3,13
 	.byte	'reserved_FD04',0
 	.word	2448
 	.byte	4,4,35,132,250,3,13
 	.byte	'EXEVT',0
-	.word	69892
+	.word	69887
 	.byte	4,4,35,136,250,3,13
 	.byte	'CREVT',0
-	.word	68768
+	.word	68763
 	.byte	4,4,35,140,250,3,13
 	.byte	'SWEVT',0
-	.word	72173
+	.word	72168
 	.byte	4,4,35,144,250,3,13
 	.byte	'reserved_FD14',0
-	.word	54719
+	.word	54714
 	.byte	28,4,35,148,250,3,13
 	.byte	'TRIG_ACC',0
-	.word	72626
+	.word	72621
 	.byte	4,4,35,176,250,3,13
 	.byte	'reserved_FD34',0
 	.word	4607
 	.byte	12,4,35,180,250,3,13
 	.byte	'DMS',0
-	.word	69519
+	.word	69514
 	.byte	4,4,35,192,250,3,13
 	.byte	'DCX',0
-	.word	69269
+	.word	69264
 	.byte	4,4,35,196,250,3,13
 	.byte	'DBGTCR',0
-	.word	69079
+	.word	69074
 	.byte	4,4,35,200,250,3,13
 	.byte	'reserved_FD4C',0
-	.word	73326
+	.word	73321
 	.byte	180,1,4,35,204,250,3,13
 	.byte	'PCXI',0
-	.word	71121
+	.word	71116
 	.byte	4,4,35,128,252,3,13
 	.byte	'PSW',0
-	.word	71557
+	.word	71552
 	.byte	4,4,35,132,252,3,13
 	.byte	'PC',0
-	.word	70872
+	.word	70867
 	.byte	4,4,35,136,252,3,13
 	.byte	'reserved_FE0C',0
 	.word	4267
 	.byte	8,4,35,140,252,3,13
 	.byte	'SYSCON',0
-	.word	72236
+	.word	72231
 	.byte	4,4,35,148,252,3,13
 	.byte	'CPU_ID',0
-	.word	68642
+	.word	68637
 	.byte	4,4,35,152,252,3,13
 	.byte	'CORE_ID',0
-	.word	68451
+	.word	68446
 	.byte	4,4,35,156,252,3,13
 	.byte	'BIV',0
-	.word	68140
+	.word	68135
 	.byte	4,4,35,160,252,3,13
 	.byte	'BTV',0
-	.word	68201
+	.word	68196
 	.byte	4,4,35,164,252,3,13
 	.byte	'ISP',0
-	.word	70561
+	.word	70556
 	.byte	4,4,35,168,252,3,13
 	.byte	'ICR',0
-	.word	70500
+	.word	70495
 	.byte	4,4,35,172,252,3,13
 	.byte	'reserved_FE30',0
 	.word	4267
 	.byte	8,4,35,176,252,3,13
 	.byte	'FCX',0
-	.word	69955
+	.word	69950
 	.byte	4,4,35,184,252,3,13
 	.byte	'LCX',0
-	.word	70622
+	.word	70617
 	.byte	4,4,35,188,252,3,13
 	.byte	'reserved_FE40',0
-	.word	54710
+	.word	54705
 	.byte	16,4,35,192,252,3,13
 	.byte	'CUS_ID',0
-	.word	68831
+	.word	68826
 	.byte	4,4,35,208,252,3,13
 	.byte	'reserved_FE54',0
-	.word	73337
+	.word	73332
 	.byte	172,1,4,35,212,252,3,13
 	.byte	'D',0
-	.word	73348
+	.word	73343
 	.byte	64,4,35,128,254,3,13
 	.byte	'reserved_FF40',0
-	.word	73357
+	.word	73352
 	.byte	64,4,35,192,254,3,13
 	.byte	'A',0
-	.word	73366
+	.word	73361
 	.byte	64,4,35,128,255,3,13
 	.byte	'reserved_FFC0',0
-	.word	73357
+	.word	73352
 	.byte	64,4,35,192,255,3,0,14
-	.word	73375
+	.word	73370
 	.byte	31
 	.byte	'Ifx_CPU',0,33,130,11,3
-	.word	75166
+	.word	75161
 	.byte	17,8,127,9,1,18
 	.byte	'IfxCpu_Id_0',0,0,18
 	.byte	'IfxCpu_Id_1',0,1,18
 	.byte	'IfxCpu_Id_none',0,2,0,31
 	.byte	'IfxCpu_Id',0,8,132,1,3
-	.word	75188
+	.word	75183
 	.byte	31
 	.byte	'IfxCpu_ResourceCpu',0,8,161,1,3
 	.word	9969
@@ -14563,10 +14563,10 @@ wifi_uart_data:	.type	object
 	.byte	'SR',0
 	.word	10852
 	.byte	4,2,35,0,0,14
-	.word	75333
+	.word	75328
 	.byte	31
 	.byte	'Ifx_SRC_AGBT',0,11,89,3
-	.word	75365
+	.word	75360
 	.byte	10
 	.byte	'_Ifx_SRC_ASCLIN',0,11,92,25,12,13
 	.byte	'TX',0
@@ -14578,30 +14578,30 @@ wifi_uart_data:	.type	object
 	.byte	'ERR',0
 	.word	10852
 	.byte	4,2,35,8,0,14
-	.word	75391
+	.word	75386
 	.byte	31
 	.byte	'Ifx_SRC_ASCLIN',0,11,97,3
-	.word	75450
+	.word	75445
 	.byte	10
 	.byte	'_Ifx_SRC_BCUSPB',0,11,100,25,4,13
 	.byte	'SBSRC',0
 	.word	10852
 	.byte	4,2,35,0,0,14
-	.word	75478
+	.word	75473
 	.byte	31
 	.byte	'Ifx_SRC_BCUSPB',0,11,103,3
-	.word	75515
+	.word	75510
 	.byte	15,64
 	.word	10852
 	.byte	16,15,0,10
 	.byte	'_Ifx_SRC_CAN',0,11,106,25,64,13
 	.byte	'INT',0
-	.word	75543
+	.word	75538
 	.byte	64,2,35,0,0,14
-	.word	75552
+	.word	75547
 	.byte	31
 	.byte	'Ifx_SRC_CAN',0,11,109,3
-	.word	75584
+	.word	75579
 	.byte	10
 	.byte	'_Ifx_SRC_CCU6',0,11,112,25,16,13
 	.byte	'SR0',0
@@ -14616,21 +14616,21 @@ wifi_uart_data:	.type	object
 	.byte	'SR3',0
 	.word	10852
 	.byte	4,2,35,12,0,14
-	.word	75609
+	.word	75604
 	.byte	31
 	.byte	'Ifx_SRC_CCU6',0,11,118,3
-	.word	75681
+	.word	75676
 	.byte	15,8
 	.word	10852
 	.byte	16,1,0,10
 	.byte	'_Ifx_SRC_CERBERUS',0,11,121,25,8,13
 	.byte	'SR',0
-	.word	75707
+	.word	75702
 	.byte	8,2,35,0,0,14
-	.word	75716
+	.word	75711
 	.byte	31
 	.byte	'Ifx_SRC_CERBERUS',0,11,124,3
-	.word	75752
+	.word	75747
 	.byte	10
 	.byte	'_Ifx_SRC_CIF',0,11,127,25,16,13
 	.byte	'MI',0
@@ -14645,19 +14645,19 @@ wifi_uart_data:	.type	object
 	.byte	'MJPEG',0
 	.word	10852
 	.byte	4,2,35,12,0,14
-	.word	75782
+	.word	75777
 	.byte	31
 	.byte	'Ifx_SRC_CIF',0,11,133,1,3
-	.word	75855
+	.word	75850
 	.byte	10
 	.byte	'_Ifx_SRC_CPU',0,11,136,1,25,4,13
 	.byte	'SBSRC',0
 	.word	10852
 	.byte	4,2,35,0,0,14
-	.word	75881
+	.word	75876
 	.byte	31
 	.byte	'Ifx_SRC_CPU',0,11,139,1,3
-	.word	75916
+	.word	75911
 	.byte	15,192,1
 	.word	10852
 	.byte	16,47,0,10
@@ -14669,12 +14669,12 @@ wifi_uart_data:	.type	object
 	.word	4607
 	.byte	12,2,35,4,13
 	.byte	'CH',0
-	.word	75942
+	.word	75937
 	.byte	192,1,2,35,16,0,14
-	.word	75952
+	.word	75947
 	.byte	31
 	.byte	'Ifx_SRC_DMA',0,11,147,1,3
-	.word	76019
+	.word	76014
 	.byte	10
 	.byte	'_Ifx_SRC_DSADC',0,11,150,1,25,8,13
 	.byte	'SRM',0
@@ -14683,32 +14683,32 @@ wifi_uart_data:	.type	object
 	.byte	'SRA',0
 	.word	10852
 	.byte	4,2,35,4,0,14
-	.word	76045
+	.word	76040
 	.byte	31
 	.byte	'Ifx_SRC_DSADC',0,11,154,1,3
-	.word	76093
+	.word	76088
 	.byte	10
 	.byte	'_Ifx_SRC_EMEM',0,11,157,1,25,4,13
 	.byte	'SR',0
 	.word	10852
 	.byte	4,2,35,0,0,14
-	.word	76121
+	.word	76116
 	.byte	31
 	.byte	'Ifx_SRC_EMEM',0,11,160,1,3
-	.word	76154
+	.word	76149
 	.byte	10
 	.byte	'_Ifx_SRC_ERAY',0,11,163,1,25,80,13
 	.byte	'INT',0
-	.word	75707
+	.word	75702
 	.byte	8,2,35,0,13
 	.byte	'TINT',0
-	.word	75707
+	.word	75702
 	.byte	8,2,35,8,13
 	.byte	'NDAT',0
-	.word	75707
+	.word	75702
 	.byte	8,2,35,16,13
 	.byte	'MBSC',0
-	.word	75707
+	.word	75702
 	.byte	8,2,35,24,13
 	.byte	'OBUSY',0
 	.word	10852
@@ -14717,30 +14717,30 @@ wifi_uart_data:	.type	object
 	.word	10852
 	.byte	4,2,35,36,13
 	.byte	'reserved_28',0
-	.word	54728
+	.word	54723
 	.byte	40,2,35,40,0,14
-	.word	76181
+	.word	76176
 	.byte	31
 	.byte	'Ifx_SRC_ERAY',0,11,172,1,3
-	.word	76308
+	.word	76303
 	.byte	10
 	.byte	'_Ifx_SRC_ETH',0,11,175,1,25,4,13
 	.byte	'SR',0
 	.word	10852
 	.byte	4,2,35,0,0,14
-	.word	76335
+	.word	76330
 	.byte	31
 	.byte	'Ifx_SRC_ETH',0,11,178,1,3
-	.word	76367
+	.word	76362
 	.byte	10
 	.byte	'_Ifx_SRC_FCE',0,11,181,1,25,4,13
 	.byte	'SR',0
 	.word	10852
 	.byte	4,2,35,0,0,14
-	.word	76393
+	.word	76388
 	.byte	31
 	.byte	'Ifx_SRC_FCE',0,11,184,1,3
-	.word	76425
+	.word	76420
 	.byte	10
 	.byte	'_Ifx_SRC_FFT',0,11,187,1,25,12,13
 	.byte	'DONE',0
@@ -14752,10 +14752,10 @@ wifi_uart_data:	.type	object
 	.byte	'RFS',0
 	.word	10852
 	.byte	4,2,35,8,0,14
-	.word	76451
+	.word	76446
 	.byte	31
 	.byte	'Ifx_SRC_FFT',0,11,192,1,3
-	.word	76511
+	.word	76506
 	.byte	10
 	.byte	'_Ifx_SRC_GPSR',0,11,195,1,25,32,13
 	.byte	'SR0',0
@@ -14771,12 +14771,12 @@ wifi_uart_data:	.type	object
 	.word	10852
 	.byte	4,2,35,12,13
 	.byte	'reserved_10',0
-	.word	54710
+	.word	54705
 	.byte	16,2,35,16,0,14
-	.word	76537
+	.word	76532
 	.byte	31
 	.byte	'Ifx_SRC_GPSR',0,11,202,1,3
-	.word	76631
+	.word	76626
 	.byte	10
 	.byte	'_Ifx_SRC_GPT12',0,11,205,1,25,48,13
 	.byte	'CIRQ',0
@@ -14800,16 +14800,16 @@ wifi_uart_data:	.type	object
 	.byte	'reserved_18',0
 	.word	3638
 	.byte	24,2,35,24,0,14
-	.word	76658
+	.word	76653
 	.byte	31
 	.byte	'Ifx_SRC_GPT12',0,11,214,1,3
-	.word	76775
+	.word	76770
 	.byte	15,12
 	.word	10852
 	.byte	16,2,0,15,32
 	.word	10852
 	.byte	16,7,0,15,32
-	.word	76812
+	.word	76807
 	.byte	16,0,0,15,88
 	.word	630
 	.byte	16,87,0,15,108
@@ -14817,17 +14817,17 @@ wifi_uart_data:	.type	object
 	.byte	16,26,0,15,96
 	.word	630
 	.byte	16,95,0,15,96
-	.word	76812
+	.word	76807
 	.byte	16,2,0,15,160,3
 	.word	630
 	.byte	16,159,3,0,15,64
-	.word	76812
+	.word	76807
 	.byte	16,1,0,15,192,3
 	.word	630
 	.byte	16,191,3,0,15,16
 	.word	10852
 	.byte	16,3,0,15,64
-	.word	76897
+	.word	76892
 	.byte	16,3,0,15,192,2
 	.word	630
 	.byte	16,191,2,0,15,52
@@ -14838,7 +14838,7 @@ wifi_uart_data:	.type	object
 	.word	10852
 	.byte	4,2,35,0,13
 	.byte	'ARUIRQ',0
-	.word	76803
+	.word	76798
 	.byte	12,2,35,4,13
 	.byte	'reserved_10',0
 	.word	2448
@@ -14850,22 +14850,22 @@ wifi_uart_data:	.type	object
 	.word	10852
 	.byte	4,2,35,24,13
 	.byte	'SPEIRQ',0
-	.word	75707
+	.word	75702
 	.byte	8,2,35,28,13
 	.byte	'reserved_24',0
 	.word	4267
 	.byte	8,2,35,36,13
 	.byte	'PSM',0
-	.word	76821
+	.word	76816
 	.byte	32,2,35,44,13
 	.byte	'reserved_4C',0
-	.word	76830
+	.word	76825
 	.byte	88,2,35,76,13
 	.byte	'DPLL',0
-	.word	76839
+	.word	76834
 	.byte	108,3,35,164,1,13
 	.byte	'reserved_110',0
-	.word	76848
+	.word	76843
 	.byte	96,3,35,144,2,13
 	.byte	'ERR',0
 	.word	10852
@@ -14874,51 +14874,51 @@ wifi_uart_data:	.type	object
 	.word	4607
 	.byte	12,3,35,244,2,13
 	.byte	'TIM',0
-	.word	76857
+	.word	76852
 	.byte	96,3,35,128,3,13
 	.byte	'reserved_1E0',0
-	.word	76866
+	.word	76861
 	.byte	160,3,3,35,224,3,13
 	.byte	'MCS',0
-	.word	76857
+	.word	76852
 	.byte	96,3,35,128,7,13
 	.byte	'reserved_3E0',0
-	.word	76866
+	.word	76861
 	.byte	160,3,3,35,224,7,13
 	.byte	'TOM',0
-	.word	76877
+	.word	76872
 	.byte	64,3,35,128,11,13
 	.byte	'reserved_5C0',0
-	.word	76886
+	.word	76881
 	.byte	192,3,3,35,192,11,13
 	.byte	'ATOM',0
-	.word	76906
+	.word	76901
 	.byte	64,3,35,128,15,13
 	.byte	'reserved_7C0',0
-	.word	76915
+	.word	76910
 	.byte	192,2,3,35,192,15,13
 	.byte	'MCSW0',0
-	.word	76803
+	.word	76798
 	.byte	12,3,35,128,18,13
 	.byte	'reserved_90C',0
-	.word	76926
+	.word	76921
 	.byte	52,3,35,140,18,13
 	.byte	'MCSW1',0
-	.word	76803
+	.word	76798
 	.byte	12,3,35,192,18,0,14
-	.word	76935
+	.word	76930
 	.byte	31
 	.byte	'Ifx_SRC_GTM',0,11,243,1,3
-	.word	77395
+	.word	77390
 	.byte	10
 	.byte	'_Ifx_SRC_HSCT',0,11,246,1,25,4,13
 	.byte	'SR',0
 	.word	10852
 	.byte	4,2,35,0,0,14
-	.word	77421
+	.word	77416
 	.byte	31
 	.byte	'Ifx_SRC_HSCT',0,11,249,1,3
-	.word	77454
+	.word	77449
 	.byte	10
 	.byte	'_Ifx_SRC_HSSL',0,11,252,1,25,16,13
 	.byte	'COK',0
@@ -14933,10 +14933,10 @@ wifi_uart_data:	.type	object
 	.byte	'TRG',0
 	.word	10852
 	.byte	4,2,35,12,0,14
-	.word	77481
+	.word	77476
 	.byte	31
 	.byte	'Ifx_SRC_HSSL',0,11,130,2,3
-	.word	77554
+	.word	77549
 	.byte	15,56
 	.word	630
 	.byte	16,55,0,10
@@ -14960,21 +14960,21 @@ wifi_uart_data:	.type	object
 	.word	10852
 	.byte	4,2,35,20,13
 	.byte	'reserved_18',0
-	.word	77581
+	.word	77576
 	.byte	56,2,35,24,0,14
-	.word	77590
+	.word	77585
 	.byte	31
 	.byte	'Ifx_SRC_I2C',0,11,142,2,3
-	.word	77713
+	.word	77708
 	.byte	10
 	.byte	'_Ifx_SRC_LMU',0,11,145,2,25,4,13
 	.byte	'SR',0
 	.word	10852
 	.byte	4,2,35,0,0,14
-	.word	77739
+	.word	77734
 	.byte	31
 	.byte	'Ifx_SRC_LMU',0,11,148,2,3
-	.word	77771
+	.word	77766
 	.byte	10
 	.byte	'_Ifx_SRC_MSC',0,11,151,2,25,20,13
 	.byte	'SR0',0
@@ -14992,37 +14992,37 @@ wifi_uart_data:	.type	object
 	.byte	'SR4',0
 	.word	10852
 	.byte	4,2,35,16,0,14
-	.word	77797
+	.word	77792
 	.byte	31
 	.byte	'Ifx_SRC_MSC',0,11,158,2,3
-	.word	77882
+	.word	77877
 	.byte	10
 	.byte	'_Ifx_SRC_PMU',0,11,161,2,25,4,13
 	.byte	'SR',0
 	.word	10852
 	.byte	4,2,35,0,0,14
-	.word	77908
+	.word	77903
 	.byte	31
 	.byte	'Ifx_SRC_PMU',0,11,164,2,3
-	.word	77940
+	.word	77935
 	.byte	10
 	.byte	'_Ifx_SRC_PSI5',0,11,167,2,25,32,13
 	.byte	'SR',0
-	.word	76812
+	.word	76807
 	.byte	32,2,35,0,0,14
-	.word	77966
+	.word	77961
 	.byte	31
 	.byte	'Ifx_SRC_PSI5',0,11,170,2,3
-	.word	77999
+	.word	77994
 	.byte	10
 	.byte	'_Ifx_SRC_PSI5S',0,11,173,2,25,32,13
 	.byte	'SR',0
-	.word	76812
+	.word	76807
 	.byte	32,2,35,0,0,14
-	.word	78026
+	.word	78021
 	.byte	31
 	.byte	'Ifx_SRC_PSI5S',0,11,176,2,3
-	.word	78060
+	.word	78055
 	.byte	10
 	.byte	'_Ifx_SRC_QSPI',0,11,179,2,25,24,13
 	.byte	'TX',0
@@ -15043,51 +15043,51 @@ wifi_uart_data:	.type	object
 	.byte	'U',0
 	.word	10852
 	.byte	4,2,35,20,0,14
-	.word	78088
+	.word	78083
 	.byte	31
 	.byte	'Ifx_SRC_QSPI',0,11,187,2,3
-	.word	78181
+	.word	78176
 	.byte	10
 	.byte	'_Ifx_SRC_SCR',0,11,190,2,25,4,13
 	.byte	'SR',0
 	.word	10852
 	.byte	4,2,35,0,0,14
-	.word	78208
+	.word	78203
 	.byte	31
 	.byte	'Ifx_SRC_SCR',0,11,193,2,3
-	.word	78240
+	.word	78235
 	.byte	10
 	.byte	'_Ifx_SRC_SCU',0,11,196,2,25,20,13
 	.byte	'DTS',0
 	.word	10852
 	.byte	4,2,35,0,13
 	.byte	'ERU',0
-	.word	76897
+	.word	76892
 	.byte	16,2,35,4,0,14
-	.word	78266
+	.word	78261
 	.byte	31
 	.byte	'Ifx_SRC_SCU',0,11,200,2,3
-	.word	78312
+	.word	78307
 	.byte	15,24
 	.word	10852
 	.byte	16,5,0,10
 	.byte	'_Ifx_SRC_SENT',0,11,203,2,25,24,13
 	.byte	'SR',0
-	.word	78338
+	.word	78333
 	.byte	24,2,35,0,0,14
-	.word	78347
+	.word	78342
 	.byte	31
 	.byte	'Ifx_SRC_SENT',0,11,206,2,3
-	.word	78380
+	.word	78375
 	.byte	10
 	.byte	'_Ifx_SRC_SMU',0,11,209,2,25,12,13
 	.byte	'SR',0
-	.word	76803
+	.word	76798
 	.byte	12,2,35,0,0,14
-	.word	78407
+	.word	78402
 	.byte	31
 	.byte	'Ifx_SRC_SMU',0,11,212,2,3
-	.word	78439
+	.word	78434
 	.byte	10
 	.byte	'_Ifx_SRC_STM',0,11,215,2,25,8,13
 	.byte	'SR0',0
@@ -15096,10 +15096,10 @@ wifi_uart_data:	.type	object
 	.byte	'SR1',0
 	.word	10852
 	.byte	4,2,35,4,0,14
-	.word	78465
+	.word	78460
 	.byte	31
 	.byte	'Ifx_SRC_STM',0,11,219,2,3
-	.word	78511
+	.word	78506
 	.byte	10
 	.byte	'_Ifx_SRC_VADCCG',0,11,222,2,25,16,13
 	.byte	'SR0',0
@@ -15114,10 +15114,10 @@ wifi_uart_data:	.type	object
 	.byte	'SR3',0
 	.word	10852
 	.byte	4,2,35,12,0,14
-	.word	78537
+	.word	78532
 	.byte	31
 	.byte	'Ifx_SRC_VADCCG',0,11,228,2,3
-	.word	78612
+	.word	78607
 	.byte	10
 	.byte	'_Ifx_SRC_VADCG',0,11,231,2,25,16,13
 	.byte	'SR0',0
@@ -15132,479 +15132,479 @@ wifi_uart_data:	.type	object
 	.byte	'SR3',0
 	.word	10852
 	.byte	4,2,35,12,0,14
-	.word	78641
+	.word	78636
 	.byte	31
 	.byte	'Ifx_SRC_VADCG',0,11,237,2,3
-	.word	78715
+	.word	78710
 	.byte	10
 	.byte	'_Ifx_SRC_XBAR',0,11,240,2,25,4,13
 	.byte	'SRC',0
 	.word	10852
 	.byte	4,2,35,0,0,14
-	.word	78743
+	.word	78738
 	.byte	31
 	.byte	'Ifx_SRC_XBAR',0,11,243,2,3
-	.word	78777
+	.word	78772
 	.byte	15,4
-	.word	75333
+	.word	75328
 	.byte	16,0,0,14
-	.word	78804
+	.word	78799
 	.byte	10
 	.byte	'_Ifx_SRC_GAGBT',0,11,128,3,25,4,13
 	.byte	'AGBT',0
-	.word	78813
+	.word	78808
 	.byte	4,2,35,0,0,14
-	.word	78818
+	.word	78813
 	.byte	31
 	.byte	'Ifx_SRC_GAGBT',0,11,131,3,3
-	.word	78854
+	.word	78849
 	.byte	15,48
-	.word	75391
+	.word	75386
 	.byte	16,3,0,14
-	.word	78882
+	.word	78877
 	.byte	10
 	.byte	'_Ifx_SRC_GASCLIN',0,11,134,3,25,48,13
 	.byte	'ASCLIN',0
-	.word	78891
+	.word	78886
 	.byte	48,2,35,0,0,14
-	.word	78896
+	.word	78891
 	.byte	31
 	.byte	'Ifx_SRC_GASCLIN',0,11,137,3,3
-	.word	78936
+	.word	78931
 	.byte	14
-	.word	75478
+	.word	75473
 	.byte	10
 	.byte	'_Ifx_SRC_GBCU',0,11,140,3,25,4,13
 	.byte	'SPB',0
-	.word	78966
+	.word	78961
 	.byte	4,2,35,0,0,14
-	.word	78971
+	.word	78966
 	.byte	31
 	.byte	'Ifx_SRC_GBCU',0,11,143,3,3
-	.word	79005
+	.word	79000
 	.byte	15,64
-	.word	75552
+	.word	75547
 	.byte	16,0,0,14
-	.word	79032
+	.word	79027
 	.byte	10
 	.byte	'_Ifx_SRC_GCAN',0,11,146,3,25,64,13
 	.byte	'CAN',0
-	.word	79041
+	.word	79036
 	.byte	64,2,35,0,0,14
-	.word	79046
+	.word	79041
 	.byte	31
 	.byte	'Ifx_SRC_GCAN',0,11,149,3,3
-	.word	79080
+	.word	79075
 	.byte	15,32
-	.word	75609
+	.word	75604
 	.byte	16,1,0,14
-	.word	79107
+	.word	79102
 	.byte	10
 	.byte	'_Ifx_SRC_GCCU6',0,11,152,3,25,32,13
 	.byte	'CCU6',0
-	.word	79116
+	.word	79111
 	.byte	32,2,35,0,0,14
-	.word	79121
+	.word	79116
 	.byte	31
 	.byte	'Ifx_SRC_GCCU6',0,11,155,3,3
-	.word	79157
+	.word	79152
 	.byte	14
-	.word	75716
+	.word	75711
 	.byte	10
 	.byte	'_Ifx_SRC_GCERBERUS',0,11,158,3,25,8,13
 	.byte	'CERBERUS',0
-	.word	79185
+	.word	79180
 	.byte	8,2,35,0,0,14
-	.word	79190
+	.word	79185
 	.byte	31
 	.byte	'Ifx_SRC_GCERBERUS',0,11,161,3,3
-	.word	79234
+	.word	79229
 	.byte	15,16
-	.word	75782
+	.word	75777
 	.byte	16,0,0,14
-	.word	79266
+	.word	79261
 	.byte	10
 	.byte	'_Ifx_SRC_GCIF',0,11,164,3,25,16,13
 	.byte	'CIF',0
-	.word	79275
+	.word	79270
 	.byte	16,2,35,0,0,14
-	.word	79280
+	.word	79275
 	.byte	31
 	.byte	'Ifx_SRC_GCIF',0,11,167,3,3
-	.word	79314
+	.word	79309
 	.byte	15,8
-	.word	75881
+	.word	75876
 	.byte	16,1,0,14
-	.word	79341
+	.word	79336
 	.byte	10
 	.byte	'_Ifx_SRC_GCPU',0,11,170,3,25,8,13
 	.byte	'CPU',0
-	.word	79350
+	.word	79345
 	.byte	8,2,35,0,0,14
-	.word	79355
+	.word	79350
 	.byte	31
 	.byte	'Ifx_SRC_GCPU',0,11,173,3,3
-	.word	79389
+	.word	79384
 	.byte	15,208,1
-	.word	75952
+	.word	75947
 	.byte	16,0,0,14
-	.word	79416
+	.word	79411
 	.byte	10
 	.byte	'_Ifx_SRC_GDMA',0,11,176,3,25,208,1,13
 	.byte	'DMA',0
-	.word	79426
+	.word	79421
 	.byte	208,1,2,35,0,0,14
-	.word	79431
+	.word	79426
 	.byte	31
 	.byte	'Ifx_SRC_GDMA',0,11,179,3,3
-	.word	79467
+	.word	79462
 	.byte	14
-	.word	76045
+	.word	76040
 	.byte	14
-	.word	76045
+	.word	76040
 	.byte	14
-	.word	76045
+	.word	76040
 	.byte	10
 	.byte	'_Ifx_SRC_GDSADC',0,11,182,3,25,32,13
 	.byte	'DSADC0',0
-	.word	79494
+	.word	79489
 	.byte	8,2,35,0,13
 	.byte	'reserved_8',0
 	.word	4267
 	.byte	8,2,35,8,13
 	.byte	'DSADC2',0
-	.word	79499
+	.word	79494
 	.byte	8,2,35,16,13
 	.byte	'DSADC3',0
-	.word	79504
+	.word	79499
 	.byte	8,2,35,24,0,14
-	.word	79509
+	.word	79504
 	.byte	31
 	.byte	'Ifx_SRC_GDSADC',0,11,188,3,3
-	.word	79600
+	.word	79595
 	.byte	15,4
-	.word	76121
+	.word	76116
 	.byte	16,0,0,14
-	.word	79629
+	.word	79624
 	.byte	10
 	.byte	'_Ifx_SRC_GEMEM',0,11,191,3,25,4,13
 	.byte	'EMEM',0
-	.word	79638
+	.word	79633
 	.byte	4,2,35,0,0,14
-	.word	79643
+	.word	79638
 	.byte	31
 	.byte	'Ifx_SRC_GEMEM',0,11,194,3,3
-	.word	79679
+	.word	79674
 	.byte	15,80
-	.word	76181
+	.word	76176
 	.byte	16,0,0,14
-	.word	79707
+	.word	79702
 	.byte	10
 	.byte	'_Ifx_SRC_GERAY',0,11,197,3,25,80,13
 	.byte	'ERAY',0
-	.word	79716
+	.word	79711
 	.byte	80,2,35,0,0,14
-	.word	79721
+	.word	79716
 	.byte	31
 	.byte	'Ifx_SRC_GERAY',0,11,200,3,3
-	.word	79757
+	.word	79752
 	.byte	15,4
-	.word	76335
+	.word	76330
 	.byte	16,0,0,14
-	.word	79785
+	.word	79780
 	.byte	10
 	.byte	'_Ifx_SRC_GETH',0,11,203,3,25,4,13
 	.byte	'ETH',0
-	.word	79794
+	.word	79789
 	.byte	4,2,35,0,0,14
-	.word	79799
+	.word	79794
 	.byte	31
 	.byte	'Ifx_SRC_GETH',0,11,206,3,3
-	.word	79833
+	.word	79828
 	.byte	15,4
-	.word	76393
+	.word	76388
 	.byte	16,0,0,14
-	.word	79860
+	.word	79855
 	.byte	10
 	.byte	'_Ifx_SRC_GFCE',0,11,209,3,25,4,13
 	.byte	'FCE',0
-	.word	79869
+	.word	79864
 	.byte	4,2,35,0,0,14
-	.word	79874
+	.word	79869
 	.byte	31
 	.byte	'Ifx_SRC_GFCE',0,11,212,3,3
-	.word	79908
+	.word	79903
 	.byte	15,12
-	.word	76451
+	.word	76446
 	.byte	16,0,0,14
-	.word	79935
+	.word	79930
 	.byte	10
 	.byte	'_Ifx_SRC_GFFT',0,11,215,3,25,12,13
 	.byte	'FFT',0
-	.word	79944
+	.word	79939
 	.byte	12,2,35,0,0,14
-	.word	79949
+	.word	79944
 	.byte	31
 	.byte	'Ifx_SRC_GFFT',0,11,218,3,3
-	.word	79983
+	.word	79978
 	.byte	15,64
-	.word	76537
+	.word	76532
 	.byte	16,1,0,14
-	.word	80010
+	.word	80005
 	.byte	10
 	.byte	'_Ifx_SRC_GGPSR',0,11,221,3,25,64,13
 	.byte	'GPSR',0
-	.word	80019
+	.word	80014
 	.byte	64,2,35,0,0,14
-	.word	80024
+	.word	80019
 	.byte	31
 	.byte	'Ifx_SRC_GGPSR',0,11,224,3,3
-	.word	80060
+	.word	80055
 	.byte	15,48
-	.word	76658
+	.word	76653
 	.byte	16,0,0,14
-	.word	80088
+	.word	80083
 	.byte	10
 	.byte	'_Ifx_SRC_GGPT12',0,11,227,3,25,48,13
 	.byte	'GPT12',0
-	.word	80097
+	.word	80092
 	.byte	48,2,35,0,0,14
-	.word	80102
+	.word	80097
 	.byte	31
 	.byte	'Ifx_SRC_GGPT12',0,11,230,3,3
-	.word	80140
+	.word	80135
 	.byte	15,204,18
-	.word	76935
+	.word	76930
 	.byte	16,0,0,14
-	.word	80169
+	.word	80164
 	.byte	10
 	.byte	'_Ifx_SRC_GGTM',0,11,233,3,25,204,18,13
 	.byte	'GTM',0
-	.word	80179
+	.word	80174
 	.byte	204,18,2,35,0,0,14
-	.word	80184
+	.word	80179
 	.byte	31
 	.byte	'Ifx_SRC_GGTM',0,11,236,3,3
-	.word	80220
+	.word	80215
 	.byte	15,4
-	.word	77421
+	.word	77416
 	.byte	16,0,0,14
-	.word	80247
+	.word	80242
 	.byte	10
 	.byte	'_Ifx_SRC_GHSCT',0,11,239,3,25,4,13
 	.byte	'HSCT',0
-	.word	80256
+	.word	80251
 	.byte	4,2,35,0,0,14
-	.word	80261
+	.word	80256
 	.byte	31
 	.byte	'Ifx_SRC_GHSCT',0,11,242,3,3
-	.word	80297
+	.word	80292
 	.byte	15,64
-	.word	77481
+	.word	77476
 	.byte	16,3,0,14
-	.word	80325
+	.word	80320
 	.byte	10
 	.byte	'_Ifx_SRC_GHSSL',0,11,245,3,25,68,13
 	.byte	'HSSL',0
-	.word	80334
+	.word	80329
 	.byte	64,2,35,0,13
 	.byte	'EXI',0
 	.word	10852
 	.byte	4,2,35,64,0,14
-	.word	80339
+	.word	80334
 	.byte	31
 	.byte	'Ifx_SRC_GHSSL',0,11,249,3,3
-	.word	80388
+	.word	80383
 	.byte	15,80
-	.word	77590
+	.word	77585
 	.byte	16,0,0,14
-	.word	80416
+	.word	80411
 	.byte	10
 	.byte	'_Ifx_SRC_GI2C',0,11,252,3,25,80,13
 	.byte	'I2C',0
-	.word	80425
+	.word	80420
 	.byte	80,2,35,0,0,14
-	.word	80430
+	.word	80425
 	.byte	31
 	.byte	'Ifx_SRC_GI2C',0,11,255,3,3
-	.word	80464
+	.word	80459
 	.byte	15,4
-	.word	77739
+	.word	77734
 	.byte	16,0,0,14
-	.word	80491
+	.word	80486
 	.byte	10
 	.byte	'_Ifx_SRC_GLMU',0,11,130,4,25,4,13
 	.byte	'LMU',0
-	.word	80500
+	.word	80495
 	.byte	4,2,35,0,0,14
-	.word	80505
+	.word	80500
 	.byte	31
 	.byte	'Ifx_SRC_GLMU',0,11,133,4,3
-	.word	80539
+	.word	80534
 	.byte	15,40
-	.word	77797
+	.word	77792
 	.byte	16,1,0,14
-	.word	80566
+	.word	80561
 	.byte	10
 	.byte	'_Ifx_SRC_GMSC',0,11,136,4,25,40,13
 	.byte	'MSC',0
-	.word	80575
+	.word	80570
 	.byte	40,2,35,0,0,14
-	.word	80580
+	.word	80575
 	.byte	31
 	.byte	'Ifx_SRC_GMSC',0,11,139,4,3
-	.word	80614
+	.word	80609
 	.byte	15,8
-	.word	77908
+	.word	77903
 	.byte	16,1,0,14
-	.word	80641
+	.word	80636
 	.byte	10
 	.byte	'_Ifx_SRC_GPMU',0,11,142,4,25,8,13
 	.byte	'PMU',0
-	.word	80650
+	.word	80645
 	.byte	8,2,35,0,0,14
-	.word	80655
+	.word	80650
 	.byte	31
 	.byte	'Ifx_SRC_GPMU',0,11,145,4,3
-	.word	80689
+	.word	80684
 	.byte	15,32
-	.word	77966
+	.word	77961
 	.byte	16,0,0,14
-	.word	80716
+	.word	80711
 	.byte	10
 	.byte	'_Ifx_SRC_GPSI5',0,11,148,4,25,32,13
 	.byte	'PSI5',0
-	.word	80725
+	.word	80720
 	.byte	32,2,35,0,0,14
-	.word	80730
+	.word	80725
 	.byte	31
 	.byte	'Ifx_SRC_GPSI5',0,11,151,4,3
-	.word	80766
+	.word	80761
 	.byte	15,32
-	.word	78026
+	.word	78021
 	.byte	16,0,0,14
-	.word	80794
+	.word	80789
 	.byte	10
 	.byte	'_Ifx_SRC_GPSI5S',0,11,154,4,25,32,13
 	.byte	'PSI5S',0
-	.word	80803
+	.word	80798
 	.byte	32,2,35,0,0,14
-	.word	80808
+	.word	80803
 	.byte	31
 	.byte	'Ifx_SRC_GPSI5S',0,11,157,4,3
-	.word	80846
+	.word	80841
 	.byte	15,96
-	.word	78088
+	.word	78083
 	.byte	16,3,0,14
-	.word	80875
+	.word	80870
 	.byte	10
 	.byte	'_Ifx_SRC_GQSPI',0,11,160,4,25,96,13
 	.byte	'QSPI',0
-	.word	80884
+	.word	80879
 	.byte	96,2,35,0,0,14
-	.word	80889
+	.word	80884
 	.byte	31
 	.byte	'Ifx_SRC_GQSPI',0,11,163,4,3
-	.word	80925
+	.word	80920
 	.byte	15,4
-	.word	78208
+	.word	78203
 	.byte	16,0,0,14
-	.word	80953
+	.word	80948
 	.byte	10
 	.byte	'_Ifx_SRC_GSCR',0,11,166,4,25,4,13
 	.byte	'SCR',0
-	.word	80962
+	.word	80957
 	.byte	4,2,35,0,0,14
-	.word	80967
+	.word	80962
 	.byte	31
 	.byte	'Ifx_SRC_GSCR',0,11,169,4,3
-	.word	81001
+	.word	80996
 	.byte	14
-	.word	78266
+	.word	78261
 	.byte	10
 	.byte	'_Ifx_SRC_GSCU',0,11,172,4,25,20,13
 	.byte	'SCU',0
-	.word	81028
+	.word	81023
 	.byte	20,2,35,0,0,14
-	.word	81033
+	.word	81028
 	.byte	31
 	.byte	'Ifx_SRC_GSCU',0,11,175,4,3
-	.word	81067
+	.word	81062
 	.byte	15,24
-	.word	78347
+	.word	78342
 	.byte	16,0,0,14
-	.word	81094
+	.word	81089
 	.byte	10
 	.byte	'_Ifx_SRC_GSENT',0,11,178,4,25,24,13
 	.byte	'SENT',0
-	.word	81103
+	.word	81098
 	.byte	24,2,35,0,0,14
-	.word	81108
+	.word	81103
 	.byte	31
 	.byte	'Ifx_SRC_GSENT',0,11,181,4,3
-	.word	81144
+	.word	81139
 	.byte	15,12
-	.word	78407
+	.word	78402
 	.byte	16,0,0,14
-	.word	81172
+	.word	81167
 	.byte	10
 	.byte	'_Ifx_SRC_GSMU',0,11,184,4,25,12,13
 	.byte	'SMU',0
-	.word	81181
+	.word	81176
 	.byte	12,2,35,0,0,14
-	.word	81186
+	.word	81181
 	.byte	31
 	.byte	'Ifx_SRC_GSMU',0,11,187,4,3
-	.word	81220
+	.word	81215
 	.byte	15,16
-	.word	78465
+	.word	78460
 	.byte	16,1,0,14
-	.word	81247
+	.word	81242
 	.byte	10
 	.byte	'_Ifx_SRC_GSTM',0,11,190,4,25,16,13
 	.byte	'STM',0
-	.word	81256
+	.word	81251
 	.byte	16,2,35,0,0,14
-	.word	81261
+	.word	81256
 	.byte	31
 	.byte	'Ifx_SRC_GSTM',0,11,193,4,3
-	.word	81295
+	.word	81290
 	.byte	15,64
-	.word	78641
+	.word	78636
 	.byte	16,3,0,14
-	.word	81322
+	.word	81317
 	.byte	15,224,1
 	.word	630
 	.byte	16,223,1,0,15,32
-	.word	78537
+	.word	78532
 	.byte	16,1,0,14
-	.word	81347
+	.word	81342
 	.byte	10
 	.byte	'_Ifx_SRC_GVADC',0,11,196,4,25,192,2,13
 	.byte	'G',0
-	.word	81331
+	.word	81326
 	.byte	64,2,35,0,13
 	.byte	'reserved_40',0
-	.word	81336
+	.word	81331
 	.byte	224,1,2,35,64,13
 	.byte	'CG',0
-	.word	81356
+	.word	81351
 	.byte	32,3,35,160,2,0,14
-	.word	81361
+	.word	81356
 	.byte	31
 	.byte	'Ifx_SRC_GVADC',0,11,201,4,3
-	.word	81430
+	.word	81425
 	.byte	14
-	.word	78743
+	.word	78738
 	.byte	10
 	.byte	'_Ifx_SRC_GXBAR',0,11,204,4,25,4,13
 	.byte	'XBAR',0
-	.word	81458
+	.word	81453
 	.byte	4,2,35,0,0,14
-	.word	81463
+	.word	81458
 	.byte	31
 	.byte	'Ifx_SRC_GXBAR',0,11,207,4,3
-	.word	81499
+	.word	81494
 	.byte	31
 	.byte	'Ifx_STM_ACCEN0_Bits',0,16,79,3
 	.word	20782
@@ -15741,12 +15741,12 @@ wifi_uart_data:	.type	object
 	.word	21351
 	.byte	31
 	.byte	'Ifx_STM',0,16,201,3,3
-	.word	82610
+	.word	82605
 	.byte	17,7,144,1,9,1,18
 	.byte	'IfxCpu_CounterMode_normal',0,0,18
 	.byte	'IfxCpu_CounterMode_task',0,1,0,31
 	.byte	'IfxCpu_CounterMode',0,7,148,1,3
-	.word	82632
+	.word	82627
 	.byte	20,7,160,1,9,6,13
 	.byte	'counter',0
 	.word	10291
@@ -15755,25 +15755,25 @@ wifi_uart_data:	.type	object
 	.word	630
 	.byte	1,2,35,4,0,31
 	.byte	'IfxCpu_Counter',0,7,164,1,3
-	.word	82721
+	.word	82716
 	.byte	20,7,172,1,9,32,13
 	.byte	'instruction',0
-	.word	82721
+	.word	82716
 	.byte	6,2,35,0,13
 	.byte	'clock',0
-	.word	82721
+	.word	82716
 	.byte	6,2,35,6,13
 	.byte	'counter1',0
-	.word	82721
+	.word	82716
 	.byte	6,2,35,12,13
 	.byte	'counter2',0
-	.word	82721
+	.word	82716
 	.byte	6,2,35,18,13
 	.byte	'counter3',0
-	.word	82721
+	.word	82716
 	.byte	6,2,35,24,0,31
 	.byte	'IfxCpu_Perf',0,7,179,1,3
-	.word	82787
+	.word	82782
 	.byte	10
 	.byte	'_Ifx_FLASH_ACCEN0_Bits',0,34,45,16,4,11
 	.byte	'EN0',0,1
@@ -15873,14 +15873,14 @@ wifi_uart_data:	.type	object
 	.word	630
 	.byte	1,0,2,35,3,0,31
 	.byte	'Ifx_FLASH_ACCEN0_Bits',0,34,79,3
-	.word	82905
+	.word	82900
 	.byte	10
 	.byte	'_Ifx_FLASH_ACCEN1_Bits',0,34,82,16,4,11
 	.byte	'reserved_0',0,4
 	.word	455
 	.byte	32,0,2,35,0,0,31
 	.byte	'Ifx_FLASH_ACCEN1_Bits',0,34,85,3
-	.word	83466
+	.word	83461
 	.byte	10
 	.byte	'_Ifx_FLASH_CBAB_CFG_Bits',0,34,88,16,4,11
 	.byte	'SEL',0,1
@@ -15899,7 +15899,7 @@ wifi_uart_data:	.type	object
 	.word	455
 	.byte	22,0,2,35,0,0,31
 	.byte	'Ifx_FLASH_CBAB_CFG_Bits',0,34,95,3
-	.word	83547
+	.word	83542
 	.byte	10
 	.byte	'_Ifx_FLASH_CBAB_STAT_Bits',0,34,98,16,4,11
 	.byte	'VLD0',0,1
@@ -15936,7 +15936,7 @@ wifi_uart_data:	.type	object
 	.word	455
 	.byte	22,0,2,35,0,0,31
 	.byte	'Ifx_FLASH_CBAB_STAT_Bits',0,34,111,3
-	.word	83700
+	.word	83695
 	.byte	10
 	.byte	'_Ifx_FLASH_CBAB_TOP_Bits',0,34,114,16,4,11
 	.byte	'reserved_0',0,1
@@ -15955,7 +15955,7 @@ wifi_uart_data:	.type	object
 	.word	630
 	.byte	1,0,2,35,3,0,31
 	.byte	'Ifx_FLASH_CBAB_TOP_Bits',0,34,121,3
-	.word	83948
+	.word	83943
 	.byte	10
 	.byte	'_Ifx_FLASH_COMM0_Bits',0,34,124,16,4,11
 	.byte	'STATUS',0,1
@@ -15965,7 +15965,7 @@ wifi_uart_data:	.type	object
 	.word	455
 	.byte	24,0,2,35,0,0,31
 	.byte	'Ifx_FLASH_COMM0_Bits',0,34,128,1,3
-	.word	84094
+	.word	84089
 	.byte	10
 	.byte	'_Ifx_FLASH_COMM1_Bits',0,34,131,1,16,4,11
 	.byte	'STATUS',0,1
@@ -15978,7 +15978,7 @@ wifi_uart_data:	.type	object
 	.word	647
 	.byte	16,0,2,35,2,0,31
 	.byte	'Ifx_FLASH_COMM1_Bits',0,34,136,1,3
-	.word	84192
+	.word	84187
 	.byte	10
 	.byte	'_Ifx_FLASH_COMM2_Bits',0,34,139,1,16,4,11
 	.byte	'STATUS',0,1
@@ -15991,7 +15991,7 @@ wifi_uart_data:	.type	object
 	.word	647
 	.byte	16,0,2,35,2,0,31
 	.byte	'Ifx_FLASH_COMM2_Bits',0,34,144,1,3
-	.word	84308
+	.word	84303
 	.byte	10
 	.byte	'_Ifx_FLASH_ECCRD_Bits',0,34,147,1,16,4,11
 	.byte	'RCODE',0,4
@@ -16007,7 +16007,7 @@ wifi_uart_data:	.type	object
 	.word	630
 	.byte	1,0,2,35,3,0,31
 	.byte	'Ifx_FLASH_ECCRD_Bits',0,34,153,1,3
-	.word	84424
+	.word	84419
 	.byte	10
 	.byte	'_Ifx_FLASH_ECCRP_Bits',0,34,156,1,16,4,11
 	.byte	'RCODE',0,4
@@ -16023,7 +16023,7 @@ wifi_uart_data:	.type	object
 	.word	630
 	.byte	1,0,2,35,3,0,31
 	.byte	'Ifx_FLASH_ECCRP_Bits',0,34,162,1,3
-	.word	84564
+	.word	84559
 	.byte	10
 	.byte	'_Ifx_FLASH_ECCW_Bits',0,34,165,1,16,4,11
 	.byte	'WCODE',0,4
@@ -16039,7 +16039,7 @@ wifi_uart_data:	.type	object
 	.word	630
 	.byte	1,0,2,35,3,0,31
 	.byte	'Ifx_FLASH_ECCW_Bits',0,34,171,1,3
-	.word	84704
+	.word	84699
 	.byte	10
 	.byte	'_Ifx_FLASH_FCON_Bits',0,34,174,1,16,4,11
 	.byte	'WSPFLASH',0,1
@@ -16094,7 +16094,7 @@ wifi_uart_data:	.type	object
 	.word	630
 	.byte	1,0,2,35,3,0,31
 	.byte	'Ifx_FLASH_FCON_Bits',0,34,193,1,3
-	.word	84843
+	.word	84838
 	.byte	10
 	.byte	'_Ifx_FLASH_FPRO_Bits',0,34,196,1,16,4,11
 	.byte	'PROINP',0,1
@@ -16158,7 +16158,7 @@ wifi_uart_data:	.type	object
 	.word	630
 	.byte	8,0,2,35,3,0,31
 	.byte	'Ifx_FLASH_FPRO_Bits',0,34,218,1,3
-	.word	85205
+	.word	85200
 	.byte	10
 	.byte	'_Ifx_FLASH_FSR_Bits',0,34,221,1,16,4,11
 	.byte	'FABUSY',0,1
@@ -16255,7 +16255,7 @@ wifi_uart_data:	.type	object
 	.word	630
 	.byte	1,0,2,35,3,0,31
 	.byte	'Ifx_FLASH_FSR_Bits',0,34,254,1,3
-	.word	85646
+	.word	85641
 	.byte	10
 	.byte	'_Ifx_FLASH_ID_Bits',0,34,129,2,16,4,11
 	.byte	'MODREV',0,1
@@ -16268,7 +16268,7 @@ wifi_uart_data:	.type	object
 	.word	647
 	.byte	16,0,2,35,2,0,31
 	.byte	'Ifx_FLASH_ID_Bits',0,34,134,2,3
-	.word	86252
+	.word	86247
 	.byte	10
 	.byte	'_Ifx_FLASH_MARD_Bits',0,34,137,2,16,4,11
 	.byte	'HMARGIN',0,1
@@ -16296,7 +16296,7 @@ wifi_uart_data:	.type	object
 	.word	647
 	.byte	16,0,2,35,2,0,31
 	.byte	'Ifx_FLASH_MARD_Bits',0,34,147,2,3
-	.word	86363
+	.word	86358
 	.byte	10
 	.byte	'_Ifx_FLASH_MARP_Bits',0,34,150,2,16,4,11
 	.byte	'SELP0',0,1
@@ -16321,7 +16321,7 @@ wifi_uart_data:	.type	object
 	.word	647
 	.byte	16,0,2,35,2,0,31
 	.byte	'Ifx_FLASH_MARP_Bits',0,34,159,2,3
-	.word	86577
+	.word	86572
 	.byte	10
 	.byte	'_Ifx_FLASH_PROCOND_Bits',0,34,162,2,16,4,11
 	.byte	'L',0,1
@@ -16370,7 +16370,7 @@ wifi_uart_data:	.type	object
 	.word	630
 	.byte	1,0,2,35,3,0,31
 	.byte	'Ifx_FLASH_PROCOND_Bits',0,34,179,2,3
-	.word	86764
+	.word	86759
 	.byte	10
 	.byte	'_Ifx_FLASH_PROCONDBG_Bits',0,34,182,2,16,4,11
 	.byte	'OCDSDIS',0,1
@@ -16386,7 +16386,7 @@ wifi_uart_data:	.type	object
 	.word	455
 	.byte	28,0,2,35,0,0,31
 	.byte	'Ifx_FLASH_PROCONDBG_Bits',0,34,188,2,3
-	.word	87088
+	.word	87083
 	.byte	10
 	.byte	'_Ifx_FLASH_PROCONHSM_Bits',0,34,191,2,16,4,11
 	.byte	'HSMDBGDIS',0,1
@@ -16408,7 +16408,7 @@ wifi_uart_data:	.type	object
 	.word	647
 	.byte	16,0,2,35,2,0,31
 	.byte	'Ifx_FLASH_PROCONHSM_Bits',0,34,199,2,3
-	.word	87231
+	.word	87226
 	.byte	10
 	.byte	'_Ifx_FLASH_PROCONHSMCOTP_Bits',0,34,202,2,16,4,11
 	.byte	'HSMBOOTEN',0,1
@@ -16457,7 +16457,7 @@ wifi_uart_data:	.type	object
 	.word	647
 	.byte	14,0,2,35,2,0,31
 	.byte	'Ifx_FLASH_PROCONHSMCOTP_Bits',0,34,219,2,3
-	.word	87420
+	.word	87415
 	.byte	10
 	.byte	'_Ifx_FLASH_PROCONOTP_Bits',0,34,222,2,16,4,11
 	.byte	'S0ROM',0,1
@@ -16551,7 +16551,7 @@ wifi_uart_data:	.type	object
 	.word	630
 	.byte	1,0,2,35,3,0,31
 	.byte	'Ifx_FLASH_PROCONOTP_Bits',0,34,254,2,3
-	.word	87783
+	.word	87778
 	.byte	10
 	.byte	'_Ifx_FLASH_PROCONP_Bits',0,34,129,3,16,4,11
 	.byte	'S0L',0,1
@@ -16642,7 +16642,7 @@ wifi_uart_data:	.type	object
 	.word	630
 	.byte	1,0,2,35,3,0,31
 	.byte	'Ifx_FLASH_PROCONP_Bits',0,34,160,3,3
-	.word	88378
+	.word	88373
 	.byte	10
 	.byte	'_Ifx_FLASH_PROCONWOP_Bits',0,34,163,3,16,4,11
 	.byte	'S0WOP',0,1
@@ -16733,7 +16733,7 @@ wifi_uart_data:	.type	object
 	.word	630
 	.byte	1,0,2,35,3,0,31
 	.byte	'Ifx_FLASH_PROCONWOP_Bits',0,34,194,3,3
-	.word	88902
+	.word	88897
 	.byte	10
 	.byte	'_Ifx_FLASH_RDB_CFG0_Bits',0,34,197,3,16,4,11
 	.byte	'TAG',0,1
@@ -16743,7 +16743,7 @@ wifi_uart_data:	.type	object
 	.word	455
 	.byte	26,0,2,35,0,0,31
 	.byte	'Ifx_FLASH_RDB_CFG0_Bits',0,34,201,3,3
-	.word	89484
+	.word	89479
 	.byte	10
 	.byte	'_Ifx_FLASH_RDB_CFG1_Bits',0,34,204,3,16,4,11
 	.byte	'TAG',0,1
@@ -16753,7 +16753,7 @@ wifi_uart_data:	.type	object
 	.word	455
 	.byte	26,0,2,35,0,0,31
 	.byte	'Ifx_FLASH_RDB_CFG1_Bits',0,34,208,3,3
-	.word	89586
+	.word	89581
 	.byte	10
 	.byte	'_Ifx_FLASH_RDB_CFG2_Bits',0,34,211,3,16,4,11
 	.byte	'TAG',0,1
@@ -16763,7 +16763,7 @@ wifi_uart_data:	.type	object
 	.word	455
 	.byte	26,0,2,35,0,0,31
 	.byte	'Ifx_FLASH_RDB_CFG2_Bits',0,34,215,3,3
-	.word	89688
+	.word	89683
 	.byte	10
 	.byte	'_Ifx_FLASH_RRAD_Bits',0,34,218,3,16,4,11
 	.byte	'reserved_0',0,1
@@ -16773,7 +16773,7 @@ wifi_uart_data:	.type	object
 	.word	455
 	.byte	29,0,2,35,0,0,31
 	.byte	'Ifx_FLASH_RRAD_Bits',0,34,222,3,3
-	.word	89790
+	.word	89785
 	.byte	10
 	.byte	'_Ifx_FLASH_RRCT_Bits',0,34,225,3,16,4,11
 	.byte	'STRT',0,1
@@ -16804,21 +16804,21 @@ wifi_uart_data:	.type	object
 	.word	647
 	.byte	16,0,2,35,2,0,31
 	.byte	'Ifx_FLASH_RRCT_Bits',0,34,236,3,3
-	.word	89884
+	.word	89879
 	.byte	10
 	.byte	'_Ifx_FLASH_RRD0_Bits',0,34,239,3,16,4,11
 	.byte	'DATA',0,4
 	.word	455
 	.byte	32,0,2,35,0,0,31
 	.byte	'Ifx_FLASH_RRD0_Bits',0,34,242,3,3
-	.word	90094
+	.word	90089
 	.byte	10
 	.byte	'_Ifx_FLASH_RRD1_Bits',0,34,245,3,16,4,11
 	.byte	'DATA',0,4
 	.word	455
 	.byte	32,0,2,35,0,0,31
 	.byte	'Ifx_FLASH_RRD1_Bits',0,34,248,3,3
-	.word	90167
+	.word	90162
 	.byte	10
 	.byte	'_Ifx_FLASH_UBAB_CFG_Bits',0,34,251,3,16,4,11
 	.byte	'SEL',0,1
@@ -16837,7 +16837,7 @@ wifi_uart_data:	.type	object
 	.word	455
 	.byte	22,0,2,35,0,0,31
 	.byte	'Ifx_FLASH_UBAB_CFG_Bits',0,34,130,4,3
-	.word	90240
+	.word	90235
 	.byte	10
 	.byte	'_Ifx_FLASH_UBAB_STAT_Bits',0,34,133,4,16,4,11
 	.byte	'VLD0',0,1
@@ -16847,7 +16847,7 @@ wifi_uart_data:	.type	object
 	.word	455
 	.byte	31,0,2,35,0,0,31
 	.byte	'Ifx_FLASH_UBAB_STAT_Bits',0,34,137,4,3
-	.word	90395
+	.word	90390
 	.byte	10
 	.byte	'_Ifx_FLASH_UBAB_TOP_Bits',0,34,140,4,16,4,11
 	.byte	'reserved_0',0,1
@@ -16866,7 +16866,7 @@ wifi_uart_data:	.type	object
 	.word	630
 	.byte	1,0,2,35,3,0,31
 	.byte	'Ifx_FLASH_UBAB_TOP_Bits',0,34,147,4,3
-	.word	90500
+	.word	90495
 	.byte	12,34,155,4,9,4,13
 	.byte	'U',0
 	.word	455
@@ -16875,10 +16875,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	82905
+	.word	82900
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_FLASH_ACCEN0',0,34,160,4,3
-	.word	90648
+	.word	90643
 	.byte	12,34,163,4,9,4,13
 	.byte	'U',0
 	.word	455
@@ -16887,10 +16887,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	83466
+	.word	83461
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_FLASH_ACCEN1',0,34,168,4,3
-	.word	90714
+	.word	90709
 	.byte	12,34,171,4,9,4,13
 	.byte	'U',0
 	.word	455
@@ -16899,10 +16899,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	83547
+	.word	83542
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_FLASH_CBAB_CFG',0,34,176,4,3
-	.word	90780
+	.word	90775
 	.byte	12,34,179,4,9,4,13
 	.byte	'U',0
 	.word	455
@@ -16911,10 +16911,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	83700
+	.word	83695
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_FLASH_CBAB_STAT',0,34,184,4,3
-	.word	90848
+	.word	90843
 	.byte	12,34,187,4,9,4,13
 	.byte	'U',0
 	.word	455
@@ -16923,10 +16923,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	83948
+	.word	83943
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_FLASH_CBAB_TOP',0,34,192,4,3
-	.word	90917
+	.word	90912
 	.byte	12,34,195,4,9,4,13
 	.byte	'U',0
 	.word	455
@@ -16935,10 +16935,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	84094
+	.word	84089
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_FLASH_COMM0',0,34,200,4,3
-	.word	90985
+	.word	90980
 	.byte	12,34,203,4,9,4,13
 	.byte	'U',0
 	.word	455
@@ -16947,10 +16947,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	84192
+	.word	84187
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_FLASH_COMM1',0,34,208,4,3
-	.word	91050
+	.word	91045
 	.byte	12,34,211,4,9,4,13
 	.byte	'U',0
 	.word	455
@@ -16959,10 +16959,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	84308
+	.word	84303
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_FLASH_COMM2',0,34,216,4,3
-	.word	91115
+	.word	91110
 	.byte	12,34,219,4,9,4,13
 	.byte	'U',0
 	.word	455
@@ -16971,10 +16971,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	84424
+	.word	84419
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_FLASH_ECCRD',0,34,224,4,3
-	.word	91180
+	.word	91175
 	.byte	12,34,227,4,9,4,13
 	.byte	'U',0
 	.word	455
@@ -16983,10 +16983,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	84564
+	.word	84559
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_FLASH_ECCRP',0,34,232,4,3
-	.word	91245
+	.word	91240
 	.byte	12,34,235,4,9,4,13
 	.byte	'U',0
 	.word	455
@@ -16995,10 +16995,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	84704
+	.word	84699
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_FLASH_ECCW',0,34,240,4,3
-	.word	91310
+	.word	91305
 	.byte	12,34,243,4,9,4,13
 	.byte	'U',0
 	.word	455
@@ -17007,10 +17007,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	84843
+	.word	84838
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_FLASH_FCON',0,34,248,4,3
-	.word	91374
+	.word	91369
 	.byte	12,34,251,4,9,4,13
 	.byte	'U',0
 	.word	455
@@ -17019,10 +17019,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	85205
+	.word	85200
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_FLASH_FPRO',0,34,128,5,3
-	.word	91438
+	.word	91433
 	.byte	12,34,131,5,9,4,13
 	.byte	'U',0
 	.word	455
@@ -17031,10 +17031,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	85646
+	.word	85641
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_FLASH_FSR',0,34,136,5,3
-	.word	91502
+	.word	91497
 	.byte	12,34,139,5,9,4,13
 	.byte	'U',0
 	.word	455
@@ -17043,10 +17043,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	86252
+	.word	86247
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_FLASH_ID',0,34,144,5,3
-	.word	91565
+	.word	91560
 	.byte	12,34,147,5,9,4,13
 	.byte	'U',0
 	.word	455
@@ -17055,10 +17055,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	86363
+	.word	86358
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_FLASH_MARD',0,34,152,5,3
-	.word	91627
+	.word	91622
 	.byte	12,34,155,5,9,4,13
 	.byte	'U',0
 	.word	455
@@ -17067,10 +17067,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	86577
+	.word	86572
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_FLASH_MARP',0,34,160,5,3
-	.word	91691
+	.word	91686
 	.byte	12,34,163,5,9,4,13
 	.byte	'U',0
 	.word	455
@@ -17079,10 +17079,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	86764
+	.word	86759
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_FLASH_PROCOND',0,34,168,5,3
-	.word	91755
+	.word	91750
 	.byte	12,34,171,5,9,4,13
 	.byte	'U',0
 	.word	455
@@ -17091,10 +17091,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	87088
+	.word	87083
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_FLASH_PROCONDBG',0,34,176,5,3
-	.word	91822
+	.word	91817
 	.byte	12,34,179,5,9,4,13
 	.byte	'U',0
 	.word	455
@@ -17103,10 +17103,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	87231
+	.word	87226
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_FLASH_PROCONHSM',0,34,184,5,3
-	.word	91891
+	.word	91886
 	.byte	12,34,187,5,9,4,13
 	.byte	'U',0
 	.word	455
@@ -17115,10 +17115,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	87420
+	.word	87415
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_FLASH_PROCONHSMCOTP',0,34,192,5,3
-	.word	91960
+	.word	91955
 	.byte	12,34,195,5,9,4,13
 	.byte	'U',0
 	.word	455
@@ -17127,10 +17127,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	87783
+	.word	87778
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_FLASH_PROCONOTP',0,34,200,5,3
-	.word	92033
+	.word	92028
 	.byte	12,34,203,5,9,4,13
 	.byte	'U',0
 	.word	455
@@ -17139,10 +17139,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	88378
+	.word	88373
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_FLASH_PROCONP',0,34,208,5,3
-	.word	92102
+	.word	92097
 	.byte	12,34,211,5,9,4,13
 	.byte	'U',0
 	.word	455
@@ -17151,10 +17151,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	88902
+	.word	88897
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_FLASH_PROCONWOP',0,34,216,5,3
-	.word	92169
+	.word	92164
 	.byte	12,34,219,5,9,4,13
 	.byte	'U',0
 	.word	455
@@ -17163,10 +17163,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	89484
+	.word	89479
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_FLASH_RDB_CFG0',0,34,224,5,3
-	.word	92238
+	.word	92233
 	.byte	12,34,227,5,9,4,13
 	.byte	'U',0
 	.word	455
@@ -17175,10 +17175,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	89586
+	.word	89581
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_FLASH_RDB_CFG1',0,34,232,5,3
-	.word	92306
+	.word	92301
 	.byte	12,34,235,5,9,4,13
 	.byte	'U',0
 	.word	455
@@ -17187,10 +17187,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	89688
+	.word	89683
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_FLASH_RDB_CFG2',0,34,240,5,3
-	.word	92374
+	.word	92369
 	.byte	12,34,243,5,9,4,13
 	.byte	'U',0
 	.word	455
@@ -17199,10 +17199,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	89790
+	.word	89785
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_FLASH_RRAD',0,34,248,5,3
-	.word	92442
+	.word	92437
 	.byte	12,34,251,5,9,4,13
 	.byte	'U',0
 	.word	455
@@ -17211,10 +17211,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	89884
+	.word	89879
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_FLASH_RRCT',0,34,128,6,3
-	.word	92506
+	.word	92501
 	.byte	12,34,131,6,9,4,13
 	.byte	'U',0
 	.word	455
@@ -17223,10 +17223,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	90094
+	.word	90089
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_FLASH_RRD0',0,34,136,6,3
-	.word	92570
+	.word	92565
 	.byte	12,34,139,6,9,4,13
 	.byte	'U',0
 	.word	455
@@ -17235,10 +17235,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	90167
+	.word	90162
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_FLASH_RRD1',0,34,144,6,3
-	.word	92634
+	.word	92629
 	.byte	12,34,147,6,9,4,13
 	.byte	'U',0
 	.word	455
@@ -17247,10 +17247,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	90240
+	.word	90235
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_FLASH_UBAB_CFG',0,34,152,6,3
-	.word	92698
+	.word	92693
 	.byte	12,34,155,6,9,4,13
 	.byte	'U',0
 	.word	455
@@ -17259,10 +17259,10 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	90395
+	.word	90390
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_FLASH_UBAB_STAT',0,34,160,6,3
-	.word	92766
+	.word	92761
 	.byte	12,34,163,6,9,4,13
 	.byte	'U',0
 	.word	455
@@ -17271,55 +17271,55 @@ wifi_uart_data:	.type	object
 	.word	471
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	90500
+	.word	90495
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_FLASH_UBAB_TOP',0,34,168,6,3
-	.word	92835
+	.word	92830
 	.byte	10
 	.byte	'_Ifx_FLASH_CBAB',0,34,179,6,25,12,13
 	.byte	'CFG',0
-	.word	90780
+	.word	90775
 	.byte	4,2,35,0,13
 	.byte	'STAT',0
-	.word	90848
+	.word	90843
 	.byte	4,2,35,4,13
 	.byte	'TOP',0
-	.word	90917
+	.word	90912
 	.byte	4,2,35,8,0,14
-	.word	92903
+	.word	92898
 	.byte	31
 	.byte	'Ifx_FLASH_CBAB',0,34,184,6,3
-	.word	92966
+	.word	92961
 	.byte	10
 	.byte	'_Ifx_FLASH_RDB',0,34,187,6,25,12,13
 	.byte	'CFG0',0
-	.word	92238
+	.word	92233
 	.byte	4,2,35,0,13
 	.byte	'CFG1',0
-	.word	92306
+	.word	92301
 	.byte	4,2,35,4,13
 	.byte	'CFG2',0
-	.word	92374
+	.word	92369
 	.byte	4,2,35,8,0,14
-	.word	92995
+	.word	92990
 	.byte	31
 	.byte	'Ifx_FLASH_RDB',0,34,192,6,3
-	.word	93059
+	.word	93054
 	.byte	10
 	.byte	'_Ifx_FLASH_UBAB',0,34,195,6,25,12,13
 	.byte	'CFG',0
-	.word	92698
+	.word	92693
 	.byte	4,2,35,0,13
 	.byte	'STAT',0
-	.word	92766
+	.word	92761
 	.byte	4,2,35,4,13
 	.byte	'TOP',0
-	.word	92835
+	.word	92830
 	.byte	4,2,35,8,0,14
-	.word	93087
+	.word	93082
 	.byte	31
 	.byte	'Ifx_FLASH_UBAB',0,34,200,6,3
-	.word	93150
+	.word	93145
 	.byte	31
 	.byte	'IfxScuCcu_PllStepsFunctionHook',0,9,148,1,16
 	.word	194
@@ -17331,7 +17331,7 @@ wifi_uart_data:	.type	object
 	.word	10291
 	.byte	4,2,35,4,0,31
 	.byte	'IfxScuCcu_CcuconRegConfig',0,9,216,5,3
-	.word	93219
+	.word	93214
 	.byte	20,9,221,5,9,8,13
 	.byte	'pDivider',0
 	.word	630
@@ -17346,7 +17346,7 @@ wifi_uart_data:	.type	object
 	.word	251
 	.byte	4,2,35,4,0,31
 	.byte	'IfxScuCcu_InitialStepConfig',0,9,227,5,3
-	.word	93290
+	.word	93285
 	.byte	20,9,231,5,9,12,13
 	.byte	'k2Step',0
 	.word	630
@@ -17355,33 +17355,33 @@ wifi_uart_data:	.type	object
 	.word	251
 	.byte	4,2,35,2,13
 	.byte	'hookFunction',0
-	.word	93179
+	.word	93174
 	.byte	4,2,35,8,0,31
 	.byte	'IfxScuCcu_PllStepsConfig',0,9,236,5,3
-	.word	93407
+	.word	93402
 	.byte	3
 	.word	191
 	.byte	20,9,244,5,9,48,13
 	.byte	'ccucon0',0
-	.word	93219
+	.word	93214
 	.byte	8,2,35,0,13
 	.byte	'ccucon1',0
-	.word	93219
+	.word	93214
 	.byte	8,2,35,8,13
 	.byte	'ccucon2',0
-	.word	93219
+	.word	93214
 	.byte	8,2,35,16,13
 	.byte	'ccucon5',0
-	.word	93219
+	.word	93214
 	.byte	8,2,35,24,13
 	.byte	'ccucon6',0
-	.word	93219
+	.word	93214
 	.byte	8,2,35,32,13
 	.byte	'ccucon7',0
-	.word	93219
+	.word	93214
 	.byte	8,2,35,40,0,31
 	.byte	'IfxScuCcu_ClockDistributionConfig',0,9,252,5,3
-	.word	93509
+	.word	93504
 	.byte	20,9,128,6,9,8,13
 	.byte	'value',0
 	.word	10291
@@ -17390,126 +17390,126 @@ wifi_uart_data:	.type	object
 	.word	10291
 	.byte	4,2,35,4,0,31
 	.byte	'IfxScuCcu_FlashWaitstateConfig',0,9,132,6,3
-	.word	93661
+	.word	93656
 	.byte	3
-	.word	93407
+	.word	93402
 	.byte	20,9,137,6,9,16,13
 	.byte	'numOfPllDividerSteps',0
 	.word	630
 	.byte	1,2,35,0,13
 	.byte	'pllDividerStep',0
-	.word	93737
+	.word	93732
 	.byte	4,2,35,4,13
 	.byte	'pllInitialStep',0
-	.word	93290
+	.word	93285
 	.byte	8,2,35,8,0,31
 	.byte	'IfxScuCcu_SysPllConfig',0,9,142,6,3
-	.word	93742
+	.word	93737
 	.byte	17,35,69,9,1,18
 	.byte	'IfxSrc_Tos_cpu0',0,0,18
 	.byte	'IfxSrc_Tos_cpu1',0,1,18
 	.byte	'IfxSrc_Tos_dma',0,3,0,31
 	.byte	'IfxSrc_Tos',0,35,74,3
-	.word	93859
+	.word	93854
 	.byte	20,36,59,15,16,13
 	.byte	'module',0
 	.word	17476
 	.byte	4,2,35,0,13
 	.byte	'pin',0
-	.word	57324
+	.word	57319
 	.byte	8,2,35,4,13
 	.byte	'select',0
-	.word	28512
+	.word	28507
 	.byte	1,2,35,12,0,21
-	.word	93937
+	.word	93932
 	.byte	31
 	.byte	'IfxAsclin_Cts_In',0,36,64,3
-	.word	93988
+	.word	93983
 	.byte	20,36,67,15,16,13
 	.byte	'module',0
 	.word	17476
 	.byte	4,2,35,0,13
 	.byte	'pin',0
-	.word	57324
+	.word	57319
 	.byte	8,2,35,4,13
 	.byte	'select',0
-	.word	28512
+	.word	28507
 	.byte	1,2,35,12,0,21
-	.word	94018
+	.word	94013
 	.byte	31
 	.byte	'IfxAsclin_Rx_In',0,36,72,3
-	.word	94069
+	.word	94064
 	.byte	20,36,75,15,16,13
 	.byte	'module',0
 	.word	17476
 	.byte	4,2,35,0,13
 	.byte	'pin',0
-	.word	57324
+	.word	57319
 	.byte	8,2,35,4,13
 	.byte	'select',0
 	.word	9475
 	.byte	1,2,35,12,0,21
-	.word	94098
+	.word	94093
 	.byte	31
 	.byte	'IfxAsclin_Rts_Out',0,36,80,3
-	.word	94149
+	.word	94144
 	.byte	20,36,83,15,16,13
 	.byte	'module',0
 	.word	17476
 	.byte	4,2,35,0,13
 	.byte	'pin',0
-	.word	57324
+	.word	57319
 	.byte	8,2,35,4,13
 	.byte	'select',0
 	.word	9475
 	.byte	1,2,35,12,0,21
-	.word	94180
+	.word	94175
 	.byte	31
 	.byte	'IfxAsclin_Sclk_Out',0,36,88,3
-	.word	94231
+	.word	94226
 	.byte	20,36,91,15,16,13
 	.byte	'module',0
 	.word	17476
 	.byte	4,2,35,0,13
 	.byte	'pin',0
-	.word	57324
+	.word	57319
 	.byte	8,2,35,4,13
 	.byte	'select',0
 	.word	9475
 	.byte	1,2,35,12,0,21
-	.word	94263
+	.word	94258
 	.byte	31
 	.byte	'IfxAsclin_Slso_Out',0,36,96,3
-	.word	94314
+	.word	94309
 	.byte	20,36,99,15,16,13
 	.byte	'module',0
 	.word	17476
 	.byte	4,2,35,0,13
 	.byte	'pin',0
-	.word	57324
+	.word	57319
 	.byte	8,2,35,4,13
 	.byte	'select',0
 	.word	9475
 	.byte	1,2,35,12,0,21
-	.word	94346
+	.word	94341
 	.byte	31
 	.byte	'IfxAsclin_Tx_Out',0,36,104,3
-	.word	94397
+	.word	94392
 	.byte	17,12,82,9,1,18
 	.byte	'IfxAsclin_Checksum_classic',0,0,18
 	.byte	'IfxAsclin_Checksum_enhanced',0,1,0,31
 	.byte	'IfxAsclin_Checksum',0,12,86,3
-	.word	94427
+	.word	94422
 	.byte	17,12,91,9,1,18
 	.byte	'IfxAsclin_ChecksumInjection_notWritten',0,0,18
 	.byte	'IfxAsclin_ChecksumInjection_written',0,1,0,31
 	.byte	'IfxAsclin_ChecksumInjection',0,12,95,3
-	.word	94519
+	.word	94514
 	.byte	17,12,101,9,1,18
 	.byte	'IfxAsclin_ClockPolarity_idleLow',0,0,18
 	.byte	'IfxAsclin_ClockPolarity_idleHigh',0,1,0,31
 	.byte	'IfxAsclin_ClockPolarity',0,12,105,3
-	.word	94640
+	.word	94635
 	.byte	17,12,110,9,1,18
 	.byte	'IfxAsclin_ClockSource_noClock',0,0,18
 	.byte	'IfxAsclin_ClockSource_kernelClock',0,1,18
@@ -17518,7 +17518,7 @@ wifi_uart_data:	.type	object
 	.byte	'IfxAsclin_ClockSource_ascFastClock',0,8,18
 	.byte	'IfxAsclin_ClockSource_ascSlowClock',0,16,0,31
 	.byte	'IfxAsclin_ClockSource',0,12,118,3
-	.word	94747
+	.word	94742
 	.byte	31
 	.byte	'IfxAsclin_CtsInputSelect',0,12,129,1,3
 	.word	17543
@@ -17540,19 +17540,19 @@ wifi_uart_data:	.type	object
 	.byte	'IfxAsclin_DataLength_15',0,14,18
 	.byte	'IfxAsclin_DataLength_16',0,15,0,31
 	.byte	'IfxAsclin_DataLength',0,12,152,1,3
-	.word	95036
+	.word	95031
 	.byte	17,12,157,1,9,1,18
 	.byte	'IfxAsclin_FrameMode_initialise',0,0,18
 	.byte	'IfxAsclin_FrameMode_asc',0,1,18
 	.byte	'IfxAsclin_FrameMode_spi',0,2,18
 	.byte	'IfxAsclin_FrameMode_lin',0,3,0,31
 	.byte	'IfxAsclin_FrameMode',0,12,163,1,3
-	.word	95480
+	.word	95475
 	.byte	17,12,168,1,9,1,18
 	.byte	'IfxAsclin_HeaderResponseSelect_headerAndResponse',0,0,18
 	.byte	'IfxAsclin_HeaderResponseSelect_headerOnly',0,1,0,31
 	.byte	'IfxAsclin_HeaderResponseSelect',0,12,172,1,3
-	.word	95627
+	.word	95622
 	.byte	17,12,179,1,9,1,18
 	.byte	'IfxAsclin_IdleDelay_0',0,0,18
 	.byte	'IfxAsclin_IdleDelay_1',0,1,18
@@ -17563,7 +17563,7 @@ wifi_uart_data:	.type	object
 	.byte	'IfxAsclin_IdleDelay_6',0,6,18
 	.byte	'IfxAsclin_IdleDelay_7',0,7,0,31
 	.byte	'IfxAsclin_IdleDelay',0,12,189,1,3
-	.word	95769
+	.word	95764
 	.byte	17,12,195,1,9,1,18
 	.byte	'IfxAsclin_LeadDelay_0',0,0,18
 	.byte	'IfxAsclin_LeadDelay_1',0,1,18
@@ -17574,17 +17574,17 @@ wifi_uart_data:	.type	object
 	.byte	'IfxAsclin_LeadDelay_6',0,6,18
 	.byte	'IfxAsclin_LeadDelay_7',0,7,0,31
 	.byte	'IfxAsclin_LeadDelay',0,12,205,1,3
-	.word	95997
+	.word	95992
 	.byte	17,12,210,1,9,1,18
 	.byte	'IfxAsclin_LinMode_slave',0,0,18
 	.byte	'IfxAsclin_LinMode_master',0,1,0,31
 	.byte	'IfxAsclin_LinMode',0,12,214,1,3
-	.word	96225
+	.word	96220
 	.byte	17,12,219,1,9,1,18
 	.byte	'IfxAsclin_LinResponseTimeoutMode_frameTimeout',0,0,18
 	.byte	'IfxAsclin_LinResponseTimeoutMode_responseTimeout',0,1,0,31
 	.byte	'IfxAsclin_LinResponseTimeoutMode',0,12,223,1,3
-	.word	96312
+	.word	96307
 	.byte	17,12,228,1,9,1,18
 	.byte	'IfxAsclin_OversamplingFactor_4',0,3,18
 	.byte	'IfxAsclin_OversamplingFactor_5',0,4,18
@@ -17600,22 +17600,22 @@ wifi_uart_data:	.type	object
 	.byte	'IfxAsclin_OversamplingFactor_15',0,14,18
 	.byte	'IfxAsclin_OversamplingFactor_16',0,15,0,31
 	.byte	'IfxAsclin_OversamplingFactor',0,12,243,1,3
-	.word	96460
+	.word	96455
 	.byte	17,12,248,1,9,1,18
 	.byte	'IfxAsclin_ParityType_even',0,0,18
 	.byte	'IfxAsclin_ParityType_odd',0,1,0,31
 	.byte	'IfxAsclin_ParityType',0,12,252,1,3
-	.word	96941
+	.word	96936
 	.byte	17,12,129,2,9,1,18
 	.byte	'IfxAsclin_ReceiveBufferMode_rxFifo',0,0,18
 	.byte	'IfxAsclin_ReceiveBufferMode_rxBuffer',0,1,0,31
 	.byte	'IfxAsclin_ReceiveBufferMode',0,12,133,2,3
-	.word	97033
+	.word	97028
 	.byte	17,12,138,2,9,1,18
 	.byte	'IfxAsclin_RtsCtsPolarity_activeHigh',0,0,18
 	.byte	'IfxAsclin_RtsCtsPolarity_activeLow',0,1,0,31
 	.byte	'IfxAsclin_RtsCtsPolarity',0,12,142,2,3
-	.word	97153
+	.word	97148
 	.byte	17,12,147,2,9,1,18
 	.byte	'IfxAsclin_RxFifoInterruptLevel_1',0,0,18
 	.byte	'IfxAsclin_RxFifoInterruptLevel_2',0,1,18
@@ -17634,14 +17634,14 @@ wifi_uart_data:	.type	object
 	.byte	'IfxAsclin_RxFifoInterruptLevel_15',0,14,18
 	.byte	'IfxAsclin_RxFifoInterruptLevel_16',0,15,0,31
 	.byte	'IfxAsclin_RxFifoInterruptLevel',0,12,165,2,3
-	.word	97269
+	.word	97264
 	.byte	17,12,170,2,9,1,18
 	.byte	'IfxAsclin_RxFifoOutletWidth_0',0,0,18
 	.byte	'IfxAsclin_RxFifoOutletWidth_1',0,1,18
 	.byte	'IfxAsclin_RxFifoOutletWidth_2',0,2,18
 	.byte	'IfxAsclin_RxFifoOutletWidth_3',0,3,0,31
 	.byte	'IfxAsclin_RxFifoOutletWidth',0,12,176,2,3
-	.word	97883
+	.word	97878
 	.byte	31
 	.byte	'IfxAsclin_RxInputSelect',0,12,191,2,3
 	.word	17727
@@ -17662,27 +17662,27 @@ wifi_uart_data:	.type	object
 	.byte	'IfxAsclin_SamplePointPosition_14',0,14,18
 	.byte	'IfxAsclin_SamplePointPosition_15',0,15,0,31
 	.byte	'IfxAsclin_SamplePointPosition',0,12,213,2,3
-	.word	98088
+	.word	98083
 	.byte	17,12,218,2,9,1,18
 	.byte	'IfxAsclin_SamplesPerBit_one',0,0,18
 	.byte	'IfxAsclin_SamplesPerBit_three',0,1,0,31
 	.byte	'IfxAsclin_SamplesPerBit',0,12,222,2,3
-	.word	98650
+	.word	98645
 	.byte	17,12,228,2,9,1,18
 	.byte	'IfxAsclin_ShiftDirection_lsbFirst',0,0,18
 	.byte	'IfxAsclin_ShiftDirection_msbFirst',0,1,0,31
 	.byte	'IfxAsclin_ShiftDirection',0,12,232,2,3
-	.word	98752
+	.word	98747
 	.byte	17,12,238,2,9,1,18
 	.byte	'IfxAsclin_SlavePolarity_idleLow',0,0,18
 	.byte	'IfxAsclin_SlavePolarity_idlehigh',0,1,0,31
 	.byte	'IfxAsclin_SlavePolarity',0,12,242,2,3
-	.word	98865
+	.word	98860
 	.byte	17,12,247,2,9,1,18
 	.byte	'IfxAsclin_SleepMode_enable',0,0,18
 	.byte	'IfxAsclin_SleepMode_disable',0,1,0,31
 	.byte	'IfxAsclin_SleepMode',0,12,251,2,3
-	.word	98974
+	.word	98969
 	.byte	17,12,136,3,9,1,18
 	.byte	'IfxAsclin_StopBit_0',0,0,18
 	.byte	'IfxAsclin_StopBit_1',0,1,18
@@ -17693,20 +17693,20 @@ wifi_uart_data:	.type	object
 	.byte	'IfxAsclin_StopBit_6',0,6,18
 	.byte	'IfxAsclin_StopBit_7',0,7,0,31
 	.byte	'IfxAsclin_StopBit',0,12,146,3,3
-	.word	99069
+	.word	99064
 	.byte	17,12,150,3,9,1,18
 	.byte	'IfxAsclin_SuspendMode_none',0,0,18
 	.byte	'IfxAsclin_SuspendMode_hard',0,1,18
 	.byte	'IfxAsclin_SuspendMode_soft',0,2,0,31
 	.byte	'IfxAsclin_SuspendMode',0,12,155,3,3
-	.word	99279
+	.word	99274
 	.byte	17,12,160,3,9,1,18
 	.byte	'IfxAsclin_TxFifoInletWidth_0',0,0,18
 	.byte	'IfxAsclin_TxFifoInletWidth_1',0,1,18
 	.byte	'IfxAsclin_TxFifoInletWidth_2',0,2,18
 	.byte	'IfxAsclin_TxFifoInletWidth_3',0,3,0,31
 	.byte	'IfxAsclin_TxFifoInletWidth',0,12,166,3,3
-	.word	99404
+	.word	99399
 	.byte	17,12,171,3,9,1,18
 	.byte	'IfxAsclin_TxFifoInterruptLevel_0',0,0,18
 	.byte	'IfxAsclin_TxFifoInterruptLevel_1',0,1,18
@@ -17725,7 +17725,7 @@ wifi_uart_data:	.type	object
 	.byte	'IfxAsclin_TxFifoInterruptLevel_14',0,14,18
 	.byte	'IfxAsclin_TxFifoInterruptLevel_15',0,15,0,31
 	.byte	'IfxAsclin_TxFifoInterruptLevel',0,12,189,3,3
-	.word	99571
+	.word	99566
 	.byte	31
 	.byte	'Ifx_Fifo_Shared',0,14,66,3
 	.word	18044
@@ -17736,12 +17736,12 @@ wifi_uart_data:	.type	object
 	.byte	'IfxStm_Comparator_0',0,0,18
 	.byte	'IfxStm_Comparator_1',0,1,0,31
 	.byte	'IfxStm_Comparator',0,15,155,1,3
-	.word	100225
+	.word	100220
 	.byte	17,15,159,1,9,1,18
 	.byte	'IfxStm_ComparatorInterrupt_ir0',0,0,18
 	.byte	'IfxStm_ComparatorInterrupt_ir1',0,1,0,31
 	.byte	'IfxStm_ComparatorInterrupt',0,15,163,1,3
-	.word	100303
+	.word	100298
 	.byte	17,15,167,1,9,1,18
 	.byte	'IfxStm_ComparatorOffset_0',0,0,18
 	.byte	'IfxStm_ComparatorOffset_1',0,1,18
@@ -17776,7 +17776,7 @@ wifi_uart_data:	.type	object
 	.byte	'IfxStm_ComparatorOffset_30',0,30,18
 	.byte	'IfxStm_ComparatorOffset_31',0,31,0,31
 	.byte	'IfxStm_ComparatorOffset',0,15,201,1,3
-	.word	100412
+	.word	100407
 	.byte	17,15,205,1,9,1,18
 	.byte	'IfxStm_ComparatorSize_1Bit',0,0,18
 	.byte	'IfxStm_ComparatorSize_2Bits',0,1,18
@@ -17811,18 +17811,18 @@ wifi_uart_data:	.type	object
 	.byte	'IfxStm_ComparatorSize_31Bits',0,30,18
 	.byte	'IfxStm_ComparatorSize_32Bits',0,31,0,31
 	.byte	'IfxStm_ComparatorSize',0,15,239,1,3
-	.word	101370
+	.word	101365
 	.byte	17,15,244,1,9,1,18
 	.byte	'IfxStm_SleepMode_enable',0,0,18
 	.byte	'IfxStm_SleepMode_disable',0,1,0,31
 	.byte	'IfxStm_SleepMode',0,15,248,1,3
-	.word	102390
+	.word	102385
 	.byte	17,15,252,1,9,1,18
 	.byte	'IfxStm_SuspendMode_none',0,0,18
 	.byte	'IfxStm_SuspendMode_hard',0,1,18
 	.byte	'IfxStm_SuspendMode_soft',0,2,0,31
 	.byte	'IfxStm_SuspendMode',0,15,129,2,3
-	.word	102476
+	.word	102471
 	.byte	31
 	.byte	'IfxStdIf_InterfaceDriver',0,37,118,15
 	.word	369
@@ -17835,47 +17835,47 @@ wifi_uart_data:	.type	object
 	.byte	35
 	.word	369
 	.byte	35
-	.word	102622
+	.word	102617
 	.byte	35
 	.word	21992
 	.byte	0,3
-	.word	102627
+	.word	102622
 	.byte	31
 	.byte	'IfxStdIf_DPipe_Write',0,38,92,19
-	.word	102655
+	.word	102650
 	.byte	31
 	.byte	'IfxStdIf_DPipe_Read',0,38,107,19
-	.word	102655
+	.word	102650
 	.byte	34
 	.word	18032
 	.byte	1,1,35
 	.word	369
 	.byte	0,3
-	.word	102717
+	.word	102712
 	.byte	31
 	.byte	'IfxStdIf_DPipe_GetReadCount',0,38,115,18
-	.word	102730
+	.word	102725
 	.byte	14
 	.word	630
 	.byte	3
-	.word	102771
+	.word	102766
 	.byte	34
-	.word	102776
+	.word	102771
 	.byte	1,1,35
 	.word	369
 	.byte	0,3
-	.word	102781
+	.word	102776
 	.byte	31
 	.byte	'IfxStdIf_DPipe_GetReadEvent',0,38,123,36
-	.word	102794
+	.word	102789
 	.byte	31
 	.byte	'IfxStdIf_DPipe_GetWriteCount',0,38,147,1,18
-	.word	102730
+	.word	102725
 	.byte	3
-	.word	102781
+	.word	102776
 	.byte	31
 	.byte	'IfxStdIf_DPipe_GetWriteEvent',0,38,155,1,37
-	.word	102873
+	.word	102868
 	.byte	34
 	.word	630
 	.byte	1,1,35
@@ -17885,13 +17885,13 @@ wifi_uart_data:	.type	object
 	.byte	35
 	.word	21992
 	.byte	0,3
-	.word	102916
+	.word	102911
 	.byte	31
 	.byte	'IfxStdIf_DPipe_CanReadCount',0,38,166,1,19
-	.word	102939
+	.word	102934
 	.byte	31
 	.byte	'IfxStdIf_DPipe_CanWriteCount',0,38,177,1,19
-	.word	102939
+	.word	102934
 	.byte	34
 	.word	630
 	.byte	1,1,35
@@ -17899,157 +17899,157 @@ wifi_uart_data:	.type	object
 	.byte	35
 	.word	21992
 	.byte	0,3
-	.word	103019
+	.word	103014
 	.byte	31
 	.byte	'IfxStdIf_DPipe_FlushTx',0,38,186,1,19
-	.word	103037
+	.word	103032
 	.byte	36,1,1,35
 	.word	369
 	.byte	0,3
-	.word	103074
+	.word	103069
 	.byte	31
 	.byte	'IfxStdIf_DPipe_ClearTx',0,38,200,1,16
-	.word	103083
+	.word	103078
 	.byte	31
 	.byte	'IfxStdIf_DPipe_ClearRx',0,38,193,1,16
-	.word	103083
+	.word	103078
 	.byte	31
 	.byte	'IfxStdIf_DPipe_OnReceive',0,38,208,1,16
-	.word	103083
+	.word	103078
 	.byte	31
 	.byte	'IfxStdIf_DPipe_OnTransmit',0,38,215,1,16
-	.word	103083
+	.word	103078
 	.byte	31
 	.byte	'IfxStdIf_DPipe_OnError',0,38,222,1,16
-	.word	103083
+	.word	103078
 	.byte	34
 	.word	10291
 	.byte	1,1,35
 	.word	369
 	.byte	0,3
-	.word	103253
+	.word	103248
 	.byte	31
 	.byte	'IfxStdIf_DPipe_GetSendCount',0,38,131,1,18
-	.word	103266
+	.word	103261
 	.byte	34
 	.word	21992
 	.byte	1,1,35
 	.word	369
 	.byte	0,3
-	.word	103308
+	.word	103303
 	.byte	31
 	.byte	'IfxStdIf_DPipe_GetTxTimeStamp',0,38,139,1,24
-	.word	103321
+	.word	103316
 	.byte	31
 	.byte	'IfxStdIf_DPipe_ResetSendCount',0,38,229,1,16
-	.word	103083
+	.word	103078
 	.byte	10
 	.byte	'IfxStdIf_DPipe_',0,38,233,1,8,76,13
 	.byte	'driver',0
-	.word	102589
+	.word	102584
 	.byte	4,2,35,0,13
 	.byte	'txDisabled',0
 	.word	630
 	.byte	1,2,35,4,13
 	.byte	'write',0
-	.word	102660
+	.word	102655
 	.byte	4,2,35,8,13
 	.byte	'read',0
-	.word	102689
+	.word	102684
 	.byte	4,2,35,12,13
 	.byte	'getReadCount',0
-	.word	102735
+	.word	102730
 	.byte	4,2,35,16,13
 	.byte	'getReadEvent',0
-	.word	102799
+	.word	102794
 	.byte	4,2,35,20,13
 	.byte	'getWriteCount',0
-	.word	102835
+	.word	102830
 	.byte	4,2,35,24,13
 	.byte	'getWriteEvent',0
-	.word	102878
+	.word	102873
 	.byte	4,2,35,28,13
 	.byte	'canReadCount',0
-	.word	102944
+	.word	102939
 	.byte	4,2,35,32,13
 	.byte	'canWriteCount',0
-	.word	102981
+	.word	102976
 	.byte	4,2,35,36,13
 	.byte	'flushTx',0
-	.word	103042
+	.word	103037
 	.byte	4,2,35,40,13
 	.byte	'clearTx',0
-	.word	103088
+	.word	103083
 	.byte	4,2,35,44,13
 	.byte	'clearRx',0
-	.word	103120
+	.word	103115
 	.byte	4,2,35,48,13
 	.byte	'onReceive',0
-	.word	103152
+	.word	103147
 	.byte	4,2,35,52,13
 	.byte	'onTransmit',0
-	.word	103186
+	.word	103181
 	.byte	4,2,35,56,13
 	.byte	'onError',0
-	.word	103221
+	.word	103216
 	.byte	4,2,35,60,13
 	.byte	'getSendCount',0
-	.word	103271
+	.word	103266
 	.byte	4,2,35,64,13
 	.byte	'getTxTimeStamp',0
-	.word	103326
+	.word	103321
 	.byte	4,2,35,68,13
 	.byte	'resetSendCount',0
-	.word	103365
+	.word	103360
 	.byte	4,2,35,72,0,31
 	.byte	'IfxStdIf_DPipe',0,38,71,32
-	.word	103404
+	.word	103399
 	.byte	3
 	.word	363
 	.byte	3
-	.word	102627
+	.word	102622
 	.byte	3
-	.word	102627
+	.word	102622
 	.byte	3
-	.word	102717
+	.word	102712
 	.byte	3
-	.word	102781
+	.word	102776
 	.byte	3
-	.word	102717
+	.word	102712
 	.byte	3
-	.word	102781
+	.word	102776
 	.byte	3
-	.word	102916
+	.word	102911
 	.byte	3
-	.word	102916
+	.word	102911
 	.byte	3
-	.word	103019
+	.word	103014
 	.byte	3
-	.word	103074
+	.word	103069
 	.byte	3
-	.word	103074
+	.word	103069
 	.byte	3
-	.word	103074
+	.word	103069
 	.byte	3
-	.word	103074
+	.word	103069
 	.byte	3
-	.word	103074
+	.word	103069
 	.byte	3
-	.word	103253
+	.word	103248
 	.byte	3
-	.word	103308
+	.word	103303
 	.byte	3
-	.word	103074
+	.word	103069
 	.byte	14
 	.word	630
 	.byte	3
-	.word	103917
+	.word	103912
 	.byte	31
 	.byte	'IfxStdIf_DPipe_WriteEvent',0,38,73,32
-	.word	103922
+	.word	103917
 	.byte	31
 	.byte	'IfxStdIf_DPipe_ReadEvent',0,38,74,32
-	.word	103922
+	.word	103917
 	.byte	20,39,252,1,9,1,11
 	.byte	'parityError',0,1
 	.word	630
@@ -18067,7 +18067,7 @@ wifi_uart_data:	.type	object
 	.word	630
 	.byte	1,3,2,35,0,0,31
 	.byte	'IfxAsclin_Asc_ErrorFlags',0,39,131,2,3
-	.word	103994
+	.word	103989
 	.byte	20,39,137,2,9,8,13
 	.byte	'baudrate',0
 	.word	251
@@ -18076,61 +18076,61 @@ wifi_uart_data:	.type	object
 	.word	647
 	.byte	2,2,35,4,13
 	.byte	'oversampling',0
-	.word	96460
+	.word	96455
 	.byte	1,2,35,6,0,31
 	.byte	'IfxAsclin_Asc_BaudRate',0,39,142,2,3
-	.word	104159
+	.word	104154
 	.byte	20,39,146,2,9,2,13
 	.byte	'medianFilter',0
-	.word	98650
+	.word	98645
 	.byte	1,2,35,0,13
 	.byte	'samplePointPosition',0
-	.word	98088
+	.word	98083
 	.byte	1,2,35,1,0,31
 	.byte	'IfxAsclin_Asc_BitTimingControl',0,39,150,2,3
-	.word	104257
+	.word	104252
 	.byte	20,39,154,2,9,6,13
 	.byte	'inWidth',0
-	.word	99404
+	.word	99399
 	.byte	1,2,35,0,13
 	.byte	'outWidth',0
-	.word	97883
+	.word	97878
 	.byte	1,2,35,1,13
 	.byte	'txFifoInterruptLevel',0
-	.word	99571
+	.word	99566
 	.byte	1,2,35,2,13
 	.byte	'rxFifoInterruptLevel',0
-	.word	97269
+	.word	97264
 	.byte	1,2,35,3,13
 	.byte	'buffMode',0
-	.word	97033
+	.word	97028
 	.byte	1,2,35,4,0,31
 	.byte	'IfxAsclin_Asc_FifoControl',0,39,161,2,3
-	.word	104355
+	.word	104350
 	.byte	20,39,165,2,9,8,13
 	.byte	'idleDelay',0
-	.word	95769
+	.word	95764
 	.byte	1,2,35,0,13
 	.byte	'stopBit',0
-	.word	99069
+	.word	99064
 	.byte	1,2,35,1,13
 	.byte	'frameMode',0
-	.word	95480
+	.word	95475
 	.byte	1,2,35,2,13
 	.byte	'shiftDir',0
-	.word	98752
+	.word	98747
 	.byte	1,2,35,3,13
 	.byte	'parityType',0
-	.word	96941
+	.word	96936
 	.byte	1,2,35,4,13
 	.byte	'dataLength',0
-	.word	95036
+	.word	95031
 	.byte	1,2,35,5,13
 	.byte	'parityBit',0
 	.word	630
 	.byte	1,2,35,6,0,31
 	.byte	'IfxAsclin_Asc_FrameControl',0,39,174,2,3
-	.word	104510
+	.word	104505
 	.byte	20,39,178,2,9,8,13
 	.byte	'txPriority',0
 	.word	647
@@ -18142,97 +18142,97 @@ wifi_uart_data:	.type	object
 	.word	647
 	.byte	2,2,35,4,13
 	.byte	'typeOfService',0
-	.word	93859
+	.word	93854
 	.byte	1,2,35,6,0,31
 	.byte	'IfxAsclin_Asc_InterruptConfig',0,39,184,2,3
-	.word	104685
+	.word	104680
 	.byte	21
-	.word	93937
+	.word	93932
 	.byte	3
-	.word	104814
+	.word	104809
 	.byte	21
-	.word	94018
+	.word	94013
 	.byte	3
-	.word	104824
+	.word	104819
 	.byte	21
-	.word	94098
+	.word	94093
 	.byte	3
-	.word	104834
+	.word	104829
 	.byte	21
-	.word	94346
+	.word	94341
 	.byte	3
-	.word	104844
+	.word	104839
 	.byte	20,39,188,2,9,32,13
 	.byte	'cts',0
-	.word	104819
+	.word	104814
 	.byte	4,2,35,0,13
 	.byte	'ctsMode',0
 	.word	9200
 	.byte	1,2,35,4,13
 	.byte	'rx',0
-	.word	104829
+	.word	104824
 	.byte	4,2,35,8,13
 	.byte	'rxMode',0
 	.word	9200
 	.byte	1,2,35,12,13
 	.byte	'rts',0
-	.word	104839
+	.word	104834
 	.byte	4,2,35,16,13
 	.byte	'rtsMode',0
 	.word	9405
 	.byte	1,2,35,20,13
 	.byte	'tx',0
-	.word	104849
+	.word	104844
 	.byte	4,2,35,24,13
 	.byte	'txMode',0
 	.word	9405
 	.byte	1,2,35,28,13
 	.byte	'pinDriver',0
-	.word	56859
+	.word	56854
 	.byte	1,2,35,29,0,31
 	.byte	'IfxAsclin_Asc_Pins',0,39,199,2,3
-	.word	104854
+	.word	104849
 	.byte	12,39,205,2,9,1,13
 	.byte	'ALL',0
 	.word	630
 	.byte	1,2,35,0,13
 	.byte	'flags',0
-	.word	103994
+	.word	103989
 	.byte	1,2,35,0,0,31
 	.byte	'IfxAsclin_Asc_ErrorFlagsUnion',0,39,209,2,3
-	.word	105024
+	.word	105019
 	.byte	31
-	.byte	'uart_tx_pin_enum',0,24,74,2
+	.byte	'uart_tx_pin_enum',0,24,73,3
 	.word	26860
 	.byte	31
-	.byte	'uart_rx_pin_enum',0,24,100,2
+	.byte	'uart_rx_pin_enum',0,24,98,3
 	.word	27312
 	.byte	31
-	.byte	'uart_index_enum',0,24,109,2
+	.byte	'uart_index_enum',0,24,105,3
 	.word	26517
 	.byte	31
 	.byte	'wireless_type_enum',0,25,61,2
-	.word	27690
+	.word	27685
 	.byte	31
 	.byte	'wifi_uart_mode_enum',0,26,87,2
-	.word	28062
+	.word	28057
 	.byte	31
 	.byte	'wifi_uart_transfer_mode_enum',0,26,93,2
-	.word	27884
+	.word	27879
 	.byte	17,26,95,9,1,18
 	.byte	'WIFI_UART_TCP_CLIENT',0,0,18
 	.byte	'WIFI_UART_TCP_SERVER',0,1,18
 	.byte	'WIFI_UART_UDP_CLIENT',0,2,0,31
 	.byte	'wifi_uart_connect_mode_enum',0,26,100,2
-	.word	105264
+	.word	105259
 	.byte	17,26,102,9,1,18
 	.byte	'WIFI_UART_SERVER_OFF',0,0,18
 	.byte	'WIFI_UART_SERVER_ON',0,1,0,31
 	.byte	'wifi_uart_connect_state_enum',0,26,106,2
-	.word	105375
+	.word	105370
 	.byte	31
 	.byte	'wifi_uart_link_id_enum',0,26,115,2
-	.word	27941
+	.word	27936
 	.byte	15,12
 	.word	630
 	.byte	16,11,0,15,20
@@ -18242,39 +18242,39 @@ wifi_uart_data:	.type	object
 	.byte	16,16,0,15,10
 	.word	630
 	.byte	16,9,0,15,85
-	.word	105512
+	.word	105507
 	.byte	16,4,0
 .L534:
 	.byte	20,26,117,9,148,1,13
 	.byte	'wifi_uart_version',0
-	.word	105494
+	.word	105489
 	.byte	12,2,35,0,13
 	.byte	'wifi_uart_mac',0
-	.word	105503
+	.word	105498
 	.byte	20,2,35,12,13
 	.byte	'wifi_uart_local_ip',0
-	.word	105512
+	.word	105507
 	.byte	17,2,35,32,13
 	.byte	'wifi_uart_local_port',0
-	.word	105521
+	.word	105516
 	.byte	10,2,35,49,13
 	.byte	'wifi_uart_remote_ip',0
-	.word	105530
+	.word	105525
 	.byte	85,2,35,59,13
 	.byte	'wifi_uart_mode',0
-	.word	28062
+	.word	28057
 	.byte	1,3,35,144,1,13
 	.byte	'wifi_uart_transfer_mode',0
-	.word	27884
+	.word	27879
 	.byte	1,3,35,145,1,13
 	.byte	'wifi_uart_connect_mode',0
-	.word	105264
+	.word	105259
 	.byte	1,3,35,146,1,13
 	.byte	'wifi_uart_connect_state',0
-	.word	105375
+	.word	105370
 	.byte	1,3,35,147,1,0,31
 	.byte	'wifi_uart_information_struct',0,26,128,1,2
-	.word	105539
+	.word	105534
 	.byte	0
 	.sdecl	'.debug_abbrev',debug
 	.sect	'.debug_abbrev'

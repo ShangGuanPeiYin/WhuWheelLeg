@@ -77,7 +77,7 @@ typedef struct _Brushless {
 	PIDType posPID, rpmPID, currentPID;	   // 三环PID 对脉冲、速度、电流闭环
 } BrushlessType;
 
-//
+// 无刷电机通讯数据结构体
 typedef struct {
 	uint8 send_data_buffer[7];		 // 发送缓冲数组 字节包为7字节
 	uint8 receive_data_buffer[7];	 // 接收缓冲数组
@@ -86,10 +86,10 @@ typedef struct {
 
 	int16 receive_left_speed_data;	   // 接收到的左侧电机速度数据
 	int16 receive_right_speed_data;	   // 接收到的右侧电机速度数据
-} small_device_value_struct;
-extern small_device_value_struct motor_value;
+} BrushlessDataType;
 
-extern BrushlessType Motor[UES_BRUSHLESS_NUM];
+extern BrushlessDataType motor_value;
+extern BrushlessType	 Motor[UES_BRUSHLESS_NUM];
 
 void BrushlessInit(void);							 // 电机初始化
 void BrushlessFunc(void);							 // 总结，放在定时器中
@@ -101,9 +101,9 @@ void BrushlessCurrentMode(BrushlessType* motor);	 // 电流模式
 void BrushlessLockPosition(BrushlessType* motor);	 // 锁到当前位置
 void BrushlessSentCurrent(BrushlessType* motor);	 // 发送电流
 
-void uart_control_callback(void);								  // 无刷驱动 串口接收回调函数
+void BrushlessDriver_callback(void);							  // 无刷驱动 串口接收回调函数
 void small_driver_set_duty(int16 left_duty, int16 right_duty);	  // 无刷驱动 设置电机占空比
-void small_driver_get_speed(void);								  // 无刷驱动 获取速度信息
-void small_driver_uart_init(void);								  // 无刷驱动 串口通讯初始化
+void Brushless_askSpeed(void);									  // 无刷驱动 获取速度信息
+void Brushless_uart_init(void);									  // 无刷驱动 串口通讯初始化
 
 #endif

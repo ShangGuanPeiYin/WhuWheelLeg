@@ -194,7 +194,7 @@ IFX_INTERRUPT(uart3_rx_isr, 0, UART3_RX_INT_PRIO)
 	interrupt_global_enable(0);	   // 开启中断嵌套
 
 	// gnss_uart_callback();		   // GNSS串口回调函数
-	uart_control_callback();
+	BrushlessDriver_callback();
 }
 
 // 串口通讯错误中断

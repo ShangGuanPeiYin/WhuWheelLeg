@@ -39,7 +39,8 @@ void BrushlessSetZero(BrushlessType* motor)
 	motor->pulse.pulseTotal = 0;
 };
 
-// 脉冲解算 脉冲 → pos and rpm
+/// @brief  脉冲解算 脉冲 → pos and rpm 这个函数应该用不到了
+/// @param motor
 void BrushlessCulculate(BrushlessType* motor)
 {
 	motor->pulse.Distanse = motor->pulse.pulseRead - motor->pulse.pulseLast;	// 计算每次的脉冲数之差，对应每次转过的角度
@@ -127,11 +128,11 @@ void BrushlessFunc(void)
 
 /*********************************** 底层控制，移植逐飞 ************************************************** */
 
-small_device_value_struct motor_value;	  // 定义通讯参数结构体
+BrushlessDataType motor_value;	  // 定义通讯参数结构体
 
 /// @brief 无刷驱动 串口接收回调函数。用于解析接收到的速度数据  该函数需要在对应的串口接收中断中调用
 /// @param
-void uart_control_callback(void)
+void BrushlessDriver_callback(void)
 {
 	uint8 receive_data;	   // 定义临时变量
 
@@ -208,10 +209,10 @@ void small_driver_set_duty(int16 left_duty, int16 right_duty)
 /// @brief 无刷驱动 获取速度信息
 /// @brief 仅需发送一次 驱动将周期发出速度信息(默认10ms)
 /// @param
-void small_driver_get_speed(void)
+void Brushless_askSpeed(void)
 {
 	motor_value.send_data_buffer[0] = 0xA5;	   // 配置帧头
-	motor_value.send_data_buffer[1] = 0X02;	   // 配置功能字
+	motor_value.send_data_buffer[1] = 0x02;	   // 配置功能字
 	motor_value.send_data_buffer[2] = 0x00;	   // 数据位清空
 	motor_value.send_data_buffer[3] = 0x00;	   // 数据位清空
 	motor_value.send_data_buffer[4] = 0x00;	   // 数据位清空
@@ -221,9 +222,9 @@ void small_driver_get_speed(void)
 	uart_write_buffer(UART_3, motor_value.send_data_buffer, 7);	   // 发送获取转速数据的 字节包 数据
 }
 
-/// @brief  无刷驱动 参数初始化
+/// @brief  无刷驱动通讯 参数初始化
 /// @param
-void small_driver_init(void)
+void BrushlessData_init(void)
 {
 	memset(motor_value.send_data_buffer, 0, 7);		  // 清除缓冲区数据
 	memset(motor_value.receive_data_buffer, 0, 7);	  // 清除缓冲区数据
@@ -235,11 +236,12 @@ void small_driver_init(void)
 
 /// @brief 无刷驱动 串口通讯初始化
 /// @param
-void small_driver_uart_init(void)
+void Brushless_uart_init(void)
 {
 	uart_init(SMALL_DRIVER_UART, SMALL_DRIVER_BAUDRATE, SMALL_DRIVER_RX, SMALL_DRIVER_TX);	  // 串口初始化
 	uart_rx_interrupt(SMALL_DRIVER_UART, 1);												  // 使能串口接收中断
-	small_driver_init();																	  // 结构体参数初始化
-	small_driver_set_duty(0, 0);															  // 设置0占空比
-	small_driver_get_speed();																  // 获取实时速度数据
+
+	BrushlessData_init();			// 结构体参数初始化
+	small_driver_set_duty(0, 0);	// 设置0占空比
+	Brushless_askSpeed();			// 获取实时速度数据
 }

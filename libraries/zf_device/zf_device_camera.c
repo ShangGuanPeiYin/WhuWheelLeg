@@ -1,53 +1,53 @@
 /*********************************************************************************************************************
-* TC264 Opensourec Library ¼´£¨TC264 ¿ªÔ´¿â£©ÊÇÒ»¸ö»ùÓÚ¹Ù·½ SDK ½Ó¿ÚµÄµÚÈı·½¿ªÔ´¿â
-* Copyright (c) 2022 SEEKFREE Öğ·É¿Æ¼¼
-*
-* ±¾ÎÄ¼şÊÇ TC264 ¿ªÔ´¿âµÄÒ»²¿·Ö
-*
-* TC264 ¿ªÔ´¿â ÊÇÃâ·ÑÈí¼ş
-* Äú¿ÉÒÔ¸ù¾İ×ÔÓÉÈí¼ş»ù½ğ»á·¢²¼µÄ GPL£¨GNU General Public License£¬¼´ GNUÍ¨ÓÃ¹«¹²Ğí¿ÉÖ¤£©µÄÌõ¿î
-* ¼´ GPL µÄµÚ3°æ£¨¼´ GPL3.0£©»ò£¨ÄúÑ¡ÔñµÄ£©ÈÎºÎºóÀ´µÄ°æ±¾£¬ÖØĞÂ·¢²¼ºÍ/»òĞŞ¸ÄËü
-*
-* ±¾¿ªÔ´¿âµÄ·¢²¼ÊÇÏ£ÍûËüÄÜ·¢»Ó×÷ÓÃ£¬µ«²¢Î´¶ÔÆä×÷ÈÎºÎµÄ±£Ö¤
-* ÉõÖÁÃ»ÓĞÒşº¬µÄÊÊÏúĞÔ»òÊÊºÏÌØ¶¨ÓÃÍ¾µÄ±£Ö¤
-* ¸ü¶àÏ¸½ÚÇë²Î¼û GPL
-*
-* ÄúÓ¦¸ÃÔÚÊÕµ½±¾¿ªÔ´¿âµÄÍ¬Ê±ÊÕµ½Ò»·İ GPL µÄ¸±±¾
-* Èç¹ûÃ»ÓĞ£¬Çë²ÎÔÄ<https://www.gnu.org/licenses/>
-*
-* ¶îÍâ×¢Ã÷£º
-* ±¾¿ªÔ´¿âÊ¹ÓÃ GPL3.0 ¿ªÔ´Ğí¿ÉÖ¤Ğ­Òé ÒÔÉÏĞí¿ÉÉêÃ÷ÎªÒëÎÄ°æ±¾
-* Ğí¿ÉÉêÃ÷Ó¢ÎÄ°æÔÚ libraries/doc ÎÄ¼ş¼ĞÏÂµÄ GPL3_permission_statement.txt ÎÄ¼şÖĞ
-* Ğí¿ÉÖ¤¸±±¾ÔÚ libraries ÎÄ¼ş¼ĞÏÂ ¼´¸ÃÎÄ¼ş¼ĞÏÂµÄ LICENSE ÎÄ¼ş
-* »¶Ó­¸÷Î»Ê¹ÓÃ²¢´«²¥±¾³ÌĞò µ«ĞŞ¸ÄÄÚÈİÊ±±ØĞë±£ÁôÖğ·É¿Æ¼¼µÄ°æÈ¨ÉùÃ÷£¨¼´±¾ÉùÃ÷£©
-*
-* ÎÄ¼şÃû³Æ          zf_device_camera
-* ¹«Ë¾Ãû³Æ          ³É¶¼Öğ·É¿Æ¼¼ÓĞÏŞ¹«Ë¾
-* °æ±¾ĞÅÏ¢          ²é¿´ libraries/doc ÎÄ¼ş¼ĞÄÚ version ÎÄ¼ş °æ±¾ËµÃ÷
-* ¿ª·¢»·¾³          ADS v1.9.20
-* ÊÊÓÃÆ½Ì¨          TC264D
-* µêÆÌÁ´½Ó          https://seekfree.taobao.com/
-*
-* ĞŞ¸Ä¼ÇÂ¼
-* ÈÕÆÚ              ×÷Õß                ±¸×¢
-* 2022-09-15       pudding           first version
-* 2023-04-25       pudding           Ôö¼ÓÖĞÎÄ×¢ÊÍËµÃ÷
-********************************************************************************************************************/
+ * TC264 Opensourec Library ¼´£¨TC264 ¿ªÔ´¿â£©ÊÇÒ»¸ö»ùÓÚ¹Ù·½ SDK ½Ó¿ÚµÄµÚÈı·½¿ªÔ´¿â
+ * Copyright (c) 2022 SEEKFREE Öğ·É¿Æ¼¼
+ *
+ * ±¾ÎÄ¼şÊÇ TC264 ¿ªÔ´¿âµÄÒ»²¿·Ö
+ *
+ * TC264 ¿ªÔ´¿â ÊÇÃâ·ÑÈí¼ş
+ * Äú¿ÉÒÔ¸ù¾İ×ÔÓÉÈí¼ş»ù½ğ»á·¢²¼µÄ GPL£¨GNU General Public License£¬¼´ GNUÍ¨ÓÃ¹«¹²Ğí¿ÉÖ¤£©µÄÌõ¿î
+ * ¼´ GPL µÄµÚ3°æ£¨¼´ GPL3.0£©»ò£¨ÄúÑ¡ÔñµÄ£©ÈÎºÎºóÀ´µÄ°æ±¾£¬ÖØĞÂ·¢²¼ºÍ/»òĞŞ¸ÄËü
+ *
+ * ±¾¿ªÔ´¿âµÄ·¢²¼ÊÇÏ£ÍûËüÄÜ·¢»Ó×÷ÓÃ£¬µ«²¢Î´¶ÔÆä×÷ÈÎºÎµÄ±£Ö¤
+ * ÉõÖÁÃ»ÓĞÒşº¬µÄÊÊÏúĞÔ»òÊÊºÏÌØ¶¨ÓÃÍ¾µÄ±£Ö¤
+ * ¸ü¶àÏ¸½ÚÇë²Î¼û GPL
+ *
+ * ÄúÓ¦¸ÃÔÚÊÕµ½±¾¿ªÔ´¿âµÄÍ¬Ê±ÊÕµ½Ò»·İ GPL µÄ¸±±¾
+ * Èç¹ûÃ»ÓĞ£¬Çë²ÎÔÄ<https://www.gnu.org/licenses/>
+ *
+ * ¶îÍâ×¢Ã÷£º
+ * ±¾¿ªÔ´¿âÊ¹ÓÃ GPL3.0 ¿ªÔ´Ğí¿ÉÖ¤Ğ­Òé ÒÔÉÏĞí¿ÉÉêÃ÷ÎªÒëÎÄ°æ±¾
+ * Ğí¿ÉÉêÃ÷Ó¢ÎÄ°æÔÚ libraries/doc ÎÄ¼ş¼ĞÏÂµÄ GPL3_permission_statement.txt ÎÄ¼şÖĞ
+ * Ğí¿ÉÖ¤¸±±¾ÔÚ libraries ÎÄ¼ş¼ĞÏÂ ¼´¸ÃÎÄ¼ş¼ĞÏÂµÄ LICENSE ÎÄ¼ş
+ * »¶Ó­¸÷Î»Ê¹ÓÃ²¢´«²¥±¾³ÌĞò µ«ĞŞ¸ÄÄÚÈİÊ±±ØĞë±£ÁôÖğ·É¿Æ¼¼µÄ°æÈ¨ÉùÃ÷£¨¼´±¾ÉùÃ÷£©
+ *
+ * ÎÄ¼şÃû³Æ          zf_device_camera
+ * ¹«Ë¾Ãû³Æ          ³É¶¼Öğ·É¿Æ¼¼ÓĞÏŞ¹«Ë¾
+ * °æ±¾ĞÅÏ¢          ²é¿´ libraries/doc ÎÄ¼ş¼ĞÄÚ version ÎÄ¼ş °æ±¾ËµÃ÷
+ * ¿ª·¢»·¾³          ADS v1.9.20
+ * ÊÊÓÃÆ½Ì¨          TC264D
+ * µêÆÌÁ´½Ó          https://seekfree.taobao.com/
+ *
+ * ĞŞ¸Ä¼ÇÂ¼
+ * ÈÕÆÚ              ×÷Õß                ±¸×¢
+ * 2022-09-15       pudding           first version
+ * 2023-04-25       pudding           Ôö¼ÓÖĞÎÄ×¢ÊÍËµÃ÷
+ ********************************************************************************************************************/
+
+#include "zf_device_camera.h"
 
 #include "zf_common_debug.h"
 #include "zf_common_interrupt.h"
-#include "zf_driver_gpio.h"
-#include "zf_driver_dma.h"
-#include "zf_driver_exti.h"
 #include "zf_device_mt9v03x.h"
 #include "zf_device_ov7725.h"
 #include "zf_device_scc8660.h"
-#include "zf_device_camera.h"
+#include "zf_driver_dma.h"
+#include "zf_driver_exti.h"
+#include "zf_driver_gpio.h"
 
-
-fifo_struct camera_receiver_fifo;                                           // ¶¨ÒåÉãÏñÍ·½ÓÊÕÊı¾İfifo½á¹¹Ìå
-uint8 camera_receiver_buffer[CAMERA_RECEIVER_BUFFER_SIZE];                  // ¶¨ÒåÉãÏñÍ·½ÓÊÕÊı¾İ»º³åÇø
-uint8 camera_send_image_frame_header[4] = {0x00, 0xFF, 0x01, 0x01};         // ¶¨ÒåÉãÏñÍ·Êı¾İ·¢ËÍµ½ÉÏÎ»»úµÄÖ¡Í·
+fifo_struct camera_receiver_fifo;											 // ¶¨ÒåÉãÏñÍ·½ÓÊÕÊı¾İfifo½á¹¹Ìå
+uint8		camera_receiver_buffer[CAMERA_RECEIVER_BUFFER_SIZE];			 // ¶¨ÒåÉãÏñÍ·½ÓÊÕÊı¾İ»º³åÇø
+uint8		camera_send_image_frame_header[4] = {0x00, 0xFF, 0x01, 0x01};	 // ¶¨ÒåÉãÏñÍ·Êı¾İ·¢ËÍµ½ÉÏÎ»»úµÄÖ¡Í·
 
 //-------------------------------------------------------------------------------------------------------------------
 // º¯Êı¼ò½é       ÉãÏñÍ·¶ş½øÖÆÍ¼ÏñÊı¾İ½âÑ¹ÎªÊ®Áù½øÖÆ°ËÎ»Êı¾İ Ğ¡×ê·çÓÃ
@@ -57,21 +57,17 @@ uint8 camera_send_image_frame_header[4] = {0x00, 0xFF, 0x01, 0x01};         // ¶
 // @return      void
 // Sample usage:   camera_binary_image_decompression(&ov7725_image_binary[0][0], &data_buffer[0][0], OV7725_SIZE);
 //-------------------------------------------------------------------------------------------------------------------
-void camera_binary_image_decompression (const uint8 *data1, uint8 *data2, uint32 image_size)
+void camera_binary_image_decompression(const uint8* data1, uint8* data2, uint32 image_size)
 {
-    zf_assert(NULL != data1);
-    zf_assert(NULL != data2);
-    uint8  i = 8;
+	zf_assert(NULL != data1);
+	zf_assert(NULL != data2);
+	uint8 i = 8;
 
-    while(image_size --)
-    {
-        i = 8;
-        while(i --)
-        {
-            *data2 ++ = (((*data1 >> i) & 0x01) ? 255 : 0);
-        }
-        data1 ++;
-    }
+	while (image_size--) {
+		i = 8;
+		while (i--) { *data2++ = (((*data1 >> i) & 0x01) ? 255 : 0); }
+		data1++;
+	}
 }
 
 //-------------------------------------------------------------------------------------------------------------------
@@ -82,14 +78,14 @@ void camera_binary_image_decompression (const uint8 *data1, uint8 *data2, uint32
 // @return      void
 // Sample usage:                camera_send_image(DEBUG_UART_INDEX, &mt9v03x_image[0][0], MT9V03X_IMAGE_SIZE);
 //-------------------------------------------------------------------------------------------------------------------
-void camera_send_image (uart_index_enum uartn, const uint8 *image_addr, uint32 image_size)
+void camera_send_image(uart_index_enum uartn, const uint8* image_addr, uint32 image_size)
 {
-    zf_assert(NULL != image_addr);
-    // ·¢ËÍÃüÁî
-    uart_write_buffer(uartn, camera_send_image_frame_header, 4);
+	zf_assert(NULL != image_addr);
+	// ·¢ËÍÃüÁî
+	uart_write_buffer(uartn, camera_send_image_frame_header, 4);
 
-    // ·¢ËÍÍ¼Ïñ
-    uart_write_buffer(uartn, (uint8 *)image_addr, image_size);
+	// ·¢ËÍÍ¼Ïñ
+	uart_write_buffer(uartn, (uint8*) image_addr, image_size);
 }
 
 //-------------------------------------------------------------------------------------------------------------------
@@ -99,11 +95,10 @@ void camera_send_image (uart_index_enum uartn, const uint8 *image_addr, uint32 i
 // Ê¹ÓÃÊ¾Àı     camera_fifo_init();
 // ±¸×¢ĞÅÏ¢
 //-------------------------------------------------------------------------------------------------------------------
-void camera_fifo_init (void)
+void camera_fifo_init(void)
 {
-    fifo_init(&camera_receiver_fifo, FIFO_DATA_8BIT, camera_receiver_buffer, CAMERA_RECEIVER_BUFFER_SIZE);
+	fifo_init(&camera_receiver_fifo, FIFO_DATA_8BIT, camera_receiver_buffer, CAMERA_RECEIVER_BUFFER_SIZE);
 }
-
 
 //-------------------------------------------------------------------------------------------------------------------
 // º¯Êı¼ò½é       ÉãÏñÍ·²É¼¯³õÊ¼»¯
@@ -115,57 +110,43 @@ void camera_fifo_init (void)
 // @return      void
 // Sample usage:                camera_init();
 //-------------------------------------------------------------------------------------------------------------------
-uint8 camera_init (uint8 *source_addr, uint8 *destination_addr, uint32 image_size)
+uint8 camera_init(uint8* source_addr, uint8* destination_addr, uint32 image_size)
 {
-    uint8 num;
-    uint8 link_list_num;
-    switch(camera_type)
-    {
-        case CAMERA_BIN_IIC:                                                    // IIC Ğ¡×ê·ç
-        case CAMERA_BIN_UART:                                                   // UART Ğ¡×ê·ç
-            for(num = 0; num < 8; num ++)
-            {
-                gpio_init((gpio_pin_enum)(OV7725_DATA_PIN + num), GPI, GPIO_LOW, GPI_FLOATING_IN);
-            }
-            link_list_num = dma_init(OV7725_DMA_CH,
-                                     source_addr,
-                                     destination_addr,
-                                     OV7725_PCLK_PIN,
-                                     EXTI_TRIGGER_FALLING,
-                                     image_size);
-            exti_init(OV7725_VSYNC_PIN, EXTI_TRIGGER_FALLING);                  //³õÊ¼»¯³¡ÖĞ¶Ï£¬²¢ÉèÖÃÎªÏÂ½µÑØ´¥·¢ÖĞ¶Ï
-            break;
-        case CAMERA_GRAYSCALE:                                                  // ×Ü×ê·ç
-            for(num = 0; num < 8; num ++)
-            {
-                gpio_init((gpio_pin_enum)(MT9V03X_DATA_PIN + num), GPI, GPIO_LOW, GPI_FLOATING_IN);
-            }
-            link_list_num = dma_init(MT9V03X_DMA_CH,
-                                     source_addr,
-                                     destination_addr,
-                                     MT9V03X_PCLK_PIN,
-                                     EXTI_TRIGGER_RISING,
-                                     image_size);                               // Èç¹û³¬Æµµ½300M µ¹ÊıµÚ¶ş¸ö²ÎÊıÇëÉèÖÃÎªFALLING
+	uint8 num;
+	uint8 link_list_num;
+	switch (camera_type) {
+		case CAMERA_BIN_IIC:	 // IIC Ğ¡×ê·ç
+		case CAMERA_BIN_UART:	 // UART Ğ¡×ê·ç
+			for (num = 0; num < 8; num++) { gpio_init((gpio_pin_enum) (OV7725_DATA_PIN + num), GPI, GPIO_LOW, GPI_FLOATING_IN); }
+			link_list_num
+				= dma_init(OV7725_DMA_CH, source_addr, destination_addr, OV7725_PCLK_PIN, EXTI_TRIGGER_FALLING, image_size);
+			exti_init(OV7725_VSYNC_PIN, EXTI_TRIGGER_FALLING);	  // ³õÊ¼»¯³¡ÖĞ¶Ï£¬²¢ÉèÖÃÎªÏÂ½µÑØ´¥·¢ÖĞ¶Ï
+			break;
+		case CAMERA_GRAYSCALE:	  // ×Ü×ê·ç
+			for (num = 0; num < 8; num++) { gpio_init((gpio_pin_enum) (MT9V03X_DATA_PIN + num), GPI, GPIO_LOW, GPI_FLOATING_IN); }
+			link_list_num = dma_init(MT9V03X_DMA_CH,
+									 source_addr,
+									 destination_addr,
+									 MT9V03X_PCLK_PIN,
+									 EXTI_TRIGGER_RISING,
+									 image_size);	 // Èç¹û³¬Æµµ½300M µ¹ÊıµÚ¶ş¸ö²ÎÊıÇëÉèÖÃÎªFALLING
 
-            exti_init(MT9V03X_VSYNC_PIN, EXTI_TRIGGER_FALLING);                 // ³õÊ¼»¯³¡ÖĞ¶Ï£¬²¢ÉèÖÃÎªÏÂ½µÑØ´¥·¢ÖĞ¶Ï
-            break;
-        case CAMERA_COLOR:                                                      // ÁèÍ«
-            for(num=0; num<8; num++)
-            {
-                gpio_init((gpio_pin_enum)(SCC8660_DATA_PIN + num), GPI, GPIO_LOW, GPI_FLOATING_IN);
-            }
+			exti_init(MT9V03X_VSYNC_PIN, EXTI_TRIGGER_FALLING);	   // ³õÊ¼»¯³¡ÖĞ¶Ï£¬²¢ÉèÖÃÎªÏÂ½µÑØ´¥·¢ÖĞ¶Ï
+			break;
+		case CAMERA_COLOR:	  // ÁèÍ«
+			for (num = 0; num < 8; num++) { gpio_init((gpio_pin_enum) (SCC8660_DATA_PIN + num), GPI, GPIO_LOW, GPI_FLOATING_IN); }
 
-            link_list_num = dma_init(SCC8660_DMA_CH,
-                                     source_addr,
-                                     destination_addr,
-                                     SCC8660_PCLK_PIN,
-                                     EXTI_TRIGGER_RISING,
-                                     image_size);                               // Èç¹û³¬Æµµ½300M µ¹ÊıµÚ¶ş¸ö²ÎÊıÇëÉèÖÃÎªFALLING
+			link_list_num = dma_init(SCC8660_DMA_CH,
+									 source_addr,
+									 destination_addr,
+									 SCC8660_PCLK_PIN,
+									 EXTI_TRIGGER_RISING,
+									 image_size);	 // Èç¹û³¬Æµµ½300M µ¹ÊıµÚ¶ş¸ö²ÎÊıÇëÉèÖÃÎªFALLING
 
-            exti_init(SCC8660_VSYNC_PIN, EXTI_TRIGGER_FALLING);                 // ³õÊ¼»¯³¡ÖĞ¶Ï£¬²¢ÉèÖÃÎªÏÂ½µÑØ´¥·¢ÖĞ¶Ï
-            break;
-        default:
-            break;
-    }
-    return link_list_num;
+			exti_init(SCC8660_VSYNC_PIN, EXTI_TRIGGER_FALLING);	   // ³õÊ¼»¯³¡ÖĞ¶Ï£¬²¢ÉèÖÃÎªÏÂ½µÑØ´¥·¢ÖĞ¶Ï
+			break;
+		default:
+			break;
+	}
+	return link_list_num;
 }
