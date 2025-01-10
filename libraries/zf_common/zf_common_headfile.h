@@ -119,6 +119,7 @@
 #include "MathLib.h"
 #include "Pid.h"
 #include "ServoMotor.h"
+#include "imu.h"
 #include "key.h"
 #include "leg.h"
 #include "oledDebug.h"

@@ -4,7 +4,9 @@
 #include "zf_common_typedef.h"
 
 typedef struct _robot {
-        int a;
+	LegType* left;
+	LegType* right;
+
 } RobotType;
 
 #endif
