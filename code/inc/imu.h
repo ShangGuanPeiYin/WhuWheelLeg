@@ -27,6 +27,6 @@ typedef struct _Imu {
 	float quaternion_data1;
 	float quaternion_data2;
 	float quaternion_data3;
-} IMUtype;
+} IMUType;
 
 #endif

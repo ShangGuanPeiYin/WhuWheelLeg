@@ -7,6 +7,8 @@ typedef struct _robot {
 	LegType* left;
 	LegType* right;
 
+	IMUType* posture;
+
 } RobotType;
 
 #endif

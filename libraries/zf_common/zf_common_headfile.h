@@ -123,8 +123,8 @@
 #include "key.h"
 #include "leg.h"
 #include "oledDebug.h"
-#include "point.h"
 #include "robot.h"
+#include "vector.h"
 
 extern float WorldTime;
 
