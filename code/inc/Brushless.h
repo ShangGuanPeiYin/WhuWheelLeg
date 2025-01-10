@@ -14,9 +14,9 @@
 //  P21-6 7 Uart
 
 // 无刷电机控制
-#define UES_BRUSHLESS_NUM 2		  // 使用数量
-#define PULSEPERROUND	  1024	  // 电机每转一圈的脉冲数
-#define PULSETIME		  9999	  // 两次读取脉冲数之间的时间，秒 TODO
+#define UES_BRUSHLESS_NUM 2		   // 使用数量
+#define PULSEPERROUND	  360.f	   // 电机每转一圈的脉冲数。这里不接编码器，所以是360度
+#define PULSETIME		  9999	   // 两次读取脉冲数之间的时间，秒
 
 // 电机模式
 typedef enum _BrushlessMode {
@@ -92,6 +92,7 @@ extern BrushlessDataType motor_value;
 extern BrushlessType	 Motor[UES_BRUSHLESS_NUM];
 
 void BrushlessInit(void);							 // 电机初始化
+void BrushlessTypeInit(void);						 // 电机结构体初始化
 void BrushlessFunc(void);							 // 总结，放在定时器中
 void BrushlessSetZero(BrushlessType* motor);		 // 电机位置置零
 void BrushlessCulculate(BrushlessType* motor);		 // 电机解算 脉冲 → pos and rpm

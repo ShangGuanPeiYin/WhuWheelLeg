@@ -5,6 +5,14 @@ BrushlessType Motor[UES_BRUSHLESS_NUM];
 // 电机初始化
 void BrushlessInit(void)
 {
+	Brushless_uart_init();	  // 通讯初始化
+	BrushlessTypeInit();	  // 控制初始化
+};
+
+/// @brief 无刷电机结构体初始化
+/// @param
+void BrushlessTypeInit(void)
+{
 	ValueType	   Value = {0};
 	PulseType	   pulse = {0};
 	MotorParamType param = {0};
@@ -24,6 +32,7 @@ void BrushlessInit(void)
 		Motor[i].pulse	   = pulse;
 		Motor[i].param	   = param;
 		Motor[i].limit	   = limit;
+
 		PIDTypeInit(&Motor[i].posPID, 0.f, 0.f, 0.f, PIDINC, Motor[0].limit.maxRPM);	// PID参数待调整
 		PIDTypeInit(&Motor[i].rpmPID, 0.f, 0.f, 0.f, PIDINC, Motor[0].limit.maxCurrent);
 		PIDTypeInit(&Motor[i].currentPID, 0.f, 0.f, 0.f, PIDINC, 0);
@@ -126,11 +135,12 @@ void BrushlessFunc(void)
 	}
 };
 
-/*********************************** 底层控制，移植逐飞 ************************************************** */
+/*********************************************** 通讯部分 ************************************************ */
 
 BrushlessDataType motor_value;	  // 定义通讯参数结构体
 
-/// @brief 无刷驱动 串口接收回调函数。用于解析接收到的速度数据  该函数需要在对应的串口接收中断中调用
+/// @brief 无刷驱动 串口接收回调函数。
+/// @brief 用于解析接收到的速度数据  该函数需要在对应的串口接收中断中调用
 /// @param
 void BrushlessDriver_callback(void)
 {

@@ -41,23 +41,33 @@
 // 本例程是开源库空工程 可用作移植或者测试各类内外设
 
 // **************************** 代码区域 ****************************
-int core0_main(void)
+
+float angletemp		= 0.f;
+float reachTimeTemp = 500.f;
+int	  core0_main(void)
 {
 	clock_init();	 // 获取时钟频率<务必保留>
 	debug_init();	 // 初始化默认调试串口
 	// 此处编写用户代码 例如外设初始化代码等
+	pit_ms_init(CCU60_CH0, 1);	  // CCU60_CH0通道，中断初始化周期为1ms 中断初始化在前面
 
-	ServoInit();				  // 舵机控制初始化
-	pit_ms_init(CCU60_CH0, 1);	  // CCU60_CH0通道，中断初始化周期为1ms
+	oled_init();	// 屏幕初始化
+
+	gpio_init(KEY_UP, GPI, 0, GPI_PULL_UP);	   // 按键初始化
+	gpio_init(KEY_DOWN, GPI, 0, GPI_PULL_UP);
+	gpio_init(KEY_LEFT, GPI, 0, GPI_PULL_UP);
+	gpio_init(KEY_RIGHT, GPI, 0, GPI_PULL_UP);
+
+	ServoInit();	// 舵机控制初始化
 
 	// 此处编写用户代码 例如外设初始化代码等
 	cpu_wait_event_ready();	   // 等待所有核心初始化完毕
 
-	float angletemp = 0.f;
 	while (TRUE) {
 		// 此处编写需要循环执行的代码
 
-		ServoMov(Fl, 500, angletemp);
+		OLedDebug();
+		ServoMov(Fl, reachTimeTemp, angletemp);
 
 		// 此处编写需要循环执行的代码
 	}

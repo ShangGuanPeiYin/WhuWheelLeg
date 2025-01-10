@@ -120,6 +120,10 @@
 #include "Pid.h"
 #include "ServoMotor.h"
 #include "key.h"
+#include "leg.h"
+#include "oledDebug.h"
+#include "point.h"
+#include "robot.h"
 
 extern float WorldTime;
 

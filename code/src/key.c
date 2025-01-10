@@ -13,6 +13,7 @@ int OLED_Key_Scan(void)
 		keyflag2 = 0;
 		keyflag3 = 0;
 	}
+
 	if (gpio_get_level(KEY_LEFT) == 0 && keyflag0 == 0) {
 		keyflag0 = 1;
 		return 1;
