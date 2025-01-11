@@ -5,6 +5,14 @@
 #include "vector.h"
 #include "zf_common_typedef.h"
 
+// 杆长 单位为mm
+#define l1	   60
+#define l2	   88	 // 大概
+#define l3	   88	 // 大概
+#define l4	   60
+#define l5	   37
+#define WHEELR 67	 // 直径
+
 typedef struct _leg {
 	ServoType* front;
 	ServoType* behind;
