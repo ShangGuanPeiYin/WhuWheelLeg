@@ -67,6 +67,38 @@ int	  core0_main(void)
 	system_delay_ms(500);
 	while (TRUE) {
 		// 此处编写需要循环执行的代码
+		;
+		;
+		;
+		;
+		;
+		;
+		;
+		;
+		;
+		;
+		;
+		;
+		;
+		;
+		;
+		;
+		;
+		;
+		;
+		;
+		;
+		;
+		;
+		;
+		;
+		;
+		;
+		;
+		;
+		;
+		;
+		;
 
 		OLedDebug();
 		ServoMov(Fl, reachTimeTemp, angletemp);
