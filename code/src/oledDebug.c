@@ -18,14 +18,9 @@ void OLedDebug(void)
 	} else if (keyflag2 == 1)	 // ср
 	{
 		angletemp += 20.f;
-	} else if (keyflag3 == 1) {
-		reachTimeTemp -= 20.f;
-	} else if (keyflag0 == 1) {
-		reachTimeTemp += 20.f;
 	}
 
 	oled_show_float(50, 5, angletemp, 4, 2);
-	oled_show_float(50, 5, reachTimeTemp, 4, 2);
 
 #endif
 };

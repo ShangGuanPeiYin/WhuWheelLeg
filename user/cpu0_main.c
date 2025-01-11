@@ -43,7 +43,6 @@
 // **************************** 代码区域 ****************************
 
 float angletemp		= 0.f;
-float reachTimeTemp = 500.f;
 int	  core0_main(void)
 {
 	clock_init();	 // 获取时钟频率<务必保留>
@@ -67,41 +66,10 @@ int	  core0_main(void)
 	system_delay_ms(500);
 	while (TRUE) {
 		// 此处编写需要循环执行的代码
-		;
-		;
-		;
-		;
-		;
-		;
-		;
-		;
-		;
-		;
-		;
-		;
-		;
-		;
-		;
-		;
-		;
-		;
-		;
-		;
-		;
-		;
-		;
-		;
-		;
-		;
-		;
-		;
-		;
-		;
-		;
-		;
+
 
 		OLedDebug();
-		ServoMov(Fl, reachTimeTemp, angletemp);
+		ServoMov(Fl , angletemp);
 
 		// 此处编写需要循环执行的代码
 	}	 // 2431

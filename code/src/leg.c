@@ -1,18 +1,64 @@
 #include "zf_common_headfile.h"
 
-// 逆解 计算C1 C4
-void InverseKinematics()
+/// @brief 逆解。（x，y），求∠1和4
+/// @param leg
+void InverseKinematics(LegType* leg)
 {
-	;
-	;	 // TODO
+	// AE坐标不变
+	Vector2f pointA, pointE;
+	pointA.x = -L5 / 2;
+	pointA.y = 0.f;
+
+	pointE.x = L5 / 2;
+	pointE.y = 0.f;
+
+	// 求Angle1
+	float A	 = (leg->PosSet.x - pointA.x) * (leg->PosSet.x - pointA.x) + (leg->PosSet.y - pointA.y) * (leg->PosSet.y - pointA.y)
+			  + L1 * L1 - L2 * L2;
+	float B		= -2 * (leg->PosSet.x - pointA.x) * L1;
+	float C		= -2 * (leg->PosSet.y - pointA.y) * L1;
+
+	leg->angle1 = 2 * atan2f((-C + sqrtf(C * C + B * B - A * A)), (A - B));
+	if (leg->angle1 < 0)	// 限定在0-2PI
+		leg->angle1 += 2 * PI;
+
+	// 求Angle4
+	A = 2 * L4 * leg->PosSet.y;
+	B = 2 * L4 * (leg->PosSet.x - L5);
+	C = L3 * L3 + 2 * L5 * leg->PosSet.x - L4 * L4 - L5 * L5 - leg->PosSet.x * leg->PosSet.x - leg->PosSet.y * leg->PosSet.y;
+
+	leg->angle4 = 2 * atan2f((A - sqrtf(A * A + B * B - C * C)), (B - C));	  // -PI/2 ~ +PI/2
 };
 
-// 正解，求（x，y）
-Vector2f ForwardKinematics(float Rec_c1, float Rec_c4)
+/// @brief 正解。∠1和4，求（x，y）
+/// @param leg
+void ForwardKinematics(LegType* leg)
 {
-	;
-	;
-	Vector2f a;	   // TODO
-	a.t = 1.f;
-	return a;
+	// 直接计算ABDE的坐标
+	Vector2f pointA, pointB, pointD, pointE;
+	pointA.x	  = -L5 / 2;
+	pointA.y	  = 0.f;
+
+	pointB.x	  = -L5 / 2 + L1 * cosf(leg->angle1);
+	pointB.y	  = L1 * sinf(leg->angle1);
+
+	pointD.x	  = L5 / 2 + L4 * cosf(leg->angle4);
+	pointD.y	  = L4 * sinf(leg->angle4);
+
+	pointE.x	  = L5 / 2;
+	pointE.y	  = 0.f;
+
+	// 求解angle2,3
+	float A		  = 2 * L2 * (pointD.x - pointB.x);
+	float B		  = 2 * L2 * (pointD.y - pointB.y);
+	float LBD_2	  = (pointD.y - pointB.y) * (pointD.y - pointB.y) + (pointD.x - pointB.x) * (pointD.x - pointB.x);
+	float C		  = L2 * L2 - L3 * L3 + LBD_2;
+	float D		  = L3 * L3 - L2 * L2 + LBD_2;
+
+	leg->angle2	  = 2 * atan2f((B + sqrtf(A * A + B * B - C * C)), (A + C));
+	leg->angle3	  = PI - 2 * atan2f((-B + sqrtf(A * A + B * B - D * D)), (A + D));
+
+	// 计算C点坐标
+	leg->PosSet.x = -L5 / 2 + L1 * cosf(leg->angle1) + L2 * cosf(leg->angle2);
+	leg->PosSet.y = L1 * sinf(leg->angle1) + L2 * sinf(leg->angle2);
 };

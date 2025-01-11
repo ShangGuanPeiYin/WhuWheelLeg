@@ -1,6 +1,6 @@
 	; Module start
 	.compiler_version	"TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler v1.1r8 Build 22011964"
-	.compiler_invocation	"ctc -f cc20556a --dep-file=code/src/ServoMotor.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc26xb -D__CPU_TC26XB__ --core=tc1.6.x --fp-model=+float -D__CPU__=tc26xb -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\code -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\code\\\\inc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Configurations -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B\\\\_Reg -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If\\\\Ccu6If -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\StdIf -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Math -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Asc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6 -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Timer -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\CStart -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Irq -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Dma -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12 -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\IncrEnc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\SpiMaster -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Adc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Impl -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib\\\\DataHandling -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_PinMap -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_common -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_components -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_device -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_driver -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\user -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o code/src/ServoMotor.src ../code/src/ServoMotor.c"
+	.compiler_invocation	"ctc -f cc26872a --dep-file=code/src/ServoMotor.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc26xb -D__CPU_TC26XB__ --core=tc1.6.x --fp-model=+float -D__CPU__=tc26xb -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\code -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\code\\\\inc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Configurations -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B\\\\_Reg -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If\\\\Ccu6If -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\StdIf -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Math -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Asc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6 -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Timer -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\CStart -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Irq -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Dma -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12 -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\IncrEnc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\SpiMaster -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Adc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Impl -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib\\\\DataHandling -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_PinMap -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_common -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_components -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_device -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_driver -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\user -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o code/src/ServoMotor.src ../code/src/ServoMotor.c"
 	.compiler_name		"ctc"
 	;source	'../code/src/ServoMotor.c'
 
@@ -13,268 +13,212 @@ $TC16X
 	
 	.global	ServoInit
 ; Function ServoInit
-.L16:
+.L14:
 ServoInit:	.type	func
 	movh.a	a15,#@his(Servo)
 	lea	a15,[a15]@los(Servo)
-.L82:
+.L79:
 	mov	d15,#13
-.L83:
+.L80:
 	st.b	[a15],d15
+.L81:
+	movh.a	a15,#@his(Servo)
+	lea	a15,[a15]@los(Servo)
+.L82:
+	mov	d15,#20
+.L83:
+	st.b	[a15]20,d15
 .L84:
 	movh.a	a15,#@his(Servo)
 	lea	a15,[a15]@los(Servo)
 .L85:
-	mov	d15,#20
+	mov	d15,#31
 .L86:
-	st.b	[a15]28,d15
+	st.b	[a15]40,d15
 .L87:
 	movh.a	a15,#@his(Servo)
 	lea	a15,[a15]@los(Servo)
 .L88:
-	mov	d15,#31
+	mov	d15,#25
 .L89:
-	st.b	[a15]56,d15
+	st.b	[a15]60,d15
 .L90:
 	movh.a	a15,#@his(Servo)
 	lea	a15,[a15]@los(Servo)
 .L91:
-	mov	d15,#25
+	mov	d15,#0
 .L92:
-	st.b	[a15]84,d15
+	st.b	[a15]1,d15
 .L93:
 	movh.a	a15,#@his(Servo)
 	lea	a15,[a15]@los(Servo)
 .L94:
 	mov	d15,#0
 .L95:
-	st.b	[a15]1,d15
+	st.w	[a15]2,d15
 .L96:
 	movh.a	a15,#@his(Servo)
 	lea	a15,[a15]@los(Servo)
 .L97:
 	mov	d15,#0
 .L98:
-	st.w	[a15]2,d15
+	st.w	[a15]6,d15
 .L99:
 	movh.a	a15,#@his(Servo)
 	lea	a15,[a15]@los(Servo)
 .L100:
 	mov	d15,#0
 .L101:
-	st.w	[a15]6,d15
+	st.w	[a15]10,d15
 .L102:
 	movh.a	a15,#@his(Servo)
 	lea	a15,[a15]@los(Servo)
 .L103:
 	mov	d15,#0
 .L104:
-	st.w	[a15]10,d15
+	st.w	[a15]14,d15
 .L105:
 	movh.a	a15,#@his(Servo)
 	lea	a15,[a15]@los(Servo)
 .L106:
-	mov	d15,#0
+	mov	d15,#1
 .L107:
-	st.w	[a15]14,d15
+	st.b	[a15]21,d15
 .L108:
 	movh.a	a15,#@his(Servo)
 	lea	a15,[a15]@los(Servo)
 .L109:
 	mov	d15,#0
 .L110:
-	st.w	[a15]18,d15
+	st.w	[a15]22,d15
 .L111:
 	movh.a	a15,#@his(Servo)
 	lea	a15,[a15]@los(Servo)
 .L112:
 	mov	d15,#0
 .L113:
-	st.w	[a15]22,d15
+	st.w	[a15]26,d15
 .L114:
 	movh.a	a15,#@his(Servo)
 	lea	a15,[a15]@los(Servo)
 .L115:
-	mov	d15,#1
+	mov	d15,#0
 .L116:
-	st.b	[a15]29,d15
+	st.w	[a15]30,d15
 .L117:
 	movh.a	a15,#@his(Servo)
 	lea	a15,[a15]@los(Servo)
 .L118:
 	mov	d15,#0
 .L119:
-	st.w	[a15]30,d15
+	st.w	[a15]34,d15
 .L120:
 	movh.a	a15,#@his(Servo)
 	lea	a15,[a15]@los(Servo)
 .L121:
-	mov	d15,#0
+	mov	d15,#2
 .L122:
-	st.w	[a15]34,d15
+	st.b	[a15]41,d15
 .L123:
 	movh.a	a15,#@his(Servo)
 	lea	a15,[a15]@los(Servo)
 .L124:
 	mov	d15,#0
 .L125:
-	st.w	[a15]38,d15
+	st.w	[a15]42,d15
 .L126:
 	movh.a	a15,#@his(Servo)
 	lea	a15,[a15]@los(Servo)
 .L127:
 	mov	d15,#0
 .L128:
-	st.w	[a15]42,d15
+	st.w	[a15]46,d15
 .L129:
 	movh.a	a15,#@his(Servo)
 	lea	a15,[a15]@los(Servo)
 .L130:
 	mov	d15,#0
 .L131:
-	st.w	[a15]46,d15
+	st.w	[a15]50,d15
 .L132:
 	movh.a	a15,#@his(Servo)
 	lea	a15,[a15]@los(Servo)
 .L133:
 	mov	d15,#0
 .L134:
-	st.w	[a15]50,d15
+	st.w	[a15]54,d15
 .L135:
 	movh.a	a15,#@his(Servo)
 	lea	a15,[a15]@los(Servo)
 .L136:
-	mov	d15,#2
+	mov	d15,#3
 .L137:
-	st.b	[a15]57,d15
+	st.b	[a15]61,d15
 .L138:
 	movh.a	a15,#@his(Servo)
 	lea	a15,[a15]@los(Servo)
 .L139:
 	mov	d15,#0
 .L140:
-	st.w	[a15]58,d15
+	st.w	[a15]62,d15
 .L141:
 	movh.a	a15,#@his(Servo)
 	lea	a15,[a15]@los(Servo)
 .L142:
 	mov	d15,#0
 .L143:
-	st.w	[a15]62,d15
+	st.w	[a15]66,d15
 .L144:
 	movh.a	a15,#@his(Servo)
 	lea	a15,[a15]@los(Servo)
 .L145:
 	mov	d15,#0
 .L146:
-	st.w	[a15]66,d15
+	st.w	[a15]70,d15
 .L147:
 	movh.a	a15,#@his(Servo)
 	lea	a15,[a15]@los(Servo)
 .L148:
 	mov	d15,#0
 .L149:
-	st.w	[a15]70,d15
+	st.w	[a15]74,d15
+.L48:
+	mov	d8,#0
+.L66:
+	j	.L2
+.L3:
+	mul	d15,d8,#20
 .L150:
 	movh.a	a15,#@his(Servo)
 	lea	a15,[a15]@los(Servo)
 .L151:
-	mov	d15,#0
+	addsc.a	a15,a15,d15,#0
 .L152:
-	st.w	[a15]74,d15
-.L153:
-	movh.a	a15,#@his(Servo)
-	lea	a15,[a15]@los(Servo)
-.L154:
-	mov	d15,#0
-.L155:
-	st.w	[a15]78,d15
-.L156:
-	movh.a	a15,#@his(Servo)
-	lea	a15,[a15]@los(Servo)
-.L157:
-	mov	d15,#3
-.L158:
-	st.b	[a15]85,d15
-.L159:
-	movh.a	a15,#@his(Servo)
-	lea	a15,[a15]@los(Servo)
-.L160:
-	mov	d15,#0
-.L161:
-	st.w	[a15]86,d15
-.L162:
-	movh.a	a15,#@his(Servo)
-	lea	a15,[a15]@los(Servo)
-.L163:
-	mov	d15,#0
-.L164:
-	st.w	[a15]90,d15
-.L165:
-	movh.a	a15,#@his(Servo)
-	lea	a15,[a15]@los(Servo)
-.L166:
-	mov	d15,#0
-.L167:
-	st.w	[a15]94,d15
-.L168:
-	movh.a	a15,#@his(Servo)
-	lea	a15,[a15]@los(Servo)
-.L169:
-	mov	d15,#0
-.L170:
-	st.w	[a15]98,d15
-.L171:
-	movh.a	a15,#@his(Servo)
-	lea	a15,[a15]@los(Servo)
-.L172:
-	mov	d15,#0
-.L173:
-	st.w	[a15]102,d15
-.L174:
-	movh.a	a15,#@his(Servo)
-	lea	a15,[a15]@los(Servo)
-.L175:
-	mov	d15,#0
-.L176:
-	st.w	[a15]106,d15
-.L50:
-	mov	d8,#0
-.L69:
-	j	.L2
-.L3:
-	mul	d15,d8,#28
-.L177:
-	movh.a	a15,#@his(Servo)
-	lea	a15,[a15]@los(Servo)
-.L178:
-	addsc.a	a15,a15,d15,#0
-.L179:
 	ld.bu	d4,[a15]
-.L180:
+.L153:
 	mov	d5,#200
-.L181:
-	mul	d15,d8,#28
-.L182:
+.L154:
+	mul	d15,d8,#20
+.L155:
 	movh.a	a15,#@his(Servo)
 	lea	a15,[a15]@los(Servo)
-.L183:
+.L156:
 	addsc.a	a15,a15,d15,#0
-.L184:
-	ld.w	d15,[a15]14
+.L157:
+	ld.w	d15,[a15]6
 	ftouz	d6,d15
 	call	pwm_init
-.L185:
+.L158:
 	add	d8,#1
 .L2:
 	jlt.u	d8,#4,.L3
-.L51:
-	ret
 .L49:
+	ret
+.L47:
 	
 __ServoInit_function_end:
 	.size	ServoInit,__ServoInit_function_end-ServoInit
-.L31:
+.L29:
 	; End of function
 	
 	.sdecl	'.text.ServoMotor.ServoSetPosition',code,cluster('ServoSetPosition')
@@ -283,225 +227,111 @@ __ServoInit_function_end:
 	
 	.global	ServoSetPosition
 ; Function ServoSetPosition
-.L18:
+.L16:
 ServoSetPosition:	.type	func
-	mul	d15,d4,#28
-.L190:
+	mul	d15,d4,#20
+.L163:
 	movh.a	a15,#@his(Servo)
 	lea	a15,[a15]@los(Servo)
-.L191:
+.L164:
 	addsc.a	a15,a15,d15,#0
-.L192:
-	mul	d15,d4,#28
-.L193:
+.L165:
+	mul	d15,d4,#20
+.L166:
 	movh.a	a2,#@his(Servo)
 	lea	a2,[a2]@los(Servo)
-.L194:
+.L167:
 	addsc.a	a2,a2,d15,#0
-.L195:
-	ld.w	d0,[a2]18
-.L196:
-	mul	d15,d4,#28
-.L197:
+.L168:
+	ld.w	d0,[a2]10
+.L169:
+	mul	d15,d4,#20
+.L170:
 	movh.a	a2,#@his(Servo)
 	lea	a2,[a2]@los(Servo)
-.L198:
+.L171:
 	addsc.a	a2,a2,d15,#0
-.L199:
-	ld.w	d15,[a2]14
-.L200:
+.L172:
+	ld.w	d15,[a2]6
+.L173:
 	add.f	d15,d0,d15
-.L201:
-	st.w	[a15]10,d15
-.L202:
-	mul	d15,d4,#28
-.L203:
+.L174:
+	st.w	[a15]2,d15
+.L175:
+	mul	d15,d4,#20
 	movh.a	a15,#@his(Servo)
 	lea	a15,[a15]@los(Servo)
-.L204:
 	addsc.a	a15,a15,d15,#0
-.L205:
-	ld.w	d0,[a15]2
-.L206:
-	mul	d15,d4,#28
-.L207:
+	ld.w	d15,[a15]14
+	jlt	d15,#1,.L4
+	mul	d15,d4,#20
 	movh.a	a15,#@his(Servo)
 	lea	a15,[a15]@los(Servo)
-.L208:
 	addsc.a	a15,a15,d15,#0
-.L209:
-	ld.w	d15,[a15]6
-.L210:
-	cmp.f	d15,d0,d15
-	and	d15,#3
-	ne	d15,d15,#0
-.L211:
-	jne	d15,#0,.L4
-.L212:
-	mul	d15,d4,#28
-.L213:
-	movh.a	a15,#@his(Servo)
-	lea	a15,[a15]@los(Servo)
-.L214:
-	addsc.a	a15,a15,d15,#0
-.L215:
-	mul	d15,d4,#28
-.L216:
-	movh.a	a2,#@his(Servo)
-	lea	a2,[a2]@los(Servo)
-.L217:
-	addsc.a	a2,a2,d15,#0
-.L218:
-	ld.w	d15,[a2]10
-.L219:
-	movh	d0,#16988
-.L220:
-	mul.f	d15,d15,d0
-	ftoiz	d15,d15
-.L221:
-	st.w	[a15]22,d15
-.L222:
+	ld.w	d0,[a15]14
 	j	.L5
 .L4:
-	mul	d15,d4,#28
-.L223:
+	mul	d15,d4,#20
 	movh.a	a15,#@his(Servo)
 	lea	a15,[a15]@los(Servo)
-.L224:
 	addsc.a	a15,a15,d15,#0
-.L225:
-	mul	d15,d4,#28
-.L226:
-	movh.a	a2,#@his(Servo)
-	lea	a2,[a2]@los(Servo)
-.L227:
-	addsc.a	a2,a2,d15,#0
-.L228:
-	ld.w	d0,[a2]2
-.L229:
-	mul	d15,d4,#28
-.L230:
-	movh.a	a2,#@his(Servo)
-	lea	a2,[a2]@los(Servo)
-.L231:
-	addsc.a	a2,a2,d15,#0
-.L232:
-	ld.w	d15,[a2]6
-.L233:
-	div.f	d0,d0,d15
-.L234:
-	mul	d15,d4,#28
-.L235:
-	movh.a	a2,#@his(Servo)
-	lea	a2,[a2]@los(Servo)
-.L236:
-	addsc.a	a2,a2,d15,#0
-.L237:
-	ld.w	d15,[a2]10
-.L238:
-	mul.f	d15,d0,d15
-.L239:
-	movh	d0,#16988
-.L240:
-	mul.f	d15,d15,d0
-	ftoiz	d15,d15
-.L241:
-	st.w	[a15]22,d15
-.L242:
-	mul	d15,d4,#28
-.L243:
-	movh.a	a15,#@his(Servo)
-	lea	a15,[a15]@los(Servo)
-.L244:
-	addsc.a	a15,a15,d15,#0
-	mul	d15,d4,#28
-.L245:
-	movh.a	a2,#@his(Servo)
-	lea	a2,[a2]@los(Servo)
-.L246:
-	addsc.a	a2,a2,d15,#0
-.L247:
-	ld.w	d15,[a2]2
-.L248:
-	movh	d0,#16544
-.L249:
-	add.f	d15,d15,d0
-	st.w	[a15]2,d15
+	ld.w	d0,[a15]14
+	rsub	d0,#0
 .L5:
-	mul	d15,d4,#28
-	movh.a	a15,#@his(Servo)
-	lea	a15,[a15]@los(Servo)
-	addsc.a	a15,a15,d15,#0
-	ld.w	d15,[a15]22
-	jlt	d15,#1,.L6
-	mul	d15,d4,#28
-	movh.a	a15,#@his(Servo)
-	lea	a15,[a15]@los(Servo)
-	addsc.a	a15,a15,d15,#0
-	ld.w	d0,[a15]22
+	mov	d15,#1
+	jeq	d15,#0,.L6
+	mov	d15,#10000
 	j	.L7
 .L6:
-	mul	d15,d4,#28
-	movh.a	a15,#@his(Servo)
-	lea	a15,[a15]@los(Servo)
-	addsc.a	a15,a15,d15,#0
-	ld.w	d0,[a15]22
-	rsub	d0,#0
-.L7:
-	mov	d15,#1
-	jeq	d15,#0,.L8
-	mov	d15,#10000
-	j	.L9
-.L8:
 	mov	d15,#-10000
-.L9:
-	jge	d15,d0,.L10
-	mul	d15,d4,#28
+.L7:
+	jge	d15,d0,.L8
+	mul	d15,d4,#20
 	movh.a	a15,#@his(Servo)
 	lea	a15,[a15]@los(Servo)
 	addsc.a	a15,a15,d15,#0
-	ld.w	d15,[a15]22
-	jge	d15,#0,.L11
+	ld.w	d15,[a15]14
+	jge	d15,#0,.L9
 	mov	d0,#-1
-	j	.L12
-.L11:
+	j	.L10
+.L9:
 	mov	d0,#1
-.L12:
-	mul	d15,d4,#28
+.L10:
+	mul	d15,d4,#20
 	movh.a	a15,#@his(Servo)
 	lea	a15,[a15]@los(Servo)
 	addsc.a	a15,a15,d15,#0
 	mov	d15,#10000
 	mul	d0,d15
-	st.w	[a15]22,d0
-.L10:
-	mul	d15,d4,#28
-.L250:
+	st.w	[a15]14,d0
+.L8:
+	mul	d15,d4,#20
+.L176:
 	movh.a	a15,#@his(Servo)
 	lea	a15,[a15]@los(Servo)
-.L251:
+.L177:
 	addsc.a	a15,a15,d15,#0
-.L252:
+.L178:
 	ld.bu	d0,[a15]
-.L253:
-	mul	d15,d4,#28
-.L254:
+.L179:
+	mul	d15,d4,#20
+.L180:
 	movh.a	a15,#@his(Servo)
 	lea	a15,[a15]@los(Servo)
-.L255:
+.L181:
 	addsc.a	a15,a15,d15,#0
-.L256:
-	ld.w	d5,[a15]22
+.L182:
+	ld.w	d5,[a15]14
 	mov	d4,d0
-.L70:
+.L67:
 	call	pwm_set_duty
-.L257:
+.L183:
 	ret
-.L54:
+.L52:
 	
 __ServoSetPosition_function_end:
 	.size	ServoSetPosition,__ServoSetPosition_function_end-ServoSetPosition
-.L36:
+.L34:
 	; End of function
 	
 	.sdecl	'.text.ServoMotor.ServoMov',code,cluster('ServoMov')
@@ -510,43 +340,23 @@ __ServoSetPosition_function_end:
 	
 	.global	ServoMov
 ; Function ServoMov
-.L20:
+.L18:
 ServoMov:	.type	func
-	mul	d15,d4,#28
-.L262:
+	mul	d15,d4,#20
+.L188:
 	movh.a	a15,#@his(Servo)
 	lea	a15,[a15]@los(Servo)
-.L263:
+.L189:
 	addsc.a	a15,a15,d15,#0
-.L264:
-	mov	d15,#0
-.L265:
-	st.w	[a15]2,d15
-.L266:
-	mul	d15,d4,#28
-.L267:
-	movh.a	a15,#@his(Servo)
-	lea	a15,[a15]@los(Servo)
-.L268:
-	addsc.a	a15,a15,d15,#0
-.L269:
-	st.w	[a15]6,d5
-.L270:
-	mul	d15,d4,#28
-.L271:
-	movh.a	a15,#@his(Servo)
-	lea	a15,[a15]@los(Servo)
-.L272:
-	addsc.a	a15,a15,d15,#0
-.L273:
-	st.w	[a15]18,d6
-.L274:
+.L190:
+	st.w	[a15]10,d5
+.L191:
 	ret
-.L57:
+.L55:
 	
 __ServoMov_function_end:
 	.size	ServoMov,__ServoMov_function_end-ServoMov
-.L41:
+.L39:
 	; End of function
 	
 	.sdecl	'.text.ServoMotor.ServoFunc',code,cluster('ServoFunc')
@@ -555,26 +365,26 @@ __ServoMov_function_end:
 	
 	.global	ServoFunc
 ; Function ServoFunc
-.L22:
+.L20:
 ServoFunc:	.type	func
 	mov	d15,#0
-.L71:
-	j	.L13
-.L14:
+.L68:
+	j	.L11
+.L12:
 	mov	d4,d15
-.L72:
+.L69:
 	call	ServoSetPosition
-.L73:
+.L70:
 	add	d15,#1
-.L13:
-	jlt.u	d15,#4,.L14
-.L66:
+.L11:
+	jlt.u	d15,#4,.L12
+.L63:
 	ret
-.L65:
+.L62:
 	
 __ServoFunc_function_end:
 	.size	ServoFunc,__ServoFunc_function_end-ServoFunc
-.L46:
+.L44:
 	; End of function
 	
 	.sdecl	'.bss.ServoMotor.Servo',data,cluster('Servo')
@@ -582,8 +392,8 @@ __ServoFunc_function_end:
 	.global	Servo
 	.align	4
 Servo:	.type	object
-	.size	Servo,112
-	.space	112
+	.size	Servo,80
+	.space	80
 	.calls	'ServoInit','pwm_init'
 	.calls	'ServoSetPosition','pwm_set_duty'
 	.calls	'ServoFunc','ServoSetPosition'
@@ -595,17 +405,17 @@ Servo:	.type	object
 	.calls	'ServoFunc','',0
 	.sdecl	'.debug_info',debug
 	.sect	'.debug_info'
-.L24:
-	.word	146089
+.L22:
+	.word	146056
 	.half	3
-	.word	.L25
+	.word	.L23
 	.byte	4
-.L23:
+.L21:
 	.byte	1
 	.byte	'../code/src/ServoMotor.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1
-	.word	.L26
+	.word	.L24
 	.byte	2,1,1,3
 	.word	171
 	.byte	4
@@ -614,7 +424,7 @@ Servo:	.type	object
 	.word	174
 	.byte	6,0,7
 	.byte	'__fract',0,4,128,1
-.L60:
+.L58:
 	.byte	7
 	.byte	'float',0,4,4,8
 	.byte	'Ifx__float_to_fract',0,3,1,152,2,18
@@ -641,13 +451,13 @@ Servo:	.type	object
 	.byte	'value',0,2,143,1,43
 	.word	317
 	.byte	6,0
-.L52:
+.L50:
 	.byte	7
 	.byte	'unsigned int',0,4,7
-.L55:
+.L53:
 	.byte	7
 	.byte	'int',0,4,5
-.L63:
+.L60:
 	.byte	7
 	.byte	'unsigned char',0,1,8,10
 	.byte	'_Ifx_SRC_SRCR_Bits',0,4,45,16,4,11
@@ -6208,7 +6018,7 @@ Servo:	.type	object
 	.byte	22
 	.word	32781
 	.byte	6,0
-.L58:
+.L56:
 	.byte	15,21,17,9,1,16
 	.byte	'Fl',0,0,16
 	.byte	'Fr',0,1,16
@@ -20226,32 +20036,26 @@ Servo:	.type	object
 	.byte	'JointNum',0,21,17,33
 	.word	37095
 	.byte	10
-	.byte	'_Servo',0,21,20,16,28,13
+	.byte	'_Servo',0,21,20,16,20,13
 	.byte	'pin',0
 	.word	33682
 	.byte	1,2,35,0,13
 	.byte	'joint',0
 	.word	37095
 	.byte	1,2,35,1,13
-	.byte	'cntTime',0
-	.word	231
-	.byte	4,2,35,2,13
-	.byte	'reachTime',0
-	.word	231
-	.byte	4,2,35,6,13
 	.byte	'angleSet',0
 	.word	231
-	.byte	4,2,35,10,13
+	.byte	4,2,35,2,13
 	.byte	'angleMid',0
 	.word	231
-	.byte	4,2,35,14,13
+	.byte	4,2,35,6,13
 	.byte	'angleMov',0
 	.word	231
-	.byte	4,2,35,18,13
+	.byte	4,2,35,10,13
 	.byte	'PWMSet',0
 	.word	451
-	.byte	4,2,35,22,0,27
-	.byte	'ServoType',0,21,32,3
+	.byte	4,2,35,14,0,27
+	.byte	'ServoType',0,21,29,3
 	.word	145234
 	.byte	10
 	.byte	'_Imu',0,52,5,16,76,13
@@ -20313,34 +20117,31 @@ Servo:	.type	object
 	.word	231
 	.byte	4,2,35,72,0,27
 	.byte	'IMUType',0,52,30,3
-	.word	145399
+	.word	145363
 	.byte	10
-	.byte	'_PointType',0,53,6,16,12,13
+	.byte	'_PointType',0,53,6,16,8,13
 	.byte	'x',0
 	.word	231
 	.byte	4,2,35,0,13
 	.byte	'y',0
 	.word	231
-	.byte	4,2,35,4,13
-	.byte	't',0
-	.word	231
-	.byte	4,2,35,8,0,27
-	.byte	'Vector2f',0,53,11,3
-	.word	145776
+	.byte	4,2,35,4,0,27
+	.byte	'Vector2f',0,53,10,3
+	.word	145740
 	.byte	3
 	.word	145234
 	.byte	3
 	.word	144942
 	.byte	10
-	.byte	'_leg',0,54,16,16,96,13
+	.byte	'_leg',0,54,16,16,60,13
 	.byte	'front',0
-	.word	145843
+	.word	145796
 	.byte	4,2,35,0,13
 	.byte	'behind',0
-	.word	145843
+	.word	145796
 	.byte	4,2,35,4,13
 	.byte	'wheel',0
-	.word	145848
+	.word	145801
 	.byte	4,2,35,8,13
 	.byte	'angle0',0
 	.word	231
@@ -20351,39 +20152,36 @@ Servo:	.type	object
 	.byte	'angle2',0
 	.word	231
 	.byte	4,2,35,20,13
-	.byte	'angle4',0
+	.byte	'angle3',0
 	.word	231
 	.byte	4,2,35,24,13
-	.byte	'angle1set',0
+	.byte	'angle4',0
 	.word	231
 	.byte	4,2,35,28,13
-	.byte	'angle4set',0
+	.byte	'angle1set',0
 	.word	231
 	.byte	4,2,35,32,13
-	.byte	'A',0
-	.word	145776
-	.byte	12,2,35,36,13
-	.byte	'B',0
-	.word	145776
-	.byte	12,2,35,48,13
-	.byte	'C',0
-	.word	145776
-	.byte	12,2,35,60,13
-	.byte	'D',0
-	.word	145776
-	.byte	12,2,35,72,13
-	.byte	'E',0
-	.word	145776
-	.byte	12,2,35,84,0,27
-	.byte	'LegType',0,54,27,3
-	.word	145853
-.L68:
-	.byte	18,112
+	.byte	'angle4set',0
+	.word	231
+	.byte	4,2,35,36,13
+	.byte	'PosNow',0
+	.word	145740
+	.byte	8,2,35,40,13
+	.byte	'PosSet',0
+	.word	145740
+	.byte	8,2,35,48,13
+	.byte	't_MoveToPos',0
+	.word	231
+	.byte	4,2,35,56,0,27
+	.byte	'LegType',0,54,31,3
+	.word	145806
+.L65:
+	.byte	18,80
 	.word	145234
 	.byte	19,3,0,0
 	.sdecl	'.debug_abbrev',debug
 	.sect	'.debug_abbrev'
-.L25:
+.L23:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,21,0,54,15,39,12,0,0,3,15,0,73,19,0,0,4,46,1,3,8,32,13
 	.byte	58,15,59,15,57,15,54,15,39,12,0,0,5,5,0,3,8,58,15,59,15,57,15,73,19,0,0,6,11,0,0,0,7,36,0,3,8,11,15,62
 	.byte	15,0,0,8,46,1,3,8,32,13,58,15,59,15,57,15,73,19,54,15,39,12,0,0,9,59,0,3,8,0,0,10,19,1,3,8,58,15,59,15
@@ -20396,12 +20194,12 @@ Servo:	.type	object
 	.byte	11,15,0,0,0
 	.sdecl	'.debug_line',debug
 	.sect	'.debug_line'
-.L26:
-	.word	.L75-.L74
-.L74:
+.L24:
+	.word	.L72-.L71
+.L71:
 	.half	3
-	.word	.L77-.L76
-.L76:
+	.word	.L74-.L73
+.L73:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
 	.byte	'D:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B\\\\_Reg',0
 	.byte	'D:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_driver',0
@@ -20491,698 +20289,526 @@ Servo:	.type	object
 	.byte	'imu.h',0,3,0,0
 	.byte	'vector.h',0,3,0,0
 	.byte	'leg.h',0,3,0,0,0
-.L77:
-.L75:
+.L74:
+.L72:
 	.sdecl	'.debug_info',debug,cluster('ServoInit')
 	.sect	'.debug_info'
-.L27:
+.L25:
 	.word	241
 	.half	3
-	.word	.L28
+	.word	.L26
 	.byte	4,1
 	.byte	'../code/src/ServoMotor.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1
-	.word	.L30,.L29
+	.word	.L28,.L27
 	.byte	2
-	.word	.L23
+	.word	.L21
 	.byte	3
 	.byte	'ServoInit',0,1,7,6,1,1,1
-	.word	.L16,.L49,.L15
+	.word	.L14,.L47,.L13
 	.byte	4
-	.word	.L16,.L49
+	.word	.L14,.L47
 	.byte	4
-	.word	.L50,.L51
+	.word	.L48,.L49
 	.byte	5
-	.byte	'i',0,1,50,14
-	.word	.L52,.L53
+	.byte	'i',0,1,42,14
+	.word	.L50,.L51
 	.byte	0,0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('ServoInit')
 	.sect	'.debug_abbrev'
-.L28:
+.L26:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
 	.sdecl	'.debug_line',debug,cluster('ServoInit')
 	.sect	'.debug_line'
-.L29:
-	.word	.L79-.L78
-.L78:
+.L27:
+	.word	.L76-.L75
+.L75:
 	.half	3
-	.word	.L81-.L80
-.L80:
+	.word	.L78-.L77
+.L77:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/src/ServoMotor.c',0,0,0,0,0
-.L81:
+.L78:
 	.byte	5,2,7,0,5,2
-	.word	.L16
-	.byte	3,9,1,5,20,9
-	.half	.L82-.L16
-	.byte	1,5,18,9
+	.word	.L14
+	.byte	3,9,1,5,19,9
+	.half	.L79-.L14
+	.byte	1,5,17,9
+	.half	.L80-.L79
+	.byte	1,5,2,9
+	.half	.L81-.L80
+	.byte	3,1,1,5,19,9
+	.half	.L82-.L81
+	.byte	1,5,17,9
 	.half	.L83-.L82
 	.byte	1,5,2,9
 	.half	.L84-.L83
-	.byte	3,1,1,5,20,9
+	.byte	3,1,1,5,19,9
 	.half	.L85-.L84
-	.byte	1,5,18,9
+	.byte	1,5,17,9
 	.half	.L86-.L85
 	.byte	1,5,2,9
 	.half	.L87-.L86
-	.byte	3,1,1,5,20,9
+	.byte	3,1,1,5,19,9
 	.half	.L88-.L87
-	.byte	1,5,18,9
+	.byte	1,5,17,9
 	.half	.L89-.L88
 	.byte	1,5,2,9
 	.half	.L90-.L89
-	.byte	3,1,1,5,20,9
+	.byte	3,3,1,5,21,9
 	.half	.L91-.L90
-	.byte	1,5,18,9
+	.byte	1,5,19,9
 	.half	.L92-.L91
 	.byte	1,5,2,9
 	.half	.L93-.L92
-	.byte	3,3,1,5,22,9
+	.byte	3,1,1,5,22,9
 	.half	.L94-.L93
 	.byte	1,5,20,9
 	.half	.L95-.L94
 	.byte	1,5,2,9
 	.half	.L96-.L95
-	.byte	3,1,1,5,23,9
+	.byte	3,1,1,5,22,9
 	.half	.L97-.L96
-	.byte	1,5,21,9
+	.byte	1,5,20,9
 	.half	.L98-.L97
 	.byte	1,5,2,9
 	.half	.L99-.L98
-	.byte	3,1,1,5,23,9
+	.byte	3,1,1,5,22,9
 	.half	.L100-.L99
-	.byte	1,5,21,9
+	.byte	1,5,20,9
 	.half	.L101-.L100
 	.byte	1,5,2,9
 	.half	.L102-.L101
-	.byte	3,1,1,5,23,9
+	.byte	3,1,1,5,22,9
 	.half	.L103-.L102
-	.byte	1,5,21,9
+	.byte	1,5,20,9
 	.half	.L104-.L103
 	.byte	1,5,2,9
 	.half	.L105-.L104
-	.byte	3,1,1,5,23,9
+	.byte	3,2,1,5,21,9
 	.half	.L106-.L105
-	.byte	1,5,21,9
+	.byte	1,5,19,9
 	.half	.L107-.L106
 	.byte	1,5,2,9
 	.half	.L108-.L107
-	.byte	3,1,1,5,23,9
+	.byte	3,1,1,5,22,9
 	.half	.L109-.L108
-	.byte	1,5,21,9
+	.byte	1,5,20,9
 	.half	.L110-.L109
 	.byte	1,5,2,9
 	.half	.L111-.L110
-	.byte	3,1,1,5,23,9
+	.byte	3,1,1,5,22,9
 	.half	.L112-.L111
-	.byte	1,5,21,9
+	.byte	1,5,20,9
 	.half	.L113-.L112
 	.byte	1,5,2,9
 	.half	.L114-.L113
-	.byte	3,2,1,5,22,9
+	.byte	3,1,1,5,22,9
 	.half	.L115-.L114
 	.byte	1,5,20,9
 	.half	.L116-.L115
 	.byte	1,5,2,9
 	.half	.L117-.L116
-	.byte	3,1,1,5,23,9
+	.byte	3,1,1,5,22,9
 	.half	.L118-.L117
-	.byte	1,5,21,9
+	.byte	1,5,20,9
 	.half	.L119-.L118
 	.byte	1,5,2,9
 	.half	.L120-.L119
-	.byte	3,1,1,5,23,9
+	.byte	3,2,1,5,21,9
 	.half	.L121-.L120
-	.byte	1,5,21,9
+	.byte	1,5,19,9
 	.half	.L122-.L121
 	.byte	1,5,2,9
 	.half	.L123-.L122
-	.byte	3,1,1,5,23,9
+	.byte	3,1,1,5,22,9
 	.half	.L124-.L123
-	.byte	1,5,21,9
+	.byte	1,5,20,9
 	.half	.L125-.L124
 	.byte	1,5,2,9
 	.half	.L126-.L125
-	.byte	3,1,1,5,23,9
+	.byte	3,1,1,5,22,9
 	.half	.L127-.L126
-	.byte	1,5,21,9
+	.byte	1,5,20,9
 	.half	.L128-.L127
 	.byte	1,5,2,9
 	.half	.L129-.L128
-	.byte	3,1,1,5,23,9
+	.byte	3,1,1,5,22,9
 	.half	.L130-.L129
-	.byte	1,5,21,9
+	.byte	1,5,20,9
 	.half	.L131-.L130
 	.byte	1,5,2,9
 	.half	.L132-.L131
-	.byte	3,1,1,5,23,9
+	.byte	3,1,1,5,22,9
 	.half	.L133-.L132
-	.byte	1,5,21,9
+	.byte	1,5,20,9
 	.half	.L134-.L133
 	.byte	1,5,2,9
 	.half	.L135-.L134
-	.byte	3,2,1,5,22,9
+	.byte	3,2,1,5,21,9
 	.half	.L136-.L135
-	.byte	1,5,20,9
+	.byte	1,5,19,9
 	.half	.L137-.L136
 	.byte	1,5,2,9
 	.half	.L138-.L137
-	.byte	3,1,1,5,23,9
+	.byte	3,1,1,5,22,9
 	.half	.L139-.L138
-	.byte	1,5,21,9
+	.byte	1,5,20,9
 	.half	.L140-.L139
 	.byte	1,5,2,9
 	.half	.L141-.L140
-	.byte	3,1,1,5,23,9
+	.byte	3,1,1,5,22,9
 	.half	.L142-.L141
-	.byte	1,5,21,9
+	.byte	1,5,20,9
 	.half	.L143-.L142
 	.byte	1,5,2,9
 	.half	.L144-.L143
-	.byte	3,1,1,5,23,9
+	.byte	3,1,1,5,22,9
 	.half	.L145-.L144
-	.byte	1,5,21,9
+	.byte	1,5,20,9
 	.half	.L146-.L145
 	.byte	1,5,2,9
 	.half	.L147-.L146
-	.byte	3,1,1,5,23,9
+	.byte	3,1,1,5,22,9
 	.half	.L148-.L147
-	.byte	1,5,21,9
-	.half	.L149-.L148
-	.byte	1,5,2,9
-	.half	.L150-.L149
-	.byte	3,1,1,5,23,9
-	.half	.L151-.L150
-	.byte	1,5,21,9
-	.half	.L152-.L151
-	.byte	1,5,2,9
-	.half	.L153-.L152
-	.byte	3,1,1,5,23,9
-	.half	.L154-.L153
-	.byte	1,5,21,9
-	.half	.L155-.L154
-	.byte	1,5,2,9
-	.half	.L156-.L155
-	.byte	3,2,1,5,22,9
-	.half	.L157-.L156
 	.byte	1,5,20,9
-	.half	.L158-.L157
-	.byte	1,5,2,9
-	.half	.L159-.L158
-	.byte	3,1,1,5,23,9
-	.half	.L160-.L159
-	.byte	1,5,21,9
-	.half	.L161-.L160
-	.byte	1,5,2,9
-	.half	.L162-.L161
-	.byte	3,1,1,5,23,9
-	.half	.L163-.L162
-	.byte	1,5,21,9
-	.half	.L164-.L163
-	.byte	1,5,2,9
-	.half	.L165-.L164
-	.byte	3,1,1,5,23,9
-	.half	.L166-.L165
-	.byte	1,5,21,9
-	.half	.L167-.L166
-	.byte	1,5,2,9
-	.half	.L168-.L167
-	.byte	3,1,1,5,23,9
-	.half	.L169-.L168
-	.byte	1,5,21,9
-	.half	.L170-.L169
-	.byte	1,5,2,9
-	.half	.L171-.L170
-	.byte	3,1,1,5,23,9
-	.half	.L172-.L171
-	.byte	1,5,21,9
-	.half	.L173-.L172
-	.byte	1,5,2,9
-	.half	.L174-.L173
-	.byte	3,1,1,5,23,9
-	.half	.L175-.L174
-	.byte	1,5,21,9
-	.half	.L176-.L175
+	.half	.L149-.L148
 	.byte	1,5,16,9
-	.half	.L50-.L176
+	.half	.L48-.L149
 	.byte	3,4,1,5,26,9
-	.half	.L69-.L50
+	.half	.L66-.L48
 	.byte	1,5,47,9
-	.half	.L3-.L69
+	.half	.L3-.L66
 	.byte	1,5,42,9
-	.half	.L177-.L3
+	.half	.L150-.L3
 	.byte	1,5,47,9
-	.half	.L178-.L177
+	.half	.L151-.L150
 	.byte	1,5,50,9
-	.half	.L179-.L178
+	.half	.L152-.L151
 	.byte	1,5,56,9
-	.half	.L180-.L179
+	.half	.L153-.L152
 	.byte	1,5,66,9
-	.half	.L181-.L180
+	.half	.L154-.L153
 	.byte	1,5,61,9
-	.half	.L182-.L181
+	.half	.L155-.L154
 	.byte	1,5,66,9
-	.half	.L183-.L182
+	.half	.L156-.L155
 	.byte	1,5,69,9
-	.half	.L184-.L183
+	.half	.L157-.L156
 	.byte	1,5,29,9
-	.half	.L185-.L184
+	.half	.L158-.L157
 	.byte	1,5,26,9
-	.half	.L2-.L185
+	.half	.L2-.L158
 	.byte	1,5,1,7,9
-	.half	.L51-.L2
+	.half	.L49-.L2
 	.byte	3,1,1,7,9
-	.half	.L31-.L51
+	.half	.L29-.L49
 	.byte	0,1,1
-.L79:
+.L76:
 	.sdecl	'.debug_ranges',debug,cluster('ServoInit')
 	.sect	'.debug_ranges'
-.L30:
-	.word	-1,.L16,0,.L31-.L16,0,0
+.L28:
+	.word	-1,.L14,0,.L29-.L14,0,0
 	.sdecl	'.debug_info',debug,cluster('ServoSetPosition')
 	.sect	'.debug_info'
-.L32:
+.L30:
 	.word	238
 	.half	3
-	.word	.L33
+	.word	.L31
 	.byte	4,1
 	.byte	'../code/src/ServoMotor.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1
-	.word	.L35,.L34
+	.word	.L33,.L32
 	.byte	2
-	.word	.L23
+	.word	.L21
 	.byte	3
-	.byte	'ServoSetPosition',0,1,55,6,1,1,1
-	.word	.L18,.L54,.L17
+	.byte	'ServoSetPosition',0,1,47,6,1,1,1
+	.word	.L16,.L52,.L15
 	.byte	4
-	.byte	'id',0,1,55,27
-	.word	.L55,.L56
+	.byte	'id',0,1,47,27
+	.word	.L53,.L54
 	.byte	5
-	.word	.L18,.L54
+	.word	.L16,.L52
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('ServoSetPosition')
 	.sect	'.debug_abbrev'
-.L33:
+.L31:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('ServoSetPosition')
 	.sect	'.debug_line'
-.L34:
-	.word	.L187-.L186
-.L186:
+.L32:
+	.word	.L160-.L159
+.L159:
 	.half	3
-	.word	.L189-.L188
-.L188:
+	.word	.L162-.L161
+.L161:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/src/ServoMotor.c',0,0,0,0,0
-.L189:
+.L162:
 	.byte	5,7,7,0,5,2
-	.word	.L18
-	.byte	3,56,1,5,2,9
-	.half	.L190-.L18
+	.word	.L16
+	.byte	3,48,1,5,2,9
+	.half	.L163-.L16
 	.byte	1,5,7,9
-	.half	.L191-.L190
+	.half	.L164-.L163
 	.byte	1,5,28,9
-	.half	.L192-.L191
+	.half	.L165-.L164
 	.byte	1,5,23,9
-	.half	.L193-.L192
+	.half	.L166-.L165
 	.byte	1,5,28,9
-	.half	.L194-.L193
+	.half	.L167-.L166
 	.byte	1,5,32,9
-	.half	.L195-.L194
+	.half	.L168-.L167
 	.byte	1,5,49,9
-	.half	.L196-.L195
+	.half	.L169-.L168
 	.byte	1,5,44,9
-	.half	.L197-.L196
+	.half	.L170-.L169
 	.byte	1,5,49,9
-	.half	.L198-.L197
+	.half	.L171-.L170
 	.byte	1,5,53,9
-	.half	.L199-.L198
+	.half	.L172-.L171
 	.byte	1,5,42,9
-	.half	.L200-.L199
+	.half	.L173-.L172
 	.byte	1,5,21,9
-	.half	.L201-.L200
-	.byte	1,5,11,9
-	.half	.L202-.L201
-	.byte	3,3,1,5,6,9
-	.half	.L203-.L202
-	.byte	1,5,11,9
-	.half	.L204-.L203
-	.byte	1,5,15,9
-	.half	.L205-.L204
-	.byte	1,5,32,9
-	.half	.L206-.L205
-	.byte	1,5,27,9
-	.half	.L207-.L206
-	.byte	1,5,32,9
-	.half	.L208-.L207
-	.byte	1,5,36,9
-	.half	.L209-.L208
-	.byte	1,5,24,9
-	.half	.L210-.L209
+	.half	.L174-.L173
 	.byte	1,5,2,9
-	.half	.L211-.L210
-	.byte	1,5,8,7,9
-	.half	.L212-.L211
-	.byte	3,5,1,5,3,9
-	.half	.L213-.L212
-	.byte	1,5,8,9
-	.half	.L214-.L213
-	.byte	1,5,27,9
-	.half	.L215-.L214
-	.byte	1,5,22,9
-	.half	.L216-.L215
-	.byte	1,5,27,9
-	.half	.L217-.L216
-	.byte	1,5,31,9
-	.half	.L218-.L217
-	.byte	1,5,43,9
-	.half	.L219-.L218
-	.byte	1,5,41,9
-	.half	.L220-.L219
-	.byte	1,5,20,9
-	.half	.L221-.L220
-	.byte	1,5,96,9
-	.half	.L222-.L221
-	.byte	3,124,1,5,8,9
-	.half	.L4-.L222
-	.byte	1,5,3,9
-	.half	.L223-.L4
-	.byte	1,5,8,9
-	.half	.L224-.L223
-	.byte	1,5,28,9
-	.half	.L225-.L224
-	.byte	1,5,23,9
-	.half	.L226-.L225
-	.byte	1,5,28,9
-	.half	.L227-.L226
-	.byte	1,5,32,9
-	.half	.L228-.L227
-	.byte	1,5,48,9
-	.half	.L229-.L228
-	.byte	1,5,43,9
-	.half	.L230-.L229
-	.byte	1,5,48,9
-	.half	.L231-.L230
-	.byte	1,5,52,9
-	.half	.L232-.L231
-	.byte	1,5,41,9
-	.half	.L233-.L232
-	.byte	1,5,71,9
-	.half	.L234-.L233
-	.byte	1,5,66,9
-	.half	.L235-.L234
-	.byte	1,5,71,9
-	.half	.L236-.L235
-	.byte	1,5,75,9
-	.half	.L237-.L236
-	.byte	1,5,64,9
-	.half	.L238-.L237
-	.byte	1,5,87,9
-	.half	.L239-.L238
-	.byte	1,5,85,9
-	.half	.L240-.L239
-	.byte	1,5,20,9
-	.half	.L241-.L240
-	.byte	1,5,8,9
-	.half	.L242-.L241
-	.byte	3,1,1,5,3,9
-	.half	.L243-.L242
-	.byte	1,5,8,9
-	.half	.L244-.L243
-	.byte	1,5,3,9
-	.half	.L245-.L244
-	.byte	1,5,8,9
-	.half	.L246-.L245
-	.byte	1,5,12,9
-	.half	.L247-.L246
-	.byte	1,5,7,9
-	.half	.L248-.L247
-	.byte	3,1,1,5,4,9
-	.half	.L249-.L248
-	.byte	1,5,2,9
-	.half	.L5-.L249
-	.byte	3,4,1,5,20,9
-	.half	.L10-.L5
+	.half	.L175-.L174
+	.byte	3,13,1,5,20,9
+	.half	.L8-.L175
 	.byte	3,1,1,5,15,9
-	.half	.L250-.L10
+	.half	.L176-.L8
 	.byte	1,5,20,9
-	.half	.L251-.L250
+	.half	.L177-.L176
 	.byte	1,5,24,9
-	.half	.L252-.L251
+	.half	.L178-.L177
 	.byte	1,5,35,9
-	.half	.L253-.L252
+	.half	.L179-.L178
 	.byte	1,5,30,9
-	.half	.L254-.L253
+	.half	.L180-.L179
 	.byte	1,5,35,9
-	.half	.L255-.L254
+	.half	.L181-.L180
 	.byte	1,5,39,9
-	.half	.L256-.L255
+	.half	.L182-.L181
 	.byte	1,5,1,9
-	.half	.L257-.L256
+	.half	.L183-.L182
 	.byte	3,1,1,7,9
-	.half	.L36-.L257
+	.half	.L34-.L183
 	.byte	0,1,1
-.L187:
+.L160:
 	.sdecl	'.debug_ranges',debug,cluster('ServoSetPosition')
 	.sect	'.debug_ranges'
-.L35:
-	.word	-1,.L18,0,.L36-.L18,0,0
+.L33:
+	.word	-1,.L16,0,.L34-.L16,0,0
 	.sdecl	'.debug_info',debug,cluster('ServoMov')
 	.sect	'.debug_info'
-.L37:
-	.word	285
+.L35:
+	.word	263
 	.half	3
-	.word	.L38
+	.word	.L36
 	.byte	4,1
 	.byte	'../code/src/ServoMotor.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1
-	.word	.L40,.L39
+	.word	.L38,.L37
 	.byte	2
-	.word	.L23
+	.word	.L21
 	.byte	3
-	.byte	'ServoMov',0,1,75,6,1,1,1
-	.word	.L20,.L57,.L19
+	.byte	'ServoMov',0,1,70,6,1,1,1
+	.word	.L18,.L55,.L17
 	.byte	4
-	.byte	'num',0,1,75,24
+	.byte	'num',0,1,70,24
+	.word	.L56,.L57
+	.byte	4
+	.byte	'pos',0,1,70,35
 	.word	.L58,.L59
-	.byte	4
-	.byte	'reachTime',0,1,75,35
-	.word	.L60,.L61
-	.byte	4
-	.byte	'pos',0,1,75,52
-	.word	.L60,.L62
 	.byte	5
-	.word	.L20,.L57
+	.word	.L18,.L55
 	.byte	6
-	.byte	'id',0,1,77,5
-	.word	.L63,.L64
+	.byte	'id',0,1,72,5
+	.word	.L60,.L61
 	.byte	0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('ServoMov')
 	.sect	'.debug_abbrev'
-.L38:
+.L36:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
 	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
 	.sdecl	'.debug_line',debug,cluster('ServoMov')
 	.sect	'.debug_line'
-.L39:
-	.word	.L259-.L258
-.L258:
+.L37:
+	.word	.L185-.L184
+.L184:
 	.half	3
-	.word	.L261-.L260
-.L260:
+	.word	.L187-.L186
+.L186:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/src/ServoMotor.c',0,0,0,0,0
-.L261:
+.L187:
 	.byte	5,7,7,0,5,2
-	.word	.L20
-	.byte	3,205,0,1,5,2,9
-	.half	.L262-.L20
+	.word	.L18
+	.byte	3,200,0,1,5,2,9
+	.half	.L188-.L18
 	.byte	1,5,7,9
-	.half	.L263-.L262
-	.byte	1,5,22,9
-	.half	.L264-.L263
-	.byte	1,5,20,9
-	.half	.L265-.L264
-	.byte	1,5,7,9
-	.half	.L266-.L265
-	.byte	3,1,1,5,2,9
-	.half	.L267-.L266
-	.byte	1,5,7,9
-	.half	.L268-.L267
-	.byte	1,5,22,9
-	.half	.L269-.L268
-	.byte	1,5,7,9
-	.half	.L270-.L269
-	.byte	3,1,1,5,2,9
-	.half	.L271-.L270
-	.byte	1,5,7,9
-	.half	.L272-.L271
+	.half	.L189-.L188
 	.byte	1,5,21,9
-	.half	.L273-.L272
+	.half	.L190-.L189
 	.byte	1,5,1,9
-	.half	.L274-.L273
+	.half	.L191-.L190
 	.byte	3,1,1,7,9
-	.half	.L41-.L274
+	.half	.L39-.L191
 	.byte	0,1,1
-.L259:
+.L185:
 	.sdecl	'.debug_ranges',debug,cluster('ServoMov')
 	.sect	'.debug_ranges'
-.L40:
-	.word	-1,.L20,0,.L41-.L20,0,0
+.L38:
+	.word	-1,.L18,0,.L39-.L18,0,0
 	.sdecl	'.debug_info',debug,cluster('ServoFunc')
 	.sect	'.debug_info'
-.L42:
+.L40:
 	.word	242
 	.half	3
-	.word	.L43
+	.word	.L41
 	.byte	4,1
 	.byte	'../code/src/ServoMotor.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1
-	.word	.L45,.L44
+	.word	.L43,.L42
 	.byte	2
-	.word	.L23
+	.word	.L21
 	.byte	3
-	.byte	'ServoFunc',0,1,85,6,1,1,1
-	.word	.L22,.L65,.L21
+	.byte	'ServoFunc',0,1,78,6,1,1,1
+	.word	.L20,.L62,.L19
 	.byte	4
-	.word	.L22,.L65
+	.word	.L20,.L62
 	.byte	4
-	.word	.L22,.L66
+	.word	.L20,.L63
 	.byte	5
-	.byte	'id',0,1,87,14
-	.word	.L52,.L67
+	.byte	'id',0,1,80,14
+	.word	.L50,.L64
 	.byte	0,0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('ServoFunc')
 	.sect	'.debug_abbrev'
-.L43:
+.L41:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
 	.sdecl	'.debug_line',debug,cluster('ServoFunc')
 	.sect	'.debug_line'
-.L44:
-	.word	.L276-.L275
-.L275:
+.L42:
+	.word	.L193-.L192
+.L192:
 	.half	3
-	.word	.L278-.L277
-.L277:
+	.word	.L195-.L194
+.L194:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/src/ServoMotor.c',0,0,0,0,0
-.L278:
+.L195:
 	.byte	5,17,7,0,5,2
-	.word	.L22
-	.byte	3,214,0,1,5,28,9
-	.half	.L71-.L22
-	.byte	1,5,55,9
-	.half	.L14-.L71
-	.byte	1,5,32,9
-	.half	.L73-.L14
-	.byte	1,5,28,9
-	.half	.L13-.L73
+	.word	.L20
+	.byte	3,207,0,1,5,28,9
+	.half	.L68-.L20
+	.byte	1,5,20,9
+	.half	.L12-.L68
+	.byte	3,1,1,5,32,9
+	.half	.L70-.L12
+	.byte	3,127,1,5,28,9
+	.half	.L11-.L70
 	.byte	1,5,1,7,9
-	.half	.L66-.L13
-	.byte	3,1,1,7,9
-	.half	.L46-.L66
+	.half	.L63-.L11
+	.byte	3,2,1,7,9
+	.half	.L44-.L63
 	.byte	0,1,1
-.L276:
+.L193:
 	.sdecl	'.debug_ranges',debug,cluster('ServoFunc')
 	.sect	'.debug_ranges'
-.L45:
-	.word	-1,.L22,0,.L46-.L22,0,0
+.L43:
+	.word	-1,.L20,0,.L44-.L20,0,0
 	.sdecl	'.debug_info',debug,cluster('Servo')
 	.sect	'.debug_info'
-.L47:
+.L45:
 	.word	190
 	.half	3
-	.word	.L48
+	.word	.L46
 	.byte	4,1
 	.byte	'../code/src/ServoMotor.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1,2
-	.word	.L23
+	.word	.L21
 	.byte	3
 	.byte	'Servo',0,22,3,11
-	.word	.L68
+	.word	.L65
 	.byte	1,5,3
 	.word	Servo
 	.byte	0
 	.sdecl	'.debug_abbrev',debug,cluster('Servo')
 	.sect	'.debug_abbrev'
-.L48:
+.L46:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
 	.sdecl	'.debug_loc',debug,cluster('ServoFunc')
 	.sect	'.debug_loc'
-.L21:
-	.word	-1,.L22,0,.L65-.L22
+.L19:
+	.word	-1,.L20,0,.L62-.L20
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L67:
-	.word	-1,.L22,.L71-.L22,.L65-.L22
+.L64:
+	.word	-1,.L20,.L68-.L20,.L62-.L20
 	.half	1
 	.byte	95
-	.word	.L72-.L22,.L73-.L22
+	.word	.L69-.L20,.L70-.L20
 	.half	1
 	.byte	84
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('ServoInit')
 	.sect	'.debug_loc'
-.L15:
-	.word	-1,.L16,0,.L49-.L16
+.L13:
+	.word	-1,.L14,0,.L47-.L14
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L53:
-	.word	-1,.L16,.L69-.L16,.L49-.L16
+.L51:
+	.word	-1,.L14,.L66-.L14,.L47-.L14
 	.half	1
 	.byte	88
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('ServoMov')
 	.sect	'.debug_loc'
-.L19:
-	.word	-1,.L20,0,.L57-.L20
+.L17:
+	.word	-1,.L18,0,.L55-.L18
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L64:
+.L61:
 	.word	0,0
-.L59:
-	.word	-1,.L20,0,.L57-.L20
+.L57:
+	.word	-1,.L18,0,.L55-.L18
 	.half	1
 	.byte	84
 	.word	0,0
-.L62:
-	.word	-1,.L20,0,.L57-.L20
-	.half	1
-	.byte	86
-	.word	0,0
-.L61:
-	.word	-1,.L20,0,.L57-.L20
+.L59:
+	.word	-1,.L18,0,.L55-.L18
 	.half	1
 	.byte	85
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('ServoSetPosition')
 	.sect	'.debug_loc'
-.L17:
-	.word	-1,.L18,0,.L54-.L18
+.L15:
+	.word	-1,.L16,0,.L52-.L16
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L56:
-	.word	-1,.L18,0,.L70-.L18
+.L54:
+	.word	-1,.L16,0,.L67-.L16
 	.half	1
 	.byte	84
 	.word	0,0
 	.sdecl	'.debug_frame',debug
 	.sect	'.debug_frame'
-.L279:
+.L196:
 	.word	48
 	.word	-1
 	.byte	3,0,2,1,27,12,26,0,8,26,8,27,8,30,8,29,8,28,8,16,8,17,8,24,8,25,8,31,8,32,8,33,8,34,8,35,8,36,8,37,8,38
@@ -21190,18 +20816,18 @@ Servo:	.type	object
 	.sdecl	'.debug_frame',debug,cluster('ServoInit')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L279,.L16,.L49-.L16
+	.word	.L196,.L14,.L47-.L14
 	.sdecl	'.debug_frame',debug,cluster('ServoSetPosition')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L279,.L18,.L54-.L18
+	.word	.L196,.L16,.L52-.L16
 	.sdecl	'.debug_frame',debug,cluster('ServoMov')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L279,.L20,.L57-.L20
+	.word	.L196,.L18,.L55-.L18
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	.sdecl	'.debug_frame',debug,cluster('ServoFunc')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L279,.L22,.L65-.L22
+	.word	.L196,.L20,.L62-.L20
 	; Module end

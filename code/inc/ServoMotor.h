@@ -21,9 +21,6 @@ typedef struct _Servo {
 	pwm_channel_enum pin;	 // PWM 引脚
 	JointNum		 joint;
 
-	float cntTime;	  // 单位ms
-	float reachTime;
-
 	float angleSet;	   // 设置位置 = 中值+移动值
 	float angleMid;	   // 中值。相当于给了一个零点。
 	float angleMov;	   // 移动值
@@ -33,7 +30,7 @@ typedef struct _Servo {
 
 void ServoInit(void);
 void ServoSetPosition(int id);
-void ServoMov(JointNum num, float reachTime, float pos);
+void ServoMov(JointNum num, float pos);
 void ServoFunc(void);
 
 #endif

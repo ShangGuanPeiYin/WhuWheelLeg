@@ -7,7 +7,6 @@ typedef struct _PointType	 // 二维点以及其角度，比向量Vector多一个角度和贝塞尔控
 {
 	float x;
 	float y;
-	float t;
 } Vector2f;
 
 float	 PointInnerProduct(Vector2f a, Vector2f b);		// 向量内积

@@ -6,11 +6,11 @@
 #include "zf_common_typedef.h"
 
 // 杆长 单位为mm
-#define l1	   60
-#define l2	   88	 // 大概
-#define l3	   88	 // 大概
-#define l4	   60
-#define l5	   37
+#define L1	   60
+#define L2	   88	 // 大概
+#define L3	   88	 // 大概
+#define L4	   60
+#define L5	   37
 #define WHEELR 67	 // 直径
 
 typedef struct _leg {
@@ -20,13 +20,17 @@ typedef struct _leg {
 	BrushlessType* wheel;
 
 	// 五连杆坐标系下的坐标，原点在五连杆的中垂线上
-	float	 angle0, angle1, angle2, angle4;	// 角度真实值，是和图中的一一对应
-	float	 angle1set, angle4set;				// 角度设定值，是在初始角度之上的设定值
-	Vector2f A, B, C, D, E;						// 五个点，C为足端
+	float angle0, angle1, angle2, angle3, angle4;	 // 角度真实值，是和图中的一一对应 弧度制
+	float angle1set, angle4set;						 // 角度设定值，是在初始角度之上的设定值 弧度制
+
+	Vector2f PosNow;	// 实际足端坐标 单位mm
+	Vector2f PosSet;	// 设定足端坐标
+
+	float t_MoveToPos;	  // 设定移动到目标位置的移动时间(ms)
 
 } LegType;
 
-void	 InverseKinematics();							   // 逆解 计算C1 C4
-Vector2f ForwardKinematics(float Rec_c1, float Rec_c4);	   // 正解，求（x，y）
+void InverseKinematics(LegType* leg);	 // 逆解 计算C1 C4
+void ForwardKinematics(LegType* leg);	 // 正解，求（x，y）
 
 #endif
