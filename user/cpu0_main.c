@@ -26,6 +26,10 @@ int	  core0_main(void)
 	system_delay_ms(500);
 	while (TRUE) {
 		Servo[Fl].angleSet = angletemp;
+		Servo[Fr].angleSet = angletemp;
+		Servo[Bl].angleSet = angletemp;
+		Servo[Br].angleSet = angletemp;
+
 		OLedDebug();
 	}
 }
