@@ -55,10 +55,10 @@ void ForwardKinematics(LegType* leg)
 	float C		  = L2 * L2 - L3 * L3 + LBD_2;
 	float D		  = L3 * L3 - L2 * L2 + LBD_2;
 
-	leg->angle2	  = 2 * atan2f((B + sqrtf(A * A + B * B - C * C)), (A + C));
-	leg->angle3	  = PI - 2 * atan2f((-B + sqrtf(A * A + B * B - D * D)), (A + D));
+	float angle2  = 2 * atan2f((B + sqrtf(A * A + B * B - C * C)), (A + C));
+	float angle3  = PI - 2 * atan2f((-B + sqrtf(A * A + B * B - D * D)), (A + D));
 
 	// ¼ÆËãCµã×ø±ê
-	leg->PosSet.x = -L5 / 2 + L1 * cosf(leg->angle1) + L2 * cosf(leg->angle2);
-	leg->PosSet.y = L1 * sinf(leg->angle1) + L2 * sinf(leg->angle2);
+	leg->PosSet.x = -L5 / 2 + L1 * cosf(leg->angle1) + L2 * cosf(angle2);
+	leg->PosSet.y = L1 * sinf(leg->angle1) + L2 * sinf(angle2);
 };

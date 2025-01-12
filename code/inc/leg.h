@@ -20,8 +20,8 @@ typedef struct _leg {
 	BrushlessType* wheel;
 
 	// 五连杆坐标系下的坐标，原点在五连杆的中垂线上
-	float angle0, angle1, angle2, angle3, angle4;	 // 角度真实值，是和图中的一一对应 弧度制
-	float angle1set, angle4set;						 // 角度设定值，是在初始角度之上的设定值 弧度制
+	float angle1, angle4;		   // 角度真实值，是和图中的一一对应 腿部采用弧度制
+	float angle1set, angle4set;	   // 角度设定值，是在初始角度之上的设定值 弧度
 
 	Vector2f PosNow;	// 实际足端坐标 单位mm
 	Vector2f PosSet;	// 设定足端坐标
