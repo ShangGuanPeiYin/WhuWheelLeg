@@ -23,11 +23,11 @@ void InverseKinematics(LegType* leg)
 		leg->angle1 += 2 * PI;
 
 	// 求Angle4
-	A = 2 * L4 * leg->PosSet.y;
-	B = 2 * L4 * (leg->PosSet.x - L5);
-	C = L3 * L3 + 2 * L5 * leg->PosSet.x - L4 * L4 - L5 * L5 - leg->PosSet.x * leg->PosSet.x - leg->PosSet.y * leg->PosSet.y;
-
-	leg->angle4 = 2 * atan2f((A - sqrtf(A * A + B * B - C * C)), (B - C));	  // -PI/2 ~ +PI/2
+	A = (leg->PosSet.x - pointE.x) * (leg->PosSet.x - pointE.x) + (leg->PosSet.y - pointE.y) * (leg->PosSet.y - pointE.y) + L4 * L4
+		- L3 * L3;
+	B			= -2 * (leg->PosSet.x - pointE.x) * L4;
+	C			= -2 * (leg->PosSet.y - pointE.y) * L4;
+	leg->angle4 = 2 * atan2f((C - sqrtf(C * C + B * B - A * A)), (A - B));	  // -PI/2 ~ +PI/2
 };
 
 /// @brief 正解。∠1和4，求（x，y）
@@ -48,15 +48,13 @@ void ForwardKinematics(LegType* leg)
 	pointE.x	  = L5 / 2;
 	pointE.y	  = 0.f;
 
-	// 求解angle2,3
+	// 求解angle2
 	float A		  = 2 * L2 * (pointD.x - pointB.x);
 	float B		  = 2 * L2 * (pointD.y - pointB.y);
 	float LBD_2	  = (pointD.y - pointB.y) * (pointD.y - pointB.y) + (pointD.x - pointB.x) * (pointD.x - pointB.x);
 	float C		  = L2 * L2 - L3 * L3 + LBD_2;
-	float D		  = L3 * L3 - L2 * L2 + LBD_2;
 
 	float angle2  = 2 * atan2f((B + sqrtf(A * A + B * B - C * C)), (A + C));
-	float angle3  = PI - 2 * atan2f((-B + sqrtf(A * A + B * B - D * D)), (A + D));
 
 	// 计算C点坐标
 	leg->PosSet.x = -L5 / 2 + L1 * cosf(leg->angle1) + L2 * cosf(angle2);
