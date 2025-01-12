@@ -33,9 +33,9 @@ void ServoInit(void)
 	Servo[3].angleAdj = 0;
 	Servo[3].PWMSet	  = 0;
 
-	// 引脚初始化 PWM频率200Hz
+	// 引脚初始化 PWM频率250Hz
 
-	for (size_t i = 0; i < 4; i++) pwm_init(Servo[i].pin, 200, Servo[i].angleAdj);
+	for (size_t i = 0; i < 4; i++) pwm_init(Servo[i].pin, 250, Servo[i].angleAdj);
 }
 
 /// @brief 定时器Func函数
@@ -44,7 +44,7 @@ void ServoFunc(void)
 {
 	for (size_t id = 0; id < 4; id++)	 // 循环执行
 	{
-		// 解算部分
+		// 解算部分 TODO
 
 		// 驱动电机
 		Servo[id].PWMSet = Servo[id].angleSet * ANGLE2PWM;

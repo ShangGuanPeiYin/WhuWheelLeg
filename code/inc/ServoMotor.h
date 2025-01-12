@@ -29,6 +29,8 @@ typedef struct _Servo {
 	int32_t PWMSet;
 } ServoType;
 
+extern ServoType Servo[4];
+
 void ServoInit(void);
 void ServoFunc(void);
 

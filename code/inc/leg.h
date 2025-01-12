@@ -7,10 +7,10 @@
 
 // 杆长 单位为mm
 #define L1	   60
-#define L2	   88	 // 大概
-#define L3	   88	 // 大概
+#define L2	   88
+#define L3	   88
 #define L4	   60
-#define L5	   37
+#define L5	   37.5
 #define WHEELR 67	 // 直径
 
 typedef struct _leg {

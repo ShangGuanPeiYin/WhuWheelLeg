@@ -50,7 +50,10 @@ IFX_INTERRUPT(cc60_pit_ch0_isr, 0, CCU6_0_CH0_ISR_PRIORITY)
 
 	static int ServoCnt = 0;
 	if (ServoCnt++ > 5)	   // 1k -> 200Hz
+	{
 		ServoFunc();
+		ServoCnt = 0;
+	}
 
 	WorldTime += 0.001;	   // 1ms
 

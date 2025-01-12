@@ -14,10 +14,10 @@ void OLedDebug(void)
 
 	if (keyflag1 == 1)	  // ×ó
 	{
-		angletemp -= 20.f;
+		angletemp -= 10.f;
 	} else if (keyflag2 == 1)	 // ÓÒ
 	{
-		angletemp += 20.f;
+		angletemp += 10.f;
 	}
 
 	oled_show_float(50, 5, angletemp, 4, 2);
