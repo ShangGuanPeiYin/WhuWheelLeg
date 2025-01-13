@@ -19,6 +19,7 @@ void OLedDebug(void)
 	{
 		angletemp += 10.f;
 	}
+	Limit(angletemp, 0, 180);
 
 	oled_show_float(50, 5, angletemp, 4, 2);
 

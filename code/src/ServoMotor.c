@@ -17,21 +17,25 @@ void ServoInit(void)
 	Servo[0].angleSet = 0;
 	Servo[0].angleAdj = 0;
 	Servo[0].PWMSet	  = 0;
+	Servo[0].sign	  = -1;
 
 	Servo[1].joint	  = Fr;
 	Servo[1].angleSet = 0;
 	Servo[1].angleAdj = 0;
 	Servo[1].PWMSet	  = 0;
+	Servo[1].sign	  = -1;
 
 	Servo[2].joint	  = Bl;
 	Servo[2].angleSet = 0;
 	Servo[2].angleAdj = 0;
 	Servo[2].PWMSet	  = 0;
+	Servo[2].sign	  = -1;
 
 	Servo[3].joint	  = Br;
 	Servo[3].angleSet = 0;
 	Servo[3].angleAdj = 0;
 	Servo[3].PWMSet	  = 0;
+	Servo[3].sign	  = -1;
 
 	// 引脚初始化 PWM频率250Hz
 
@@ -44,12 +48,14 @@ void ServoFunc(void)
 {
 	for (size_t id = 0; id < 4; id++)	 // 循环执行
 	{
-		// 解算部分 TODO
+		// 解算部分
+		// Servo[id].angleSet = (Servo[id].angleLeg + Servo[id].angleAdj) * Servo[id].sign;
 
 		// 驱动电机
 		Servo[id].PWMSet = Servo[id].angleSet * ANGLE2PWM;
-		PEAK(Servo[id].PWMSet, (int32_t) PWM_DUTY_MAX);	   // 限幅保护
-		pwm_set_duty(Servo[id].pin, Servo[id].PWMSet);	   // 设置PWM占空比
+		Limit(Servo[id].PWMSet, 0, (int32_t) PWM_DUTY_MAX);	   // 限幅保护
+
+		pwm_set_duty(Servo[id].pin, Servo[id].PWMSet);	  // 设置PWM占空比
 	}
 };
 

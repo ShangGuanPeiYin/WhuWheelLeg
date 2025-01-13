@@ -1,8 +1,8 @@
 #include "zf_common_headfile.h"
 
-BrushlessType Motor[UES_BRUSHLESS_NUM];
+BrushlessType Motor[2];
 
-// 电机初始化
+// 无刷电机初始化
 void BrushlessInit(void)
 {
 	Brushless_uart_init();	  // 通讯初始化
@@ -20,9 +20,10 @@ void BrushlessTypeInit(void)
 	limit.maxRPM	 = 0;	 // 根据需要修改
 	limit.maxCurrent = 0;
 
-	for (size_t i = 0; i < UES_BRUSHLESS_NUM; i++) {
-		Motor[i].enable	   = false;
-		Motor[i].begin	   = false;
+	for (size_t i = 0; i < 2; i++) {
+		Motor[i].enable	   = true;
+		Motor[i].begin	   = true;
+
 		Motor[i].setZero   = false;
 		Motor[i].mode	   = RPM;	 // 速度模式
 		Motor[i].valueLast = Value;
@@ -102,14 +103,17 @@ void BrushlessLockPosition(BrushlessType* motor)
 	PIDOperation(&motor->currentPID, motor->valueNow.current, motor->valueSet.current);	   // TODO 不知道能不能写电流环
 };
 
-// 发送电流
-void BrushlessSentCurrent(BrushlessType* motor) {
-	// TODO motor->currentPID.Output
+// 发送电流（PWM） 双驱，两个一起
+void BrushlessSentCurrent(void)	   //
+{
+	small_driver_set_duty(Motor[0].valueSet.current, Motor[1].valueSet.current);
 };
 
+/// @brief Func
+/// @param
 void BrushlessFunc(void)
 {
-	for (size_t i = 0; i < UES_BRUSHLESS_NUM; i++) {
+	for (size_t i = 0; i < 2; i++) {
 		if (Motor[i].enable == true) {
 			if (Motor[i].begin == true) {
 				switch (Motor->mode) {
@@ -130,9 +134,9 @@ void BrushlessFunc(void)
 				BrushlessLockPosition(&Motor[i]);
 			}
 		}
-
-		BrushlessSentCurrent(&Motor[i]);
 	}
+
+	BrushlessSentCurrent();
 };
 
 /*********************************************** 通讯部分 ************************************************ */

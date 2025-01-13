@@ -14,9 +14,9 @@
 //  P21-6 7 Uart
 
 // 无刷电机控制
-#define UES_BRUSHLESS_NUM 2		   // 使用数量
-#define PULSEPERROUND	  360.f	   // 电机每转一圈的脉冲数。这里不接编码器，所以是360度
-#define PULSETIME		  9999	   // 两次读取脉冲数之间的时间，秒
+#define OUTPUT_DUTY_MAX ((uint16) (4000))	 // 占空比输出最大值
+#define PULSEPERROUND	32767				 // 编码器采样最大值  32767
+#define PULSETIME		9999				 // 两次读取脉冲数之间的时间，秒
 
 // 电机模式
 typedef enum _BrushlessMode {
@@ -27,9 +27,9 @@ typedef enum _BrushlessMode {
 
 // 电机值
 typedef struct _Value {
-	volatile float speed;	 // rpm
-	volatile float angle;	 // °
-	volatile float current;
+	volatile float speed;	   // rpm
+	volatile float angle;	   // °
+	volatile float current;	   // 即PWM Set用到
 } ValueType;
 
 // 脉冲 不知道能不能用到
@@ -89,7 +89,7 @@ typedef struct {
 } BrushlessDataType;
 
 extern BrushlessDataType motor_value;
-extern BrushlessType	 Motor[UES_BRUSHLESS_NUM];
+extern BrushlessType	 Motor[2];
 
 void BrushlessInit(void);							 // 电机初始化
 void BrushlessTypeInit(void);						 // 电机结构体初始化
@@ -100,7 +100,7 @@ void BrushlessSpeedMode(BrushlessType* motor);		 // 速度模式
 void BrushlessPositionMode(BrushlessType* motor);	 // 位置模式
 void BrushlessCurrentMode(BrushlessType* motor);	 // 电流模式
 void BrushlessLockPosition(BrushlessType* motor);	 // 锁到当前位置
-void BrushlessSentCurrent(BrushlessType* motor);	 // 发送电流
+void BrushlessSentCurrent(void);					 // 发送电流
 
 void BrushlessDriver_callback(void);							  // 无刷驱动 串口接收回调函数
 void small_driver_set_duty(int16 left_duty, int16 right_duty);	  // 无刷驱动 设置电机占空比
