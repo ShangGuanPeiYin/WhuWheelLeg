@@ -13,12 +13,19 @@ void BrushlessInit(void)
 /// @param
 void BrushlessTypeInit(void)
 {
-	ValueType	   Value = {0};
-	PulseType	   pulse = {0};
-	MotorParamType param = {0};
+	float Kp_rpm		  = 0.f;	// PID参数待调整
+	float Ki_rpm		  = 0.f;
+	float Kd_rpm		  = 0.f;
+
+	Motor[0].param.direct = Left;	  // 0为左
+	Motor[1].param.direct = Right;	  // 1为右
+
+	ValueType	   Value  = {0};
+	PulseType	   pulse  = {0};
+	MotorParamType param  = {0};
 	MotorLimit	   limit;
 	limit.maxRPM	 = 0;	 // 根据需要修改
-	limit.maxCurrent = 0;
+	limit.maxCurrent = 0;	 // 不在这里限幅
 
 	for (size_t i = 0; i < 2; i++) {
 		Motor[i].enable	   = true;
@@ -34,9 +41,10 @@ void BrushlessTypeInit(void)
 		Motor[i].param	   = param;
 		Motor[i].limit	   = limit;
 
-		PIDTypeInit(&Motor[i].posPID, 0.f, 0.f, 0.f, PIDINC, Motor[0].limit.maxRPM);	// PID参数待调整
-		PIDTypeInit(&Motor[i].rpmPID, 0.f, 0.f, 0.f, PIDINC, Motor[0].limit.maxCurrent);
-		PIDTypeInit(&Motor[i].currentPID, 0.f, 0.f, 0.f, PIDINC, 0);
+		// 增量式PID初始化
+		PIDTypeInit(&Motor[i].posPID, 0.f, 0.f, 0.f, PIDINC, Motor[0].limit.maxRPM);	// 位置环还没写
+		PIDTypeInit(&Motor[i].rpmPID, Kp_rpm, Ki_rpm, Kd_rpm, PIDINC, Motor[0].limit.maxCurrent);
+		PIDTypeInit(&Motor[i].currentPID, 0.f, 0.f, 0.f, PIDINC, 0);	// 电流环用不到
 	}
 };
 
@@ -79,20 +87,20 @@ void BrushlessPositionMode(BrushlessType* motor)
 
 	motor->valueSet.speed	 = PIDOperation(&motor->posPID, (float) motor->pulse.pulseTotal, setPulseTotal);
 	motor->valueSet.current += PIDOperation(&motor->rpmPID, motor->valueNow.speed, motor->valueSet.speed);
-	PIDOperation(&motor->currentPID, motor->valueNow.current, motor->valueSet.current);	   // TODO 不知道能不能写电流环
+	// PIDOperation(&motor->currentPID, motor->valueNow.current, motor->valueSet.current);	   // TODO 不知道能不能写电流环
 };
 
 // 速度模式
 void BrushlessSpeedMode(BrushlessType* motor)
 {
 	motor->valueSet.current += PIDOperation(&motor->rpmPID, motor->valueNow.speed, motor->valueSet.speed);
-	PIDOperation(&motor->currentPID, motor->valueNow.current, motor->valueSet.current);	   // TODO 不知道能不能写电流环
+	// PIDOperation(&motor->currentPID, motor->valueNow.current, motor->valueSet.current);	   // TODO 不知道能不能写电流环
 };
 
 // 电流模式
-void BrushlessCurrentMode(BrushlessType* motor)
-{
-	PIDOperation(&motor->currentPID, motor->valueNow.current, motor->valueSet.current);	   // TODO 不知道能不能写电流环
+void BrushlessCurrentMode(BrushlessType* motor) {
+	// 电流环的输出是PID的Output
+	//  PIDOperation(&motor->currentPID, motor->valueNow.current, motor->valueSet.current);	   // TODO 不知道能不能写电流环
 };
 
 // 锁位置
@@ -100,13 +108,15 @@ void BrushlessLockPosition(BrushlessType* motor)
 {
 	motor->valueSet.speed	 = PIDOperation(&motor->posPID, (float) motor->pulse.pulseTotal, (float) motor->pulse.pulseLock);
 	motor->valueSet.current += PIDOperation(&motor->rpmPID, motor->valueNow.speed, motor->valueSet.speed);
-	PIDOperation(&motor->currentPID, motor->valueNow.current, motor->valueSet.current);	   // TODO 不知道能不能写电流环
+	// PIDOperation(&motor->currentPID, motor->valueNow.current, motor->valueSet.current);	   // TODO 不知道能不能写电流环
 };
 
 // 发送电流（PWM） 双驱，两个一起
 void BrushlessSentCurrent(void)	   //
 {
-	small_driver_set_duty(Motor[0].valueSet.current, Motor[1].valueSet.current);
+	PEAK(Motor[0].valueSet.current, (float) OUTPUT_DUTY_MAX);
+	PEAK(Motor[1].valueSet.current, (float) OUTPUT_DUTY_MAX);
+	Brushless_SetDuty(Motor[0].valueSet.current, Motor[1].valueSet.current);
 };
 
 /// @brief Func
@@ -121,7 +131,7 @@ void BrushlessFunc(void)
 						BrushlessPositionMode(&Motor[i]);
 						break;
 					case RPM:
-						BrushlessSpeedMode(&Motor[i]);
+						BrushlessSpeedMode(&Motor[i]);	  // 常用
 						break;
 					case CURRENT:
 						BrushlessCurrentMode(&Motor[i]);
@@ -131,7 +141,7 @@ void BrushlessFunc(void)
 						break;
 				}
 			} else {
-				BrushlessLockPosition(&Motor[i]);
+				// BrushlessLockPosition(&Motor[i]);//TODO
 			}
 		}
 	}
@@ -174,6 +184,10 @@ void BrushlessDriver_callback(void)
 				{
 					if (motor_value.receive_data_buffer[1] == 0x02)	   // 判断是否正确接收到 速度输出 功能字
 					{
+						// pos cul
+						Motor[0].valueLast = Motor[0].valueNow;
+						Motor[1].valueLast = Motor[1].valueNow;
+
 						motor_value.receive_left_speed_data
 							= (((int) motor_value.receive_data_buffer[2] << 8)
 							   | (int) motor_value.receive_data_buffer[3]);	   // 拟合左侧电机转速数据
@@ -181,6 +195,10 @@ void BrushlessDriver_callback(void)
 						motor_value.receive_right_speed_data
 							= (((int) motor_value.receive_data_buffer[4] << 8)
 							   | (int) motor_value.receive_data_buffer[5]);	   // 拟合右侧电机转速数据
+
+						// pos cul
+						Motor[0].valueNow.speed = motor_value.receive_left_speed_data;
+						Motor[1].valueNow.speed = motor_value.receive_right_speed_data;
 					}
 
 					motor_value.receive_data_count = 0;	   // 清除缓冲区计数值
@@ -203,7 +221,7 @@ void BrushlessDriver_callback(void)
 /// @brief 无刷驱动 设置电机占空比
 /// @param left_duty 左侧电机占空比  范围 -10000 ~ 10000  负数为反转
 /// @param right_duty 右侧电机占空比  范围 -10000 ~ 10000  负数为反转
-void small_driver_set_duty(int16 left_duty, int16 right_duty)
+void Brushless_SetDuty(int16 left_duty, int16 right_duty)
 {
 	motor_value.send_data_buffer[0] = 0xA5;									   // 配置帧头
 	motor_value.send_data_buffer[1] = 0X01;									   // 配置功能字
@@ -223,7 +241,7 @@ void small_driver_set_duty(int16 left_duty, int16 right_duty)
 /// @brief 无刷驱动 获取速度信息
 /// @brief 仅需发送一次 驱动将周期发出速度信息(默认10ms)
 /// @param
-void Brushless_askSpeed(void)
+void Brushless_AskSpeed(void)
 {
 	motor_value.send_data_buffer[0] = 0xA5;	   // 配置帧头
 	motor_value.send_data_buffer[1] = 0x02;	   // 配置功能字
@@ -255,7 +273,7 @@ void Brushless_uart_init(void)
 	uart_init(SMALL_DRIVER_UART, SMALL_DRIVER_BAUDRATE, SMALL_DRIVER_RX, SMALL_DRIVER_TX);	  // 串口初始化
 	uart_rx_interrupt(SMALL_DRIVER_UART, 1);												  // 使能串口接收中断
 
-	BrushlessData_init();			// 结构体参数初始化
-	small_driver_set_duty(0, 0);	// 设置0占空比
-	Brushless_askSpeed();			// 获取实时速度数据
+	BrushlessData_init();		// 结构体参数初始化
+	Brushless_SetDuty(0, 0);	// 设置0占空比
+	Brushless_AskSpeed();		// 获取实时速度数据
 }

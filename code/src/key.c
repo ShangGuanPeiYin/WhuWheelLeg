@@ -4,6 +4,17 @@ uint8 keyflag0 = 0, keyflag1 = 0, keyflag2 = 0, keyflag3 = 0;	 // 按键标志位
 int	  sanrow = 1;
 int	  Rank	 = 1;
 
+void KeyInit(void)
+{
+	gpio_init(KEY_UP, GPI, 0, GPI_PULL_UP);	   // 按键初始化
+	gpio_init(KEY_DOWN, GPI, 0, GPI_PULL_UP);
+	gpio_init(KEY_LEFT, GPI, 0, GPI_PULL_UP);
+	gpio_init(KEY_RIGHT, GPI, 0, GPI_PULL_UP);
+}
+
+/// @brief
+/// @param
+/// @return
 int OLED_Key_Scan(void)
 {
 	if (keyflag0 == 1 || keyflag1 == 1 || keyflag2 == 1 || keyflag3 == 1) {

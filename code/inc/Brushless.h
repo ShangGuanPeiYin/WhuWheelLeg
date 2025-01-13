@@ -12,11 +12,14 @@
 
 //  P10-5 6 串口
 //  P21-6 7 Uart
+// 暂时只有速度模式，位置模式等等再写。Value中没有位置信息
 
 // 无刷电机控制
 #define OUTPUT_DUTY_MAX ((uint16) (4000))	 // 占空比输出最大值
 #define PULSEPERROUND	32767				 // 编码器采样最大值  32767
 #define PULSETIME		9999				 // 两次读取脉冲数之间的时间，秒
+
+typedef enum { Left, Right } Direction;
 
 // 电机模式
 typedef enum _BrushlessMode {
@@ -44,6 +47,8 @@ typedef struct _PulseType {
 
 // 电机参数
 typedef struct {
+	Direction direct;	 // 左右
+
 	float reductionRatio;	 // 电机减速比  好像不需要？
 	float currentLimit;		 // 电流限制
 } MotorParamType;
@@ -68,8 +73,8 @@ typedef struct _Brushless {
 	bool		  setZero;
 	BrushlessMode mode;
 
-	ValueType	   valueLast, valueNow, valueSet;
-	float		   reachTime;	 // 位置模式线性插值用
+	ValueType	   valueLast, valueNow, valueSet;	 // 上次收到的与现在收到的
+	float		   reachTime;						 // 位置模式线性插值用
 	PulseType	   pulse;
 	MotorParamType param;
 	MotorLimit	   limit;
@@ -102,9 +107,9 @@ void BrushlessCurrentMode(BrushlessType* motor);	 // 电流模式
 void BrushlessLockPosition(BrushlessType* motor);	 // 锁到当前位置
 void BrushlessSentCurrent(void);					 // 发送电流
 
-void BrushlessDriver_callback(void);							  // 无刷驱动 串口接收回调函数
-void small_driver_set_duty(int16 left_duty, int16 right_duty);	  // 无刷驱动 设置电机占空比
-void Brushless_askSpeed(void);									  // 无刷驱动 获取速度信息
-void Brushless_uart_init(void);									  // 无刷驱动 串口通讯初始化
+void BrushlessDriver_callback(void);						  // 无刷驱动 串口接收回调函数
+void Brushless_SetDuty(int16 left_duty, int16 right_duty);	  // 无刷驱动 设置电机占空比
+void Brushless_AskSpeed(void);								  // 无刷驱动 获取速度信息
+void Brushless_uart_init(void);								  // 无刷驱动 串口通讯初始化
 
 #endif

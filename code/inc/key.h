@@ -15,6 +15,8 @@
 extern uint8 keyflag0, keyflag1, keyflag2, keyflag3;
 extern int	 sanrow;
 extern int	 Rank;
-int			 OLED_Key_Scan(void);
+
+int	 OLED_Key_Scan(void);
+void KeyInit();
 
 #endif /* CODE_KEY_H_ */

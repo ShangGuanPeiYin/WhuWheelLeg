@@ -40,24 +40,23 @@ void PIDTypeInit(PIDType* pid, float kp, float ki, float kd, PIDMode mode, float
 	if (pid == NULL)
 		return;
 
-	pid->kp	  = kp;
-	pid->ki	  = ki;
-	pid->kd	  = kd;
+	pid->kp				 = kp;
+	pid->ki				 = ki;
+	pid->kd				 = kd;
 
-	pid->mode = mode;
-	pid->outputThreshold
-		= (outputThreshold != 0) ? outputThreshold : 9999999999999999.f;	// 一个极大的，float max，不知道库里有没有这个宏定义
+	pid->mode			 = mode;
+	pid->outputThreshold = outputThreshold;	   // 0表示不限幅，具体看 PIDOperation
 
-	pid->pOut	 = 0;
-	pid->iOut	 = 0;
-	pid->dOut	 = 0;
-	pid->output	 = 0;
+	pid->pOut			 = 0;
+	pid->iOut			 = 0;
+	pid->dOut			 = 0;
+	pid->output			 = 0;
 
-	pid->err[0]	 = 0;
-	pid->err[1]	 = 0;
-	pid->err[2]	 = 0;
+	pid->err[0]			 = 0;
+	pid->err[1]			 = 0;
+	pid->err[2]			 = 0;
 
-	pid->kiScale = 1;
+	pid->kiScale		 = 1;
 }
 
 /// @brief  增量式PID与位置PID共用运算函数
@@ -73,7 +72,7 @@ float PIDOperation(PIDType* pid, float real, float target)
 	pid->err[0] = target - real;
 
 	switch (pid->mode) {
-		// 位置式pid
+			// 位置式pid
 		case PIDPOS:
 			pid->err[2] = 0.5f * pid->err[0] + 0.5f * pid->err[2];	  // 滤波，累计Ki输出
 
@@ -103,7 +102,8 @@ float PIDOperation(PIDType* pid, float real, float target)
 			break;
 	}
 
-	PEAK(pid->err[0], pid->outputThreshold);
+	if (pid->outputThreshold != 0)
+		PEAK(pid->err[0], pid->outputThreshold);
 	return pid->output;
 }
 

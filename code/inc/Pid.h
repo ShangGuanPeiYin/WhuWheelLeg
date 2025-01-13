@@ -33,7 +33,7 @@ typedef struct _PID {
 	volatile float iOut;
 	volatile float dOut;
 
-	volatile float err[3];
+	volatile float err[3];	  // Èý´Îerr£¬now£¬last£¬lastlast
 
 	float outputThreshold;	  // Îó²îÏÞ·ù
 
