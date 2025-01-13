@@ -177,8 +177,8 @@ typedef struct _Ifx_GPT12_T2CON_Bits
     unsigned int reserved_10:2;             /**< \brief \internal Reserved */
     unsigned int T2IRDIS:1;                 /**< \brief [12:12] Timer T2 Interrupt Disable (rw) */
     unsigned int T2EDGE:1;                  /**< \brief [13:13] Timer T2 Edge Detection (rwh) */
-    unsigned int T2CHDIR:1;                 /**< \brief [14:14] Timer T2 Count Direction Change (rwh) */
-    unsigned int T2RDIR:1;                  /**< \brief [15:15] Timer T2 Rotation Direction (rh) */
+    unsigned int T2CHDIR:1;                 /**< \brief [14:14] Timer T2 Count LegNum Change (rwh) */
+    unsigned int T2RDIR:1;                  /**< \brief [15:15] Timer T2 Rotation LegNum (rh) */
     unsigned int reserved_16:16;            /**< \brief \internal Reserved */
 } Ifx_GPT12_T2CON_Bits;
 
@@ -201,8 +201,8 @@ typedef struct _Ifx_GPT12_T3CON_Bits
     unsigned int T3OTL:1;                   /**< \brief [10:10] Timer T3 Overflow Toggle Latch (rwh) */
     unsigned int BPS1:2;                    /**< \brief [12:11] GPT1 Block Prescaler Control (rw) */
     unsigned int T3EDGE:1;                  /**< \brief [13:13] Timer T3 Edge Detection Flag (rwh) */
-    unsigned int T3CHDIR:1;                 /**< \brief [14:14] Timer T3 Count Direction Change Flag (rwh) */
-    unsigned int T3RDIR:1;                  /**< \brief [15:15] Timer T3 Rotation Direction Flag (rh) */
+    unsigned int T3CHDIR:1;                 /**< \brief [14:14] Timer T3 Count LegNum Change Flag (rwh) */
+    unsigned int T3RDIR:1;                  /**< \brief [15:15] Timer T3 Rotation LegNum Flag (rh) */
     unsigned int reserved_16:16;            /**< \brief \internal Reserved */
 } Ifx_GPT12_T3CON_Bits;
 
@@ -226,8 +226,8 @@ typedef struct _Ifx_GPT12_T4CON_Bits
     unsigned int CLRT3EN:1;                 /**< \brief [11:11] Clear Timer T3 Enable (rw) */
     unsigned int T4IRDIS:1;                 /**< \brief [12:12] Timer T4 Interrupt Disable (rw) */
     unsigned int T4EDGE:1;                  /**< \brief [13:13] Timer T4 Edge Detection (rwh) */
-    unsigned int T4CHDIR:1;                 /**< \brief [14:14] Timer T4 Count Direction Change (rwh) */
-    unsigned int T4RDIR:1;                  /**< \brief [15:15] Timer T4 Rotation Direction (rh) */
+    unsigned int T4CHDIR:1;                 /**< \brief [14:14] Timer T4 Count LegNum Change (rwh) */
+    unsigned int T4RDIR:1;                  /**< \brief [15:15] Timer T4 Rotation LegNum (rh) */
     unsigned int reserved_16:16;            /**< \brief \internal Reserved */
 } Ifx_GPT12_T4CON_Bits;
 

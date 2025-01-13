@@ -539,7 +539,7 @@ typedef struct _Ifx_CCU6_TCTR0_Bits
     unsigned int T12PRE:1;                  /**< \brief [3:3] Timer T12 Prescaler Bit (rw) */
     unsigned int T12R:1;                    /**< \brief [4:4] Timer T12 Run Bit (rh) */
     unsigned int STE12:1;                   /**< \brief [5:5] Timer T12 Shadow Transfer Enable (rh) */
-    unsigned int CDIR:1;                    /**< \brief [6:6] Count Direction of Timer T12 (rh) */
+    unsigned int CDIR:1;                    /**< \brief [6:6] Count LegNum of Timer T12 (rh) */
     unsigned int CTM:1;                     /**< \brief [7:7] T12 Operating Mode (rw) */
     unsigned int T13CLK:3;                  /**< \brief [10:8] Timer T13 Input Clock Select (rw) */
     unsigned int T13PRE:1;                  /**< \brief [11:11] Timer T13 Prescaler Bit (rw) */
@@ -554,7 +554,7 @@ typedef struct _Ifx_CCU6_TCTR2_Bits
     unsigned int T12SSC:1;                  /**< \brief [0:0] Timer T12 Single Shot Control (rw) */
     unsigned int T13SSC:1;                  /**< \brief [1:1] Timer T13 Single Shot Control (rw) */
     unsigned int T13TEC:3;                  /**< \brief [4:2] T13 Trigger Event Control (rw) */
-    unsigned int T13TED:2;                  /**< \brief [6:5] Timer T13 Trigger Event Direction (rw) */
+    unsigned int T13TED:2;                  /**< \brief [6:5] Timer T13 Trigger Event LegNum (rw) */
     unsigned int reserved_7:1;              /**< \brief \internal Reserved */
     unsigned int T12RSEL:2;                 /**< \brief [9:8] Timer T12 External Run Selection (rw) */
     unsigned int T13RSEL:2;                 /**< \brief [11:10] Timer T13 External Run Selection (rw) */

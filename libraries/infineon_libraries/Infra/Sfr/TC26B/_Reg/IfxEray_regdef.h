@@ -1328,7 +1328,7 @@ typedef struct _Ifx_ERAY_RDHS1_Bits
     unsigned int reserved_23:1;             /**< \brief \internal Reserved */
     unsigned int CHA:1;                     /**< \brief [24:24] Channel Filter Control A (rh) */
     unsigned int CHB:1;                     /**< \brief [25:25] Channel Filter Control B (rh) */
-    unsigned int CFG:1;                     /**< \brief [26:26] Message Buffer Direction Configuration Bit (rh) */
+    unsigned int CFG:1;                     /**< \brief [26:26] Message Buffer LegNum Configuration Bit (rh) */
     unsigned int PPIT:1;                    /**< \brief [27:27] Payload Preamble Indicator Transmit (rh) */
     unsigned int TXM:1;                     /**< \brief [28:28] Transmission Mode (rh) */
     unsigned int MBI:1;                     /**< \brief [29:29] Message Buffer Service Request (rh) */
@@ -1796,7 +1796,7 @@ typedef struct _Ifx_ERAY_WRHS1_Bits
     unsigned int reserved_23:1;             /**< \brief \internal Reserved */
     unsigned int CHA:1;                     /**< \brief [24:24] Channel Filter Control A (rw) */
     unsigned int CHB:1;                     /**< \brief [25:25] Channel Filter Control B (rw) */
-    unsigned int CFG:1;                     /**< \brief [26:26] Message Buffer Direction Configuration Bit (rw) */
+    unsigned int CFG:1;                     /**< \brief [26:26] Message Buffer LegNum Configuration Bit (rw) */
     unsigned int PPIT:1;                    /**< \brief [27:27] Payload Preamble Indicator Transmit (rw) */
     unsigned int TXM:1;                     /**< \brief [28:28] Transmission Mode (rw) */
     unsigned int MBI:1;                     /**< \brief [29:29] Message Buffer Service Request (rw) */

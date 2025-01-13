@@ -13,25 +13,25 @@ void ServoInit(void)
 	Servo[3].pin	  = BR_CHANNEL;
 
 	// 初始化舵机数据
-	Servo[0].joint	  = Fl;
+	Servo[0].num	  = Fl;
 	Servo[0].angleSet = 0;
 	Servo[0].angleAdj = 0;
 	Servo[0].PWMSet	  = 0;
 	Servo[0].sign	  = -1;
 
-	Servo[1].joint	  = Fr;
+	Servo[1].num	  = Fr;
 	Servo[1].angleSet = 0;
 	Servo[1].angleAdj = 0;
 	Servo[1].PWMSet	  = 0;
 	Servo[1].sign	  = -1;
 
-	Servo[2].joint	  = Bl;
+	Servo[2].num	  = Bl;
 	Servo[2].angleSet = 0;
 	Servo[2].angleAdj = 0;
 	Servo[2].PWMSet	  = 0;
 	Servo[2].sign	  = -1;
 
-	Servo[3].joint	  = Br;
+	Servo[3].num	  = Br;
 	Servo[3].angleSet = 0;
 	Servo[3].angleAdj = 0;
 	Servo[3].PWMSet	  = 0;

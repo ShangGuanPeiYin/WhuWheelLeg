@@ -279,7 +279,7 @@ typedef struct _Ifx_ASCLIN_FRAMECON_Bits
     unsigned int reserved_15:1;             /**< \brief \internal Reserved */
     unsigned int MODE:2;                    /**< \brief [17:16] Mode Selection (rw) */
     unsigned int reserved_18:10;            /**< \brief \internal Reserved */
-    unsigned int MSB:1;                     /**< \brief [28:28] Shift Direction (rw) */
+    unsigned int MSB:1;                     /**< \brief [28:28] Shift LegNum (rw) */
     unsigned int CEN:1;                     /**< \brief [29:29] Collision Detection Enable (rw) */
     unsigned int PEN:1;                     /**< \brief [30:30] Parity Enable (rw) */
     unsigned int ODD:1;                     /**< \brief [31:31] Parity Type (rw) */

@@ -230,13 +230,13 @@ typedef enum
     IfxGpt12_SuspendMode_soft = 2   /**< \brief Soft Suspend */
 } IfxGpt12_SuspendMode;
 
-/** \brief Timer Count Direction\n
+/** \brief Timer Count LegNum\n
  * Definition in IfxGPT12.TxCON.B.TxUD (x=2 to 6)
  */
 typedef enum
 {
-    IfxGpt12_TimerDirection_up   = 0, /**< \brief Timer Up Direction selected */
-    IfxGpt12_TimerDirection_down = 1  /**< \brief Timer Down Direction selected */
+    IfxGpt12_TimerDirection_up   = 0, /**< \brief Timer Up LegNum selected */
+    IfxGpt12_TimerDirection_down = 1  /**< \brief Timer Down LegNum selected */
 } IfxGpt12_TimerDirection;
 
 /** \brief Timer count direction control source\n

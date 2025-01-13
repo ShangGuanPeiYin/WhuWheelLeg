@@ -217,7 +217,7 @@ typedef struct _Ifx_CAN_MO_CTR_Bits
     unsigned int RESTXRQ:1;                 /**< \brief [8:8] Reset/Set Transmit Request (w) */
     unsigned int RESTXEN0:1;                /**< \brief [9:9] Reset/Set Transmit Enable 0 (w) */
     unsigned int RESTXEN1:1;                /**< \brief [10:10] Reset/Set Transmit Enable 1 (w) */
-    unsigned int RESDIR:1;                  /**< \brief [11:11] Reset/Set Message Direction (w) */
+    unsigned int RESDIR:1;                  /**< \brief [11:11] Reset/Set Message LegNum (w) */
     unsigned int reserved_12:4;             /**< \brief \internal Reserved */
     unsigned int SETRXPND:1;                /**< \brief [16:16] Reset/Set Receive Pending (w) */
     unsigned int SETTXPND:1;                /**< \brief [17:17] Reset/Set Transmit Pending (w) */
@@ -230,7 +230,7 @@ typedef struct _Ifx_CAN_MO_CTR_Bits
     unsigned int SETTXRQ:1;                 /**< \brief [24:24] Reset/Set Transmit Request (w) */
     unsigned int SETTXEN0:1;                /**< \brief [25:25] Reset/Set Transmit Enable 0 (w) */
     unsigned int SETTXEN1:1;                /**< \brief [26:26] Reset/Set Transmit Enable 1 (w) */
-    unsigned int SETDIR:1;                  /**< \brief [27:27] Reset/Set Message Direction (w) */
+    unsigned int SETDIR:1;                  /**< \brief [27:27] Reset/Set Message LegNum (w) */
     unsigned int reserved_28:4;             /**< \brief \internal Reserved */
 } Ifx_CAN_MO_CTR_Bits;
 
@@ -372,7 +372,7 @@ typedef struct _Ifx_CAN_MO_STAT_Bits
     unsigned int TXRQ:1;                    /**< \brief [8:8] Transmit Request (rh) */
     unsigned int TXEN0:1;                   /**< \brief [9:9] Transmit Enable 0 (rh) */
     unsigned int TXEN1:1;                   /**< \brief [10:10] Transmit Enable 1 (rh) */
-    unsigned int DIR:1;                     /**< \brief [11:11] Message Direction (rh) */
+    unsigned int DIR:1;                     /**< \brief [11:11] Message LegNum (rh) */
     unsigned int LIST:4;                    /**< \brief [15:12] List Allocation (rh) */
     unsigned int PPREV:8;                   /**< \brief [23:16] Pointer to Previous Message Object (rh) */
     unsigned int PNEXT:8;                   /**< \brief [31:24] Pointer to Next Message Object (rh) */
@@ -444,7 +444,7 @@ typedef struct _Ifx_CAN_N_ECNT_Bits
     unsigned int REC:8;                     /**< \brief [7:0] Receive Error Counter (rwh) */
     unsigned int TEC:8;                     /**< \brief [15:8] Transmit Error Counter (rwh) */
     unsigned int EWRNLVL:8;                 /**< \brief [23:16] Error Warning Level (rw) */
-    unsigned int LETD:1;                    /**< \brief [24:24] Last Error Transfer Direction (rh) */
+    unsigned int LETD:1;                    /**< \brief [24:24] Last Error Transfer LegNum (rh) */
     unsigned int LEINC:1;                   /**< \brief [25:25] Last Error Increment (rh) */
     unsigned int reserved_26:6;             /**< \brief \internal Reserved */
 } Ifx_CAN_N_ECNT_Bits;

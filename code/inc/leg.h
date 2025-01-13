@@ -14,6 +14,8 @@
 #define WHEELR 67	 // 直径
 
 typedef struct _leg {
+	LegNum num;
+
 	ServoType* front;
 	ServoType* behind;
 
@@ -23,14 +25,19 @@ typedef struct _leg {
 	float angle1, angle4;		   // 角度真实值，是和图中的一一对应 腿部采用弧度制
 	float angle1set, angle4set;	   // 角度设定值，是在初始角度之上的设定值 弧度
 
-	Vector2f PosNow;	// 实际足端坐标 单位mm
-	Vector2f PosSet;	// 设定足端坐标
+	Vector2f PosNow, PosSet;	// 实际足端坐标 与 设定足端坐标。单位mm
+	Vector2f PosMov;			//  线性插值计算值
 
 	float t_MoveToPos;	  // 设定移动到目标位置的移动时间(ms)
 
 } LegType;
 
-void InverseKinematics(LegType* leg);	 // 逆解 计算C1 C4
-void ForwardKinematics(LegType* leg);	 // 正解，求（x，y）
+extern LegType legLeft;
+extern LegType legRight;
+
+Vector2f InverseKinematics(Vector2f point);				   // 逆解 计算C1 C4
+Vector2f ForwardKinematics(float angle1, float angle4);	   // 正解，求（x，y）
+void	 LegMoveToPoint(LegType* leg);
+void	 Angle_Leg2Servo(LegType* leg);
 
 #endif

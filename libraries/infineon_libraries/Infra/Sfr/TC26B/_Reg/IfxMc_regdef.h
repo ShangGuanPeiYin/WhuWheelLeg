@@ -102,7 +102,7 @@ typedef struct _Ifx_MC_MCONTROL_Bits
     Ifx_Strict_16Bit START:1;               /**< \brief [0:0] START (rw) */
     Ifx_Strict_16Bit RESUME:1;              /**< \brief [1:1] Resume failed test (rwh) */
     Ifx_Strict_16Bit ESTF:1;                /**< \brief [2:2] Enable Sticky Fail Bit (rw) */
-    Ifx_Strict_16Bit DIR:1;                 /**< \brief [3:3] Direction Select (rw) */
+    Ifx_Strict_16Bit DIR:1;                 /**< \brief [3:3] LegNum Select (rw) */
     Ifx_Strict_16Bit DINIT:1;               /**< \brief [4:4] Data Initialization Enable (rw) */
     Ifx_Strict_16Bit RCADR:1;               /**< \brief [5:5] Fast Row / Fast Column Addressing Scheme Select (rw) */
     Ifx_Strict_16Bit ROWTOG:1;              /**< \brief [6:6] Row toggling (rw) */

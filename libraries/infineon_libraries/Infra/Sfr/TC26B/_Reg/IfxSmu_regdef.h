@@ -349,7 +349,7 @@ typedef struct _Ifx_SMU_OCS_Bits
 /** \brief  Port Control */
 typedef struct _Ifx_SMU_PCTL_Bits
 {
-    Ifx_Strict_32Bit HWDIR:1;               /**< \brief [0:0] Port Direction. (rw) */
+    Ifx_Strict_32Bit HWDIR:1;               /**< \brief [0:0] Port LegNum. (rw) */
     Ifx_Strict_32Bit HWEN:1;                /**< \brief [1:1] Port Enable. (rw) */
     Ifx_Strict_32Bit reserved_2:5;          /**< \brief \internal Reserved */
     Ifx_Strict_32Bit PCS:1;                 /**< \brief [7:7] PAD Configuration Select (rw) */

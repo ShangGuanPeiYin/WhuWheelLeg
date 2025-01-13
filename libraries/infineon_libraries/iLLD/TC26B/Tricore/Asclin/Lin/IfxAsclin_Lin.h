@@ -568,7 +568,7 @@ typedef struct
     uint8                   pid;                /**< \brief PID of LIN Header */
     uint8                   dataLength;         /**< \brief Length of LIN Response */
     uint8                  *dataPtr;            /**< \brief Pointer for LIN Response data */
-    IfxAsclin_Lin_Direction direction;          /**< \brief Direction Control (Tx Header only, Tx both Header and Response, Tx Header and Rx Response) */
+    IfxAsclin_Lin_Direction direction;          /**< \brief LegNum Control (Tx Header only, Tx both Header and Response, Tx Header and Rx Response) */
     IfxAsclin_Checksum      checksumMode;       /**< \brief LIN Checksum Mode */
 } IfxAsclin_Lin_PduType;
 

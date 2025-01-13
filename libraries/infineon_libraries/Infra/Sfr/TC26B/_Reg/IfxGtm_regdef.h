@@ -1780,7 +1780,7 @@ typedef struct _Ifx_GTM_DPLL_EIRQ_EN_Bits
     Ifx_Strict_32Bit CDSI_EIRQ_EN:1;        /**< \brief [24:24] Enable interrupt when calculation of TRIGGER duration done (rw) */
     Ifx_Strict_32Bit TORI:1;                /**< \brief [25:25] TRIGGER out of range interrupt (rw) */
     Ifx_Strict_32Bit SORI:1;                /**< \brief [26:26] STATE out of range (rw) */
-    Ifx_Strict_32Bit DCGI:1;                /**< \brief [27:27] Direction change interrupt (rw) */
+    Ifx_Strict_32Bit DCGI:1;                /**< \brief [27:27] LegNum change interrupt (rw) */
     Ifx_Strict_32Bit reserved_28:4;         /**< \brief \internal Reserved */
 } Ifx_GTM_DPLL_EIRQ_EN_Bits;
 
@@ -1850,7 +1850,7 @@ typedef struct _Ifx_GTM_DPLL_IRQ_EN_Bits
     Ifx_Strict_32Bit CDSI_IRQ_EN:1;         /**< \brief [24:24] Enable interrupt when calculation of TRIGGER duration done (rw) */
     Ifx_Strict_32Bit TORI:1;                /**< \brief [25:25] TRIGGER out of range interrupt (rw) */
     Ifx_Strict_32Bit SORI:1;                /**< \brief [26:26] STATE out of range (rw) */
-    Ifx_Strict_32Bit DCGI:1;                /**< \brief [27:27] Direction change interrupt (rw) */
+    Ifx_Strict_32Bit DCGI:1;                /**< \brief [27:27] LegNum change interrupt (rw) */
     Ifx_Strict_32Bit reserved_28:4;         /**< \brief \internal Reserved */
 } Ifx_GTM_DPLL_IRQ_EN_Bits;
 
@@ -1900,8 +1900,8 @@ typedef struct _Ifx_GTM_DPLL_IRQ_NOTIFY_Bits
 {
     Ifx_Strict_32Bit PDI:1;                 /**< \brief [0:0] DPLL disable interrupt (rwh) */
     Ifx_Strict_32Bit PEI:1;                 /**< \brief [1:1] DPLL enable interrupt (rwh) */
-    Ifx_Strict_32Bit TINI:1;                /**< \brief [2:2] TRIGGER minimum hold time violation interrupt (éˆ­å“¡) (rwh) */
-    Ifx_Strict_32Bit TAXI:1;                /**< \brief [3:3] TRIGGER maximum hold time violation interrupt (éˆ­å“¡>THMA>0) (rwh) */
+    Ifx_Strict_32Bit TINI:1;                /**< \brief [2:2] TRIGGER minimum hold time violation interrupt (éˆ?å“?) (rwh) */
+    Ifx_Strict_32Bit TAXI:1;                /**< \brief [3:3] TRIGGER maximum hold time violation interrupt (éˆ?å“?>THMA>0) (rwh) */
     Ifx_Strict_32Bit SISI:1;                /**< \brief [4:4] STATE inactive slope interrupt (rwh) */
     Ifx_Strict_32Bit TISI:1;                /**< \brief [5:5] TRIGGER inactive slope interrupt (rwh) */
     Ifx_Strict_32Bit MSI:1;                 /**< \brief [6:6] Missing STATE interrupt (rwh) */
@@ -1925,7 +1925,7 @@ typedef struct _Ifx_GTM_DPLL_IRQ_NOTIFY_Bits
     Ifx_Strict_32Bit CDSI:1;                /**< \brief [24:24] Calculation of STATE duration done (rwh) */
     Ifx_Strict_32Bit TORI:1;                /**< \brief [25:25] TRIGGER out of range interrupt (rwh) */
     Ifx_Strict_32Bit SORI:1;                /**< \brief [26:26] STATE out of range (rwh) */
-    Ifx_Strict_32Bit DCGI:1;                /**< \brief [27:27] Direction change interrupt (rwh) */
+    Ifx_Strict_32Bit DCGI:1;                /**< \brief [27:27] LegNum change interrupt (rwh) */
     Ifx_Strict_32Bit reserved_28:4;         /**< \brief \internal Reserved */
 } Ifx_GTM_DPLL_IRQ_NOTIFY_Bits;
 

@@ -483,7 +483,7 @@ IFX_EXTERN float32 IfxDsadc_Rdc_getAbsolutePosition(IfxDsadc_Rdc *driver);
 
 /** \brief \see IfxStdIf_Pos_GetDirection
  * \param driver Driver handle
- * \return Direction
+ * \return LegNum
  */
 IFX_EXTERN IfxStdIf_Pos_Dir IfxDsadc_Rdc_getDirection(IfxDsadc_Rdc *driver);
 

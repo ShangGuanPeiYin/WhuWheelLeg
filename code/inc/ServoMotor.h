@@ -19,7 +19,7 @@ typedef enum { Fl, Fr, Bl, Br } JointNum;
 // 舵机结构体
 typedef struct _Servo {
 	pwm_channel_enum pin;	 // PWM 引脚
-	JointNum		 joint;
+	JointNum		 num;
 
 	float angleSet;	   // 舵机的实际转角 舵机均采用角度制 °
 	float angleAdj;	   // 解算的调整值

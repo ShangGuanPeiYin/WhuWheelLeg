@@ -19,7 +19,7 @@
 #define PULSEPERROUND	32767				 // 编码器采样最大值  32767
 #define PULSETIME		9999				 // 两次读取脉冲数之间的时间，秒
 
-typedef enum { Left, Right } Direction;
+typedef enum { Left, Right } LegNum;
 
 // 电机模式
 typedef enum _BrushlessMode {
@@ -47,7 +47,7 @@ typedef struct _PulseType {
 
 // 电机参数
 typedef struct {
-	Direction direct;	 // 左右
+	LegNum direct;	  // 左右
 
 	float reductionRatio;	 // 电机减速比  好像不需要？
 	float currentLimit;		 // 电流限制

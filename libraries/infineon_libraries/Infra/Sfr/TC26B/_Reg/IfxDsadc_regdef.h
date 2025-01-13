@@ -105,7 +105,7 @@ typedef struct _Ifx_DSADC_CGCFG_Bits
     unsigned int reserved_21:3;             /**< \brief \internal Reserved */
     unsigned int STEPCOUNT:4;               /**< \brief [27:24] Step Counter (rh) */
     unsigned int STEPS:1;                   /**< \brief [28:28] Step Counter Sign (rh) */
-    unsigned int STEPD:1;                   /**< \brief [29:29] Step Counter Direction (rh) */
+    unsigned int STEPD:1;                   /**< \brief [29:29] Step Counter LegNum (rh) */
     unsigned int SGNCG:1;                   /**< \brief [30:30] Sign Signal from Carrier Generator (rh) */
     unsigned int reserved_31:1;             /**< \brief \internal Reserved */
 } Ifx_DSADC_CGCFG_Bits;
