@@ -16,7 +16,7 @@ int	  core0_main(void)
 
 	KeyInit();			// 按键初始化
 	ServoInit();		// 舵机控制初始化
-	BrushlessInit();	// 无刷电机初始化
+	BLDCInit();	// 无刷电机初始化
 
 	pit_ms_init(CCU60_CH0, 1);	  // CCU60_CH0通道，中断初始化周期为1ms 中断初始化在前面
 

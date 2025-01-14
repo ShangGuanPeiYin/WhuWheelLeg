@@ -28,7 +28,7 @@ core0_main:	.type	func
 .L32:
 	call	ServoInit
 .L33:
-	call	BrushlessInit
+	call	BLDCInit
 .L34:
 	mov	d4,#0
 	mov	d5,#1000
@@ -105,7 +105,7 @@ angletemp:	.type	object
 	.calls	'core0_main','oled_init'
 	.calls	'core0_main','KeyInit'
 	.calls	'core0_main','ServoInit'
-	.calls	'core0_main','BrushlessInit'
+	.calls	'core0_main','BLDCInit'
 	.calls	'core0_main','pit_init'
 	.calls	'core0_main','cpu_wait_event_ready'
 	.calls	'core0_main','OLedDebug'
@@ -115,7 +115,7 @@ angletemp:	.type	object
 	.extern	system_delay_ms
 	.extern	pit_init
 	.extern	oled_init
-	.extern	BrushlessInit
+	.extern	BLDCInit
 	.extern	Servo
 	.extern	ServoInit
 	.extern	KeyInit
@@ -5562,7 +5562,7 @@ angletemp:	.type	object
 	.word	32776
 	.byte	6,0,26
 	.byte	'oled_init',0,24,136,1,6,1,1,1,1,26
-	.byte	'BrushlessInit',0,25,99,6,1,1,1,1,26
+	.byte	'BLDCInit',0,25,99,6,1,1,1,1,26
 	.byte	'ServoInit',0,26,34,6,1,1,1,1,26
 	.byte	'KeyInit',0,27,20,6,1,1,1,1,26
 	.byte	'OLedDebug',0,28,6,6,1,1,1,1,28
@@ -19626,11 +19626,11 @@ angletemp:	.type	object
 	.byte	'LegNum',0,25,22,30
 	.word	144589
 	.byte	34
-	.byte	'_BrushlessMode',0,25,25,14,1,16
+	.byte	'_BLDCMode',0,25,25,14,1,16
 	.byte	'CURRENT',0,0,16
 	.byte	'RPM',0,1,16
 	.byte	'POSITION',0,2,0,28
-	.byte	'BrushlessMode',0,25,29,3
+	.byte	'BLDCMode',0,25,29,3
 	.word	144625
 	.byte	14
 	.word	226
@@ -19715,7 +19715,7 @@ angletemp:	.type	object
 	.byte	'MotorLimit',0,25,67,3
 	.word	145043
 	.byte	10
-	.byte	'_Brushless',0,25,70,16,240,1,13
+	.byte	'_BLDC',0,25,70,16,240,1,13
 	.byte	'enable',0
 	.word	145034
 	.byte	1,2,35,0,13
@@ -19758,7 +19758,7 @@ angletemp:	.type	object
 	.byte	'currentPID',0
 	.word	144226
 	.byte	52,3,35,188,1,0,28
-	.byte	'BrushlessType',0,25,83,3
+	.byte	'BLDCType',0,25,83,3
 	.word	145191
 	.byte	10
 	.byte	'_PointType',0,59,6,16,8,13
@@ -20014,7 +20014,7 @@ angletemp:	.type	object
 	.byte	'zf_driver_delay.h',0,3,0,0
 	.byte	'zf_driver_pit.h',0,3,0,0
 	.byte	'zf_device_oled.h',0,4,0,0
-	.byte	'Brushless.h',0,5,0,0
+	.byte	'BLDC.h',0,5,0,0
 	.byte	'ServoMotor.h',0,5,0,0
 	.byte	'key.h',0,5,0,0
 	.byte	'oledDebug.h',0,5,0,0

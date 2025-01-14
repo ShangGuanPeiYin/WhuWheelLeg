@@ -56,10 +56,10 @@ IFX_INTERRUPT(cc60_pit_ch0_isr, 0, CCU6_0_CH0_ISR_PRIORITY)
 		ServoCnt = 0;
 	}
 
-	static u8 BrushlessCnt = 0;	   // 1k -> 500Hz
-	if (++BrushlessCnt > 2) {
-		BrushlessFunc();
-		BrushlessCnt = 0;
+	static u8 BLDCCnt = 0;	   // 1k -> 500Hz
+	if (++BLDCCnt > 2) {
+		BLDCFunc();
+		BLDCCnt = 0;
 	}
 
 	// code here
@@ -203,7 +203,7 @@ IFX_INTERRUPT(uart3_rx_isr, 0, UART3_RX_INT_PRIO)
 
 	// gnss_uart_callback();		   // GNSS串口回调函数
 
-	BrushlessDriver_callback();	   // 无刷电机中断接收函数
+	BLDCDriver_callback();	   // 无刷电机中断接收函数
 }
 
 // 串口通讯错误中断

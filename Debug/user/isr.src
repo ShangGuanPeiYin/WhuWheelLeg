@@ -71,25 +71,25 @@ cc60_pit_ch0_isr:	.type	func
 .L227:
 	st.w	[a15],d15
 .L2:
-	movh.a	a15,#@his(_999002_BrushlessCnt)
-	lea	a15,[a15]@los(_999002_BrushlessCnt)
-	movh.a	a2,#@his(_999002_BrushlessCnt)
-	lea	a2,[a2]@los(_999002_BrushlessCnt)
+	movh.a	a15,#@his(_999002_BLDCCnt)
+	lea	a15,[a15]@los(_999002_BLDCCnt)
+	movh.a	a2,#@his(_999002_BLDCCnt)
+	lea	a2,[a2]@los(_999002_BLDCCnt)
 	ld.bu	d15,[a2]
 .L228:
 	add	d15,#1
 	st.b	[a15],d15
 .L229:
-	movh.a	a15,#@his(_999002_BrushlessCnt)
-	lea	a15,[a15]@los(_999002_BrushlessCnt)
+	movh.a	a15,#@his(_999002_BLDCCnt)
+	lea	a15,[a15]@los(_999002_BLDCCnt)
 	ld.bu	d15,[a15]
 .L230:
 	jlt.u	d15,#3,.L3
 .L231:
-	call	BrushlessFunc
+	call	BLDCFunc
 .L232:
-	movh.a	a15,#@his(_999002_BrushlessCnt)
-	lea	a15,[a15]@los(_999002_BrushlessCnt)
+	movh.a	a15,#@his(_999002_BLDCCnt)
+	lea	a15,[a15]@los(_999002_BLDCCnt)
 .L233:
 	mov	d15,#0
 .L234:
@@ -620,7 +620,7 @@ uart3_rx_isr:	.type	func
 	mov	d4,#0
 	call	interrupt_global_enable
 .L351:
-	call	BrushlessDriver_callback
+	call	BLDCDriver_callback
 .L352:
 	rslcx
 	rfe
@@ -761,14 +761,14 @@ __uart3_er_isr_function_end:
 _999001_ServoCnt:	.type	object
 	.size	_999001_ServoCnt,4
 	.space	4
-	.sdecl	'.data.isr._999002_BrushlessCnt',data,cluster('_999002_BrushlessCnt')
-	.sect	'.data.isr._999002_BrushlessCnt'
-_999002_BrushlessCnt:	.type	object
-	.size	_999002_BrushlessCnt,1
+	.sdecl	'.data.isr._999002_BLDCCnt',data,cluster('_999002_BLDCCnt')
+	.sect	'.data.isr._999002_BLDCCnt'
+_999002_BLDCCnt:	.type	object
+	.size	_999002_BLDCCnt,1
 	.space	1
 	.calls	'cc60_pit_ch0_isr','interrupt_global_enable'
 	.calls	'cc60_pit_ch0_isr','ServoFunc'
-	.calls	'cc60_pit_ch0_isr','BrushlessFunc'
+	.calls	'cc60_pit_ch0_isr','BLDCFunc'
 	.calls	'cc60_pit_ch0_isr','IfxCcu6_getAddress'
 	.calls	'cc60_pit_ch1_isr','interrupt_global_enable'
 	.calls	'cc60_pit_ch1_isr','IfxCcu6_getAddress'
@@ -800,7 +800,7 @@ _999002_BrushlessCnt:	.type	object
 	.calls	'uart2_rx_isr','__INDIRECT__'
 	.calls	'uart3_tx_isr','interrupt_global_enable'
 	.calls	'uart3_rx_isr','interrupt_global_enable'
-	.calls	'uart3_rx_isr','BrushlessDriver_callback'
+	.calls	'uart3_rx_isr','BLDCDriver_callback'
 	.calls	'uart0_er_isr','interrupt_global_enable'
 	.calls	'uart0_er_isr','IfxAsclin_Asc_isrError'
 	.calls	'uart1_er_isr','interrupt_global_enable'
@@ -843,8 +843,8 @@ _999002_BrushlessCnt:	.type	object
 	.extern	camera_vsync_handler
 	.extern	camera_uart_handler
 	.extern	tof_module_exti_handler
-	.extern	BrushlessFunc
-	.extern	BrushlessDriver_callback
+	.extern	BLDCFunc
+	.extern	BLDCDriver_callback
 	.extern	ServoFunc
 	.extern	robot
 	.extern	__INDIRECT__
@@ -6401,8 +6401,8 @@ _999002_BrushlessCnt:	.type	object
 	.byte	'asclin',0,24,146,3,55
 	.word	35329
 	.byte	0,28
-	.byte	'BrushlessFunc',0,26,101,6,1,1,1,1,28
-	.byte	'BrushlessDriver_callback',0,26,110,6,1,1,1,1,28
+	.byte	'BLDCFunc',0,26,101,6,1,1,1,1,28
+	.byte	'BLDCDriver_callback',0,26,110,6,1,1,1,1,28
 	.byte	'ServoFunc',0,27,35,6,1,1,1,1,29
 	.byte	'__INDIRECT__',0,28,1,1,1,1,1,30
 	.byte	'__wchar_t',0,28,1,1
@@ -20467,11 +20467,11 @@ _999002_BrushlessCnt:	.type	object
 	.byte	'LegNum',0,26,22,30
 	.word	145592
 	.byte	37
-	.byte	'_BrushlessMode',0,26,25,14,1,16
+	.byte	'_BLDCMode',0,26,25,14,1,16
 	.byte	'CURRENT',0,0,16
 	.byte	'RPM',0,1,16
 	.byte	'POSITION',0,2,0,30
-	.byte	'BrushlessMode',0,26,29,3
+	.byte	'BLDCMode',0,26,29,3
 	.word	145628
 	.byte	14
 	.word	220
@@ -20556,7 +20556,7 @@ _999002_BrushlessCnt:	.type	object
 	.byte	'MotorLimit',0,26,67,3
 	.word	146046
 	.byte	10
-	.byte	'_Brushless',0,26,70,16,240,1,13
+	.byte	'_BLDC',0,26,70,16,240,1,13
 	.byte	'enable',0
 	.word	146037
 	.byte	1,2,35,0,13
@@ -20599,7 +20599,7 @@ _999002_BrushlessCnt:	.type	object
 	.byte	'currentPID',0
 	.word	145229
 	.byte	52,3,35,188,1,0,30
-	.byte	'BrushlessType',0,26,83,3
+	.byte	'BLDCType',0,26,83,3
 	.word	146194
 	.byte	30
 	.byte	'u8',0,58,54,18
@@ -20891,7 +20891,7 @@ _999002_BrushlessCnt:	.type	object
 	.byte	'ifxAsclin_Asc.h',0,4,0,0
 	.byte	'D:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\Cpu\\Std\\Ifx_Types.h',0
 	.byte	0,0,0
-	.byte	'Brushless.h',0,5,0,0
+	.byte	'BLDC.h',0,5,0,0
 	.byte	'ServoMotor.h',0,5,0,0
 	.byte	'../user/isr.c',0,0,0,0
 	.byte	'stdint.h',0,6,0,0
@@ -20969,10 +20969,10 @@ _999002_BrushlessCnt:	.type	object
 	.byte	4
 	.word	.L2,.L154
 	.byte	5
-	.byte	'BrushlessCnt',0,1,59,12
+	.byte	'BLDCCnt',0,1,59,12
 	.word	.L157
 	.byte	5,3
-	.word	_999002_BrushlessCnt
+	.word	_999002_BLDCCnt
 	.byte	6
 	.word	.L158,.L159,.L160
 	.byte	7

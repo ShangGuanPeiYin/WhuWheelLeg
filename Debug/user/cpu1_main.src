@@ -19523,11 +19523,11 @@ __core1_main_function_end:
 	.byte	'LegNum',0,52,22,30
 	.word	144368
 	.byte	34
-	.byte	'_BrushlessMode',0,52,25,14,1,16
+	.byte	'_BLDCMode',0,52,25,14,1,16
 	.byte	'CURRENT',0,0,16
 	.byte	'RPM',0,1,16
 	.byte	'POSITION',0,2,0,28
-	.byte	'BrushlessMode',0,52,29,3
+	.byte	'BLDCMode',0,52,29,3
 	.word	144404
 	.byte	14
 	.word	226
@@ -19612,7 +19612,7 @@ __core1_main_function_end:
 	.byte	'MotorLimit',0,52,67,3
 	.word	144822
 	.byte	10
-	.byte	'_Brushless',0,52,70,16,240,1,13
+	.byte	'_BLDC',0,52,70,16,240,1,13
 	.byte	'enable',0
 	.word	144813
 	.byte	1,2,35,0,13
@@ -19655,7 +19655,7 @@ __core1_main_function_end:
 	.byte	'currentPID',0
 	.word	144005
 	.byte	52,3,35,188,1,0,28
-	.byte	'BrushlessType',0,52,83,3
+	.byte	'BLDCType',0,52,83,3
 	.word	144970
 	.byte	10
 	.byte	'_PointType',0,53,6,16,8,13
@@ -19929,7 +19929,7 @@ __core1_main_function_end:
 	.byte	'zf_device_wifi_uart.h',0,8,0,0
 	.byte	'seekfree_assistant.h',0,9,0,0
 	.byte	'Pid.h',0,10,0,0
-	.byte	'Brushless.h',0,10,0,0
+	.byte	'BLDC.h',0,10,0,0
 	.byte	'vector.h',0,10,0,0
 	.byte	'WheelLegCtrl.h',0,10,0,0
 	.byte	'MathLib.h',0,10,0,0
