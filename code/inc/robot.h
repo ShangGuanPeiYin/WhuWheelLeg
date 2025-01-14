@@ -3,12 +3,39 @@
 
 #include "zf_common_typedef.h"
 
+// 工作状态
+enum StateEnum {
+	StatePreparing,		// 准备中
+	StateProcessing,	// 进行中
+	StateEnd,			// 结束
+};
+
+// 工作状态流水线，复杂动作会用到
+typedef struct _Pipeline {
+	bool		   isRun;	 // 正在运行
+	enum StateEnum state;
+} PipelineType;
+
 typedef struct _robot {
+	PipelineType pipeline;
+
 	LegType* left;
 	LegType* right;
 
 	IMUType* posture;
 
+	ParamType robotParam;
+
 } RobotType;
+
+extern RobotType robot;
+
+void Start(PipelineType* pipeline);		   // 令该状态流水线运行开始运行
+void Prepared(PipelineType* pipeline);	   // 已准备好
+void Processed(PipelineType* pipeline);	   // 已进行完
+
+void BalanceYaw(void);		// 偏航角平衡
+void BalanceRoll(void);		// 横滚角平衡
+void BalancePitch(void);	// 俯仰角平衡
 
 #endif

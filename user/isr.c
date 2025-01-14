@@ -47,10 +47,10 @@ IFX_INTERRUPT(cc60_pit_ch0_isr, 0, CCU6_0_CH0_ISR_PRIORITY)
 	interrupt_global_enable(0);	   // 开启中断嵌套
 
 	// 计数器计时
-	ctrl.leftTime		+= 1;	 // 1ms
-	ctrl.rightTime		+= 1;	 // 1ms
+	robot.robotParam.leftTime  += 1;	// 1ms
+	robot.robotParam.rightTime += 1;	// 1ms
 
-	static int ServoCnt	 = 0;
+	static int ServoCnt			= 0;
 	if (++ServoCnt > 5) {	 // 1k -> 200Hz
 		ServoFunc();
 		ServoCnt = 0;

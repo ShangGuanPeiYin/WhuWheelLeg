@@ -5,23 +5,45 @@ LegType legRight;
 
 void LegInit(void)
 {
-	legLeft.RunTime	 = &(ctrl.leftTime);
-	legRight.RunTime = &(ctrl.rightTime);
+	legLeft.RunTime	 = &(robot.robotParam.leftTime);
+	legRight.RunTime = &(robot.robotParam.rightTime);
 };
 
 /**
- * @brief 足端画曲线
+ * @brief 足端画曲线 一次
  *
  * @param leg
  */
 void LegDrawCurve(LegType* leg, float reachTime)
 {
-	leg->reachTime = reachTime;
+	switch (robot.pipeline.state) {
+		case StatePreparing:
+			leg->reachTime = reachTime;
+			/* code */
 
-	// leg->PosMov		  = BezierCalculate(leg->motion.degree, leg->motion.Ctrl, 0.f);	   // time now？ 计算动态点
+			Prepared(&(robot.pipeline));
+			break;
+		case StateProcessing:
+			/* code */
+			Processed(&(robot.pipeline));
+			break;
+		case StateEnd:
+			/* code */
+			break;
+		default:
+			break;
+	}
 
 	//
 	// TODO 解算出Set
+
+	uint64_t runTime = *(leg->RunTime);
+	if (runTime < leg->reachTime) {
+		leg->PosSet = BezierCalculate(leg->motion.degree, leg->motion.CtrlPoint, runTime / leg->reachTime);
+	} else {
+		// 结束
+	}
+
 	AngleCalculate(leg, leg->PosSet);
 };
 

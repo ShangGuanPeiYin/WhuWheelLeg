@@ -1,9 +1,9 @@
 #ifndef _LEG_H_
 #define _LEG_H_
 #include "Brushless.h"
-#include "LegCtrl.h"
 #include "MathLib.h"
 #include "ServoMotor.h"
+#include "WheelLegCtrl.h"
 #include "vector.h"
 #include "zf_common_typedef.h"
 

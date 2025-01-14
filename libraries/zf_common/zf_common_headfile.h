@@ -116,10 +116,10 @@
 //=====================================================”√ªß≤„======================================================
 #include "Brushless.h"
 #include "Camera.h"
-#include "LegCtrl.h"
 #include "MathLib.h"
 #include "Pid.h"
 #include "ServoMotor.h"
+#include "WheelLegCtrl.h"
 #include "imu.h"
 #include "key.h"
 #include "leg.h"

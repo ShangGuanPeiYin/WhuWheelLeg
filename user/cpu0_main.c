@@ -24,7 +24,7 @@ int	  core0_main(void)
 	cpu_wait_event_ready();	   // 等待所有核心初始化完毕
 	system_delay_ms(500);
 	while (TRUE) {
-		system_delay_ms(10);	// 10ms执行一次，即100Hz
+		system_delay_ms(5);	   // 5ms执行一次，即200Hz 需要<=舵机Func频率
 
 		// 舵机控制
 		Servo[Fl].angleSet = angletemp;
