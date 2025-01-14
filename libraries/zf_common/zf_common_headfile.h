@@ -114,12 +114,12 @@
 //====================================================应用组件层====================================================
 
 //=====================================================用户层======================================================
-#include "BLDC.h"
 #include "Camera.h"
 #include "MathLib.h"
 #include "Pid.h"
 #include "ServoMotor.h"
 #include "WheelLegCtrl.h"
+#include "bldc.h"
 #include "imu.h"
 #include "key.h"
 #include "leg.h"

@@ -1,17 +1,17 @@
 #include "zf_common_headfile.h"
 
-BLDCType Motor[2];
+BldcType Motor[2];
 
 // 无刷电机初始化
-void BLDCInit(void)
+void BldcInit(void)
 {
-	BLDC_uart_init();	 // 通讯初始化
-	BLDCTypeInit();		 // 控制初始化
+	Bldc_uart_init();	 // 通讯初始化
+	BldcTypeInit();		 // 控制初始化
 };
 
 /// @brief 无刷电机结构体初始化
 /// @param
-void BLDCTypeInit(void)
+void BldcTypeInit(void)
 {
 	float Kp_rpm		  = 0.f;	// PID参数待调整
 	float Ki_rpm		  = 0.f;
@@ -49,7 +49,7 @@ void BLDCTypeInit(void)
 };
 
 // 电机位置置零
-void BLDCSetZero(BLDCType* motor)
+void BldcSetZero(BldcType* motor)
 {
 	motor->setZero			= false;
 	motor->valueNow.angle	= 0.f;
@@ -59,7 +59,7 @@ void BLDCSetZero(BLDCType* motor)
 
 /// @brief  脉冲解算 脉冲 → pos and rpm 这个函数应该用不到了
 /// @param motor
-void BLDCCulculate(BLDCType* motor)
+void BldcCulculate(BldcType* motor)
 {
 	motor->pulse.Distanse = motor->pulse.pulseRead - motor->pulse.pulseLast;	// 计算每次的脉冲数之差，对应每次转过的角度
 	motor->pulse.pulseLast = motor->pulse.pulseRead;
@@ -77,11 +77,11 @@ void BLDCCulculate(BLDCType* motor)
 		motor->pulse.pulseLock = motor->pulse.pulseTotal;
 	}
 	if (motor->setZero)
-		BLDCSetZero(motor);
+		BldcSetZero(motor);
 };
 
 // 位置模式
-void BLDCPositionMode(BLDCType* motor)
+void BldcPositionMode(BldcType* motor)
 {
 	float setPulseTotal		 = (motor->valueSet.angle * PULSEPERROUND) / 360;
 
@@ -91,20 +91,20 @@ void BLDCPositionMode(BLDCType* motor)
 };
 
 // 速度模式
-void BLDCSpeedMode(BLDCType* motor)
+void BldcSpeedMode(BldcType* motor)
 {
 	motor->valueSet.current += PIDOperation(&motor->rpmPID, motor->valueNow.speed, motor->valueSet.speed);
 	// PIDOperation(&motor->currentPID, motor->valueNow.current, motor->valueSet.current);	   // TODO 不知道能不能写电流环
 };
 
 // 电流模式
-void BLDCCurrentMode(BLDCType* motor) {
+void BldcCurrentMode(BldcType* motor) {
 	// 电流环的输出是PID的Output
 	//  PIDOperation(&motor->currentPID, motor->valueNow.current, motor->valueSet.current);	   // TODO 不知道能不能写电流环
 };
 
 // 锁位置
-void BLDCLockPosition(BLDCType* motor)
+void BldcLockPosition(BldcType* motor)
 {
 	motor->valueSet.speed	 = PIDOperation(&motor->posPID, (float) motor->pulse.pulseTotal, (float) motor->pulse.pulseLock);
 	motor->valueSet.current += PIDOperation(&motor->rpmPID, motor->valueNow.speed, motor->valueSet.speed);
@@ -112,53 +112,53 @@ void BLDCLockPosition(BLDCType* motor)
 };
 
 // 发送电流（PWM） 双驱，两个一起
-void BLDCSentCurrent(void)	  //
+void BldcSentCurrent(void)	  //
 {
 	// current即PWM开环电流
 	PEAK(Motor[0].valueSet.current, (float) OUTPUT_DUTY_MAX);
 	PEAK(Motor[1].valueSet.current, (float) OUTPUT_DUTY_MAX);
 
-	BLDC_SetDuty(Motor[0].valueSet.current, Motor[1].valueSet.current);
+	Bldc_SetDuty(Motor[0].valueSet.current, Motor[1].valueSet.current);
 };
 
 /// @brief Func
 /// @param
-void BLDCFunc(void)
+void BldcFunc(void)
 {
 	for (size_t i = 0; i < 2; i++) {
 		if (Motor[i].enable == true) {
 			if (Motor[i].begin == true) {
 				switch (Motor->mode) {
 					case POSITION:
-						BLDCPositionMode(&Motor[i]);
+						BldcPositionMode(&Motor[i]);
 						break;
 					case RPM:
-						BLDCSpeedMode(&Motor[i]);	 // 常用
+						BldcSpeedMode(&Motor[i]);	 // 常用
 						break;
 					case CURRENT:
-						BLDCCurrentMode(&Motor[i]);
+						BldcCurrentMode(&Motor[i]);
 						break;
 
 					default:
 						break;
 				}
 			} else {
-				// BLDCLockPosition(&Motor[i]);//TODO
+				// BldcLockPosition(&Motor[i]);//TODO
 			}
 		}
 	}
 
-	BLDCSentCurrent();
+	BldcSentCurrent();
 };
 
 /*********************************************** 通讯部分 ************************************************ */
 
-BLDCDataType motor_value;	 // 定义通讯参数结构体
+BldcDataType motor_value;	 // 定义通讯参数结构体
 
 /// @brief 无刷驱动 串口接收回调函数。
 /// @brief 用于解析接收到的速度数据  该函数需要在对应的串口接收中断中调用
 /// @param
-void BLDCDriver_callback(void)
+void Bldc_Driver_callback(void)
 {
 	uint8 receive_data;	   // 定义临时变量
 
@@ -223,7 +223,7 @@ void BLDCDriver_callback(void)
 /// @brief 无刷驱动 设置电机占空比
 /// @param left_duty 左侧电机占空比  范围 -10000 ~ 10000  负数为反转
 /// @param right_duty 右侧电机占空比  范围 -10000 ~ 10000  负数为反转
-void BLDC_SetDuty(int16 left_duty, int16 right_duty)
+void Bldc_SetDuty(int16 left_duty, int16 right_duty)
 {
 	motor_value.send_data_buffer[0] = 0xA5;									   // 配置帧头
 	motor_value.send_data_buffer[1] = 0X01;									   // 配置功能字
@@ -243,7 +243,7 @@ void BLDC_SetDuty(int16 left_duty, int16 right_duty)
 /// @brief 无刷驱动 获取速度信息
 /// @brief 仅需发送一次 驱动将周期发出速度信息(默认10ms)
 /// @param
-void BLDC_AskSpeed(void)
+void Bldc_AskSpeed(void)
 {
 	motor_value.send_data_buffer[0] = 0xA5;	   // 配置帧头
 	motor_value.send_data_buffer[1] = 0x02;	   // 配置功能字
@@ -258,7 +258,7 @@ void BLDC_AskSpeed(void)
 
 /// @brief  无刷驱动通讯 参数初始化
 /// @param
-void BLDCData_init(void)
+void BldcData_init(void)
 {
 	memset(motor_value.send_data_buffer, 0, 7);		  // 清除缓冲区数据
 	memset(motor_value.receive_data_buffer, 0, 7);	  // 清除缓冲区数据
@@ -270,12 +270,31 @@ void BLDCData_init(void)
 
 /// @brief 无刷驱动 串口通讯初始化
 /// @param
-void BLDC_uart_init(void)
+void Bldc_uart_init(void)
 {
 	uart_init(SMALL_DRIVER_UART, SMALL_DRIVER_BAUDRATE, SMALL_DRIVER_RX, SMALL_DRIVER_TX);	  // 串口初始化
 	uart_rx_interrupt(SMALL_DRIVER_UART, 1);												  // 使能串口接收中断
 
-	BLDCData_init();	   // 结构体参数初始化
-	BLDC_SetDuty(0, 0);	   // 设置0占空比
-	BLDC_AskSpeed();	   // 获取实时速度数据
+	BldcData_init();	   // 结构体参数初始化
+	Bldc_SetDuty(0, 0);	   // 设置0占空比
+	Bldc_AskSpeed();	   // 获取实时速度数据
 }
+
+// 设置函数
+void BldcSetCurrent(float leftCur, float rightCur)
+{
+	Motor[0].valueSet.current = leftCur;
+	Motor[1].valueSet.current = rightCur;
+};
+
+void BldcSetSpeed(float leftSpeed, float rightSpeed)
+{
+	Motor[0].valueSet.speed = leftSpeed;
+	Motor[1].valueSet.speed = rightSpeed;
+};
+
+void BldcSetPos(float leftPos, float rightPos)
+{
+	Motor[0].valueSet.angle = leftPos;
+	Motor[1].valueSet.angle = rightPos;
+};

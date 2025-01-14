@@ -22,11 +22,11 @@
 typedef enum { Left, Right } LegNum;
 
 // 电机模式
-typedef enum _BLDCMode {
+typedef enum _BldcMode {
 	CURRENT,	// 力矩模式
 	RPM,		// 速度模式
 	POSITION	// 位置模式
-} BLDCMode;
+} BldcMode;
 
 // 电机值
 typedef struct _Value {
@@ -67,11 +67,11 @@ typedef struct {
 } MotorLimit;
 
 // 电机结构体
-typedef struct _BLDC {
+typedef struct _Bldc {
 	bool	 enable;
 	bool	 begin;
 	bool	 setZero;
-	BLDCMode mode;
+	BldcMode mode;
 
 	ValueType	   valueLast, valueNow, valueSet;	 // 上次收到的与现在收到的
 	float		   reachTime;						 // 位置模式线性插值用
@@ -80,7 +80,7 @@ typedef struct _BLDC {
 	MotorLimit	   limit;
 
 	PIDType posPID, rpmPID, currentPID;	   // 三环PID 对脉冲、速度、电流闭环
-} BLDCType;
+} BldcType;
 
 // 无刷电机通讯数据结构体
 typedef struct {
@@ -91,25 +91,29 @@ typedef struct {
 
 	int16 receive_left_speed_data;	   // 接收到的左侧电机速度数据
 	int16 receive_right_speed_data;	   // 接收到的右侧电机速度数据
-} BLDCDataType;
+} BldcDataType;
 
-extern BLDCDataType motor_value;
-extern BLDCType		Motor[2];
+extern BldcDataType motor_value;
+extern BldcType		Motor[2];
 
-void BLDCInit(void);					   // 电机初始化
-void BLDCTypeInit(void);				   // 电机结构体初始化
-void BLDCFunc(void);					   // 总结，放在定时器中
-void BLDCSetZero(BLDCType* motor);		   // 电机位置置零
-void BLDCCulculate(BLDCType* motor);	   // 电机解算 脉冲 → pos and rpm
-void BLDCSpeedMode(BLDCType* motor);	   // 速度模式
-void BLDCPositionMode(BLDCType* motor);	   // 位置模式
-void BLDCCurrentMode(BLDCType* motor);	   // 电流模式
-void BLDCLockPosition(BLDCType* motor);	   // 锁到当前位置
-void BLDCSentCurrent(void);				   // 发送电流
+void BldcInit(void);					   // 电机初始化
+void BldcTypeInit(void);				   // 电机结构体初始化
+void BldcFunc(void);					   // 总结，放在定时器中
+void BldcSetZero(BldcType* motor);		   // 电机位置置零
+void BldcCulculate(BldcType* motor);	   // 电机解算 脉冲 → pos and rpm
+void BldcSpeedMode(BldcType* motor);	   // 速度模式
+void BldcPositionMode(BldcType* motor);	   // 位置模式
+void BldcCurrentMode(BldcType* motor);	   // 电流模式
+void BldcLockPosition(BldcType* motor);	   // 锁到当前位置
+void BldcSentCurrent(void);				   // 发送电流
 
-void BLDCDriver_callback(void);							 // 无刷驱动 串口接收回调函数
-void BLDC_SetDuty(int16 left_duty, int16 right_duty);	 // 无刷驱动 设置电机占空比
-void BLDC_AskSpeed(void);								 // 无刷驱动 获取速度信息
-void BLDC_uart_init(void);								 // 无刷驱动 串口通讯初始化
+void Bldc_Driver_callback(void);						 // 无刷驱动 串口接收回调函数
+void Bldc_SetDuty(int16 left_duty, int16 right_duty);	 // 无刷驱动 设置电机占空比
+void Bldc_AskSpeed(void);								 // 无刷驱动 获取速度信息
+void Bldc_uart_init(void);								 // 无刷驱动 串口通讯初始化
+
+void BldcSetCurrent(float leftCur, float rightCur);	   // 设置函数
+void BldcSetSpeed(float leftSpeed, float rightSpeed);
+void BldcSetPos(float leftPos, float rightPos);
 
 #endif

@@ -1,9 +1,9 @@
 #ifndef _LEG_H_
 #define _LEG_H_
-#include "BLDC.h"
 #include "MathLib.h"
 #include "ServoMotor.h"
 #include "WheelLegCtrl.h"
+#include "bldc.h"
 #include "vector.h"
 #include "zf_common_typedef.h"
 
@@ -21,7 +21,7 @@ typedef struct _leg {
 	ServoType* front;
 	ServoType* behind;
 
-	BLDCType* wheel;
+	BldcType* wheel;
 
 	// 五连杆坐标系下的坐标，原点在五连杆的中垂线上
 	float angle1Set, angle4Set;	   // 角度设定值，PosSet直接解算得到。弧度

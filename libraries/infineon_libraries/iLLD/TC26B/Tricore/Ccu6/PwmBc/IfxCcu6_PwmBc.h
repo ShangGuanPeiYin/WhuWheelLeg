@@ -200,7 +200,7 @@
  *
  * The PWMBC driver provides simple to use Motor Control functions
  *
- * This means: you can start, stop, the BLDC motor once the module is initialised with the appropriate configuration
+ * This means: you can start, stop, the Bldc motor once the module is initialised with the appropriate configuration
  * You can optionally get the speed of the motor at any point of time
  *
  * Start the motor

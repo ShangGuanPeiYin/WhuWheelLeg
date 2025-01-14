@@ -1,40 +1,40 @@
 	; Module start
 	.compiler_version	"TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler v1.1r8 Build 22011964"
-	.compiler_invocation	"ctc -f cc26936a --dep-file=code/src/BLDC.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc26xb -D__CPU_TC26XB__ --core=tc1.6.x --fp-model=+float -D__CPU__=tc26xb -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\code -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\code\\\\inc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Configurations -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B\\\\_Reg -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If\\\\Ccu6If -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\StdIf -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Math -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Asc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6 -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Timer -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\CStart -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Irq -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Dma -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12 -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\IncrEnc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\SpiMaster -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Adc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Impl -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib\\\\DataHandling -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_PinMap -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_common -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_components -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_device -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_driver -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\user -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o code/src/BLDC.src ../code/src/BLDC.c"
+	.compiler_invocation	"ctc -f cc26936a --dep-file=code/src/Bldc.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc26xb -D__CPU_TC26XB__ --core=tc1.6.x --fp-model=+float -D__CPU__=tc26xb -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\code -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\code\\\\inc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Configurations -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B\\\\_Reg -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If\\\\Ccu6If -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\StdIf -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Math -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Asc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6 -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Timer -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\CStart -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Irq -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Dma -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12 -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\IncrEnc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\SpiMaster -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Adc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Impl -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib\\\\DataHandling -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_PinMap -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_common -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_components -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_device -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_driver -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\user -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o code/src/Bldc.src ../code/src/Bldc.c"
 	.compiler_name		"ctc"
-	;source	'../code/src/BLDC.c'
+	;source	'../code/src/Bldc.c'
 
 	
 $TC16X
 	
-	.sdecl	'.text.BLDC.BLDCInit',code,cluster('BLDCInit')
-	.sect	'.text.BLDC.BLDCInit'
+	.sdecl	'.text.Bldc.BldcInit',code,cluster('BldcInit')
+	.sect	'.text.Bldc.BldcInit'
 	.align	2
 	
-	.global	BLDCInit
-; Function BLDCInit
+	.global	BldcInit
+; Function BldcInit
 .L64:
-BLDCInit:	.type	func
-	call	BLDC_uart_init
+BldcInit:	.type	func
+	call	Bldc_uart_init
 .L263:
-	call	BLDCTypeInit
+	call	BldcTypeInit
 .L264:
 	ret
 .L176:
 	
-__BLDCInit_function_end:
-	.size	BLDCInit,__BLDCInit_function_end-BLDCInit
+__BldcInit_function_end:
+	.size	BldcInit,__BldcInit_function_end-BldcInit
 .L101:
 	; End of function
 	
-	.sdecl	'.text.BLDC.BLDCTypeInit',code,cluster('BLDCTypeInit')
-	.sect	'.text.BLDC.BLDCTypeInit'
+	.sdecl	'.text.Bldc.BldcTypeInit',code,cluster('BldcTypeInit')
+	.sect	'.text.Bldc.BldcTypeInit'
 	.align	2
 	
-	.global	BLDCTypeInit
-; Function BLDCTypeInit
+	.global	BldcTypeInit
+; Function BldcTypeInit
 .L66:
-BLDCTypeInit:	.type	func
+BldcTypeInit:	.type	func
 	sub.a	a10,#56
 .L232:
 	mov	d8,#0
@@ -326,19 +326,19 @@ BLDCTypeInit:	.type	func
 	ret
 .L177:
 	
-__BLDCTypeInit_function_end:
-	.size	BLDCTypeInit,__BLDCTypeInit_function_end-BLDCTypeInit
+__BldcTypeInit_function_end:
+	.size	BldcTypeInit,__BldcTypeInit_function_end-BldcTypeInit
 .L106:
 	; End of function
 	
-	.sdecl	'.text.BLDC.BLDCSetZero',code,cluster('BLDCSetZero')
-	.sect	'.text.BLDC.BLDCSetZero'
+	.sdecl	'.text.Bldc.BldcSetZero',code,cluster('BldcSetZero')
+	.sect	'.text.Bldc.BldcSetZero'
 	.align	2
 	
-	.global	BLDCSetZero
-; Function BLDCSetZero
+	.global	BldcSetZero
+; Function BldcSetZero
 .L68:
-BLDCSetZero:	.type	func
+BldcSetZero:	.type	func
 	mov	d15,#0
 .L395:
 	st.b	[a4]2,d15
@@ -358,19 +358,19 @@ BLDCSetZero:	.type	func
 	ret
 .L198:
 	
-__BLDCSetZero_function_end:
-	.size	BLDCSetZero,__BLDCSetZero_function_end-BLDCSetZero
+__BldcSetZero_function_end:
+	.size	BldcSetZero,__BldcSetZero_function_end-BldcSetZero
 .L116:
 	; End of function
 	
-	.sdecl	'.text.BLDC.BLDCCulculate',code,cluster('BLDCCulculate')
-	.sect	'.text.BLDC.BLDCCulculate'
+	.sdecl	'.text.Bldc.BldcCulculate',code,cluster('BldcCulculate')
+	.sect	'.text.Bldc.BldcCulculate'
 	.align	2
 	
-	.global	BLDCCulculate
-; Function BLDCCulculate
+	.global	BldcCulculate
+; Function BldcCulculate
 .L70:
-BLDCCulculate:	.type	func
+BldcCulculate:	.type	func
 	ld.h	d15,[a4]44
 .L407:
 	ld.h	d0,[a4]46
@@ -463,24 +463,24 @@ BLDCCulculate:	.type	func
 .L437:
 	jeq	d15,#0,.L20
 .L438:
-	call	BLDCSetZero
+	call	BldcSetZero
 .L20:
 	ret
 .L201:
 	
-__BLDCCulculate_function_end:
-	.size	BLDCCulculate,__BLDCCulculate_function_end-BLDCCulculate
+__BldcCulculate_function_end:
+	.size	BldcCulculate,__BldcCulculate_function_end-BldcCulculate
 .L121:
 	; End of function
 	
-	.sdecl	'.text.BLDC.BLDCPositionMode',code,cluster('BLDCPositionMode')
-	.sect	'.text.BLDC.BLDCPositionMode'
+	.sdecl	'.text.Bldc.BldcPositionMode',code,cluster('BldcPositionMode')
+	.sect	'.text.Bldc.BldcPositionMode'
 	.align	2
 	
-	.global	BLDCPositionMode
-; Function BLDCPositionMode
+	.global	BldcPositionMode
+; Function BldcPositionMode
 .L72:
-BLDCPositionMode:	.type	func
+BldcPositionMode:	.type	func
 	mov.aa	a15,a4
 .L240:
 	ld.w	d15,[a15]32
@@ -520,19 +520,19 @@ BLDCPositionMode:	.type	func
 	ret
 .L205:
 	
-__BLDCPositionMode_function_end:
-	.size	BLDCPositionMode,__BLDCPositionMode_function_end-BLDCPositionMode
+__BldcPositionMode_function_end:
+	.size	BldcPositionMode,__BldcPositionMode_function_end-BldcPositionMode
 .L131:
 	; End of function
 	
-	.sdecl	'.text.BLDC.BLDCSpeedMode',code,cluster('BLDCSpeedMode')
-	.sect	'.text.BLDC.BLDCSpeedMode'
+	.sdecl	'.text.Bldc.BldcSpeedMode',code,cluster('BldcSpeedMode')
+	.sect	'.text.Bldc.BldcSpeedMode'
 	.align	2
 	
-	.global	BLDCSpeedMode
-; Function BLDCSpeedMode
+	.global	BldcSpeedMode
+; Function BldcSpeedMode
 .L74:
-BLDCSpeedMode:	.type	func
+BldcSpeedMode:	.type	func
 	mov.aa	a15,a4
 .L244:
 	ld.w	d4,[a15]16
@@ -551,35 +551,35 @@ BLDCSpeedMode:	.type	func
 	ret
 .L203:
 	
-__BLDCSpeedMode_function_end:
-	.size	BLDCSpeedMode,__BLDCSpeedMode_function_end-BLDCSpeedMode
+__BldcSpeedMode_function_end:
+	.size	BldcSpeedMode,__BldcSpeedMode_function_end-BldcSpeedMode
 .L126:
 	; End of function
 	
-	.sdecl	'.text.BLDC.BLDCCurrentMode',code,cluster('BLDCCurrentMode')
-	.sect	'.text.BLDC.BLDCCurrentMode'
+	.sdecl	'.text.Bldc.BldcCurrentMode',code,cluster('BldcCurrentMode')
+	.sect	'.text.Bldc.BldcCurrentMode'
 	.align	2
 	
-	.global	BLDCCurrentMode
-; Function BLDCCurrentMode
+	.global	BldcCurrentMode
+; Function BldcCurrentMode
 .L76:
-BLDCCurrentMode:	.type	func
+BldcCurrentMode:	.type	func
 	ret
 .L208:
 	
-__BLDCCurrentMode_function_end:
-	.size	BLDCCurrentMode,__BLDCCurrentMode_function_end-BLDCCurrentMode
+__BldcCurrentMode_function_end:
+	.size	BldcCurrentMode,__BldcCurrentMode_function_end-BldcCurrentMode
 .L136:
 	; End of function
 	
-	.sdecl	'.text.BLDC.BLDCLockPosition',code,cluster('BLDCLockPosition')
-	.sect	'.text.BLDC.BLDCLockPosition'
+	.sdecl	'.text.Bldc.BldcLockPosition',code,cluster('BldcLockPosition')
+	.sect	'.text.Bldc.BldcLockPosition'
 	.align	2
 	
-	.global	BLDCLockPosition
-; Function BLDCLockPosition
+	.global	BldcLockPosition
+; Function BldcLockPosition
 .L78:
-BLDCLockPosition:	.type	func
+BldcLockPosition:	.type	func
 	mov.aa	a15,a4
 .L246:
 	ld.w	d15,[a15]50
@@ -612,19 +612,19 @@ BLDCLockPosition:	.type	func
 	ret
 .L210:
 	
-__BLDCLockPosition_function_end:
-	.size	BLDCLockPosition,__BLDCLockPosition_function_end-BLDCLockPosition
+__BldcLockPosition_function_end:
+	.size	BldcLockPosition,__BldcLockPosition_function_end-BldcLockPosition
 .L141:
 	; End of function
 	
-	.sdecl	'.text.BLDC.BLDCSentCurrent',code,cluster('BLDCSentCurrent')
-	.sect	'.text.BLDC.BLDCSentCurrent'
+	.sdecl	'.text.Bldc.BldcSentCurrent',code,cluster('BldcSentCurrent')
+	.sect	'.text.Bldc.BldcSentCurrent'
 	.align	2
 	
-	.global	BLDCSentCurrent
-; Function BLDCSentCurrent
+	.global	BldcSentCurrent
+; Function BldcSentCurrent
 .L80:
-BLDCSentCurrent:	.type	func
+BldcSentCurrent:	.type	func
 	movh.a	a15,#@his(Motor)
 	lea	a15,[a15]@los(Motor)
 	ld.w	d15,[a15]36
@@ -729,24 +729,24 @@ BLDCSentCurrent:	.type	func
 	mov	d4,d15
 	call	__f_ftos
 	mov	e4,d2,d8
-	call	BLDC_SetDuty
+	call	Bldc_SetDuty
 .L494:
 	ret
 .L212:
 	
-__BLDCSentCurrent_function_end:
-	.size	BLDCSentCurrent,__BLDCSentCurrent_function_end-BLDCSentCurrent
+__BldcSentCurrent_function_end:
+	.size	BldcSentCurrent,__BldcSentCurrent_function_end-BldcSentCurrent
 .L146:
 	; End of function
 	
-	.sdecl	'.text.BLDC.BLDCFunc',code,cluster('BLDCFunc')
-	.sect	'.text.BLDC.BLDCFunc'
+	.sdecl	'.text.Bldc.BldcFunc',code,cluster('BldcFunc')
+	.sect	'.text.Bldc.BldcFunc'
 	.align	2
 	
-	.global	BLDCFunc
-; Function BLDCFunc
+	.global	BldcFunc
+; Function BldcFunc
 .L82:
-BLDCFunc:	.type	func
+BldcFunc:	.type	func
 	mov	d8,#0
 .L247:
 	j	.L35
@@ -794,7 +794,7 @@ BLDCFunc:	.type	func
 	lea	a15,[a15]@los(Motor)
 .L382:
 	addsc.a	a4,a15,d15,#0
-	call	BLDCPositionMode
+	call	BldcPositionMode
 .L383:
 	j	.L43
 .L40:
@@ -804,7 +804,7 @@ BLDCFunc:	.type	func
 	lea	a15,[a15]@los(Motor)
 .L385:
 	addsc.a	a4,a15,d15,#0
-	call	BLDCSpeedMode
+	call	BldcSpeedMode
 .L386:
 	j	.L44
 .L39:
@@ -814,7 +814,7 @@ BLDCFunc:	.type	func
 	lea	a15,[a15]@los(Motor)
 .L388:
 	addsc.a	a4,a15,d15,#0
-	call	BLDCCurrentMode
+	call	BldcCurrentMode
 .L389:
 	j	.L45
 .L42:
@@ -831,24 +831,24 @@ BLDCFunc:	.type	func
 .L35:
 	jlt.u	d8,#2,.L36
 .L196:
-	call	BLDCSentCurrent
+	call	BldcSentCurrent
 .L390:
 	ret
 .L195:
 	
-__BLDCFunc_function_end:
-	.size	BLDCFunc,__BLDCFunc_function_end-BLDCFunc
+__BldcFunc_function_end:
+	.size	BldcFunc,__BldcFunc_function_end-BldcFunc
 .L111:
 	; End of function
 	
-	.sdecl	'.text.BLDC.BLDCDriver_callback',code,cluster('BLDCDriver_callback')
-	.sect	'.text.BLDC.BLDCDriver_callback'
+	.sdecl	'.text.Bldc.Bldc_Driver_callback',code,cluster('Bldc_Driver_callback')
+	.sect	'.text.Bldc.Bldc_Driver_callback'
 	.align	2
 	
-	.global	BLDCDriver_callback
-; Function BLDCDriver_callback
+	.global	Bldc_Driver_callback
+; Function Bldc_Driver_callback
 .L84:
-BLDCDriver_callback:	.type	func
+Bldc_Driver_callback:	.type	func
 	sub.a	a10,#8
 .L248:
 	mov	d4,#2
@@ -1121,19 +1121,19 @@ BLDCDriver_callback:	.type	func
 	ret
 .L213:
 	
-__BLDCDriver_callback_function_end:
-	.size	BLDCDriver_callback,__BLDCDriver_callback_function_end-BLDCDriver_callback
+__BldcDriver_callback_function_end:
+	.size	Bldc_Driver_callback,__BldcDriver_callback_function_end-Bldc_Driver_callback
 .L151:
 	; End of function
 	
-	.sdecl	'.text.BLDC.BLDC_SetDuty',code,cluster('BLDC_SetDuty')
-	.sect	'.text.BLDC.BLDC_SetDuty'
+	.sdecl	'.text.Bldc.Bldc_SetDuty',code,cluster('Bldc_SetDuty')
+	.sect	'.text.Bldc.Bldc_SetDuty'
 	.align	2
 	
-	.global	BLDC_SetDuty
-; Function BLDC_SetDuty
+	.global	Bldc_SetDuty
+; Function Bldc_SetDuty
 .L86:
-BLDC_SetDuty:	.type	func
+Bldc_SetDuty:	.type	func
 	movh.a	a15,#@his(motor_value)
 	lea	a15,[a15]@los(motor_value)
 .L595:
@@ -1227,19 +1227,19 @@ BLDC_SetDuty:	.type	func
 	ret
 .L220:
 	
-__BLDC_SetDuty_function_end:
-	.size	BLDC_SetDuty,__BLDC_SetDuty_function_end-BLDC_SetDuty
+__Bldc_SetDuty_function_end:
+	.size	Bldc_SetDuty,__Bldc_SetDuty_function_end-Bldc_SetDuty
 .L156:
 	; End of function
 	
-	.sdecl	'.text.BLDC.BLDC_AskSpeed',code,cluster('BLDC_AskSpeed')
-	.sect	'.text.BLDC.BLDC_AskSpeed'
+	.sdecl	'.text.Bldc.Bldc_AskSpeed',code,cluster('Bldc_AskSpeed')
+	.sect	'.text.Bldc.Bldc_AskSpeed'
 	.align	2
 	
-	.global	BLDC_AskSpeed
-; Function BLDC_AskSpeed
+	.global	Bldc_AskSpeed
+; Function Bldc_AskSpeed
 .L88:
-BLDC_AskSpeed:	.type	func
+Bldc_AskSpeed:	.type	func
 	movh.a	a15,#@his(motor_value)
 	lea	a15,[a15]@los(motor_value)
 .L629:
@@ -1300,19 +1300,19 @@ BLDC_AskSpeed:	.type	func
 	ret
 .L227:
 	
-__BLDC_AskSpeed_function_end:
-	.size	BLDC_AskSpeed,__BLDC_AskSpeed_function_end-BLDC_AskSpeed
+__Bldc_AskSpeed_function_end:
+	.size	Bldc_AskSpeed,__Bldc_AskSpeed_function_end-Bldc_AskSpeed
 .L161:
 	; End of function
 	
-	.sdecl	'.text.BLDC.BLDCData_init',code,cluster('BLDCData_init')
-	.sect	'.text.BLDC.BLDCData_init'
+	.sdecl	'.text.Bldc.BldcData_init',code,cluster('BldcData_init')
+	.sect	'.text.Bldc.BldcData_init'
 	.align	2
 	
-	.global	BLDCData_init
-; Function BLDCData_init
+	.global	BldcData_init
+; Function BldcData_init
 .L90:
-BLDCData_init:	.type	func
+BldcData_init:	.type	func
 	movh.a	a4,#@his(motor_value)
 	lea	a4,[a4]@los(motor_value)
 .L671:
@@ -1362,19 +1362,19 @@ BLDCData_init:	.type	func
 	ret
 .L229:
 	
-__BLDCData_init_function_end:
-	.size	BLDCData_init,__BLDCData_init_function_end-BLDCData_init
+__BldcData_init_function_end:
+	.size	BldcData_init,__BldcData_init_function_end-BldcData_init
 .L171:
 	; End of function
 	
-	.sdecl	'.text.BLDC.BLDC_uart_init',code,cluster('BLDC_uart_init')
-	.sect	'.text.BLDC.BLDC_uart_init'
+	.sdecl	'.text.Bldc.Bldc_uart_init',code,cluster('Bldc_uart_init')
+	.sect	'.text.Bldc.Bldc_uart_init'
 	.align	2
 	
-	.global	BLDC_uart_init
-; Function BLDC_uart_init
+	.global	Bldc_uart_init
+; Function Bldc_uart_init
 .L92:
-BLDC_uart_init:	.type	func
+Bldc_uart_init:	.type	func
 	mov	d4,#2
 .L657:
 	mov	d5,#2048
@@ -1390,92 +1390,92 @@ BLDC_uart_init:	.type	func
 	mov	d5,#1
 	call	uart_rx_interrupt
 .L662:
-	call	BLDCData_init
+	call	BldcData_init
 .L663:
 	mov	d4,#0
 .L664:
 	mov	d5,#0
-	call	BLDC_SetDuty
+	call	Bldc_SetDuty
 .L665:
-	call	BLDC_AskSpeed
+	call	Bldc_AskSpeed
 .L666:
 	ret
 .L228:
 	
-__BLDC_uart_init_function_end:
-	.size	BLDC_uart_init,__BLDC_uart_init_function_end-BLDC_uart_init
+__Bldc_uart_init_function_end:
+	.size	Bldc_uart_init,__Bldc_uart_init_function_end-Bldc_uart_init
 .L166:
 	; End of function
 	
-	.sdecl	'.bss.BLDC.Motor',data,cluster('Motor')
-	.sect	'.bss.BLDC.Motor'
+	.sdecl	'.bss.Bldc.Motor',data,cluster('Motor')
+	.sect	'.bss.Bldc.Motor'
 	.global	Motor
 	.align	4
 Motor:	.type	object
 	.size	Motor,480
 	.space	480
-	.sdecl	'.rodata.BLDC..1.ini',data,rom
-	.sect	'.rodata.BLDC..1.ini'
+	.sdecl	'.rodata.Bldc..1.ini',data,rom
+	.sect	'.rodata.Bldc..1.ini'
 	.align	4
 .1.ini:	.type	object
 	.size	.1.ini,12
 	.space	12
-	.sdecl	'.rodata.BLDC..2.ini',data,rom
-	.sect	'.rodata.BLDC..2.ini'
+	.sdecl	'.rodata.Bldc..2.ini',data,rom
+	.sect	'.rodata.Bldc..2.ini'
 	.align	4
 .2.ini:	.type	object
 	.size	.2.ini,16
 	.space	16
-	.sdecl	'.rodata.BLDC..3.ini',data,rom
-	.sect	'.rodata.BLDC..3.ini'
+	.sdecl	'.rodata.Bldc..3.ini',data,rom
+	.sect	'.rodata.Bldc..3.ini'
 	.align	4
 .3.ini:	.type	object
 	.size	.3.ini,12
 	.space	12
-	.sdecl	'.bss.BLDC.motor_value',data,cluster('motor_value')
-	.sect	'.bss.BLDC.motor_value'
+	.sdecl	'.bss.Bldc.motor_value',data,cluster('motor_value')
+	.sect	'.bss.Bldc.motor_value'
 	.global	motor_value
 	.align	4
 motor_value:	.type	object
 	.size	motor_value,20
 	.space	20
-	.calls	'BLDCSentCurrent','__f_ftos'
-	.calls	'BLDCInit','BLDC_uart_init'
-	.calls	'BLDCInit','BLDCTypeInit'
-	.calls	'BLDCTypeInit','PIDTypeInit'
-	.calls	'BLDCCulculate','BLDCSetZero'
-	.calls	'BLDCPositionMode','PIDOperation'
-	.calls	'BLDCSpeedMode','PIDOperation'
-	.calls	'BLDCLockPosition','PIDOperation'
-	.calls	'BLDCSentCurrent','BLDC_SetDuty'
-	.calls	'BLDCFunc','BLDCPositionMode'
-	.calls	'BLDCFunc','BLDCSpeedMode'
-	.calls	'BLDCFunc','BLDCCurrentMode'
-	.calls	'BLDCFunc','BLDCSentCurrent'
-	.calls	'BLDCDriver_callback','uart_query_byte'
-	.calls	'BLDCDriver_callback','memset'
-	.calls	'BLDC_SetDuty','uart_write_buffer'
-	.calls	'BLDC_AskSpeed','uart_write_buffer'
-	.calls	'BLDCData_init','memset'
-	.calls	'BLDC_uart_init','uart_init'
-	.calls	'BLDC_uart_init','uart_rx_interrupt'
-	.calls	'BLDC_uart_init','BLDCData_init'
-	.calls	'BLDC_uart_init','BLDC_SetDuty'
-	.calls	'BLDC_uart_init','BLDC_AskSpeed'
-	.calls	'BLDCInit','',0
-	.calls	'BLDCTypeInit','',56
-	.calls	'BLDCSetZero','',0
-	.calls	'BLDCCulculate','',0
-	.calls	'BLDCPositionMode','',0
-	.calls	'BLDCSpeedMode','',0
-	.calls	'BLDCCurrentMode','',0
-	.calls	'BLDCLockPosition','',0
-	.calls	'BLDCSentCurrent','',0
-	.calls	'BLDCFunc','',0
-	.calls	'BLDCDriver_callback','',8
-	.calls	'BLDC_SetDuty','',0
-	.calls	'BLDC_AskSpeed','',0
-	.calls	'BLDCData_init','',0
+	.calls	'BldcSentCurrent','__f_ftos'
+	.calls	'BldcInit','Bldc_uart_init'
+	.calls	'BldcInit','BldcTypeInit'
+	.calls	'BldcTypeInit','PIDTypeInit'
+	.calls	'BldcCulculate','BldcSetZero'
+	.calls	'BldcPositionMode','PIDOperation'
+	.calls	'BldcSpeedMode','PIDOperation'
+	.calls	'BldcLockPosition','PIDOperation'
+	.calls	'BldcSentCurrent','Bldc_SetDuty'
+	.calls	'BldcFunc','BldcPositionMode'
+	.calls	'BldcFunc','BldcSpeedMode'
+	.calls	'BldcFunc','BldcCurrentMode'
+	.calls	'BldcFunc','BldcSentCurrent'
+	.calls	'Bldc_Driver_callback','uart_query_byte'
+	.calls	'Bldc_Driver_callback','memset'
+	.calls	'Bldc_SetDuty','uart_write_buffer'
+	.calls	'Bldc_AskSpeed','uart_write_buffer'
+	.calls	'BldcData_init','memset'
+	.calls	'Bldc_uart_init','uart_init'
+	.calls	'Bldc_uart_init','uart_rx_interrupt'
+	.calls	'Bldc_uart_init','BldcData_init'
+	.calls	'Bldc_uart_init','Bldc_SetDuty'
+	.calls	'Bldc_uart_init','Bldc_AskSpeed'
+	.calls	'BldcInit','',0
+	.calls	'BldcTypeInit','',56
+	.calls	'BldcSetZero','',0
+	.calls	'BldcCulculate','',0
+	.calls	'BldcPositionMode','',0
+	.calls	'BldcSpeedMode','',0
+	.calls	'BldcCurrentMode','',0
+	.calls	'BldcLockPosition','',0
+	.calls	'BldcSentCurrent','',0
+	.calls	'BldcFunc','',0
+	.calls	'Bldc_Driver_callback','',8
+	.calls	'Bldc_SetDuty','',0
+	.calls	'Bldc_AskSpeed','',0
+	.calls	'BldcData_init','',0
 	.extern	memset
 	.extern	uart_write_buffer
 	.extern	uart_query_byte
@@ -1484,7 +1484,7 @@ motor_value:	.type	object
 	.extern	PIDTypeInit
 	.extern	PIDOperation
 	.extern	__f_ftos
-	.calls	'BLDC_uart_init','',0
+	.calls	'Bldc_uart_init','',0
 	.sdecl	'.debug_info',debug
 	.sect	'.debug_info'
 .L94:
@@ -1494,7 +1494,7 @@ motor_value:	.type	object
 	.byte	4
 .L93:
 	.byte	1
-	.byte	'../code/src/BLDC.c',0
+	.byte	'../code/src/Bldc.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1
 	.word	.L96
@@ -7181,11 +7181,11 @@ motor_value:	.type	object
 	.byte	'maxRPM',0
 	.word	230
 	.byte	4,2,35,8,0,30
-	.byte	'_BLDCMode',0,23,25,14,1,16
+	.byte	'_BldcMode',0,23,25,14,1,16
 	.byte	'CURRENT',0,0,16
 	.byte	'RPM',0,1,16
 	.byte	'POSITION',0,2,0,10
-	.byte	'_BLDC',0,23,70,16,240,1,13
+	.byte	'_Bldc',0,23,70,16,240,1,13
 	.byte	'enable',0
 	.word	35589
 	.byte	1,2,35,0,13
@@ -21243,7 +21243,7 @@ motor_value:	.type	object
 	.byte	'LegNum',0,23,22,30
 	.word	35500
 	.byte	31
-	.byte	'BLDCMode',0,23,29,3
+	.byte	'BldcMode',0,23,29,3
 	.word	35727
 	.byte	31
 	.byte	'ValueType',0,23,36,3
@@ -21258,7 +21258,7 @@ motor_value:	.type	object
 	.byte	'MotorLimit',0,23,67,3
 	.word	35598
 	.byte	31
-	.byte	'BLDCType',0,23,83,3
+	.byte	'BldcType',0,23,83,3
 	.word	35775
 	.byte	18,7
 	.word	457
@@ -21283,7 +21283,7 @@ motor_value:	.type	object
 	.byte	'receive_right_speed_data',0
 	.word	32469
 	.byte	2,2,35,18,0,31
-	.byte	'BLDCDataType',0,23,94,3
+	.byte	'BldcDataType',0,23,94,3
 	.word	146526
 .L231:
 	.byte	18,224,3
@@ -21533,8 +21533,8 @@ motor_value:	.type	object
 	.byte	'string.h',0,2,0,0
 	.byte	'zf_driver_uart.h',0,3,0,0
 	.byte	'Pid.h',0,4,0,0
-	.byte	'BLDC.h',0,4,0,0
-	.byte	'../code/src/BLDC.c',0,0,0,0
+	.byte	'bldc.h',0,4,0,0
+	.byte	'../code/src/Bldc.c',0,0,0,0
 	.byte	'stdint.h',0,2,0,0
 	.byte	'stdio.h',0,2,0,0
 	.byte	'D:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\Cpu\\Std\\Platform_Types.h',0
@@ -21583,31 +21583,31 @@ motor_value:	.type	object
 	.byte	'robot.h',0,4,0,0,0
 .L258:
 .L256:
-	.sdecl	'.debug_info',debug,cluster('BLDCInit')
+	.sdecl	'.debug_info',debug,cluster('BldcInit')
 	.sect	'.debug_info'
 .L97:
 	.word	219
 	.half	3
 	.word	.L98
 	.byte	4,1
-	.byte	'../code/src/BLDC.c',0
+	.byte	'../code/src/Bldc.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1
 	.word	.L100,.L99
 	.byte	2
 	.word	.L93
 	.byte	3
-	.byte	'BLDCInit',0,1,6,6,1,1,1
+	.byte	'BldcInit',0,1,6,6,1,1,1
 	.word	.L64,.L176,.L63
 	.byte	4
 	.word	.L64,.L176
 	.byte	0,0
-	.sdecl	'.debug_abbrev',debug,cluster('BLDCInit')
+	.sdecl	'.debug_abbrev',debug,cluster('BldcInit')
 	.sect	'.debug_abbrev'
 .L98:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
-	.sdecl	'.debug_line',debug,cluster('BLDCInit')
+	.sdecl	'.debug_line',debug,cluster('BldcInit')
 	.sect	'.debug_line'
 .L99:
 	.word	.L260-.L259
@@ -21616,7 +21616,7 @@ motor_value:	.type	object
 	.word	.L262-.L261
 .L261:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
-	.byte	'../code/src/BLDC.c',0,0,0,0,0
+	.byte	'../code/src/Bldc.c',0,0,0,0,0
 .L262:
 	.byte	5,21,7,0,5,2
 	.word	.L64
@@ -21628,25 +21628,25 @@ motor_value:	.type	object
 	.half	.L101-.L264
 	.byte	0,1,1
 .L260:
-	.sdecl	'.debug_ranges',debug,cluster('BLDCInit')
+	.sdecl	'.debug_ranges',debug,cluster('BldcInit')
 	.sect	'.debug_ranges'
 .L100:
 	.word	-1,.L64,0,.L101-.L64,0,0
-	.sdecl	'.debug_info',debug,cluster('BLDCTypeInit')
+	.sdecl	'.debug_info',debug,cluster('BldcTypeInit')
 	.sect	'.debug_info'
 .L102:
 	.word	387
 	.half	3
 	.word	.L103
 	.byte	4,1
-	.byte	'../code/src/BLDC.c',0
+	.byte	'../code/src/Bldc.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1
 	.word	.L105,.L104
 	.byte	2
 	.word	.L93
 	.byte	3
-	.byte	'BLDCTypeInit',0,1,14,6,1,1,1
+	.byte	'BldcTypeInit',0,1,14,6,1,1,1
 	.word	.L66,.L177,.L65
 	.byte	4
 	.word	.L66,.L177
@@ -21679,12 +21679,12 @@ motor_value:	.type	object
 	.byte	'i',0,1,30,14
 	.word	.L193,.L194
 	.byte	0,0,0,0,0
-	.sdecl	'.debug_abbrev',debug,cluster('BLDCTypeInit')
+	.sdecl	'.debug_abbrev',debug,cluster('BldcTypeInit')
 	.sect	'.debug_abbrev'
 .L103:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
-	.sdecl	'.debug_line',debug,cluster('BLDCTypeInit')
+	.sdecl	'.debug_line',debug,cluster('BldcTypeInit')
 	.sect	'.debug_line'
 .L104:
 	.word	.L266-.L265
@@ -21693,7 +21693,7 @@ motor_value:	.type	object
 	.word	.L268-.L267
 .L267:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
-	.byte	'../code/src/BLDC.c',0,0,0,0,0
+	.byte	'../code/src/Bldc.c',0,0,0,0,0
 .L268:
 	.byte	5,6,7,0,5,2
 	.word	.L66
@@ -21911,25 +21911,25 @@ motor_value:	.type	object
 	.half	.L106-.L192
 	.byte	0,1,1
 .L266:
-	.sdecl	'.debug_ranges',debug,cluster('BLDCTypeInit')
+	.sdecl	'.debug_ranges',debug,cluster('BldcTypeInit')
 	.sect	'.debug_ranges'
 .L105:
 	.word	-1,.L66,0,.L106-.L66,0,0
-	.sdecl	'.debug_info',debug,cluster('BLDCFunc')
+	.sdecl	'.debug_info',debug,cluster('BldcFunc')
 	.sect	'.debug_info'
 .L107:
 	.word	244
 	.half	3
 	.word	.L108
 	.byte	4,1
-	.byte	'../code/src/BLDC.c',0
+	.byte	'../code/src/Bldc.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1
 	.word	.L110,.L109
 	.byte	2
 	.word	.L93
 	.byte	3
-	.byte	'BLDCFunc',0,1,124,6,1,1,1
+	.byte	'BldcFunc',0,1,124,6,1,1,1
 	.word	.L82,.L195,.L81
 	.byte	4
 	.word	.L82,.L195
@@ -21939,12 +21939,12 @@ motor_value:	.type	object
 	.byte	'i',0,1,126,14
 	.word	.L193,.L197
 	.byte	0,0,0,0
-	.sdecl	'.debug_abbrev',debug,cluster('BLDCFunc')
+	.sdecl	'.debug_abbrev',debug,cluster('BldcFunc')
 	.sect	'.debug_abbrev'
 .L108:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
-	.sdecl	'.debug_line',debug,cluster('BLDCFunc')
+	.sdecl	'.debug_line',debug,cluster('BldcFunc')
 	.sect	'.debug_line'
 .L109:
 	.word	.L364-.L363
@@ -21953,7 +21953,7 @@ motor_value:	.type	object
 	.word	.L366-.L365
 .L365:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
-	.byte	'../code/src/BLDC.c',0,0,0,0,0
+	.byte	'../code/src/Bldc.c',0,0,0,0,0
 .L366:
 	.byte	5,16,7,0,5,2
 	.word	.L82
@@ -22029,25 +22029,25 @@ motor_value:	.type	object
 	.half	.L111-.L390
 	.byte	0,1,1
 .L364:
-	.sdecl	'.debug_ranges',debug,cluster('BLDCFunc')
+	.sdecl	'.debug_ranges',debug,cluster('BldcFunc')
 	.sect	'.debug_ranges'
 .L110:
 	.word	-1,.L82,0,.L111-.L82,0,0
-	.sdecl	'.debug_info',debug,cluster('BLDCSetZero')
+	.sdecl	'.debug_info',debug,cluster('BldcSetZero')
 	.sect	'.debug_info'
 .L112:
 	.word	240
 	.half	3
 	.word	.L113
 	.byte	4,1
-	.byte	'../code/src/BLDC.c',0
+	.byte	'../code/src/Bldc.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1
 	.word	.L115,.L114
 	.byte	2
 	.word	.L93
 	.byte	3
-	.byte	'BLDCSetZero',0,1,52,6,1,1,1
+	.byte	'BldcSetZero',0,1,52,6,1,1,1
 	.word	.L68,.L198,.L67
 	.byte	4
 	.byte	'motor',0,1,52,38
@@ -22055,12 +22055,12 @@ motor_value:	.type	object
 	.byte	5
 	.word	.L68,.L198
 	.byte	0,0
-	.sdecl	'.debug_abbrev',debug,cluster('BLDCSetZero')
+	.sdecl	'.debug_abbrev',debug,cluster('BldcSetZero')
 	.sect	'.debug_abbrev'
 .L113:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
-	.sdecl	'.debug_line',debug,cluster('BLDCSetZero')
+	.sdecl	'.debug_line',debug,cluster('BldcSetZero')
 	.sect	'.debug_line'
 .L114:
 	.word	.L392-.L391
@@ -22069,7 +22069,7 @@ motor_value:	.type	object
 	.word	.L394-.L393
 .L393:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
-	.byte	'../code/src/BLDC.c',0,0,0,0,0
+	.byte	'../code/src/Bldc.c',0,0,0,0,0
 .L394:
 	.byte	5,21,7,0,5,2
 	.word	.L68
@@ -22093,25 +22093,25 @@ motor_value:	.type	object
 	.half	.L116-.L402
 	.byte	0,1,1
 .L392:
-	.sdecl	'.debug_ranges',debug,cluster('BLDCSetZero')
+	.sdecl	'.debug_ranges',debug,cluster('BldcSetZero')
 	.sect	'.debug_ranges'
 .L115:
 	.word	-1,.L68,0,.L116-.L68,0,0
-	.sdecl	'.debug_info',debug,cluster('BLDCCulculate')
+	.sdecl	'.debug_info',debug,cluster('BldcCulculate')
 	.sect	'.debug_info'
 .L117:
 	.word	242
 	.half	3
 	.word	.L118
 	.byte	4,1
-	.byte	'../code/src/BLDC.c',0
+	.byte	'../code/src/Bldc.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1
 	.word	.L120,.L119
 	.byte	2
 	.word	.L93
 	.byte	3
-	.byte	'BLDCCulculate',0,1,62,6,1,1,1
+	.byte	'BldcCulculate',0,1,62,6,1,1,1
 	.word	.L70,.L201,.L69
 	.byte	4
 	.byte	'motor',0,1,62,40
@@ -22119,12 +22119,12 @@ motor_value:	.type	object
 	.byte	5
 	.word	.L70,.L201
 	.byte	0,0
-	.sdecl	'.debug_abbrev',debug,cluster('BLDCCulculate')
+	.sdecl	'.debug_abbrev',debug,cluster('BldcCulculate')
 	.sect	'.debug_abbrev'
 .L118:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
-	.sdecl	'.debug_line',debug,cluster('BLDCCulculate')
+	.sdecl	'.debug_line',debug,cluster('BldcCulculate')
 	.sect	'.debug_line'
 .L119:
 	.word	.L404-.L403
@@ -22133,7 +22133,7 @@ motor_value:	.type	object
 	.word	.L406-.L405
 .L405:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
-	.byte	'../code/src/BLDC.c',0,0,0,0,0
+	.byte	'../code/src/Bldc.c',0,0,0,0,0
 .L406:
 	.byte	5,38,7,0,5,2
 	.word	.L70
@@ -22215,25 +22215,25 @@ motor_value:	.type	object
 	.half	.L121-.L20
 	.byte	0,1,1
 .L404:
-	.sdecl	'.debug_ranges',debug,cluster('BLDCCulculate')
+	.sdecl	'.debug_ranges',debug,cluster('BldcCulculate')
 	.sect	'.debug_ranges'
 .L120:
 	.word	-1,.L70,0,.L121-.L70,0,0
-	.sdecl	'.debug_info',debug,cluster('BLDCSpeedMode')
+	.sdecl	'.debug_info',debug,cluster('BldcSpeedMode')
 	.sect	'.debug_info'
 .L122:
 	.word	242
 	.half	3
 	.word	.L123
 	.byte	4,1
-	.byte	'../code/src/BLDC.c',0
+	.byte	'../code/src/Bldc.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1
 	.word	.L125,.L124
 	.byte	2
 	.word	.L93
 	.byte	3
-	.byte	'BLDCSpeedMode',0,1,94,6,1,1,1
+	.byte	'BldcSpeedMode',0,1,94,6,1,1,1
 	.word	.L74,.L203,.L73
 	.byte	4
 	.byte	'motor',0,1,94,40
@@ -22241,12 +22241,12 @@ motor_value:	.type	object
 	.byte	5
 	.word	.L74,.L203
 	.byte	0,0
-	.sdecl	'.debug_abbrev',debug,cluster('BLDCSpeedMode')
+	.sdecl	'.debug_abbrev',debug,cluster('BldcSpeedMode')
 	.sect	'.debug_abbrev'
 .L123:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
-	.sdecl	'.debug_line',debug,cluster('BLDCSpeedMode')
+	.sdecl	'.debug_line',debug,cluster('BldcSpeedMode')
 	.sect	'.debug_line'
 .L124:
 	.word	.L440-.L439
@@ -22255,7 +22255,7 @@ motor_value:	.type	object
 	.word	.L442-.L441
 .L441:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
-	.byte	'../code/src/BLDC.c',0,0,0,0,0
+	.byte	'../code/src/Bldc.c',0,0,0,0,0
 .L442:
 	.byte	5,6,7,0,5,2
 	.word	.L74
@@ -22277,25 +22277,25 @@ motor_value:	.type	object
 	.half	.L126-.L447
 	.byte	0,1,1
 .L440:
-	.sdecl	'.debug_ranges',debug,cluster('BLDCSpeedMode')
+	.sdecl	'.debug_ranges',debug,cluster('BldcSpeedMode')
 	.sect	'.debug_ranges'
 .L125:
 	.word	-1,.L74,0,.L126-.L74,0,0
-	.sdecl	'.debug_info',debug,cluster('BLDCPositionMode')
+	.sdecl	'.debug_info',debug,cluster('BldcPositionMode')
 	.sect	'.debug_info'
 .L127:
 	.word	272
 	.half	3
 	.word	.L128
 	.byte	4,1
-	.byte	'../code/src/BLDC.c',0
+	.byte	'../code/src/Bldc.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1
 	.word	.L130,.L129
 	.byte	2
 	.word	.L93
 	.byte	3
-	.byte	'BLDCPositionMode',0,1,84,6,1,1,1
+	.byte	'BldcPositionMode',0,1,84,6,1,1,1
 	.word	.L72,.L205,.L71
 	.byte	4
 	.byte	'motor',0,1,84,43
@@ -22306,13 +22306,13 @@ motor_value:	.type	object
 	.byte	'setPulseTotal',0,1,86,8
 	.word	.L178,.L207
 	.byte	0,0,0
-	.sdecl	'.debug_abbrev',debug,cluster('BLDCPositionMode')
+	.sdecl	'.debug_abbrev',debug,cluster('BldcPositionMode')
 	.sect	'.debug_abbrev'
 .L128:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
 	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
-	.sdecl	'.debug_line',debug,cluster('BLDCPositionMode')
+	.sdecl	'.debug_line',debug,cluster('BldcPositionMode')
 	.sect	'.debug_line'
 .L129:
 	.word	.L449-.L448
@@ -22321,7 +22321,7 @@ motor_value:	.type	object
 	.word	.L451-.L450
 .L450:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
-	.byte	'../code/src/BLDC.c',0,0,0,0,0
+	.byte	'../code/src/Bldc.c',0,0,0,0,0
 .L451:
 	.byte	5,6,7,0,5,2
 	.word	.L72
@@ -22363,25 +22363,25 @@ motor_value:	.type	object
 	.half	.L131-.L464
 	.byte	0,1,1
 .L449:
-	.sdecl	'.debug_ranges',debug,cluster('BLDCPositionMode')
+	.sdecl	'.debug_ranges',debug,cluster('BldcPositionMode')
 	.sect	'.debug_ranges'
 .L130:
 	.word	-1,.L72,0,.L131-.L72,0,0
-	.sdecl	'.debug_info',debug,cluster('BLDCCurrentMode')
+	.sdecl	'.debug_info',debug,cluster('BldcCurrentMode')
 	.sect	'.debug_info'
 .L132:
 	.word	244
 	.half	3
 	.word	.L133
 	.byte	4,1
-	.byte	'../code/src/BLDC.c',0
+	.byte	'../code/src/Bldc.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1
 	.word	.L135,.L134
 	.byte	2
 	.word	.L93
 	.byte	3
-	.byte	'BLDCCurrentMode',0,1,101,6,1,1,1
+	.byte	'BldcCurrentMode',0,1,101,6,1,1,1
 	.word	.L76,.L208,.L75
 	.byte	4
 	.byte	'motor',0,1,101,42
@@ -22389,12 +22389,12 @@ motor_value:	.type	object
 	.byte	5
 	.word	.L76,.L208
 	.byte	0,0
-	.sdecl	'.debug_abbrev',debug,cluster('BLDCCurrentMode')
+	.sdecl	'.debug_abbrev',debug,cluster('BldcCurrentMode')
 	.sect	'.debug_abbrev'
 .L133:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
-	.sdecl	'.debug_line',debug,cluster('BLDCCurrentMode')
+	.sdecl	'.debug_line',debug,cluster('BldcCurrentMode')
 	.sect	'.debug_line'
 .L134:
 	.word	.L466-.L465
@@ -22403,7 +22403,7 @@ motor_value:	.type	object
 	.word	.L468-.L467
 .L467:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
-	.byte	'../code/src/BLDC.c',0,0,0,0,0
+	.byte	'../code/src/Bldc.c',0,0,0,0,0
 .L468:
 	.byte	5,1,7,0,5,2
 	.word	.L76
@@ -22411,25 +22411,25 @@ motor_value:	.type	object
 	.half	.L136-.L76
 	.byte	0,1,1
 .L466:
-	.sdecl	'.debug_ranges',debug,cluster('BLDCCurrentMode')
+	.sdecl	'.debug_ranges',debug,cluster('BldcCurrentMode')
 	.sect	'.debug_ranges'
 .L135:
 	.word	-1,.L76,0,.L136-.L76,0,0
-	.sdecl	'.debug_info',debug,cluster('BLDCLockPosition')
+	.sdecl	'.debug_info',debug,cluster('BldcLockPosition')
 	.sect	'.debug_info'
 .L137:
 	.word	245
 	.half	3
 	.word	.L138
 	.byte	4,1
-	.byte	'../code/src/BLDC.c',0
+	.byte	'../code/src/Bldc.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1
 	.word	.L140,.L139
 	.byte	2
 	.word	.L93
 	.byte	3
-	.byte	'BLDCLockPosition',0,1,107,6,1,1,1
+	.byte	'BldcLockPosition',0,1,107,6,1,1,1
 	.word	.L78,.L210,.L77
 	.byte	4
 	.byte	'motor',0,1,107,43
@@ -22437,12 +22437,12 @@ motor_value:	.type	object
 	.byte	5
 	.word	.L78,.L210
 	.byte	0,0
-	.sdecl	'.debug_abbrev',debug,cluster('BLDCLockPosition')
+	.sdecl	'.debug_abbrev',debug,cluster('BldcLockPosition')
 	.sect	'.debug_abbrev'
 .L138:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
-	.sdecl	'.debug_line',debug,cluster('BLDCLockPosition')
+	.sdecl	'.debug_line',debug,cluster('BldcLockPosition')
 	.sect	'.debug_line'
 .L139:
 	.word	.L470-.L469
@@ -22451,7 +22451,7 @@ motor_value:	.type	object
 	.word	.L472-.L471
 .L471:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
-	.byte	'../code/src/BLDC.c',0,0,0,0,0
+	.byte	'../code/src/Bldc.c',0,0,0,0,0
 .L472:
 	.byte	5,6,7,0,5,2
 	.word	.L78
@@ -22487,35 +22487,35 @@ motor_value:	.type	object
 	.half	.L141-.L484
 	.byte	0,1,1
 .L470:
-	.sdecl	'.debug_ranges',debug,cluster('BLDCLockPosition')
+	.sdecl	'.debug_ranges',debug,cluster('BldcLockPosition')
 	.sect	'.debug_ranges'
 .L140:
 	.word	-1,.L78,0,.L141-.L78,0,0
-	.sdecl	'.debug_info',debug,cluster('BLDCSentCurrent')
+	.sdecl	'.debug_info',debug,cluster('BldcSentCurrent')
 	.sect	'.debug_info'
 .L142:
 	.word	226
 	.half	3
 	.word	.L143
 	.byte	4,1
-	.byte	'../code/src/BLDC.c',0
+	.byte	'../code/src/Bldc.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1
 	.word	.L145,.L144
 	.byte	2
 	.word	.L93
 	.byte	3
-	.byte	'BLDCSentCurrent',0,1,115,6,1,1,1
+	.byte	'BldcSentCurrent',0,1,115,6,1,1,1
 	.word	.L80,.L212,.L79
 	.byte	4
 	.word	.L80,.L212
 	.byte	0,0
-	.sdecl	'.debug_abbrev',debug,cluster('BLDCSentCurrent')
+	.sdecl	'.debug_abbrev',debug,cluster('BldcSentCurrent')
 	.sect	'.debug_abbrev'
 .L143:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
-	.sdecl	'.debug_line',debug,cluster('BLDCSentCurrent')
+	.sdecl	'.debug_line',debug,cluster('BldcSentCurrent')
 	.sect	'.debug_line'
 .L144:
 	.word	.L486-.L485
@@ -22524,7 +22524,7 @@ motor_value:	.type	object
 	.word	.L488-.L487
 .L487:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
-	.byte	'../code/src/BLDC.c',0,0,0,0,0
+	.byte	'../code/src/Bldc.c',0,0,0,0,0
 .L488:
 	.byte	5,2,7,0,5,2
 	.word	.L80
@@ -22548,25 +22548,25 @@ motor_value:	.type	object
 	.half	.L146-.L494
 	.byte	0,1,1
 .L486:
-	.sdecl	'.debug_ranges',debug,cluster('BLDCSentCurrent')
+	.sdecl	'.debug_ranges',debug,cluster('BldcSentCurrent')
 	.sect	'.debug_ranges'
 .L145:
 	.word	-1,.L80,0,.L146-.L80,0,0
-	.sdecl	'.debug_info',debug,cluster('BLDCDriver_callback')
+	.sdecl	'.debug_info',debug,cluster('Bldc_Driver_callback')
 	.sect	'.debug_info'
 .L147:
 	.word	283
 	.half	3
 	.word	.L148
 	.byte	4,1
-	.byte	'../code/src/BLDC.c',0
+	.byte	'../code/src/Bldc.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1
 	.word	.L150,.L149
 	.byte	2
 	.word	.L93
 	.byte	3
-	.byte	'BLDCDriver_callback',0,1,159,1,6,1,1,1
+	.byte	'Bldc_Driver_callback',0,1,159,1,6,1,1,1
 	.word	.L84,.L213,.L83
 	.byte	4
 	.word	.L84,.L213
@@ -22579,12 +22579,12 @@ motor_value:	.type	object
 	.byte	'i',0,1,179,1,14
 	.word	.L218,.L219
 	.byte	0,0,0,0
-	.sdecl	'.debug_abbrev',debug,cluster('BLDCDriver_callback')
+	.sdecl	'.debug_abbrev',debug,cluster('Bldc_Driver_callback')
 	.sect	'.debug_abbrev'
 .L148:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
-	.sdecl	'.debug_line',debug,cluster('BLDCDriver_callback')
+	.sdecl	'.debug_line',debug,cluster('Bldc_Driver_callback')
 	.sect	'.debug_line'
 .L149:
 	.word	.L496-.L495
@@ -22593,7 +22593,7 @@ motor_value:	.type	object
 	.word	.L498-.L497
 .L497:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
-	.byte	'../code/src/BLDC.c',0,0,0,0,0
+	.byte	'../code/src/Bldc.c',0,0,0,0,0
 .L498:
 	.byte	5,6,7,0,5,2
 	.word	.L84
@@ -22811,25 +22811,25 @@ motor_value:	.type	object
 	.half	.L151-.L48
 	.byte	0,1,1
 .L496:
-	.sdecl	'.debug_ranges',debug,cluster('BLDCDriver_callback')
+	.sdecl	'.debug_ranges',debug,cluster('Bldc_Driver_callback')
 	.sect	'.debug_ranges'
 .L150:
 	.word	-1,.L84,0,.L151-.L84,0,0
-	.sdecl	'.debug_info',debug,cluster('BLDC_SetDuty')
+	.sdecl	'.debug_info',debug,cluster('Bldc_SetDuty')
 	.sect	'.debug_info'
 .L152:
 	.word	297
 	.half	3
 	.word	.L153
 	.byte	4,1
-	.byte	'../code/src/BLDC.c',0
+	.byte	'../code/src/Bldc.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1
 	.word	.L155,.L154
 	.byte	2
 	.word	.L93
 	.byte	3
-	.byte	'BLDC_SetDuty',0,1,224,1,6,1,1,1
+	.byte	'Bldc_SetDuty',0,1,224,1,6,1,1,1
 	.word	.L86,.L220,.L85
 	.byte	4
 	.byte	'left_duty',0,1,224,1,30
@@ -22845,13 +22845,13 @@ motor_value:	.type	object
 	.byte	'i',0,1,234,1,11
 	.word	.L218,.L226
 	.byte	0,0,0,0
-	.sdecl	'.debug_abbrev',debug,cluster('BLDC_SetDuty')
+	.sdecl	'.debug_abbrev',debug,cluster('Bldc_SetDuty')
 	.sect	'.debug_abbrev'
 .L153:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
 	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
-	.sdecl	'.debug_line',debug,cluster('BLDC_SetDuty')
+	.sdecl	'.debug_line',debug,cluster('Bldc_SetDuty')
 	.sect	'.debug_line'
 .L154:
 	.word	.L592-.L591
@@ -22860,7 +22860,7 @@ motor_value:	.type	object
 	.word	.L594-.L593
 .L593:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
-	.byte	'../code/src/BLDC.c',0,0,0,0,0
+	.byte	'../code/src/Bldc.c',0,0,0,0,0
 .L594:
 	.byte	5,2,7,0,5,2
 	.word	.L86
@@ -22942,35 +22942,35 @@ motor_value:	.type	object
 	.half	.L156-.L254
 	.byte	0,1,1
 .L592:
-	.sdecl	'.debug_ranges',debug,cluster('BLDC_SetDuty')
+	.sdecl	'.debug_ranges',debug,cluster('Bldc_SetDuty')
 	.sect	'.debug_ranges'
 .L155:
 	.word	-1,.L86,0,.L156-.L86,0,0
-	.sdecl	'.debug_info',debug,cluster('BLDC_AskSpeed')
+	.sdecl	'.debug_info',debug,cluster('Bldc_AskSpeed')
 	.sect	'.debug_info'
 .L157:
 	.word	225
 	.half	3
 	.word	.L158
 	.byte	4,1
-	.byte	'../code/src/BLDC.c',0
+	.byte	'../code/src/Bldc.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1
 	.word	.L160,.L159
 	.byte	2
 	.word	.L93
 	.byte	3
-	.byte	'BLDC_AskSpeed',0,1,244,1,6,1,1,1
+	.byte	'Bldc_AskSpeed',0,1,244,1,6,1,1,1
 	.word	.L88,.L227,.L87
 	.byte	4
 	.word	.L88,.L227
 	.byte	0,0
-	.sdecl	'.debug_abbrev',debug,cluster('BLDC_AskSpeed')
+	.sdecl	'.debug_abbrev',debug,cluster('Bldc_AskSpeed')
 	.sect	'.debug_abbrev'
 .L158:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
-	.sdecl	'.debug_line',debug,cluster('BLDC_AskSpeed')
+	.sdecl	'.debug_line',debug,cluster('Bldc_AskSpeed')
 	.sect	'.debug_line'
 .L159:
 	.word	.L626-.L625
@@ -22979,7 +22979,7 @@ motor_value:	.type	object
 	.word	.L628-.L627
 .L627:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
-	.byte	'../code/src/BLDC.c',0,0,0,0,0
+	.byte	'../code/src/Bldc.c',0,0,0,0,0
 .L628:
 	.byte	5,2,7,0,5,2
 	.word	.L88
@@ -23035,35 +23035,35 @@ motor_value:	.type	object
 	.half	.L161-.L652
 	.byte	0,1,1
 .L626:
-	.sdecl	'.debug_ranges',debug,cluster('BLDC_AskSpeed')
+	.sdecl	'.debug_ranges',debug,cluster('Bldc_AskSpeed')
 	.sect	'.debug_ranges'
 .L160:
 	.word	-1,.L88,0,.L161-.L88,0,0
-	.sdecl	'.debug_info',debug,cluster('BLDC_uart_init')
+	.sdecl	'.debug_info',debug,cluster('Bldc_uart_init')
 	.sect	'.debug_info'
 .L162:
 	.word	226
 	.half	3
 	.word	.L163
 	.byte	4,1
-	.byte	'../code/src/BLDC.c',0
+	.byte	'../code/src/Bldc.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1
 	.word	.L165,.L164
 	.byte	2
 	.word	.L93
 	.byte	3
-	.byte	'BLDC_uart_init',0,1,143,2,6,1,1,1
+	.byte	'Bldc_uart_init',0,1,143,2,6,1,1,1
 	.word	.L92,.L228,.L91
 	.byte	4
 	.word	.L92,.L228
 	.byte	0,0
-	.sdecl	'.debug_abbrev',debug,cluster('BLDC_uart_init')
+	.sdecl	'.debug_abbrev',debug,cluster('Bldc_uart_init')
 	.sect	'.debug_abbrev'
 .L163:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
-	.sdecl	'.debug_line',debug,cluster('BLDC_uart_init')
+	.sdecl	'.debug_line',debug,cluster('Bldc_uart_init')
 	.sect	'.debug_line'
 .L164:
 	.word	.L654-.L653
@@ -23072,7 +23072,7 @@ motor_value:	.type	object
 	.word	.L656-.L655
 .L655:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
-	.byte	'../code/src/BLDC.c',0,0,0,0,0
+	.byte	'../code/src/Bldc.c',0,0,0,0,0
 .L656:
 	.byte	5,12,7,0,5,2
 	.word	.L92
@@ -23100,35 +23100,35 @@ motor_value:	.type	object
 	.half	.L166-.L666
 	.byte	0,1,1
 .L654:
-	.sdecl	'.debug_ranges',debug,cluster('BLDC_uart_init')
+	.sdecl	'.debug_ranges',debug,cluster('Bldc_uart_init')
 	.sect	'.debug_ranges'
 .L165:
 	.word	-1,.L92,0,.L166-.L92,0,0
-	.sdecl	'.debug_info',debug,cluster('BLDCData_init')
+	.sdecl	'.debug_info',debug,cluster('BldcData_init')
 	.sect	'.debug_info'
 .L167:
 	.word	225
 	.half	3
 	.word	.L168
 	.byte	4,1
-	.byte	'../code/src/BLDC.c',0
+	.byte	'../code/src/Bldc.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1
 	.word	.L170,.L169
 	.byte	2
 	.word	.L93
 	.byte	3
-	.byte	'BLDCData_init',0,1,131,2,6,1,1,1
+	.byte	'BldcData_init',0,1,131,2,6,1,1,1
 	.word	.L90,.L229,.L89
 	.byte	4
 	.word	.L90,.L229
 	.byte	0,0
-	.sdecl	'.debug_abbrev',debug,cluster('BLDCData_init')
+	.sdecl	'.debug_abbrev',debug,cluster('BldcData_init')
 	.sect	'.debug_abbrev'
 .L168:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
-	.sdecl	'.debug_line',debug,cluster('BLDCData_init')
+	.sdecl	'.debug_line',debug,cluster('BldcData_init')
 	.sect	'.debug_line'
 .L169:
 	.word	.L668-.L667
@@ -23137,7 +23137,7 @@ motor_value:	.type	object
 	.word	.L670-.L669
 .L669:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
-	.byte	'../code/src/BLDC.c',0,0,0,0,0
+	.byte	'../code/src/Bldc.c',0,0,0,0,0
 .L670:
 	.byte	5,9,7,0,5,2
 	.word	.L90
@@ -23183,7 +23183,7 @@ motor_value:	.type	object
 	.half	.L171-.L689
 	.byte	0,1,1
 .L668:
-	.sdecl	'.debug_ranges',debug,cluster('BLDCData_init')
+	.sdecl	'.debug_ranges',debug,cluster('BldcData_init')
 	.sect	'.debug_ranges'
 .L170:
 	.word	-1,.L90,0,.L171-.L90,0,0
@@ -23194,7 +23194,7 @@ motor_value:	.type	object
 	.half	3
 	.word	.L173
 	.byte	4,1
-	.byte	'../code/src/BLDC.c',0
+	.byte	'../code/src/Bldc.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1,2
 	.word	.L93
@@ -23216,7 +23216,7 @@ motor_value:	.type	object
 	.half	3
 	.word	.L175
 	.byte	4,1
-	.byte	'../code/src/BLDC.c',0
+	.byte	'../code/src/Bldc.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1,2
 	.word	.L93
@@ -23231,7 +23231,7 @@ motor_value:	.type	object
 .L175:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
-	.sdecl	'.debug_loc',debug,cluster('BLDCCulculate')
+	.sdecl	'.debug_loc',debug,cluster('BldcCulculate')
 	.sect	'.debug_loc'
 .L69:
 	.word	-1,.L70,0,.L201-.L70
@@ -23243,7 +23243,7 @@ motor_value:	.type	object
 	.half	1
 	.byte	100
 	.word	0,0
-	.sdecl	'.debug_loc',debug,cluster('BLDCCurrentMode')
+	.sdecl	'.debug_loc',debug,cluster('BldcCurrentMode')
 	.sect	'.debug_loc'
 .L75:
 	.word	-1,.L76,0,.L208-.L76
@@ -23255,14 +23255,14 @@ motor_value:	.type	object
 	.half	1
 	.byte	100
 	.word	0,0
-	.sdecl	'.debug_loc',debug,cluster('BLDCData_init')
+	.sdecl	'.debug_loc',debug,cluster('BldcData_init')
 	.sect	'.debug_loc'
 .L89:
 	.word	-1,.L90,0,.L229-.L90
 	.half	2
 	.byte	138,0
 	.word	0,0
-	.sdecl	'.debug_loc',debug,cluster('BLDCDriver_callback')
+	.sdecl	'.debug_loc',debug,cluster('Bldc_Driver_callback')
 	.sect	'.debug_loc'
 .L83:
 	.word	-1,.L84,0,.L248-.L84
@@ -23285,7 +23285,7 @@ motor_value:	.type	object
 	.half	2
 	.byte	145,120
 	.word	0,0
-	.sdecl	'.debug_loc',debug,cluster('BLDCFunc')
+	.sdecl	'.debug_loc',debug,cluster('BldcFunc')
 	.sect	'.debug_loc'
 .L81:
 	.word	-1,.L82,0,.L195-.L82
@@ -23297,14 +23297,14 @@ motor_value:	.type	object
 	.half	1
 	.byte	88
 	.word	0,0
-	.sdecl	'.debug_loc',debug,cluster('BLDCInit')
+	.sdecl	'.debug_loc',debug,cluster('BldcInit')
 	.sect	'.debug_loc'
 .L63:
 	.word	-1,.L64,0,.L176-.L64
 	.half	2
 	.byte	138,0
 	.word	0,0
-	.sdecl	'.debug_loc',debug,cluster('BLDCLockPosition')
+	.sdecl	'.debug_loc',debug,cluster('BldcLockPosition')
 	.sect	'.debug_loc'
 .L77:
 	.word	-1,.L78,0,.L210-.L78
@@ -23319,7 +23319,7 @@ motor_value:	.type	object
 	.half	1
 	.byte	111
 	.word	0,0
-	.sdecl	'.debug_loc',debug,cluster('BLDCPositionMode')
+	.sdecl	'.debug_loc',debug,cluster('BldcPositionMode')
 	.sect	'.debug_loc'
 .L71:
 	.word	-1,.L72,0,.L205-.L72
@@ -23339,14 +23339,14 @@ motor_value:	.type	object
 	.half	1
 	.byte	85
 	.word	0,0
-	.sdecl	'.debug_loc',debug,cluster('BLDCSentCurrent')
+	.sdecl	'.debug_loc',debug,cluster('BldcSentCurrent')
 	.sect	'.debug_loc'
 .L79:
 	.word	-1,.L80,0,.L212-.L80
 	.half	2
 	.byte	138,0
 	.word	0,0
-	.sdecl	'.debug_loc',debug,cluster('BLDCSetZero')
+	.sdecl	'.debug_loc',debug,cluster('BldcSetZero')
 	.sect	'.debug_loc'
 .L67:
 	.word	-1,.L68,0,.L198-.L68
@@ -23358,7 +23358,7 @@ motor_value:	.type	object
 	.half	1
 	.byte	100
 	.word	0,0
-	.sdecl	'.debug_loc',debug,cluster('BLDCSpeedMode')
+	.sdecl	'.debug_loc',debug,cluster('BldcSpeedMode')
 	.sect	'.debug_loc'
 .L73:
 	.word	-1,.L74,0,.L203-.L74
@@ -23373,7 +23373,7 @@ motor_value:	.type	object
 	.half	1
 	.byte	111
 	.word	0,0
-	.sdecl	'.debug_loc',debug,cluster('BLDCTypeInit')
+	.sdecl	'.debug_loc',debug,cluster('BldcTypeInit')
 	.sect	'.debug_loc'
 .L65:
 	.word	-1,.L66,0,.L232-.L66
@@ -23420,14 +23420,14 @@ motor_value:	.type	object
 	.word	0,0
 .L186:
 	.word	0,0
-	.sdecl	'.debug_loc',debug,cluster('BLDC_AskSpeed')
+	.sdecl	'.debug_loc',debug,cluster('Bldc_AskSpeed')
 	.sect	'.debug_loc'
 .L87:
 	.word	-1,.L88,0,.L227-.L88
 	.half	2
 	.byte	138,0
 	.word	0,0
-	.sdecl	'.debug_loc',debug,cluster('BLDC_SetDuty')
+	.sdecl	'.debug_loc',debug,cluster('Bldc_SetDuty')
 	.sect	'.debug_loc'
 .L85:
 	.word	-1,.L86,0,.L220-.L86
@@ -23449,7 +23449,7 @@ motor_value:	.type	object
 	.half	1
 	.byte	85
 	.word	0,0
-	.sdecl	'.debug_loc',debug,cluster('BLDC_uart_init')
+	.sdecl	'.debug_loc',debug,cluster('Bldc_uart_init')
 	.sect	'.debug_loc'
 .L91:
 	.word	-1,.L92,0,.L228-.L92
@@ -23463,11 +23463,11 @@ motor_value:	.type	object
 	.word	-1
 	.byte	3,0,2,1,27,12,26,0,8,26,8,27,8,30,8,29,8,28,8,16,8,17,8,24,8,25,8,31,8,32,8,33,8,34,8,35,8,36,8,37,8,38
 	.byte	8,39
-	.sdecl	'.debug_frame',debug,cluster('BLDCInit')
+	.sdecl	'.debug_frame',debug,cluster('BldcInit')
 	.sect	'.debug_frame'
 	.word	12
 	.word	.L690,.L64,.L176-.L64
-	.sdecl	'.debug_frame',debug,cluster('BLDCTypeInit')
+	.sdecl	'.debug_frame',debug,cluster('BldcTypeInit')
 	.sect	'.debug_frame'
 	.word	36
 	.word	.L690,.L66,.L177-.L66
@@ -23476,41 +23476,41 @@ motor_value:	.type	object
 	.byte	19,56,22,26,3,19,138,56,4
 	.word	(.L177-.L232)/2
 	.byte	19,0,8,26,0,0
-	.sdecl	'.debug_frame',debug,cluster('BLDCSetZero')
+	.sdecl	'.debug_frame',debug,cluster('BldcSetZero')
 	.sect	'.debug_frame'
 	.word	24
 	.word	.L690,.L68,.L198-.L68
 	.byte	8,18,8,19,8,21,8,22,8,23,0,0
-	.sdecl	'.debug_frame',debug,cluster('BLDCCulculate')
+	.sdecl	'.debug_frame',debug,cluster('BldcCulculate')
 	.sect	'.debug_frame'
 	.word	12
 	.word	.L690,.L70,.L201-.L70
-	.sdecl	'.debug_frame',debug,cluster('BLDCPositionMode')
+	.sdecl	'.debug_frame',debug,cluster('BldcPositionMode')
 	.sect	'.debug_frame'
 	.word	12
 	.word	.L690,.L72,.L205-.L72
-	.sdecl	'.debug_frame',debug,cluster('BLDCSpeedMode')
+	.sdecl	'.debug_frame',debug,cluster('BldcSpeedMode')
 	.sect	'.debug_frame'
 	.word	12
 	.word	.L690,.L74,.L203-.L74
-	.sdecl	'.debug_frame',debug,cluster('BLDCCurrentMode')
+	.sdecl	'.debug_frame',debug,cluster('BldcCurrentMode')
 	.sect	'.debug_frame'
 	.word	24
 	.word	.L690,.L76,.L208-.L76
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
-	.sdecl	'.debug_frame',debug,cluster('BLDCLockPosition')
+	.sdecl	'.debug_frame',debug,cluster('BldcLockPosition')
 	.sect	'.debug_frame'
 	.word	12
 	.word	.L690,.L78,.L210-.L78
-	.sdecl	'.debug_frame',debug,cluster('BLDCSentCurrent')
+	.sdecl	'.debug_frame',debug,cluster('BldcSentCurrent')
 	.sect	'.debug_frame'
 	.word	12
 	.word	.L690,.L80,.L212-.L80
-	.sdecl	'.debug_frame',debug,cluster('BLDCFunc')
+	.sdecl	'.debug_frame',debug,cluster('BldcFunc')
 	.sect	'.debug_frame'
 	.word	12
 	.word	.L690,.L82,.L195-.L82
-	.sdecl	'.debug_frame',debug,cluster('BLDCDriver_callback')
+	.sdecl	'.debug_frame',debug,cluster('Bldc_Driver_callback')
 	.sect	'.debug_frame'
 	.word	36
 	.word	.L690,.L84,.L213-.L84
@@ -23519,19 +23519,19 @@ motor_value:	.type	object
 	.byte	19,8,22,26,3,19,138,8,4
 	.word	(.L213-.L248)/2
 	.byte	19,0,8,26,0,0
-	.sdecl	'.debug_frame',debug,cluster('BLDC_SetDuty')
+	.sdecl	'.debug_frame',debug,cluster('Bldc_SetDuty')
 	.sect	'.debug_frame'
 	.word	12
 	.word	.L690,.L86,.L220-.L86
-	.sdecl	'.debug_frame',debug,cluster('BLDC_AskSpeed')
+	.sdecl	'.debug_frame',debug,cluster('Bldc_AskSpeed')
 	.sect	'.debug_frame'
 	.word	12
 	.word	.L690,.L88,.L227-.L88
-	.sdecl	'.debug_frame',debug,cluster('BLDCData_init')
+	.sdecl	'.debug_frame',debug,cluster('BldcData_init')
 	.sect	'.debug_frame'
 	.word	12
 	.word	.L690,.L90,.L229-.L90
-	.sdecl	'.debug_frame',debug,cluster('BLDC_uart_init')
+	.sdecl	'.debug_frame',debug,cluster('Bldc_uart_init')
 	.sect	'.debug_frame'
 	.word	12
 	.word	.L690,.L92,.L228-.L92

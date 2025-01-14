@@ -1,183 +1,107 @@
 	; Module start
 	.compiler_version	"TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler v1.1r8 Build 22011964"
-	.compiler_invocation	"ctc -f cc21268a --dep-file=code/src/BLDC.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc26xb -D__CPU_TC26XB__ --core=tc1.6.x --fp-model=+float -D__CPU__=tc26xb -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\code -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\code\\\\inc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Configurations -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B\\\\_Reg -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If\\\\Ccu6If -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\StdIf -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Math -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Asc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6 -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Timer -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\CStart -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Irq -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Dma -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12 -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\IncrEnc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\SpiMaster -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Adc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Impl -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib\\\\DataHandling -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_PinMap -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_common -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_components -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_device -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_driver -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\user -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o code/src/BLDC.src ../code/src/BLDC.c"
+	.compiler_invocation	"ctc -f cc21960a --dep-file=code/src/bldc.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc26xb -D__CPU_TC26XB__ --core=tc1.6.x --fp-model=+float -D__CPU__=tc26xb -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\code -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\code\\\\inc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Configurations -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B\\\\_Reg -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If\\\\Ccu6If -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\StdIf -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Math -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Asc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6 -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Timer -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\CStart -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Irq -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Dma -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12 -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\IncrEnc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\SpiMaster -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Adc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Impl -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib\\\\DataHandling -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_PinMap -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_common -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_components -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_device -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_driver -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\user -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o code/src/bldc.src ../code/src/bldc.c"
 	.compiler_name		"ctc"
-	;source	'../code/src/BLDC.c'
+	;source	'../code/src/bldc.c'
 
 	
 $TC16X
 	
-	.sdecl	'.text.BLDC.BLDCInit',code,cluster('BLDCInit')
-	.sect	'.text.BLDC.BLDCInit'
+	.sdecl	'.text.bldc.BldcInit',code,cluster('BldcInit')
+	.sect	'.text.bldc.BldcInit'
 	.align	2
 	
-	.global	BLDCInit
-; Function BLDCInit
+	.global	BldcInit
+; Function BldcInit
 .L64:
-BLDCInit:	.type	func
-	call	BLDC_uart_init
-.L263:
-	call	BLDCTypeInit
-.L264:
+BldcInit:	.type	func
+	call	Bldc_uart_init
+.L293:
+	call	BldcTypeInit
+.L294:
 	ret
-.L176:
+.L197:
 	
-__BLDCInit_function_end:
-	.size	BLDCInit,__BLDCInit_function_end-BLDCInit
-.L101:
+__BldcInit_function_end:
+	.size	BldcInit,__BldcInit_function_end-BldcInit
+.L107:
 	; End of function
 	
-	.sdecl	'.text.BLDC.BLDCTypeInit',code,cluster('BLDCTypeInit')
-	.sect	'.text.BLDC.BLDCTypeInit'
+	.sdecl	'.text.bldc.BldcTypeInit',code,cluster('BldcTypeInit')
+	.sect	'.text.bldc.BldcTypeInit'
 	.align	2
 	
-	.global	BLDCTypeInit
-; Function BLDCTypeInit
+	.global	BldcTypeInit
+; Function BldcTypeInit
 .L66:
-BLDCTypeInit:	.type	func
+BldcTypeInit:	.type	func
 	sub.a	a10,#56
-.L232:
+.L262:
 	mov	d8,#0
-.L233:
+.L263:
 	mov	d9,#0
-.L234:
+.L264:
 	mov	d10,#0
-.L235:
+.L265:
 	movh.a	a15,#@his(Motor)
 	lea	a15,[a15]@los(Motor)
-.L269:
+.L299:
 	mov	d15,#0
-.L270:
+.L300:
 	st.b	[a15]60,d15
-.L271:
+.L301:
 	movh.a	a15,#@his(Motor)
 	lea	a15,[a15]@los(Motor)
-.L272:
+.L302:
 	mov	d15,#1
-.L273:
+.L303:
 	st.b	[a15]300,d15
-.L182:
+.L203:
 	movh.a	a15,#@his(.1.ini)
 	lea	a15,[a15]@los(.1.ini)
 	lea	a15,[a15]0
-.L274:
+.L304:
 	lea	a2,[a10]4
 	mov.a	a4,#2
 .L2:
 	ld.w	d15,[a15+]
 	st.w	[a2+],d15
 	loop	a4,.L2
-.L275:
+.L305:
 	movh.a	a15,#@his(.2.ini)
 	lea	a15,[a15]@los(.2.ini)
 	lea	a15,[a15]0
-.L276:
+.L306:
 	lea	a2,[a10]16
 	mov.a	a4,#3
 .L3:
 	ld.w	d15,[a15+]
 	st.w	[a2+],d15
 	loop	a4,.L3
-.L277:
+.L307:
 	movh.a	a15,#@his(.3.ini)
 	lea	a15,[a15]@los(.3.ini)
 	lea	a15,[a15]0
-.L278:
+.L308:
 	lea	a2,[a10]32
 	mov.a	a4,#2
 .L4:
 	ld.w	d15,[a15+]
 	st.w	[a2+],d15
 	loop	a4,.L4
-.L279:
+.L309:
 	mov	d15,#0
-.L280:
+.L310:
 	st.w	[a10]52,d15
-.L281:
+.L311:
 	mov	d15,#0
-.L282:
+.L312:
 	st.w	[a10]48,d15
-.L191:
+.L212:
 	mov	d11,#0
-.L236:
+.L266:
 	j	.L5
 .L6:
-	mul	d15,d11,#240
-.L283:
-	movh.a	a15,#@his(Motor)
-	lea	a15,[a15]@los(Motor)
-.L284:
-	addsc.a	a15,a15,d15,#0
-.L285:
-	mov	d15,#1
-.L286:
-	st.b	[a15],d15
-.L287:
-	mul	d15,d11,#240
-.L288:
-	movh.a	a15,#@his(Motor)
-	lea	a15,[a15]@los(Motor)
-.L289:
-	addsc.a	a15,a15,d15,#0
-.L290:
-	mov	d15,#1
-.L291:
-	st.b	[a15]1,d15
-.L292:
-	mul	d15,d11,#240
-.L293:
-	movh.a	a15,#@his(Motor)
-	lea	a15,[a15]@los(Motor)
-.L294:
-	addsc.a	a15,a15,d15,#0
-.L295:
-	mov	d15,#0
-.L296:
-	st.b	[a15]2,d15
-.L297:
-	mul	d15,d11,#240
-.L298:
-	movh.a	a15,#@his(Motor)
-	lea	a15,[a15]@los(Motor)
-.L299:
-	addsc.a	a15,a15,d15,#0
-.L300:
-	mov	d15,#1
-.L301:
-	st.b	[a15]3,d15
-.L302:
-	mul	d15,d11,#240
-.L303:
-	movh.a	a15,#@his(Motor)
-	lea	a15,[a15]@los(Motor)
-.L304:
-	addsc.a	a15,a15,d15,#0
-.L305:
-	lea	a2,[a10]4
-.L306:
-	lea	a15,[a15]4
-	mov.a	a4,#2
-.L7:
-	ld.w	d15,[a2+]
-	st.w	[a15+],d15
-	loop	a4,.L7
-.L307:
-	mul	d15,d11,#240
-.L308:
-	movh.a	a15,#@his(Motor)
-	lea	a15,[a15]@los(Motor)
-.L309:
-	addsc.a	a15,a15,d15,#0
-.L310:
-	lea	a2,[a10]4
-.L311:
-	lea	a15,[a15]16
-	mov.a	a4,#2
-.L8:
-	ld.w	d15,[a2+]
-	st.w	[a15+],d15
-	loop	a4,.L8
-.L312:
 	mul	d15,d11,#240
 .L313:
 	movh.a	a15,#@his(Motor)
@@ -185,14 +109,9 @@ BLDCTypeInit:	.type	func
 .L314:
 	addsc.a	a15,a15,d15,#0
 .L315:
-	lea	a2,[a10]4
+	mov	d15,#1
 .L316:
-	lea	a15,[a15]28
-	mov.a	a4,#2
-.L9:
-	ld.w	d15,[a2+]
-	st.w	[a15+],d15
-	loop	a4,.L9
+	st.b	[a15],d15
 .L317:
 	mul	d15,d11,#240
 .L318:
@@ -201,9 +120,9 @@ BLDCTypeInit:	.type	func
 .L319:
 	addsc.a	a15,a15,d15,#0
 .L320:
-	mov	d15,#0
+	mov	d15,#1
 .L321:
-	st.w	[a15]40,d15
+	st.b	[a15]1,d15
 .L322:
 	mul	d15,d11,#240
 .L323:
@@ -212,14 +131,9 @@ BLDCTypeInit:	.type	func
 .L324:
 	addsc.a	a15,a15,d15,#0
 .L325:
-	lea	a2,[a10]16
+	mov	d15,#0
 .L326:
-	lea	a15,[a15]44
-	mov.a	a4,#3
-.L10:
-	ld.w	d15,[a2+]
-	st.w	[a15+],d15
-	loop	a4,.L10
+	st.b	[a15]2,d15
 .L327:
 	mul	d15,d11,#240
 .L328:
@@ -228,14 +142,9 @@ BLDCTypeInit:	.type	func
 .L329:
 	addsc.a	a15,a15,d15,#0
 .L330:
-	lea	a2,[a10]32
+	mov	d15,#1
 .L331:
-	lea	a15,[a15]60
-	mov.a	a4,#2
-.L11:
-	ld.w	d15,[a2+]
-	st.w	[a15+],d15
-	loop	a4,.L11
+	st.b	[a15]3,d15
 .L332:
 	mul	d15,d11,#240
 .L333:
@@ -244,145 +153,236 @@ BLDCTypeInit:	.type	func
 .L334:
 	addsc.a	a15,a15,d15,#0
 .L335:
-	lea	a2,[a10]44
+	lea	a2,[a10]4
 .L336:
+	lea	a15,[a15]4
+	mov.a	a4,#2
+.L7:
+	ld.w	d15,[a2+]
+	st.w	[a15+],d15
+	loop	a4,.L7
+.L337:
+	mul	d15,d11,#240
+.L338:
+	movh.a	a15,#@his(Motor)
+	lea	a15,[a15]@los(Motor)
+.L339:
+	addsc.a	a15,a15,d15,#0
+.L340:
+	lea	a2,[a10]4
+.L341:
+	lea	a15,[a15]16
+	mov.a	a4,#2
+.L8:
+	ld.w	d15,[a2+]
+	st.w	[a15+],d15
+	loop	a4,.L8
+.L342:
+	mul	d15,d11,#240
+.L343:
+	movh.a	a15,#@his(Motor)
+	lea	a15,[a15]@los(Motor)
+.L344:
+	addsc.a	a15,a15,d15,#0
+.L345:
+	lea	a2,[a10]4
+.L346:
+	lea	a15,[a15]28
+	mov.a	a4,#2
+.L9:
+	ld.w	d15,[a2+]
+	st.w	[a15+],d15
+	loop	a4,.L9
+.L347:
+	mul	d15,d11,#240
+.L348:
+	movh.a	a15,#@his(Motor)
+	lea	a15,[a15]@los(Motor)
+.L349:
+	addsc.a	a15,a15,d15,#0
+.L350:
+	mov	d15,#0
+.L351:
+	st.w	[a15]40,d15
+.L352:
+	mul	d15,d11,#240
+.L353:
+	movh.a	a15,#@his(Motor)
+	lea	a15,[a15]@los(Motor)
+.L354:
+	addsc.a	a15,a15,d15,#0
+.L355:
+	lea	a2,[a10]16
+.L356:
+	lea	a15,[a15]44
+	mov.a	a4,#3
+.L10:
+	ld.w	d15,[a2+]
+	st.w	[a15+],d15
+	loop	a4,.L10
+.L357:
+	mul	d15,d11,#240
+.L358:
+	movh.a	a15,#@his(Motor)
+	lea	a15,[a15]@los(Motor)
+.L359:
+	addsc.a	a15,a15,d15,#0
+.L360:
+	lea	a2,[a10]32
+.L361:
+	lea	a15,[a15]60
+	mov.a	a4,#2
+.L11:
+	ld.w	d15,[a2+]
+	st.w	[a15+],d15
+	loop	a4,.L11
+.L362:
+	mul	d15,d11,#240
+.L363:
+	movh.a	a15,#@his(Motor)
+	lea	a15,[a15]@los(Motor)
+.L364:
+	addsc.a	a15,a15,d15,#0
+.L365:
+	lea	a2,[a10]44
+.L366:
 	lea	a15,[a15]72
 	mov.a	a4,#2
 .L12:
 	ld.w	d15,[a2+]
 	st.w	[a15+],d15
 	loop	a4,.L12
-.L337:
+.L367:
 	movh.a	a15,#@his(Motor)
 	lea	a15,[a15]@los(Motor)
-.L338:
+.L368:
 	ld.w	d15,[a15]80
 	st.w	[a10],d15
-.L339:
+.L369:
 	mul	d15,d11,#240
-.L340:
+.L370:
 	movh.a	a15,#@his(Motor)
 	lea	a15,[a15]@los(Motor)
-.L341:
+.L371:
 	addsc.a	a15,a15,d15,#0
-.L342:
+.L372:
 	lea	a4,[a15]84
-.L343:
+.L373:
 	mov	d4,#0
-.L344:
+.L374:
 	mov	d5,#0
-.L345:
+.L375:
 	mov	d6,#0
-.L346:
+.L376:
 	mov	d7,#1
 	call	PIDTypeInit
-.L347:
+.L377:
 	movh.a	a15,#@his(Motor)
 	lea	a15,[a15]@los(Motor)
-.L348:
+.L378:
 	ld.w	d15,[a15]76
 	st.w	[a10],d15
-.L349:
+.L379:
 	mul	d15,d11,#240
-.L350:
+.L380:
 	movh.a	a15,#@his(Motor)
 	lea	a15,[a15]@los(Motor)
-.L351:
+.L381:
 	addsc.a	a15,a15,d15,#0
-.L352:
+.L382:
 	lea	a4,[a15]136
-.L353:
+.L383:
 	mov	d7,#1
 	mov	e4,d9,d8
 	mov	d6,d10
-.L237:
+.L267:
 	call	PIDTypeInit
-.L238:
+.L268:
 	mov	d15,#0
 	st.w	[a10],d15
-.L354:
+.L384:
 	mul	d15,d11,#240
-.L355:
+.L385:
 	movh.a	a15,#@his(Motor)
 	lea	a15,[a15]@los(Motor)
-.L356:
+.L386:
 	addsc.a	a15,a15,d15,#0
-.L357:
+.L387:
 	lea	a4,[a15]188
-.L358:
+.L388:
 	mov	d4,#0
-.L359:
+.L389:
 	mov	d5,#0
-.L360:
+.L390:
 	mov	d6,#0
-.L361:
+.L391:
 	mov	d7,#1
 	call	PIDTypeInit
-.L362:
+.L392:
 	add	d11,#1
 .L5:
 	jlt.u	d11,#2,.L6
-.L192:
-	ret
-.L177:
-	
-__BLDCTypeInit_function_end:
-	.size	BLDCTypeInit,__BLDCTypeInit_function_end-BLDCTypeInit
-.L106:
-	; End of function
-	
-	.sdecl	'.text.BLDC.BLDCSetZero',code,cluster('BLDCSetZero')
-	.sect	'.text.BLDC.BLDCSetZero'
-	.align	2
-	
-	.global	BLDCSetZero
-; Function BLDCSetZero
-.L68:
-BLDCSetZero:	.type	func
-	mov	d15,#0
-.L395:
-	st.b	[a4]2,d15
-.L396:
-	mov	d15,#0
-.L397:
-	st.w	[a4]20,d15
-.L398:
-	mov	d15,#0
-.L399:
-	st.w	[a4]54,d15
-.L400:
-	mov	d15,#0
-.L401:
-	st.w	[a4]50,d15
-.L402:
+.L213:
 	ret
 .L198:
 	
-__BLDCSetZero_function_end:
-	.size	BLDCSetZero,__BLDCSetZero_function_end-BLDCSetZero
-.L116:
+__BldcTypeInit_function_end:
+	.size	BldcTypeInit,__BldcTypeInit_function_end-BldcTypeInit
+.L112:
 	; End of function
 	
-	.sdecl	'.text.BLDC.BLDCCulculate',code,cluster('BLDCCulculate')
-	.sect	'.text.BLDC.BLDCCulculate'
+	.sdecl	'.text.bldc.BldcSetZero',code,cluster('BldcSetZero')
+	.sect	'.text.bldc.BldcSetZero'
 	.align	2
 	
-	.global	BLDCCulculate
-; Function BLDCCulculate
+	.global	BldcSetZero
+; Function BldcSetZero
+.L68:
+BldcSetZero:	.type	func
+	mov	d15,#0
+.L425:
+	st.b	[a4]2,d15
+.L426:
+	mov	d15,#0
+.L427:
+	st.w	[a4]20,d15
+.L428:
+	mov	d15,#0
+.L429:
+	st.w	[a4]54,d15
+.L430:
+	mov	d15,#0
+.L431:
+	st.w	[a4]50,d15
+.L432:
+	ret
+.L219:
+	
+__BldcSetZero_function_end:
+	.size	BldcSetZero,__BldcSetZero_function_end-BldcSetZero
+.L122:
+	; End of function
+	
+	.sdecl	'.text.bldc.BldcCulculate',code,cluster('BldcCulculate')
+	.sect	'.text.bldc.BldcCulculate'
+	.align	2
+	
+	.global	BldcCulculate
+; Function BldcCulculate
 .L70:
-BLDCCulculate:	.type	func
+BldcCulculate:	.type	func
 	ld.h	d15,[a4]44
-.L407:
+.L437:
 	ld.h	d0,[a4]46
-.L408:
+.L438:
 	sub	d15,d0
-.L409:
+.L439:
 	st.h	[a4]48,d15
-.L410:
+.L440:
 	ld.h	d15,[a4]44
-.L411:
+.L441:
 	st.h	[a4]46,d15
-.L412:
+.L442:
 	ld.h	d15,[a4]48
 	jlt	d15,#1,.L13
 	ld.h	d15,[a4]48
@@ -392,9 +392,9 @@ BLDCCulculate:	.type	func
 	rsub	d15,#0
 .L14:
 	mov	d0,#16383
-.L413:
+.L443:
 	jge	d0,d15,.L15
-.L414:
+.L444:
 	ld.h	d15,[a4]48
 	jge	d15,#0,.L16
 	mov	d15,#-1
@@ -403,228 +403,228 @@ BLDCCulculate:	.type	func
 	mov	d15,#1
 .L17:
 	ld.h	d0,[a4]48
-.L415:
+.L445:
 	mov	d1,#32767
-.L416:
+.L446:
 	msub	d15,d0,d15,d1
-.L417:
+.L447:
 	st.h	[a4]48,d15
 .L15:
 	ld.w	d15,[a4]50
-.L418:
+.L448:
 	ld.h	d0,[a4]48
-.L419:
+.L449:
 	add	d15,d0
 	st.w	[a4]50,d15
-.L420:
+.L450:
 	ld.w	d15,[a4]50
-.L421:
+.L451:
 	mov	d0,#360
-.L422:
+.L452:
 	mul	d15,d0
-.L423:
+.L453:
 	mov	d0,#32767
-.L424:
+.L454:
 	div	e0,d15,d0
 	itof	d15,d0
-.L425:
+.L455:
 	st.w	[a4]20,d15
-.L426:
+.L456:
 	ld.h	d15,[a4]48
-.L427:
+.L457:
 	mul	d15,d15,#60
-.L428:
+.L458:
 	mov	d0,#22769
 	addih	d0,d0,#4999
-.L429:
+.L459:
 	div	e0,d15,d0
 	itof	d15,d0
-.L430:
+.L460:
 	st.w	[a4]16,d15
-.L431:
+.L461:
 	lea	a15,[a4]16
-.L432:
+.L462:
 	lea	a2,[a4]4
 	mov.a	a5,#2
 .L18:
 	ld.w	d15,[a15+]
 	st.w	[a2+],d15
 	loop	a5,.L18
-.L433:
+.L463:
 	ld.bu	d15,[a4]1
-.L434:
+.L464:
 	jeq	d15,#0,.L19
-.L435:
+.L465:
 	ld.w	d15,[a4]50
-.L436:
+.L466:
 	st.w	[a4]54,d15
 .L19:
 	ld.bu	d15,[a4]2
-.L437:
+.L467:
 	jeq	d15,#0,.L20
-.L438:
-	call	BLDCSetZero
+.L468:
+	call	BldcSetZero
 .L20:
 	ret
-.L201:
+.L222:
 	
-__BLDCCulculate_function_end:
-	.size	BLDCCulculate,__BLDCCulculate_function_end-BLDCCulculate
-.L121:
+__BldcCulculate_function_end:
+	.size	BldcCulculate,__BldcCulculate_function_end-BldcCulculate
+.L127:
 	; End of function
 	
-	.sdecl	'.text.BLDC.BLDCPositionMode',code,cluster('BLDCPositionMode')
-	.sect	'.text.BLDC.BLDCPositionMode'
+	.sdecl	'.text.bldc.BldcPositionMode',code,cluster('BldcPositionMode')
+	.sect	'.text.bldc.BldcPositionMode'
 	.align	2
 	
-	.global	BLDCPositionMode
-; Function BLDCPositionMode
+	.global	BldcPositionMode
+; Function BldcPositionMode
 .L72:
-BLDCPositionMode:	.type	func
+BldcPositionMode:	.type	func
 	mov.aa	a15,a4
-.L240:
+.L270:
 	ld.w	d15,[a15]32
-.L452:
+.L482:
 	mov.u	d0,#65024
 	addih	d0,d0,#18175
-.L453:
-	mul.f	d15,d15,d0
-.L454:
-	movh	d0,#17332
-.L455:
-	div.f	d5,d15,d0
-.L241:
-	ld.w	d15,[a15]50
-.L456:
-	itof	d4,d15
-.L457:
-	lea	a4,[a15]84
-.L239:
-	call	PIDOperation
-.L242:
-	st.w	[a15]28,d2
-.L458:
-	ld.w	d4,[a15]16
-.L459:
-	ld.w	d5,[a15]28
-.L460:
-	ld.w	d15,[a15]36
-.L461:
-	lea	a4,[a15]136
-.L462:
-	call	PIDOperation
-.L463:
-	add.f	d15,d15,d2
-	st.w	[a15]36,d15
-.L464:
-	ret
-.L205:
-	
-__BLDCPositionMode_function_end:
-	.size	BLDCPositionMode,__BLDCPositionMode_function_end-BLDCPositionMode
-.L131:
-	; End of function
-	
-	.sdecl	'.text.BLDC.BLDCSpeedMode',code,cluster('BLDCSpeedMode')
-	.sect	'.text.BLDC.BLDCSpeedMode'
-	.align	2
-	
-	.global	BLDCSpeedMode
-; Function BLDCSpeedMode
-.L74:
-BLDCSpeedMode:	.type	func
-	mov.aa	a15,a4
-.L244:
-	ld.w	d4,[a15]16
-.L443:
-	ld.w	d5,[a15]28
-.L444:
-	ld.w	d15,[a15]36
-.L445:
-	lea	a4,[a15]136
-.L243:
-	call	PIDOperation
-.L446:
-	add.f	d15,d15,d2
-	st.w	[a15]36,d15
-.L447:
-	ret
-.L203:
-	
-__BLDCSpeedMode_function_end:
-	.size	BLDCSpeedMode,__BLDCSpeedMode_function_end-BLDCSpeedMode
-.L126:
-	; End of function
-	
-	.sdecl	'.text.BLDC.BLDCCurrentMode',code,cluster('BLDCCurrentMode')
-	.sect	'.text.BLDC.BLDCCurrentMode'
-	.align	2
-	
-	.global	BLDCCurrentMode
-; Function BLDCCurrentMode
-.L76:
-BLDCCurrentMode:	.type	func
-	ret
-.L208:
-	
-__BLDCCurrentMode_function_end:
-	.size	BLDCCurrentMode,__BLDCCurrentMode_function_end-BLDCCurrentMode
-.L136:
-	; End of function
-	
-	.sdecl	'.text.BLDC.BLDCLockPosition',code,cluster('BLDCLockPosition')
-	.sect	'.text.BLDC.BLDCLockPosition'
-	.align	2
-	
-	.global	BLDCLockPosition
-; Function BLDCLockPosition
-.L78:
-BLDCLockPosition:	.type	func
-	mov.aa	a15,a4
-.L246:
-	ld.w	d15,[a15]50
-.L473:
-	itof	d4,d15
-.L474:
-	ld.w	d15,[a15]54
-.L475:
-	itof	d5,d15
-.L476:
-	lea	a4,[a15]84
-.L245:
-	call	PIDOperation
-.L477:
-	st.w	[a15]28,d2
-.L478:
-	ld.w	d4,[a15]16
-.L479:
-	ld.w	d5,[a15]28
-.L480:
-	ld.w	d15,[a15]36
-.L481:
-	lea	a4,[a15]136
-.L482:
-	call	PIDOperation
 .L483:
+	mul.f	d15,d15,d0
+.L484:
+	movh	d0,#17332
+.L485:
+	div.f	d5,d15,d0
+.L271:
+	ld.w	d15,[a15]50
+.L486:
+	itof	d4,d15
+.L487:
+	lea	a4,[a15]84
+.L269:
+	call	PIDOperation
+.L272:
+	st.w	[a15]28,d2
+.L488:
+	ld.w	d4,[a15]16
+.L489:
+	ld.w	d5,[a15]28
+.L490:
+	ld.w	d15,[a15]36
+.L491:
+	lea	a4,[a15]136
+.L492:
+	call	PIDOperation
+.L493:
 	add.f	d15,d15,d2
 	st.w	[a15]36,d15
-.L484:
+.L494:
 	ret
-.L210:
+.L226:
 	
-__BLDCLockPosition_function_end:
-	.size	BLDCLockPosition,__BLDCLockPosition_function_end-BLDCLockPosition
-.L141:
+__BldcPositionMode_function_end:
+	.size	BldcPositionMode,__BldcPositionMode_function_end-BldcPositionMode
+.L137:
 	; End of function
 	
-	.sdecl	'.text.BLDC.BLDCSentCurrent',code,cluster('BLDCSentCurrent')
-	.sect	'.text.BLDC.BLDCSentCurrent'
+	.sdecl	'.text.bldc.BldcSpeedMode',code,cluster('BldcSpeedMode')
+	.sect	'.text.bldc.BldcSpeedMode'
 	.align	2
 	
-	.global	BLDCSentCurrent
-; Function BLDCSentCurrent
+	.global	BldcSpeedMode
+; Function BldcSpeedMode
+.L74:
+BldcSpeedMode:	.type	func
+	mov.aa	a15,a4
+.L274:
+	ld.w	d4,[a15]16
+.L473:
+	ld.w	d5,[a15]28
+.L474:
+	ld.w	d15,[a15]36
+.L475:
+	lea	a4,[a15]136
+.L273:
+	call	PIDOperation
+.L476:
+	add.f	d15,d15,d2
+	st.w	[a15]36,d15
+.L477:
+	ret
+.L224:
+	
+__BldcSpeedMode_function_end:
+	.size	BldcSpeedMode,__BldcSpeedMode_function_end-BldcSpeedMode
+.L132:
+	; End of function
+	
+	.sdecl	'.text.bldc.BldcCurrentMode',code,cluster('BldcCurrentMode')
+	.sect	'.text.bldc.BldcCurrentMode'
+	.align	2
+	
+	.global	BldcCurrentMode
+; Function BldcCurrentMode
+.L76:
+BldcCurrentMode:	.type	func
+	ret
+.L229:
+	
+__BldcCurrentMode_function_end:
+	.size	BldcCurrentMode,__BldcCurrentMode_function_end-BldcCurrentMode
+.L142:
+	; End of function
+	
+	.sdecl	'.text.bldc.BldcLockPosition',code,cluster('BldcLockPosition')
+	.sect	'.text.bldc.BldcLockPosition'
+	.align	2
+	
+	.global	BldcLockPosition
+; Function BldcLockPosition
+.L78:
+BldcLockPosition:	.type	func
+	mov.aa	a15,a4
+.L276:
+	ld.w	d15,[a15]50
+.L503:
+	itof	d4,d15
+.L504:
+	ld.w	d15,[a15]54
+.L505:
+	itof	d5,d15
+.L506:
+	lea	a4,[a15]84
+.L275:
+	call	PIDOperation
+.L507:
+	st.w	[a15]28,d2
+.L508:
+	ld.w	d4,[a15]16
+.L509:
+	ld.w	d5,[a15]28
+.L510:
+	ld.w	d15,[a15]36
+.L511:
+	lea	a4,[a15]136
+.L512:
+	call	PIDOperation
+.L513:
+	add.f	d15,d15,d2
+	st.w	[a15]36,d15
+.L514:
+	ret
+.L231:
+	
+__BldcLockPosition_function_end:
+	.size	BldcLockPosition,__BldcLockPosition_function_end-BldcLockPosition
+.L147:
+	; End of function
+	
+	.sdecl	'.text.bldc.BldcSentCurrent',code,cluster('BldcSentCurrent')
+	.sect	'.text.bldc.BldcSentCurrent'
+	.align	2
+	
+	.global	BldcSentCurrent
+; Function BldcSentCurrent
 .L80:
-BLDCSentCurrent:	.type	func
+BldcSentCurrent:	.type	func
 	movh.a	a15,#@his(Motor)
 	lea	a15,[a15]@los(Motor)
 	ld.w	d15,[a15]36
@@ -715,107 +715,107 @@ BLDCSentCurrent:	.type	func
 .L32:
 	movh.a	a15,#@his(Motor)
 	lea	a15,[a15]@los(Motor)
-.L489:
+.L519:
 	ld.w	d4,[a15]36
-.L490:
+.L520:
 	movh.a	a15,#@his(Motor)
 	lea	a15,[a15]@los(Motor)
-.L491:
+.L521:
 	ld.w	d15,[a15]276
-.L492:
+.L522:
 	call	__f_ftos
 	mov	d8,d2
-.L493:
+.L523:
 	mov	d4,d15
 	call	__f_ftos
 	mov	e4,d2,d8
-	call	BLDC_SetDuty
-.L494:
+	call	Bldc_SetDuty
+.L524:
 	ret
-.L212:
+.L233:
 	
-__BLDCSentCurrent_function_end:
-	.size	BLDCSentCurrent,__BLDCSentCurrent_function_end-BLDCSentCurrent
-.L146:
+__BldcSentCurrent_function_end:
+	.size	BldcSentCurrent,__BldcSentCurrent_function_end-BldcSentCurrent
+.L152:
 	; End of function
 	
-	.sdecl	'.text.BLDC.BLDCFunc',code,cluster('BLDCFunc')
-	.sect	'.text.BLDC.BLDCFunc'
+	.sdecl	'.text.bldc.BldcFunc',code,cluster('BldcFunc')
+	.sect	'.text.bldc.BldcFunc'
 	.align	2
 	
-	.global	BLDCFunc
-; Function BLDCFunc
+	.global	BldcFunc
+; Function BldcFunc
 .L82:
-BLDCFunc:	.type	func
+BldcFunc:	.type	func
 	mov	d8,#0
-.L247:
+.L277:
 	j	.L35
 .L36:
 	mul	d15,d8,#240
-.L367:
+.L397:
 	movh.a	a15,#@his(Motor)
 	lea	a15,[a15]@los(Motor)
-.L368:
+.L398:
 	addsc.a	a15,a15,d15,#0
-.L369:
+.L399:
 	ld.bu	d15,[a15]
-.L370:
+.L400:
 	jeq	d15,#0,.L37
-.L371:
+.L401:
 	mul	d15,d8,#240
-.L372:
+.L402:
 	movh.a	a15,#@his(Motor)
 	lea	a15,[a15]@los(Motor)
-.L373:
+.L403:
 	addsc.a	a15,a15,d15,#0
-.L374:
+.L404:
 	ld.bu	d15,[a15]1
-.L375:
+.L405:
 	jeq	d15,#0,.L38
-.L376:
+.L406:
 	movh.a	a15,#@his(Motor)
 	lea	a15,[a15]@los(Motor)
-.L377:
+.L407:
 	ld.bu	d15,[a15]3
-.L378:
+.L408:
 	mov	d0,#0
 	jeq	d15,d0,.L39
-.L379:
+.L409:
 	mov	d0,#1
 	jeq	d15,d0,.L40
-.L380:
+.L410:
 	mov	d0,#2
 	jeq	d15,d0,.L41
 	j	.L42
 .L41:
 	mul	d15,d8,#240
-.L381:
+.L411:
 	movh.a	a15,#@his(Motor)
 	lea	a15,[a15]@los(Motor)
-.L382:
+.L412:
 	addsc.a	a4,a15,d15,#0
-	call	BLDCPositionMode
-.L383:
+	call	BldcPositionMode
+.L413:
 	j	.L43
 .L40:
 	mul	d15,d8,#240
-.L384:
+.L414:
 	movh.a	a15,#@his(Motor)
 	lea	a15,[a15]@los(Motor)
-.L385:
+.L415:
 	addsc.a	a4,a15,d15,#0
-	call	BLDCSpeedMode
-.L386:
+	call	BldcSpeedMode
+.L416:
 	j	.L44
 .L39:
 	mul	d15,d8,#240
-.L387:
+.L417:
 	movh.a	a15,#@his(Motor)
 	lea	a15,[a15]@los(Motor)
-.L388:
+.L418:
 	addsc.a	a4,a15,d15,#0
-	call	BLDCCurrentMode
-.L389:
+	call	BldcCurrentMode
+.L419:
 	j	.L45
 .L42:
 	j	.L46
@@ -830,270 +830,270 @@ BLDCFunc:	.type	func
 	add	d8,#1
 .L35:
 	jlt.u	d8,#2,.L36
-.L196:
-	call	BLDCSentCurrent
-.L390:
+.L217:
+	call	BldcSentCurrent
+.L420:
 	ret
-.L195:
+.L216:
 	
-__BLDCFunc_function_end:
-	.size	BLDCFunc,__BLDCFunc_function_end-BLDCFunc
-.L111:
+__BldcFunc_function_end:
+	.size	BldcFunc,__BldcFunc_function_end-BldcFunc
+.L117:
 	; End of function
 	
-	.sdecl	'.text.BLDC.BLDCDriver_callback',code,cluster('BLDCDriver_callback')
-	.sect	'.text.BLDC.BLDCDriver_callback'
+	.sdecl	'.text.bldc.Bldc_Driver_callback',code,cluster('Bldc_Driver_callback')
+	.sect	'.text.bldc.Bldc_Driver_callback'
 	.align	2
 	
-	.global	BLDCDriver_callback
-; Function BLDCDriver_callback
+	.global	Bldc_Driver_callback
+; Function Bldc_Driver_callback
 .L84:
-BLDCDriver_callback:	.type	func
+Bldc_Driver_callback:	.type	func
 	sub.a	a10,#8
-.L248:
+.L278:
 	mov	d4,#2
-.L499:
+.L529:
 	lea	a4,[a10]0
 	call	uart_query_byte
-.L500:
+.L530:
 	jeq	d2,#0,.L48
-.L501:
+.L531:
 	ld.bu	d0,[a10]
-.L502:
+.L532:
 	mov	d15,#165
-.L503:
+.L533:
 	jne	d15,d0,.L49
-.L504:
+.L534:
 	movh.a	a15,#@his(motor_value)
 	lea	a15,[a15]@los(motor_value)
-.L505:
+.L535:
 	ld.bu	d15,[a15]7
-.L506:
+.L536:
 	mov	d0,#165
-.L507:
+.L537:
 	jeq	d15,d0,.L50
-.L508:
+.L538:
 	movh.a	a15,#@his(motor_value)
 	lea	a15,[a15]@los(motor_value)
-.L509:
+.L539:
 	mov	d15,#0
-.L510:
+.L540:
 	st.b	[a15]14,d15
 .L50:
 .L49:
 	movh.a	a15,#@his(motor_value)
 	lea	a15,[a15]@los(motor_value)
-.L511:
+.L541:
 	ld.bu	d15,[a15]14
-.L512:
+.L542:
 	movh.a	a15,#@his(motor_value)
 	lea	a15,[a15]@los(motor_value)
-.L513:
+.L543:
 	addsc.a	a15,a15,d15,#0
-.L514:
+.L544:
 	ld.bu	d15,[a10]
-.L515:
+.L545:
 	st.b	[a15]7,d15
-.L516:
+.L546:
 	movh.a	a15,#@his(motor_value)
 	lea	a15,[a15]@los(motor_value)
 	movh.a	a2,#@his(motor_value)
 	lea	a2,[a2]@los(motor_value)
-.L517:
+.L547:
 	ld.bu	d15,[a2]14
-.L518:
+.L548:
 	add	d15,#1
 	st.b	[a15]14,d15
-.L519:
+.L549:
 	movh.a	a15,#@his(motor_value)
 	lea	a15,[a15]@los(motor_value)
-.L520:
+.L550:
 	ld.bu	d15,[a15]14
-.L521:
+.L551:
 	jlt.u	d15,#7,.L51
-.L522:
+.L552:
 	movh.a	a15,#@his(motor_value)
 	lea	a15,[a15]@los(motor_value)
-.L523:
+.L553:
 	ld.bu	d15,[a15]7
-.L524:
+.L554:
 	mov	d0,#165
-.L525:
+.L555:
 	jne	d15,d0,.L52
-.L526:
+.L556:
 	movh.a	a15,#@his(motor_value)
 	lea	a15,[a15]@los(motor_value)
-.L527:
+.L557:
 	mov	d15,#0
-.L528:
+.L558:
 	st.b	[a15]15,d15
-.L216:
+.L237:
 	mov	d0,#0
-.L249:
+.L279:
 	j	.L53
 .L54:
 	movh.a	a2,#@his(motor_value)
 	lea	a2,[a2]@los(motor_value)
 	movh.a	a15,#@his(motor_value)
 	lea	a15,[a15]@los(motor_value)
-.L529:
+.L559:
 	ld.bu	d1,[a15]15
-.L530:
+.L560:
 	movh.a	a15,#@his(motor_value)
 	lea	a15,[a15]@los(motor_value)
-.L531:
+.L561:
 	addsc.a	a15,a15,d0,#0
 	ld.bu	d15,[a15]7
-.L532:
+.L562:
 	add	d1,d15
 	st.b	[a2]15,d1
-.L533:
+.L563:
 	add	d0,#1
 .L53:
 	jlt	d0,#6,.L54
-.L217:
+.L238:
 	movh.a	a15,#@his(motor_value)
 	lea	a15,[a15]@los(motor_value)
-.L534:
+.L564:
 	ld.bu	d15,[a15]15
-.L535:
+.L565:
 	movh.a	a15,#@his(motor_value)
 	lea	a15,[a15]@los(motor_value)
-.L536:
+.L566:
 	ld.bu	d0,[a15]13
-.L250:
+.L280:
 	jne	d15,d0,.L55
-.L537:
+.L567:
 	movh.a	a15,#@his(motor_value)
 	lea	a15,[a15]@los(motor_value)
-.L538:
+.L568:
 	ld.bu	d15,[a15]8
-.L539:
+.L569:
 	jne	d15,#2,.L56
-.L540:
+.L570:
 	movh.a	a15,#@his(Motor)
 	lea	a15,[a15]@los(Motor)
-.L541:
+.L571:
 	movh.a	a2,#@his(Motor)
 	lea	a2,[a2]@los(Motor)
-.L542:
+.L572:
 	lea	a2,[a2]16
-.L543:
+.L573:
 	lea	a15,[a15]4
 	mov.a	a4,#2
 .L57:
 	ld.w	d15,[a2+]
 	st.w	[a15+],d15
 	loop	a4,.L57
-.L544:
+.L574:
 	movh.a	a15,#@his(Motor)
 	lea	a15,[a15]@los(Motor)
-.L545:
+.L575:
 	movh.a	a2,#@his(Motor)
 	lea	a2,[a2]@los(Motor)
-.L546:
+.L576:
 	lea	a2,[a2]256
-.L547:
+.L577:
 	lea	a15,[a15]244
 	mov.a	a4,#2
 .L58:
 	ld.w	d15,[a2+]
 	st.w	[a15+],d15
 	loop	a4,.L58
-.L548:
+.L578:
 	movh.a	a2,#@his(motor_value)
 	lea	a2,[a2]@los(motor_value)
-.L549:
+.L579:
 	movh.a	a15,#@his(motor_value)
 	lea	a15,[a15]@los(motor_value)
-.L550:
+.L580:
 	ld.bu	d15,[a15]9
-.L551:
+.L581:
 	sha	d0,d15,#8
-.L552:
+.L582:
 	movh.a	a15,#@his(motor_value)
 	lea	a15,[a15]@los(motor_value)
-.L553:
+.L583:
 	ld.bu	d15,[a15]10
-.L554:
+.L584:
 	or	d0,d15
-.L555:
+.L585:
 	st.h	[a2]16,d0
-.L556:
+.L586:
 	movh.a	a2,#@his(motor_value)
 	lea	a2,[a2]@los(motor_value)
-.L557:
+.L587:
 	movh.a	a15,#@his(motor_value)
 	lea	a15,[a15]@los(motor_value)
-.L558:
+.L588:
 	ld.bu	d15,[a15]11
-.L559:
+.L589:
 	sha	d0,d15,#8
-.L560:
+.L590:
 	movh.a	a15,#@his(motor_value)
 	lea	a15,[a15]@los(motor_value)
-.L561:
+.L591:
 	ld.bu	d15,[a15]12
-.L562:
+.L592:
 	or	d0,d15
-.L563:
+.L593:
 	st.h	[a2]18,d0
-.L564:
+.L594:
 	movh.a	a15,#@his(Motor)
 	lea	a15,[a15]@los(Motor)
-.L565:
+.L595:
 	movh.a	a2,#@his(motor_value)
 	lea	a2,[a2]@los(motor_value)
-.L566:
+.L596:
 	ld.h	d15,[a2]16
 	itof	d15,d15
-.L567:
+.L597:
 	st.w	[a15]16,d15
-.L568:
+.L598:
 	movh.a	a2,#@his(Motor)
 	lea	a2,[a2]@los(Motor)
-.L569:
+.L599:
 	movh.a	a15,#@his(motor_value)
 	lea	a15,[a15]@los(motor_value)
-.L570:
+.L600:
 	ld.h	d15,[a15]18
 	itof	d15,d15
-.L571:
+.L601:
 	st.w	[a2]256,d15
 .L56:
 	movh.a	a15,#@his(motor_value)
 	lea	a15,[a15]@los(motor_value)
-.L572:
+.L602:
 	mov	d15,#0
-.L573:
+.L603:
 	st.b	[a15]14,d15
-.L574:
+.L604:
 	movh.a	a4,#@his(motor_value)
 	lea	a4,[a4]@los(motor_value)
-.L575:
+.L605:
 	add.a	a4,#7
-.L576:
+.L606:
 	mov	d4,#0
-.L577:
+.L607:
 	mov	d5,#7
 	call	memset
-.L578:
+.L608:
 	j	.L59
 .L55:
 	movh.a	a15,#@his(motor_value)
 	lea	a15,[a15]@los(motor_value)
-.L579:
+.L609:
 	mov	d15,#0
-.L580:
+.L610:
 	st.b	[a15]14,d15
-.L581:
+.L611:
 	movh.a	a4,#@his(motor_value)
 	lea	a4,[a4]@los(motor_value)
-.L582:
+.L612:
 	add.a	a4,#7
-.L583:
+.L613:
 	mov	d4,#0
-.L584:
+.L614:
 	mov	d5,#7
 	call	memset
 .L59:
@@ -1101,381 +1101,462 @@ BLDCDriver_callback:	.type	func
 .L52:
 	movh.a	a15,#@his(motor_value)
 	lea	a15,[a15]@los(motor_value)
-.L585:
+.L615:
 	mov	d15,#0
-.L586:
+.L616:
 	st.b	[a15]14,d15
-.L587:
+.L617:
 	movh.a	a4,#@his(motor_value)
 	lea	a4,[a4]@los(motor_value)
-.L588:
+.L618:
 	add.a	a4,#7
-.L589:
+.L619:
 	mov	d4,#0
-.L590:
+.L620:
 	mov	d5,#7
 	call	memset
 .L60:
 .L51:
 .L48:
 	ret
-.L213:
+.L234:
 	
-__BLDCDriver_callback_function_end:
-	.size	BLDCDriver_callback,__BLDCDriver_callback_function_end-BLDCDriver_callback
-.L151:
+__Bldc_Driver_callback_function_end:
+	.size	Bldc_Driver_callback,__Bldc_Driver_callback_function_end-Bldc_Driver_callback
+.L157:
 	; End of function
 	
-	.sdecl	'.text.BLDC.BLDC_SetDuty',code,cluster('BLDC_SetDuty')
-	.sect	'.text.BLDC.BLDC_SetDuty'
+	.sdecl	'.text.bldc.Bldc_SetDuty',code,cluster('Bldc_SetDuty')
+	.sect	'.text.bldc.Bldc_SetDuty'
 	.align	2
 	
-	.global	BLDC_SetDuty
-; Function BLDC_SetDuty
+	.global	Bldc_SetDuty
+; Function Bldc_SetDuty
 .L86:
-BLDC_SetDuty:	.type	func
+Bldc_SetDuty:	.type	func
 	movh.a	a15,#@his(motor_value)
 	lea	a15,[a15]@los(motor_value)
-.L595:
+.L625:
 	mov	d15,#165
-.L596:
+.L626:
 	st.b	[a15],d15
-.L597:
+.L627:
 	movh.a	a15,#@his(motor_value)
 	lea	a15,[a15]@los(motor_value)
-.L598:
+.L628:
 	mov	d15,#1
-.L599:
-	st.b	[a15]1,d15
-.L600:
-	movh.a	a15,#@his(motor_value)
-	lea	a15,[a15]@los(motor_value)
-.L601:
-	mov.u	d15,#65280
-.L602:
-	and	d15,d4
-.L603:
-	sha	d15,#-8
-.L604:
-	st.b	[a15]2,d15
-.L605:
-	movh.a	a15,#@his(motor_value)
-	lea	a15,[a15]@los(motor_value)
-.L606:
-	and	d15,d4,#255
-.L607:
-	st.b	[a15]3,d15
-.L608:
-	movh.a	a15,#@his(motor_value)
-	lea	a15,[a15]@los(motor_value)
-.L609:
-	mov.u	d15,#65280
-.L610:
-	and	d15,d5
-.L611:
-	sha	d15,#-8
-.L612:
-	st.b	[a15]4,d15
-.L613:
-	movh.a	a15,#@his(motor_value)
-	lea	a15,[a15]@los(motor_value)
-.L614:
-	and	d15,d5,#255
-.L615:
-	st.b	[a15]5,d15
-.L616:
-	movh.a	a15,#@his(motor_value)
-	lea	a15,[a15]@los(motor_value)
-.L617:
-	mov	d15,#0
-.L618:
-	st.b	[a15]6,d15
-.L224:
-	mov	d0,#0
-.L253:
-	j	.L61
-.L62:
-	movh.a	a2,#@his(motor_value)
-	lea	a2,[a2]@los(motor_value)
-	movh.a	a15,#@his(motor_value)
-	lea	a15,[a15]@los(motor_value)
-.L619:
-	ld.bu	d15,[a15]6
-.L620:
-	movh.a	a15,#@his(motor_value)
-	lea	a15,[a15]@los(motor_value)
-.L621:
-	addsc.a	a15,a15,d0,#0
-	ld.bu	d1,[a15]
-.L622:
-	add	d15,d1
-	st.b	[a2]6,d15
-.L623:
-	add	d0,#1
-.L61:
-	jlt	d0,#6,.L62
-.L225:
-	mov	d4,#3
-.L251:
-	movh.a	a4,#@his(motor_value)
-	lea	a4,[a4]@los(motor_value)
-.L624:
-	mov	d5,#7
-.L252:
-	call	uart_write_buffer
-.L254:
-	ret
-.L220:
-	
-__BLDC_SetDuty_function_end:
-	.size	BLDC_SetDuty,__BLDC_SetDuty_function_end-BLDC_SetDuty
-.L156:
-	; End of function
-	
-	.sdecl	'.text.BLDC.BLDC_AskSpeed',code,cluster('BLDC_AskSpeed')
-	.sect	'.text.BLDC.BLDC_AskSpeed'
-	.align	2
-	
-	.global	BLDC_AskSpeed
-; Function BLDC_AskSpeed
-.L88:
-BLDC_AskSpeed:	.type	func
-	movh.a	a15,#@his(motor_value)
-	lea	a15,[a15]@los(motor_value)
 .L629:
-	mov	d15,#165
-.L630:
-	st.b	[a15],d15
-.L631:
-	movh.a	a15,#@his(motor_value)
-	lea	a15,[a15]@los(motor_value)
-.L632:
-	mov	d15,#2
-.L633:
 	st.b	[a15]1,d15
+.L630:
+	movh.a	a15,#@his(motor_value)
+	lea	a15,[a15]@los(motor_value)
+.L631:
+	mov.u	d15,#65280
+.L632:
+	and	d15,d4
+.L633:
+	sha	d15,#-8
 .L634:
-	movh.a	a15,#@his(motor_value)
-	lea	a15,[a15]@los(motor_value)
-.L635:
-	mov	d15,#0
-.L636:
 	st.b	[a15]2,d15
+.L635:
+	movh.a	a15,#@his(motor_value)
+	lea	a15,[a15]@los(motor_value)
+.L636:
+	and	d15,d4,#255
 .L637:
-	movh.a	a15,#@his(motor_value)
-	lea	a15,[a15]@los(motor_value)
-.L638:
-	mov	d15,#0
-.L639:
 	st.b	[a15]3,d15
-.L640:
+.L638:
 	movh.a	a15,#@his(motor_value)
 	lea	a15,[a15]@los(motor_value)
+.L639:
+	mov.u	d15,#65280
+.L640:
+	and	d15,d5
 .L641:
-	mov	d15,#0
+	sha	d15,#-8
 .L642:
 	st.b	[a15]4,d15
 .L643:
 	movh.a	a15,#@his(motor_value)
 	lea	a15,[a15]@los(motor_value)
 .L644:
-	mov	d15,#0
+	and	d15,d5,#255
 .L645:
 	st.b	[a15]5,d15
 .L646:
 	movh.a	a15,#@his(motor_value)
 	lea	a15,[a15]@los(motor_value)
 .L647:
-	mov	d15,#167
+	mov	d15,#0
 .L648:
 	st.b	[a15]6,d15
+.L245:
+	mov	d0,#0
+.L283:
+	j	.L61
+.L62:
+	movh.a	a2,#@his(motor_value)
+	lea	a2,[a2]@los(motor_value)
+	movh.a	a15,#@his(motor_value)
+	lea	a15,[a15]@los(motor_value)
 .L649:
-	mov	d4,#3
+	ld.bu	d15,[a15]6
 .L650:
+	movh.a	a15,#@his(motor_value)
+	lea	a15,[a15]@los(motor_value)
+.L651:
+	addsc.a	a15,a15,d0,#0
+	ld.bu	d1,[a15]
+.L652:
+	add	d15,d1
+	st.b	[a2]6,d15
+.L653:
+	add	d0,#1
+.L61:
+	jlt	d0,#6,.L62
+.L246:
+	mov	d4,#3
+.L281:
 	movh.a	a4,#@his(motor_value)
 	lea	a4,[a4]@los(motor_value)
-.L651:
+.L654:
+	mov	d5,#7
+.L282:
+	call	uart_write_buffer
+.L284:
+	ret
+.L241:
+	
+__Bldc_SetDuty_function_end:
+	.size	Bldc_SetDuty,__Bldc_SetDuty_function_end-Bldc_SetDuty
+.L162:
+	; End of function
+	
+	.sdecl	'.text.bldc.Bldc_AskSpeed',code,cluster('Bldc_AskSpeed')
+	.sect	'.text.bldc.Bldc_AskSpeed'
+	.align	2
+	
+	.global	Bldc_AskSpeed
+; Function Bldc_AskSpeed
+.L88:
+Bldc_AskSpeed:	.type	func
+	movh.a	a15,#@his(motor_value)
+	lea	a15,[a15]@los(motor_value)
+.L659:
+	mov	d15,#165
+.L660:
+	st.b	[a15],d15
+.L661:
+	movh.a	a15,#@his(motor_value)
+	lea	a15,[a15]@los(motor_value)
+.L662:
+	mov	d15,#2
+.L663:
+	st.b	[a15]1,d15
+.L664:
+	movh.a	a15,#@his(motor_value)
+	lea	a15,[a15]@los(motor_value)
+.L665:
+	mov	d15,#0
+.L666:
+	st.b	[a15]2,d15
+.L667:
+	movh.a	a15,#@his(motor_value)
+	lea	a15,[a15]@los(motor_value)
+.L668:
+	mov	d15,#0
+.L669:
+	st.b	[a15]3,d15
+.L670:
+	movh.a	a15,#@his(motor_value)
+	lea	a15,[a15]@los(motor_value)
+.L671:
+	mov	d15,#0
+.L672:
+	st.b	[a15]4,d15
+.L673:
+	movh.a	a15,#@his(motor_value)
+	lea	a15,[a15]@los(motor_value)
+.L674:
+	mov	d15,#0
+.L675:
+	st.b	[a15]5,d15
+.L676:
+	movh.a	a15,#@his(motor_value)
+	lea	a15,[a15]@los(motor_value)
+.L677:
+	mov	d15,#167
+.L678:
+	st.b	[a15]6,d15
+.L679:
+	mov	d4,#3
+.L680:
+	movh.a	a4,#@his(motor_value)
+	lea	a4,[a4]@los(motor_value)
+.L681:
 	mov	d5,#7
 	call	uart_write_buffer
-.L652:
-	ret
-.L227:
-	
-__BLDC_AskSpeed_function_end:
-	.size	BLDC_AskSpeed,__BLDC_AskSpeed_function_end-BLDC_AskSpeed
-.L161:
-	; End of function
-	
-	.sdecl	'.text.BLDC.BLDCData_init',code,cluster('BLDCData_init')
-	.sect	'.text.BLDC.BLDCData_init'
-	.align	2
-	
-	.global	BLDCData_init
-; Function BLDCData_init
-.L90:
-BLDCData_init:	.type	func
-	movh.a	a4,#@his(motor_value)
-	lea	a4,[a4]@los(motor_value)
-.L671:
-	mov	d4,#0
-.L672:
-	mov	d5,#7
-	call	memset
-.L673:
-	movh.a	a4,#@his(motor_value)
-	lea	a4,[a4]@los(motor_value)
-.L674:
-	add.a	a4,#7
-.L675:
-	mov	d4,#0
-.L676:
-	mov	d5,#7
-	call	memset
-.L677:
-	movh.a	a15,#@his(motor_value)
-	lea	a15,[a15]@los(motor_value)
-.L678:
-	mov	d15,#0
-.L679:
-	st.b	[a15]14,d15
-.L680:
-	movh.a	a15,#@his(motor_value)
-	lea	a15,[a15]@los(motor_value)
-.L681:
-	mov	d15,#0
 .L682:
-	st.b	[a15]15,d15
-.L683:
-	movh.a	a15,#@his(motor_value)
-	lea	a15,[a15]@los(motor_value)
-.L684:
-	mov	d15,#0
-.L685:
-	st.h	[a15]18,d15
-.L686:
-	movh.a	a15,#@his(motor_value)
-	lea	a15,[a15]@los(motor_value)
-.L687:
-	mov	d15,#0
-.L688:
-	st.h	[a15]16,d15
-.L689:
 	ret
-.L229:
+.L248:
 	
-__BLDCData_init_function_end:
-	.size	BLDCData_init,__BLDCData_init_function_end-BLDCData_init
-.L171:
+__Bldc_AskSpeed_function_end:
+	.size	Bldc_AskSpeed,__Bldc_AskSpeed_function_end-Bldc_AskSpeed
+.L167:
 	; End of function
 	
-	.sdecl	'.text.BLDC.BLDC_uart_init',code,cluster('BLDC_uart_init')
-	.sect	'.text.BLDC.BLDC_uart_init'
+	.sdecl	'.text.bldc.BldcData_init',code,cluster('BldcData_init')
+	.sect	'.text.bldc.BldcData_init'
 	.align	2
 	
-	.global	BLDC_uart_init
-; Function BLDC_uart_init
+	.global	BldcData_init
+; Function BldcData_init
+.L90:
+BldcData_init:	.type	func
+	movh.a	a4,#@his(motor_value)
+	lea	a4,[a4]@los(motor_value)
+.L725:
+	mov	d4,#0
+.L726:
+	mov	d5,#7
+	call	memset
+.L727:
+	movh.a	a4,#@his(motor_value)
+	lea	a4,[a4]@los(motor_value)
+.L728:
+	add.a	a4,#7
+.L729:
+	mov	d4,#0
+.L730:
+	mov	d5,#7
+	call	memset
+.L731:
+	movh.a	a15,#@his(motor_value)
+	lea	a15,[a15]@los(motor_value)
+.L732:
+	mov	d15,#0
+.L733:
+	st.b	[a15]14,d15
+.L734:
+	movh.a	a15,#@his(motor_value)
+	lea	a15,[a15]@los(motor_value)
+.L735:
+	mov	d15,#0
+.L736:
+	st.b	[a15]15,d15
+.L737:
+	movh.a	a15,#@his(motor_value)
+	lea	a15,[a15]@los(motor_value)
+.L738:
+	mov	d15,#0
+.L739:
+	st.h	[a15]18,d15
+.L740:
+	movh.a	a15,#@his(motor_value)
+	lea	a15,[a15]@los(motor_value)
+.L741:
+	mov	d15,#0
+.L742:
+	st.h	[a15]16,d15
+.L743:
+	ret
+.L259:
+	
+__BldcData_init_function_end:
+	.size	BldcData_init,__BldcData_init_function_end-BldcData_init
+.L192:
+	; End of function
+	
+	.sdecl	'.text.bldc.Bldc_uart_init',code,cluster('Bldc_uart_init')
+	.sect	'.text.bldc.Bldc_uart_init'
+	.align	2
+	
+	.global	Bldc_uart_init
+; Function Bldc_uart_init
 .L92:
-BLDC_uart_init:	.type	func
+Bldc_uart_init:	.type	func
 	mov	d4,#2
-.L657:
+.L687:
 	mov	d5,#2048
 	addih	d5,d5,#7
-.L658:
+.L688:
 	mov	d6,#14
-.L659:
+.L689:
 	mov	d7,#10
 	call	uart_init
-.L660:
+.L690:
 	mov	d4,#2
-.L661:
+.L691:
 	mov	d5,#1
 	call	uart_rx_interrupt
-.L662:
-	call	BLDCData_init
-.L663:
+.L692:
+	call	BldcData_init
+.L693:
 	mov	d4,#0
-.L664:
+.L694:
 	mov	d5,#0
-	call	BLDC_SetDuty
-.L665:
-	call	BLDC_AskSpeed
-.L666:
+	call	Bldc_SetDuty
+.L695:
+	call	Bldc_AskSpeed
+.L696:
 	ret
-.L228:
+.L249:
 	
-__BLDC_uart_init_function_end:
-	.size	BLDC_uart_init,__BLDC_uart_init_function_end-BLDC_uart_init
-.L166:
+__Bldc_uart_init_function_end:
+	.size	Bldc_uart_init,__Bldc_uart_init_function_end-Bldc_uart_init
+.L172:
 	; End of function
 	
-	.sdecl	'.bss.BLDC.Motor',data,cluster('Motor')
-	.sect	'.bss.BLDC.Motor'
+	.sdecl	'.text.bldc.BldcSetCurrent',code,cluster('BldcSetCurrent')
+	.sect	'.text.bldc.BldcSetCurrent'
+	.align	2
+	
+	.global	BldcSetCurrent
+; Function BldcSetCurrent
+.L94:
+BldcSetCurrent:	.type	func
+	movh.a	a15,#@his(Motor)
+	lea	a15,[a15]@los(Motor)
+.L701:
+	st.w	[a15]36,d4
+.L702:
+	movh.a	a15,#@his(Motor)
+	lea	a15,[a15]@los(Motor)
+.L703:
+	st.w	[a15]276,d5
+.L704:
+	ret
+.L250:
+	
+__BldcSetCurrent_function_end:
+	.size	BldcSetCurrent,__BldcSetCurrent_function_end-BldcSetCurrent
+.L177:
+	; End of function
+	
+	.sdecl	'.text.bldc.BldcSetSpeed',code,cluster('BldcSetSpeed')
+	.sect	'.text.bldc.BldcSetSpeed'
+	.align	2
+	
+	.global	BldcSetSpeed
+; Function BldcSetSpeed
+.L96:
+BldcSetSpeed:	.type	func
+	movh.a	a15,#@his(Motor)
+	lea	a15,[a15]@los(Motor)
+.L709:
+	st.w	[a15]28,d4
+.L710:
+	movh.a	a15,#@his(Motor)
+	lea	a15,[a15]@los(Motor)
+.L711:
+	st.w	[a15]268,d5
+.L712:
+	ret
+.L253:
+	
+__BldcSetSpeed_function_end:
+	.size	BldcSetSpeed,__BldcSetSpeed_function_end-BldcSetSpeed
+.L182:
+	; End of function
+	
+	.sdecl	'.text.bldc.BldcSetPos',code,cluster('BldcSetPos')
+	.sect	'.text.bldc.BldcSetPos'
+	.align	2
+	
+	.global	BldcSetPos
+; Function BldcSetPos
+.L98:
+BldcSetPos:	.type	func
+	movh.a	a15,#@his(Motor)
+	lea	a15,[a15]@los(Motor)
+.L717:
+	st.w	[a15]32,d4
+.L718:
+	movh.a	a15,#@his(Motor)
+	lea	a15,[a15]@los(Motor)
+.L719:
+	st.w	[a15]272,d5
+.L720:
+	ret
+.L256:
+	
+__BldcSetPos_function_end:
+	.size	BldcSetPos,__BldcSetPos_function_end-BldcSetPos
+.L187:
+	; End of function
+	
+	.sdecl	'.bss.bldc.Motor',data,cluster('Motor')
+	.sect	'.bss.bldc.Motor'
 	.global	Motor
 	.align	4
 Motor:	.type	object
 	.size	Motor,480
 	.space	480
-	.sdecl	'.rodata.BLDC..1.ini',data,rom
-	.sect	'.rodata.BLDC..1.ini'
+	.sdecl	'.rodata.bldc..1.ini',data,rom
+	.sect	'.rodata.bldc..1.ini'
 	.align	4
 .1.ini:	.type	object
 	.size	.1.ini,12
 	.space	12
-	.sdecl	'.rodata.BLDC..2.ini',data,rom
-	.sect	'.rodata.BLDC..2.ini'
+	.sdecl	'.rodata.bldc..2.ini',data,rom
+	.sect	'.rodata.bldc..2.ini'
 	.align	4
 .2.ini:	.type	object
 	.size	.2.ini,16
 	.space	16
-	.sdecl	'.rodata.BLDC..3.ini',data,rom
-	.sect	'.rodata.BLDC..3.ini'
+	.sdecl	'.rodata.bldc..3.ini',data,rom
+	.sect	'.rodata.bldc..3.ini'
 	.align	4
 .3.ini:	.type	object
 	.size	.3.ini,12
 	.space	12
-	.sdecl	'.bss.BLDC.motor_value',data,cluster('motor_value')
-	.sect	'.bss.BLDC.motor_value'
+	.sdecl	'.bss.bldc.motor_value',data,cluster('motor_value')
+	.sect	'.bss.bldc.motor_value'
 	.global	motor_value
 	.align	4
 motor_value:	.type	object
 	.size	motor_value,20
 	.space	20
-	.calls	'BLDCSentCurrent','__f_ftos'
-	.calls	'BLDCInit','BLDC_uart_init'
-	.calls	'BLDCInit','BLDCTypeInit'
-	.calls	'BLDCTypeInit','PIDTypeInit'
-	.calls	'BLDCCulculate','BLDCSetZero'
-	.calls	'BLDCPositionMode','PIDOperation'
-	.calls	'BLDCSpeedMode','PIDOperation'
-	.calls	'BLDCLockPosition','PIDOperation'
-	.calls	'BLDCSentCurrent','BLDC_SetDuty'
-	.calls	'BLDCFunc','BLDCPositionMode'
-	.calls	'BLDCFunc','BLDCSpeedMode'
-	.calls	'BLDCFunc','BLDCCurrentMode'
-	.calls	'BLDCFunc','BLDCSentCurrent'
-	.calls	'BLDCDriver_callback','uart_query_byte'
-	.calls	'BLDCDriver_callback','memset'
-	.calls	'BLDC_SetDuty','uart_write_buffer'
-	.calls	'BLDC_AskSpeed','uart_write_buffer'
-	.calls	'BLDCData_init','memset'
-	.calls	'BLDC_uart_init','uart_init'
-	.calls	'BLDC_uart_init','uart_rx_interrupt'
-	.calls	'BLDC_uart_init','BLDCData_init'
-	.calls	'BLDC_uart_init','BLDC_SetDuty'
-	.calls	'BLDC_uart_init','BLDC_AskSpeed'
-	.calls	'BLDCInit','',0
-	.calls	'BLDCTypeInit','',56
-	.calls	'BLDCSetZero','',0
-	.calls	'BLDCCulculate','',0
-	.calls	'BLDCPositionMode','',0
-	.calls	'BLDCSpeedMode','',0
-	.calls	'BLDCCurrentMode','',0
-	.calls	'BLDCLockPosition','',0
-	.calls	'BLDCSentCurrent','',0
-	.calls	'BLDCFunc','',0
-	.calls	'BLDCDriver_callback','',8
-	.calls	'BLDC_SetDuty','',0
-	.calls	'BLDC_AskSpeed','',0
-	.calls	'BLDCData_init','',0
+	.calls	'BldcSentCurrent','__f_ftos'
+	.calls	'BldcInit','Bldc_uart_init'
+	.calls	'BldcInit','BldcTypeInit'
+	.calls	'BldcTypeInit','PIDTypeInit'
+	.calls	'BldcCulculate','BldcSetZero'
+	.calls	'BldcPositionMode','PIDOperation'
+	.calls	'BldcSpeedMode','PIDOperation'
+	.calls	'BldcLockPosition','PIDOperation'
+	.calls	'BldcSentCurrent','Bldc_SetDuty'
+	.calls	'BldcFunc','BldcPositionMode'
+	.calls	'BldcFunc','BldcSpeedMode'
+	.calls	'BldcFunc','BldcCurrentMode'
+	.calls	'BldcFunc','BldcSentCurrent'
+	.calls	'Bldc_Driver_callback','uart_query_byte'
+	.calls	'Bldc_Driver_callback','memset'
+	.calls	'Bldc_SetDuty','uart_write_buffer'
+	.calls	'Bldc_AskSpeed','uart_write_buffer'
+	.calls	'BldcData_init','memset'
+	.calls	'Bldc_uart_init','uart_init'
+	.calls	'Bldc_uart_init','uart_rx_interrupt'
+	.calls	'Bldc_uart_init','BldcData_init'
+	.calls	'Bldc_uart_init','Bldc_SetDuty'
+	.calls	'Bldc_uart_init','Bldc_AskSpeed'
+	.calls	'BldcInit','',0
+	.calls	'BldcTypeInit','',56
+	.calls	'BldcSetZero','',0
+	.calls	'BldcCulculate','',0
+	.calls	'BldcPositionMode','',0
+	.calls	'BldcSpeedMode','',0
+	.calls	'BldcCurrentMode','',0
+	.calls	'BldcLockPosition','',0
+	.calls	'BldcSentCurrent','',0
+	.calls	'BldcFunc','',0
+	.calls	'Bldc_Driver_callback','',8
+	.calls	'Bldc_SetDuty','',0
+	.calls	'Bldc_AskSpeed','',0
+	.calls	'BldcData_init','',0
+	.calls	'Bldc_uart_init','',0
+	.calls	'BldcSetCurrent','',0
+	.calls	'BldcSetSpeed','',0
 	.extern	memset
 	.extern	uart_write_buffer
 	.extern	uart_query_byte
@@ -1484,20 +1565,20 @@ motor_value:	.type	object
 	.extern	PIDTypeInit
 	.extern	PIDOperation
 	.extern	__f_ftos
-	.calls	'BLDC_uart_init','',0
+	.calls	'BldcSetPos','',0
 	.sdecl	'.debug_info',debug
 	.sect	'.debug_info'
-.L94:
+.L100:
 	.word	147877
 	.half	3
-	.word	.L95
+	.word	.L101
 	.byte	4
-.L93:
+.L99:
 	.byte	1
-	.byte	'../code/src/BLDC.c',0
+	.byte	'../code/src/bldc.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1
-	.word	.L96
+	.word	.L102
 	.byte	2,1,1,3
 	.word	165
 	.byte	4
@@ -1506,7 +1587,7 @@ motor_value:	.type	object
 	.word	168
 	.byte	6,0,7
 	.byte	'__fract',0,4,128,1
-.L178:
+.L199:
 	.byte	7
 	.byte	'float',0,4,4,8
 	.byte	'Ifx__float_to_fract',0,3,1,152,2,18
@@ -1533,13 +1614,13 @@ motor_value:	.type	object
 	.byte	'value',0,2,143,1,43
 	.word	311
 	.byte	6,0
-.L193:
+.L214:
 	.byte	7
 	.byte	'unsigned int',0,4,7
-.L218:
+.L239:
 	.byte	7
 	.byte	'int',0,4,5
-.L214:
+.L235:
 	.byte	7
 	.byte	'unsigned char',0,1,8,10
 	.byte	'_Ifx_SRC_SRCR_Bits',0,4,45,16,4,11
@@ -6536,7 +6617,7 @@ motor_value:	.type	object
 	.byte	'alti',0,17,191,18,82
 	.word	32172
 	.byte	6,0
-.L221:
+.L242:
 	.byte	7
 	.byte	'short int',0,2,5,7
 	.byte	'long int',0,4,5,20,19,60,9,12,13
@@ -7108,7 +7189,7 @@ motor_value:	.type	object
 	.word	225
 	.byte	14
 	.word	225
-.L183:
+.L204:
 	.byte	10
 	.byte	'_Value',0,23,32,16,12,13
 	.byte	'speed',0
@@ -7129,7 +7210,7 @@ motor_value:	.type	object
 	.word	445
 	.byte	14
 	.word	445
-.L185:
+.L206:
 	.byte	10
 	.byte	'_PulseType',0,23,39,16,16,13
 	.byte	'pulseRead',0
@@ -7149,7 +7230,7 @@ motor_value:	.type	object
 	.byte	4,2,35,10,0,15,23,22,9,1,16
 	.byte	'Left',0,0,16
 	.byte	'Right',0,1,0
-.L187:
+.L208:
 	.byte	20,23,49,9,12,13
 	.byte	'direct',0
 	.word	35495
@@ -7161,7 +7242,7 @@ motor_value:	.type	object
 	.word	225
 	.byte	4,2,35,6,0,7
 	.byte	'_Bool',0,1,2
-.L189:
+.L210:
 	.byte	20,23,57,9,12,13
 	.byte	'isStuck',0
 	.word	35584
@@ -7181,11 +7262,11 @@ motor_value:	.type	object
 	.byte	'maxRPM',0
 	.word	225
 	.byte	4,2,35,8,0,30
-	.byte	'_BLDCMode',0,23,25,14,1,16
+	.byte	'_BldcMode',0,23,25,14,1,16
 	.byte	'CURRENT',0,0,16
 	.byte	'RPM',0,1,16
 	.byte	'POSITION',0,2,0,10
-	.byte	'_BLDC',0,23,70,16,240,1,13
+	.byte	'_Bldc',0,23,70,16,240,1,13
 	.byte	'enable',0
 	.word	35584
 	.byte	1,2,35,0,13
@@ -7228,7 +7309,7 @@ motor_value:	.type	object
 	.byte	'currentPID',0
 	.word	34935
 	.byte	52,3,35,188,1,0
-.L199:
+.L220:
 	.byte	3
 	.word	35765
 	.byte	31
@@ -21201,6 +21282,9 @@ motor_value:	.type	object
 	.byte	'seekfree_assistant_image_type_enum',0,52,86,2
 	.word	145939
 	.byte	31
+	.byte	'u8',0,53,54,18
+	.word	452
+	.byte	31
 	.byte	'PIDMode',0,22,22,3
 	.word	34842
 	.byte	31
@@ -21211,100 +21295,48 @@ motor_value:	.type	object
 	.byte	19,1,0,10
 	.byte	'_DMFType',0,22,46,16,32,13
 	.byte	'EF',0
-	.word	146192
+	.word	146203
 	.byte	8,2,35,0,13
 	.byte	'En',0
-	.word	146192
+	.word	146203
 	.byte	8,2,35,8,13
 	.byte	'DF',0
-	.word	146192
+	.word	146203
 	.byte	8,2,35,16,13
 	.byte	'Dn',0
-	.word	146192
+	.word	146203
 	.byte	8,2,35,24,0,31
 	.byte	'DMFType',0,22,51,3
-	.word	146201
+	.word	146212
 	.byte	18,28
 	.word	225
 	.byte	19,6,0,10
 	.byte	'_UFFType',0,22,53,16,84,13
 	.byte	'UFF_P',0
-	.word	146280
+	.word	146291
 	.byte	28,2,35,0,13
 	.byte	'UFF_I',0
-	.word	146280
+	.word	146291
 	.byte	28,2,35,28,13
 	.byte	'UFF_D',0
-	.word	146280
+	.word	146291
 	.byte	28,2,35,56,0,31
 	.byte	'UFFType',0,22,57,3
-	.word	146289
-	.byte	31
-	.byte	'LegNum',0,23,22,30
-	.word	35495
-	.byte	31
-	.byte	'BLDCMode',0,23,29,3
-	.word	35722
-	.byte	31
-	.byte	'ValueType',0,23,36,3
-	.word	35298
-	.byte	31
-	.byte	'PulseType',0,23,46,3
-	.word	35383
-	.byte	31
-	.byte	'MotorParamType',0,23,54,3
-	.word	35516
-	.byte	31
-	.byte	'MotorLimit',0,23,67,3
-	.word	35593
-	.byte	31
-	.byte	'BLDCType',0,23,83,3
-	.word	35765
-	.byte	18,7
-	.word	452
-	.byte	19,6,0
-.L230:
-	.byte	20,23,86,9,20,13
-	.byte	'send_data_buffer',0
-	.word	146492
-	.byte	7,2,35,0,13
-	.byte	'receive_data_buffer',0
-	.word	146492
-	.byte	7,2,35,7,13
-	.byte	'receive_data_count',0
-	.word	452
-	.byte	1,2,35,14,13
-	.byte	'sum_check_data',0
-	.word	452
-	.byte	1,2,35,15,13
-	.byte	'receive_left_speed_data',0
-	.word	32464
-	.byte	2,2,35,16,13
-	.byte	'receive_right_speed_data',0
-	.word	32464
-	.byte	2,2,35,18,0,31
-	.byte	'BLDCDataType',0,23,94,3
-	.word	146501
-.L231:
-	.byte	18,224,3
-	.word	35765
-	.byte	19,1,0,31
-	.byte	'u8',0,53,54,18
-	.word	452
+	.word	146300
 	.byte	15,54,17,9,1,16
 	.byte	'Fl',0,0,16
 	.byte	'Fr',0,1,16
 	.byte	'Bl',0,2,16
 	.byte	'Br',0,3,0,31
 	.byte	'JointNum',0,54,17,33
-	.word	146723
+	.word	146376
 	.byte	10
 	.byte	'_Servo',0,54,20,16,20,13
 	.byte	'pin',0
 	.word	133155
 	.byte	1,2,35,0,13
 	.byte	'num',0
-	.word	146723
+	.word	146376
 	.byte	1,2,35,1,13
 	.byte	'angleSet',0
 	.word	225
@@ -21322,7 +21354,7 @@ motor_value:	.type	object
 	.word	445
 	.byte	4,2,35,16,0,31
 	.byte	'ServoType',0,54,30,3
-	.word	146766
+	.word	146419
 	.byte	10
 	.byte	'_PointType',0,55,6,16,8,13
 	.byte	'x',0
@@ -21332,7 +21364,7 @@ motor_value:	.type	object
 	.word	225
 	.byte	4,2,35,4,0,31
 	.byte	'Vector2f',0,55,10,3
-	.word	146907
+	.word	146560
 	.byte	10
 	.byte	'_Ctrl',0,56,7,16,16,13
 	.byte	'leftTime',0
@@ -21342,9 +21374,9 @@ motor_value:	.type	object
 	.word	311
 	.byte	8,2,35,8,0,31
 	.byte	'ParamType',0,56,11,3
-	.word	146963
+	.word	146616
 	.byte	18,88
-	.word	146907
+	.word	146560
 	.byte	19,10,0,10
 	.byte	'_Motion',0,56,14,16,96,13
 	.byte	't',0
@@ -21354,11 +21386,60 @@ motor_value:	.type	object
 	.word	452
 	.byte	1,2,35,4,13
 	.byte	'CtrlPoint',0
-	.word	147030
+	.word	146683
 	.byte	88,2,35,8,0,31
 	.byte	'MotionType',0,56,19,3
-	.word	147039
-	.byte	10
+	.word	146692
+	.byte	31
+	.byte	'LegNum',0,23,22,30
+	.word	35495
+	.byte	31
+	.byte	'BldcMode',0,23,29,3
+	.word	35722
+	.byte	31
+	.byte	'ValueType',0,23,36,3
+	.word	35298
+	.byte	31
+	.byte	'PulseType',0,23,46,3
+	.word	35383
+	.byte	31
+	.byte	'MotorParamType',0,23,54,3
+	.word	35516
+	.byte	31
+	.byte	'MotorLimit',0,23,67,3
+	.word	35593
+	.byte	31
+	.byte	'BldcType',0,23,83,3
+	.word	35765
+	.byte	18,7
+	.word	452
+	.byte	19,6,0
+.L260:
+	.byte	20,23,86,9,20,13
+	.byte	'send_data_buffer',0
+	.word	146898
+	.byte	7,2,35,0,13
+	.byte	'receive_data_buffer',0
+	.word	146898
+	.byte	7,2,35,7,13
+	.byte	'receive_data_count',0
+	.word	452
+	.byte	1,2,35,14,13
+	.byte	'sum_check_data',0
+	.word	452
+	.byte	1,2,35,15,13
+	.byte	'receive_left_speed_data',0
+	.word	32464
+	.byte	2,2,35,16,13
+	.byte	'receive_right_speed_data',0
+	.word	32464
+	.byte	2,2,35,18,0,31
+	.byte	'BldcDataType',0,23,94,3
+	.word	146907
+.L261:
+	.byte	18,224,3
+	.word	35765
+	.byte	19,1,0,10
 	.byte	'_Imu',0,57,5,16,76,13
 	.byte	'accel_x',0
 	.word	225
@@ -21420,7 +21501,7 @@ motor_value:	.type	object
 	.byte	'IMUType',0,57,30,3
 	.word	147118
 	.byte	3
-	.word	146766
+	.word	146419
 	.byte	3
 	.word	311
 	.byte	10
@@ -21444,16 +21525,16 @@ motor_value:	.type	object
 	.word	225
 	.byte	4,2,35,20,13
 	.byte	'PosNow',0
-	.word	146907
+	.word	146560
 	.byte	8,2,35,24,13
 	.byte	'PosSet',0
-	.word	146907
+	.word	146560
 	.byte	8,2,35,32,13
 	.byte	'PosStart',0
-	.word	146907
+	.word	146560
 	.byte	8,2,35,40,13
 	.byte	'PosTarget',0
-	.word	146907
+	.word	146560
 	.byte	8,2,35,48,13
 	.byte	'reachTime',0
 	.word	225
@@ -21462,7 +21543,7 @@ motor_value:	.type	object
 	.word	147500
 	.byte	4,2,35,60,13
 	.byte	'motion',0
-	.word	147039
+	.word	146692
 	.byte	96,2,35,64,0,31
 	.byte	'LegType',0,58,40,3
 	.word	147505
@@ -21483,7 +21564,7 @@ motor_value:	.type	object
 	.byte	0
 	.sdecl	'.debug_abbrev',debug
 	.sect	'.debug_abbrev'
-.L95:
+.L101:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,21,0,54,15,39,12,0,0,3,15,0,73,19,0,0,4,46,1,3,8,32,13
 	.byte	58,15,59,15,57,15,54,15,39,12,0,0,5,5,0,3,8,58,15,59,15,57,15,73,19,0,0,6,11,0,0,0,7,36,0,3,8,11,15,62
 	.byte	15,0,0,8,46,1,3,8,32,13,58,15,59,15,57,15,73,19,54,15,39,12,0,0,9,59,0,3,8,0,0,10,19,1,3,8,58,15,59,15
@@ -21497,12 +21578,12 @@ motor_value:	.type	object
 	.byte	0,0,0
 	.sdecl	'.debug_line',debug
 	.sect	'.debug_line'
-.L96:
-	.word	.L256-.L255
-.L255:
+.L102:
+	.word	.L286-.L285
+.L285:
 	.half	3
-	.word	.L258-.L257
-.L257:
+	.word	.L288-.L287
+.L287:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
 	.byte	'D:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B\\\\_Reg',0
 	.byte	'D:\\Software 1\\ADS\\ADS\\AURIX-Studio-1.10.6\\tools\\Compilers\\Tasking_1.1r8\\ctc\\include\\',0
@@ -21549,8 +21630,8 @@ motor_value:	.type	object
 	.byte	'string.h',0,2,0,0
 	.byte	'zf_driver_uart.h',0,3,0,0
 	.byte	'Pid.h',0,4,0,0
-	.byte	'BLDC.h',0,4,0,0
-	.byte	'../code/src/BLDC.c',0,0,0,0
+	.byte	'bldc.h',0,4,0,0
+	.byte	'../code/src/bldc.c',0,0,0,0
 	.byte	'stdint.h',0,2,0,0
 	.byte	'stdio.h',0,2,0,0
 	.byte	'D:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\Cpu\\Std\\Platform_Types.h',0
@@ -21597,228 +21678,168 @@ motor_value:	.type	object
 	.byte	'imu.h',0,4,0,0
 	.byte	'leg.h',0,4,0,0
 	.byte	'robot.h',0,4,0,0,0
-.L258:
-.L256:
-	.sdecl	'.debug_info',debug,cluster('BLDCInit')
+.L288:
+.L286:
+	.sdecl	'.debug_info',debug,cluster('BldcInit')
 	.sect	'.debug_info'
-.L97:
+.L103:
 	.word	209
 	.half	3
-	.word	.L98
+	.word	.L104
 	.byte	4,1
-	.byte	'../code/src/BLDC.c',0
+	.byte	'../code/src/bldc.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1
-	.word	.L100,.L99
+	.word	.L106,.L105
 	.byte	2
-	.word	.L93
+	.word	.L99
 	.byte	3
-	.byte	'BLDCInit',0,1,6,6,1,1,1
-	.word	.L64,.L176,.L63
+	.byte	'BldcInit',0,1,6,6,1,1,1
+	.word	.L64,.L197,.L63
 	.byte	4
-	.word	.L64,.L176
+	.word	.L64,.L197
 	.byte	0,0
-	.sdecl	'.debug_abbrev',debug,cluster('BLDCInit')
+	.sdecl	'.debug_abbrev',debug,cluster('BldcInit')
 	.sect	'.debug_abbrev'
-.L98:
+.L104:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
-	.sdecl	'.debug_line',debug,cluster('BLDCInit')
+	.sdecl	'.debug_line',debug,cluster('BldcInit')
 	.sect	'.debug_line'
-.L99:
-	.word	.L260-.L259
-.L259:
+.L105:
+	.word	.L290-.L289
+.L289:
 	.half	3
-	.word	.L262-.L261
-.L261:
+	.word	.L292-.L291
+.L291:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
-	.byte	'../code/src/BLDC.c',0,0,0,0,0
-.L262:
+	.byte	'../code/src/bldc.c',0,0,0,0,0
+.L292:
 	.byte	5,16,7,0,5,2
 	.word	.L64
 	.byte	3,7,1,5,14,9
-	.half	.L263-.L64
+	.half	.L293-.L64
 	.byte	3,1,1,5,1,9
-	.half	.L264-.L263
+	.half	.L294-.L293
 	.byte	3,1,1,7,9
-	.half	.L101-.L264
+	.half	.L107-.L294
 	.byte	0,1,1
-.L260:
-	.sdecl	'.debug_ranges',debug,cluster('BLDCInit')
+.L290:
+	.sdecl	'.debug_ranges',debug,cluster('BldcInit')
 	.sect	'.debug_ranges'
-.L100:
-	.word	-1,.L64,0,.L101-.L64,0,0
-	.sdecl	'.debug_info',debug,cluster('BLDCTypeInit')
+.L106:
+	.word	-1,.L64,0,.L107-.L64,0,0
+	.sdecl	'.debug_info',debug,cluster('BldcTypeInit')
 	.sect	'.debug_info'
-.L102:
+.L108:
 	.word	377
 	.half	3
-	.word	.L103
+	.word	.L109
 	.byte	4,1
-	.byte	'../code/src/BLDC.c',0
+	.byte	'../code/src/bldc.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1
-	.word	.L105,.L104
+	.word	.L111,.L110
 	.byte	2
-	.word	.L93
+	.word	.L99
 	.byte	3
-	.byte	'BLDCTypeInit',0,1,14,6,1,1,1
-	.word	.L66,.L177,.L65
+	.byte	'BldcTypeInit',0,1,14,6,1,1,1
+	.word	.L66,.L198,.L65
 	.byte	4
-	.word	.L66,.L177
+	.word	.L66,.L198
 	.byte	5
 	.byte	'Kp_rpm',0,1,16,8
-	.word	.L178,.L179
+	.word	.L199,.L200
 	.byte	5
 	.byte	'Ki_rpm',0,1,17,8
-	.word	.L178,.L180
+	.word	.L199,.L201
 	.byte	5
 	.byte	'Kd_rpm',0,1,18,8
-	.word	.L178,.L181
+	.word	.L199,.L202
 	.byte	4
-	.word	.L182,.L177
+	.word	.L203,.L198
 	.byte	5
 	.byte	'Value',0,1,23,15
-	.word	.L183,.L184
+	.word	.L204,.L205
 	.byte	5
 	.byte	'pulse',0,1,24,15
-	.word	.L185,.L186
+	.word	.L206,.L207
 	.byte	5
 	.byte	'param',0,1,25,17
-	.word	.L187,.L188
+	.word	.L208,.L209
 	.byte	5
 	.byte	'limit',0,1,26,16
-	.word	.L189,.L190
+	.word	.L210,.L211
 	.byte	4
-	.word	.L191,.L192
+	.word	.L212,.L213
 	.byte	5
 	.byte	'i',0,1,30,14
-	.word	.L193,.L194
+	.word	.L214,.L215
 	.byte	0,0,0,0,0
-	.sdecl	'.debug_abbrev',debug,cluster('BLDCTypeInit')
+	.sdecl	'.debug_abbrev',debug,cluster('BldcTypeInit')
 	.sect	'.debug_abbrev'
-.L103:
+.L109:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
-	.sdecl	'.debug_line',debug,cluster('BLDCTypeInit')
+	.sdecl	'.debug_line',debug,cluster('BldcTypeInit')
 	.sect	'.debug_line'
-.L104:
-	.word	.L266-.L265
-.L265:
+.L110:
+	.word	.L296-.L295
+.L295:
 	.half	3
-	.word	.L268-.L267
-.L267:
+	.word	.L298-.L297
+.L297:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
-	.byte	'../code/src/BLDC.c',0,0,0,0,0
-.L268:
+	.byte	'../code/src/bldc.c',0,0,0,0,0
+.L298:
 	.byte	5,6,7,0,5,2
 	.word	.L66
 	.byte	3,13,1,5,18,9
-	.half	.L232-.L66
+	.half	.L262-.L66
 	.byte	3,2,1,9
-	.half	.L233-.L232
+	.half	.L263-.L262
 	.byte	3,1,1,9
-	.half	.L234-.L233
+	.half	.L264-.L263
 	.byte	3,1,1,5,2,9
-	.half	.L235-.L234
+	.half	.L265-.L264
 	.byte	3,2,1,5,26,9
-	.half	.L269-.L235
+	.half	.L299-.L265
 	.byte	1,5,24,9
-	.half	.L270-.L269
-	.byte	1,5,2,9
-	.half	.L271-.L270
-	.byte	3,1,1,5,26,9
-	.half	.L272-.L271
-	.byte	1,5,24,9
-	.half	.L273-.L272
-	.byte	1,9
-	.half	.L182-.L273
-	.byte	3,2,1,5,22,9
-	.half	.L274-.L182
-	.byte	1,5,24,9
-	.half	.L275-.L274
-	.byte	3,1,1,5,22,9
-	.half	.L276-.L275
-	.byte	1,5,26,9
-	.half	.L277-.L276
-	.byte	3,1,1,5,24,9
-	.half	.L278-.L277
-	.byte	1,5,18,9
-	.half	.L279-.L278
-	.byte	3,2,1,5,16,9
-	.half	.L280-.L279
-	.byte	1,5,21,9
-	.half	.L281-.L280
-	.byte	3,1,1,5,19,9
-	.half	.L282-.L281
-	.byte	1,5,16,9
-	.half	.L191-.L282
-	.byte	3,2,1,5,26,9
-	.half	.L236-.L191
-	.byte	1,5,8,9
-	.half	.L6-.L236
-	.byte	3,1,1,5,3,9
-	.half	.L283-.L6
-	.byte	1,5,8,9
-	.half	.L284-.L283
-	.byte	1,5,24,9
-	.half	.L285-.L284
-	.byte	1,5,22,9
-	.half	.L286-.L285
-	.byte	1,5,8,9
-	.half	.L287-.L286
-	.byte	3,1,1,5,3,9
-	.half	.L288-.L287
-	.byte	1,5,8,9
-	.half	.L289-.L288
-	.byte	1,5,23,9
-	.half	.L290-.L289
-	.byte	1,5,21,9
-	.half	.L291-.L290
-	.byte	1,5,8,9
-	.half	.L292-.L291
-	.byte	3,2,1,5,3,9
-	.half	.L293-.L292
-	.byte	1,5,8,9
-	.half	.L294-.L293
-	.byte	1,5,24,9
-	.half	.L295-.L294
-	.byte	1,5,22,9
-	.half	.L296-.L295
-	.byte	1,5,8,9
-	.half	.L297-.L296
-	.byte	3,1,1,5,3,9
-	.half	.L298-.L297
-	.byte	1,5,8,9
-	.half	.L299-.L298
-	.byte	1,5,22,9
 	.half	.L300-.L299
-	.byte	1,5,20,9
+	.byte	1,5,2,9
 	.half	.L301-.L300
-	.byte	1,5,8,9
+	.byte	3,1,1,5,26,9
 	.half	.L302-.L301
-	.byte	3,1,1,5,3,9
+	.byte	1,5,24,9
 	.half	.L303-.L302
-	.byte	1,5,8,9
-	.half	.L304-.L303
+	.byte	1,9
+	.half	.L203-.L303
+	.byte	3,2,1,5,22,9
+	.half	.L304-.L203
 	.byte	1,5,24,9
 	.half	.L305-.L304
-	.byte	1,5,22,9
+	.byte	3,1,1,5,22,9
 	.half	.L306-.L305
-	.byte	1,5,8,9
+	.byte	1,5,26,9
 	.half	.L307-.L306
-	.byte	3,1,1,5,3,9
+	.byte	3,1,1,5,24,9
 	.half	.L308-.L307
-	.byte	1,5,8,9
+	.byte	1,5,18,9
 	.half	.L309-.L308
-	.byte	1,5,24,9
+	.byte	3,2,1,5,16,9
 	.half	.L310-.L309
-	.byte	1,5,22,9
+	.byte	1,5,21,9
 	.half	.L311-.L310
-	.byte	1,5,8,9
+	.byte	3,1,1,5,19,9
 	.half	.L312-.L311
+	.byte	1,5,16,9
+	.half	.L212-.L312
+	.byte	3,2,1,5,26,9
+	.half	.L266-.L212
+	.byte	1,5,8,9
+	.half	.L6-.L266
 	.byte	3,1,1,5,3,9
-	.half	.L313-.L312
+	.half	.L313-.L6
 	.byte	1,5,8,9
 	.half	.L314-.L313
 	.byte	1,5,24,9
@@ -21831,19 +21852,19 @@ motor_value:	.type	object
 	.half	.L318-.L317
 	.byte	1,5,8,9
 	.half	.L319-.L318
-	.byte	1,5,24,9
+	.byte	1,5,23,9
 	.half	.L320-.L319
-	.byte	1,5,22,9
+	.byte	1,5,21,9
 	.half	.L321-.L320
 	.byte	1,5,8,9
 	.half	.L322-.L321
-	.byte	3,1,1,5,3,9
+	.byte	3,2,1,5,3,9
 	.half	.L323-.L322
 	.byte	1,5,8,9
 	.half	.L324-.L323
-	.byte	1,5,23,9
+	.byte	1,5,24,9
 	.half	.L325-.L324
-	.byte	1,5,21,9
+	.byte	1,5,22,9
 	.half	.L326-.L325
 	.byte	1,5,8,9
 	.half	.L327-.L326
@@ -21851,9 +21872,9 @@ motor_value:	.type	object
 	.half	.L328-.L327
 	.byte	1,5,8,9
 	.half	.L329-.L328
-	.byte	1,5,23,9
+	.byte	1,5,22,9
 	.half	.L330-.L329
-	.byte	1,5,21,9
+	.byte	1,5,20,9
 	.half	.L331-.L330
 	.byte	1,5,8,9
 	.half	.L332-.L331
@@ -21861,176 +21882,236 @@ motor_value:	.type	object
 	.half	.L333-.L332
 	.byte	1,5,8,9
 	.half	.L334-.L333
-	.byte	1,5,23,9
+	.byte	1,5,24,9
 	.half	.L335-.L334
-	.byte	1,5,21,9
+	.byte	1,5,22,9
 	.half	.L336-.L335
-	.byte	1,5,56,9
+	.byte	1,5,8,9
 	.half	.L337-.L336
-	.byte	3,3,1,5,70,9
+	.byte	3,1,1,5,3,9
 	.half	.L338-.L337
-	.byte	1,5,21,9
+	.byte	1,5,8,9
 	.half	.L339-.L338
-	.byte	1,5,16,9
+	.byte	1,5,24,9
 	.half	.L340-.L339
-	.byte	1,5,21,9
+	.byte	1,5,22,9
 	.half	.L341-.L340
-	.byte	1,5,24,9
+	.byte	1,5,8,9
 	.half	.L342-.L341
-	.byte	1,5,33,9
+	.byte	3,1,1,5,3,9
 	.half	.L343-.L342
-	.byte	1,5,38,9
+	.byte	1,5,8,9
 	.half	.L344-.L343
-	.byte	1,5,43,9
-	.half	.L345-.L344
-	.byte	1,5,48,9
-	.half	.L346-.L345
-	.byte	1,5,65,9
-	.half	.L347-.L346
-	.byte	3,1,1,5,79,9
-	.half	.L348-.L347
-	.byte	1,5,21,9
-	.half	.L349-.L348
-	.byte	1,5,16,9
-	.half	.L350-.L349
-	.byte	1,5,21,9
-	.half	.L351-.L350
 	.byte	1,5,24,9
+	.half	.L345-.L344
+	.byte	1,5,22,9
+	.half	.L346-.L345
+	.byte	1,5,8,9
+	.half	.L347-.L346
+	.byte	3,1,1,5,3,9
+	.half	.L348-.L347
+	.byte	1,5,8,9
+	.half	.L349-.L348
+	.byte	1,5,24,9
+	.half	.L350-.L349
+	.byte	1,5,22,9
+	.half	.L351-.L350
+	.byte	1,5,8,9
 	.half	.L352-.L351
-	.byte	1,5,57,9
+	.byte	3,1,1,5,3,9
 	.half	.L353-.L352
-	.byte	1,5,60,9
-	.half	.L238-.L353
-	.byte	3,1,1,5,21,9
-	.half	.L354-.L238
-	.byte	1,5,16,9
+	.byte	1,5,8,9
+	.half	.L354-.L353
+	.byte	1,5,23,9
 	.half	.L355-.L354
 	.byte	1,5,21,9
 	.half	.L356-.L355
-	.byte	1,5,24,9
+	.byte	1,5,8,9
 	.half	.L357-.L356
-	.byte	1,5,37,9
+	.byte	3,1,1,5,3,9
 	.half	.L358-.L357
-	.byte	1,5,42,9
+	.byte	1,5,8,9
 	.half	.L359-.L358
-	.byte	1,5,47,9
+	.byte	1,5,23,9
 	.half	.L360-.L359
-	.byte	1,5,52,9
+	.byte	1,5,21,9
 	.half	.L361-.L360
-	.byte	1,5,29,9
+	.byte	1,5,8,9
 	.half	.L362-.L361
+	.byte	3,1,1,5,3,9
+	.half	.L363-.L362
+	.byte	1,5,8,9
+	.half	.L364-.L363
+	.byte	1,5,23,9
+	.half	.L365-.L364
+	.byte	1,5,21,9
+	.half	.L366-.L365
+	.byte	1,5,56,9
+	.half	.L367-.L366
+	.byte	3,3,1,5,70,9
+	.half	.L368-.L367
+	.byte	1,5,21,9
+	.half	.L369-.L368
+	.byte	1,5,16,9
+	.half	.L370-.L369
+	.byte	1,5,21,9
+	.half	.L371-.L370
+	.byte	1,5,24,9
+	.half	.L372-.L371
+	.byte	1,5,33,9
+	.half	.L373-.L372
+	.byte	1,5,38,9
+	.half	.L374-.L373
+	.byte	1,5,43,9
+	.half	.L375-.L374
+	.byte	1,5,48,9
+	.half	.L376-.L375
+	.byte	1,5,65,9
+	.half	.L377-.L376
+	.byte	3,1,1,5,79,9
+	.half	.L378-.L377
+	.byte	1,5,21,9
+	.half	.L379-.L378
+	.byte	1,5,16,9
+	.half	.L380-.L379
+	.byte	1,5,21,9
+	.half	.L381-.L380
+	.byte	1,5,24,9
+	.half	.L382-.L381
+	.byte	1,5,57,9
+	.half	.L383-.L382
+	.byte	1,5,60,9
+	.half	.L268-.L383
+	.byte	3,1,1,5,21,9
+	.half	.L384-.L268
+	.byte	1,5,16,9
+	.half	.L385-.L384
+	.byte	1,5,21,9
+	.half	.L386-.L385
+	.byte	1,5,24,9
+	.half	.L387-.L386
+	.byte	1,5,37,9
+	.half	.L388-.L387
+	.byte	1,5,42,9
+	.half	.L389-.L388
+	.byte	1,5,47,9
+	.half	.L390-.L389
+	.byte	1,5,52,9
+	.half	.L391-.L390
+	.byte	1,5,29,9
+	.half	.L392-.L391
 	.byte	3,111,1,5,26,9
-	.half	.L5-.L362
+	.half	.L5-.L392
 	.byte	1,5,1,7,9
-	.half	.L192-.L5
+	.half	.L213-.L5
 	.byte	3,19,1,7,9
-	.half	.L106-.L192
+	.half	.L112-.L213
 	.byte	0,1,1
-.L266:
-	.sdecl	'.debug_ranges',debug,cluster('BLDCTypeInit')
+.L296:
+	.sdecl	'.debug_ranges',debug,cluster('BldcTypeInit')
 	.sect	'.debug_ranges'
-.L105:
-	.word	-1,.L66,0,.L106-.L66,0,0
-	.sdecl	'.debug_info',debug,cluster('BLDCFunc')
+.L111:
+	.word	-1,.L66,0,.L112-.L66,0,0
+	.sdecl	'.debug_info',debug,cluster('BldcFunc')
 	.sect	'.debug_info'
-.L107:
+.L113:
 	.word	235
 	.half	3
-	.word	.L108
+	.word	.L114
 	.byte	4,1
-	.byte	'../code/src/BLDC.c',0
+	.byte	'../code/src/bldc.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1
-	.word	.L110,.L109
+	.word	.L116,.L115
 	.byte	2
-	.word	.L93
+	.word	.L99
 	.byte	3
-	.byte	'BLDCFunc',0,1,126,6,1,1,1
-	.word	.L82,.L195,.L81
+	.byte	'BldcFunc',0,1,126,6,1,1,1
+	.word	.L82,.L216,.L81
 	.byte	4
-	.word	.L82,.L195
+	.word	.L82,.L216
 	.byte	4
-	.word	.L82,.L196
+	.word	.L82,.L217
 	.byte	5
 	.byte	'i',0,1,128,1,14
-	.word	.L193,.L197
+	.word	.L214,.L218
 	.byte	0,0,0,0
-	.sdecl	'.debug_abbrev',debug,cluster('BLDCFunc')
+	.sdecl	'.debug_abbrev',debug,cluster('BldcFunc')
 	.sect	'.debug_abbrev'
-.L108:
+.L114:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
-	.sdecl	'.debug_line',debug,cluster('BLDCFunc')
+	.sdecl	'.debug_line',debug,cluster('BldcFunc')
 	.sect	'.debug_line'
-.L109:
-	.word	.L364-.L363
-.L363:
+.L115:
+	.word	.L394-.L393
+.L393:
 	.half	3
-	.word	.L366-.L365
-.L365:
+	.word	.L396-.L395
+.L395:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
-	.byte	'../code/src/BLDC.c',0,0,0,0,0
-.L366:
+	.byte	'../code/src/bldc.c',0,0,0,0,0
+.L396:
 	.byte	5,16,7,0,5,2
 	.word	.L82
 	.byte	3,255,0,1,5,26,9
-	.half	.L247-.L82
+	.half	.L277-.L82
 	.byte	1,5,12,9
-	.half	.L36-.L247
+	.half	.L36-.L277
 	.byte	3,1,1,5,7,9
-	.half	.L367-.L36
+	.half	.L397-.L36
 	.byte	1,5,12,9
-	.half	.L368-.L367
+	.half	.L398-.L397
 	.byte	1,5,15,9
-	.half	.L369-.L368
+	.half	.L399-.L398
 	.byte	1,5,3,9
-	.half	.L370-.L369
+	.half	.L400-.L399
 	.byte	1,5,13,7,9
-	.half	.L371-.L370
+	.half	.L401-.L400
 	.byte	3,1,1,5,8,9
-	.half	.L372-.L371
+	.half	.L402-.L401
 	.byte	1,5,13,9
-	.half	.L373-.L372
+	.half	.L403-.L402
 	.byte	1,5,16,9
-	.half	.L374-.L373
+	.half	.L404-.L403
 	.byte	1,5,4,9
-	.half	.L375-.L374
+	.half	.L405-.L404
 	.byte	1,5,13,7,9
-	.half	.L376-.L375
+	.half	.L406-.L405
 	.byte	3,1,1,5,18,9
-	.half	.L377-.L376
+	.half	.L407-.L406
 	.byte	1,5,11,9
-	.half	.L378-.L377
+	.half	.L408-.L407
 	.byte	3,7,1,9
-	.half	.L379-.L378
+	.half	.L409-.L408
 	.byte	3,125,1,9
-	.half	.L380-.L379
+	.half	.L410-.L409
 	.byte	3,125,1,5,30,9
-	.half	.L41-.L380
+	.half	.L41-.L410
 	.byte	3,1,1,5,25,9
-	.half	.L381-.L41
+	.half	.L411-.L41
 	.byte	1,5,30,9
-	.half	.L382-.L381
+	.half	.L412-.L411
 	.byte	1,5,7,9
-	.half	.L383-.L382
+	.half	.L413-.L412
 	.byte	3,1,1,5,27,9
-	.half	.L40-.L383
+	.half	.L40-.L413
 	.byte	3,2,1,5,22,9
-	.half	.L384-.L40
+	.half	.L414-.L40
 	.byte	1,5,27,9
-	.half	.L385-.L384
+	.half	.L415-.L414
 	.byte	1,5,7,9
-	.half	.L386-.L385
+	.half	.L416-.L415
 	.byte	3,1,1,5,29,9
-	.half	.L39-.L386
+	.half	.L39-.L416
 	.byte	3,2,1,5,24,9
-	.half	.L387-.L39
+	.half	.L417-.L39
 	.byte	1,5,29,9
-	.half	.L388-.L387
+	.half	.L418-.L417
 	.byte	1,5,7,9
-	.half	.L389-.L388
+	.half	.L419-.L418
 	.byte	3,1,1,9
-	.half	.L42-.L389
+	.half	.L42-.L419
 	.byte	3,3,1,5,4,9
 	.half	.L43-.L42
 	.byte	3,2,1,5,29,9
@@ -22038,510 +22119,510 @@ motor_value:	.type	object
 	.byte	3,111,1,5,26,9
 	.half	.L35-.L37
 	.byte	1,5,17,7,9
-	.half	.L196-.L35
+	.half	.L217-.L35
 	.byte	3,23,1,5,1,9
-	.half	.L390-.L196
+	.half	.L420-.L217
 	.byte	3,1,1,7,9
-	.half	.L111-.L390
+	.half	.L117-.L420
 	.byte	0,1,1
-.L364:
-	.sdecl	'.debug_ranges',debug,cluster('BLDCFunc')
+.L394:
+	.sdecl	'.debug_ranges',debug,cluster('BldcFunc')
 	.sect	'.debug_ranges'
-.L110:
-	.word	-1,.L82,0,.L111-.L82,0,0
-	.sdecl	'.debug_info',debug,cluster('BLDCSetZero')
+.L116:
+	.word	-1,.L82,0,.L117-.L82,0,0
+	.sdecl	'.debug_info',debug,cluster('BldcSetZero')
 	.sect	'.debug_info'
-.L112:
+.L118:
 	.word	230
 	.half	3
-	.word	.L113
+	.word	.L119
 	.byte	4,1
-	.byte	'../code/src/BLDC.c',0
+	.byte	'../code/src/bldc.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1
-	.word	.L115,.L114
+	.word	.L121,.L120
 	.byte	2
-	.word	.L93
+	.word	.L99
 	.byte	3
-	.byte	'BLDCSetZero',0,1,52,6,1,1,1
-	.word	.L68,.L198,.L67
+	.byte	'BldcSetZero',0,1,52,6,1,1,1
+	.word	.L68,.L219,.L67
 	.byte	4
 	.byte	'motor',0,1,52,28
-	.word	.L199,.L200
+	.word	.L220,.L221
 	.byte	5
-	.word	.L68,.L198
+	.word	.L68,.L219
 	.byte	0,0
-	.sdecl	'.debug_abbrev',debug,cluster('BLDCSetZero')
+	.sdecl	'.debug_abbrev',debug,cluster('BldcSetZero')
 	.sect	'.debug_abbrev'
-.L113:
+.L119:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
-	.sdecl	'.debug_line',debug,cluster('BLDCSetZero')
+	.sdecl	'.debug_line',debug,cluster('BldcSetZero')
 	.sect	'.debug_line'
-.L114:
-	.word	.L392-.L391
-.L391:
+.L120:
+	.word	.L422-.L421
+.L421:
 	.half	3
-	.word	.L394-.L393
-.L393:
+	.word	.L424-.L423
+.L423:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
-	.byte	'../code/src/BLDC.c',0,0,0,0,0
-.L394:
+	.byte	'../code/src/bldc.c',0,0,0,0,0
+.L424:
 	.byte	5,21,7,0,5,2
 	.word	.L68
 	.byte	3,53,1,5,19,9
-	.half	.L395-.L68
+	.half	.L425-.L68
 	.byte	1,5,26,9
-	.half	.L396-.L395
+	.half	.L426-.L425
 	.byte	3,1,1,5,24,9
-	.half	.L397-.L396
+	.half	.L427-.L426
 	.byte	1,5,27,9
-	.half	.L398-.L397
+	.half	.L428-.L427
 	.byte	3,1,1,5,25,9
-	.half	.L399-.L398
+	.half	.L429-.L428
 	.byte	1,5,28,9
-	.half	.L400-.L399
+	.half	.L430-.L429
 	.byte	3,1,1,5,26,9
-	.half	.L401-.L400
+	.half	.L431-.L430
 	.byte	1,5,1,9
-	.half	.L402-.L401
+	.half	.L432-.L431
 	.byte	3,1,1,7,9
-	.half	.L116-.L402
+	.half	.L122-.L432
 	.byte	0,1,1
-.L392:
-	.sdecl	'.debug_ranges',debug,cluster('BLDCSetZero')
+.L422:
+	.sdecl	'.debug_ranges',debug,cluster('BldcSetZero')
 	.sect	'.debug_ranges'
-.L115:
-	.word	-1,.L68,0,.L116-.L68,0,0
-	.sdecl	'.debug_info',debug,cluster('BLDCCulculate')
+.L121:
+	.word	-1,.L68,0,.L122-.L68,0,0
+	.sdecl	'.debug_info',debug,cluster('BldcCulculate')
 	.sect	'.debug_info'
-.L117:
+.L123:
 	.word	232
 	.half	3
-	.word	.L118
+	.word	.L124
 	.byte	4,1
-	.byte	'../code/src/BLDC.c',0
+	.byte	'../code/src/bldc.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1
-	.word	.L120,.L119
+	.word	.L126,.L125
 	.byte	2
-	.word	.L93
+	.word	.L99
 	.byte	3
-	.byte	'BLDCCulculate',0,1,62,6,1,1,1
-	.word	.L70,.L201,.L69
+	.byte	'BldcCulculate',0,1,62,6,1,1,1
+	.word	.L70,.L222,.L69
 	.byte	4
 	.byte	'motor',0,1,62,30
-	.word	.L199,.L202
+	.word	.L220,.L223
 	.byte	5
-	.word	.L70,.L201
+	.word	.L70,.L222
 	.byte	0,0
-	.sdecl	'.debug_abbrev',debug,cluster('BLDCCulculate')
+	.sdecl	'.debug_abbrev',debug,cluster('BldcCulculate')
 	.sect	'.debug_abbrev'
-.L118:
+.L124:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
-	.sdecl	'.debug_line',debug,cluster('BLDCCulculate')
+	.sdecl	'.debug_line',debug,cluster('BldcCulculate')
 	.sect	'.debug_line'
-.L119:
-	.word	.L404-.L403
-.L403:
+.L125:
+	.word	.L434-.L433
+.L433:
 	.half	3
-	.word	.L406-.L405
-.L405:
+	.word	.L436-.L435
+.L435:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
-	.byte	'../code/src/BLDC.c',0,0,0,0,0
-.L406:
+	.byte	'../code/src/bldc.c',0,0,0,0,0
+.L436:
 	.byte	5,38,7,0,5,2
 	.word	.L70
 	.byte	3,63,1,5,63,9
-	.half	.L407-.L70
+	.half	.L437-.L70
 	.byte	1,5,49,9
-	.half	.L408-.L407
-	.byte	1,5,24,9
-	.half	.L409-.L408
-	.byte	1,5,39,9
-	.half	.L410-.L409
-	.byte	3,1,1,5,25,9
-	.half	.L411-.L410
-	.byte	1,5,6,9
-	.half	.L412-.L411
-	.byte	3,2,1,5,49,9
-	.half	.L14-.L412
-	.byte	1,5,2,9
-	.half	.L413-.L14
-	.byte	1,5,51,7,9
-	.half	.L414-.L413
-	.byte	3,2,1,5,39,9
-	.half	.L17-.L414
-	.byte	1,5,80,9
-	.half	.L415-.L17
-	.byte	1,5,49,9
-	.half	.L416-.L415
-	.byte	1,5,25,9
-	.half	.L417-.L416
-	.byte	1,5,14,9
-	.half	.L15-.L417
-	.byte	3,2,1,5,41,9
-	.half	.L418-.L15
-	.byte	1,5,26,9
-	.half	.L419-.L418
-	.byte	1,5,39,9
-	.half	.L420-.L419
-	.byte	3,1,1,5,53,9
-	.half	.L421-.L420
-	.byte	1,5,51,9
-	.half	.L422-.L421
-	.byte	1,5,59,9
-	.half	.L423-.L422
-	.byte	1,5,57,9
-	.half	.L424-.L423
-	.byte	1,5,25,9
-	.half	.L425-.L424
-	.byte	1,5,40,9
-	.half	.L426-.L425
-	.byte	3,1,1,5,50,9
-	.half	.L427-.L426
-	.byte	1,5,73,9
-	.half	.L428-.L427
-	.byte	1,5,56,9
-	.half	.L429-.L428
-	.byte	1,5,25,9
-	.half	.L430-.L429
-	.byte	1,5,28,9
-	.half	.L431-.L430
-	.byte	3,1,1,5,21,9
-	.half	.L432-.L431
-	.byte	1,5,11,9
-	.half	.L433-.L432
-	.byte	3,2,1,5,2,9
-	.half	.L434-.L433
-	.byte	1,5,40,7,9
-	.half	.L435-.L434
-	.byte	3,1,1,5,26,9
-	.half	.L436-.L435
-	.byte	1,5,11,9
-	.half	.L19-.L436
-	.byte	3,2,1,5,2,9
-	.half	.L437-.L19
-	.byte	1,5,15,7,9
 	.half	.L438-.L437
+	.byte	1,5,24,9
+	.half	.L439-.L438
+	.byte	1,5,39,9
+	.half	.L440-.L439
+	.byte	3,1,1,5,25,9
+	.half	.L441-.L440
+	.byte	1,5,6,9
+	.half	.L442-.L441
+	.byte	3,2,1,5,49,9
+	.half	.L14-.L442
+	.byte	1,5,2,9
+	.half	.L443-.L14
+	.byte	1,5,51,7,9
+	.half	.L444-.L443
+	.byte	3,2,1,5,39,9
+	.half	.L17-.L444
+	.byte	1,5,80,9
+	.half	.L445-.L17
+	.byte	1,5,49,9
+	.half	.L446-.L445
+	.byte	1,5,25,9
+	.half	.L447-.L446
+	.byte	1,5,14,9
+	.half	.L15-.L447
+	.byte	3,2,1,5,41,9
+	.half	.L448-.L15
+	.byte	1,5,26,9
+	.half	.L449-.L448
+	.byte	1,5,39,9
+	.half	.L450-.L449
+	.byte	3,1,1,5,53,9
+	.half	.L451-.L450
+	.byte	1,5,51,9
+	.half	.L452-.L451
+	.byte	1,5,59,9
+	.half	.L453-.L452
+	.byte	1,5,57,9
+	.half	.L454-.L453
+	.byte	1,5,25,9
+	.half	.L455-.L454
+	.byte	1,5,40,9
+	.half	.L456-.L455
+	.byte	3,1,1,5,50,9
+	.half	.L457-.L456
+	.byte	1,5,73,9
+	.half	.L458-.L457
+	.byte	1,5,56,9
+	.half	.L459-.L458
+	.byte	1,5,25,9
+	.half	.L460-.L459
+	.byte	1,5,28,9
+	.half	.L461-.L460
+	.byte	3,1,1,5,21,9
+	.half	.L462-.L461
+	.byte	1,5,11,9
+	.half	.L463-.L462
+	.byte	3,2,1,5,2,9
+	.half	.L464-.L463
+	.byte	1,5,40,7,9
+	.half	.L465-.L464
+	.byte	3,1,1,5,26,9
+	.half	.L466-.L465
+	.byte	1,5,11,9
+	.half	.L19-.L466
+	.byte	3,2,1,5,2,9
+	.half	.L467-.L19
+	.byte	1,5,15,7,9
+	.half	.L468-.L467
 	.byte	3,1,1,5,1,9
-	.half	.L20-.L438
+	.half	.L20-.L468
 	.byte	3,1,1,7,9
-	.half	.L121-.L20
+	.half	.L127-.L20
 	.byte	0,1,1
-.L404:
-	.sdecl	'.debug_ranges',debug,cluster('BLDCCulculate')
+.L434:
+	.sdecl	'.debug_ranges',debug,cluster('BldcCulculate')
 	.sect	'.debug_ranges'
-.L120:
-	.word	-1,.L70,0,.L121-.L70,0,0
-	.sdecl	'.debug_info',debug,cluster('BLDCSpeedMode')
+.L126:
+	.word	-1,.L70,0,.L127-.L70,0,0
+	.sdecl	'.debug_info',debug,cluster('BldcSpeedMode')
 	.sect	'.debug_info'
-.L122:
+.L128:
 	.word	232
 	.half	3
-	.word	.L123
+	.word	.L129
 	.byte	4,1
-	.byte	'../code/src/BLDC.c',0
+	.byte	'../code/src/bldc.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1
-	.word	.L125,.L124
+	.word	.L131,.L130
 	.byte	2
-	.word	.L93
+	.word	.L99
 	.byte	3
-	.byte	'BLDCSpeedMode',0,1,94,6,1,1,1
-	.word	.L74,.L203,.L73
+	.byte	'BldcSpeedMode',0,1,94,6,1,1,1
+	.word	.L74,.L224,.L73
 	.byte	4
 	.byte	'motor',0,1,94,30
-	.word	.L199,.L204
+	.word	.L220,.L225
 	.byte	5
-	.word	.L74,.L203
+	.word	.L74,.L224
 	.byte	0,0
-	.sdecl	'.debug_abbrev',debug,cluster('BLDCSpeedMode')
+	.sdecl	'.debug_abbrev',debug,cluster('BldcSpeedMode')
 	.sect	'.debug_abbrev'
-.L123:
-	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
-	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
-	.sdecl	'.debug_line',debug,cluster('BLDCSpeedMode')
-	.sect	'.debug_line'
-.L124:
-	.word	.L440-.L439
-.L439:
-	.half	3
-	.word	.L442-.L441
-.L441:
-	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
-	.byte	'../code/src/BLDC.c',0,0,0,0,0
-.L442:
-	.byte	5,6,7,0,5,2
-	.word	.L74
-	.byte	3,221,0,1,5,73,9
-	.half	.L244-.L74
-	.byte	3,2,1,5,96,9
-	.half	.L443-.L244
-	.byte	1,5,17,9
-	.half	.L444-.L443
-	.byte	1,5,48,9
-	.half	.L445-.L444
-	.byte	1,5,96,9
-	.half	.L243-.L445
-	.byte	1,5,26,9
-	.half	.L446-.L243
-	.byte	1,5,1,9
-	.half	.L447-.L446
-	.byte	3,2,1,7,9
-	.half	.L126-.L447
-	.byte	0,1,1
-.L440:
-	.sdecl	'.debug_ranges',debug,cluster('BLDCSpeedMode')
-	.sect	'.debug_ranges'
-.L125:
-	.word	-1,.L74,0,.L126-.L74,0,0
-	.sdecl	'.debug_info',debug,cluster('BLDCPositionMode')
-	.sect	'.debug_info'
-.L127:
-	.word	262
-	.half	3
-	.word	.L128
-	.byte	4,1
-	.byte	'../code/src/BLDC.c',0
-	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
-	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1
-	.word	.L130,.L129
-	.byte	2
-	.word	.L93
-	.byte	3
-	.byte	'BLDCPositionMode',0,1,84,6,1,1,1
-	.word	.L72,.L205,.L71
-	.byte	4
-	.byte	'motor',0,1,84,33
-	.word	.L199,.L206
-	.byte	5
-	.word	.L72,.L205
-	.byte	6
-	.byte	'setPulseTotal',0,1,86,8
-	.word	.L178,.L207
-	.byte	0,0,0
-	.sdecl	'.debug_abbrev',debug,cluster('BLDCPositionMode')
-	.sect	'.debug_abbrev'
-.L128:
-	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
-	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
-	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
-	.sdecl	'.debug_line',debug,cluster('BLDCPositionMode')
-	.sect	'.debug_line'
 .L129:
-	.word	.L449-.L448
-.L448:
-	.half	3
-	.word	.L451-.L450
-.L450:
-	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
-	.byte	'../code/src/BLDC.c',0,0,0,0,0
-.L451:
-	.byte	5,6,7,0,5,2
-	.word	.L72
-	.byte	3,211,0,1,5,42,9
-	.half	.L240-.L72
-	.byte	3,2,1,5,51,9
-	.half	.L452-.L240
-	.byte	1,5,49,9
-	.half	.L453-.L452
-	.byte	1,5,68,9
-	.half	.L454-.L453
-	.byte	1,5,66,9
-	.half	.L455-.L454
-	.byte	1,5,76,9
-	.half	.L241-.L455
-	.byte	3,2,1,5,56,9
-	.half	.L456-.L241
-	.byte	1,5,46,9
-	.half	.L457-.L456
-	.byte	1,5,89,9
-	.half	.L239-.L457
-	.byte	1,5,25,9
-	.half	.L242-.L239
-	.byte	1,5,73,9
-	.half	.L458-.L242
-	.byte	3,1,1,5,96,9
-	.half	.L459-.L458
-	.byte	1,5,17,9
-	.half	.L460-.L459
-	.byte	1,5,48,9
-	.half	.L461-.L460
-	.byte	1,5,96,9
-	.half	.L462-.L461
-	.byte	1,5,26,9
-	.half	.L463-.L462
-	.byte	1,5,1,9
-	.half	.L464-.L463
-	.byte	3,2,1,7,9
-	.half	.L131-.L464
-	.byte	0,1,1
-.L449:
-	.sdecl	'.debug_ranges',debug,cluster('BLDCPositionMode')
-	.sect	'.debug_ranges'
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('BldcSpeedMode')
+	.sect	'.debug_line'
 .L130:
-	.word	-1,.L72,0,.L131-.L72,0,0
-	.sdecl	'.debug_info',debug,cluster('BLDCCurrentMode')
-	.sect	'.debug_info'
-.L132:
-	.word	234
-	.half	3
-	.word	.L133
-	.byte	4,1
-	.byte	'../code/src/BLDC.c',0
-	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
-	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1
-	.word	.L135,.L134
-	.byte	2
-	.word	.L93
-	.byte	3
-	.byte	'BLDCCurrentMode',0,1,101,6,1,1,1
-	.word	.L76,.L208,.L75
-	.byte	4
-	.byte	'motor',0,1,101,32
-	.word	.L199,.L209
-	.byte	5
-	.word	.L76,.L208
-	.byte	0,0
-	.sdecl	'.debug_abbrev',debug,cluster('BLDCCurrentMode')
-	.sect	'.debug_abbrev'
-.L133:
-	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
-	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
-	.sdecl	'.debug_line',debug,cluster('BLDCCurrentMode')
-	.sect	'.debug_line'
-.L134:
-	.word	.L466-.L465
-.L465:
-	.half	3
-	.word	.L468-.L467
-.L467:
-	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
-	.byte	'../code/src/BLDC.c',0,0,0,0,0
-.L468:
-	.byte	5,1,7,0,5,2
-	.word	.L76
-	.byte	3,231,0,1,7,9
-	.half	.L136-.L76
-	.byte	0,1,1
-.L466:
-	.sdecl	'.debug_ranges',debug,cluster('BLDCCurrentMode')
-	.sect	'.debug_ranges'
-.L135:
-	.word	-1,.L76,0,.L136-.L76,0,0
-	.sdecl	'.debug_info',debug,cluster('BLDCLockPosition')
-	.sect	'.debug_info'
-.L137:
-	.word	235
-	.half	3
-	.word	.L138
-	.byte	4,1
-	.byte	'../code/src/BLDC.c',0
-	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
-	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1
-	.word	.L140,.L139
-	.byte	2
-	.word	.L93
-	.byte	3
-	.byte	'BLDCLockPosition',0,1,107,6,1,1,1
-	.word	.L78,.L210,.L77
-	.byte	4
-	.byte	'motor',0,1,107,33
-	.word	.L199,.L211
-	.byte	5
-	.word	.L78,.L210
-	.byte	0,0
-	.sdecl	'.debug_abbrev',debug,cluster('BLDCLockPosition')
-	.sect	'.debug_abbrev'
-.L138:
-	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
-	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
-	.sdecl	'.debug_line',debug,cluster('BLDCLockPosition')
-	.sect	'.debug_line'
-.L139:
 	.word	.L470-.L469
 .L469:
 	.half	3
 	.word	.L472-.L471
 .L471:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
-	.byte	'../code/src/BLDC.c',0,0,0,0,0
+	.byte	'../code/src/bldc.c',0,0,0,0,0
 .L472:
+	.byte	5,6,7,0,5,2
+	.word	.L74
+	.byte	3,221,0,1,5,73,9
+	.half	.L274-.L74
+	.byte	3,2,1,5,96,9
+	.half	.L473-.L274
+	.byte	1,5,17,9
+	.half	.L474-.L473
+	.byte	1,5,48,9
+	.half	.L475-.L474
+	.byte	1,5,96,9
+	.half	.L273-.L475
+	.byte	1,5,26,9
+	.half	.L476-.L273
+	.byte	1,5,1,9
+	.half	.L477-.L476
+	.byte	3,2,1,7,9
+	.half	.L132-.L477
+	.byte	0,1,1
+.L470:
+	.sdecl	'.debug_ranges',debug,cluster('BldcSpeedMode')
+	.sect	'.debug_ranges'
+.L131:
+	.word	-1,.L74,0,.L132-.L74,0,0
+	.sdecl	'.debug_info',debug,cluster('BldcPositionMode')
+	.sect	'.debug_info'
+.L133:
+	.word	262
+	.half	3
+	.word	.L134
+	.byte	4,1
+	.byte	'../code/src/bldc.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1
+	.word	.L136,.L135
+	.byte	2
+	.word	.L99
+	.byte	3
+	.byte	'BldcPositionMode',0,1,84,6,1,1,1
+	.word	.L72,.L226,.L71
+	.byte	4
+	.byte	'motor',0,1,84,33
+	.word	.L220,.L227
+	.byte	5
+	.word	.L72,.L226
+	.byte	6
+	.byte	'setPulseTotal',0,1,86,8
+	.word	.L199,.L228
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('BldcPositionMode')
+	.sect	'.debug_abbrev'
+.L134:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('BldcPositionMode')
+	.sect	'.debug_line'
+.L135:
+	.word	.L479-.L478
+.L478:
+	.half	3
+	.word	.L481-.L480
+.L480:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../code/src/bldc.c',0,0,0,0,0
+.L481:
+	.byte	5,6,7,0,5,2
+	.word	.L72
+	.byte	3,211,0,1,5,42,9
+	.half	.L270-.L72
+	.byte	3,2,1,5,51,9
+	.half	.L482-.L270
+	.byte	1,5,49,9
+	.half	.L483-.L482
+	.byte	1,5,68,9
+	.half	.L484-.L483
+	.byte	1,5,66,9
+	.half	.L485-.L484
+	.byte	1,5,76,9
+	.half	.L271-.L485
+	.byte	3,2,1,5,56,9
+	.half	.L486-.L271
+	.byte	1,5,46,9
+	.half	.L487-.L486
+	.byte	1,5,89,9
+	.half	.L269-.L487
+	.byte	1,5,25,9
+	.half	.L272-.L269
+	.byte	1,5,73,9
+	.half	.L488-.L272
+	.byte	3,1,1,5,96,9
+	.half	.L489-.L488
+	.byte	1,5,17,9
+	.half	.L490-.L489
+	.byte	1,5,48,9
+	.half	.L491-.L490
+	.byte	1,5,96,9
+	.half	.L492-.L491
+	.byte	1,5,26,9
+	.half	.L493-.L492
+	.byte	1,5,1,9
+	.half	.L494-.L493
+	.byte	3,2,1,7,9
+	.half	.L137-.L494
+	.byte	0,1,1
+.L479:
+	.sdecl	'.debug_ranges',debug,cluster('BldcPositionMode')
+	.sect	'.debug_ranges'
+.L136:
+	.word	-1,.L72,0,.L137-.L72,0,0
+	.sdecl	'.debug_info',debug,cluster('BldcCurrentMode')
+	.sect	'.debug_info'
+.L138:
+	.word	234
+	.half	3
+	.word	.L139
+	.byte	4,1
+	.byte	'../code/src/bldc.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1
+	.word	.L141,.L140
+	.byte	2
+	.word	.L99
+	.byte	3
+	.byte	'BldcCurrentMode',0,1,101,6,1,1,1
+	.word	.L76,.L229,.L75
+	.byte	4
+	.byte	'motor',0,1,101,32
+	.word	.L220,.L230
+	.byte	5
+	.word	.L76,.L229
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('BldcCurrentMode')
+	.sect	'.debug_abbrev'
+.L139:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('BldcCurrentMode')
+	.sect	'.debug_line'
+.L140:
+	.word	.L496-.L495
+.L495:
+	.half	3
+	.word	.L498-.L497
+.L497:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../code/src/bldc.c',0,0,0,0,0
+.L498:
+	.byte	5,1,7,0,5,2
+	.word	.L76
+	.byte	3,231,0,1,7,9
+	.half	.L142-.L76
+	.byte	0,1,1
+.L496:
+	.sdecl	'.debug_ranges',debug,cluster('BldcCurrentMode')
+	.sect	'.debug_ranges'
+.L141:
+	.word	-1,.L76,0,.L142-.L76,0,0
+	.sdecl	'.debug_info',debug,cluster('BldcLockPosition')
+	.sect	'.debug_info'
+.L143:
+	.word	235
+	.half	3
+	.word	.L144
+	.byte	4,1
+	.byte	'../code/src/bldc.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1
+	.word	.L146,.L145
+	.byte	2
+	.word	.L99
+	.byte	3
+	.byte	'BldcLockPosition',0,1,107,6,1,1,1
+	.word	.L78,.L231,.L77
+	.byte	4
+	.byte	'motor',0,1,107,33
+	.word	.L220,.L232
+	.byte	5
+	.word	.L78,.L231
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('BldcLockPosition')
+	.sect	'.debug_abbrev'
+.L144:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('BldcLockPosition')
+	.sect	'.debug_line'
+.L145:
+	.word	.L500-.L499
+.L499:
+	.half	3
+	.word	.L502-.L501
+.L501:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../code/src/bldc.c',0,0,0,0,0
+.L502:
 	.byte	5,6,7,0,5,2
 	.word	.L78
 	.byte	3,234,0,1,5,76,9
-	.half	.L246-.L78
+	.half	.L276-.L78
 	.byte	3,2,1,5,56,9
-	.half	.L473-.L246
+	.half	.L503-.L276
 	.byte	1,5,109,9
-	.half	.L474-.L473
+	.half	.L504-.L503
 	.byte	1,5,89,9
-	.half	.L475-.L474
+	.half	.L505-.L504
 	.byte	1,5,46,9
-	.half	.L476-.L475
+	.half	.L506-.L505
 	.byte	1,5,89,9
-	.half	.L245-.L476
+	.half	.L275-.L506
 	.byte	1,5,25,9
-	.half	.L477-.L245
+	.half	.L507-.L275
 	.byte	1,5,73,9
-	.half	.L478-.L477
+	.half	.L508-.L507
 	.byte	3,1,1,5,96,9
-	.half	.L479-.L478
+	.half	.L509-.L508
 	.byte	1,5,17,9
-	.half	.L480-.L479
+	.half	.L510-.L509
 	.byte	1,5,48,9
-	.half	.L481-.L480
+	.half	.L511-.L510
 	.byte	1,5,96,9
-	.half	.L482-.L481
+	.half	.L512-.L511
 	.byte	1,5,26,9
-	.half	.L483-.L482
+	.half	.L513-.L512
 	.byte	1,5,1,9
-	.half	.L484-.L483
+	.half	.L514-.L513
 	.byte	3,2,1,7,9
-	.half	.L141-.L484
+	.half	.L147-.L514
 	.byte	0,1,1
-.L470:
-	.sdecl	'.debug_ranges',debug,cluster('BLDCLockPosition')
+.L500:
+	.sdecl	'.debug_ranges',debug,cluster('BldcLockPosition')
 	.sect	'.debug_ranges'
-.L140:
-	.word	-1,.L78,0,.L141-.L78,0,0
-	.sdecl	'.debug_info',debug,cluster('BLDCSentCurrent')
+.L146:
+	.word	-1,.L78,0,.L147-.L78,0,0
+	.sdecl	'.debug_info',debug,cluster('BldcSentCurrent')
 	.sect	'.debug_info'
-.L142:
+.L148:
 	.word	216
 	.half	3
-	.word	.L143
+	.word	.L149
 	.byte	4,1
-	.byte	'../code/src/BLDC.c',0
+	.byte	'../code/src/bldc.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1
-	.word	.L145,.L144
+	.word	.L151,.L150
 	.byte	2
-	.word	.L93
+	.word	.L99
 	.byte	3
-	.byte	'BLDCSentCurrent',0,1,115,6,1,1,1
-	.word	.L80,.L212,.L79
+	.byte	'BldcSentCurrent',0,1,115,6,1,1,1
+	.word	.L80,.L233,.L79
 	.byte	4
-	.word	.L80,.L212
+	.word	.L80,.L233
 	.byte	0,0
-	.sdecl	'.debug_abbrev',debug,cluster('BLDCSentCurrent')
+	.sdecl	'.debug_abbrev',debug,cluster('BldcSentCurrent')
 	.sect	'.debug_abbrev'
-.L143:
+.L149:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
-	.sdecl	'.debug_line',debug,cluster('BLDCSentCurrent')
+	.sdecl	'.debug_line',debug,cluster('BldcSentCurrent')
 	.sect	'.debug_line'
-.L144:
-	.word	.L486-.L485
-.L485:
+.L150:
+	.word	.L516-.L515
+.L515:
 	.half	3
-	.word	.L488-.L487
-.L487:
+	.word	.L518-.L517
+.L517:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
-	.byte	'../code/src/BLDC.c',0,0,0,0,0
-.L488:
+	.byte	'../code/src/bldc.c',0,0,0,0,0
+.L518:
 	.byte	5,2,7,0,5,2
 	.word	.L80
 	.byte	3,245,0,1,9
@@ -22549,487 +22630,376 @@ motor_value:	.type	object
 	.byte	3,1,1,5,15,9
 	.half	.L32-.L25
 	.byte	3,2,1,5,32,9
-	.half	.L489-.L32
+	.half	.L519-.L32
 	.byte	1,5,42,9
-	.half	.L490-.L489
+	.half	.L520-.L519
 	.byte	1,5,59,9
-	.half	.L491-.L490
+	.half	.L521-.L520
 	.byte	1,5,32,9
-	.half	.L492-.L491
+	.half	.L522-.L521
 	.byte	1,5,59,9
-	.half	.L493-.L492
+	.half	.L523-.L522
 	.byte	1,5,1,9
-	.half	.L494-.L493
+	.half	.L524-.L523
 	.byte	3,1,1,7,9
-	.half	.L146-.L494
+	.half	.L152-.L524
 	.byte	0,1,1
-.L486:
-	.sdecl	'.debug_ranges',debug,cluster('BLDCSentCurrent')
+.L516:
+	.sdecl	'.debug_ranges',debug,cluster('BldcSentCurrent')
 	.sect	'.debug_ranges'
-.L145:
-	.word	-1,.L80,0,.L146-.L80,0,0
-	.sdecl	'.debug_info',debug,cluster('BLDCDriver_callback')
+.L151:
+	.word	-1,.L80,0,.L152-.L80,0,0
+	.sdecl	'.debug_info',debug,cluster('Bldc_Driver_callback')
 	.sect	'.debug_info'
-.L147:
-	.word	273
+.L153:
+	.word	274
 	.half	3
-	.word	.L148
+	.word	.L154
 	.byte	4,1
-	.byte	'../code/src/BLDC.c',0
+	.byte	'../code/src/bldc.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1
-	.word	.L150,.L149
+	.word	.L156,.L155
 	.byte	2
-	.word	.L93
+	.word	.L99
 	.byte	3
-	.byte	'BLDCDriver_callback',0,1,161,1,6,1,1,1
-	.word	.L84,.L213,.L83
+	.byte	'Bldc_Driver_callback',0,1,161,1,6,1,1,1
+	.word	.L84,.L234,.L83
 	.byte	4
-	.word	.L84,.L213
+	.word	.L84,.L234
 	.byte	5
 	.byte	'receive_data',0,1,163,1,8
-	.word	.L214,.L215
+	.word	.L235,.L236
 	.byte	4
-	.word	.L216,.L217
+	.word	.L237,.L238
 	.byte	5
 	.byte	'i',0,1,181,1,14
-	.word	.L218,.L219
+	.word	.L239,.L240
 	.byte	0,0,0,0
-	.sdecl	'.debug_abbrev',debug,cluster('BLDCDriver_callback')
+	.sdecl	'.debug_abbrev',debug,cluster('Bldc_Driver_callback')
 	.sect	'.debug_abbrev'
-.L148:
+.L154:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
-	.sdecl	'.debug_line',debug,cluster('BLDCDriver_callback')
+	.sdecl	'.debug_line',debug,cluster('Bldc_Driver_callback')
 	.sect	'.debug_line'
-.L149:
-	.word	.L496-.L495
-.L495:
+.L155:
+	.word	.L526-.L525
+.L525:
 	.half	3
-	.word	.L498-.L497
-.L497:
+	.word	.L528-.L527
+.L527:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
-	.byte	'../code/src/BLDC.c',0,0,0,0,0
-.L498:
+	.byte	'../code/src/bldc.c',0,0,0,0,0
+.L528:
 	.byte	5,6,7,0,5,2
 	.word	.L84
 	.byte	3,160,1,1,5,22,9
-	.half	.L248-.L84
+	.half	.L278-.L84
 	.byte	3,4,1,5,42,9
-	.half	.L499-.L248
+	.half	.L529-.L278
 	.byte	1,5,2,9
-	.half	.L500-.L499
-	.byte	1,5,7,7,9
-	.half	.L501-.L500
-	.byte	3,2,1,5,23,9
-	.half	.L502-.L501
-	.byte	1,5,7,9
-	.half	.L503-.L502
-	.byte	1,7,9
-	.half	.L504-.L503
-	.byte	3,1,1,5,38,9
-	.half	.L505-.L504
-	.byte	1,5,45,9
-	.half	.L506-.L505
-	.byte	1,5,42,9
-	.half	.L507-.L506
-	.byte	1,5,4,7,9
-	.half	.L508-.L507
-	.byte	3,2,1,5,37,9
-	.half	.L509-.L508
-	.byte	1,5,35,9
-	.half	.L510-.L509
-	.byte	1,9
-	.half	.L49-.L510
-	.byte	3,3,1,5,46,9
-	.half	.L511-.L49
-	.byte	1,5,3,9
-	.half	.L512-.L511
-	.byte	1,5,34,9
-	.half	.L513-.L512
-	.byte	1,5,71,9
-	.half	.L514-.L513
-	.byte	1,5,69,9
-	.half	.L515-.L514
-	.byte	1,5,35,9
-	.half	.L516-.L515
-	.byte	1,5,46,9
-	.half	.L517-.L516
-	.byte	1,5,65,9
-	.half	.L518-.L517
-	.byte	1,5,7,9
-	.half	.L519-.L518
-	.byte	3,2,1,5,18,9
-	.half	.L520-.L519
-	.byte	1,5,3,9
-	.half	.L521-.L520
-	.byte	1,5,8,7,9
-	.half	.L522-.L521
-	.byte	3,2,1,5,39,9
-	.half	.L523-.L522
-	.byte	1,5,46,9
-	.half	.L524-.L523
-	.byte	1,5,4,9
-	.half	.L525-.L524
-	.byte	1,5,5,7,9
-	.half	.L526-.L525
-	.byte	3,2,1,5,34,9
-	.half	.L527-.L526
-	.byte	1,5,32,9
-	.half	.L528-.L527
-	.byte	1,5,16,9
-	.half	.L216-.L528
-	.byte	3,2,1,5,26,9
-	.half	.L249-.L216
-	.byte	1,5,6,9
-	.half	.L54-.L249
-	.byte	3,1,1,5,17,9
-	.half	.L529-.L54
-	.byte	1,5,36,9
 	.half	.L530-.L529
-	.byte	1,5,67,9
-	.half	.L531-.L530
-	.byte	1,5,33,9
-	.half	.L532-.L531
-	.byte	1,5,29,9
-	.half	.L533-.L532
-	.byte	3,127,1,5,26,9
-	.half	.L53-.L533
-	.byte	1,5,9,7,9
-	.half	.L217-.L53
-	.byte	3,4,1,5,20,9
-	.half	.L534-.L217
-	.byte	1,5,39,9
-	.half	.L535-.L534
-	.byte	1,5,70,9
-	.half	.L536-.L535
-	.byte	1,5,5,9
-	.half	.L250-.L536
-	.byte	1,5,10,7,9
-	.half	.L537-.L250
-	.byte	3,2,1,5,41,9
-	.half	.L538-.L537
-	.byte	1,5,6,9
-	.half	.L539-.L538
 	.byte	1,5,7,7,9
+	.half	.L531-.L530
+	.byte	3,2,1,5,23,9
+	.half	.L532-.L531
+	.byte	1,5,7,9
+	.half	.L533-.L532
+	.byte	1,7,9
+	.half	.L534-.L533
+	.byte	3,1,1,5,38,9
+	.half	.L535-.L534
+	.byte	1,5,45,9
+	.half	.L536-.L535
+	.byte	1,5,42,9
+	.half	.L537-.L536
+	.byte	1,5,4,7,9
+	.half	.L538-.L537
+	.byte	3,2,1,5,37,9
+	.half	.L539-.L538
+	.byte	1,5,35,9
 	.half	.L540-.L539
-	.byte	3,3,1,5,28,9
-	.half	.L541-.L540
-	.byte	1,5,36,9
+	.byte	1,9
+	.half	.L49-.L540
+	.byte	3,3,1,5,46,9
+	.half	.L541-.L49
+	.byte	1,5,3,9
 	.half	.L542-.L541
-	.byte	1,5,26,9
+	.byte	1,5,34,9
 	.half	.L543-.L542
-	.byte	1,5,7,9
+	.byte	1,5,71,9
 	.half	.L544-.L543
-	.byte	3,1,1,5,28,9
+	.byte	1,5,69,9
 	.half	.L545-.L544
-	.byte	1,5,36,9
+	.byte	1,5,35,9
 	.half	.L546-.L545
-	.byte	1,5,26,9
+	.byte	1,5,46,9
 	.half	.L547-.L546
-	.byte	1,5,7,9
+	.byte	1,5,65,9
 	.half	.L548-.L547
-	.byte	3,2,1,5,18,9
+	.byte	1,5,7,9
 	.half	.L549-.L548
-	.byte	3,1,1,5,49,9
+	.byte	3,2,1,5,18,9
 	.half	.L550-.L549
-	.byte	1,5,53,9
+	.byte	1,5,3,9
 	.half	.L551-.L550
-	.byte	1,5,19,9
+	.byte	1,5,8,7,9
 	.half	.L552-.L551
-	.byte	3,1,1,5,50,9
+	.byte	3,2,1,5,39,9
 	.half	.L553-.L552
-	.byte	1,5,11,9
+	.byte	1,5,46,9
 	.half	.L554-.L553
-	.byte	1,5,8,9
+	.byte	1,5,4,9
 	.half	.L555-.L554
-	.byte	3,127,1,5,7,9
+	.byte	1,5,5,7,9
 	.half	.L556-.L555
-	.byte	3,3,1,5,18,9
+	.byte	3,2,1,5,34,9
 	.half	.L557-.L556
-	.byte	3,1,1,5,49,9
+	.byte	1,5,32,9
 	.half	.L558-.L557
-	.byte	1,5,53,9
-	.half	.L559-.L558
-	.byte	1,5,19,9
-	.half	.L560-.L559
-	.byte	3,1,1,5,50,9
-	.half	.L561-.L560
-	.byte	1,5,11,9
-	.half	.L562-.L561
-	.byte	1,5,8,9
-	.half	.L563-.L562
-	.byte	3,127,1,5,7,9
-	.half	.L564-.L563
-	.byte	3,4,1,5,33,9
-	.half	.L565-.L564
-	.byte	1,5,44,9
-	.half	.L566-.L565
-	.byte	1,5,31,9
-	.half	.L567-.L566
-	.byte	1,5,7,9
-	.half	.L568-.L567
-	.byte	3,1,1,5,33,9
-	.half	.L569-.L568
-	.byte	1,5,44,9
-	.half	.L570-.L569
-	.byte	1,5,31,9
-	.half	.L571-.L570
+	.byte	1,5,16,9
+	.half	.L237-.L558
+	.byte	3,2,1,5,26,9
+	.half	.L279-.L237
 	.byte	1,5,6,9
-	.half	.L56-.L571
-	.byte	3,3,1,5,39,9
-	.half	.L572-.L56
-	.byte	1,5,37,9
+	.half	.L54-.L279
+	.byte	3,1,1,5,17,9
+	.half	.L559-.L54
+	.byte	1,5,36,9
+	.half	.L560-.L559
+	.byte	1,5,67,9
+	.half	.L561-.L560
+	.byte	1,5,33,9
+	.half	.L562-.L561
+	.byte	1,5,29,9
+	.half	.L563-.L562
+	.byte	3,127,1,5,26,9
+	.half	.L53-.L563
+	.byte	1,5,9,7,9
+	.half	.L238-.L53
+	.byte	3,4,1,5,20,9
+	.half	.L564-.L238
+	.byte	1,5,39,9
+	.half	.L565-.L564
+	.byte	1,5,70,9
+	.half	.L566-.L565
+	.byte	1,5,5,9
+	.half	.L280-.L566
+	.byte	1,5,10,7,9
+	.half	.L567-.L280
+	.byte	3,2,1,5,41,9
+	.half	.L568-.L567
+	.byte	1,5,6,9
+	.half	.L569-.L568
+	.byte	1,5,7,7,9
+	.half	.L570-.L569
+	.byte	3,3,1,5,28,9
+	.half	.L571-.L570
+	.byte	1,5,36,9
+	.half	.L572-.L571
+	.byte	1,5,26,9
 	.half	.L573-.L572
-	.byte	1,5,13,9
-	.half	.L574-.L573
-	.byte	3,2,1,5,24,9
-	.half	.L575-.L574
-	.byte	1,5,46,9
-	.half	.L576-.L575
-	.byte	1,5,49,9
-	.half	.L577-.L576
-	.byte	1,5,40,9
-	.half	.L578-.L577
-	.byte	3,126,1,5,6,9
-	.half	.L55-.L578
-	.byte	3,4,1,5,39,9
-	.half	.L579-.L55
-	.byte	1,5,37,9
-	.half	.L580-.L579
-	.byte	1,5,13,9
-	.half	.L581-.L580
-	.byte	3,2,1,5,24,9
-	.half	.L582-.L581
-	.byte	1,5,46,9
-	.half	.L583-.L582
-	.byte	1,5,49,9
-	.half	.L584-.L583
 	.byte	1,5,7,9
-	.half	.L59-.L584
+	.half	.L574-.L573
+	.byte	3,1,1,5,28,9
+	.half	.L575-.L574
+	.byte	1,5,36,9
+	.half	.L576-.L575
+	.byte	1,5,26,9
+	.half	.L577-.L576
+	.byte	1,5,7,9
+	.half	.L578-.L577
+	.byte	3,2,1,5,18,9
+	.half	.L579-.L578
+	.byte	3,1,1,5,49,9
+	.half	.L580-.L579
+	.byte	1,5,53,9
+	.half	.L581-.L580
+	.byte	1,5,19,9
+	.half	.L582-.L581
+	.byte	3,1,1,5,50,9
+	.half	.L583-.L582
+	.byte	1,5,11,9
+	.half	.L584-.L583
+	.byte	1,5,8,9
+	.half	.L585-.L584
+	.byte	3,127,1,5,7,9
+	.half	.L586-.L585
+	.byte	3,3,1,5,18,9
+	.half	.L587-.L586
+	.byte	3,1,1,5,49,9
+	.half	.L588-.L587
+	.byte	1,5,53,9
+	.half	.L589-.L588
+	.byte	1,5,19,9
+	.half	.L590-.L589
+	.byte	3,1,1,5,50,9
+	.half	.L591-.L590
+	.byte	1,5,11,9
+	.half	.L592-.L591
+	.byte	1,5,8,9
+	.half	.L593-.L592
+	.byte	3,127,1,5,7,9
+	.half	.L594-.L593
+	.byte	3,4,1,5,33,9
+	.half	.L595-.L594
+	.byte	1,5,44,9
+	.half	.L596-.L595
+	.byte	1,5,31,9
+	.half	.L597-.L596
+	.byte	1,5,7,9
+	.half	.L598-.L597
+	.byte	3,1,1,5,33,9
+	.half	.L599-.L598
+	.byte	1,5,44,9
+	.half	.L600-.L599
+	.byte	1,5,31,9
+	.half	.L601-.L600
+	.byte	1,5,6,9
+	.half	.L56-.L601
+	.byte	3,3,1,5,39,9
+	.half	.L602-.L56
+	.byte	1,5,37,9
+	.half	.L603-.L602
+	.byte	1,5,13,9
+	.half	.L604-.L603
+	.byte	3,2,1,5,24,9
+	.half	.L605-.L604
+	.byte	1,5,46,9
+	.half	.L606-.L605
+	.byte	1,5,49,9
+	.half	.L607-.L606
+	.byte	1,5,40,9
+	.half	.L608-.L607
+	.byte	3,126,1,5,6,9
+	.half	.L55-.L608
+	.byte	3,4,1,5,39,9
+	.half	.L609-.L55
+	.byte	1,5,37,9
+	.half	.L610-.L609
+	.byte	1,5,13,9
+	.half	.L611-.L610
+	.byte	3,2,1,5,24,9
+	.half	.L612-.L611
+	.byte	1,5,46,9
+	.half	.L613-.L612
+	.byte	1,5,49,9
+	.half	.L614-.L613
+	.byte	1,5,7,9
+	.half	.L59-.L614
 	.byte	3,125,1,5,5,9
 	.half	.L52-.L59
 	.byte	3,6,1,5,38,9
-	.half	.L585-.L52
+	.half	.L615-.L52
 	.byte	1,5,36,9
-	.half	.L586-.L585
+	.half	.L616-.L615
 	.byte	1,5,12,9
-	.half	.L587-.L586
+	.half	.L617-.L616
 	.byte	3,2,1,5,23,9
-	.half	.L588-.L587
+	.half	.L618-.L617
 	.byte	1,5,45,9
-	.half	.L589-.L588
+	.half	.L619-.L618
 	.byte	1,5,48,9
-	.half	.L590-.L589
+	.half	.L620-.L619
 	.byte	1,5,1,9
-	.half	.L48-.L590
+	.half	.L48-.L620
 	.byte	3,4,1,7,9
-	.half	.L151-.L48
+	.half	.L157-.L48
 	.byte	0,1,1
-.L496:
-	.sdecl	'.debug_ranges',debug,cluster('BLDCDriver_callback')
+.L526:
+	.sdecl	'.debug_ranges',debug,cluster('Bldc_Driver_callback')
 	.sect	'.debug_ranges'
-.L150:
-	.word	-1,.L84,0,.L151-.L84,0,0
-	.sdecl	'.debug_info',debug,cluster('BLDC_SetDuty')
+.L156:
+	.word	-1,.L84,0,.L157-.L84,0,0
+	.sdecl	'.debug_info',debug,cluster('Bldc_SetDuty')
 	.sect	'.debug_info'
-.L152:
+.L158:
 	.word	287
 	.half	3
-	.word	.L153
+	.word	.L159
 	.byte	4,1
-	.byte	'../code/src/BLDC.c',0
+	.byte	'../code/src/bldc.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1
-	.word	.L155,.L154
+	.word	.L161,.L160
 	.byte	2
-	.word	.L93
+	.word	.L99
 	.byte	3
-	.byte	'BLDC_SetDuty',0,1,226,1,6,1,1,1
-	.word	.L86,.L220,.L85
+	.byte	'Bldc_SetDuty',0,1,226,1,6,1,1,1
+	.word	.L86,.L241,.L85
 	.byte	4
 	.byte	'left_duty',0,1,226,1,25
-	.word	.L221,.L222
+	.word	.L242,.L243
 	.byte	4
 	.byte	'right_duty',0,1,226,1,42
-	.word	.L221,.L223
+	.word	.L242,.L244
 	.byte	5
-	.word	.L86,.L220
+	.word	.L86,.L241
 	.byte	5
-	.word	.L224,.L225
+	.word	.L245,.L246
 	.byte	6
 	.byte	'i',0,1,236,1,11
-	.word	.L218,.L226
+	.word	.L239,.L247
 	.byte	0,0,0,0
-	.sdecl	'.debug_abbrev',debug,cluster('BLDC_SetDuty')
+	.sdecl	'.debug_abbrev',debug,cluster('Bldc_SetDuty')
 	.sect	'.debug_abbrev'
-.L153:
+.L159:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
 	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
-	.sdecl	'.debug_line',debug,cluster('BLDC_SetDuty')
+	.sdecl	'.debug_line',debug,cluster('Bldc_SetDuty')
 	.sect	'.debug_line'
-.L154:
-	.word	.L592-.L591
-.L591:
+.L160:
+	.word	.L622-.L621
+.L621:
 	.half	3
-	.word	.L594-.L593
-.L593:
+	.word	.L624-.L623
+.L623:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
-	.byte	'../code/src/BLDC.c',0,0,0,0,0
-.L594:
+	.byte	'../code/src/bldc.c',0,0,0,0,0
+.L624:
 	.byte	5,2,7,0,5,2
 	.word	.L86
 	.byte	3,227,1,1,5,36,9
-	.half	.L595-.L86
+	.half	.L625-.L86
 	.byte	1,5,34,9
-	.half	.L596-.L595
+	.half	.L626-.L625
 	.byte	1,5,2,9
-	.half	.L597-.L596
+	.half	.L627-.L626
 	.byte	3,1,1,5,36,9
-	.half	.L598-.L597
+	.half	.L628-.L627
 	.byte	1,5,34,9
-	.half	.L599-.L598
+	.half	.L629-.L628
 	.byte	1,5,2,9
-	.half	.L600-.L599
-	.byte	3,1,1,5,58,9
-	.half	.L601-.L600
-	.byte	1,5,56,9
-	.half	.L602-.L601
-	.byte	1,5,66,9
-	.half	.L603-.L602
-	.byte	1,5,34,9
-	.half	.L604-.L603
-	.byte	1,5,2,9
-	.half	.L605-.L604
-	.byte	3,1,1,5,55,9
-	.half	.L606-.L605
-	.byte	1,5,34,9
-	.half	.L607-.L606
-	.byte	1,5,2,9
-	.half	.L608-.L607
-	.byte	3,1,1,5,59,9
-	.half	.L609-.L608
-	.byte	1,5,57,9
-	.half	.L610-.L609
-	.byte	1,5,67,9
-	.half	.L611-.L610
-	.byte	1,5,34,9
-	.half	.L612-.L611
-	.byte	1,5,2,9
-	.half	.L613-.L612
-	.byte	3,1,1,5,56,9
-	.half	.L614-.L613
-	.byte	1,5,34,9
-	.half	.L615-.L614
-	.byte	1,5,2,9
-	.half	.L616-.L615
-	.byte	3,1,1,5,36,9
-	.half	.L617-.L616
-	.byte	1,5,34,9
-	.half	.L618-.L617
-	.byte	1,5,13,9
-	.half	.L224-.L618
-	.byte	3,2,1,5,23,9
-	.half	.L253-.L224
-	.byte	1,5,3,9
-	.half	.L62-.L253
-	.byte	3,1,1,5,31,9
-	.half	.L619-.L62
-	.byte	1,5,38,9
-	.half	.L620-.L619
-	.byte	1,5,66,9
-	.half	.L621-.L620
-	.byte	1,5,35,9
-	.half	.L622-.L621
-	.byte	1,5,26,9
-	.half	.L623-.L622
-	.byte	3,127,1,5,23,9
-	.half	.L61-.L623
-	.byte	1,5,20,7,9
-	.half	.L225-.L61
-	.byte	3,4,1,5,28,9
-	.half	.L251-.L225
-	.byte	1,5,58,9
-	.half	.L624-.L251
-	.byte	1,5,1,9
-	.half	.L254-.L624
-	.byte	3,1,1,7,9
-	.half	.L156-.L254
-	.byte	0,1,1
-.L592:
-	.sdecl	'.debug_ranges',debug,cluster('BLDC_SetDuty')
-	.sect	'.debug_ranges'
-.L155:
-	.word	-1,.L86,0,.L156-.L86,0,0
-	.sdecl	'.debug_info',debug,cluster('BLDC_AskSpeed')
-	.sect	'.debug_info'
-.L157:
-	.word	215
-	.half	3
-	.word	.L158
-	.byte	4,1
-	.byte	'../code/src/BLDC.c',0
-	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
-	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1
-	.word	.L160,.L159
-	.byte	2
-	.word	.L93
-	.byte	3
-	.byte	'BLDC_AskSpeed',0,1,246,1,6,1,1,1
-	.word	.L88,.L227,.L87
-	.byte	4
-	.word	.L88,.L227
-	.byte	0,0
-	.sdecl	'.debug_abbrev',debug,cluster('BLDC_AskSpeed')
-	.sect	'.debug_abbrev'
-.L158:
-	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
-	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
-	.sdecl	'.debug_line',debug,cluster('BLDC_AskSpeed')
-	.sect	'.debug_line'
-.L159:
-	.word	.L626-.L625
-.L625:
-	.half	3
-	.word	.L628-.L627
-.L627:
-	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
-	.byte	'../code/src/BLDC.c',0,0,0,0,0
-.L628:
-	.byte	5,2,7,0,5,2
-	.word	.L88
-	.byte	3,247,1,1,5,36,9
-	.half	.L629-.L88
-	.byte	1,5,34,9
 	.half	.L630-.L629
-	.byte	1,5,2,9
+	.byte	3,1,1,5,58,9
 	.half	.L631-.L630
-	.byte	3,1,1,5,36,9
+	.byte	1,5,56,9
 	.half	.L632-.L631
-	.byte	1,5,34,9
+	.byte	1,5,66,9
 	.half	.L633-.L632
-	.byte	1,5,2,9
+	.byte	1,5,34,9
 	.half	.L634-.L633
-	.byte	3,1,1,5,36,9
+	.byte	1,5,2,9
 	.half	.L635-.L634
-	.byte	1,5,34,9
+	.byte	3,1,1,5,55,9
 	.half	.L636-.L635
-	.byte	1,5,2,9
-	.half	.L637-.L636
-	.byte	3,1,1,5,36,9
-	.half	.L638-.L637
 	.byte	1,5,34,9
-	.half	.L639-.L638
+	.half	.L637-.L636
 	.byte	1,5,2,9
+	.half	.L638-.L637
+	.byte	3,1,1,5,59,9
+	.half	.L639-.L638
+	.byte	1,5,57,9
 	.half	.L640-.L639
-	.byte	3,1,1,5,36,9
+	.byte	1,5,67,9
 	.half	.L641-.L640
 	.byte	1,5,34,9
 	.half	.L642-.L641
 	.byte	1,5,2,9
 	.half	.L643-.L642
-	.byte	3,1,1,5,36,9
+	.byte	3,1,1,5,56,9
 	.half	.L644-.L643
 	.byte	1,5,34,9
 	.half	.L645-.L644
@@ -23039,516 +23009,870 @@ motor_value:	.type	object
 	.half	.L647-.L646
 	.byte	1,5,34,9
 	.half	.L648-.L647
-	.byte	1,5,20,9
-	.half	.L649-.L648
-	.byte	3,2,1,5,28,9
+	.byte	1,5,13,9
+	.half	.L245-.L648
+	.byte	3,2,1,5,23,9
+	.half	.L283-.L245
+	.byte	1,5,3,9
+	.half	.L62-.L283
+	.byte	3,1,1,5,31,9
+	.half	.L649-.L62
+	.byte	1,5,38,9
 	.half	.L650-.L649
-	.byte	1,5,58,9
+	.byte	1,5,66,9
 	.half	.L651-.L650
-	.byte	1,5,1,9
+	.byte	1,5,35,9
 	.half	.L652-.L651
+	.byte	1,5,26,9
+	.half	.L653-.L652
+	.byte	3,127,1,5,23,9
+	.half	.L61-.L653
+	.byte	1,5,20,7,9
+	.half	.L246-.L61
+	.byte	3,4,1,5,28,9
+	.half	.L281-.L246
+	.byte	1,5,58,9
+	.half	.L654-.L281
+	.byte	1,5,1,9
+	.half	.L284-.L654
 	.byte	3,1,1,7,9
-	.half	.L161-.L652
+	.half	.L162-.L284
 	.byte	0,1,1
-.L626:
-	.sdecl	'.debug_ranges',debug,cluster('BLDC_AskSpeed')
+.L622:
+	.sdecl	'.debug_ranges',debug,cluster('Bldc_SetDuty')
 	.sect	'.debug_ranges'
-.L160:
-	.word	-1,.L88,0,.L161-.L88,0,0
-	.sdecl	'.debug_info',debug,cluster('BLDC_uart_init')
+.L161:
+	.word	-1,.L86,0,.L162-.L86,0,0
+	.sdecl	'.debug_info',debug,cluster('Bldc_AskSpeed')
 	.sect	'.debug_info'
-.L162:
-	.word	216
+.L163:
+	.word	215
 	.half	3
-	.word	.L163
+	.word	.L164
 	.byte	4,1
-	.byte	'../code/src/BLDC.c',0
+	.byte	'../code/src/bldc.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1
-	.word	.L165,.L164
+	.word	.L166,.L165
 	.byte	2
-	.word	.L93
+	.word	.L99
 	.byte	3
-	.byte	'BLDC_uart_init',0,1,145,2,6,1,1,1
-	.word	.L92,.L228,.L91
+	.byte	'Bldc_AskSpeed',0,1,246,1,6,1,1,1
+	.word	.L88,.L248,.L87
 	.byte	4
-	.word	.L92,.L228
+	.word	.L88,.L248
 	.byte	0,0
-	.sdecl	'.debug_abbrev',debug,cluster('BLDC_uart_init')
+	.sdecl	'.debug_abbrev',debug,cluster('Bldc_AskSpeed')
 	.sect	'.debug_abbrev'
-.L163:
+.L164:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
-	.sdecl	'.debug_line',debug,cluster('BLDC_uart_init')
+	.sdecl	'.debug_line',debug,cluster('Bldc_AskSpeed')
 	.sect	'.debug_line'
-.L164:
-	.word	.L654-.L653
-.L653:
-	.half	3
+.L165:
 	.word	.L656-.L655
 .L655:
+	.half	3
+	.word	.L658-.L657
+.L657:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
-	.byte	'../code/src/BLDC.c',0,0,0,0,0
+	.byte	'../code/src/bldc.c',0,0,0,0,0
+.L658:
+	.byte	5,2,7,0,5,2
+	.word	.L88
+	.byte	3,247,1,1,5,36,9
+	.half	.L659-.L88
+	.byte	1,5,34,9
+	.half	.L660-.L659
+	.byte	1,5,2,9
+	.half	.L661-.L660
+	.byte	3,1,1,5,36,9
+	.half	.L662-.L661
+	.byte	1,5,34,9
+	.half	.L663-.L662
+	.byte	1,5,2,9
+	.half	.L664-.L663
+	.byte	3,1,1,5,36,9
+	.half	.L665-.L664
+	.byte	1,5,34,9
+	.half	.L666-.L665
+	.byte	1,5,2,9
+	.half	.L667-.L666
+	.byte	3,1,1,5,36,9
+	.half	.L668-.L667
+	.byte	1,5,34,9
+	.half	.L669-.L668
+	.byte	1,5,2,9
+	.half	.L670-.L669
+	.byte	3,1,1,5,36,9
+	.half	.L671-.L670
+	.byte	1,5,34,9
+	.half	.L672-.L671
+	.byte	1,5,2,9
+	.half	.L673-.L672
+	.byte	3,1,1,5,36,9
+	.half	.L674-.L673
+	.byte	1,5,34,9
+	.half	.L675-.L674
+	.byte	1,5,2,9
+	.half	.L676-.L675
+	.byte	3,1,1,5,36,9
+	.half	.L677-.L676
+	.byte	1,5,34,9
+	.half	.L678-.L677
+	.byte	1,5,20,9
+	.half	.L679-.L678
+	.byte	3,2,1,5,28,9
+	.half	.L680-.L679
+	.byte	1,5,58,9
+	.half	.L681-.L680
+	.byte	1,5,1,9
+	.half	.L682-.L681
+	.byte	3,1,1,7,9
+	.half	.L167-.L682
+	.byte	0,1,1
 .L656:
+	.sdecl	'.debug_ranges',debug,cluster('Bldc_AskSpeed')
+	.sect	'.debug_ranges'
+.L166:
+	.word	-1,.L88,0,.L167-.L88,0,0
+	.sdecl	'.debug_info',debug,cluster('Bldc_uart_init')
+	.sect	'.debug_info'
+.L168:
+	.word	216
+	.half	3
+	.word	.L169
+	.byte	4,1
+	.byte	'../code/src/bldc.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1
+	.word	.L171,.L170
+	.byte	2
+	.word	.L99
+	.byte	3
+	.byte	'Bldc_uart_init',0,1,145,2,6,1,1,1
+	.word	.L92,.L249,.L91
+	.byte	4
+	.word	.L92,.L249
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Bldc_uart_init')
+	.sect	'.debug_abbrev'
+.L169:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Bldc_uart_init')
+	.sect	'.debug_line'
+.L170:
+	.word	.L684-.L683
+.L683:
+	.half	3
+	.word	.L686-.L685
+.L685:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../code/src/bldc.c',0,0,0,0,0
+.L686:
 	.byte	5,12,7,0,5,2
 	.word	.L92
 	.byte	3,146,2,1,5,31,9
-	.half	.L657-.L92
+	.half	.L687-.L92
 	.byte	1,5,54,9
-	.half	.L658-.L657
+	.half	.L688-.L687
 	.byte	1,5,71,9
-	.half	.L659-.L658
+	.half	.L689-.L688
 	.byte	1,5,20,9
-	.half	.L660-.L659
+	.half	.L690-.L689
 	.byte	3,1,1,5,39,9
-	.half	.L661-.L660
+	.half	.L691-.L690
 	.byte	1,5,15,9
-	.half	.L662-.L661
+	.half	.L692-.L691
 	.byte	3,2,1,9
-	.half	.L663-.L662
+	.half	.L693-.L692
 	.byte	3,1,1,5,18,9
-	.half	.L664-.L663
+	.half	.L694-.L693
 	.byte	1,5,15,9
-	.half	.L665-.L664
+	.half	.L695-.L694
 	.byte	3,1,1,5,1,9
-	.half	.L666-.L665
+	.half	.L696-.L695
 	.byte	3,1,1,7,9
-	.half	.L166-.L666
+	.half	.L172-.L696
 	.byte	0,1,1
-.L654:
-	.sdecl	'.debug_ranges',debug,cluster('BLDC_uart_init')
+.L684:
+	.sdecl	'.debug_ranges',debug,cluster('Bldc_uart_init')
 	.sect	'.debug_ranges'
-.L165:
-	.word	-1,.L92,0,.L166-.L92,0,0
-	.sdecl	'.debug_info',debug,cluster('BLDCData_init')
+.L171:
+	.word	-1,.L92,0,.L172-.L92,0,0
+	.sdecl	'.debug_info',debug,cluster('BldcSetCurrent')
 	.sect	'.debug_info'
-.L167:
-	.word	215
+.L173:
+	.word	259
 	.half	3
-	.word	.L168
+	.word	.L174
 	.byte	4,1
-	.byte	'../code/src/BLDC.c',0
+	.byte	'../code/src/bldc.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1
-	.word	.L170,.L169
+	.word	.L176,.L175
 	.byte	2
-	.word	.L93
+	.word	.L99
 	.byte	3
-	.byte	'BLDCData_init',0,1,133,2,6,1,1,1
-	.word	.L90,.L229,.L89
+	.byte	'BldcSetCurrent',0,1,156,2,6,1,1,1
+	.word	.L94,.L250,.L93
 	.byte	4
-	.word	.L90,.L229
+	.byte	'leftCur',0,1,156,2,27
+	.word	.L199,.L251
+	.byte	4
+	.byte	'rightCur',0,1,156,2,42
+	.word	.L199,.L252
+	.byte	5
+	.word	.L94,.L250
 	.byte	0,0
-	.sdecl	'.debug_abbrev',debug,cluster('BLDCData_init')
+	.sdecl	'.debug_abbrev',debug,cluster('BldcSetCurrent')
 	.sect	'.debug_abbrev'
-.L168:
+.L174:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('BldcSetCurrent')
+	.sect	'.debug_line'
+.L175:
+	.word	.L698-.L697
+.L697:
+	.half	3
+	.word	.L700-.L699
+.L699:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../code/src/bldc.c',0,0,0,0,0
+.L700:
+	.byte	5,2,7,0,5,2
+	.word	.L94
+	.byte	3,157,2,1,5,28,9
+	.half	.L701-.L94
+	.byte	1,5,2,9
+	.half	.L702-.L701
+	.byte	3,1,1,5,28,9
+	.half	.L703-.L702
+	.byte	1,5,1,9
+	.half	.L704-.L703
+	.byte	3,1,1,7,9
+	.half	.L177-.L704
+	.byte	0,1,1
+.L698:
+	.sdecl	'.debug_ranges',debug,cluster('BldcSetCurrent')
+	.sect	'.debug_ranges'
+.L176:
+	.word	-1,.L94,0,.L177-.L94,0,0
+	.sdecl	'.debug_info',debug,cluster('BldcSetSpeed')
+	.sect	'.debug_info'
+.L178:
+	.word	261
+	.half	3
+	.word	.L179
+	.byte	4,1
+	.byte	'../code/src/bldc.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1
+	.word	.L181,.L180
+	.byte	2
+	.word	.L99
+	.byte	3
+	.byte	'BldcSetSpeed',0,1,161,2,6,1,1,1
+	.word	.L96,.L253,.L95
+	.byte	4
+	.byte	'leftSpeed',0,1,161,2,25
+	.word	.L199,.L254
+	.byte	4
+	.byte	'rightSpeed',0,1,161,2,42
+	.word	.L199,.L255
+	.byte	5
+	.word	.L96,.L253
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('BldcSetSpeed')
+	.sect	'.debug_abbrev'
+.L179:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('BldcSetSpeed')
+	.sect	'.debug_line'
+.L180:
+	.word	.L706-.L705
+.L705:
+	.half	3
+	.word	.L708-.L707
+.L707:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../code/src/bldc.c',0,0,0,0,0
+.L708:
+	.byte	5,2,7,0,5,2
+	.word	.L96
+	.byte	3,162,2,1,5,26,9
+	.half	.L709-.L96
+	.byte	1,5,2,9
+	.half	.L710-.L709
+	.byte	3,1,1,5,26,9
+	.half	.L711-.L710
+	.byte	1,5,1,9
+	.half	.L712-.L711
+	.byte	3,1,1,7,9
+	.half	.L182-.L712
+	.byte	0,1,1
+.L706:
+	.sdecl	'.debug_ranges',debug,cluster('BldcSetSpeed')
+	.sect	'.debug_ranges'
+.L181:
+	.word	-1,.L96,0,.L182-.L96,0,0
+	.sdecl	'.debug_info',debug,cluster('BldcSetPos')
+	.sect	'.debug_info'
+.L183:
+	.word	255
+	.half	3
+	.word	.L184
+	.byte	4,1
+	.byte	'../code/src/bldc.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1
+	.word	.L186,.L185
+	.byte	2
+	.word	.L99
+	.byte	3
+	.byte	'BldcSetPos',0,1,166,2,6,1,1,1
+	.word	.L98,.L256,.L97
+	.byte	4
+	.byte	'leftPos',0,1,166,2,23
+	.word	.L199,.L257
+	.byte	4
+	.byte	'rightPos',0,1,166,2,38
+	.word	.L199,.L258
+	.byte	5
+	.word	.L98,.L256
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('BldcSetPos')
+	.sect	'.debug_abbrev'
+.L184:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('BldcSetPos')
+	.sect	'.debug_line'
+.L185:
+	.word	.L714-.L713
+.L713:
+	.half	3
+	.word	.L716-.L715
+.L715:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../code/src/bldc.c',0,0,0,0,0
+.L716:
+	.byte	5,2,7,0,5,2
+	.word	.L98
+	.byte	3,167,2,1,5,26,9
+	.half	.L717-.L98
+	.byte	1,5,2,9
+	.half	.L718-.L717
+	.byte	3,1,1,5,26,9
+	.half	.L719-.L718
+	.byte	1,5,1,9
+	.half	.L720-.L719
+	.byte	3,1,1,7,9
+	.half	.L187-.L720
+	.byte	0,1,1
+.L714:
+	.sdecl	'.debug_ranges',debug,cluster('BldcSetPos')
+	.sect	'.debug_ranges'
+.L186:
+	.word	-1,.L98,0,.L187-.L98,0,0
+	.sdecl	'.debug_info',debug,cluster('BldcData_init')
+	.sect	'.debug_info'
+.L188:
+	.word	215
+	.half	3
+	.word	.L189
+	.byte	4,1
+	.byte	'../code/src/bldc.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1
+	.word	.L191,.L190
+	.byte	2
+	.word	.L99
+	.byte	3
+	.byte	'BldcData_init',0,1,133,2,6,1,1,1
+	.word	.L90,.L259,.L89
+	.byte	4
+	.word	.L90,.L259
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('BldcData_init')
+	.sect	'.debug_abbrev'
+.L189:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
-	.sdecl	'.debug_line',debug,cluster('BLDCData_init')
+	.sdecl	'.debug_line',debug,cluster('BldcData_init')
 	.sect	'.debug_line'
-.L169:
-	.word	.L668-.L667
-.L667:
+.L190:
+	.word	.L722-.L721
+.L721:
 	.half	3
-	.word	.L670-.L669
-.L669:
+	.word	.L724-.L723
+.L723:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
-	.byte	'../code/src/BLDC.c',0,0,0,0,0
-.L670:
+	.byte	'../code/src/bldc.c',0,0,0,0,0
+.L724:
 	.byte	5,9,7,0,5,2
 	.word	.L90
 	.byte	3,134,2,1,5,39,9
-	.half	.L671-.L90
+	.half	.L725-.L90
 	.byte	1,5,42,9
-	.half	.L672-.L671
+	.half	.L726-.L725
 	.byte	1,5,9,9
-	.half	.L673-.L672
+	.half	.L727-.L726
 	.byte	3,1,1,5,20,9
-	.half	.L674-.L673
+	.half	.L728-.L727
 	.byte	1,5,42,9
-	.half	.L675-.L674
+	.half	.L729-.L728
 	.byte	1,5,45,9
-	.half	.L676-.L675
+	.half	.L730-.L729
 	.byte	1,5,2,9
-	.half	.L677-.L676
+	.half	.L731-.L730
 	.byte	3,1,1,5,37,9
-	.half	.L678-.L677
+	.half	.L732-.L731
 	.byte	1,5,35,9
-	.half	.L679-.L678
+	.half	.L733-.L732
 	.byte	1,5,2,9
-	.half	.L680-.L679
+	.half	.L734-.L733
 	.byte	3,1,1,5,34,9
-	.half	.L681-.L680
+	.half	.L735-.L734
 	.byte	1,5,32,9
-	.half	.L682-.L681
+	.half	.L736-.L735
 	.byte	1,5,2,9
-	.half	.L683-.L682
+	.half	.L737-.L736
 	.byte	3,1,1,5,41,9
-	.half	.L684-.L683
+	.half	.L738-.L737
 	.byte	1,5,39,9
-	.half	.L685-.L684
+	.half	.L739-.L738
 	.byte	1,5,2,9
-	.half	.L686-.L685
+	.half	.L740-.L739
 	.byte	3,1,1,5,41,9
-	.half	.L687-.L686
+	.half	.L741-.L740
 	.byte	1,5,39,9
-	.half	.L688-.L687
+	.half	.L742-.L741
 	.byte	1,5,1,9
-	.half	.L689-.L688
+	.half	.L743-.L742
 	.byte	3,1,1,7,9
-	.half	.L171-.L689
+	.half	.L192-.L743
 	.byte	0,1,1
-.L668:
-	.sdecl	'.debug_ranges',debug,cluster('BLDCData_init')
+.L722:
+	.sdecl	'.debug_ranges',debug,cluster('BldcData_init')
 	.sect	'.debug_ranges'
-.L170:
-	.word	-1,.L90,0,.L171-.L90,0,0
+.L191:
+	.word	-1,.L90,0,.L192-.L90,0,0
 	.sdecl	'.debug_info',debug,cluster('motor_value')
 	.sect	'.debug_info'
-.L172:
+.L193:
 	.word	191
 	.half	3
-	.word	.L173
+	.word	.L194
 	.byte	4,1
-	.byte	'../code/src/BLDC.c',0
+	.byte	'../code/src/bldc.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1,2
-	.word	.L93
+	.word	.L99
 	.byte	3
 	.byte	'motor_value',0,24,156,1,14
-	.word	.L230
+	.word	.L260
 	.byte	1,5,3
 	.word	motor_value
 	.byte	0
 	.sdecl	'.debug_abbrev',debug,cluster('motor_value')
 	.sect	'.debug_abbrev'
-.L173:
+.L194:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
 	.sdecl	'.debug_info',debug,cluster('Motor')
 	.sect	'.debug_info'
-.L174:
+.L195:
 	.word	184
 	.half	3
-	.word	.L175
+	.word	.L196
 	.byte	4,1
-	.byte	'../code/src/BLDC.c',0
+	.byte	'../code/src/bldc.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1,2
-	.word	.L93
+	.word	.L99
 	.byte	3
 	.byte	'Motor',0,24,3,10
-	.word	.L231
+	.word	.L261
 	.byte	1,5,3
 	.word	Motor
 	.byte	0
 	.sdecl	'.debug_abbrev',debug,cluster('Motor')
 	.sect	'.debug_abbrev'
-.L175:
+.L196:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
-	.sdecl	'.debug_loc',debug,cluster('BLDCCulculate')
+	.sdecl	'.debug_loc',debug,cluster('BldcCulculate')
 	.sect	'.debug_loc'
 .L69:
-	.word	-1,.L70,0,.L201-.L70
+	.word	-1,.L70,0,.L222-.L70
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L202:
+.L223:
 	.word	-1,.L70,0,.L20-.L70
 	.half	1
 	.byte	100
 	.word	0,0
-	.sdecl	'.debug_loc',debug,cluster('BLDCCurrentMode')
+	.sdecl	'.debug_loc',debug,cluster('BldcCurrentMode')
 	.sect	'.debug_loc'
 .L75:
-	.word	-1,.L76,0,.L208-.L76
+	.word	-1,.L76,0,.L229-.L76
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L209:
-	.word	-1,.L76,0,.L208-.L76
+.L230:
+	.word	-1,.L76,0,.L229-.L76
 	.half	1
 	.byte	100
 	.word	0,0
-	.sdecl	'.debug_loc',debug,cluster('BLDCData_init')
+	.sdecl	'.debug_loc',debug,cluster('BldcData_init')
 	.sect	'.debug_loc'
 .L89:
-	.word	-1,.L90,0,.L229-.L90
+	.word	-1,.L90,0,.L259-.L90
 	.half	2
 	.byte	138,0
 	.word	0,0
-	.sdecl	'.debug_loc',debug,cluster('BLDCDriver_callback')
-	.sect	'.debug_loc'
-.L83:
-	.word	-1,.L84,0,.L248-.L84
-	.half	2
-	.byte	138,0
-	.word	.L248-.L84,.L213-.L84
-	.half	2
-	.byte	138,8
-	.word	.L213-.L84,.L213-.L84
-	.half	2
-	.byte	138,0
-	.word	0,0
-.L219:
-	.word	-1,.L84,.L249-.L84,.L250-.L84
-	.half	5
-	.byte	144,32,157,32,0
-	.word	0,0
-.L215:
-	.word	-1,.L84,0,.L213-.L84
-	.half	2
-	.byte	145,120
-	.word	0,0
-	.sdecl	'.debug_loc',debug,cluster('BLDCFunc')
+	.sdecl	'.debug_loc',debug,cluster('BldcFunc')
 	.sect	'.debug_loc'
 .L81:
-	.word	-1,.L82,0,.L195-.L82
+	.word	-1,.L82,0,.L216-.L82
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L197:
-	.word	-1,.L82,.L247-.L82,.L195-.L82
+.L218:
+	.word	-1,.L82,.L277-.L82,.L216-.L82
 	.half	1
 	.byte	88
 	.word	0,0
-	.sdecl	'.debug_loc',debug,cluster('BLDCInit')
+	.sdecl	'.debug_loc',debug,cluster('BldcInit')
 	.sect	'.debug_loc'
 .L63:
-	.word	-1,.L64,0,.L176-.L64
+	.word	-1,.L64,0,.L197-.L64
 	.half	2
 	.byte	138,0
 	.word	0,0
-	.sdecl	'.debug_loc',debug,cluster('BLDCLockPosition')
+	.sdecl	'.debug_loc',debug,cluster('BldcLockPosition')
 	.sect	'.debug_loc'
 .L77:
-	.word	-1,.L78,0,.L210-.L78
+	.word	-1,.L78,0,.L231-.L78
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L211:
-	.word	-1,.L78,0,.L245-.L78
+.L232:
+	.word	-1,.L78,0,.L275-.L78
 	.half	1
 	.byte	100
-	.word	.L246-.L78,.L210-.L78
+	.word	.L276-.L78,.L231-.L78
 	.half	1
 	.byte	111
 	.word	0,0
-	.sdecl	'.debug_loc',debug,cluster('BLDCPositionMode')
+	.sdecl	'.debug_loc',debug,cluster('BldcPositionMode')
 	.sect	'.debug_loc'
 .L71:
-	.word	-1,.L72,0,.L205-.L72
+	.word	-1,.L72,0,.L226-.L72
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L206:
-	.word	-1,.L72,0,.L239-.L72
+.L227:
+	.word	-1,.L72,0,.L269-.L72
 	.half	1
 	.byte	100
-	.word	.L240-.L72,.L205-.L72
+	.word	.L270-.L72,.L226-.L72
 	.half	1
 	.byte	111
 	.word	0,0
-.L207:
-	.word	-1,.L72,.L241-.L72,.L242-.L72
+.L228:
+	.word	-1,.L72,.L271-.L72,.L272-.L72
 	.half	1
 	.byte	85
 	.word	0,0
-	.sdecl	'.debug_loc',debug,cluster('BLDCSentCurrent')
+	.sdecl	'.debug_loc',debug,cluster('BldcSentCurrent')
 	.sect	'.debug_loc'
 .L79:
-	.word	-1,.L80,0,.L212-.L80
+	.word	-1,.L80,0,.L233-.L80
 	.half	2
 	.byte	138,0
 	.word	0,0
-	.sdecl	'.debug_loc',debug,cluster('BLDCSetZero')
+	.sdecl	'.debug_loc',debug,cluster('BldcSetCurrent')
 	.sect	'.debug_loc'
-.L67:
-	.word	-1,.L68,0,.L198-.L68
+.L93:
+	.word	-1,.L94,0,.L250-.L94
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L200:
-	.word	-1,.L68,0,.L198-.L68
-	.half	1
-	.byte	100
-	.word	0,0
-	.sdecl	'.debug_loc',debug,cluster('BLDCSpeedMode')
-	.sect	'.debug_loc'
-.L73:
-	.word	-1,.L74,0,.L203-.L74
-	.half	2
-	.byte	138,0
-	.word	0,0
-.L204:
-	.word	-1,.L74,0,.L243-.L74
-	.half	1
-	.byte	100
-	.word	.L244-.L74,.L203-.L74
-	.half	1
-	.byte	111
-	.word	0,0
-	.sdecl	'.debug_loc',debug,cluster('BLDCTypeInit')
-	.sect	'.debug_loc'
-.L65:
-	.word	-1,.L66,0,.L232-.L66
-	.half	2
-	.byte	138,0
-	.word	.L232-.L66,.L177-.L66
-	.half	2
-	.byte	138,56
-	.word	.L177-.L66,.L177-.L66
-	.half	2
-	.byte	138,0
-	.word	0,0
-.L181:
-	.word	-1,.L66,.L235-.L66,.L177-.L66
-	.half	1
-	.byte	90
-	.word	.L237-.L66,.L238-.L66
-	.half	1
-	.byte	86
-	.word	0,0
-.L180:
-	.word	-1,.L66,.L234-.L66,.L177-.L66
-	.half	1
-	.byte	89
-	.word	0,0
-.L179:
-	.word	-1,.L66,.L233-.L66,.L177-.L66
-	.half	1
-	.byte	88
-	.word	0,0
-.L184:
-	.word	0,0
-.L194:
-	.word	-1,.L66,.L236-.L66,.L177-.L66
-	.half	1
-	.byte	91
-	.word	0,0
-.L190:
-	.word	-1,.L66,0,.L177-.L66
-	.half	2
-	.byte	145,116
-	.word	0,0
-.L188:
-	.word	0,0
-.L186:
-	.word	0,0
-	.sdecl	'.debug_loc',debug,cluster('BLDC_AskSpeed')
-	.sect	'.debug_loc'
-.L87:
-	.word	-1,.L88,0,.L227-.L88
-	.half	2
-	.byte	138,0
-	.word	0,0
-	.sdecl	'.debug_loc',debug,cluster('BLDC_SetDuty')
-	.sect	'.debug_loc'
-.L85:
-	.word	-1,.L86,0,.L220-.L86
-	.half	2
-	.byte	138,0
-	.word	0,0
-.L226:
-	.word	-1,.L86,.L253-.L86,.L254-.L86
-	.half	5
-	.byte	144,32,157,32,0
-	.word	0,0
-.L222:
-	.word	-1,.L86,0,.L251-.L86
+.L251:
+	.word	-1,.L94,0,.L250-.L94
 	.half	1
 	.byte	84
 	.word	0,0
-.L223:
-	.word	-1,.L86,0,.L252-.L86
+.L252:
+	.word	-1,.L94,0,.L250-.L94
 	.half	1
 	.byte	85
 	.word	0,0
-	.sdecl	'.debug_loc',debug,cluster('BLDC_uart_init')
+	.sdecl	'.debug_loc',debug,cluster('BldcSetPos')
+	.sect	'.debug_loc'
+.L97:
+	.word	-1,.L98,0,.L256-.L98
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L257:
+	.word	-1,.L98,0,.L256-.L98
+	.half	1
+	.byte	84
+	.word	0,0
+.L258:
+	.word	-1,.L98,0,.L256-.L98
+	.half	1
+	.byte	85
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('BldcSetSpeed')
+	.sect	'.debug_loc'
+.L95:
+	.word	-1,.L96,0,.L253-.L96
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L254:
+	.word	-1,.L96,0,.L253-.L96
+	.half	1
+	.byte	84
+	.word	0,0
+.L255:
+	.word	-1,.L96,0,.L253-.L96
+	.half	1
+	.byte	85
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('BldcSetZero')
+	.sect	'.debug_loc'
+.L67:
+	.word	-1,.L68,0,.L219-.L68
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L221:
+	.word	-1,.L68,0,.L219-.L68
+	.half	1
+	.byte	100
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('BldcSpeedMode')
+	.sect	'.debug_loc'
+.L73:
+	.word	-1,.L74,0,.L224-.L74
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L225:
+	.word	-1,.L74,0,.L273-.L74
+	.half	1
+	.byte	100
+	.word	.L274-.L74,.L224-.L74
+	.half	1
+	.byte	111
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('BldcTypeInit')
+	.sect	'.debug_loc'
+.L65:
+	.word	-1,.L66,0,.L262-.L66
+	.half	2
+	.byte	138,0
+	.word	.L262-.L66,.L198-.L66
+	.half	2
+	.byte	138,56
+	.word	.L198-.L66,.L198-.L66
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L202:
+	.word	-1,.L66,.L265-.L66,.L198-.L66
+	.half	1
+	.byte	90
+	.word	.L267-.L66,.L268-.L66
+	.half	1
+	.byte	86
+	.word	0,0
+.L201:
+	.word	-1,.L66,.L264-.L66,.L198-.L66
+	.half	1
+	.byte	89
+	.word	0,0
+.L200:
+	.word	-1,.L66,.L263-.L66,.L198-.L66
+	.half	1
+	.byte	88
+	.word	0,0
+.L205:
+	.word	0,0
+.L215:
+	.word	-1,.L66,.L266-.L66,.L198-.L66
+	.half	1
+	.byte	91
+	.word	0,0
+.L211:
+	.word	-1,.L66,0,.L198-.L66
+	.half	2
+	.byte	145,116
+	.word	0,0
+.L209:
+	.word	0,0
+.L207:
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Bldc_AskSpeed')
+	.sect	'.debug_loc'
+.L87:
+	.word	-1,.L88,0,.L248-.L88
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Bldc_Driver_callback')
+	.sect	'.debug_loc'
+.L83:
+	.word	-1,.L84,0,.L278-.L84
+	.half	2
+	.byte	138,0
+	.word	.L278-.L84,.L234-.L84
+	.half	2
+	.byte	138,8
+	.word	.L234-.L84,.L234-.L84
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L240:
+	.word	-1,.L84,.L279-.L84,.L280-.L84
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+.L236:
+	.word	-1,.L84,0,.L234-.L84
+	.half	2
+	.byte	145,120
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Bldc_SetDuty')
+	.sect	'.debug_loc'
+.L85:
+	.word	-1,.L86,0,.L241-.L86
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L247:
+	.word	-1,.L86,.L283-.L86,.L284-.L86
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+.L243:
+	.word	-1,.L86,0,.L281-.L86
+	.half	1
+	.byte	84
+	.word	0,0
+.L244:
+	.word	-1,.L86,0,.L282-.L86
+	.half	1
+	.byte	85
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Bldc_uart_init')
 	.sect	'.debug_loc'
 .L91:
-	.word	-1,.L92,0,.L228-.L92
+	.word	-1,.L92,0,.L249-.L92
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_frame',debug
 	.sect	'.debug_frame'
-.L690:
+.L744:
 	.word	48
 	.word	-1
 	.byte	3,0,2,1,27,12,26,0,8,26,8,27,8,30,8,29,8,28,8,16,8,17,8,24,8,25,8,31,8,32,8,33,8,34,8,35,8,36,8,37,8,38
 	.byte	8,39
-	.sdecl	'.debug_frame',debug,cluster('BLDCInit')
+	.sdecl	'.debug_frame',debug,cluster('BldcInit')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L690,.L64,.L176-.L64
-	.sdecl	'.debug_frame',debug,cluster('BLDCTypeInit')
+	.word	.L744,.L64,.L197-.L64
+	.sdecl	'.debug_frame',debug,cluster('BldcTypeInit')
 	.sect	'.debug_frame'
 	.word	36
-	.word	.L690,.L66,.L177-.L66
+	.word	.L744,.L66,.L198-.L66
 	.byte	4
-	.word	(.L232-.L66)/2
+	.word	(.L262-.L66)/2
 	.byte	19,56,22,26,3,19,138,56,4
-	.word	(.L177-.L232)/2
+	.word	(.L198-.L262)/2
 	.byte	19,0,8,26,0,0
-	.sdecl	'.debug_frame',debug,cluster('BLDCSetZero')
+	.sdecl	'.debug_frame',debug,cluster('BldcSetZero')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L690,.L68,.L198-.L68
+	.word	.L744,.L68,.L219-.L68
 	.byte	8,18,8,19,8,21,8,22,8,23,0,0
-	.sdecl	'.debug_frame',debug,cluster('BLDCCulculate')
+	.sdecl	'.debug_frame',debug,cluster('BldcCulculate')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L690,.L70,.L201-.L70
-	.sdecl	'.debug_frame',debug,cluster('BLDCPositionMode')
+	.word	.L744,.L70,.L222-.L70
+	.sdecl	'.debug_frame',debug,cluster('BldcPositionMode')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L690,.L72,.L205-.L72
-	.sdecl	'.debug_frame',debug,cluster('BLDCSpeedMode')
+	.word	.L744,.L72,.L226-.L72
+	.sdecl	'.debug_frame',debug,cluster('BldcSpeedMode')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L690,.L74,.L203-.L74
-	.sdecl	'.debug_frame',debug,cluster('BLDCCurrentMode')
+	.word	.L744,.L74,.L224-.L74
+	.sdecl	'.debug_frame',debug,cluster('BldcCurrentMode')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L690,.L76,.L208-.L76
+	.word	.L744,.L76,.L229-.L76
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
-	.sdecl	'.debug_frame',debug,cluster('BLDCLockPosition')
+	.sdecl	'.debug_frame',debug,cluster('BldcLockPosition')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L690,.L78,.L210-.L78
-	.sdecl	'.debug_frame',debug,cluster('BLDCSentCurrent')
+	.word	.L744,.L78,.L231-.L78
+	.sdecl	'.debug_frame',debug,cluster('BldcSentCurrent')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L690,.L80,.L212-.L80
-	.sdecl	'.debug_frame',debug,cluster('BLDCFunc')
+	.word	.L744,.L80,.L233-.L80
+	.sdecl	'.debug_frame',debug,cluster('BldcFunc')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L690,.L82,.L195-.L82
-	.sdecl	'.debug_frame',debug,cluster('BLDCDriver_callback')
+	.word	.L744,.L82,.L216-.L82
+	.sdecl	'.debug_frame',debug,cluster('Bldc_Driver_callback')
 	.sect	'.debug_frame'
 	.word	36
-	.word	.L690,.L84,.L213-.L84
+	.word	.L744,.L84,.L234-.L84
 	.byte	4
-	.word	(.L248-.L84)/2
+	.word	(.L278-.L84)/2
 	.byte	19,8,22,26,3,19,138,8,4
-	.word	(.L213-.L248)/2
+	.word	(.L234-.L278)/2
 	.byte	19,0,8,26,0,0
-	.sdecl	'.debug_frame',debug,cluster('BLDC_SetDuty')
+	.sdecl	'.debug_frame',debug,cluster('Bldc_SetDuty')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L690,.L86,.L220-.L86
-	.sdecl	'.debug_frame',debug,cluster('BLDC_AskSpeed')
+	.word	.L744,.L86,.L241-.L86
+	.sdecl	'.debug_frame',debug,cluster('Bldc_AskSpeed')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L690,.L88,.L227-.L88
-	.sdecl	'.debug_frame',debug,cluster('BLDCData_init')
+	.word	.L744,.L88,.L248-.L88
+	.sdecl	'.debug_frame',debug,cluster('BldcData_init')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L690,.L90,.L229-.L90
-	.sdecl	'.debug_frame',debug,cluster('BLDC_uart_init')
+	.word	.L744,.L90,.L259-.L90
+	.sdecl	'.debug_frame',debug,cluster('Bldc_uart_init')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L690,.L92,.L228-.L92
+	.word	.L744,.L92,.L249-.L92
+	.sdecl	'.debug_frame',debug,cluster('BldcSetCurrent')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L744,.L94,.L250-.L94
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('BldcSetSpeed')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L744,.L96,.L253-.L96
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('BldcSetPos')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L744,.L98,.L256-.L98
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	; Module end

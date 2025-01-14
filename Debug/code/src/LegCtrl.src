@@ -19548,11 +19548,11 @@ ctrl:	.type	object
 	.byte	'LegNum',0,53,22,30
 	.word	144434
 	.byte	34
-	.byte	'_BLDCMode',0,53,25,14,1,16
+	.byte	'_BldcMode',0,53,25,14,1,16
 	.byte	'CURRENT',0,0,16
 	.byte	'RPM',0,1,16
 	.byte	'POSITION',0,2,0,28
-	.byte	'BLDCMode',0,53,29,3
+	.byte	'BldcMode',0,53,29,3
 	.word	144470
 	.byte	14
 	.word	228
@@ -19637,7 +19637,7 @@ ctrl:	.type	object
 	.byte	'MotorLimit',0,53,67,3
 	.word	144888
 	.byte	10
-	.byte	'_BLDC',0,53,70,16,240,1,13
+	.byte	'_Bldc',0,53,70,16,240,1,13
 	.byte	'enable',0
 	.word	144879
 	.byte	1,2,35,0,13
@@ -19680,7 +19680,7 @@ ctrl:	.type	object
 	.byte	'currentPID',0
 	.word	144071
 	.byte	52,3,35,188,1,0,28
-	.byte	'BLDCType',0,53,83,3
+	.byte	'BldcType',0,53,83,3
 	.word	145036
 	.byte	28
 	.byte	'Vector2f',0,22,10,3
@@ -19947,7 +19947,7 @@ ctrl:	.type	object
 	.byte	'zf_device_wifi_uart.h',0,9,0,0
 	.byte	'seekfree_assistant.h',0,10,0,0
 	.byte	'Pid.h',0,3,0,0
-	.byte	'BLDC.h',0,3,0,0
+	.byte	'bldc.h',0,3,0,0
 	.byte	'MathLib.h',0,3,0,0
 	.byte	'ServoMotor.h',0,3,0,0
 	.byte	'imu.h',0,3,0,0
