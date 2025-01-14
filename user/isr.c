@@ -37,8 +37,6 @@
 
 #include "isr_config.h"
 
-float WorldTime = 0.f;
-
 // 对于TC系列默认是不支持中断嵌套的，希望支持中断嵌套需要在中断内使用 interrupt_global_enable(0); 来开启中断嵌套
 // 简单点说实际上进入中断后TC系列的硬件自动调用了 interrupt_global_disable(); 来拒绝响应任何的中断，因此需要我们自己手动调用
 // interrupt_global_enable(0); 来开启中断的响应。
@@ -48,7 +46,9 @@ IFX_INTERRUPT(cc60_pit_ch0_isr, 0, CCU6_0_CH0_ISR_PRIORITY)
 {
 	interrupt_global_enable(0);	   // 开启中断嵌套
 
-	WorldTime			+= 0.001;	 // 1ms
+	// 计数器计时
+	ctrl.leftTime		+= 1;	 // 1ms
+	ctrl.rightTime		+= 1;	 // 1ms
 
 	static int ServoCnt	 = 0;
 	if (ServoCnt++ > 5) {	 // 1k -> 200Hz

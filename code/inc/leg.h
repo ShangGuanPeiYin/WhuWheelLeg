@@ -2,6 +2,7 @@
 #define _LEG_H_
 #include "Brushless.h"
 #include "LegCtrl.h"
+#include "MathLib.h"
 #include "ServoMotor.h"
 #include "vector.h"
 #include "zf_common_typedef.h"
@@ -24,12 +25,16 @@ typedef struct _leg {
 
 	// 五连杆坐标系下的坐标，原点在五连杆的中垂线上
 	// float angle1, angle4;		   // 角度真实值，是和图中的一一对应 腿部采用弧度制
-	float angle1set, angle4set;	   // 角度设定值，是在初始角度之上的设定值 弧度
+	float angle1Set, angle4Set;	   // 角度设定值，PosSet直接解算得到。弧度
 
 	Vector2f PosNow, PosSet;	// 实际足端坐标 与 设定足端坐标。单位mm
-	Vector2f PosMov;			//  线性插值计算值
+	// Vector2f PosMov;			//  线性插值计算值
+
+	// Vector2f PosZero;	 //  零点
 
 	float reachTime;	// 设定移动到目标位置的移动时间(ms)
+
+	uint64_t* RunTime;	  // 腿部的运行时钟
 
 	MotionType motion;
 
@@ -40,7 +45,11 @@ extern LegType legRight;
 
 Vector2f InverseKinematics(Vector2f point);				   // 逆解 计算C1 C4
 Vector2f ForwardKinematics(float angle1, float angle4);	   // 正解，求（x，y）
-void	 LegMoveToPoint(LegType* leg, Vector2f PosSet, float reachTime);
-void	 Angle_Leg2Servo(LegType* leg);
+
+void LegReset(void);	// 重置PosZero并移动到Poszero
+
+void LegMoveToPoint(LegType* leg, Vector2f PosSet, float reachTime);
+void AngleCalculate(LegType* leg, Vector2f pos);	// 从Pos向下解算至 Servo.angleSet
+void Angle_Leg2Servo(LegType* leg);
 
 #endif

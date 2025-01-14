@@ -50,7 +50,7 @@ Vector2f PointVecSub(Vector2f a, Vector2f b)	// 向量减
  *
  * @param degree 数组长度 = 阶数 + 1
  * @param coeff[] 控制点坐标数组
- * @param t 时间t
+ * @param t 时间t 0 -1
  * @return Vector2f 此时的点
  */
 Vector2f BezierCalculate(uint8 degree, Vector2f coeff[], float t)

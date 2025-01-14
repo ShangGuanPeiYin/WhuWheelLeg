@@ -3,6 +3,12 @@
 LegType legLeft;
 LegType legRight;
 
+void LegInit(void)
+{
+	legLeft.RunTime	 = &(ctrl.leftTime);
+	legRight.RunTime = &(ctrl.rightTime);
+};
+
 /**
  * @brief 用户层，使用一次，设置运动
  * @brief 单个腿在reachTime时间内移动到 PosSet ，要求单个腿可以单独控制
@@ -11,14 +17,22 @@ LegType legRight;
  */
 void LegMoveToPoint(LegType* leg, Vector2f PosSet, float reachTime)
 {
-	leg->reachTime	  = reachTime;
-	leg->PosSet		  = PosSet;
+	leg->reachTime = reachTime;
+	leg->PosSet	   = PosSet;
 
-	leg->PosMov		  = BezierCalculate(leg->motion.degree, leg->motion.Ctrl, WorldTime);	 // time now？ 计算动态点
+	// leg->PosMov		  = BezierCalculate(leg->motion.degree, leg->motion.Ctrl, 0.f);	   // time now？ 计算动态点
+};
 
-	Vector2f angleleg = InverseKinematics(leg->PosMov);	   // Pos  -> angle1,4
-	leg->angle1set	  = angleleg.x;
-	leg->angle4set	  = angleleg.y;
+/**
+ * @brief 从Pos向下解算至 Servo.angleSet 单个腿解算
+ *
+ * @param leg
+ */
+void AngleCalculate(LegType* leg, Vector2f pos)
+{
+	Vector2f angleleg = InverseKinematics(pos);	   // PosSet  ->  angle1,4
+	leg->angle1Set	  = angleleg.x;
+	leg->angle4Set	  = angleleg.y;
 	Angle_Leg2Servo(leg);
 };
 
@@ -28,13 +42,13 @@ void Angle_Leg2Servo(LegType* leg)
 {
 	switch (leg->num) {
 		case Left:
-			Servo[Fl].angleLeg = leg->angle1set;
-			Servo[Bl].angleLeg = leg->angle4set;
+			Servo[Fl].angleLeg = leg->angle1Set * RAD2DEG;
+			Servo[Bl].angleLeg = leg->angle4Set * RAD2DEG;
 			break;
 
 		case Right:
-			Servo[Fr].angleLeg = leg->angle1set;
-			Servo[Br].angleLeg = leg->angle4set;
+			Servo[Fr].angleLeg = leg->angle1Set * RAD2DEG;
+			Servo[Br].angleLeg = leg->angle4Set * RAD2DEG;
 			break;
 
 		default:
@@ -42,8 +56,12 @@ void Angle_Leg2Servo(LegType* leg)
 	};
 };
 
-/// @brief 逆解。（x，y），求∠1和4 不区分真实值与目标值
-/// @param leg
+/**
+ * @brief  逆解。（x，y），求∠1和4
+ *
+ * @param point 输入C点坐标
+ * @return Vector2f 返回弧度
+ */
 Vector2f InverseKinematics(Vector2f point)
 {
 	Vector2f angle;				// 利用二维向量储存angle1和4 对应xy
@@ -73,8 +91,13 @@ Vector2f InverseKinematics(Vector2f point)
 	return angle;
 };
 
-/// @brief 正解。∠1和4，求（x，y）
-/// @param leg
+/**
+ * @brief 正解。∠1和4，求（x，y）
+ *
+ * @param angle1  弧度
+ * @param angle4 弧度
+ * @return Vector2f C点坐标
+ */
 Vector2f ForwardKinematics(float angle1, float angle4)
 {
 	// 直接计算ABDE的坐标
@@ -104,4 +127,14 @@ Vector2f ForwardKinematics(float angle1, float angle4)
 	pointC.x = -L5 / 2 + L1 * cosf(angle1) + L2 * cosf(angle2);
 	pointC.y = L1 * sinf(angle1) + L2 * sinf(angle2);
 	return pointC;
+};
+
+/// @brief 重置PosZero并移动到Poszero
+void LegReset(void)
+{
+	Vector2f point0 = ForwardKinematics(PI, 0);
+	legLeft.PosSet	= point0;
+	legRight.PosSet = point0;
+
+	// TODO LegMove 不需要线性差值
 };
