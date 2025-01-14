@@ -17,6 +17,6 @@ extern int	 sanrow;
 extern int	 Rank;
 
 int	 OLED_Key_Scan(void);
-void KeyInit();
+void KeyInit(void);
 
 #endif /* CODE_KEY_H_ */

@@ -6,6 +6,7 @@
 C_SRCS += \
 "../code/src/Brushless.c" \
 "../code/src/Camera.c" \
+"../code/src/LegCtrl.c" \
 "../code/src/MathLib.c" \
 "../code/src/Pid.c" \
 "../code/src/ServoMotor.c" \
@@ -19,6 +20,7 @@ C_SRCS += \
 COMPILED_SRCS += \
 "code/src/Brushless.src" \
 "code/src/Camera.src" \
+"code/src/LegCtrl.src" \
 "code/src/MathLib.src" \
 "code/src/Pid.src" \
 "code/src/ServoMotor.src" \
@@ -32,6 +34,7 @@ COMPILED_SRCS += \
 C_DEPS += \
 "./code/src/Brushless.d" \
 "./code/src/Camera.d" \
+"./code/src/LegCtrl.d" \
 "./code/src/MathLib.d" \
 "./code/src/Pid.d" \
 "./code/src/ServoMotor.d" \
@@ -45,6 +48,7 @@ C_DEPS += \
 OBJS += \
 "code/src/Brushless.o" \
 "code/src/Camera.o" \
+"code/src/LegCtrl.o" \
 "code/src/MathLib.o" \
 "code/src/Pid.o" \
 "code/src/ServoMotor.o" \
@@ -64,6 +68,10 @@ OBJS += \
 "code/src/Camera.src":"../code/src/Camera.c" "code/src/subdir.mk"
 	cctc -cs --dep-file="$*.d" --misrac-version=2004 -D__CPU__=tc26xb "-fD:/files/Desktop/Car/ADS_Workspace/WheelLeg/Debug/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc26xb -Y0 -N0 -Z0 -o "$@" "$<"
 "code/src/Camera.o":"code/src/Camera.src" "code/src/subdir.mk"
+	astc -Og -Os --no-warnings= --error-limit=42 -o  "$@" "$<"
+"code/src/LegCtrl.src":"../code/src/LegCtrl.c" "code/src/subdir.mk"
+	cctc -cs --dep-file="$*.d" --misrac-version=2004 -D__CPU__=tc26xb "-fD:/files/Desktop/Car/ADS_Workspace/WheelLeg/Debug/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc26xb -Y0 -N0 -Z0 -o "$@" "$<"
+"code/src/LegCtrl.o":"code/src/LegCtrl.src" "code/src/subdir.mk"
 	astc -Og -Os --no-warnings= --error-limit=42 -o  "$@" "$<"
 "code/src/MathLib.src":"../code/src/MathLib.c" "code/src/subdir.mk"
 	cctc -cs --dep-file="$*.d" --misrac-version=2004 -D__CPU__=tc26xb "-fD:/files/Desktop/Car/ADS_Workspace/WheelLeg/Debug/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc26xb -Y0 -N0 -Z0 -o "$@" "$<"
@@ -105,7 +113,7 @@ OBJS += \
 clean: clean-code-2f-src
 
 clean-code-2f-src:
-	-$(RM) ./code/src/Brushless.d ./code/src/Brushless.o ./code/src/Brushless.src ./code/src/Camera.d ./code/src/Camera.o ./code/src/Camera.src ./code/src/MathLib.d ./code/src/MathLib.o ./code/src/MathLib.src ./code/src/Pid.d ./code/src/Pid.o ./code/src/Pid.src ./code/src/ServoMotor.d ./code/src/ServoMotor.o ./code/src/ServoMotor.src ./code/src/imu.d ./code/src/imu.o ./code/src/imu.src ./code/src/key.d ./code/src/key.o ./code/src/key.src ./code/src/leg.d ./code/src/leg.o ./code/src/leg.src ./code/src/oledDebug.d ./code/src/oledDebug.o ./code/src/oledDebug.src ./code/src/robot.d ./code/src/robot.o ./code/src/robot.src ./code/src/vector.d ./code/src/vector.o ./code/src/vector.src
+	-$(RM) ./code/src/Brushless.d ./code/src/Brushless.o ./code/src/Brushless.src ./code/src/Camera.d ./code/src/Camera.o ./code/src/Camera.src ./code/src/LegCtrl.d ./code/src/LegCtrl.o ./code/src/LegCtrl.src ./code/src/MathLib.d ./code/src/MathLib.o ./code/src/MathLib.src ./code/src/Pid.d ./code/src/Pid.o ./code/src/Pid.src ./code/src/ServoMotor.d ./code/src/ServoMotor.o ./code/src/ServoMotor.src ./code/src/imu.d ./code/src/imu.o ./code/src/imu.src ./code/src/key.d ./code/src/key.o ./code/src/key.src ./code/src/leg.d ./code/src/leg.o ./code/src/leg.src ./code/src/oledDebug.d ./code/src/oledDebug.o ./code/src/oledDebug.src ./code/src/robot.d ./code/src/robot.o ./code/src/robot.src ./code/src/vector.d ./code/src/vector.o ./code/src/vector.src
 
 .PHONY: clean-code-2f-src
 

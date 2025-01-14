@@ -4,30 +4,37 @@ LegType legLeft;
 LegType legRight;
 
 /**
- * @brief 单个腿移动到PosSet，要求单个腿可以单独控制
+ * @brief 用户层，使用一次，设置运动
+ * @brief 单个腿在reachTime时间内移动到 PosSet ，要求单个腿可以单独控制
  *
  * @param leg
  */
-void LegMoveToPoint(LegType* leg)
+void LegMoveToPoint(LegType* leg, Vector2f PosSet, float reachTime)
 {
-	// TODO 曲线，计算出曲线上的点
-	// TODO leg->PosMov = 点
+	leg->reachTime	  = reachTime;
+	leg->PosSet		  = PosSet;
 
-	InverseKinematics(leg->PosMov);	   // Pos  -> angle1,4
+	leg->PosMov		  = BezierCalculate(leg->motion.degree, leg->motion.Ctrl, WorldTime);	 // time now？ 计算动态点
+
+	Vector2f angleleg = InverseKinematics(leg->PosMov);	   // Pos  -> angle1,4
+	leg->angle1set	  = angleleg.x;
+	leg->angle4set	  = angleleg.y;
 	Angle_Leg2Servo(leg);
 };
 
+/// @brief 舵机的angleLeg向angle14转化
+/// @param leg
 void Angle_Leg2Servo(LegType* leg)
 {
 	switch (leg->num) {
 		case Left:
-			Servo[Fl].angleLeg = leg->angle1;
-			Servo[Bl].angleLeg = leg->angle4;
+			Servo[Fl].angleLeg = leg->angle1set;
+			Servo[Bl].angleLeg = leg->angle4set;
 			break;
 
 		case Right:
-			Servo[Fr].angleLeg = leg->angle1;
-			Servo[Br].angleLeg = leg->angle4;
+			Servo[Fr].angleLeg = leg->angle1set;
+			Servo[Br].angleLeg = leg->angle4set;
 			break;
 
 		default:

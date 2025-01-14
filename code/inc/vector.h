@@ -16,4 +16,7 @@ Vector2f PointVecMultiplyNum(Vector2f a, float num);	// 向量*数
 Vector2f PointVecAdd(Vector2f a, Vector2f b);			// 向量加
 Vector2f PointVecSub(Vector2f a, Vector2f b);			// 向量减
 
+Vector2f BezierCalculate(uint8 degree, Vector2f coeff[], float t);
+void	 Rotate(Vector2f* point, Vector2f point0, float angle);
+
 #endif
