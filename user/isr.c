@@ -51,13 +51,13 @@ IFX_INTERRUPT(cc60_pit_ch0_isr, 0, CCU6_0_CH0_ISR_PRIORITY)
 	ctrl.rightTime		+= 1;	 // 1ms
 
 	static int ServoCnt	 = 0;
-	if (ServoCnt++ > 5) {	 // 1k -> 200Hz
+	if (++ServoCnt > 5) {	 // 1k -> 200Hz
 		ServoFunc();
 		ServoCnt = 0;
 	}
 
 	static u8 BrushlessCnt = 0;	   // 1k -> 500Hz
-	if (BrushlessCnt++ > 2) {
+	if (++BrushlessCnt > 2) {
 		BrushlessFunc();
 		BrushlessCnt = 0;
 	}

@@ -15,11 +15,9 @@ void OLedDebug(void)
 	if (keyflag1 == 1)	  // ×ó
 	{
 		angletemp -= 10.f;
-		system_delay_ms(500);
 	} else if (keyflag2 == 1)	 // ÓÒ
 	{
 		angletemp += 10.f;
-		system_delay_ms(500);
 	}
 	Limit(angletemp, 0, 180);
 

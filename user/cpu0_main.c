@@ -24,6 +24,8 @@ int	  core0_main(void)
 	cpu_wait_event_ready();	   // 等待所有核心初始化完毕
 	system_delay_ms(500);
 	while (TRUE) {
+		system_delay_ms(10);	// 10ms执行一次，即100Hz
+
 		// 舵机控制
 		Servo[Fl].angleSet = angletemp;
 		Servo[Fr].angleSet = angletemp;
@@ -31,6 +33,8 @@ int	  core0_main(void)
 		Servo[Br].angleSet = angletemp;
 
 		OLedDebug();
+
+		// 更新电机
 	}
 }
 

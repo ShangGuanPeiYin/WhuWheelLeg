@@ -10,17 +10,19 @@ void LegInit(void)
 };
 
 /**
- * @brief 用户层，使用一次，设置运动
- * @brief 单个腿在reachTime时间内移动到 PosSet ，要求单个腿可以单独控制
+ * @brief 足端画曲线
  *
  * @param leg
  */
-void LegMoveToPoint(LegType* leg, Vector2f PosSet, float reachTime)
+void LegDrawCurve(LegType* leg, float reachTime)
 {
 	leg->reachTime = reachTime;
-	leg->PosSet	   = PosSet;
 
 	// leg->PosMov		  = BezierCalculate(leg->motion.degree, leg->motion.Ctrl, 0.f);	   // time now？ 计算动态点
+
+	//
+	// TODO 解算出Set
+	AngleCalculate(leg, leg->PosSet);
 };
 
 /**
@@ -129,12 +131,15 @@ Vector2f ForwardKinematics(float angle1, float angle4)
 	return pointC;
 };
 
-/// @brief 重置PosZero并移动到Poszero
+/**
+ * @brief 重置PosZero并移动到Poszero
+ *
+ */
 void LegReset(void)
 {
 	Vector2f point0 = ForwardKinematics(PI, 0);
 	legLeft.PosSet	= point0;
 	legRight.PosSet = point0;
 
-	// TODO LegMove 不需要线性差值
+	// TODO LegMove 需要线性差值
 };
