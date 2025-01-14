@@ -9,12 +9,12 @@ typedef struct _PointType	 // 二维点以及其角度，比向量Vector多一个角度和贝塞尔控
 	float y;
 } Vector2f;
 
-float	 PointInnerProduct(Vector2f a, Vector2f b);		// 向量内积
-float	 PointModulo(Vector2f a);						// 向量取模
-Vector2f PointVecDivideNum(Vector2f a, float num);		// 向量/数
-Vector2f PointVecMultiplyNum(Vector2f a, float num);	// 向量*数
-Vector2f PointVecAdd(Vector2f a, Vector2f b);			// 向量加
-Vector2f PointVecSub(Vector2f a, Vector2f b);			// 向量减
+float	 Vector2fInnerProduct(Vector2f a, Vector2f b);	  // 向量内积
+float	 Vector2fMagnitude(Vector2f a);					  // 向量取模
+Vector2f Vector2fDivideNum(Vector2f a, float num);		  // 向量/数
+Vector2f Vector2fXNum(Vector2f a, float num);			  // 向量*数
+Vector2f Vector2fAdd(Vector2f a, Vector2f b);			  // 向量加
+Vector2f Vector2fSub(Vector2f a, Vector2f b);			  // 向量减
 
 Vector2f BezierCalculate(uint8 degree, Vector2f coeff[], float t);
 void	 Rotate(Vector2f* point, Vector2f point0, float angle);

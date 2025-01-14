@@ -24,11 +24,10 @@ typedef struct _leg {
 	BrushlessType* wheel;
 
 	// 五连杆坐标系下的坐标，原点在五连杆的中垂线上
-	// float angle1, angle4;		   // 角度真实值，是和图中的一一对应 腿部采用弧度制
 	float angle1Set, angle4Set;	   // 角度设定值，PosSet直接解算得到。弧度
 
 	Vector2f PosNow, PosSet;	// 实际足端坐标 与 设定足端坐标。单位mm。除非线性插值，否则Set就是控制点
-	// Vector2f PosMov;			//  线性插值计算值
+	Vector2f PosStart, PosTarget;	 // 直线两端
 
 	// Vector2f PosZero;	 //  零点
 
@@ -48,8 +47,8 @@ Vector2f ForwardKinematics(float angle1, float angle4);	   // 正解，求（x，y）
 
 void LegReset(void);	// 重置PosZero并移动到Poszero
 
-void LegDrawCurve(LegType* leg, float reachTime);					 // 足端画曲线（贝塞尔
-void LegDrawLine(LegType* leg, Vector2f PosSet, float reachTime);	 // 足端画直线（线性插值
+void LegDrawCurve(LegType* leg, float reachTime);						// 足端画曲线（贝塞尔
+void LegDrawLine(LegType* leg, Vector2f PosTarget, float reachTime);	// 足端画直线（线性插值
 
 void AngleCalculate(LegType* leg, Vector2f pos);	// 从Pos向下解算至 Servo.angleSet
 void Angle_Leg2Servo(LegType* leg);

@@ -2,17 +2,17 @@
 
 /******************************************** 平面向量计算 ****************************************************** */
 
-float PointInnerProduct(Vector2f a, Vector2f b)	   // 向量内积
+float Vector2fInnerProduct(Vector2f a, Vector2f b)	  // 向量内积
 {
 	return a.x * b.x + a.y * b.y;
 }
 
-float PointModulo(Vector2f a)	 // 向量取模
+float Vector2fMagnitude(Vector2f a)	   // 向量取模
 {
 	return sqrt(a.x * a.x + a.y * a.y);
 }
 
-Vector2f PointVecDivideNum(Vector2f a, float num)	 // 向量/数
+Vector2f Vector2fDivideNum(Vector2f a, float num)	 // 向量/数
 {
 	if (num != 0) {
 		a.x /= num;
@@ -21,14 +21,14 @@ Vector2f PointVecDivideNum(Vector2f a, float num)	 // 向量/数
 	return a;
 }
 
-Vector2f PointVecMultiplyNum(Vector2f a, float num)	   // 向量*数
+Vector2f Vector2fXNum(Vector2f a, float num)	// 向量*数
 {
 	a.x *= num;
 	a.y *= num;
 	return a;
 }
 
-Vector2f PointVecAdd(Vector2f a, Vector2f b)	// 向量加
+Vector2f Vector2fAdd(Vector2f a, Vector2f b)	// 向量加
 {
 	Vector2f result;
 	result.x = a.x + b.x;
@@ -36,11 +36,11 @@ Vector2f PointVecAdd(Vector2f a, Vector2f b)	// 向量加
 	return result;
 }
 
-Vector2f PointVecSub(Vector2f a, Vector2f b)	// 向量减
+Vector2f Vector2fSub(Vector2f a, Vector2f b)	// 向量减
 {
 	Vector2f result;
-	result.x = b.x - a.x;
-	result.y = b.y - a.y;
+	result.x = a.x - b.x;
+	result.y = a.y - b.y;
 	return result;
 }
 

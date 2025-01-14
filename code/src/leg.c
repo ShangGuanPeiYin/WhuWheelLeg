@@ -10,7 +10,7 @@ void LegInit(void)
 };
 
 /**
- * @brief 足端画曲线 一次
+ * @brief 足端画曲线 默认一次
  *
  * @param leg
  */
@@ -19,32 +19,73 @@ void LegDrawCurve(LegType* leg, float reachTime)
 	switch (robot.pipeline.state) {
 		case StatePreparing:
 			leg->reachTime = reachTime;
+
 			/* code */
 
 			Prepared(&(robot.pipeline));
 			break;
-		case StateProcessing:
-			/* code */
-			Processed(&(robot.pipeline));
+
+		case StateProcessing:;
+			uint64_t runTime = *(leg->RunTime);
+			if (runTime < leg->reachTime) {
+				leg->PosSet = BezierCalculate(leg->motion.degree, leg->motion.CtrlPoint, runTime / leg->reachTime);
+			} else {
+				Processed(&(robot.pipeline));
+			}
+
+			AngleCalculate(leg, leg->PosSet);	 // 更新舵机角
 			break;
+
 		case StateEnd:
+
 			/* code */
+
 			break;
 		default:
 			break;
 	}
+};
 
-	//
-	// TODO 解算出Set
+/**
+ * @brief 足端走直线，线性插值
+ *
+ * @param leg
+ * @param PosTarget
+ * @param reachTime
+ */
+void LegDrawLine(LegType* leg, Vector2f PosTarget, float reachTime)
+{
+	switch (robot.pipeline.state) {
+		case StatePreparing:
+			leg->reachTime = reachTime;
+			leg->PosTarget = PosTarget;
+			leg->PosStart  = ForwardKinematics(leg->angle1Set, leg->angle4Set);
 
-	uint64_t runTime = *(leg->RunTime);
-	if (runTime < leg->reachTime) {
-		leg->PosSet = BezierCalculate(leg->motion.degree, leg->motion.CtrlPoint, runTime / leg->reachTime);
-	} else {
-		// 结束
+			Prepared(&(robot.pipeline));
+			break;
+
+		case StateProcessing:;
+			uint64_t runTime = *(leg->RunTime);
+			if (runTime < leg->reachTime) {
+				// Start + (target - start)*(runtime/reachtime)
+				leg->PosSet = Vector2fAdd(leg->PosStart,
+										  Vector2fXNum(Vector2fSub(leg->PosTarget, leg->PosStart), (runTime / leg->reachTime)));
+
+			} else {
+				Processed(&(robot.pipeline));
+			}
+
+			AngleCalculate(leg, leg->PosSet);	 // 更新舵机角
+			break;
+
+		case StateEnd:
+
+			/* code */
+
+			break;
+		default:
+			break;
 	}
-
-	AngleCalculate(leg, leg->PosSet);
 };
 
 /**
