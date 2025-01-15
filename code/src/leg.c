@@ -139,6 +139,42 @@ void Angle_Leg2Servo(LegType* leg)
 };
 
 /**
+ * @brief
+ *
+ * @param point 五连杆坐标限制范围，防止输入的坐标不合理，要求能够构成五边形
+ * 使用： if(PointLimit(point))
+ * @return true 无误
+ * @return false 有误
+ */
+bool PointLimit(Vector2f* point)
+{
+	Vector2f pointA;
+	Vector2f pointE;
+
+	pointA.y = pointE.y = 0;
+	pointA.x = pointE.x	 = L5 / 2;
+	pointA.x			*= -1;
+
+	float MaxLength		 = L1 + L2;
+	float MminLength	 = L2 - L1;
+
+	float length1		 = Vector2fMagnitude(Vector2fSub(*point, pointA));	  // 计算到AE的模
+	float length2		 = Vector2fMagnitude(Vector2fSub(*point, pointE));
+
+	// 要求二者同时在min-max
+	float MinMag		 = MIN(length1, length2);
+	float MaxMag		 = MAX(length1, length2);
+
+	if (MinMag >= MaxLength || MaxMag <= MminLength) {
+		// TODO 改变Point至合理范围内
+
+		return false;
+	} else {
+		return true;
+	}
+};
+
+/**
  * @brief  逆解。（x，y），求∠1和4
  *
  * @param point 输入C点坐标

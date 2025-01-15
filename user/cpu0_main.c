@@ -29,7 +29,11 @@ int		 core0_main(void)
 	while (TRUE) {
 		system_delay_ms(5);	   // 5ms执行一次，即200Hz 需要<=舵机Func频率
 
+		// BldcSetCurrent(float leftCur, float rightCur);		// PWM +-4k
+		// BldcSetSpeed(float leftSpeed, float rightSpeed);	// rpm
+
 		/*
+
 		上位机控制电机：
 		先用上位机控制电机，电机反馈速度的格式是 左，右
 		检查接线左右有没有反，反了就换一下
@@ -42,8 +46,6 @@ int		 core0_main(void)
 		尝试用上位机输出速度波形，搓好PID
 
 		无刷电机测试函数，直接调用即可
-		BldcSetCurrent(float leftCur, float rightCur);		// PWM +-4k
-		BldcSetSpeed(float leftSpeed, float rightSpeed);	// rpm
 
 		测试代码自己写吧
 

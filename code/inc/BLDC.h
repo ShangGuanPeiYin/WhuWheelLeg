@@ -7,8 +7,8 @@
 // 无刷电机串口初始化
 #define SMALL_DRIVER_UART	  (UART_2)
 #define SMALL_DRIVER_BAUDRATE (460800)
-#define SMALL_DRIVER_RX		  (UART2_TX_P10_5)
-#define SMALL_DRIVER_TX		  (UART2_RX_P10_6)
+#define SMALL_DRIVER_RX		  (UART2_TX_P10_5)	  // 根据需要改一下
+#define SMALL_DRIVER_TX		  (UART2_RX_P10_6)	  // 根据需要改一下
 
 //  P10-5 6 串口
 //  P21-6 7 Uart
