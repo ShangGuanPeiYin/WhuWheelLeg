@@ -99,6 +99,8 @@ void BldcSpeedMode(BldcType* motor)
 
 // 电流模式
 void BldcCurrentMode(BldcType* motor) {
+	// 开环电流控制，此函数为空
+
 	// 电流环的输出是PID的Output
 	//  PIDOperation(&motor->currentPID, motor->valueNow.current, motor->valueSet.current);	   // TODO 不知道能不能写电流环
 };
