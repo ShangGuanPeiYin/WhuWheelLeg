@@ -115,6 +115,7 @@
 
 //=====================================================”√ªß≤„======================================================
 #include "Camera.h"
+#include "Filter.h"
 #include "MathLib.h"
 #include "Pid.h"
 #include "ServoMotor.h"
