@@ -21,6 +21,17 @@ void robotInit(RobotType* robot)
 	robot->robotParam.rightTime = 0;
 
 	LegInit();
+
+	LegReset();
+};
+
+/**
+ * @brief 信息发生错误 屏幕上输出error
+ *
+ */
+void RobotError(void)
+{
+	for (uint16 i = 0; i < 8; i++) { oled_show_string(66, i, "Error_Error_Error"); }
 };
 
 /************************** 流水线函数 ************************************** */

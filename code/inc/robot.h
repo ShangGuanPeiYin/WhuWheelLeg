@@ -31,6 +31,7 @@ typedef struct _robot {
 extern RobotType robot;
 
 void robotInit(RobotType* robot);
+void RobotError(void);
 
 void Start(PipelineType* pipeline);		   // 令该状态流水线运行开始运行
 void Prepared(PipelineType* pipeline);	   // 已准备好

@@ -106,35 +106,33 @@ void LegDrawLine(LegType* leg, Vector2f PosTarget, float reachTime)
 };
 
 /**
- * @brief 从Pos向下解算至 Servo.angleSet 单个腿解算
+ * @brief 从Pos向下解算至 Servo.angleLeg 单个腿解算 调用此函数即可移动至目标位置
  *
  * @param leg
  */
 void AngleCalculate(LegType* leg, Vector2f pos)
 {
-	Vector2f angleleg = InverseKinematics(pos);	   // PosSet  ->  angle1,4
-	leg->angle1Set	  = angleleg.x;
-	leg->angle4Set	  = angleleg.y;
-	Angle_Leg2Servo(leg);
-};
+	if (PointLimit(&pos)) {
+		Vector2f angleleg = InverseKinematics(pos);	   // PosSet  ->  angle1,4
+		leg->angle1Set	  = angleleg.x;
+		leg->angle4Set	  = angleleg.y;
 
-/// @brief 舵机的angleLeg向angle14转化
-/// @param leg
-void Angle_Leg2Servo(LegType* leg)
-{
-	switch (leg->num) {
-		case Left:
-			Servo[Fl].angleLeg = leg->angle1Set * RAD2DEG;
-			Servo[Bl].angleLeg = leg->angle4Set * RAD2DEG;
-			break;
+		switch (leg->num) {
+			case Left:
+				Servo[Fl].angleLeg = leg->angle1Set * RAD2DEG;
+				Servo[Bl].angleLeg = leg->angle4Set * RAD2DEG;
+				break;
 
-		case Right:
-			Servo[Fr].angleLeg = leg->angle1Set * RAD2DEG;
-			Servo[Br].angleLeg = leg->angle4Set * RAD2DEG;
-			break;
+			case Right:
+				Servo[Fr].angleLeg = leg->angle1Set * RAD2DEG;
+				Servo[Br].angleLeg = leg->angle4Set * RAD2DEG;
+				break;
 
-		default:
-			break;
+			default:
+				break;
+		};
+	} else {
+		RobotError();
 	};
 };
 
@@ -257,5 +255,7 @@ void LegReset(void)
 	legLeft.PosSet	= point0;
 	legRight.PosSet = point0;
 
+	AngleCalculate(&legLeft, legLeft.PosSet);	 // 解算
+	AngleCalculate(&legRight, legRight.PosSet);
 	// TODO LegMove 需要线性差值
 };
