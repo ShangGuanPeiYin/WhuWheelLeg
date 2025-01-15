@@ -5,6 +5,23 @@ LegType legRight;
 
 void LegInit(void)
 {
+	memset(&legLeft, 0, sizeof(LegType));
+	memset(&legRight, 0, sizeof(LegType));
+
+	legLeft.num		= Left;
+	legRight.num	= Right;
+
+	legLeft.front	= &(Servo[Fl]);
+	legLeft.behind	= &(Servo[Bl]);
+	legLeft.wheel	= &(Motor[0]);
+
+	legRight.front	= &(Servo[Fr]);
+	legRight.behind = &(Servo[Br]);
+	legRight.wheel	= &(Motor[1]);
+
+	MotionInit(&(legLeft.motion));
+	MotionInit(&(legRight.motion));
+
 	legLeft.RunTime	 = &(robot.robotParam.leftTime);
 	legRight.RunTime = &(robot.robotParam.rightTime);
 };

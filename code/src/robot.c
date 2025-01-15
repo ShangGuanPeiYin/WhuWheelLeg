@@ -2,6 +2,27 @@
 
 RobotType robot;
 
+/**
+ * @brief robot初始化
+ *
+ * @param robot
+ */
+void robotInit(RobotType* robot)
+{
+	memset(robot, 0, sizeof(RobotType));
+	robot->left	 = &(legLeft);
+	robot->right = &(legRight);
+
+	Start(&(robot->pipeline));
+
+	// robot->posture = &( );
+
+	robot->robotParam.leftTime	= 0;
+	robot->robotParam.rightTime = 0;
+
+	LegInit();
+};
+
 /************************** 流水线函数 ************************************** */
 
 void Start(PipelineType* pipeline)	  // 准备开始

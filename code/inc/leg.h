@@ -42,6 +42,8 @@ typedef struct _leg {
 extern LegType legLeft;
 extern LegType legRight;
 
+void LegInit(void);
+
 Vector2f InverseKinematics(Vector2f point);				   // 逆解 计算C1 C4
 Vector2f ForwardKinematics(float angle1, float angle4);	   // 正解，求（x，y）
 

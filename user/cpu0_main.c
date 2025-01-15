@@ -14,9 +14,9 @@ int	  core0_main(void)
 
 	// mt9v03x_init();	   // 摄像头初始化
 
-	KeyInit();			// 按键初始化
-	ServoInit();		// 舵机控制初始化
-	BldcInit();	// 无刷电机初始化
+	KeyInit();		// 按键初始化
+	ServoInit();	// 舵机控制初始化
+	BldcInit();		// 无刷电机初始化
 
 	pit_ms_init(CCU60_CH0, 1);	  // CCU60_CH0通道，中断初始化周期为1ms 中断初始化在前面
 
