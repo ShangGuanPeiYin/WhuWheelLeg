@@ -26,11 +26,18 @@ typedef struct _robot {
 
 	ParamType robotParam;
 
+	// TODO: CameraType
+
 } RobotType;
 
 extern RobotType robot;
 
 void robotInit(RobotType* robot);
+
+void robotRun(void);
+void robotDrawLine(void);
+void robotDrawCurve(void);
+
 void RobotError(void);
 
 void Start(PipelineType* pipeline);		   // 令该状态流水线运行开始运行

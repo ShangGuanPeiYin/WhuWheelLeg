@@ -15,7 +15,7 @@ void robotInit(RobotType* robot)
 
 	Start(&(robot->pipeline));
 
-	// robot->posture = &( );
+	// IMU: robot->posture = &( );
 
 	robot->robotParam.leftTime	= 0;
 	robot->robotParam.rightTime = 0;
@@ -34,7 +34,7 @@ void RobotError(void)
 	for (uint16 i = 0; i < 8; i++) { oled_show_string(66, i, "Error_Error_Error"); }
 };
 
-/************************** 流水线函数 ************************************** */
+/********************************************** 流水线函数 ********************************************************** */
 
 void Start(PipelineType* pipeline)	  // 准备开始
 {
