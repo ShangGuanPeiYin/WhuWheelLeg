@@ -31,6 +31,6 @@ typedef struct _Motion {
 
 void MotionInit(MotionType* motion);
 void BoundCtrlInit(BoundParamType* boundParam);	   // 初始化boundParam
-void BoundCtrlCal(BoundParamType boundParam);	   // 计算CtrlPoint
+void BoundCtrlCal(BoundParamType* boundParam);	   // 计算CtrlPoint
 
 #endif

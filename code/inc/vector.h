@@ -3,7 +3,14 @@
 
 #include "zf_common_typedef.h"
 
-typedef struct _PointType	 // 二维点以及其角度，比向量Vector多一个角度和贝塞尔控制值t∈[0,1]，但没有用到
+typedef struct _Vector3fType	// 二维点以及其角度，比向量Vector多一个角度和贝塞尔控制值t∈[0,1]，但没有用到
+{
+	float x;
+	float y;
+	float z;
+} Vector3f;
+
+typedef struct _Vector2fType	// 二维点以及其角度，比向量Vector多一个角度和贝塞尔控制值t∈[0,1]，但没有用到
 {
 	float x;
 	float y;

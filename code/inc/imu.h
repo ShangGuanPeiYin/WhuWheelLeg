@@ -1,39 +1,22 @@
 #ifndef _IMU_H_
 #define _IMU_H_
+#include "vector.h"
 #include "zf_common_typedef.h"
 
+typedef struct _IMUParam {
+	Vector3f accel;	   // 三个方向上的加速度 m/s2
+	Vector3f angle;	   // 三个方向上的角度（欧拉角)  此处减去了偏移量  ° (deg)/s
+	Vector3f mag;	   // 三个方向上的磁场  Gauss
+
+	float pitch;	//  °(deg)
+	float roll;		// 俯仰、横滚、偏航角度
+	float yaw;		// 为了直观不再定义3维向量
+
+} IMUParam;
+
 typedef struct _Imu {
-	float accel_x;	  /*uinit: m/s2*/
-	float accel_y;	  // 三个方向上的加速度
-	float accel_z;
-
-	float angle_x;	  /*uinit: ° (deg)/s*/
-	float angle_y;	  // 三个方向上的角度（欧拉角)
-	float angle_z;
-
-	float mag_x;	/*uinit: ????*/
-	float mag_y;	// 三个方向上的磁场
-	float mag_z;
-
-	float pitch;   /*uinit: °  (deg)*/
-	float roll;	   // 俯仰、桶滚、回转角度
-	float yaw;
-
-	float raw_accel_x;	  /*uinit:  m/s2*/
-	float raw_accel_y;	  // 三个方向上的加速度飘移
-	float raw_accel_z;
-
-	float raw_angel_x;	  /*uinit: (deg)/s*/
-	float raw_angel_y;	  // 三个方向上的角速度飘移
-	float raw_angel_z;
-
-	float raw_mag_x;	/*uinit: mGauss*/
-	float raw_mag_y;	// 三个方向上的原始磁场数据
-	float raw_mag_z;
-
-	float raw_pitch;   /*uinit: °  (deg)*/
-	float raw_roll;	   // 初始及静止校准状态下的，俯仰、桶滚、回转角度
-	float raw_yaw;
+	IMUParam dataOri;	 // 原始数据
+	IMUParam dataRaw;	 // 偏移数据
 
 	float G;				   // 当地重力加速度
 	bool  calibration_flag;	   // 完成俯仰角校准的标志

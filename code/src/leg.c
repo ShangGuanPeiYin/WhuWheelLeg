@@ -57,7 +57,7 @@ bool LegDrawCurve(LegType* leg, float reachTime)
 
 			/* code */
 
-		    return true;
+			return true;
 	}
 	return false;
 };
