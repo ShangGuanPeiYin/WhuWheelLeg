@@ -16,6 +16,11 @@ typedef struct _Pipeline {
 	enum StateEnum state;
 } PipelineType;
 
+typedef struct _JumpLineType {
+	Vector2f Pos;
+	float	 reachTime;
+} JumpLineType;
+
 typedef struct _robot {
 	PipelineType pipeline;
 
@@ -24,7 +29,8 @@ typedef struct _robot {
 
 	IMUType* posture;
 
-	ParamType robotParam;
+	ParamType	 robotParam;
+	JumpLineType jumpLine;
 
 	// TODO: CameraType
 
@@ -37,6 +43,7 @@ void robotInit(RobotType* robot);
 void robotRun(void);
 void robotDrawLine(void);
 void robotDrawCurve(void);
+bool RobotJumpLine(void);
 
 void RobotError(void);
 

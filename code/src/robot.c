@@ -15,7 +15,8 @@ void robotInit(RobotType* robot)
 
 	Start(&(robot->pipeline));
 
-	// IMU: robot->posture = &( );
+	// TODO IMU: robot->posture = &( );
+	// TODO jumpLine
 
 	robot->robotParam.leftTime	= 0;
 	robot->robotParam.rightTime = 0;
@@ -32,6 +33,44 @@ bool RobotDrawLine(Vector2f PosTarget, float reachTime)
 	} else
 		return false;
 };
+
+/**
+ * @brief 直线跳跃
+ *
+ * @return true
+ * @return false
+ */
+bool RobotJumpLine(void)
+{
+	static u8 JumpLineState = 0;
+
+	switch (JumpLineState) {
+		case 0:
+			if (RobotDrawLine(robot.jumpLine.Pos, robot.jumpLine.reachTime))
+				JumpLineState++;
+			break;
+
+		case 1:
+			/* code */
+			break;
+		case 2:
+			/* code */
+			break;
+		case 3:
+			/* code */
+			break;
+		case 4:
+			/* code */
+			break;
+		case 5:
+			/* code */
+			break;
+		case 6:
+			/* code */
+			break;
+	}
+	return false;
+}
 
 /**
  * @brief 信息发生错误 屏幕上输出error

@@ -256,5 +256,5 @@ void LegReset(void)
 
 	AngleCalculate(&legLeft, legLeft.PosSet);	 // 解算
 	AngleCalculate(&legRight, legRight.PosSet);
-	// TODO：需要线性差值
+	// TODO：需要线性差值 增加时间戳，不然无法判断是否到位
 };

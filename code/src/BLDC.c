@@ -23,7 +23,8 @@ void BldcTypeInit(void)
 	ValueType	   Value  = {0};
 	PulseType	   pulse  = {0};
 	MotorParamType param  = {0};
-	MotorLimit	   limit;
+
+	MotorLimit limit;
 	limit.maxRPM	 = 0;	 // 根据需要修改
 	limit.maxCurrent = 0;	 // 不在这里限幅
 

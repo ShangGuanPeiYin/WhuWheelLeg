@@ -114,6 +114,6 @@ void Bldc_uart_init(void);								 // 无刷驱动 串口通讯初始化
 
 void BldcSetCurrent(float leftCur, float rightCur);	   // 设置函数
 void BldcSetSpeed(float leftSpeed, float rightSpeed);
-void BldcSetPos(float leftPos, float rightPos);
+void BldcSetPos(float leftPos, float rightPos);	   // TODO
 
 #endif
