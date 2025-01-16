@@ -1,8 +1,8 @@
 #ifndef _LEG_H_
 #define _LEG_H_
+#include "MasterCtrl.h"
 #include "MathLib.h"
 #include "ServoMotor.h"
-#include "WheelLegCtrl.h"
 #include "bldc.h"
 #include "vector.h"
 #include "zf_common_typedef.h"
@@ -48,11 +48,10 @@ bool	 PointLimit(Vector2f* point);
 Vector2f InverseKinematics(Vector2f point);				   // 逆解 计算C1 C4
 Vector2f ForwardKinematics(float angle1, float angle4);	   // 正解，求（x，y）
 
-void LegReset(void);	// 重置PosZero并移动到Poszero
+void LegReset(void);													// 重置PosZero并移动到Poszero
+bool LegDrawLine(LegType* leg, Vector2f PosTarget, float reachTime);	// 足端画曲线（贝塞尔
+bool LegDrawCurve(LegType* leg, float reachTime)		;				// 足端画直线（线性插值
 
-void LegDrawCurve(LegType* leg, float reachTime);						// 足端画曲线（贝塞尔
-void LegDrawLine(LegType* leg, Vector2f PosTarget, float reachTime);	// 足端画直线（线性插值
-
-void AngleCalculate(LegType* leg, Vector2f pos);	// 从Pos向下解算至 Servo.angleSet
+	void AngleCalculate(LegType* leg, Vector2f pos);	// 从Pos向下解算至 Servo.angleSet
 
 #endif

@@ -114,6 +114,20 @@ typedef __I uint8_t	 vuc8;	   // !< Read Only
 		*f = *(u32*) buff;     \
 	}
 
+/**
+ * @brief  线性插值 内联函数
+ *
+ * @param start
+ * @param end
+ * @param t
+ * @return float
+ */
+static inline float Lerp(float start, float end, float t)
+{
+	Limit(t, 0, 1);
+	return (end - start) * t + start;
+}
+
 // 数据转换
 void	ChangeDataByte(uint8_t* p1, uint8_t* p2);
 void	buffer_append_int32(uint8_t* buffer, int32_t source, int32_t* index);

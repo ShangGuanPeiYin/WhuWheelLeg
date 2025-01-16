@@ -22,7 +22,15 @@ void robotInit(RobotType* robot)
 
 	LegInit();
 
-	LegReset();
+	LegReset();	   // 运动到初始零点
+};
+
+bool RobotDrawLine(Vector2f PosTarget, float reachTime)
+{
+	if (LegDrawLine(&legLeft, PosTarget, reachTime) && LegDrawLine(&legRight, PosTarget, reachTime)) {
+		return true;
+	} else
+		return false;
 };
 
 /**
@@ -31,7 +39,8 @@ void robotInit(RobotType* robot)
  */
 void RobotError(void)
 {
-	for (uint16 i = 0; i < 8; i++) { oled_show_string(66, i, "Error_Error_Error"); }
+	for (;;)	// 死循环，需要重启
+		for (uint16 i = 0; i < 8; i++) { oled_show_string(66, i, "Error_Error_Error"); }
 };
 
 /********************************************** 流水线函数 ********************************************************** */

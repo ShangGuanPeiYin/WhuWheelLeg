@@ -119,7 +119,7 @@
 #include "MathLib.h"
 #include "Pid.h"
 #include "ServoMotor.h"
-#include "WheelLegCtrl.h"
+#include "MasterCtrl.h"
 #include "bldc.h"
 #include "imu.h"
 #include "key.h"

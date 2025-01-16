@@ -46,23 +46,12 @@ void ServoFunc(void)
 	for (size_t id = 0; id < 4; id++)	 // 循环执行
 	{
 		// 解算部分
-		// Servo[id].angleSet = (Servo[id].angleLeg + Servo[id].angleAdj) * Servo[id].sign;
+		Servo[id].angleSet = (Servo[id].angleLeg + Servo[id].angleAdj) * Servo[id].sign;
 
 		// 驱动电机
-		Servo[id].PWMSet = Servo[id].angleSet * ANGLE2PWM;
+		Servo[id].PWMSet   = Servo[id].angleSet * ANGLE2PWM;
 		Limit(Servo[id].PWMSet, 0, (int32_t) PWM_DUTY_MAX);	   // 限幅保护
 
 		pwm_set_duty(Servo[id].pin, Servo[id].PWMSet);	  // 设置PWM占空比
 	}
 };
-
-/* 线性差值，要移到上层
-	// 判断是否到位
-	if (Servo[id].cntTime <= Servo[id].reachTime) {
-		Servo[id].PWMSet = (Servo[id].cntTime / Servo[id].reachTime) * Servo[id].angleSet * ANGLE2PWM;	  // 线性插值
-		Servo[id].cntTime
-			+= 5.f;	   // 舵机频率200Hz																		// 中断频率
-	} else
-		Servo[id].PWMSet = Servo[id].angleSet * ANGLE2PWM;
-
-*/

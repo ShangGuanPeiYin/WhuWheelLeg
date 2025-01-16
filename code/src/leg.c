@@ -24,14 +24,14 @@ void LegInit(void)
 
 	legLeft.RunTime	 = &(robot.robotParam.leftTime);
 	legRight.RunTime = &(robot.robotParam.rightTime);
-};
+}
 
 /**
  * @brief 足端画曲线 默认一次
  *
  * @param leg
  */
-void LegDrawCurve(LegType* leg, float reachTime)
+bool LegDrawCurve(LegType* leg, float reachTime)
 {
 	switch (robot.pipeline.state) {
 		case StatePreparing:
@@ -57,10 +57,9 @@ void LegDrawCurve(LegType* leg, float reachTime)
 
 			/* code */
 
-			break;
-		default:
-			break;
+		    return true;
 	}
+	return false;
 };
 
 /**
@@ -70,39 +69,39 @@ void LegDrawCurve(LegType* leg, float reachTime)
  * @param PosTarget
  * @param reachTime
  */
-void LegDrawLine(LegType* leg, Vector2f PosTarget, float reachTime)
+bool LegDrawLine(LegType* leg, Vector2f PosTarget, float reachTime)
 {
 	switch (robot.pipeline.state) {
 		case StatePreparing:
-			leg->reachTime = reachTime;
-			leg->PosTarget = PosTarget;
-			leg->PosStart  = ForwardKinematics(leg->angle1Set, leg->angle4Set);
+			leg->reachTime	= reachTime;
+			leg->PosTarget	= PosTarget;
+			leg->PosStart	= ForwardKinematics(leg->angle1Set, leg->angle4Set);	// 现在的坐标
+
+			*(leg->RunTime) = 0;	// 时间清零
 
 			Prepared(&(robot.pipeline));
+
 			break;
 
 		case StateProcessing:;
 			uint64_t runTime = *(leg->RunTime);
 			if (runTime < leg->reachTime) {
 				// Start + (target - start)*(runtime/reachtime)
-				leg->PosSet = Vector2fAdd(leg->PosStart,
-										  Vector2fXNum(Vector2fSub(leg->PosTarget, leg->PosStart), (runTime / leg->reachTime)));
+				leg->PosSet.x = Lerp(leg->PosStart.x, leg->PosTarget.x, runTime / leg->reachTime);
+				leg->PosSet.y = Lerp(leg->PosStart.y, leg->PosTarget.y, runTime / leg->reachTime);
 
-			} else {
+				AngleCalculate(leg, leg->PosSet);	 // 更新舵机角
+
+			} else {	// 时间到，运行结束
 				Processed(&(robot.pipeline));
 			}
 
-			AngleCalculate(leg, leg->PosSet);	 // 更新舵机角
 			break;
 
 		case StateEnd:
-
-			/* code */
-
-			break;
-		default:
-			break;
+			return true;
 	}
+	return false;
 };
 
 /**
@@ -246,7 +245,7 @@ Vector2f ForwardKinematics(float angle1, float angle4)
 };
 
 /**
- * @brief 重置PosZero并移动到Poszero
+ * @brief 直接归零
  *
  */
 void LegReset(void)
@@ -257,5 +256,5 @@ void LegReset(void)
 
 	AngleCalculate(&legLeft, legLeft.PosSet);	 // 解算
 	AngleCalculate(&legRight, legRight.PosSet);
-	// TODO LegMove 需要线性差值
+	// TODO：需要线性差值
 };
