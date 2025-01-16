@@ -1,16 +1,17 @@
 #include "zf_common_headfile.h"
 // #include "zf_device_imu963ra.h"
 
-#define times 2000	  // Æ¯ÒÆĞ£×¼´ÎÊı
-
 IMUType IMUdata;
 
+/**
+ * @brief ÍÓÂİÒÇ³õÊ¼»¯º¯Êı
+ *
+ */
 void IMU_init(void)
 {
 	imu963ra_init();	// ³õÊ¼»¯ IMU963RA
 
-	///////////////////////////////////////////////////////// ³õÖµÒª²âÁ¿ºóÌîÈë
-
+	// TODO: ³õÖµÒª²âÁ¿ºóÌîÈë
 	IMUdata.dataRaw.accel.x	 = 0;	 // Èı¸ö·½ÏòÉÏµÄ¼ÓËÙ¶ÈÆ®ÒÆ
 	IMUdata.dataRaw.accel.y	 = 0;
 	IMUdata.dataRaw.accel.z	 = 1;
@@ -27,11 +28,15 @@ void IMU_init(void)
 }
 
 // long IMUCnt = 0;
-
-void IMUACC_Offset(void)	// ²âÁ¿¼ÓËÙ¶ÈÊÜÖØÁ¦Ó°Ïì³õÖµ£¨ÈıÖá·½ÏòÆ®ÒÆ£©
+/**
+ * @brief  ²âÁ¿¼ÓËÙ¶ÈÊÜÖØÁ¦Ó°Ïì³õÖµ£¨ÈıÖá·½ÏòÆ®ÒÆ£©
+ *
+ */
+void IMU_acc_Offset(void)
 {
 	float gx_offset = 0, gy_offset = 0, gz_offset = 0;
-	for (short i = times; i > 0; i--)	 // ¼ÆËãÆ«ÒÆÁ¿,Ö»ÔÚ¾²Ö¹Ê±¼ÆËãÒ»´Î
+
+	for (short i = RAWTIMES; i > 0; i--)	// ¼ÆËãÆ«ÒÆÁ¿,Ö»ÔÚ¾²Ö¹Ê±¼ÆËãÒ»´Î
 	{
 		imu963ra_get_acc();	   // »ñÈ¡ IMU963RA ¼ÓËÙ¶È¼ÆÊı¾İ
 
@@ -40,19 +45,28 @@ void IMUACC_Offset(void)	// ²âÁ¿¼ÓËÙ¶ÈÊÜÖØÁ¦Ó°Ïì³õÖµ£¨ÈıÖá·½ÏòÆ®ÒÆ£©
 		gz_offset += imu963ra_acc_transition(imu963ra_acc_z);
 		// system_delay_10ns(100000);
 	}
-	IMUdata.dataRaw.accel.x = gx_offset / times;
-	IMUdata.dataRaw.accel.y = gy_offset / times;
-	IMUdata.dataRaw.accel.z = gz_offset / times;	// ´Ë´¦¿¼ÂÇÒÔĞ£×¼Ê±¼äÎª×¼»òÊÇÒÔÖØÁ¦¼ÓËÙ¶È·½ÏòÎª×¼½øĞĞĞ£Õı£¬ÎÒÇãÏòÓÚºóÕß
+
+	IMUdata.dataRaw.accel.x = gx_offset / RAWTIMES;
+	IMUdata.dataRaw.accel.y = gy_offset / RAWTIMES;
+	IMUdata.dataRaw.accel.z = gz_offset / RAWTIMES;	   // ´Ë´¦¿¼ÂÇÒÔĞ£×¼Ê±¼äÎª×¼»òÊÇÒÔÖØÁ¦¼ÓËÙ¶È·½ÏòÎª×¼½øĞĞĞ£Õı£¬ÎÒÇãÏòÓÚºóÕß
+
 	// IMUCnt++;
-	// IMUdata.G=((sqrtf(gx_offset*gx_offset+gy_offset*gy_offset+gz_offset*gz_offset)/times)*(IMUCnt-1)+IMUdata.G)/IMUCnt;
-	IMUdata.G = sqrtf(gx_offset * gx_offset + gy_offset * gy_offset + gz_offset * gz_offset) / times;
+	// IMUdata.G=((sqrtf(gx_offset*gx_offset+gy_offset*gy_offset+gz_offset*gz_offset)/RAWTIMES)*(IMUCnt-1)+IMUdata.G)/IMUCnt;
+
+	IMUdata.G = sqrtf(gx_offset * gx_offset + gy_offset * gy_offset + gz_offset * gz_offset) / RAWTIMES;
 }
 
-bool IMUANG_Offset(void)	// ²âÁ¿½ÇËÙ¶È³õÖµ£¨ÈıÖá·½ÏòÆ®ÒÆ£©
+/**
+ * @brief ²âÁ¿½ÇËÙ¶È³õÖµ£¨ÈıÖá·½ÏòÆ®ÒÆ£©
+ *
+ * @return true
+ * @return false
+ */
+bool IMUANG_Offset(void)
 {
 	bool  error		  = 0;
 	float angx_offset = 0, angy_offset = 0, angz_offset = 0;
-	for (short i = times; i > 0; i--)	 // ¼ÆËãÆ«ÒÆÁ¿,Ö»ÔÚ¾²Ö¹Ê±¼ÆËãÒ»´Î
+	for (short i = RAWTIMES; i > 0; i--)	// ¼ÆËãÆ«ÒÆÁ¿,Ö»ÔÚ¾²Ö¹Ê±¼ÆËãÒ»´Î
 	{
 		imu963ra_get_gyro();	// »ñÈ¡ IMU963RA ´ÅÁ¦¼ÆÊı¾İ
 
@@ -61,19 +75,24 @@ bool IMUANG_Offset(void)	// ²âÁ¿½ÇËÙ¶È³õÖµ£¨ÈıÖá·½ÏòÆ®ÒÆ£©
 		angz_offset += imu963ra_gyro_transition(imu963ra_gyro_z);
 		system_delay_ms(1);
 	}
-	IMUdata.dataRaw.angle.x = angx_offset / times;
-	IMUdata.dataRaw.angle.y = angy_offset / times;
-	IMUdata.dataRaw.angle.z = angz_offset / times;
+	IMUdata.dataRaw.angle.x = angx_offset / RAWTIMES;
+	IMUdata.dataRaw.angle.y = angy_offset / RAWTIMES;
+	IMUdata.dataRaw.angle.z = angz_offset / RAWTIMES;
 	if (IMUdata.dataRaw.angle.x > 10 || IMUdata.dataRaw.angle.y > 10 || IMUdata.dataRaw.angle.z > 10)
 		error = 1;
 	return error;
 }
 
-void IMUANG_ORI(void)	 // ¼ÆËã³µÁ¾×ËÌ¬³õÖµ£¨ÈıÖá·½ÏòÆ®ÒÆ£©//º¯ÊıÓ¦ÔÚÖØÁ¦¼ÓËÙ¶ÈĞ£×¼ºóµ÷ÓÃ
+/**
+ * @brief  ¼ÆËã³µÁ¾×ËÌ¬³õÖµ£¨ÈıÖá·½ÏòÆ®ÒÆ£©  º¯ÊıÓ¦ÔÚÖØÁ¦¼ÓËÙ¶ÈĞ£×¼ºóµ÷ÓÃ
+ *
+ */
+void IMU_ang_ori(void)
 {
-	float x = 0;	// ´æ´¢Æ÷
-	x		= IMUdata.dataRaw.yaw;
+	float x = IMUdata.dataRaw.yaw;	  // ´æ´¢Æ÷
+
 	IMUdata.dataRaw.yaw = x;	// ÓÉÓÚ³õÖµÓĞÖØÁ¦³¡·½ÏòÈ·¶¨£¬×ÔÓÉ¶ÈÎª1£¬ÎŞ·¨½áËã³ö³õÊ¼µÄº½Ïò½Ç(»Ø×ª½Ç)£¬ÒªÓÉÆ½ºâºóÈüµÀÑ­¼£È·¶¨
+
 	// ÖØÁ¦³¡½Ç¶ÈÎª£¨0,IMUdata.G,0£©¿ÉÓÉ´ËºÍ³õÊ¼accÖµÁªºÏ½áËã³õÊ¼½Ç¶È£¬ÕâÑù¿ÉÒÔÊ¹³µÁ¾×ÔÆ½ºâ£¬ºóÆÚ¿ÉÈËÎª²âÁ¿Ìî³äflashĞ´ËÀÊı¾İ£¬»ò¶à´ÎÓÅ»¯Êı¾İ£¬¶¨ËÀimuÆ½ºâ½Ç¶È
 	x = (IMUdata.dataRaw.accel.x > 0 ? 1 : -1) * IMUdata.dataRaw.accel.y
 		/ sqrtf(IMUdata.dataRaw.accel.y * IMUdata.dataRaw.accel.y + IMUdata.dataRaw.accel.x * IMUdata.dataRaw.accel.x);
@@ -83,29 +102,40 @@ void IMUANG_ORI(void)	 // ¼ÆËã³µÁ¾×ËÌ¬³õÖµ£¨ÈıÖá·½ÏòÆ®ÒÆ£©//º¯ÊıÓ¦ÔÚÖØÁ¦¼ÓËÙ¶ÈĞ£
 	x					  = (IMUdata.dataRaw.accel.z > 0 ? -1 : 1) * IMUdata.dataRaw.accel.y
 		/ sqrtf(IMUdata.dataRaw.accel.y * IMUdata.dataRaw.accel.y + IMUdata.dataRaw.accel.z * IMUdata.dataRaw.accel.z);
 	IMUdata.dataRaw.roll = 180 / PI * acosf(x);
+
 	// ³õÊ¼¹ö°Ú½Ç//ÓÉÓÚÍÓÂİÒÇÎ»ÖÃÔ­Òò£¬³õÊ¼Õı¸ºĞÔÏà·´
 	if (IMUdata.dataRaw.pitch > 90)
 		IMUdata.dataRaw.pitch -= 180;
 	else if (IMUdata.dataRaw.pitch < -90)
 		IMUdata.dataRaw.pitch += 180;
+
 	if (IMUdata.dataRaw.roll > 90)
 		IMUdata.dataRaw.roll -= 180;
 	else if (IMUdata.dataRaw.roll < -90)
+
 		IMUdata.dataRaw.roll += 180;
 	// ·ÀÖ¹½ü0cosÅĞ¶Ï+-180¶ÈÕı¸ºĞÔ·­×ª£¬¼´½á¹û¹éÖÁ0¸½½ü
 }
 
-void IMU_ANG_GET_ORIDAT(void)	 // ½«³µÁ¾×ËÌ¬³õÖµ¸³Öµ¸øÈıÖá½Ç¶È//º¯ÊıÓ¦ÔÚĞ£×¼»ò¾²Ö¹Ê±ÓëÉÏº¯ÊıÍ¬Ê±µ÷ÓÃ
+/**
+ * @brief ½«³µÁ¾×ËÌ¬³õÖµ¸³Öµ¸øÈıÖá½Ç¶È  º¯ÊıÓ¦ÔÚĞ£×¼»ò¾²Ö¹Ê±ÓëÉÏº¯ÊıÍ¬Ê±µ÷ÓÃ
+ *
+ */
+void IMU_ang_get_oridat(void)
 {
 	IMUdata.dataOri.pitch = IMUdata.dataRaw.pitch;
 	IMUdata.dataOri.roll  = IMUdata.dataRaw.roll;
 	IMUdata.dataOri.yaw	  = IMUdata.dataRaw.yaw;
 }
 
-void IMUMAG_Offset(void)	// ²âÁ¿´Å³¡³õÖµ£¨ÈıÖá·½ÏòÆ®ÒÆ£©
+/**
+ * @brief  ²âÁ¿´Å³¡³õÖµ£¨ÈıÖá·½ÏòÆ®ÒÆ£©
+ *
+ */
+void IMUMAG_Offset(void)
 {
 	float rawx_offset = 0, rawy_offset = 0, rawz_offset = 0;
-	for (short i = times; i > 0; i--)	 // ¼ÆËãÆ«ÒÆÁ¿,Ö»ÔÚ¾²Ö¹Ê±¼ÆËãÒ»´Î
+	for (short i = RAWTIMES; i > 0; i--)	// ¼ÆËãÆ«ÒÆÁ¿,Ö»ÔÚ¾²Ö¹Ê±¼ÆËãÒ»´Î
 	{
 		imu963ra_get_mag();	   // »ñÈ¡ IMU963RA ´ÅÁ¦¼ÆÊı¾İ
 
@@ -114,13 +144,13 @@ void IMUMAG_Offset(void)	// ²âÁ¿´Å³¡³õÖµ£¨ÈıÖá·½ÏòÆ®ÒÆ£©
 		rawz_offset += imu963ra_mag_transition(imu963ra_mag_z);
 	}
 
-	IMUdata.dataRaw.mag.x = imu963ra_mag_transition(rawx_offset / times);
-	IMUdata.dataRaw.mag.y = imu963ra_mag_transition(rawy_offset / times);
-	IMUdata.dataRaw.mag.z = imu963ra_mag_transition(rawz_offset / times);
+	IMUdata.dataRaw.mag.x = imu963ra_mag_transition(rawx_offset / RAWTIMES);
+	IMUdata.dataRaw.mag.y = imu963ra_mag_transition(rawy_offset / RAWTIMES);
+	IMUdata.dataRaw.mag.z = imu963ra_mag_transition(rawz_offset / RAWTIMES);
 }
 
 /**
- * @brief ÖĞ¶ÏÖĞµ÷ÓÃ£¬¶ÁÈ¡º¯ÊıÖµ
+ * @brief ¶ÁÈ¡ÍÓÂİÒÇµÄÖµ
  *
  */
 void IMU_getdata(void)
@@ -142,7 +172,11 @@ void IMU_getdata(void)
 	IMUdata.dataOri.mag.z	= imu963ra_mag_transition(imu963ra_mag_z);
 }
 
-void IMU_CORRECT()	  // ÍÓÂİÒÇ¶¯Ì¬Ğ£×¼º¯Êı£¬·ÅÔÚÖ÷º¯ÊıwhileÑ­»·ÖĞ£¬Ïû³ıÀÛ»ıÎó²î£¨Ö»ÓĞG½ÏĞ¡Ê±¿ÉÒÔµ÷ÓÃ£©
+/**
+ * @brief  ÍÓÂİÒÇ¶¯Ì¬Ğ£×¼º¯Êı£¬·ÅÔÚÖ÷º¯ÊıwhileÑ­»·ÖĞ£¬Ïû³ıÀÛ»ıÎó²î£¨Ö»ÓĞG½ÏĞ¡Ê±¿ÉÒÔµ÷ÓÃ£©
+ *
+ */
+void IMU_correct()
 {
 	float current_G;
 	float x;
@@ -172,10 +206,15 @@ void IMU_CORRECT()	  // ÍÓÂİÒÇ¶¯Ì¬Ğ£×¼º¯Êı£¬·ÅÔÚÖ÷º¯ÊıwhileÑ­»·ÖĞ£¬Ïû³ıÀÛ»ıÎó²î£
 	//  oled_show_int(10, 0, (int)(current_G*1000), 5);
 }
 
-#define irq_interval 1	  // ÖĞ¶ÏÖÜÆÚ£¬µ¥Î»Îªms£¬´Ë´¦Ê¾ÀıÎª1ms
-bool IMU_ANG_INTEG()	  // ¶Ô½ÇËÙ¶È½øĞĞ»ı·Ö£¬Õâ²¿·Ö·ÅÔÚÖĞ¶ÏÀï
+/**
+ * @brief  ¶Ô½ÇËÙ¶È½øĞĞ»ı·Ö£¬Õâ²¿·Ö·ÅÔÚÖĞ¶ÏÀï
+ *
+ * @return true
+ * @return false
+ */
+bool IMU_ang_integ()
 {
-	IMU_CORRECT();
+	IMU_correct();
 	if (IMUdata.calibration_flag) {
 		IMU_getdata();
 
@@ -187,13 +226,19 @@ bool IMU_ANG_INTEG()	  // ¶Ô½ÇËÙ¶È½øĞĞ»ı·Ö£¬Õâ²¿·Ö·ÅÔÚÖĞ¶ÏÀï
 	return IMUdata.calibration_flag;	// ·µ»Ø0±íÊ¾Î´Íê³ÉĞ£×¼£¬»òÕıÔÚĞ£×¼
 }
 
-bool IMU_ANG_CALIBRATION()	  // Ğ£×¼ÍÓÂİÒÇ×Üº¯Êı£¬¾²Ö¹×´Ì¬µ÷ÓÃ£¬×èÈûÏß³Ì//¼ÓËÙ¶È½ÇËÙ¶È×÷ÓÃ//´ËÊ±½á¹¹ÌåÖĞ´æ´¢Ğ£×¼£¨¾²Ö¹£©Ê±ÈıÖµÊı¾İ
+/**
+ * @brief Ğ£×¼ÍÓÂİÒÇ×Üº¯Êı£¬¾²Ö¹×´Ì¬µ÷ÓÃ£¬×èÈûÏß³Ì//¼ÓËÙ¶È½ÇËÙ¶È×÷ÓÃ//´ËÊ±½á¹¹ÌåÖĞ´æ´¢Ğ£×¼£¨¾²Ö¹£©Ê±ÈıÖµÊı¾İ
+ *
+ * @return true
+ * @return false
+ */
+bool IMU_ang_calibration(void)
 {
 	IMUdata.calibration_flag = 0;
-	IMUACC_Offset();		 // ²âÁ¿¼ÓËÙ¶ÈÊÜÖØÁ¦Ó°Ïì³õÖµ£¨ÈıÖá·½ÏòÆ®ÒÆ£©
+	IMU_acc_Offset();		 // ²âÁ¿¼ÓËÙ¶ÈÊÜÖØÁ¦Ó°Ïì³õÖµ£¨ÈıÖá·½ÏòÆ®ÒÆ£©
 	IMUANG_Offset();		 // ²âÁ¿½ÇËÙ¶È³õÖµ£¨ÈıÖá·½ÏòÆ®ÒÆ£©
-	IMUANG_ORI();			 // ¼ÆËã³µÁ¾×ËÌ¬³õÖµ£¨ÈıÖá·½ÏòÆ®ÒÆ£©//º¯ÊıÓ¦ÔÚÖØÁ¦¼ÓËÙ¶ÈĞ£×¼ºóµ÷ÓÃ
-	IMU_ANG_GET_ORIDAT();	 // ½«³µÁ¾×ËÌ¬³õÖµ¸³Öµ¸øÈıÖá½Ç¶È//º¯ÊıÓ¦ÔÚĞ£×¼»ò¾²Ö¹Ê±ÓëÉÏº¯ÊıÍ¬Ê±µ÷ÓÃ
+	IMU_ang_ori();			 // ¼ÆËã³µÁ¾×ËÌ¬³õÖµ£¨ÈıÖá·½ÏòÆ®ÒÆ£©//º¯ÊıÓ¦ÔÚÖØÁ¦¼ÓËÙ¶ÈĞ£×¼ºóµ÷ÓÃ
+	IMU_ang_get_oridat();	 // ½«³µÁ¾×ËÌ¬³õÖµ¸³Öµ¸øÈıÖá½Ç¶È//º¯ÊıÓ¦ÔÚĞ£×¼»ò¾²Ö¹Ê±ÓëÉÏº¯ÊıÍ¬Ê±µ÷ÓÃ
 	IMUdata.calibration_flag = 1;
 
 	return IMUdata.calibration_flag;
