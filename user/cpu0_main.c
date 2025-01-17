@@ -34,8 +34,8 @@ int		 core0_main(void)
 		// BldcSetSpeed(float leftSpeed, float rightSpeed);	// rpm
 
 		// // 五杆控制测试 等一会再测试这个
-//		Vector2f PosTarget;
-//		RobotDrawLine(PosTarget, 100);
+		//		Vector2f PosTarget;
+		//		RobotDrawLine(PosTarget, 100);
 	}
 }
 

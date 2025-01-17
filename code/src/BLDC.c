@@ -20,10 +20,6 @@ void BldcTypeInit(void)
 	Motor[0].param.direct = Left;	  // 0为左
 	Motor[1].param.direct = Right;	  // 1为右
 
-	ValueType	   Value  = {0};
-	PulseType	   pulse  = {0};
-	MotorParamType param  = {0};
-
 	MotorLimit limit;
 	limit.maxRPM		= 0;	// 根据需要修改
 	limit.maxCurrent	= 0;	// 不在这里限幅
@@ -32,18 +28,14 @@ void BldcTypeInit(void)
 	Motor[1].param.sign = -1;
 
 	for (size_t i = 0; i < 2; i++) {
+		memset(&Motor[i], 0, sizeof(BldcType));
+
 		Motor[i].enable	   = true;
 		Motor[i].begin	   = true;
 
 		Motor[i].setZero   = false;
 		Motor[i].mode	   = RPM;	 // 速度模式
-		Motor[i].valueLast = Value;
-		Motor[i].valueNow  = Value;
-		Motor[i].valueSet  = Value;
 		Motor[i].reachTime = 0.f;
-		Motor[i].pulse	   = pulse;
-		Motor[i].param	   = param;
-		Motor[i].limit	   = limit;
 
 		// 增量式PID初始化
 		PIDTypeInit(&Motor[i].posPID, 0.f, 0.f, 0.f, PIDINC, Motor[0].limit.maxRPM);	// 位置环还没写
@@ -126,36 +118,6 @@ void BldcSentCurrent(void)	  //
 
 	Bldc_SetDuty(Motor[0].valueSet.current * Motor[0].param.sign, Motor[1].valueSet.current * Motor[1].param.sign);
 	// Bldc_SetDuty_String(Motor[0].valueSet.current * Motor[0].param.sign, Motor[1].valueSet.current * Motor[1].param.sign);
-};
-
-/// @brief Func
-/// @param
-void BldcFunc(void)
-{
-	for (size_t i = 0; i < 2; i++) {
-		if (Motor[i].enable == true) {
-			if (Motor[i].begin == true) {
-				switch (Motor->mode) {
-					case POSITION:
-						BldcPositionMode(&Motor[i]);
-						break;
-					case RPM:
-						BldcSpeedMode(&Motor[i]);	 // 常用
-						break;
-					case CURRENT:
-						BldcCurrentMode(&Motor[i]);
-						break;
-
-					default:
-						break;
-				}
-			} else {
-				// BldcLockPosition(&Motor[i]);//TODO
-			}
-		}
-	}
-
-	BldcSentCurrent();
 };
 
 /*********************************************** 通讯部分 ************************************************ */
@@ -297,9 +259,10 @@ void Bldc_uart_init(void)
 	Bldc_SetDuty(0, 0);	   // 设置0占空比
 						   //	Bldc_SetDuty_String(0, 0);
 	Bldc_AskSpeed();	   // 获取实时速度数据
-	//	Bldc_AskSpeed_String();
+						   //	Bldc_AskSpeed_String();
 };
 
+/*********************************************** 通讯部分 ************************************************ */
 // 设置函数
 void BldcSetCurrent(float leftCur, float rightCur)
 {
@@ -317,4 +280,34 @@ void BldcSetPos(float leftPos, float rightPos)
 {
 	Motor[0].valueSet.angle = leftPos;
 	Motor[1].valueSet.angle = rightPos;
+};
+
+/// @brief Func
+/// @param
+void BldcFunc(void)
+{
+	for (size_t i = 0; i < 2; i++) {
+		if (Motor[i].enable == true) {
+			if (Motor[i].begin == true) {
+				switch (Motor->mode) {
+					case POSITION:
+						BldcPositionMode(&Motor[i]);
+						break;
+					case RPM:
+						BldcSpeedMode(&Motor[i]);	 // 常用
+						break;
+					case CURRENT:
+						BldcCurrentMode(&Motor[i]);
+						break;
+
+					default:
+						break;
+				}
+			} else {
+				// BldcLockPosition(&Motor[i]);//TODO
+			}
+		}
+	}
+
+	BldcSentCurrent();
 };

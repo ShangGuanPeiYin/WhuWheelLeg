@@ -30,6 +30,7 @@ void IMU_init(void)
 }
 
 // long IMUCnt = 0;
+
 /**
  * @brief  测量加速度受重力影响初值（三轴方向飘移）
  *
@@ -163,6 +164,7 @@ void IMU_getdata(void)
 	imu963ra_get_gyro();	// 获取 IMU963RA 陀螺仪数据
 	imu963ra_get_mag();		// 获取 IMU963RA 磁力计数据
 
+	// 数据转化
 	IMUdata.dataOri.accel.x = imu963ra_acc_transition(imu963ra_acc_x);
 	IMUdata.dataOri.accel.y = imu963ra_acc_transition(imu963ra_acc_y);
 	IMUdata.dataOri.accel.z = imu963ra_acc_transition(imu963ra_acc_z);
