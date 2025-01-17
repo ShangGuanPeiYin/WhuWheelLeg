@@ -25,8 +25,11 @@ void BldcTypeInit(void)
 	MotorParamType param  = {0};
 
 	MotorLimit limit;
-	limit.maxRPM	 = 0;	 // 根据需要修改
-	limit.maxCurrent = 0;	 // 不在这里限幅
+	limit.maxRPM		= 0;	// 根据需要修改
+	limit.maxCurrent	= 0;	// 不在这里限幅
+
+	Motor[0].param.sign = +1;
+	Motor[1].param.sign = -1;
 
 	for (size_t i = 0; i < 2; i++) {
 		Motor[i].enable	   = true;
@@ -121,7 +124,7 @@ void BldcSentCurrent(void)	  //
 	PEAK(Motor[0].valueSet.current, (float) OUTPUT_DUTY_MAX);
 	PEAK(Motor[1].valueSet.current, (float) OUTPUT_DUTY_MAX);
 
-	Bldc_SetDuty(Motor[0].valueSet.current, Motor[1].valueSet.current);
+	Bldc_SetDuty(Motor[0].valueSet.current * Motor[0].param.sign, Motor[1].valueSet.current * Motor[1].param.sign);
 };
 
 /// @brief Func
@@ -202,8 +205,8 @@ void Bldc_Driver_callback(void)
 							   | (int) motor_value.receive_data_buffer[5]);	   // 拟合右侧电机转速数据
 
 						// pos cul
-						Motor[0].valueNow.speed = motor_value.receive_left_speed_data;
-						Motor[1].valueNow.speed = motor_value.receive_right_speed_data;
+						Motor[0].valueNow.speed = motor_value.receive_left_speed_data * Motor[0].param.sign;
+						Motor[1].valueNow.speed = motor_value.receive_right_speed_data * Motor[1].param.sign;
 					}
 
 					motor_value.receive_data_count = 0;	   // 清除缓冲区计数值

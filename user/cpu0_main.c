@@ -32,25 +32,6 @@ int		 core0_main(void)
 		// BldcSetCurrent(float leftCur, float rightCur);		// PWM +-4k
 		// BldcSetSpeed(float leftSpeed, float rightSpeed);	// rpm
 
-		/*
-
-		上位机控制电机：
-		先用上位机控制电机，电机反馈速度的格式是 左，右
-		检查接线左右有没有反，反了就换一下
-
-		代码控制电机：
-		先开环控制电机，给一个小的PWM，再慢慢提速
-		OLED或者上位机输出速度值
-		依照这个输出的速度值，给速度，防止乱给速度过大。
-		在bldc.c中调整PID，实现闭环速度控制。
-		尝试用上位机输出速度波形，搓好PID
-
-		无刷电机测试函数，直接调用即可
-
-		测试代码自己写吧
-
-		*/
-
 		// // 五杆控制测试 等一会再测试这个
 		// OLedDebug();
 		// AngleCalculate(&legLeft, legLeft.PosSet);

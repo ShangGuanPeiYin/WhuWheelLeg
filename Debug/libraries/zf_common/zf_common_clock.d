@@ -104,24 +104,24 @@ zf_common_clock.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\libraries
 "D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\libraries\\zf_driver\zf_driver_delay.h" :
 zf_common_clock.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\libraries\\zf_common\zf_common_typedef.h"
 "D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\libraries\\zf_common\zf_common_typedef.h" :
+zf_common_clock.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\\Cpu\\Std\PLATFORM_TYPES.H"
+"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\\Cpu\\Std\PLATFORM_TYPES.H" :
+zf_common_clock.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\\Cpu\\Std\ifx_types.h"
+"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\\Cpu\\Std\ifx_types.h" :
 zf_common_clock.o :	"D:\Software 1\ADS\ADS\AURIX-Studio-1.10.6\tools\Compilers\Tasking_1.1r8\ctc\include\math.h"
 "D:\Software 1\ADS\ADS\AURIX-Studio-1.10.6\tools\Compilers\Tasking_1.1r8\ctc\include\math.h" :
 zf_common_clock.o :	"D:\Software 1\ADS\ADS\AURIX-Studio-1.10.6\tools\Compilers\Tasking_1.1r8\ctc\include\typeinfo.h"
 "D:\Software 1\ADS\ADS\AURIX-Studio-1.10.6\tools\Compilers\Tasking_1.1r8\ctc\include\typeinfo.h" :
-zf_common_clock.o :	"D:\Software 1\ADS\ADS\AURIX-Studio-1.10.6\tools\Compilers\Tasking_1.1r8\ctc\include\stdio.h"
-"D:\Software 1\ADS\ADS\AURIX-Studio-1.10.6\tools\Compilers\Tasking_1.1r8\ctc\include\stdio.h" :
 zf_common_clock.o :	"D:\Software 1\ADS\ADS\AURIX-Studio-1.10.6\tools\Compilers\Tasking_1.1r8\ctc\include\stdarg.h"
 "D:\Software 1\ADS\ADS\AURIX-Studio-1.10.6\tools\Compilers\Tasking_1.1r8\ctc\include\stdarg.h" :
 zf_common_clock.o :	"D:\Software 1\ADS\ADS\AURIX-Studio-1.10.6\tools\Compilers\Tasking_1.1r8\ctc\include\stdint.h"
 "D:\Software 1\ADS\ADS\AURIX-Studio-1.10.6\tools\Compilers\Tasking_1.1r8\ctc\include\stdint.h" :
-zf_common_clock.o :	"D:\Software 1\ADS\ADS\AURIX-Studio-1.10.6\tools\Compilers\Tasking_1.1r8\ctc\include\string.h"
-"D:\Software 1\ADS\ADS\AURIX-Studio-1.10.6\tools\Compilers\Tasking_1.1r8\ctc\include\string.h" :
+zf_common_clock.o :	"D:\Software 1\ADS\ADS\AURIX-Studio-1.10.6\tools\Compilers\Tasking_1.1r8\ctc\include\stdio.h"
+"D:\Software 1\ADS\ADS\AURIX-Studio-1.10.6\tools\Compilers\Tasking_1.1r8\ctc\include\stdio.h" :
 zf_common_clock.o :	"D:\Software 1\ADS\ADS\AURIX-Studio-1.10.6\tools\Compilers\Tasking_1.1r8\ctc\include\stdlib.h"
 "D:\Software 1\ADS\ADS\AURIX-Studio-1.10.6\tools\Compilers\Tasking_1.1r8\ctc\include\stdlib.h" :
-zf_common_clock.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\\Cpu\\Std\ifx_types.h"
-"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\\Cpu\\Std\ifx_types.h" :
-zf_common_clock.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\\Cpu\\Std\PLATFORM_TYPES.H"
-"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\\Cpu\\Std\PLATFORM_TYPES.H" :
+zf_common_clock.o :	"D:\Software 1\ADS\ADS\AURIX-Studio-1.10.6\tools\Compilers\Tasking_1.1r8\ctc\include\string.h"
+"D:\Software 1\ADS\ADS\AURIX-Studio-1.10.6\tools\Compilers\Tasking_1.1r8\ctc\include\string.h" :
 zf_common_clock.o :	..\libraries\zf_common\zf_common_interrupt.h
 ..\libraries\zf_common\zf_common_interrupt.h :
 zf_common_clock.o :	..\libraries\zf_common\zf_common_clock.h

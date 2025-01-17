@@ -14,6 +14,9 @@
 //  P21-6 7 Uart
 // 暂时只有速度模式，位置模式等等再写。Value中没有位置信息
 
+// PWM>0时
+// 左电机正转 右电机反转
+
 // 无刷电机控制
 #define OUTPUT_DUTY_MAX ((uint16) (4000))	 // 占空比输出最大值
 #define PULSEPERROUND	32767				 // 编码器采样最大值  32767
@@ -32,7 +35,7 @@ typedef enum _BldcMode {
 typedef struct _Value {
 	volatile float speed;	   // rpm
 	volatile float angle;	   // °
-	volatile float current;	   // 即PWM Set用到
+	volatile int16 current;	   // 即PWM Set用到
 } ValueType;
 
 // 脉冲 不知道能不能用到
@@ -47,7 +50,8 @@ typedef struct _PulseType {
 
 // 电机参数
 typedef struct {
-	LegNum direct;	  // 左右
+	LegNum	direct;	   // 左右
+	uint8_t sign;	   // 左电机正转，右电机反转。控制的时候右电机pwm*=-1，反馈数据*=-1
 
 	float reductionRatio;	 // 电机减速比  好像不需要？
 	float currentLimit;		 // 电流限制

@@ -33,16 +33,28 @@ typedef struct {
 	float Low_Pass_Ratio_x;	   // 低通滤波器的比例（x轴方向）
 	float Low_Pass_Ratio_y;	   // 低通滤波器的比例（y轴方向）
 	float Low_Pass_Ratio_z;	   // 低通滤波器的比例（z轴方向）
+	float OldData_x;		   // 上一次数据(x轴方向)
+	float OldData_y;		   // 上一次数据(y轴方向)
+	float OldData_z;		   // 上一次数据(z轴方向)
 } LowPassFilterParams;
 
-// TODO 封装进一步书写
+// 卡尔曼滤波函数
+void  KalmanParamsInit(KalmanParams* kalman, float Q_angle, float Q_bias, float R_measure, float angle);
+float Kalman_filter(KalmanParams* kalman, float newAngle, float newRate, float t);
 
-float Kalman_filter(float newAngle, float newRate, float t);
-float FirstOrder(float newAngle, float newRate, float t);
-float SecondOrder(float newAngle, float newRate, float t);
+// 一阶滤波器函数
+void  FirstOrderInit(FirstOrderFilterParams* firstorder, float K1, float angle);
+float FirstOrder(FirstOrderFilterParams* firstorder, float newAngle, float newRate, float t);
+
+// 二阶滤波器函数
+void  SecondOrderInit(SecondOrderFilterParams* secondorder, float K2, float angle);
+float SecondOrder(SecondOrderFilterParams* secondorder, float newAngle, float newRate, float t);
+
+// 低通滤波函数
+void  LowPassInit(LowPassFilterParams* lowpass, float Rx, float Ry, float Rz);
+float Low_Pass_Filter(LowPassFilterParams* lowpass, float nowData, char dir);
+
+// 滤波器1函数
 float fliter1(float num, int times);
-float Low_Pass_Filter_x(float nowData);
-float Low_Pass_Filter_y(float nowData);
-float Low_Pass_Filter_z(float nowData);
 
 #endif
