@@ -17,8 +17,8 @@ typedef struct _Pipeline {
 } PipelineType;
 
 typedef struct _JumpLineType {
-	Vector2f Pos;
-	float	 reachTime;
+	Vector2f Pos[5];
+	float	 reachTime[5];
 } JumpLineType;
 
 typedef struct _robot {
@@ -44,6 +44,7 @@ void robotRun(void);
 void robotDrawLine(void);
 void robotDrawCurve(void);
 bool RobotJumpLine(void);
+void RobotJumpLineInit(void);
 
 void RobotError(void);
 

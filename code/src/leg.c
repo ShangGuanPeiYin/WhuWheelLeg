@@ -251,6 +251,7 @@ Vector2f ForwardKinematics(float angle1, float angle4)
 void LegReset(void)
 {
 	Vector2f point0 = ForwardKinematics(PI, 0);
+
 	legLeft.PosSet	= point0;
 	legRight.PosSet = point0;
 

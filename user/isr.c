@@ -64,7 +64,7 @@ IFX_INTERRUPT(cc60_pit_ch0_isr, 0, CCU6_0_CH0_ISR_PRIORITY)
 
 	static u8 IMUCnt = 0;	 // 1k -> 200Hz
 	if (++IMUCnt > 5) {
-		BldcFunc();
+		// IMUFunc();
 		IMUCnt = 0;
 	}
 

@@ -268,6 +268,7 @@ void BldcData_init(void)
 {
 	memset(motor_value.send_data_buffer, 0, 7);		  // 清除缓冲区数据
 	memset(motor_value.receive_data_buffer, 0, 7);	  // 清除缓冲区数据
+
 	motor_value.receive_data_count		 = 0;
 	motor_value.sum_check_data			 = 0;
 	motor_value.receive_right_speed_data = 0;

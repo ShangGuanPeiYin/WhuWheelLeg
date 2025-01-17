@@ -14,24 +14,43 @@ void robotInit(RobotType* robot)
 	robot->right = &(legRight);
 
 	Start(&(robot->pipeline));
+	RobotJumpLineInit();
 
 	// TODO IMU: robot->posture = &( );
 	// TODO jumpLine
 
 	robot->robotParam.leftTime	= 0;
 	robot->robotParam.rightTime = 0;
+	robot->robotParam.PosZero	= ForwardKinematics(PI, 0);
 
 	LegInit();
 
 	LegReset();	   // 运动到初始零点
 };
 
+void RobotJumpLineInit(void)
+{
+	// TODO
+	robot.jumpLine.Pos[0].x = 0;
+	robot.jumpLine.Pos[0].y = 0;
+
+	robot.jumpLine.Pos[1].x = 0;
+	robot.jumpLine.Pos[1].y = 0;
+
+	robot.jumpLine.Pos[2].x = 0;
+	robot.jumpLine.Pos[2].y = 0;
+
+	robot.jumpLine.Pos[3].x = 0;
+	robot.jumpLine.Pos[3].y = 0;
+
+	robot.jumpLine.Pos[4].x = 0;
+	robot.jumpLine.Pos[4].y = 0;
+	;
+};
+
 bool RobotDrawLine(Vector2f PosTarget, float reachTime)
 {
-	if (LegDrawLine(&legLeft, PosTarget, reachTime) && LegDrawLine(&legRight, PosTarget, reachTime)) {
-		return true;
-	} else
-		return false;
+	return (LegDrawLine(&legLeft, PosTarget, reachTime) && LegDrawLine(&legRight, PosTarget, reachTime));
 };
 
 /**
@@ -46,27 +65,36 @@ bool RobotJumpLine(void)
 
 	switch (JumpLineState) {
 		case 0:
-			if (RobotDrawLine(robot.jumpLine.Pos, robot.jumpLine.reachTime))
+//			if (RobotDrawLine(robot->robotParam.PosZero, 100))
 				JumpLineState++;
 			break;
 
 		case 1:
-			/* code */
+//			if (RobotDrawLine(robot.jumpLine.Pos[1], 100))
+				JumpLineState++;
 			break;
 		case 2:
-			/* code */
+//			if (RobotDrawLine(robot.jumpLine.Pos[2], 100))
+				JumpLineState++;
 			break;
 		case 3:
-			/* code */
+//			if (RobotDrawLine(robot.jumpLine.Pos[3], 100))
+				JumpLineState++;
 			break;
 		case 4:
 			/* code */
+
+			JumpLineState++;
 			break;
 		case 5:
 			/* code */
+
+			JumpLineState++;
 			break;
 		case 6:
 			/* code */
+
+			JumpLineState = 0;
 			break;
 	}
 	return false;

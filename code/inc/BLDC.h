@@ -5,13 +5,13 @@
 #include "zf_common_typedef.h"
 
 // 无刷电机串口初始化
-#define SMALL_DRIVER_UART	  (UART_2)
+#define SMALL_DRIVER_UART	  (UART_3)
 #define SMALL_DRIVER_BAUDRATE (460800)
-#define SMALL_DRIVER_RX		  (UART2_TX_P10_5)	  // 根据需要改一下
-#define SMALL_DRIVER_TX		  (UART2_RX_P10_6)	  // 根据需要改一下
+#define SMALL_DRIVER_RX		  (UART3_RX_P21_6)
+#define SMALL_DRIVER_TX		  (UART3_TX_P21_7)
 
 //  P10-5 6 串口
-//  P21-6 7 Uart
+//  P21-6 7 Uart RT
 // 暂时只有速度模式，位置模式等等再写。Value中没有位置信息
 
 // PWM>0时

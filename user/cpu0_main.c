@@ -15,7 +15,8 @@ int		 core0_main(void)
 
 	// mt9v03x_init();	   // 摄像头初始化
 
-	KeyInit();		// 按键初始化
+	KeyInit();	  // 按键初始化
+
 	ServoInit();	// 舵机控制初始化
 	BldcInit();		// 无刷电机初始化
 
@@ -33,9 +34,8 @@ int		 core0_main(void)
 		// BldcSetSpeed(float leftSpeed, float rightSpeed);	// rpm
 
 		// // 五杆控制测试 等一会再测试这个
-		// OLedDebug();
-		// AngleCalculate(&legLeft, legLeft.PosSet);
-		// AngleCalculate(&legRight, legRight.PosSet);
+		Vector2f PosTarget;
+		RobotDrawLine(PosTarget, 100);
 	}
 }
 
