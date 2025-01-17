@@ -112,9 +112,9 @@ void BldcLockPosition(BldcType* motor)
 // 发送电流（PWM） 双驱，两个一起
 void BldcSentCurrent(void)	  //
 {
-	// current即PWM开环电流
-	PEAK(Motor[0].valueSet.current, (float) OUTPUT_DUTY_MAX);
-	PEAK(Motor[1].valueSet.current, (float) OUTPUT_DUTY_MAX);
+	// current即PWM 开环电流
+	PEAK(Motor[0].valueSet.current, (int16) OUTPUT_DUTY_MAX);
+	PEAK(Motor[1].valueSet.current, (int16) OUTPUT_DUTY_MAX);
 
 	Bldc_SetDuty(Motor[0].valueSet.current * Motor[0].param.sign, Motor[1].valueSet.current * Motor[1].param.sign);
 	// Bldc_SetDuty_String(Motor[0].valueSet.current * Motor[0].param.sign, Motor[1].valueSet.current * Motor[1].param.sign);
