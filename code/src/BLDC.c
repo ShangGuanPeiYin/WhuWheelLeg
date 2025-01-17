@@ -124,8 +124,8 @@ void BldcSentCurrent(void)	  //
 	PEAK(Motor[0].valueSet.current, (float) OUTPUT_DUTY_MAX);
 	PEAK(Motor[1].valueSet.current, (float) OUTPUT_DUTY_MAX);
 
-	// Bldc_SetDuty(Motor[0].valueSet.current * Motor[0].param.sign, Motor[1].valueSet.current * Motor[1].param.sign);
-	Bldc_SetDuty_String(Motor[0].valueSet.current * Motor[0].param.sign, Motor[1].valueSet.current * Motor[1].param.sign);
+	Bldc_SetDuty(Motor[0].valueSet.current * Motor[0].param.sign, Motor[1].valueSet.current * Motor[1].param.sign);
+	// Bldc_SetDuty_String(Motor[0].valueSet.current * Motor[0].param.sign, Motor[1].valueSet.current * Motor[1].param.sign);
 };
 
 /// @brief Func
@@ -293,11 +293,11 @@ void Bldc_uart_init(void)
 	uart_init(BLDC_DRIVER_UART, BLDC_DRIVER_BAUDRATE, BLDC_DRIVER_TX, BLDC_DRIVER_RX);	  // 串口初始化
 	uart_rx_interrupt(BLDC_DRIVER_UART, 1);												  // 使能串口接收中断
 
-	BldcData_init();	// 结构体参数初始化
-	// Bldc_SetDuty(0, 0);	   // 设置0占空比
-	Bldc_SetDuty_String(0, 0);
-	// Bldc_AskSpeed();	   // 获取实时速度数据
-	Bldc_AskSpeed_String();
+	BldcData_init();	   // 结构体参数初始化
+	Bldc_SetDuty(0, 0);	   // 设置0占空比
+						   //	Bldc_SetDuty_String(0, 0);
+	Bldc_AskSpeed();	   // 获取实时速度数据
+	//	Bldc_AskSpeed_String();
 };
 
 // 设置函数
