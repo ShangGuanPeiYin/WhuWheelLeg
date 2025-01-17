@@ -30,8 +30,8 @@ int		 core0_main(void)
 	while (TRUE) {
 		system_delay_ms(5);	   // 5ms执行一次，即200Hz 需要<=舵机Func频率
 
-		// BldcSetCurrent(float leftCur, float rightCur);		// PWM +-4k
-		// BldcSetSpeed(float leftSpeed, float rightSpeed);	// rpm
+		// BldcSetCurrent(1500, 1500);	   // PWM +-4k
+		// BldcSetSpeed(150, 0);		   // rpm
 
 		// // 五杆控制测试 等一会再测试这个
 		//		Vector2f PosTarget;

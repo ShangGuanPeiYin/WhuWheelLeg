@@ -21,11 +21,8 @@ void BldcTypeInit(void)
 	Motor[1].param.direct = Right;	  // 1为右
 
 	MotorLimit limit;
-	limit.maxRPM		= 0;	// 根据需要修改
-	limit.maxCurrent	= 0;	// 不在这里限幅
-
-	Motor[0].param.sign = +1;
-	Motor[1].param.sign = -1;
+	limit.maxRPM	 = 0;	 // 根据需要修改
+	limit.maxCurrent = 0;	 // 不在这里限幅
 
 	for (size_t i = 0; i < 2; i++) {
 		memset(&Motor[i], 0, sizeof(BldcType));
@@ -42,6 +39,9 @@ void BldcTypeInit(void)
 		PIDTypeInit(&Motor[i].rpmPID, Kp_rpm, Ki_rpm, Kd_rpm, PIDINC, Motor[0].limit.maxCurrent);
 		PIDTypeInit(&Motor[i].currentPID, 0.f, 0.f, 0.f, PIDINC, 0);	// 电流环用不到
 	}
+
+	Motor[0].param.sign = +1;
+	Motor[1].param.sign = -1;
 };
 
 // 电机位置置零
@@ -266,12 +266,18 @@ void Bldc_uart_init(void)
 // 设置函数
 void BldcSetCurrent(float leftCur, float rightCur)
 {
+	Motor[0].mode			  = CURRENT;
+	Motor[1].mode			  = CURRENT;
+
 	Motor[0].valueSet.current = leftCur;
 	Motor[1].valueSet.current = rightCur;
 };
 
 void BldcSetSpeed(float leftSpeed, float rightSpeed)
 {
+	Motor[0].mode			= RPM;
+	Motor[1].mode			= RPM;
+
 	Motor[0].valueSet.speed = leftSpeed;
 	Motor[1].valueSet.speed = rightSpeed;
 };

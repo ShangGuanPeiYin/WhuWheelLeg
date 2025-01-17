@@ -50,8 +50,8 @@ typedef struct _PulseType {
 
 // 电机参数
 typedef struct {
-	LegNum	direct;	   // 左右
-	uint8_t sign;	   // 左电机正转，右电机反转。控制的时候右电机pwm*=-1，反馈数据*=-1
+	LegNum direct;	  // 左右
+	int8_t sign;	  // 左电机正转，右电机反转。控制的时候右电机pwm*=-1，反馈数据*=-1
 
 	float reductionRatio;	 // 电机减速比  好像不需要？
 	float currentLimit;		 // 电流限制
