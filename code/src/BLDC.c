@@ -124,7 +124,8 @@ void BldcSentCurrent(void)	  //
 	PEAK(Motor[0].valueSet.current, (float) OUTPUT_DUTY_MAX);
 	PEAK(Motor[1].valueSet.current, (float) OUTPUT_DUTY_MAX);
 
-	Bldc_SetDuty(Motor[0].valueSet.current * Motor[0].param.sign, Motor[1].valueSet.current * Motor[1].param.sign);
+	// Bldc_SetDuty(Motor[0].valueSet.current * Motor[0].param.sign, Motor[1].valueSet.current * Motor[1].param.sign);
+	Bldc_SetDuty_String(Motor[0].valueSet.current * Motor[0].param.sign, Motor[1].valueSet.current * Motor[1].param.sign);
 };
 
 /// @brief Func
@@ -168,7 +169,7 @@ void Bldc_Driver_callback(void)
 {
 	uint8 receive_data;	   // 定义临时变量
 
-	if (uart_query_byte(SMALL_DRIVER_UART, &receive_data))	  // 接收串口数据
+	if (uart_query_byte(BLDC_DRIVER_UART, &receive_data))	 // 接收串口数据
 	{
 		if (receive_data == 0xA5
 			&& motor_value.receive_data_buffer[0] != 0xA5)	  // 判断是否收到帧头 并且 当前接收内容中是否正确包含帧头
@@ -227,8 +228,8 @@ void Bldc_Driver_callback(void)
 }
 
 /// @brief 无刷驱动 设置电机占空比
-/// @param left_duty 左侧电机占空比  范围 -10000 ~ 10000  负数为反转
-/// @param right_duty 右侧电机占空比  范围 -10000 ~ 10000  负数为反转
+/// @param left_duty 左侧电机占空比  范围 -4000 ~ 4000  负数为反转
+/// @param right_duty 右侧电机占空比  范围 -4000 ~ 4000  负数为反转
 void Bldc_SetDuty(int16 left_duty, int16 right_duty)
 {
 	motor_value.send_data_buffer[0] = 0xA5;									   // 配置帧头
@@ -246,6 +247,11 @@ void Bldc_SetDuty(int16 left_duty, int16 right_duty)
 	uart_write_buffer(UART_3, motor_value.send_data_buffer, 7);	   // 发送设置占空比的 字节包 数据
 }
 
+/// @brief 无刷驱动 设置电机占空比
+/// @param left_duty 左侧电机占空比  范围 -4000 ~ 4000  负数为反转
+/// @param right_duty 右侧电机占空比  范围 -4000 ~ 4000  负数为反转
+void Bldc_SetDuty_String(int16 left_duty, int16 right_duty) { printf("SET-DUTY,%d,%d\n", left_duty, right_duty); }
+
 /// @brief 无刷驱动 获取速度信息
 /// @brief 仅需发送一次 驱动将周期发出速度信息(默认10ms)
 /// @param
@@ -261,6 +267,11 @@ void Bldc_AskSpeed(void)
 
 	uart_write_buffer(UART_3, motor_value.send_data_buffer, 7);	   // 发送获取转速数据的 字节包 数据
 }
+
+/// @brief 无刷驱动 获取速度信息
+/// @brief 仅需发送一次 驱动将周期发出速度信息(默认10ms)
+/// @param
+void Bldc_AskSpeed_String(void) { printf("GET-SPEED\n"); }
 
 /// @brief  无刷驱动通讯 参数初始化
 /// @param
@@ -279,13 +290,15 @@ void BldcData_init(void)
 /// @param
 void Bldc_uart_init(void)
 {
-	uart_init(SMALL_DRIVER_UART, SMALL_DRIVER_BAUDRATE, SMALL_DRIVER_RX, SMALL_DRIVER_TX);	  // 串口初始化
-	uart_rx_interrupt(SMALL_DRIVER_UART, 1);												  // 使能串口接收中断
+	uart_init(BLDC_DRIVER_UART, BLDC_DRIVER_BAUDRATE, BLDC_DRIVER_TX, BLDC_DRIVER_RX);	  // 串口初始化
+	uart_rx_interrupt(BLDC_DRIVER_UART, 1);												  // 使能串口接收中断
 
-	BldcData_init();	   // 结构体参数初始化
-	Bldc_SetDuty(0, 0);	   // 设置0占空比
-	Bldc_AskSpeed();	   // 获取实时速度数据
-}
+	BldcData_init();	// 结构体参数初始化
+	// Bldc_SetDuty(0, 0);	   // 设置0占空比
+	Bldc_SetDuty_String(0, 0);
+	// Bldc_AskSpeed();	   // 获取实时速度数据
+	Bldc_AskSpeed_String();
+};
 
 // 设置函数
 void BldcSetCurrent(float leftCur, float rightCur)

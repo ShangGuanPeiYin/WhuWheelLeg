@@ -1,5 +1,4 @@
 #include "zf_common_headfile.h"
-// #include "zf_device_imu963ra.h"
 
 IMUType IMUdata;
 
@@ -9,7 +8,10 @@ IMUType IMUdata;
  */
 void IMU_init(void)
 {
-	imu963ra_init();	// 初始化 IMU963RA
+	while (true) {	  // 初始化 IMU963RA
+		if (imu963ra_init() == 0)
+			break;
+	}
 
 	// TODO: 初值要测量后填入
 	IMUdata.dataRaw.accel.x	 = 0;	 // 三个方向上的加速度飘移
@@ -64,7 +66,7 @@ void IMU_acc_Offset(void)
  */
 bool IMUANG_Offset(void)
 {
-	bool  error		  = 0;
+	bool  error		  = false;
 	float angx_offset = 0, angy_offset = 0, angz_offset = 0;
 	for (short i = RAWTIMES; i > 0; i--)	// 计算偏移量,只在静止时计算一次
 	{
@@ -78,8 +80,10 @@ bool IMUANG_Offset(void)
 	IMUdata.dataRaw.angle.x = angx_offset / RAWTIMES;
 	IMUdata.dataRaw.angle.y = angy_offset / RAWTIMES;
 	IMUdata.dataRaw.angle.z = angz_offset / RAWTIMES;
+
 	if (IMUdata.dataRaw.angle.x > 10 || IMUdata.dataRaw.angle.y > 10 || IMUdata.dataRaw.angle.z > 10)
-		error = 1;
+		error = true;
+
 	return error;
 }
 
@@ -173,6 +177,26 @@ void IMU_getdata(void)
 }
 
 /**
+ * @brief  对角速度进行积分，这部分放在中断里
+ *
+ * @return true
+ * @return false
+ */
+bool IMU_ang_integ()
+{
+	IMU_correct();
+	if (IMUdata.calibration_flag) {
+		IMU_getdata();
+
+		IMUdata.dataOri.pitch += IMUdata.dataOri.angle.z * irq_interval / 1000;
+		IMUdata.dataOri.roll  += IMUdata.dataOri.angle.x * irq_interval / 1000;
+		IMUdata.dataOri.yaw	  += IMUdata.dataOri.angle.y * irq_interval / 1000;
+	}
+
+	return IMUdata.calibration_flag;	// 返回0表示未完成校准，或正在校准
+}
+
+/**
  * @brief  陀螺仪动态校准函数，放在主函数while循环中，消除累积误差（只有G较小时可以调用）
  *
  */
@@ -207,27 +231,7 @@ void IMU_correct()
 }
 
 /**
- * @brief  对角速度进行积分，这部分放在中断里
- *
- * @return true
- * @return false
- */
-bool IMU_ang_integ()
-{
-	IMU_correct();
-	if (IMUdata.calibration_flag) {
-		IMU_getdata();
-
-		IMUdata.dataOri.pitch += IMUdata.dataOri.angle.z * irq_interval / 1000;
-		IMUdata.dataOri.roll  += IMUdata.dataOri.angle.x * irq_interval / 1000;
-		IMUdata.dataOri.yaw	  += IMUdata.dataOri.angle.y * irq_interval / 1000;
-	}
-
-	return IMUdata.calibration_flag;	// 返回0表示未完成校准，或正在校准
-}
-
-/**
- * @brief 校准陀螺仪总函数，静止状态调用，阻塞线程//加速度角速度作用//此时结构体中存储校准（静止）时三值数据
+ * @brief 校准陀螺仪总函数，静止状态调用，阻塞线程，加速度角速度作用，此时结构体中存储校准（静止）时三值数据
  *
  * @return true
  * @return false

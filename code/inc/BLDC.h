@@ -5,10 +5,10 @@
 #include "zf_common_typedef.h"
 
 // 无刷电机串口初始化
-#define SMALL_DRIVER_UART	  (UART_3)
-#define SMALL_DRIVER_BAUDRATE (460800)
-#define SMALL_DRIVER_RX		  (UART3_RX_P21_6)
-#define SMALL_DRIVER_TX		  (UART3_TX_P21_7)
+#define BLDC_DRIVER_UART	 (UART_3)
+#define BLDC_DRIVER_BAUDRATE (460800)
+#define BLDC_DRIVER_RX		 (UART3_RX_P21_6)
+#define BLDC_DRIVER_TX		 (UART3_TX_P21_7)
 
 //  P10-5 6 串口
 //  P21-6 7 Uart RT
@@ -113,8 +113,10 @@ void BldcSentCurrent(void);				   // 发送电流
 
 void Bldc_Driver_callback(void);						 // 无刷驱动 串口接收回调函数
 void Bldc_SetDuty(int16 left_duty, int16 right_duty);	 // 无刷驱动 设置电机占空比
-void Bldc_AskSpeed(void);								 // 无刷驱动 获取速度信息
-void Bldc_uart_init(void);								 // 无刷驱动 串口通讯初始化
+void Bldc_SetDuty_String(int16 left_duty, int16 right_duty);
+void Bldc_AskSpeed_String(void);
+void Bldc_AskSpeed(void);	  // 无刷驱动 获取速度信息
+void Bldc_uart_init(void);	  // 无刷驱动 串口通讯初始化
 
 void BldcSetCurrent(float leftCur, float rightCur);	   // 设置函数
 void BldcSetSpeed(float leftSpeed, float rightSpeed);
