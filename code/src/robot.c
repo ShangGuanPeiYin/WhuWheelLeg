@@ -65,21 +65,21 @@ bool RobotJumpLine(void)
 
 	switch (JumpLineState) {
 		case 0:
-//			if (RobotDrawLine(robot->robotParam.PosZero, 100))
-				JumpLineState++;
+			//			if (RobotDrawLine(robot->robotParam.PosZero, 100))
+			JumpLineState++;
 			break;
 
 		case 1:
-//			if (RobotDrawLine(robot.jumpLine.Pos[1], 100))
-				JumpLineState++;
+			//			if (RobotDrawLine(robot.jumpLine.Pos[1], 100))
+			JumpLineState++;
 			break;
 		case 2:
-//			if (RobotDrawLine(robot.jumpLine.Pos[2], 100))
-				JumpLineState++;
+			//			if (RobotDrawLine(robot.jumpLine.Pos[2], 100))
+			JumpLineState++;
 			break;
 		case 3:
-//			if (RobotDrawLine(robot.jumpLine.Pos[3], 100))
-				JumpLineState++;
+			//			if (RobotDrawLine(robot.jumpLine.Pos[3], 100))
+			JumpLineState++;
 			break;
 		case 4:
 			/* code */

@@ -15,7 +15,8 @@ int		 core0_main(void)
 
 	// mt9v03x_init();	   // 摄像头初始化
 
-	KeyInit();	  // 按键初始化
+	KeyInit();			  // 按键初始化
+	DataProcessInit();	  // 通讯初始化
 
 	ServoInit();	// 舵机控制初始化
 	BldcInit();		// 无刷电机初始化
@@ -28,15 +29,81 @@ int		 core0_main(void)
 	cpu_wait_event_ready();	   // 等待所有核心初始化完毕
 	system_delay_ms(500);
 	while (TRUE) {
-		system_delay_ms(5);	   // 5ms执行一次，即200Hz 需要<=舵机Func频率
+		// 尝试写个任务调度 不过无法实现任务抢占
+		system_delay_ms(1);
 
-		// BldcSetCurrent(1500, 1500);	   // PWM +-4k
-		// BldcSetSpeed(150, 0);		   // rpm
+		static u8 Cnt1	= 0;
+		static u8 Cnt2	= 0;
+		static u8 _temp = 0;
+
+		// 接收上位机消息
+		if (++Cnt1 > 5) {								 // 5ms执行一次
+			while (deQueue(&usart2_rec_list, &_temp))	 //
+				ReadMsg(&U2data, _temp);
+
+			Cnt1 = 0;
+		}
+
+		if (++Cnt2 > 5) {	 // 5ms执行一次，即200Hz
+			/* code */
+
+			Cnt2 = 0;
+		}
 
 		// // 五杆控制测试 等一会再测试这个
 		//		Vector2f PosTarget;
 		//		RobotDrawLine(PosTarget, 100);
 	}
+}
+
+/*------------------------------------------------- 定时器1 -------------------------------------------------------*/
+IFX_INTERRUPT(cc60_pit_ch0_isr, 0, CCU6_0_CH0_ISR_PRIORITY)
+{
+	interrupt_global_enable(0);	   // 开启中断嵌套
+
+	// 计数器计时
+	robot.robotParam.leftTime  += 1;	// 1ms
+	robot.robotParam.rightTime += 1;	// 1ms
+
+	static int ServoCnt			= 0;
+	if (++ServoCnt > 5) {	 // 1k -> 200Hz
+		ServoFunc();
+		ServoCnt = 0;
+	}
+
+	static u8 BldcCnt = 0;	  // 1k -> 500Hz
+	if (++BldcCnt > 2) {
+		BldcFunc();
+		BldcCnt = 0;
+	}
+
+	static u8 IMUCnt = 1;	 // 1k -> 200Hz 与舵机错开
+	if (++IMUCnt > 5) {
+		// IMUFunc();
+		IMUCnt = 0;
+	}
+
+	pit_clear_flag(CCU60_CH0);
+}
+
+/*------------------------------------------------- 串口3-BLDC -------------------------------------------------------*/
+IFX_INTERRUPT(uart3_rx_isr, 0, UART3_RX_INT_PRIO)
+{
+	interrupt_global_enable(0);	   // 开启中断嵌套
+
+	Bldc_Driver_callback();	   // 无刷电机中断接收函数
+}
+
+/*------------------------------------------------- 串口2-无线 -------------------------------------------------------*/
+IFX_INTERRUPT(uart2_rx_isr, 0, UART2_RX_INT_PRIO)
+{
+	interrupt_global_enable(0);	   // 开启中断嵌套
+
+	static uint8_t receive_data_temp2 = 0;
+
+	uart_query_byte(UART_2, &receive_data_temp2);
+
+	enQueue(&usart2_rec_list, receive_data_temp2);	  // 入队
 }
 
 #pragma section all restore

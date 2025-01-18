@@ -1,40 +1,42 @@
 #include "isr.h"
 
-#include "isr_config.h"
+// #include "isr_config.h"
 
 // 对于TC系列默认是不支持中断嵌套的，希望支持中断嵌套需要在中断内使用 interrupt_global_enable(0); 来开启中断嵌套
 // 简单点说实际上进入中断后TC系列的硬件自动调用了 interrupt_global_disable(); 来拒绝响应任何的中断，因此需要我们自己手动调用
 // interrupt_global_enable(0); 来开启中断的响应。
 
 // **************************** PIT中断函数 ****************************
-IFX_INTERRUPT(cc60_pit_ch0_isr, 0, CCU6_0_CH0_ISR_PRIORITY)
-{
-	interrupt_global_enable(0);	   // 开启中断嵌套
 
-	// 计数器计时
-	robot.robotParam.leftTime  += 1;	// 1ms
-	robot.robotParam.rightTime += 1;	// 1ms
+// /*------------------------------------------------- 定时器1 -------------------------------------------------------*/
+// IFX_INTERRUPT(cc60_pit_ch0_isr, 0, CCU6_0_CH0_ISR_PRIORITY)
+// {
+// 	interrupt_global_enable(0);	   // 开启中断嵌套
 
-	static int ServoCnt			= 0;
-	if (++ServoCnt > 5) {	 // 1k -> 200Hz
-		ServoFunc();
-		ServoCnt = 0;
-	}
+// 	// 计数器计时
+// 	robot.robotParam.leftTime  += 1;	// 1ms
+// 	robot.robotParam.rightTime += 1;	// 1ms
 
-	static u8 BldcCnt = 0;	  // 1k -> 500Hz
-	if (++BldcCnt > 2) {
-		BldcFunc();
-		BldcCnt = 0;
-	}
+// 	static int ServoCnt			= 0;
+// 	if (++ServoCnt > 5) {	 // 1k -> 200Hz
+// 		ServoFunc();
+// 		ServoCnt = 0;
+// 	}
 
-	static u8 IMUCnt = 1;	 // 1k -> 200Hz 与舵机错开
-	if (++IMUCnt > 5) {
-		// IMUFunc();
-		IMUCnt = 0;
-	}
+// 	static u8 BldcCnt = 0;	  // 1k -> 500Hz
+// 	if (++BldcCnt > 2) {
+// 		BldcFunc();
+// 		BldcCnt = 0;
+// 	}
 
-	pit_clear_flag(CCU60_CH0);
-}
+// 	static u8 IMUCnt = 1;	 // 1k -> 200Hz 与舵机错开
+// 	if (++IMUCnt > 5) {
+// 		// IMUFunc();
+// 		IMUCnt = 0;
+// 	}
+
+// 	pit_clear_flag(CCU60_CH0);
+// }
 
 IFX_INTERRUPT(cc60_pit_ch1_isr, 0, CCU6_0_CH1_ISR_PRIORITY)
 {
@@ -155,25 +157,31 @@ IFX_INTERRUPT(uart2_tx_isr, 0, UART2_TX_INT_PRIO)
 	interrupt_global_enable(0);	   // 开启中断嵌套
 }
 
-IFX_INTERRUPT(uart2_rx_isr, 0, UART2_RX_INT_PRIO)
-{
-	interrupt_global_enable(0);		   // 开启中断嵌套
-	wireless_module_uart_handler();	   // 无线模块统一回调函数
-}
-// 串口3默认连接到GPS定位模块
+/*------------------------------------------------- 串口2 -------------------------------------------------------*/
+
+// IFX_INTERRUPT(uart2_rx_isr, 0, UART2_RX_INT_PRIO)
+// {
+// 	interrupt_global_enable(0);	   // 开启中断嵌套
+
+// 	static uint8_t receive_data_temp3 = 0;
+// 	enQueue(&usart2_rec_list, receive_data_temp3);
+
+// 	// wireless_module_uart_handler();	   // 无线模块统一回调函数
+// }
+
 IFX_INTERRUPT(uart3_tx_isr, 0, UART3_TX_INT_PRIO)
 {
 	interrupt_global_enable(0);	   // 开启中断嵌套
 }
 
-IFX_INTERRUPT(uart3_rx_isr, 0, UART3_RX_INT_PRIO)
-{
-	interrupt_global_enable(0);	   // 开启中断嵌套
+// IFX_INTERRUPT(uart3_rx_isr, 0, UART3_RX_INT_PRIO)
+// {
+// 	interrupt_global_enable(0);	   // 开启中断嵌套
 
-	// gnss_uart_callback();		   // GNSS串口回调函数
+// 	// gnss_uart_callback();		   // GNSS串口回调函数
 
-	Bldc_Driver_callback();	   // 无刷电机中断接收函数
-}
+// 	Bldc_Driver_callback();	   // 无刷电机中断接收函数
+// }
 
 // 串口通讯错误中断
 IFX_INTERRUPT(uart0_er_isr, 0, UART0_ER_INT_PRIO)
