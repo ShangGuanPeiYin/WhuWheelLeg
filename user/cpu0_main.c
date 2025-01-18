@@ -21,6 +21,9 @@ int		 core0_main(void)
 	ServoInit();	// 舵机控制初始化
 	BldcInit();		// 无刷电机初始化
 
+	// U2
+	uart_init(UART_2, 460800, UART2_TX_P10_5, UART2_RX_P10_6);	  // 串口2初始化
+
 	robotInit(&robot);
 
 	pit_ms_init(CCU60_CH0, 1);	  // CCU60_CH0通道，中断初始化周期为1ms 中断初始化在前面
@@ -32,20 +35,20 @@ int		 core0_main(void)
 		// 尝试写个任务调度 不过无法实现任务抢占
 		system_delay_ms(1);
 
-		static u8 Cnt1	= 0;
+		// static u8 Cnt1	= 0;
 		static u8 Cnt2	= 0;
-		static u8 _temp = 0;
+//		static u8 _temp = 0;
 
-		// 接收上位机消息
-		if (++Cnt1 > 5) {								 // 5ms执行一次
-			while (deQueue(&usart2_rec_list, &_temp))	 //
-				ReadMsg(&U2data, _temp);
+		// TODO 接收上位机消息
+		// if (++Cnt1 > 5) {
+		// 	while (deQueue(&usart2_rec_list, &_temp)) //
+		// 	ReadMsg(&U2data, _temp);
+		// 	Cnt1 = 0;
+		// }
 
-			Cnt1 = 0;
-		}
-
-		if (++Cnt2 > 5) {	 // 5ms执行一次，即200Hz
-			/* code */
+		//	  U2  5ms发送一次
+		if (++Cnt2 > 5) {
+			printf("%d,%d\r\n", (int16) Motor[0].valueNow.speed, (int16) Motor[1].valueNow.speed);
 
 			Cnt2 = 0;
 		}
@@ -99,11 +102,10 @@ IFX_INTERRUPT(uart2_rx_isr, 0, UART2_RX_INT_PRIO)
 {
 	interrupt_global_enable(0);	   // 开启中断嵌套
 
-	static uint8_t receive_data_temp2 = 0;
-
-	uart_query_byte(UART_2, &receive_data_temp2);
-
-	enQueue(&usart2_rec_list, receive_data_temp2);	  // 入队
+	// TODO : 之后用
+	//  static uint8_t receive_data_temp2 = 0;
+	//  uart_query_byte(UART_2, &receive_data_temp2);
+	//  enQueue(&usart2_rec_list, receive_data_temp2);	  // 入队
 }
 
 #pragma section all restore
