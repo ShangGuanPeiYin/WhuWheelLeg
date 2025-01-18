@@ -53,21 +53,22 @@ void BldcSetZero(BldcType* motor)
 	motor->pulse.pulseTotal = 0;
 };
 
-/// @brief  脉冲解算 脉冲 → pos and rpm 这个函数应该用不到了
+/// @brief  脉冲解算 脉冲 → pos
 /// @param motor
 void BldcCulculate(BldcType* motor)
 {
 	motor->pulse.Distanse = motor->pulse.pulseRead - motor->pulse.pulseLast;	// 计算每次的脉冲数之差，对应每次转过的角度
 	motor->pulse.pulseLast = motor->pulse.pulseRead;
 
-	if (ABS(motor->pulse.Distanse) > PULSEPERROUND / 2)	   // 用来判断电机应该正转还是反转，修正distance
-	{
+	if (ABS(motor->pulse.Distanse) > PULSEPERROUND / 2) {	 // 用来判断电机应该正转还是反转，修正distance
 		motor->pulse.Distanse = motor->pulse.Distanse - SIG(motor->pulse.Distanse) * PULSEPERROUND;
 	}
-	motor->pulse.pulseTotal += motor->pulse.Distanse;										  // 累计脉冲
-	motor->valueNow.angle	 = motor->pulse.pulseTotal * 360 / PULSEPERROUND;				  // 累计角度
-	motor->valueNow.speed	 = (motor->pulse.Distanse * 60) / (PULSEPERROUND * PULSETIME);	  // 速度rpm
-	motor->valueLast		 = motor->valueNow;
+
+	motor->pulse.pulseTotal += motor->pulse.Distanse;	 // 累计脉冲
+
+	motor->valueNow.angle	 = motor->pulse.pulseTotal * 360 / PULSEPERROUND;	 // 累计角度
+	// motor->valueNow.speed	 = (motor->pulse.Distanse * 60) / (PULSEPERROUND * PULSETIME);	  // 速度rpm 直接协议读取，无需计算
+	motor->valueLast.angle	 = motor->valueNow.angle;
 
 	if (motor->begin) {	   // 准备锁位置
 		motor->pulse.pulseLock = motor->pulse.pulseTotal;
@@ -89,6 +90,8 @@ void BldcPositionMode(BldcType* motor)
 // 速度模式
 void BldcSpeedMode(BldcType* motor)
 {
+	// motor->rpmPID.kp		 = (motor->valueSet.speed - motor->valueNow.speed) * 0.03 + 3;
+
 	motor->valueSet.current += PIDOperation(&motor->rpmPID, motor->valueNow.speed, motor->valueSet.speed);
 	// PIDOperation(&motor->currentPID, motor->valueNow.current, motor->valueSet.current);	   // TODO 不知道能不能写电流环
 };
@@ -170,6 +173,16 @@ void Bldc_Driver_callback(void)
 						// pos cul
 						Motor[0].valueNow.speed = motor_value.receive_left_speed_data * Motor[0].param.sign;
 						Motor[1].valueNow.speed = motor_value.receive_right_speed_data * Motor[1].param.sign;
+					} else if (motor_value.receive_data_buffer[1] == 0x04) {
+						Motor[0].pulse.pulseRead = (((u16) motor_value.receive_data_buffer[2] << 8)
+													| (u16) motor_value.receive_data_buffer[3]);	// 拟合左侧电机
+
+						Motor[1].pulse.pulseRead = (((u16) motor_value.receive_data_buffer[4] << 8)
+													| (u16) motor_value.receive_data_buffer[5]);	// 拟合右侧电机
+
+						// 解算位置
+						BldcCulculate(&Motor[0]);
+						BldcCulculate(&Motor[1]);
 					}
 
 					motor_value.receive_data_count = 0;	   // 清除缓冲区计数值

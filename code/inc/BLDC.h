@@ -4,6 +4,8 @@
 #include "Pid.h"
 #include "zf_common_typedef.h"
 
+#define NEWMSG 1	// 新的驱动代码
+
 // 无刷电机串口初始化
 #define BLDC_DRIVER_UART	 (UART_3)
 #define BLDC_DRIVER_BAUDRATE (460800)
@@ -19,8 +21,8 @@
 
 // 无刷电机控制
 #define OUTPUT_DUTY_MAX ((uint16) (4000))	 // 占空比输出最大值
-#define PULSEPERROUND	32767				 // 编码器采样最大值  32767
-#define PULSETIME		9999				 // 两次读取脉冲数之间的时间，秒
+#define PULSEPERROUND	(32767)				 // 编码器采样最大值  32767
+#define PULSETIME		(0.01)				 // 两次读取脉冲数之间的时间，10ms
 
 typedef enum { Left, Right } LegNum;
 
@@ -34,16 +36,16 @@ typedef enum _BldcMode {
 // 电机值
 typedef struct _Value {
 	volatile float speed;	   // rpm
-	volatile float angle;	   // °
+	volatile float angle;	   // ° 累计位置，-∞ ~ +∞
 	volatile int16 current;	   // 即PWM Set用到
 } ValueType;
 
 // 脉冲 不知道能不能用到
 typedef struct _PulseType {
-	volatile int16_t pulseRead;		// 电调读取的脉冲数
-	volatile int16_t pulseLast;		// 电调读取的脉冲数
-	volatile int16_t Distanse;		// 当前脉冲与上次脉冲数之差
-	volatile int32_t pulseTotal;	// 累计脉冲数
+	volatile uint16_t pulseRead;	 // 电调读取的脉冲数
+	volatile uint16_t pulseLast;	 // 电调读取的脉冲数
+	volatile uint16_t Distanse;		 // 当前脉冲与上次脉冲数之差
+	volatile int32_t  pulseTotal;	 // 累计脉冲数
 
 	volatile int32_t pulseLock;	   // 累计脉冲数
 } PulseType;
