@@ -41,7 +41,7 @@ extern RobotType robot;
 void robotInit(RobotType* robot);
 
 void robotRun(void);
-void robotDrawLine(void);
+bool RobotDrawLine(Vector2f PosTarget, float reachTime);
 void robotDrawCurve(void);
 bool RobotJumpLine(void);
 void RobotJumpLineInit(void);

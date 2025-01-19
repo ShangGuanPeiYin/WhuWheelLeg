@@ -6,6 +6,8 @@ ServoType Servo[4];
 /// @param
 void ServoInit(void)
 {
+	for (size_t i = 0; i < 4; i++) { memset(&Servo[i], 0, sizeof(ServoType)); }
+
 	// PWM引脚配置
 	Servo[0].pin	  = FL_CHANNEL;
 	Servo[1].pin	  = FR_CHANNEL;
@@ -29,13 +31,13 @@ void ServoInit(void)
 	Servo[3].angleAdj = +90;
 	Servo[3].sign	  = +1;
 
-	for (size_t i = 0; i < 4; i++) {
-		Servo[i].angleSet = 0;
-		Servo[i].PWMSet	  = 0;
-	}
+	Servo[Fl].PWMmin  = 1150;
+	Servo[Fr].PWMmin  = 1450;
+	Servo[Bl].PWMmin  = 1000;
+	Servo[Br].PWMmin  = 1150;
+	for (size_t i = 0; i < 4; i++) { Servo[i].PWMmax = Servo[i].PWMmin + 5000; }
 
 	// 引脚初始化 PWM频率250Hz
-
 	for (size_t i = 0; i < 4; i++) pwm_init(Servo[i].pin, 250, Servo[i].angleAdj);
 }
 
@@ -49,8 +51,8 @@ void ServoFunc(void)
 		// Servo[id].angleSet = (Servo[id].angleLeg + Servo[id].angleAdj) * Servo[id].sign;
 
 		// 驱动电机
-		Servo[id].PWMSet = Servo[id].angleSet * ANGLE2PWM;
-		Limit(Servo[id].PWMSet, 0, (int32_t) PWM_DUTY_MAX);	   // 限幅保护
+		Servo[id].PWMSet = Servo[id].PWMmin + Servo[id].angleSet * ANGLE2PWM;
+		Limit(Servo[id].PWMSet, Servo[id].PWMmin, Servo[id].PWMmax);	// 限幅保护
 
 		pwm_set_duty(Servo[id].pin, Servo[id].PWMSet);	  // 设置PWM占空比
 	}

@@ -116,22 +116,33 @@ void AngleCalculate(LegType* leg, Vector2f pos)
 		leg->angle1Set	  = angleleg.x;
 		leg->angle4Set	  = angleleg.y;
 
-		switch (leg->num) {
-			case Left:
-				Servo[Fl].angleLeg = leg->angle1Set * RAD2DEG;
-				Servo[Bl].angleLeg = leg->angle4Set * RAD2DEG;
-				break;
+		AngleLeg2Servo(leg);
 
-			case Right:
-				Servo[Fr].angleLeg = leg->angle1Set * RAD2DEG;
-				Servo[Br].angleLeg = leg->angle4Set * RAD2DEG;
-				break;
-
-			default:
-				break;
-		};
 	} else {
 		RobotError();
+	};
+};
+
+/**
+ * @brief angle14»»Ëãµ½Servo
+ *
+ * @param leg
+ */
+void AngleLeg2Servo(LegType* leg)
+{
+	switch (leg->num) {
+		case Left:
+			Servo[Fl].angleLeg = leg->angle1Set * RAD2DEG;
+			Servo[Bl].angleLeg = leg->angle4Set * RAD2DEG;
+			break;
+
+		case Right:
+			Servo[Fr].angleLeg = leg->angle1Set * RAD2DEG;
+			Servo[Br].angleLeg = leg->angle4Set * RAD2DEG;
+			break;
+
+		default:
+			break;
 	};
 };
 

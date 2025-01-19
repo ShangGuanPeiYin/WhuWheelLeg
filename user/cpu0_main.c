@@ -35,11 +35,9 @@ int		 core0_main(void)
 		// 尝试写个任务调度 不过无法实现任务抢占
 		system_delay_ms(1);
 
-		// static u8 Cnt1	= 0;
-		static u8 Cnt2 = 0;
+		// TODO ：接收上位机消息
 		//		static u8 _temp = 0;
-
-		// TODO 接收上位机消息
+		// static u8 Cnt1	= 0;
 		// if (++Cnt1 > 5) {
 		// 	while (deQueue(&usart2_rec_list, &_temp)) //
 		// 	ReadMsg(&U2data, _temp);
@@ -47,15 +45,25 @@ int		 core0_main(void)
 		// }
 
 		//	  U2  5ms发送一次
-		if (++Cnt2 > 5) {
-			printf("%d,%d\r\n", (int16) Motor[0].valueNow.speed, (int16) Motor[1].valueNow.speed);
+		// static u8 Cnt2 = 0;
+		// if (++Cnt2 > 5) {
+		// 	printf("%d,%d\r\n", (int16) Motor[0].valueNow.speed, (int16) Motor[1].valueNow.speed);
 
-			Cnt2 = 0;
-		}
+		// 	Cnt2 = 0;
+		// }
 
-		// // 五杆控制测试 等一会再测试这个
-		//		Vector2f PosTarget;
-		//		RobotDrawLine(PosTarget, 100);
+#if 0
+		// 五杆控制测试 等一会再测试这个
+		legLeft.angle1Set = 0.f * DEG2RAD;
+		legLeft.angle4Set = 0.f * DEG2RAD;
+		AngleLeg2Servo(&legLeft);
+#endif
+
+#if 1
+		Vector2f PosTarget;
+		RobotDrawLine(PosTarget, 100);
+
+#endif
 	}
 }
 

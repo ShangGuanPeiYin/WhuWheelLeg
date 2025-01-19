@@ -2,6 +2,8 @@ zf_common_function.o :	../libraries/zf_common/zf_common_function.c
 ../libraries/zf_common/zf_common_function.c :
 zf_common_function.o :	..\libraries\zf_common\zf_common_debug.h
 ..\libraries\zf_common\zf_common_debug.h :
+zf_common_function.o :	..\libraries\zf_common\zf_common_interrupt.h
+..\libraries\zf_common\zf_common_interrupt.h :
 zf_common_function.o :	..\libraries\zf_common\zf_common_typedef.h
 ..\libraries\zf_common\zf_common_typedef.h :
 zf_common_function.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\\Cpu\\Std\PLATFORM_TYPES.H"
@@ -34,7 +36,5 @@ zf_common_function.o :	"D:\Software 1\ADS\ADS\AURIX-Studio-1.10.6\tools\Compiler
 "D:\Software 1\ADS\ADS\AURIX-Studio-1.10.6\tools\Compilers\Tasking_1.1r8\ctc\include\stdlib.h" :
 zf_common_function.o :	"D:\Software 1\ADS\ADS\AURIX-Studio-1.10.6\tools\Compilers\Tasking_1.1r8\ctc\include\string.h"
 "D:\Software 1\ADS\ADS\AURIX-Studio-1.10.6\tools\Compilers\Tasking_1.1r8\ctc\include\string.h" :
-zf_common_function.o :	..\libraries\zf_common\zf_common_interrupt.h
-..\libraries\zf_common\zf_common_interrupt.h :
 zf_common_function.o :	..\libraries\zf_common\zf_common_function.h
 ..\libraries\zf_common\zf_common_function.h :

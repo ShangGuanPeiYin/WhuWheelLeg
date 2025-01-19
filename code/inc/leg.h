@@ -53,5 +53,6 @@ bool LegDrawLine(LegType* leg, Vector2f PosTarget, float reachTime);	// 足端画曲
 bool LegDrawCurve(LegType* leg, float reachTime);						// 足端画直线（线性插值
 
 void AngleCalculate(LegType* leg, Vector2f pos);	// 从Pos向下解算至 Servo.angleSet
+void AngleLeg2Servo(LegType* leg);
 
 #endif
