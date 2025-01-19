@@ -13,8 +13,8 @@ void BldcInit(void)
 /// @param
 void BldcTypeInit(void)
 {
-	float Kp_rpm		  = 0.f;	// PID参数待调整
-	float Ki_rpm		  = 0.f;
+	float Kp_rpm		  = 3.5f;	 // PID参数待调整
+	float Ki_rpm		  = 0.138f;
 	float Kd_rpm		  = 0.f;
 
 	Motor[0].param.direct = Left;	  // 0为左
