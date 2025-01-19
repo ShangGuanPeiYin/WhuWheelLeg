@@ -52,21 +52,21 @@ int		 core0_main(void)
 		// 	Cnt2 = 0;
 		// }
 
-#if 1
+#if 0
 		// 五杆控制测试 等一会再测试这个
 		legLeft.angle1Set = 180.f * DEG2RAD;
 		legLeft.angle4Set = 0.f * DEG2RAD;
 		AngleLeg2Servo(&legLeft);
 #endif
 
-#if 1
+#if 0
 		Vector2f PosTarget = ForwardKinematics(PI * 3 / 4, PI * 1 / 2);
 
 		RobotDrawLine(PosTarget, 800);
 
 #endif
 
-#if 1
+#if 0
 		static bool OnceFlag = true;
 		if (OnceFlag && RobotJumpLine()) {	  // 执行一次
 			OnceFlag = false;
