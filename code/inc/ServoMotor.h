@@ -24,7 +24,7 @@ typedef struct _Servo {
 	float angleSet;	   // 舵机的实际转角 舵机均采用角度制 °
 	float angleAdj;	   // 解算的调整值
 	float angleLeg;	   // 在Leg上的换算角度，即Leg.h的∠1与∠4
-	u8	  sign;		   // 正负号，结算用
+	int8  sign;		   // 正负号，结算用
 
 	int32_t PWMSet;
 } ServoType;

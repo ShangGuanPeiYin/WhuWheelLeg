@@ -36,8 +36,8 @@ int		 core0_main(void)
 		system_delay_ms(1);
 
 		// static u8 Cnt1	= 0;
-		static u8 Cnt2	= 0;
-//		static u8 _temp = 0;
+		static u8 Cnt2 = 0;
+		//		static u8 _temp = 0;
 
 		// TODO 接收上位机消息
 		// if (++Cnt1 > 5) {
@@ -74,8 +74,8 @@ IFX_INTERRUPT(cc60_pit_ch0_isr, 0, CCU6_0_CH0_ISR_PRIORITY)
 		ServoCnt = 0;
 	}
 
-	static u8 BldcCnt = 0;	  // 1k -> 500Hz
-	if (++BldcCnt > 2) {
+	static u8 BldcCnt = 0;	  // 1k -> 100Hz
+	if (++BldcCnt > 10) {
 		BldcFunc();
 		BldcCnt = 0;
 	}
