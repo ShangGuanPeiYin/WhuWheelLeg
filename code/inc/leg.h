@@ -2,7 +2,7 @@
 #define _LEG_H_
 #include "MasterCtrl.h"
 #include "MathLib.h"
-#include "ServoMotor.h"
+#include "Servo.h"
 #include "bldc.h"
 #include "vector.h"
 #include "zf_common_typedef.h"

@@ -84,7 +84,7 @@
 #include "MasterCtrl.h"
 #include "MathLib.h"
 #include "Pid.h"
-#include "ServoMotor.h"
+#include "Servo.h"
 #include "bldc.h"
 #include "dataProcess.h"
 #include "imu.h"

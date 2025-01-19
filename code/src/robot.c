@@ -64,18 +64,22 @@ bool RobotJumpLine(void)
 	static u8 JumpLineState = 0;
 
 	switch (JumpLineState) {
-		case 0:
-			//			if (RobotDrawLine(robot->robotParam.PosZero, 100))
-			JumpLineState++;
+		case 0:;
+
+			Vector2f PosTarget0 = ForwardKinematics(PI, PI * 0);
+			if (RobotDrawLine(PosTarget0, 800))
+				JumpLineState++;
 			break;
 
-		case 1:
-			//			if (RobotDrawLine(robot.jumpLine.Pos[1], 100))
-			JumpLineState++;
+		case 1:;
+			Vector2f PosTarget1 = ForwardKinematics(PI * 1 / 2, PI * 1 / 2);
+			if (RobotDrawLine(PosTarget1, 800))
+				JumpLineState++;
 			break;
-		case 2:
-			//			if (RobotDrawLine(robot.jumpLine.Pos[2], 100))
-			JumpLineState++;
+		case 2:;
+			Vector2f PosTarget2 = ForwardKinematics(PI, PI * 0);
+			if (RobotDrawLine(PosTarget2, 800))
+				JumpLineState++;
 			break;
 		case 3:
 			//			if (RobotDrawLine(robot.jumpLine.Pos[3], 100))
@@ -91,11 +95,12 @@ bool RobotJumpLine(void)
 
 			JumpLineState++;
 			break;
-		case 6:
+
+		default:
 			/* code */
 
-			JumpLineState = 0;
-			break;
+			JumpLineState = 0XFF;
+			return true;
 	}
 	return false;
 }
