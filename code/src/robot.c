@@ -62,6 +62,9 @@ bool RobotDrawLine(Vector2f PosTarget, float reachTime)
 			robot.left->PosTarget  = PosTarget;
 			robot.right->PosTarget = PosTarget;
 
+			robot.left->PosSet	   = PosTarget;
+			robot.right->PosSet	   = PosTarget;
+
 			robot.left->PosStart   = ForwardKinematics(robot.left->angle1Set, robot.left->angle4Set);	 // 现在的坐标
 			robot.right->PosStart  = ForwardKinematics(robot.right->angle1Set, robot.right->angle4Set);
 
@@ -70,21 +73,22 @@ bool RobotDrawLine(Vector2f PosTarget, float reachTime)
 
 		case StateProcessing:
 
-			if (robot.param.runTime < robot.left->reachTime) {
-				// Start + (target - start)*(runtime/reachtime)
+			if (robot.param.runTime < robot.param.reachTime) {
+				if (robot.jumpLine.Lerp) {
+					robot.left->PosSet.x
+						= Lerp(robot.left->PosStart.x, robot.left->PosTarget.x, robot.param.runTime / robot.param.reachTime);
+					robot.left->PosSet.y
+						= Lerp(robot.left->PosStart.y, robot.left->PosTarget.y, robot.param.runTime / robot.param.reachTime);
 
-				robot.left->PosSet.x
-					= Lerp(robot.left->PosStart.x, robot.left->PosTarget.x, robot.param.runTime / robot.left->reachTime);
-				robot.left->PosSet.y
-					= Lerp(robot.left->PosStart.y, robot.left->PosTarget.y, robot.param.runTime / robot.left->reachTime);
-
-				robot.right->PosSet.x
-					= Lerp(robot.right->PosStart.x, robot.right->PosTarget.x, robot.param.runTime / robot.right->reachTime);
-				robot.right->PosSet.y
-					= Lerp(robot.right->PosStart.y, robot.right->PosTarget.y, robot.param.runTime / robot.right->reachTime);
+					robot.right->PosSet.x
+						= Lerp(robot.right->PosStart.x, robot.right->PosTarget.x, robot.param.runTime / robot.param.reachTime);
+					robot.right->PosSet.y
+						= Lerp(robot.right->PosStart.y, robot.right->PosTarget.y, robot.param.runTime / robot.param.reachTime);
+				}
 
 				AngleCalculate(robot.left, robot.left->PosSet);	   // 更新舵机角
 				AngleCalculate(robot.right, robot.right->PosSet);
+
 			} else {	// 时间到，运行结束
 				Processed(&(robot.pipeline));
 			}
@@ -110,8 +114,9 @@ bool RobotJumpLine(void)
 	switch (JumpLineState) {
 		case 0:;
 			robot.pipeline.state  = StatePreparing;
-			robot.jumpLine.Pos[0] = ForwardKinematics(PI * (5 / 4), PI * (-1 / 4));
-			robot.jumpLine.Pos[1] = ForwardKinematics(PI * 1 / 2, PI * 1 / 2);
+			robot.jumpLine.Lerp	  = false;
+			robot.jumpLine.Pos[0] = ForwardKinematics(PI * (5 / 4.f), PI * (-1 / 4.f));
+			robot.jumpLine.Pos[1] = ForwardKinematics(PI * 3 / 4.f, PI * 1 / 4.f);
 			robot.jumpLine.Pos[2] = ForwardKinematics(PI, PI * 0);
 			// robot.jumpLine.Pos[3] = 0;
 			// robot.jumpLine.Pos[4] = 0;
@@ -119,18 +124,27 @@ bool RobotJumpLine(void)
 			break;
 
 		case 1:
-			if (RobotDrawLine(robot.jumpLine.Pos[0], 1000))
-				JumpLineState++;
 
+			if (RobotDrawLine(robot.jumpLine.Pos[0], 500)) {
+				robot.jumpLine.Lerp = true;
+				JumpLineState++;
+				robot.pipeline.state = StatePreparing;
+			}
 			break;
 		case 2:
-			if (RobotDrawLine(robot.jumpLine.Pos[1], 1000))
-				JumpLineState++;
 
+			if (RobotDrawLine(robot.jumpLine.Pos[1], 300)) {
+				robot.jumpLine.Lerp = true;
+				JumpLineState++;
+				robot.pipeline.state = StatePreparing;
+			}
 			break;
 		case 3:
-			if (RobotDrawLine(robot.jumpLine.Pos[2], 1000))
+
+			if (RobotDrawLine(robot.jumpLine.Pos[2], 300)) {
 				JumpLineState++;
+				robot.pipeline.state = StatePreparing;
+			}
 			break;
 		case 4:
 			/* code */
@@ -149,6 +163,9 @@ bool RobotJumpLine(void)
 			JumpLineState = 0XFF;
 			return true;
 	}
+
+	oled_show_uint(80, 5, JumpLineState, 3);
+
 	return false;
 }
 

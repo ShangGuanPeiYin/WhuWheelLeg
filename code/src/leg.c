@@ -8,16 +8,20 @@ void LegInit(void)
 	memset(&legLeft, 0, sizeof(LegType));
 	memset(&legRight, 0, sizeof(LegType));
 
-	legLeft.num		= Left;
-	legRight.num	= Right;
+	legLeft.num		   = Left;
+	legRight.num	   = Right;
 
-	legLeft.front	= &(Servo[Fl]);
-	legLeft.behind	= &(Servo[Bl]);
-	legLeft.wheel	= &(Motor[0]);
+	legLeft.front	   = &(Servo[Fl]);
+	legLeft.behind	   = &(Servo[Bl]);
+	legLeft.wheel	   = &(Motor[0]);
+	legLeft.angle1Set  = PI;	// TODO：
+	legLeft.angle4Set  = 0;		// TODO：
 
-	legRight.front	= &(Servo[Fr]);
-	legRight.behind = &(Servo[Br]);
-	legRight.wheel	= &(Motor[1]);
+	legRight.front	   = &(Servo[Fr]);
+	legRight.behind	   = &(Servo[Br]);
+	legRight.wheel	   = &(Motor[1]);
+	legRight.angle1Set = PI;	// TODO：
+	legRight.angle4Set = 0;		// TODO：
 
 	MotionInit(&(legLeft.motion));
 	MotionInit(&(legRight.motion));
@@ -230,31 +234,44 @@ Vector2f ForwardKinematics(float angle1, float angle4)
 {
 	// 直接计算ABDE的坐标
 	Vector2f pointA, pointB, pointD, pointE;
-	pointA.x	 = -L5 / 2;
-	pointA.y	 = 0.f;
+	pointA.x = -L5 / 2;
+	pointA.y = 0.f;
 
-	pointB.x	 = -L5 / 2 + L1 * cosf(angle1);
-	pointB.y	 = L1 * sinf(angle1);
+	pointB.x = -L5 / 2 + L1 * cosf(angle1);
+	pointB.y = L1 * sinf(angle1);
 
-	pointD.x	 = L5 / 2 + L4 * cosf(angle4);
-	pointD.y	 = L4 * sinf(angle4);
+	pointD.x = L5 / 2 + L4 * cosf(angle4);
+	pointD.y = L4 * sinf(angle4);
 
-	pointE.x	 = L5 / 2;
-	pointE.y	 = 0.f;
+	pointE.x = L5 / 2;
+	pointE.y = 0.f;
 
 	// 求解angle2
-	float A		 = 2 * L2 * (pointD.x - pointB.x);
-	float B		 = 2 * L2 * (pointD.y - pointB.y);
-	float LBD_2	 = (pointD.y - pointB.y) * (pointD.y - pointB.y) + (pointD.x - pointB.x) * (pointD.x - pointB.x);
-	float C		 = L2 * L2 - L3 * L3 + LBD_2;
+	float A	 = 2 * L2 * (pointD.x - pointB.x);
+	float B	 = 2 * L2 * (pointD.y - pointB.y);
 
+	float C	 = L2 * L2 - L3 * L3 + (pointD.x - pointB.x) * (pointD.x - pointB.x) + (pointD.y - pointB.y) * (pointD.y - pointB.y);
 	float angle2 = 2 * atan2f((B + sqrtf(A * A + B * B - C * C)), (A + C));
 
 	// 计算C点坐标
 	Vector2f pointC;
-	pointC.x = -L5 / 2 + L1 * cosf(angle1) + L2 * cosf(angle2);
-	pointC.y = L1 * sinf(angle1) + L2 * sinf(angle2);
+	pointC.x = pointB.x + L2 * cosf(angle2);
+	pointC.y = pointB.y + L2 * sinf(angle2);
 	return pointC;
+
+	// 	// 求解angle2
+	// float A		 = 2 * L2 * (pointD.x - pointB.x);
+	// float B		 = 2 * L2 * (pointD.y - pointB.y);
+	// float LBD_2	 = (pointD.y - pointB.y) * (pointD.y - pointB.y) + (pointD.x - pointB.x) * (pointD.x - pointB.x);
+	// float C		 = L2 * L2 - L3 * L3 + LBD_2;
+
+	// float angle2 = 2 * atan2f((B + sqrtf(A * A + B * B - C * C)), (A + C));
+
+	// // 计算C点坐标
+	// Vector2f pointC;
+	// pointC.x = -L5 / 2 + L1 * cosf(angle1) + L2 * cosf(angle2);
+	// pointC.y = L1 * sinf(angle1) + L2 * sinf(angle2);
+	// return pointC;
 };
 
 /**

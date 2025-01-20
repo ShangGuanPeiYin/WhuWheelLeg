@@ -20,6 +20,7 @@ typedef struct _Pipeline {
 typedef struct _JumpLineType {
 	Vector2f Pos[5];
 	float	 reachTime[5];
+	bool	 Lerp;	  // 是否用线性插值
 } JumpLineType;
 
 typedef struct _robot {

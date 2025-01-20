@@ -31,7 +31,6 @@ int		 core0_main(void)
 
 	// 此处编写用户代码 例如外设初始化代码等
 	cpu_wait_event_ready();	   // 等待所有核心初始化完毕
-	system_delay_ms(500);
 	while (TRUE) {
 		// 尝试写个任务调度 不过无法实现任务抢占
 		system_delay_ms(1);
@@ -58,11 +57,30 @@ int		 core0_main(void)
 
 #endif
 
+#if 0
+		robot.jumpLine.Pos[0]	= ForwardKinematics(PI * (5 / 4), PI * (-1 / 4));
+
+		robot.jumpLine.Pos[0].x = 0;
+		robot.jumpLine.Pos[0].y = 25;
+		AngleCalculate(robot.left, robot.jumpLine.Pos[0]);	  // 更新舵机角
+		AngleCalculate(robot.right, robot.jumpLine.Pos[0]);
+#endif
+
 #if 1
 		static bool OnceFlag = true;
-		if (OnceFlag && RobotJumpLine()) {	  // 执行一次
-			OnceFlag = false;
+		if (OnceFlag) {	   // 执行一次
+			OnceFlag			 = false;
+			robot.pipeline.state = StatePreparing;
 		}
+
+		// robot.jumpLine.Pos[0] = ForwardKinematics(PI * 3 / 4.f, PI * 1 / 4.f);
+		// RobotDrawLine(robot.jumpLine.Pos[0], 1000);
+
+		// if (OnceFlag && RobotJumpLine()) {	  // 执行一次
+		// 	OnceFlag = false;
+		// }
+
+		RobotJumpLine();
 
 #endif
 	}
@@ -74,9 +92,9 @@ IFX_INTERRUPT(cc60_pit_ch0_isr, 0, CCU6_0_CH0_ISR_PRIORITY)
 	interrupt_global_enable(0);	   // 开启中断嵌套
 
 	// 计数器计时
-	robot.param.leftTime  += 1;	   // 1ms
-	robot.param.rightTime += 1;	   // 1ms
-	robot.param.runTime	  += 1;	   // 1ms
+	robot.param.leftTime  += 1;		 // 1ms
+	robot.param.rightTime += 1;		 // 1ms
+	robot.param.runTime	  += 1.f;	 // 1ms
 
 	static int ServoCnt	   = 0;
 	if (++ServoCnt > 5) {	 // 1k -> 200Hz
