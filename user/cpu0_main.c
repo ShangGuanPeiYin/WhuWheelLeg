@@ -44,18 +44,16 @@ int		 core0_main(void)
 		// 	Cnt1 = 0;
 		// }
 
-#if 0
+		// Servo[Bl].angleLeg = 90 + 45;
+		// Servo[Fl].angleLeg = 90;
 
-		Vector2f Pos;
-		Pos.x			   = 0;
-		Pos.y			   = 39.27f;
-		Vector2f PosTarget = InverseKinematics(Pos);	// 坐标
+		// Servo[Bl].angleLeg = 90;
+		// Servo[Fl].angleLeg = 90;
 
-		AngleCalculate(&legLeft, PosTarget);
-
-		// RobotDrawLine(PosTarget, 800);
-
-#endif
+		Servo[Bl].angleLeg = 90;
+		Servo[Fl].angleLeg = 90;
+		// Servo[Br].angleLeg = 90;
+		// Servo[Fr].angleLeg = 90;
 
 #if 0
 		robot.jumpLine.Pos[0]	= ForwardKinematics(PI * (5 / 4), PI * (-1 / 4));
@@ -66,20 +64,12 @@ int		 core0_main(void)
 		AngleCalculate(robot.right, robot.jumpLine.Pos[0]);
 #endif
 
-#if 1
+#if 0
 		static bool OnceFlag = true;
 		if (OnceFlag) {	   // 执行一次
 			OnceFlag			 = false;
 			robot.pipeline.state = StatePreparing;
 		}
-
-		// robot.jumpLine.Pos[0] = ForwardKinematics(PI * 3 / 4.f, PI * 1 / 4.f);
-		// RobotDrawLine(robot.jumpLine.Pos[0], 1000);
-
-		// if (OnceFlag && RobotJumpLine()) {	  // 执行一次
-		// 	OnceFlag = false;
-		// }
-
 		RobotJumpLine();
 
 #endif
