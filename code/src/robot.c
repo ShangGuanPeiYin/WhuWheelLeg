@@ -200,9 +200,10 @@ void BalanceInit(void)	  // PID
  * 		  解算关系式： PitchSet = K1 * ( SpeedSet - SpeedNow )
  * 		            TorqueSet = K2 * ( PitchSet - PitchNow )
  * 		            TorqueSet 即扭矩，对应电机的电流，即电机的PWM
- * 		  注意方向问题！！！ Torque的方向不一定是PWM的正向
+ * 		  注意方向问题！！！
  * 		  目前方向：轮腿站立，从右边看： 顺时针为Speed>0 ,Torque>0。
  * 				  K1和K2 用RobotType里面的	float K1, K2;
+ *       机体解算时所用到的角度力矩方向都是顺时针为正（从右侧看,右为轮腿前），
  *
  */
 void BalancePitch(void)
