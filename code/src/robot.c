@@ -25,7 +25,7 @@ void robotInit(RobotType* robot)
 
 	LegInit();
 
-	LegReset();	   // 运动到初始零点
+	// LegReset();	   // 运动到初始零点
 };
 
 void RobotJumpLineInit(void)
@@ -146,4 +146,23 @@ void Processed(PipelineType* pipeline)	  // 进行完毕，进入结束状态
 {
 	pipeline->isRun = false;
 	pipeline->state = StateEnd;
+}
+
+/********************************************** 平衡函数 ********************************************************** */
+
+/**
+ * @brief 俯仰角平衡 TODO
+ * 		  解算关系式： PitchSet = K1 * ( SpeedSet - SpeedNow )
+ * 		            TorqueSet = K2 * ( PitchSet - PitchNow )
+ * 		            TorqueSet 即扭矩，对应电机的电流，即电机的PWM
+ * 		  注意方向问题！！！ Torque的方向不一定是PWM的正向
+ * 		  目前方向：轮腿站立，从右边看： 顺时针为Speed>0 ,Torque>0。
+ * 				  K1和K2 用RobotType里面的	float K1, K2;
+ *
+ */
+void BalancePitch(void)
+{
+	// 先读注释，再写
+	;
+	;
 }

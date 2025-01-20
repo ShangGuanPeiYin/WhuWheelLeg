@@ -111,16 +111,16 @@ bool LegDrawLine(LegType* leg, Vector2f PosTarget, float reachTime)
  */
 void AngleCalculate(LegType* leg, Vector2f pos)
 {
-	if (PointLimit(&pos)) {
-		Vector2f angleleg = InverseKinematics(pos);	   // PosSet  ->  angle1,4
-		leg->angle1Set	  = angleleg.x;
-		leg->angle4Set	  = angleleg.y;
+	// if (PointLimit(&pos)) {
+	Vector2f angleleg = InverseKinematics(pos);	   // PosSet  ->  angle1,4
+	leg->angle1Set	  = angleleg.x;
+	leg->angle4Set	  = angleleg.y;
 
-		AngleLeg2Servo(leg);
+	AngleLeg2Servo(leg);
 
-	} else {
-		RobotError();
-	};
+	// } else {
+	// 	RobotError();
+	// };
 };
 
 /**
@@ -208,11 +208,13 @@ Vector2f InverseKinematics(Vector2f point)
 	if (angle.x < 0)	// 限定在0-2PI
 		angle.x += 2 * PI;
 
-	// 求Angle4
+	// 求Angle4 求解错误
 	A		= (point.x - pointE.x) * (point.x - pointE.x) + (point.y - pointE.y) * (point.y - pointE.y) + L4 * L4 - L3 * L3;
 	B		= -2 * (point.x - pointE.x) * L4;
 	C		= -2 * (point.y - pointE.y) * L4;
-	angle.y = 2 * atan2f((C - sqrtf(C * C + B * B - A * A)), (A - B));	  // -PI/2 ~ +PI/2
+	angle.y = 2 * atan2f((C + sqrtf(C * C + B * B - A * A)), (A - B));	  //
+	if (angle.x < 0)													  // 限定在-PI/2 ~ +PI/2
+		angle.x += 2 * PI;
 
 	return angle;
 };

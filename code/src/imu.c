@@ -27,6 +27,8 @@ void IMU_init(void)
 	IMUdata.dataRaw.mag.z	 = 0;
 
 	IMUdata.calibration_flag = 0;	 // 未完成校准标志
+
+	IMU_ang_calibration();
 }
 
 // long IMUCnt = 0;
@@ -184,7 +186,7 @@ void IMU_getdata(void)
  * @return true
  * @return false
  */
-bool IMU_ang_integ()
+bool IMU_ang_integ(void)
 {
 	IMU_correct();
 	if (IMUdata.calibration_flag) {
@@ -202,14 +204,14 @@ bool IMU_ang_integ()
  * @brief  陀螺仪动态校准函数，放在主函数while循环中，消除累积误差（只有G较小时可以调用）
  *
  */
-void IMU_correct()
+void IMU_correct(void)
 {
 	float current_G;
 	float x;
 	IMU_getdata();
 	current_G = sqrtf(IMUdata.dataOri.accel.x * IMUdata.dataOri.accel.x + IMUdata.dataOri.accel.y * IMUdata.dataOri.accel.y
 					  + IMUdata.dataOri.accel.z * IMUdata.dataOri.accel.z);
-	if (fabsf(current_G - IMUdata.G) < 0.02 * fabsf(IMUdata.G))	   // 这个决定了刷新的严苛成度，需要调整范围
+	if (fabsf(current_G - IMUdata.G) < IMUERR * fabsf(IMUdata.G))	 // 这个决定了刷新的严苛成度，需要调整范围
 	{
 		IMUdata.calibration_flag = 0;
 

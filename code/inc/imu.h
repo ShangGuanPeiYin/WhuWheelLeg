@@ -4,7 +4,9 @@
 #include "zf_common_typedef.h"
 
 #define RAWTIMES	 2000	 // 漂移校准次数
-#define irq_interval 1		 // 中断周期，单位为ms，此处示例为1ms
+#define irq_interval 5		 // 中断周期，单位为ms，此处示例为1ms
+
+#define IMUERR 0.02	   // atan 0.02 近似0.02度
 
 typedef struct _IMUParam {
 	Vector3f accel;	   // 三个方向上的加速度 m/s2

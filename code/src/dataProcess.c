@@ -7,7 +7,7 @@ char head_char[2] = {0xff, 0xfe};	 // °üÍ·
 char end_char[2]  = {'\n', '\r'};	 // °üÎ²
 
 DataProcessType U2data;
-//CtrlMsgType		CtrlMsg;
+// CtrlMsgType		CtrlMsg;
 
 void DataProcessInit(void) { memset(&U2data, 0, sizeof(DataProcessType)); }
 

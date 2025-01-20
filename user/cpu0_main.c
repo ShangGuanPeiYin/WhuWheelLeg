@@ -20,6 +20,7 @@ int		 core0_main(void)
 
 	ServoInit();	// 舵机控制初始化
 	BldcInit();		// 无刷电机初始化
+	IMU_init();		// IMU初始化
 
 	// U2
 	uart_init(UART_2, 460800, UART2_TX_P10_5, UART2_RX_P10_6);	  // 串口2初始化
@@ -59,10 +60,25 @@ int		 core0_main(void)
 		AngleLeg2Servo(&legLeft);
 #endif
 
-#if 0
-		Vector2f PosTarget = ForwardKinematics(PI * 3 / 4, PI * 1 / 2);
+#if 1
 
-		RobotDrawLine(PosTarget, 800);
+		// Vector2f PosTarget;
+		// PosTarget.x = 0;
+		// PosTarget.y = 39;
+
+		// AngleCalculate(&legRight, PosTarget);
+
+		Vector2f Pos;
+		Pos.x				= 0;
+		Pos.y				= 39.27f;
+		Vector2f PosTarget	= InverseKinematics(Pos);	 // 坐标
+
+		PosTarget.x		   *= RAD2DEG;
+		PosTarget.y		   *= RAD2DEG;
+
+		oled_show_float(50, 3, PosTarget.x, 3, 2);
+		oled_show_float(50, 5, PosTarget.y, 3, 2);
+		// RobotDrawLine(PosTarget, 800);
 
 #endif
 
@@ -98,8 +114,8 @@ IFX_INTERRUPT(cc60_pit_ch0_isr, 0, CCU6_0_CH0_ISR_PRIORITY)
 	}
 
 	static u8 IMUCnt = 1;	 // 1k -> 200Hz 与舵机错开
-	if (++IMUCnt > 5) {
-		// IMUFunc();
+	if (++IMUCnt > irq_interval) {
+		IMU_ang_integ();
 		IMUCnt = 0;
 	}
 

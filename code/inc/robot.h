@@ -35,6 +35,8 @@ typedef struct _robot {
 
 	PIDType pitchPID, rollPID, yawPID;	  // ∆Ω∫‚PID
 
+	float K1, K2;
+
 	// TODO: CameraType
 
 } RobotType;
