@@ -22,8 +22,8 @@ void LegInit(void)
 	MotionInit(&(legLeft.motion));
 	MotionInit(&(legRight.motion));
 
-	legLeft.RunTime	 = &(robot.robotParam.leftTime);
-	legRight.RunTime = &(robot.robotParam.rightTime);
+	legLeft.RunTime	 = &(robot.param.leftTime);
+	legRight.RunTime = &(robot.param.rightTime);
 }
 
 /**

@@ -45,38 +45,20 @@ int		 core0_main(void)
 		// 	Cnt1 = 0;
 		// }
 
-		//	  U2  5ms发送一次
-		// static u8 Cnt2 = 0;
-		// if (++Cnt2 > 5) {
-		// 	printf("%d,%d\r\n", (int16) Motor[0].valueNow.speed, (int16) Motor[1].valueNow.speed);
-
-		// 	Cnt2 = 0;
-		// }
-
 #if 0
-		// 五杆控制测试 等一会再测试这个
-		legLeft.angle1Set = 180.f * DEG2RAD;
-		legLeft.angle4Set = 0.f * DEG2RAD;
-		AngleLeg2Servo(&legLeft);
-#endif
-
-#if 1
 
 		Vector2f Pos;
-		Pos.x				= 0;
-		Pos.y				= 39.27f;
-		Vector2f PosTarget	= InverseKinematics(Pos);	 // 坐标
+		Pos.x			   = 0;
+		Pos.y			   = 39.27f;
+		Vector2f PosTarget = InverseKinematics(Pos);	// 坐标
 
-		PosTarget.x		   *= RAD2DEG;
-		PosTarget.y		   *= RAD2DEG;
+		AngleCalculate(&legLeft, PosTarget);
 
-		oled_show_float(50, 3, PosTarget.x, 3, 2);
-		oled_show_float(50, 5, PosTarget.y, 3, 2);
 		// RobotDrawLine(PosTarget, 800);
 
 #endif
 
-#if 0
+#if 1
 		static bool OnceFlag = true;
 		if (OnceFlag && RobotJumpLine()) {	  // 执行一次
 			OnceFlag = false;
@@ -92,10 +74,11 @@ IFX_INTERRUPT(cc60_pit_ch0_isr, 0, CCU6_0_CH0_ISR_PRIORITY)
 	interrupt_global_enable(0);	   // 开启中断嵌套
 
 	// 计数器计时
-	robot.robotParam.leftTime  += 1;	// 1ms
-	robot.robotParam.rightTime += 1;	// 1ms
+	robot.param.leftTime  += 1;	   // 1ms
+	robot.param.rightTime += 1;	   // 1ms
+	robot.param.runTime	  += 1;	   // 1ms
 
-	static int ServoCnt			= 0;
+	static int ServoCnt	   = 0;
 	if (++ServoCnt > 5) {	 // 1k -> 200Hz
 		ServoFunc();
 		ServoCnt = 0;

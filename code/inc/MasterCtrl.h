@@ -8,6 +8,9 @@ typedef struct _Ctrl {
 	uint64_t leftTime;	   // 腿的运行时钟，集中管理
 	uint64_t rightTime;	   //
 
+	uint64_t runTime;
+	uint64_t reachTime;
+
 	Vector2f PosZero;
 
 } ParamType;

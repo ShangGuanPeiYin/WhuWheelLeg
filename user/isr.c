@@ -14,8 +14,8 @@
 // 	interrupt_global_enable(0);	   // 开启中断嵌套
 
 // 	// 计数器计时
-// 	robot.robotParam.leftTime  += 1;	// 1ms
-// 	robot.robotParam.rightTime += 1;	// 1ms
+// 	robot.param.leftTime  += 1;	// 1ms
+// 	robot.param.rightTime += 1;	// 1ms
 
 // 	static int ServoCnt			= 0;
 // 	if (++ServoCnt > 5) {	 // 1k -> 200Hz

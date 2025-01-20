@@ -10,6 +10,7 @@ RobotType robot;
 void robotInit(RobotType* robot)
 {
 	memset(robot, 0, sizeof(RobotType));
+
 	robot->left	 = &(legLeft);
 	robot->right = &(legRight);
 
@@ -19,9 +20,9 @@ void robotInit(RobotType* robot)
 	// TODO IMU: robot->posture = &( );
 	// TODO jumpLine
 
-	robot->robotParam.leftTime	= 0;
-	robot->robotParam.rightTime = 0;
-	robot->robotParam.PosZero	= ForwardKinematics(PI, 0);
+	robot->param.leftTime  = 0;
+	robot->param.rightTime = 0;
+	robot->param.PosZero   = ForwardKinematics(PI, 0);
 
 	LegInit();
 
@@ -50,7 +51,50 @@ void RobotJumpLineInit(void)
 
 bool RobotDrawLine(Vector2f PosTarget, float reachTime)
 {
-	return (LegDrawLine(&legLeft, PosTarget, reachTime) && LegDrawLine(&legRight, PosTarget, reachTime));
+	// return (LegDrawLine(&legLeft, PosTarget, reachTime) && LegDrawLine(&legRight, PosTarget, reachTime));
+
+	switch (robot.pipeline.state) {
+		case StatePreparing:
+
+			robot.param.reachTime  = reachTime;
+			robot.param.runTime	   = 0;
+
+			robot.left->PosTarget  = PosTarget;
+			robot.right->PosTarget = PosTarget;
+
+			robot.left->PosStart   = ForwardKinematics(robot.left->angle1Set, robot.left->angle4Set);	 // 现在的坐标
+			robot.right->PosStart  = ForwardKinematics(robot.right->angle1Set, robot.right->angle4Set);
+
+			Prepared(&(robot.pipeline));
+			break;
+
+		case StateProcessing:
+
+			if (robot.param.runTime < robot.left->reachTime) {
+				// Start + (target - start)*(runtime/reachtime)
+
+				robot.left->PosSet.x
+					= Lerp(robot.left->PosStart.x, robot.left->PosTarget.x, robot.param.runTime / robot.left->reachTime);
+				robot.left->PosSet.y
+					= Lerp(robot.left->PosStart.y, robot.left->PosTarget.y, robot.param.runTime / robot.left->reachTime);
+
+				robot.right->PosSet.x
+					= Lerp(robot.right->PosStart.x, robot.right->PosTarget.x, robot.param.runTime / robot.right->reachTime);
+				robot.right->PosSet.y
+					= Lerp(robot.right->PosStart.y, robot.right->PosTarget.y, robot.param.runTime / robot.right->reachTime);
+
+				AngleCalculate(robot.left, robot.left->PosSet);	   // 更新舵机角
+				AngleCalculate(robot.right, robot.right->PosSet);
+			} else {	// 时间到，运行结束
+				Processed(&(robot.pipeline));
+			}
+
+			break;
+
+		case StateEnd:
+			return true;
+	}
+	return false;
 };
 
 /**
@@ -65,25 +109,28 @@ bool RobotJumpLine(void)
 
 	switch (JumpLineState) {
 		case 0:;
-
-			Vector2f PosTarget0 = ForwardKinematics(PI, PI * 0);
-			if (RobotDrawLine(PosTarget0, 800))
-				JumpLineState++;
+			robot.pipeline.state  = StatePreparing;
+			robot.jumpLine.Pos[0] = ForwardKinematics(PI * (5 / 4), PI * (-1 / 4));
+			robot.jumpLine.Pos[1] = ForwardKinematics(PI * 1 / 2, PI * 1 / 2);
+			robot.jumpLine.Pos[2] = ForwardKinematics(PI, PI * 0);
+			// robot.jumpLine.Pos[3] = 0;
+			// robot.jumpLine.Pos[4] = 0;
+			JumpLineState++;
 			break;
 
-		case 1:;
-			Vector2f PosTarget1 = ForwardKinematics(PI * 1 / 2, PI * 1 / 2);
-			if (RobotDrawLine(PosTarget1, 800))
+		case 1:
+			if (RobotDrawLine(robot.jumpLine.Pos[0], 1000))
 				JumpLineState++;
+
 			break;
-		case 2:;
-			Vector2f PosTarget2 = ForwardKinematics(PI, PI * 0);
-			if (RobotDrawLine(PosTarget2, 800))
+		case 2:
+			if (RobotDrawLine(robot.jumpLine.Pos[1], 1000))
 				JumpLineState++;
+
 			break;
 		case 3:
-			//			if (RobotDrawLine(robot.jumpLine.Pos[3], 100))
-			JumpLineState++;
+			if (RobotDrawLine(robot.jumpLine.Pos[2], 1000))
+				JumpLineState++;
 			break;
 		case 4:
 			/* code */
@@ -115,20 +162,6 @@ void RobotError(void)
 		for (uint16 i = 0; i < 8; i++) { oled_show_string(66, i, "Error_Error_Error"); }
 };
 
-/********************************************** 平衡 ********************************************************** */
-
-/**
- * @brief 平衡初始化
- *
- */
-void BalanceInit(void)	  // PID
-{
-	// TODO：
-	PIDTypeInit(&robot.pitchPID, 0.f, 0.f, 0.f, PIDINC, 0);
-	PIDTypeInit(&robot.rollPID, 0.f, 0.f, 0.f, PIDINC, 0);
-	PIDTypeInit(&robot.yawPID, 0.f, 0.f, 0.f, PIDINC, 0);
-};
-
 /********************************************** 流水线函数 ********************************************************** */
 
 void Start(PipelineType* pipeline)	  // 准备开始
@@ -149,6 +182,18 @@ void Processed(PipelineType* pipeline)	  // 进行完毕，进入结束状态
 }
 
 /********************************************** 平衡函数 ********************************************************** */
+
+/**
+ * @brief 平衡初始化
+ *
+ */
+void BalanceInit(void)	  // PID
+{
+	// TODO：
+	PIDTypeInit(&robot.pitchPID, 0.f, 0.f, 0.f, PIDINC, 0);
+	PIDTypeInit(&robot.rollPID, 0.f, 0.f, 0.f, PIDINC, 0);
+	PIDTypeInit(&robot.yawPID, 0.f, 0.f, 0.f, PIDINC, 0);
+};
 
 /**
  * @brief 俯仰角平衡 TODO

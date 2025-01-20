@@ -30,7 +30,7 @@ typedef struct _robot {
 
 	IMUType* posture;
 
-	ParamType	 robotParam;
+	ParamType	 param;
 	JumpLineType jumpLine;
 
 	PIDType pitchPID, rollPID, yawPID;	  // ∆Ω∫‚PID
