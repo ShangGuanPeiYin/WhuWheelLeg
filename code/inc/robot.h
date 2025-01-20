@@ -1,6 +1,7 @@
 #ifndef _ROBOT_H_
 #define _ROBOT_H_
 
+#include "Pid.h"
 #include "zf_common_typedef.h"
 
 // 工作状态
@@ -32,6 +33,8 @@ typedef struct _robot {
 	ParamType	 robotParam;
 	JumpLineType jumpLine;
 
+	PIDType pitchPID, rollPID, yawPID;	  // 平衡PID
+
 	// TODO: CameraType
 
 } RobotType;
@@ -52,8 +55,9 @@ void Start(PipelineType* pipeline);		   // 令该状态流水线运行开始运行
 void Prepared(PipelineType* pipeline);	   // 已准备好
 void Processed(PipelineType* pipeline);	   // 已进行完
 
-void BalanceYaw(void);		// 偏航角平衡
-void BalanceRoll(void);		// 横滚角平衡
-void BalancePitch(void);	// 俯仰角平衡
+void BalanceInit(void);		// PID
+void BalanceYaw(void);		// 偏航角平衡 TODO
+void BalanceRoll(void);		// 横滚角平衡 TODO
+void BalancePitch(void);	// 俯仰角平衡 TODO
 
 #endif

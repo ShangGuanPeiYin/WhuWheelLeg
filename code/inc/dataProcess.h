@@ -16,7 +16,14 @@ typedef struct _dataProcess {
 
 } DataProcessType;
 
+//typedef struct _ControlMsg {
+//	;
+//	;
+//	;
+//} CtrlMsgType;
+
 extern DataProcessType U2data;
+//extern CtrlMsgType	   CtrlMsg;
 
 void DataProcessInit(void);
 void ReadMsg(DataProcessType* data, uint8 temp);

@@ -115,6 +115,20 @@ void RobotError(void)
 		for (uint16 i = 0; i < 8; i++) { oled_show_string(66, i, "Error_Error_Error"); }
 };
 
+/********************************************** 平衡 ********************************************************** */
+
+/**
+ * @brief 平衡初始化
+ *
+ */
+void BalanceInit(void)	  // PID
+{
+	// TODO：
+	PIDTypeInit(&robot.pitchPID, 0.f, 0.f, 0.f, PIDINC, 0);
+	PIDTypeInit(&robot.rollPID, 0.f, 0.f, 0.f, PIDINC, 0);
+	PIDTypeInit(&robot.yawPID, 0.f, 0.f, 0.f, PIDINC, 0);
+};
+
 /********************************************** 流水线函数 ********************************************************** */
 
 void Start(PipelineType* pipeline)	  // 准备开始

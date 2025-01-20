@@ -4,10 +4,10 @@
 // const static char head_char[2] = {0xff, 0xfe};	  // 包头
 // const static char end_char[2]  = {'\n', '\r'};	  // 包尾
 char head_char[2] = {0xff, 0xfe};	 // 包头
-
 char end_char[2]  = {'\n', '\r'};	 // 包尾
 
 DataProcessType U2data;
+//CtrlMsgType		CtrlMsg;
 
 void DataProcessInit(void) { memset(&U2data, 0, sizeof(DataProcessType)); }
 
