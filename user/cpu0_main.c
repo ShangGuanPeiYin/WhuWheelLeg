@@ -62,12 +62,6 @@ int		 core0_main(void)
 
 #if 1
 
-		// Vector2f PosTarget;
-		// PosTarget.x = 0;
-		// PosTarget.y = 39;
-
-		// AngleCalculate(&legRight, PosTarget);
-
 		Vector2f Pos;
 		Pos.x				= 0;
 		Pos.y				= 39.27f;

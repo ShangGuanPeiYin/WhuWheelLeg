@@ -208,13 +208,13 @@ Vector2f InverseKinematics(Vector2f point)
 	if (angle.x < 0)	// 限定在0-2PI
 		angle.x += 2 * PI;
 
-	// 求Angle4 求解错误
+	// 求Angle4 镜像求解
 	A		= (point.x - pointE.x) * (point.x - pointE.x) + (point.y - pointE.y) * (point.y - pointE.y) + L4 * L4 - L3 * L3;
-	B		= -2 * (point.x - pointE.x) * L4;
+	B		= 2 * (point.x - pointE.x) * L4;
 	C		= -2 * (point.y - pointE.y) * L4;
-	angle.y = 2 * atan2f((C + sqrtf(C * C + B * B - A * A)), (A - B));	  //
-	if (angle.x < 0)													  // 限定在-PI/2 ~ +PI/2
-		angle.x += 2 * PI;
+	angle.y = 2 * atan2f((-C + sqrtf(C * C + B * B - A * A)), (A - B));	   //
+	angle.y = PI - angle.y;
+	while (angle.y > 2 * PI) { angle.y -= 2 * PI; }
 
 	return angle;
 };
