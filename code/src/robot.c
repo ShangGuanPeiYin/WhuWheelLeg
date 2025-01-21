@@ -114,9 +114,10 @@ bool RobotJumpLine(void)
 	switch (JumpLineState) {
 		case 0:;
 			robot.pipeline.state  = StatePreparing;
-			robot.jumpLine.Lerp	  = false;
+			robot.jumpLine.Lerp	  = false;	  // 下一阶段是否线性插值
+
 			robot.jumpLine.Pos[0] = ForwardKinematics(PI * (5 / 4.f), PI * (-1 / 4.f));
-			robot.jumpLine.Pos[1] = ForwardKinematics(PI * 3 / 4.f, PI * 1 / 4.f);
+			robot.jumpLine.Pos[1] = ForwardKinematics(PI * 1 / 2.f, PI * 1 / 2.f);
 			robot.jumpLine.Pos[2] = ForwardKinematics(PI, PI * 0);
 			// robot.jumpLine.Pos[3] = 0;
 			// robot.jumpLine.Pos[4] = 0;
@@ -226,6 +227,72 @@ void BalanceInit(void)	  // PID
 void BalancePitch(void)
 {
 	// 先读注释，再写
-	;
-	;
+}
+
+/********************************************** 平衡函数TEST ********************************************************** */
+
+/**
+ * @brief 平衡环
+ *
+ * @param Angle
+ * @param Gyro
+ * @return float
+ */
+float Balance(float Angle, float Gyro)
+{
+	int	  Balance_KP = 0, Balance_KD = 0;
+	float Angle_bias, Gyro_bias;	// 角度偏差 角速度偏差
+	float balance;					// 平衡环Pwm
+
+	Angle_bias = 14 /*经验值，重心位置*/ - Angle;	 // 求出平衡的角度中值和机械相关
+	Gyro_bias  = 0 - Gyro;
+
+	Balance_KP = 5000;
+	Balance_KD = 1200;
+	balance	   = (-Balance_KP / 100 * Angle_bias - Gyro_bias * Balance_KD / 100);	 // 计算平衡控制的电机PWM PD 控制
+	return balance;
+}
+
+/**
+ * @brief 速度环
+ *
+ * @param encoder_left
+ * @param encoder_right
+ * @return float
+ */
+float Velocity(int encoder_left, int encoder_right)
+{
+	int Velocity_KP = 0, Velocity_KI = 0;
+
+	static float velocity = 0, Encoder_Least = 0, Encoder_bias = 0;
+	static float Encoder_Integral = 0;
+
+	Encoder_Least = 0 - (encoder_left + encoder_right);	   // 获取最新速度偏差=目标速度（此处为零）-测量速度（左右编码器之和）
+	Encoder_bias	 *= 0.8;							   // 一阶低通滤波器
+	Encoder_bias	 += Encoder_Least * 0.2;	// 一阶低通滤波器
+	Encoder_Integral += Encoder_bias;			// 积分出位移 积分时间：10ms
+
+	PEAK(Encoder_Integral, 10000);	  // 积分限幅
+
+	velocity = (Encoder_bias * Velocity_KP / 100 + Encoder_Integral * Velocity_KI / 100);	 // 速度PI控制
+	return velocity;
+}
+
+/**
+ * @brief 转向环
+ *
+ * @param Angle
+ * @param Gyro
+ * @return float
+ */
+float Turn(float Angle, float Gyro)
+{
+	int	  Turn_KP = 0, Turn_KD = 0;
+	float Angle_bias, Gyro_bias;	// 角度偏差 角速度偏差
+	float turn;						// 平衡环Pwm
+	Angle_bias = 0 - Angle;			// 求出平衡的角度中值和机械相关
+	Gyro_bias  = 0 - Gyro;
+	turn	   = (-Turn_KP / 100 * Angle_bias - Gyro_bias * Turn_KD / 100);	   // 计算平衡控制的电机PWM PD 控制
+
+	return turn;	// 转向环 PWM 右转为正，左转为负
 }

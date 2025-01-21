@@ -63,4 +63,8 @@ void BalanceYaw(void);		// Æ«º½½ÇÆ½ºâ TODO
 void BalanceRoll(void);		// ºá¹ö½ÇÆ½ºâ TODO
 void BalancePitch(void);	// ¸©Ñö½ÇÆ½ºâ TODO
 
+float Balance(float Angle, float Gyro);
+float Velocity(int encoder_left, int encoder_right);
+float Turn(float Angle, float Gyro);
+
 #endif

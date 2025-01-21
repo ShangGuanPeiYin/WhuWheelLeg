@@ -1,6 +1,6 @@
 	; Module start
 	.compiler_version	"TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler v1.1r8 Build 22011964"
-	.compiler_invocation	"ctc -f cc7628a --dep-file=code/src/robot.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc26xb -D__CPU_TC26XB__ --core=tc1.6.x --fp-model=+float -D__CPU__=tc26xb -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\code -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\code\\\\inc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Configurations -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B\\\\_Reg -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If\\\\Ccu6If -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\StdIf -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Math -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Asc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6 -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Timer -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\CStart -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Irq -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Dma -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12 -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\IncrEnc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\SpiMaster -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Adc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Impl -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib\\\\DataHandling -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_PinMap -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_common -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_components -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_device -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_driver -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\user -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o code/src/robot.src ../code/src/robot.c"
+	.compiler_invocation	"ctc -f cc11444a --dep-file=code/src/robot.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc26xb -D__CPU_TC26XB__ --core=tc1.6.x --fp-model=+float -D__CPU__=tc26xb -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\code -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\code\\\\inc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Configurations -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B\\\\_Reg -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If\\\\Ccu6If -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\StdIf -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Math -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Asc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6 -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Timer -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\CStart -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Irq -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Dma -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12 -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\IncrEnc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\SpiMaster -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Adc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Impl -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib\\\\DataHandling -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_PinMap -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_common -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_components -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_device -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_driver -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\user -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o code/src/robot.src ../code/src/robot.c"
 	.compiler_name		"ctc"
 	;source	'../code/src/robot.c'
 
@@ -13,56 +13,56 @@ $TC16X
 	
 	.global	robotInit
 ; Function robotInit
-.L48:
+.L58:
 robotInit:	.type	func
 	mov.aa	a12,a4
-.L161:
+.L214:
 	mov	d4,#0
-.L180:
+.L254:
 	mov	d5,#276
 	mov.aa	a4,a12
 	call	memset
-.L160:
+.L213:
 	movh.a	a15,#@his(legLeft)
 	lea	a15,[a15]@los(legLeft)
-.L181:
+.L255:
 	st.a	[a12]4,a15
-.L182:
+.L256:
 	movh.a	a15,#@his(legRight)
 	lea	a15,[a15]@los(legRight)
-.L183:
+.L257:
 	st.a	[a12]8,a15
-.L184:
+.L258:
 	mov.aa	a4,a12
-.L162:
+.L215:
 	call	Start
-.L163:
+.L216:
 	call	RobotJumpLineInit
-.L185:
+.L259:
 	mov	e0,#0
-.L186:
+.L260:
 	st.d	[a12]16,e0
-.L187:
+.L261:
 	mov	e0,#0
-.L188:
+.L262:
 	st.d	[a12]24,e0
-.L189:
+.L263:
 	mov	d4,#4059
 	addih	d4,d4,#16457
-.L190:
+.L264:
 	mov	d5,#0
 	call	ForwardKinematics
-.L191:
+.L265:
 	st.d	[a12]40,e2
-.L192:
+.L266:
 	call	LegInit
-.L193:
+.L267:
 	ret
-.L123:
+.L154:
 	
 __robotInit_function_end:
 	.size	robotInit,__robotInit_function_end-robotInit
-.L75:
+.L91:
 	; End of function
 	
 	.sdecl	'.text.robot.RobotJumpLineInit',code,cluster('RobotJumpLineInit')
@@ -71,84 +71,84 @@ __robotInit_function_end:
 	
 	.global	RobotJumpLineInit
 ; Function RobotJumpLineInit
-.L50:
+.L60:
 RobotJumpLineInit:	.type	func
 	movh.a	a15,#@his(robot)
 	lea	a15,[a15]@los(robot)
-.L394:
+.L468:
 	mov	d15,#0
-.L395:
+.L469:
 	st.w	[a15]48,d15
-.L396:
+.L470:
 	movh.a	a15,#@his(robot)
 	lea	a15,[a15]@los(robot)
-.L397:
+.L471:
 	mov	d15,#0
-.L398:
+.L472:
 	st.w	[a15]52,d15
-.L399:
+.L473:
 	movh.a	a15,#@his(robot)
 	lea	a15,[a15]@los(robot)
-.L400:
+.L474:
 	mov	d15,#0
-.L401:
+.L475:
 	st.w	[a15]56,d15
-.L402:
+.L476:
 	movh.a	a15,#@his(robot)
 	lea	a15,[a15]@los(robot)
-.L403:
+.L477:
 	mov	d15,#0
-.L404:
+.L478:
 	st.w	[a15]60,d15
-.L405:
+.L479:
 	movh.a	a15,#@his(robot)
 	lea	a15,[a15]@los(robot)
-.L406:
+.L480:
 	mov	d15,#0
-.L407:
+.L481:
 	st.w	[a15]64,d15
-.L408:
+.L482:
 	movh.a	a15,#@his(robot)
 	lea	a15,[a15]@los(robot)
-.L409:
+.L483:
 	mov	d15,#0
-.L410:
+.L484:
 	st.w	[a15]68,d15
-.L411:
+.L485:
 	movh.a	a15,#@his(robot)
 	lea	a15,[a15]@los(robot)
-.L412:
+.L486:
 	mov	d15,#0
-.L413:
+.L487:
 	st.w	[a15]72,d15
-.L414:
+.L488:
 	movh.a	a15,#@his(robot)
 	lea	a15,[a15]@los(robot)
-.L415:
+.L489:
 	mov	d15,#0
-.L416:
+.L490:
 	st.w	[a15]76,d15
-.L417:
+.L491:
 	movh.a	a15,#@his(robot)
 	lea	a15,[a15]@los(robot)
-.L418:
+.L492:
 	mov	d15,#0
-.L419:
+.L493:
 	st.w	[a15]80,d15
-.L420:
+.L494:
 	movh.a	a15,#@his(robot)
 	lea	a15,[a15]@los(robot)
-.L421:
+.L495:
 	mov	d15,#0
-.L422:
+.L496:
 	st.w	[a15]84,d15
-.L423:
+.L497:
 	ret
-.L146:
+.L177:
 	
 __RobotJumpLineInit_function_end:
 	.size	RobotJumpLineInit,__RobotJumpLineInit_function_end-RobotJumpLineInit
-.L90:
+.L106:
 	; End of function
 	
 	.sdecl	'.text.robot.RobotDrawLine',code,cluster('RobotDrawLine')
@@ -157,162 +157,162 @@ __RobotJumpLineInit_function_end:
 	
 	.global	RobotDrawLine
 ; Function RobotDrawLine
-.L52:
+.L62:
 RobotDrawLine:	.type	func
 	movh.a	a15,#@his(robot)
 	lea	a15,[a15]@los(robot)
-.L198:
+.L272:
 	ld.bu	d15,[a15]1
-.L199:
+.L273:
 	mov	d0,#0
 	jeq	d15,d0,.L2
-.L200:
+.L274:
 	mov	d0,#1
 	jeq	d15,d0,.L3
-.L201:
+.L275:
 	mov	d0,#2
 	jeq	d15,d0,.L4
 	j	.L5
 .L2:
 	movh.a	a15,#@his(robot)
 	lea	a15,[a15]@los(robot)
-.L202:
+.L276:
 	st.w	[a15]36,d6
-.L203:
+.L277:
 	movh.a	a15,#@his(robot)
 	lea	a15,[a15]@los(robot)
-.L204:
+.L278:
 	mov	d15,#0
-.L205:
+.L279:
 	st.w	[a15]32,d15
-.L206:
+.L280:
 	movh.a	a15,#@his(robot)
 	lea	a15,[a15]@los(robot)
-.L207:
+.L281:
 	ld.a	a15,[a15]4
-.L208:
+.L282:
 	st.d	[a15]48,e4
-.L209:
+.L283:
 	movh.a	a15,#@his(robot)
 	lea	a15,[a15]@los(robot)
-.L210:
+.L284:
 	ld.a	a15,[a15]8
-.L211:
+.L285:
 	st.d	[a15]48,e4
-.L212:
+.L286:
 	movh.a	a15,#@his(robot)
 	lea	a15,[a15]@los(robot)
-.L213:
+.L287:
 	ld.a	a15,[a15]4
-.L214:
+.L288:
 	st.d	[a15]32,e4
-.L215:
+.L289:
 	movh.a	a15,#@his(robot)
 	lea	a15,[a15]@los(robot)
-.L216:
+.L290:
 	ld.a	a15,[a15]8
-.L217:
+.L291:
 	st.d	[a15]32,e4
-.L218:
+.L292:
 	movh.a	a15,#@his(robot)
 	lea	a15,[a15]@los(robot)
-.L219:
+.L293:
 	ld.a	a12,[a15]4
-.L220:
+.L294:
 	movh.a	a15,#@his(robot)
 	lea	a15,[a15]@los(robot)
-.L221:
+.L295:
 	ld.a	a15,[a15]4
-.L222:
+.L296:
 	ld.w	d4,[a15]16
-.L164:
+.L217:
 	movh.a	a15,#@his(robot)
 	lea	a15,[a15]@los(robot)
-.L223:
+.L297:
 	ld.a	a15,[a15]4
-.L224:
+.L298:
 	ld.w	d5,[a15]20
 	call	ForwardKinematics
-.L165:
+.L218:
 	st.d	[a12]40,e2
-.L225:
+.L299:
 	movh.a	a15,#@his(robot)
 	lea	a15,[a15]@los(robot)
-.L226:
+.L300:
 	ld.a	a12,[a15]8
-.L227:
+.L301:
 	movh.a	a15,#@his(robot)
 	lea	a15,[a15]@los(robot)
-.L228:
+.L302:
 	ld.a	a15,[a15]8
-.L229:
+.L303:
 	ld.w	d4,[a15]16
-.L230:
+.L304:
 	movh.a	a15,#@his(robot)
 	lea	a15,[a15]@los(robot)
-.L231:
+.L305:
 	ld.a	a15,[a15]8
-.L232:
+.L306:
 	ld.w	d5,[a15]20
 	call	ForwardKinematics
-.L233:
+.L307:
 	st.d	[a12]40,e2
-.L234:
+.L308:
 	movh.a	a4,#@his(robot)
 	lea	a4,[a4]@los(robot)
-.L235:
+.L309:
 	call	Prepared
-.L236:
+.L310:
 	j	.L6
 .L3:
 	movh.a	a15,#@his(robot)
 	lea	a15,[a15]@los(robot)
-.L237:
+.L311:
 	ld.w	d15,[a15]32
-.L238:
+.L312:
 	movh.a	a15,#@his(robot)
 	lea	a15,[a15]@los(robot)
-.L239:
+.L313:
 	ld.w	d0,[a15]36
-.L240:
+.L314:
 	cmp.f	d15,d15,d0
 	extr.u	d15,d15,#0,#1
-.L241:
+.L315:
 	jeq	d15,#0,.L7
-.L242:
+.L316:
 	movh.a	a15,#@his(robot)
 	lea	a15,[a15]@los(robot)
-.L243:
+.L317:
 	ld.bu	d15,[a15]108
-.L244:
+.L318:
 	jeq	d15,#0,.L8
-.L245:
+.L319:
 	movh.a	a15,#@his(robot)
 	lea	a15,[a15]@los(robot)
-.L246:
+.L320:
 	ld.a	a15,[a15]4
-.L247:
+.L321:
 	ld.w	d0,[a15]40
-.L248:
+.L322:
 	movh.a	a15,#@his(robot)
 	lea	a15,[a15]@los(robot)
-.L249:
+.L323:
 	ld.a	a15,[a15]4
-.L250:
+.L324:
 	ld.w	d1,[a15]48
-.L251:
+.L325:
 	movh.a	a15,#@his(robot)
 	lea	a15,[a15]@los(robot)
-.L252:
+.L326:
 	ld.w	d2,[a15]32
-.L253:
+.L327:
 	movh.a	a15,#@his(robot)
 	lea	a15,[a15]@los(robot)
-.L254:
+.L328:
 	ld.w	d15,[a15]36
-.L255:
+.L329:
 	div.f	d2,d2,d15
-.L133:
+.L164:
 	movh	d15,#16256
 	cmp.f	d15,d2,d15
 	extr.u	d15,d15,#2,#1
@@ -326,44 +326,44 @@ RobotDrawLine:	.type	func
 	mov	d2,#0
 .L10:
 	sub.f	d15,d1,d0
-.L256:
+.L330:
 	madd.f	d15,d0,d15,d2
-.L257:
+.L331:
 	j	.L11
 .L11:
 	movh.a	a15,#@his(robot)
 	lea	a15,[a15]@los(robot)
-.L258:
+.L332:
 	ld.a	a15,[a15]4
-.L259:
+.L333:
 	st.w	[a15]32,d15
-.L260:
+.L334:
 	movh.a	a15,#@his(robot)
 	lea	a15,[a15]@los(robot)
-.L261:
+.L335:
 	ld.a	a15,[a15]4
-.L262:
+.L336:
 	ld.w	d0,[a15]44
-.L263:
+.L337:
 	movh.a	a15,#@his(robot)
 	lea	a15,[a15]@los(robot)
-.L264:
+.L338:
 	ld.a	a15,[a15]4
-.L265:
+.L339:
 	ld.w	d1,[a15]52
-.L266:
+.L340:
 	movh.a	a15,#@his(robot)
 	lea	a15,[a15]@los(robot)
-.L267:
+.L341:
 	ld.w	d2,[a15]32
-.L268:
+.L342:
 	movh.a	a15,#@his(robot)
 	lea	a15,[a15]@los(robot)
-.L269:
+.L343:
 	ld.w	d15,[a15]36
-.L270:
+.L344:
 	div.f	d2,d2,d15
-.L141:
+.L172:
 	movh	d15,#16256
 	cmp.f	d15,d2,d15
 	extr.u	d15,d15,#2,#1
@@ -377,44 +377,44 @@ RobotDrawLine:	.type	func
 	mov	d2,#0
 .L13:
 	sub.f	d15,d1,d0
-.L271:
+.L345:
 	madd.f	d15,d0,d15,d2
-.L272:
+.L346:
 	j	.L14
 .L14:
 	movh.a	a15,#@his(robot)
 	lea	a15,[a15]@los(robot)
-.L273:
+.L347:
 	ld.a	a15,[a15]4
-.L274:
+.L348:
 	st.w	[a15]36,d15
-.L275:
+.L349:
 	movh.a	a15,#@his(robot)
 	lea	a15,[a15]@los(robot)
-.L276:
+.L350:
 	ld.a	a15,[a15]8
-.L277:
+.L351:
 	ld.w	d0,[a15]40
-.L278:
+.L352:
 	movh.a	a15,#@his(robot)
 	lea	a15,[a15]@los(robot)
-.L279:
+.L353:
 	ld.a	a15,[a15]8
-.L280:
+.L354:
 	ld.w	d1,[a15]48
-.L281:
+.L355:
 	movh.a	a15,#@his(robot)
 	lea	a15,[a15]@los(robot)
-.L282:
+.L356:
 	ld.w	d2,[a15]32
-.L283:
+.L357:
 	movh.a	a15,#@his(robot)
 	lea	a15,[a15]@los(robot)
-.L284:
+.L358:
 	ld.w	d15,[a15]36
-.L285:
+.L359:
 	div.f	d2,d2,d15
-.L142:
+.L173:
 	movh	d15,#16256
 	cmp.f	d15,d2,d15
 	extr.u	d15,d15,#2,#1
@@ -428,44 +428,44 @@ RobotDrawLine:	.type	func
 	mov	d2,#0
 .L16:
 	sub.f	d15,d1,d0
-.L286:
+.L360:
 	madd.f	d15,d0,d15,d2
-.L287:
+.L361:
 	j	.L17
 .L17:
 	movh.a	a15,#@his(robot)
 	lea	a15,[a15]@los(robot)
-.L288:
+.L362:
 	ld.a	a15,[a15]8
-.L289:
+.L363:
 	st.w	[a15]32,d15
-.L290:
+.L364:
 	movh.a	a15,#@his(robot)
 	lea	a15,[a15]@los(robot)
-.L291:
+.L365:
 	ld.a	a15,[a15]8
-.L292:
+.L366:
 	ld.w	d0,[a15]44
-.L293:
+.L367:
 	movh.a	a15,#@his(robot)
 	lea	a15,[a15]@los(robot)
-.L294:
+.L368:
 	ld.a	a15,[a15]8
-.L295:
+.L369:
 	ld.w	d1,[a15]52
-.L296:
+.L370:
 	movh.a	a15,#@his(robot)
 	lea	a15,[a15]@los(robot)
-.L297:
+.L371:
 	ld.w	d2,[a15]32
-.L298:
+.L372:
 	movh.a	a15,#@his(robot)
 	lea	a15,[a15]@los(robot)
-.L299:
+.L373:
 	ld.w	d15,[a15]36
-.L300:
+.L374:
 	div.f	d2,d2,d15
-.L143:
+.L174:
 	movh	d15,#16256
 	cmp.f	d15,d2,d15
 	extr.u	d15,d15,#2,#1
@@ -479,71 +479,71 @@ RobotDrawLine:	.type	func
 	mov	d2,#0
 .L19:
 	sub.f	d15,d1,d0
-.L301:
+.L375:
 	madd.f	d15,d0,d15,d2
-.L302:
+.L376:
 	j	.L20
 .L20:
 	movh.a	a15,#@his(robot)
 	lea	a15,[a15]@los(robot)
-.L303:
+.L377:
 	ld.a	a15,[a15]8
-.L304:
+.L378:
 	st.w	[a15]36,d15
 .L8:
 	movh.a	a15,#@his(robot)
 	lea	a15,[a15]@los(robot)
-.L305:
+.L379:
 	ld.a	a4,[a15]4
-.L306:
+.L380:
 	movh.a	a15,#@his(robot)
 	lea	a15,[a15]@los(robot)
-.L307:
+.L381:
 	ld.a	a15,[a15]4
-.L308:
+.L382:
 	ld.d	e4,[a15]32
-.L166:
+.L219:
 	call	AngleCalculate
-.L167:
+.L220:
 	movh.a	a15,#@his(robot)
 	lea	a15,[a15]@los(robot)
-.L309:
+.L383:
 	ld.a	a4,[a15]8
-.L310:
+.L384:
 	movh.a	a15,#@his(robot)
 	lea	a15,[a15]@los(robot)
-.L311:
+.L385:
 	ld.a	a15,[a15]8
-.L312:
+.L386:
 	ld.d	e4,[a15]32
 	call	AngleCalculate
-.L313:
+.L387:
 	j	.L21
 .L7:
 	movh.a	a4,#@his(robot)
 	lea	a4,[a4]@los(robot)
-.L314:
+.L388:
 	call	Processed
 .L21:
 	j	.L22
 .L4:
 	mov	d2,#1
-.L315:
+.L389:
 	j	.L23
 .L5:
 .L22:
 .L6:
 	mov	d2,#0
-.L316:
+.L390:
 	j	.L24
 .L24:
 .L23:
 	ret
-.L127:
+.L158:
 	
 __RobotDrawLine_function_end:
 	.size	RobotDrawLine,__RobotDrawLine_function_end-RobotDrawLine
-.L80:
+.L96:
 	; End of function
 	
 	.sdecl	'.text.robot.RobotJumpLine',code,cluster('RobotJumpLine')
@@ -552,185 +552,185 @@ __RobotDrawLine_function_end:
 	
 	.global	RobotJumpLine
 ; Function RobotJumpLine
-.L54:
+.L64:
 RobotJumpLine:	.type	func
 	movh.a	a15,#@his(_999001_JumpLineState)
 	lea	a15,[a15]@los(_999001_JumpLineState)
 	ld.bu	d0,[a15]
-.L321:
+.L395:
 	mov	d15,#0
 	jeq	d15,d0,.L25
-.L322:
+.L396:
 	mov	d15,#1
 	jeq	d15,d0,.L26
-.L323:
+.L397:
 	mov	d15,#2
 	jeq	d15,d0,.L27
-.L324:
+.L398:
 	mov	d15,#3
 	jeq	d15,d0,.L28
-.L325:
+.L399:
 	mov	d15,#4
 	jeq	d15,d0,.L29
-.L326:
+.L400:
 	mov	d15,#5
 	jeq	d15,d0,.L30
 	j	.L31
 .L25:
 	movh.a	a15,#@his(robot)
 	lea	a15,[a15]@los(robot)
-.L327:
+.L401:
 	mov	d15,#0
-.L328:
+.L402:
 	st.b	[a15]1,d15
-.L329:
+.L403:
 	movh.a	a15,#@his(robot)
 	lea	a15,[a15]@los(robot)
-.L330:
+.L404:
 	mov	d15,#0
-.L331:
+.L405:
 	st.b	[a15]108,d15
-.L332:
+.L406:
 	movh.a	a15,#@his(robot)
 	lea	a15,[a15]@los(robot)
-.L333:
+.L407:
 	mov	d4,#21458
 	addih	d4,d4,#16507
-.L334:
+.L408:
 	mov	d5,#4059
 	addih	d5,d5,#48969
 	call	ForwardKinematics
-.L335:
+.L409:
 	st.d	[a15]48,e2
-.L336:
+.L410:
 	movh.a	a15,#@his(robot)
 	lea	a15,[a15]@los(robot)
-.L337:
+.L411:
 	mov.u	d4,#52196
 	addih	d4,d4,#16406
-.L338:
+.L412:
 	mov	d5,#4059
 	addih	d5,d5,#16201
 	call	ForwardKinematics
-.L339:
+.L413:
 	st.d	[a15]56,e2
-.L340:
+.L414:
 	movh.a	a15,#@his(robot)
 	lea	a15,[a15]@los(robot)
-.L341:
+.L415:
 	mov	d4,#4059
 	addih	d4,d4,#16457
-.L342:
+.L416:
 	mov	d5,#0
 	call	ForwardKinematics
-.L343:
+.L417:
 	st.d	[a15]64,e2
-.L344:
+.L418:
 	movh.a	a15,#@his(_999001_JumpLineState)
 	lea	a15,[a15]@los(_999001_JumpLineState)
 	movh.a	a2,#@his(_999001_JumpLineState)
 	lea	a2,[a2]@los(_999001_JumpLineState)
 	ld.bu	d15,[a2]
-.L345:
+.L419:
 	add	d15,#1
 	st.b	[a15],d15
-.L346:
+.L420:
 	j	.L32
 .L26:
 	movh.a	a15,#@his(robot)
 	lea	a15,[a15]@los(robot)
-.L347:
+.L421:
 	ld.d	e4,[a15]48
-.L348:
+.L422:
 	movh	d6,#17402
 	call	RobotDrawLine
-.L349:
+.L423:
 	jeq	d2,#0,.L33
-.L350:
+.L424:
 	movh.a	a15,#@his(robot)
 	lea	a15,[a15]@los(robot)
-.L351:
+.L425:
 	mov	d15,#1
-.L352:
+.L426:
 	st.b	[a15]108,d15
-.L353:
+.L427:
 	movh.a	a15,#@his(_999001_JumpLineState)
 	lea	a15,[a15]@los(_999001_JumpLineState)
 	movh.a	a2,#@his(_999001_JumpLineState)
 	lea	a2,[a2]@los(_999001_JumpLineState)
 	ld.bu	d15,[a2]
-.L354:
+.L428:
 	add	d15,#1
 	st.b	[a15],d15
-.L355:
+.L429:
 	movh.a	a15,#@his(robot)
 	lea	a15,[a15]@los(robot)
-.L356:
+.L430:
 	mov	d15,#0
-.L357:
+.L431:
 	st.b	[a15]1,d15
 .L33:
 	j	.L34
 .L27:
 	movh.a	a15,#@his(robot)
 	lea	a15,[a15]@los(robot)
-.L358:
+.L432:
 	ld.d	e4,[a15]56
-.L359:
+.L433:
 	movh	d6,#17302
 	call	RobotDrawLine
-.L360:
+.L434:
 	jeq	d2,#0,.L35
-.L361:
+.L435:
 	movh.a	a15,#@his(robot)
 	lea	a15,[a15]@los(robot)
-.L362:
+.L436:
 	mov	d15,#1
-.L363:
+.L437:
 	st.b	[a15]108,d15
-.L364:
+.L438:
 	movh.a	a15,#@his(_999001_JumpLineState)
 	lea	a15,[a15]@los(_999001_JumpLineState)
 	movh.a	a2,#@his(_999001_JumpLineState)
 	lea	a2,[a2]@los(_999001_JumpLineState)
 	ld.bu	d15,[a2]
-.L365:
+.L439:
 	add	d15,#1
 	st.b	[a15],d15
-.L366:
+.L440:
 	movh.a	a15,#@his(robot)
 	lea	a15,[a15]@los(robot)
-.L367:
+.L441:
 	mov	d15,#0
-.L368:
+.L442:
 	st.b	[a15]1,d15
 .L35:
 	j	.L36
 .L28:
 	movh.a	a15,#@his(robot)
 	lea	a15,[a15]@los(robot)
-.L369:
+.L443:
 	ld.d	e4,[a15]64
-.L370:
+.L444:
 	movh	d6,#17302
 	call	RobotDrawLine
-.L371:
+.L445:
 	jeq	d2,#0,.L37
-.L372:
+.L446:
 	movh.a	a15,#@his(_999001_JumpLineState)
 	lea	a15,[a15]@los(_999001_JumpLineState)
 	movh.a	a2,#@his(_999001_JumpLineState)
 	lea	a2,[a2]@los(_999001_JumpLineState)
 	ld.bu	d15,[a2]
-.L373:
+.L447:
 	add	d15,#1
 	st.b	[a15],d15
-.L374:
+.L448:
 	movh.a	a15,#@his(robot)
 	lea	a15,[a15]@los(robot)
-.L375:
+.L449:
 	mov	d15,#0
-.L376:
+.L450:
 	st.b	[a15]1,d15
 .L37:
 	j	.L38
@@ -738,30 +738,30 @@ RobotJumpLine:	.type	func
 	movh.a	a15,#@his(_999001_JumpLineState)
 	lea	a15,[a15]@los(_999001_JumpLineState)
 	mov	d15,#4
-.L377:
+.L451:
 	add	d15,#1
 	st.b	[a15],d15
-.L378:
+.L452:
 	j	.L39
 .L30:
 	movh.a	a15,#@his(_999001_JumpLineState)
 	lea	a15,[a15]@los(_999001_JumpLineState)
 	mov	d15,#5
-.L379:
+.L453:
 	add	d15,#1
 	st.b	[a15],d15
-.L380:
+.L454:
 	j	.L40
 .L31:
 	movh.a	a15,#@his(_999001_JumpLineState)
 	lea	a15,[a15]@los(_999001_JumpLineState)
-.L381:
+.L455:
 	mov	d15,#255
-.L382:
+.L456:
 	st.b	[a15],d15
-.L383:
+.L457:
 	mov	d2,#1
-.L384:
+.L458:
 	j	.L41
 .L40:
 .L39:
@@ -770,27 +770,27 @@ RobotJumpLine:	.type	func
 .L34:
 .L32:
 	mov	d4,#80
-.L385:
+.L459:
 	mov	d5,#5
-.L386:
+.L460:
 	movh.a	a15,#@his(_999001_JumpLineState)
 	lea	a15,[a15]@los(_999001_JumpLineState)
 	ld.bu	d6,[a15]
-.L387:
+.L461:
 	mov	d7,#3
 	call	oled_show_uint
-.L388:
+.L462:
 	mov	d2,#0
-.L389:
+.L463:
 	j	.L42
 .L42:
 .L41:
 	ret
-.L144:
+.L175:
 	
 __RobotJumpLine_function_end:
 	.size	RobotJumpLine,__RobotJumpLine_function_end-RobotJumpLine
-.L85:
+.L101:
 	; End of function
 	
 	.sdecl	'.text.robot.RobotError',code,cluster('RobotError')
@@ -799,34 +799,34 @@ __RobotJumpLine_function_end:
 	
 	.global	RobotError
 ; Function RobotError
-.L56:
+.L66:
 RobotError:	.type	func
 	j	.L43
 .L44:
 	mov	d15,#0
-.L168:
+.L221:
 	j	.L45
 .L46:
 	mov	d4,#66
-.L428:
+.L502:
 	movh.a	a4,#@his(.1.str)
 	lea	a4,[a4]@los(.1.str)
 	mov	d5,d15
-.L169:
+.L222:
 	call	oled_show_string
-.L170:
+.L223:
 	add	d15,#1
 .L45:
 	jlt.u	d15,#8,.L46
 .L43:
 	j	.L44
-.L429:
+.L503:
 	ret
-.L147:
+.L178:
 	
 __RobotError_function_end:
 	.size	RobotError,__RobotError_function_end-RobotError
-.L95:
+.L111:
 	; End of function
 	
 	.sdecl	'.text.robot.Start',code,cluster('Start')
@@ -835,22 +835,22 @@ __RobotError_function_end:
 	
 	.global	Start
 ; Function Start
-.L58:
+.L68:
 Start:	.type	func
 	mov	d15,#0
-.L434:
+.L508:
 	st.b	[a4]1,d15
-.L435:
+.L509:
 	mov	d15,#0
-.L436:
+.L510:
 	st.b	[a4],d15
-.L437:
+.L511:
 	ret
-.L150:
+.L181:
 	
 __Start_function_end:
 	.size	Start,__Start_function_end-Start
-.L100:
+.L116:
 	; End of function
 	
 	.sdecl	'.text.robot.Prepared',code,cluster('Prepared')
@@ -859,18 +859,18 @@ __Start_function_end:
 	
 	.global	Prepared
 ; Function Prepared
-.L60:
+.L70:
 Prepared:	.type	func
 	mov	d15,#1
-.L442:
+.L516:
 	st.b	[a4]1,d15
-.L443:
+.L517:
 	ret
-.L153:
+.L184:
 	
 __Prepared_function_end:
 	.size	Prepared,__Prepared_function_end-Prepared
-.L105:
+.L121:
 	; End of function
 	
 	.sdecl	'.text.robot.Processed',code,cluster('Processed')
@@ -879,22 +879,22 @@ __Prepared_function_end:
 	
 	.global	Processed
 ; Function Processed
-.L62:
+.L72:
 Processed:	.type	func
 	mov	d15,#0
-.L448:
+.L522:
 	st.b	[a4],d15
-.L449:
+.L523:
 	mov	d15,#2
-.L450:
+.L524:
 	st.b	[a4]1,d15
-.L451:
+.L525:
 	ret
-.L155:
+.L186:
 	
 __Processed_function_end:
 	.size	Processed,__Processed_function_end-Processed
-.L110:
+.L126:
 	; End of function
 	
 	.sdecl	'.text.robot.BalanceInit',code,cluster('BalanceInit')
@@ -903,67 +903,67 @@ __Processed_function_end:
 	
 	.global	BalanceInit
 ; Function BalanceInit
-.L64:
+.L74:
 BalanceInit:	.type	func
 	sub.a	a10,#8
-.L171:
+.L224:
 	mov	d15,#0
 	st.w	[a10],d15
-.L456:
+.L530:
 	movh.a	a15,#@his(robot)
 	lea	a15,[a15]@los(robot)
-.L457:
+.L531:
 	lea	a4,[a15]112
-.L458:
+.L532:
 	mov	d4,#0
-.L459:
+.L533:
 	mov	d5,#0
-.L460:
+.L534:
 	mov	d6,#0
-.L461:
+.L535:
 	mov	d7,#1
 	call	PIDTypeInit
-.L462:
+.L536:
 	mov	d15,#0
 	st.w	[a10],d15
-.L463:
+.L537:
 	movh.a	a15,#@his(robot)
 	lea	a15,[a15]@los(robot)
-.L464:
+.L538:
 	lea	a4,[a15]164
-.L465:
+.L539:
 	mov	d4,#0
-.L466:
+.L540:
 	mov	d5,#0
-.L467:
+.L541:
 	mov	d6,#0
-.L468:
+.L542:
 	mov	d7,#1
 	call	PIDTypeInit
-.L469:
+.L543:
 	mov	d15,#0
 	st.w	[a10],d15
-.L470:
+.L544:
 	movh.a	a15,#@his(robot)
 	lea	a15,[a15]@los(robot)
-.L471:
+.L545:
 	lea	a4,[a15]216
-.L472:
+.L546:
 	mov	d4,#0
-.L473:
+.L547:
 	mov	d5,#0
-.L474:
+.L548:
 	mov	d6,#0
-.L475:
+.L549:
 	mov	d7,#1
 	call	PIDTypeInit
-.L476:
+.L550:
 	ret
-.L157:
+.L188:
 	
 __BalanceInit_function_end:
 	.size	BalanceInit,__BalanceInit_function_end-BalanceInit
-.L115:
+.L131:
 	; End of function
 	
 	.sdecl	'.text.robot.BalancePitch',code,cluster('BalancePitch')
@@ -972,14 +972,265 @@ __BalanceInit_function_end:
 	
 	.global	BalancePitch
 ; Function BalancePitch
-.L66:
+.L76:
 BalancePitch:	.type	func
 	ret
-.L158:
+.L189:
 	
 __BalancePitch_function_end:
 	.size	BalancePitch,__BalancePitch_function_end-BalancePitch
-.L120:
+.L136:
+	; End of function
+	
+	.sdecl	'.text.robot.Balance',code,cluster('Balance')
+	.sect	'.text.robot.Balance'
+	.align	2
+	
+	.global	Balance
+; Function Balance
+.L78:
+Balance:	.type	func
+	movh	d15,#16736
+.L559:
+	sub.f	d0,d15,d4
+.L226:
+	insn.t	d1,d5:31,d5:31
+.L228:
+	mov	d2,#5000
+.L230:
+	mov	d3,#1200
+.L232:
+	rsub	d2,#0
+.L560:
+	mov	d15,#100
+.L561:
+	div	e4,d2,d15
+.L225:
+	itof	d15,d4
+.L562:
+	mul.f	d15,d15,d0
+.L563:
+	itof	d0,d3
+.L227:
+	mul.f	d0,d1,d0
+.L564:
+	movh	d1,#17096
+.L229:
+	div.f	d0,d0,d1
+.L565:
+	sub.f	d2,d15,d0
+.L231:
+	j	.L47
+.L47:
+	ret
+.L190:
+	
+__Balance_function_end:
+	.size	Balance,__Balance_function_end-Balance
+.L141:
+	; End of function
+	
+	.sdecl	'.text.robot.Velocity',code,cluster('Velocity')
+	.sect	'.text.robot.Velocity'
+	.align	2
+	
+	.global	Velocity
+; Function Velocity
+.L80:
+Velocity:	.type	func
+	mov	d0,d4
+.L233:
+	mov	d2,#0
+.L235:
+	mov	d3,#0
+.L237:
+	movh.a	a15,#@his(_999003_Encoder_Least)
+	lea	a15,[a15]@los(_999003_Encoder_Least)
+.L570:
+	add	d15,d0,d5
+.L571:
+	rsub	d15,#0
+	itof	d15,d15
+.L572:
+	st.w	[a15],d15
+.L573:
+	movh.a	a15,#@his(_999004_Encoder_bias)
+	lea	a15,[a15]@los(_999004_Encoder_bias)
+	movh.a	a2,#@his(_999004_Encoder_bias)
+	lea	a2,[a2]@los(_999004_Encoder_bias)
+	ld.w	d15,[a2]
+.L574:
+	mov.u	d1,#52429
+	addih	d1,d1,#16204
+.L575:
+	mul.f	d15,d15,d1
+	st.w	[a15],d15
+.L576:
+	movh.a	a15,#@his(_999004_Encoder_bias)
+	lea	a15,[a15]@los(_999004_Encoder_bias)
+.L577:
+	add	d0,d5
+.L234:
+	rsub	d0,#0
+	itof	d15,d0
+.L578:
+	mov.u	d0,#52429
+	addih	d0,d0,#15948
+.L579:
+	movh.a	a2,#@his(_999004_Encoder_bias)
+	lea	a2,[a2]@los(_999004_Encoder_bias)
+	ld.w	d1,[a2]
+.L580:
+	madd.f	d15,d1,d15,d0
+	st.w	[a15],d15
+.L581:
+	movh.a	a15,#@his(_999005_Encoder_Integral)
+	lea	a15,[a15]@los(_999005_Encoder_Integral)
+	movh.a	a2,#@his(_999005_Encoder_Integral)
+	lea	a2,[a2]@los(_999005_Encoder_Integral)
+	ld.w	d15,[a2]
+.L582:
+	movh.a	a2,#@his(_999004_Encoder_bias)
+	lea	a2,[a2]@los(_999004_Encoder_bias)
+	ld.w	d0,[a2]
+.L583:
+	add.f	d15,d15,d0
+	st.w	[a15],d15
+.L584:
+	movh.a	a15,#@his(_999005_Encoder_Integral)
+	lea	a15,[a15]@los(_999005_Encoder_Integral)
+	ld.w	d15,[a15]
+	mov	d0,#0
+	cmp.f	d15,d15,d0
+	jnz.t	d15:2,.L48
+	movh.a	a15,#@his(_999005_Encoder_Integral)
+	lea	a15,[a15]@los(_999005_Encoder_Integral)
+	ld.w	d15,[a15]
+	insn.t	d0,d15:31,d15:31
+	j	.L49
+.L48:
+	movh.a	a15,#@his(_999005_Encoder_Integral)
+	lea	a15,[a15]@los(_999005_Encoder_Integral)
+	ld.w	d0,[a15]
+.L49:
+	mov	d15,#1
+	jeq	d15,#0,.L50
+	mov	d15,#10000
+	j	.L51
+.L50:
+	mov	d15,#-10000
+.L51:
+	itof	d15,d15
+	cmp.f	d15,d0,d15
+	extr.u	d15,d15,#2,#1
+	jeq	d15,#0,.L52
+	movh.a	a15,#@his(_999005_Encoder_Integral)
+	lea	a15,[a15]@los(_999005_Encoder_Integral)
+	ld.w	d15,[a15]
+	mov	d0,#0
+	cmp.f	d15,d15,d0
+	jnz.t	d15:0,.L53
+	mov	d15,#1
+	j	.L54
+.L53:
+	mov	d15,#-1
+.L54:
+	movh.a	a15,#@his(_999005_Encoder_Integral)
+	lea	a15,[a15]@los(_999005_Encoder_Integral)
+	mov	d0,#10000
+	mul	d15,d0
+	itof	d15,d15
+	st.w	[a15],d15
+.L52:
+	movh.a	a15,#@his(_999002_velocity)
+	lea	a15,[a15]@los(_999002_velocity)
+.L585:
+	movh.a	a2,#@his(_999004_Encoder_bias)
+	lea	a2,[a2]@los(_999004_Encoder_bias)
+	ld.w	d15,[a2]
+.L586:
+	itof	d0,d2
+.L587:
+	mul.f	d15,d15,d0
+.L588:
+	movh	d0,#17096
+.L589:
+	div.f	d15,d15,d0
+.L590:
+	movh.a	a2,#@his(_999005_Encoder_Integral)
+	lea	a2,[a2]@los(_999005_Encoder_Integral)
+	ld.w	d0,[a2]
+.L591:
+	itof	d1,d3
+.L592:
+	mul.f	d0,d0,d1
+.L593:
+	movh	d1,#17096
+.L594:
+	div.f	d0,d0,d1
+.L595:
+	add.f	d15,d15,d0
+.L596:
+	st.w	[a15],d15
+.L597:
+	movh.a	a15,#@his(_999002_velocity)
+	lea	a15,[a15]@los(_999002_velocity)
+	ld.w	d2,[a15]
+.L236:
+	j	.L55
+.L55:
+	ret
+.L199:
+	
+__Velocity_function_end:
+	.size	Velocity,__Velocity_function_end-Velocity
+.L146:
+	; End of function
+	
+	.sdecl	'.text.robot.Turn',code,cluster('Turn')
+	.sect	'.text.robot.Turn'
+	.align	2
+	
+	.global	Turn
+; Function Turn
+.L82:
+Turn:	.type	func
+	mov	d0,#0
+.L239:
+	mov	d1,#0
+.L241:
+	insn.t	d2,d4:31,d4:31
+.L243:
+	insn.t	d3,d5:31,d5:31
+.L245:
+	rsub	d0,#0
+.L602:
+	mov	d15,#100
+.L603:
+	div	e4,d0,d15
+.L238:
+	itof	d15,d4
+.L604:
+	mul.f	d15,d15,d2
+.L605:
+	itof	d0,d1
+.L240:
+	mul.f	d0,d3,d0
+.L606:
+	movh	d1,#17096
+.L242:
+	div.f	d0,d0,d1
+.L607:
+	sub.f	d2,d15,d0
+.L244:
+	j	.L56
+.L56:
+	ret
+.L204:
+	
+__Turn_function_end:
+	.size	Turn,__Turn_function_end-Turn
+.L151:
 	; End of function
 	
 	.sdecl	'.bss.robot.robot',data,cluster('robot')
@@ -1002,6 +1253,30 @@ _999001_JumpLineState:	.type	object
 	.byte	114,111,114,95,69,114,114,111
 	.byte	114
 	.space	1
+	.sdecl	'.data.robot._999002_velocity',data,cluster('_999002_velocity')
+	.sect	'.data.robot._999002_velocity'
+	.align	2
+_999002_velocity:	.type	object
+	.size	_999002_velocity,4
+	.space	4
+	.sdecl	'.data.robot._999003_Encoder_Least',data,cluster('_999003_Encoder_Least')
+	.sect	'.data.robot._999003_Encoder_Least'
+	.align	2
+_999003_Encoder_Least:	.type	object
+	.size	_999003_Encoder_Least,4
+	.space	4
+	.sdecl	'.data.robot._999004_Encoder_bias',data,cluster('_999004_Encoder_bias')
+	.sect	'.data.robot._999004_Encoder_bias'
+	.align	2
+_999004_Encoder_bias:	.type	object
+	.size	_999004_Encoder_bias,4
+	.space	4
+	.sdecl	'.data.robot._999005_Encoder_Integral',data,cluster('_999005_Encoder_Integral')
+	.sect	'.data.robot._999005_Encoder_Integral'
+	.align	2
+_999005_Encoder_Integral:	.type	object
+	.size	_999005_Encoder_Integral,4
+	.space	4
 	.calls	'robotInit','memset'
 	.calls	'robotInit','Start'
 	.calls	'robotInit','RobotJumpLineInit'
@@ -1025,6 +1300,9 @@ _999001_JumpLineState:	.type	object
 	.calls	'Prepared','',0
 	.calls	'Processed','',0
 	.calls	'BalanceInit','',8
+	.calls	'BalancePitch','',0
+	.calls	'Balance','',0
+	.calls	'Velocity','',0
 	.extern	memset
 	.extern	oled_show_string
 	.extern	oled_show_uint
@@ -1034,20 +1312,20 @@ _999001_JumpLineState:	.type	object
 	.extern	LegInit
 	.extern	ForwardKinematics
 	.extern	AngleCalculate
-	.calls	'BalancePitch','',0
+	.calls	'Turn','',0
 	.sdecl	'.debug_info',debug
 	.sect	'.debug_info'
-.L68:
+.L84:
 	.word	147468
 	.half	3
-	.word	.L69
+	.word	.L85
 	.byte	4
-.L67:
+.L83:
 	.byte	1
 	.byte	'../code/src/robot.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1
-	.word	.L70
+	.word	.L86
 	.byte	2,1,1,3
 	.word	166
 	.byte	4
@@ -1056,7 +1334,7 @@ _999001_JumpLineState:	.type	object
 	.word	169
 	.byte	6,0,7
 	.byte	'__fract',0,4,128,1
-.L130:
+.L161:
 	.byte	7
 	.byte	'float',0,4,4,8
 	.byte	'Ifx__float_to_fract',0,3,1,152,2,18
@@ -1083,9 +1361,11 @@ _999001_JumpLineState:	.type	object
 	.byte	'value',0,2,143,1,43
 	.word	312
 	.byte	6,0,7
-	.byte	'unsigned int',0,4,7,7
+	.byte	'unsigned int',0,4,7
+.L193:
+	.byte	7
 	.byte	'int',0,4,5
-.L145:
+.L176:
 	.byte	7
 	.byte	'unsigned char',0,1,8,10
 	.byte	'_Ifx_SRC_SRCR_Bits',0,4,45,16,4,11
@@ -1174,7 +1454,7 @@ _999001_JumpLineState:	.type	object
 	.byte	'B',0
 	.word	868
 	.byte	4,2,35,0,0
-.L148:
+.L179:
 	.byte	7
 	.byte	'unsigned short int',0,2,7,10
 	.byte	'_Ifx_SCU_WDTCPU_CON1_Bits',0,6,250,8,16,4,11
@@ -6135,24 +6415,24 @@ _999001_JumpLineState:	.type	object
 	.byte	'fifo',0,19,206,1,51
 	.word	32740
 	.byte	6,0
-.L132:
+.L163:
 	.byte	8
 	.byte	'Lerp',0,3,20,125,21
 	.word	226
 	.byte	1,1
-.L134:
+.L165:
 	.byte	5
 	.byte	'start',0,20,125,32
 	.word	226
-.L136:
+.L167:
 	.byte	5
 	.byte	'end',0,20,125,45
 	.word	226
-.L138:
+.L169:
 	.byte	5
 	.byte	't',0,20,125,56
 	.word	226
-.L140:
+.L171:
 	.byte	6,0,21
 	.byte	'memset',0,21,56,17
 	.word	344
@@ -6603,7 +6883,7 @@ _999001_JumpLineState:	.type	object
 	.word	226
 	.byte	0,31
 	.byte	'LegInit',0,24,45,6,1,1,1,1
-.L128:
+.L159:
 	.byte	10
 	.byte	'_Vector2fType',0,25,13,16,8,13
 	.byte	'x',0
@@ -6829,7 +7109,7 @@ _999001_JumpLineState:	.type	object
 	.word	446
 	.byte	4,2,35,24,0,3
 	.word	37793
-.L126:
+.L157:
 	.byte	7
 	.byte	'_Bool',0,1,2,30
 	.byte	'_BldcMode',0,26,30,14,1,16
@@ -7147,7 +7427,7 @@ _999001_JumpLineState:	.type	object
 	.byte	'Lerp',0
 	.word	37953
 	.byte	1,2,35,60,0
-.L159:
+.L212:
 	.byte	10
 	.byte	'_robot',0,30,26,16,148,2,13
 	.byte	'pipeline',0
@@ -7183,10 +7463,10 @@ _999001_JumpLineState:	.type	object
 	.byte	'K2',0
 	.word	226
 	.byte	4,3,35,144,2,0
-.L124:
+.L155:
 	.byte	3
 	.word	39840
-.L151:
+.L182:
 	.byte	3
 	.word	39367
 	.byte	32
@@ -21084,7 +21364,7 @@ _999001_JumpLineState:	.type	object
 	.byte	0
 	.sdecl	'.debug_abbrev',debug
 	.sect	'.debug_abbrev'
-.L69:
+.L85:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,21,0,54,15,39,12,0,0,3,15,0,73,19,0,0,4,46,1,3,8,32,13
 	.byte	58,15,59,15,57,15,54,15,39,12,0,0,5,5,0,3,8,58,15,59,15,57,15,73,19,0,0,6,11,0,0,0,7,36,0,3,8,11,15,62
 	.byte	15,0,0,8,46,1,3,8,32,13,58,15,59,15,57,15,73,19,54,15,39,12,0,0,9,59,0,3,8,0,0,10,19,1,3,8,58,15,59,15
@@ -21099,12 +21379,12 @@ _999001_JumpLineState:	.type	object
 	.byte	12,60,12,0,0,0
 	.sdecl	'.debug_line',debug
 	.sect	'.debug_line'
-.L70:
-	.word	.L173-.L172
-.L172:
+.L86:
+	.word	.L247-.L246
+.L246:
 	.half	3
-	.word	.L175-.L174
-.L174:
+	.word	.L249-.L248
+.L248:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
 	.byte	'D:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B\\\\_Reg',0
 	.byte	'D:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\code\\\\inc',0
@@ -21199,1322 +21479,1780 @@ _999001_JumpLineState:	.type	object
 	.byte	'zf_device_wifi_spi.h',0,4,0,0
 	.byte	'zf_device_wifi_uart.h',0,4,0,0
 	.byte	'seekfree_assistant.h',0,10,0,0,0
-.L175:
-.L173:
+.L249:
+.L247:
 	.sdecl	'.debug_info',debug,cluster('robotInit')
 	.sect	'.debug_info'
-.L71:
+.L87:
 	.word	229
 	.half	3
-	.word	.L72
+	.word	.L88
 	.byte	4,1
 	.byte	'../code/src/robot.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1
-	.word	.L74,.L73
+	.word	.L90,.L89
 	.byte	2
-	.word	.L67
+	.word	.L83
 	.byte	3
 	.byte	'robotInit',0,1,10,6,1,1,1
-	.word	.L48,.L123,.L47
+	.word	.L58,.L154,.L57
 	.byte	4
 	.byte	'robot',0,1,10,27
-	.word	.L124,.L125
+	.word	.L155,.L156
 	.byte	5
-	.word	.L48,.L123
+	.word	.L58,.L154
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('robotInit')
 	.sect	'.debug_abbrev'
-.L72:
+.L88:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('robotInit')
 	.sect	'.debug_line'
-.L73:
-	.word	.L177-.L176
-.L176:
+.L89:
+	.word	.L251-.L250
+.L250:
 	.half	3
-	.word	.L179-.L178
-.L178:
+	.word	.L253-.L252
+.L252:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/src/robot.c',0,0,0,0,0
-.L179:
+.L253:
 	.byte	5,6,7,0,5,2
-	.word	.L48
+	.word	.L58
 	.byte	3,9,1,5,16,9
-	.half	.L161-.L48
+	.half	.L214-.L58
 	.byte	3,2,1,5,19,9
-	.half	.L180-.L161
+	.half	.L254-.L214
 	.byte	1,9
-	.half	.L160-.L180
+	.half	.L213-.L254
 	.byte	3,2,1,5,15,9
-	.half	.L181-.L160
+	.half	.L255-.L213
 	.byte	1,5,19,9
-	.half	.L182-.L181
+	.half	.L256-.L255
 	.byte	3,1,1,5,15,9
-	.half	.L183-.L182
+	.half	.L257-.L256
 	.byte	1,9
-	.half	.L184-.L183
+	.half	.L258-.L257
 	.byte	3,2,1,5,19,9
-	.half	.L163-.L184
+	.half	.L216-.L258
 	.byte	3,1,1,5,27,9
-	.half	.L185-.L163
+	.half	.L259-.L216
 	.byte	3,5,1,5,25,9
-	.half	.L186-.L185
+	.half	.L260-.L259
 	.byte	1,5,27,9
-	.half	.L187-.L186
+	.half	.L261-.L260
 	.byte	3,1,1,5,25,9
-	.half	.L188-.L187
+	.half	.L262-.L261
 	.byte	1,5,45,9
-	.half	.L189-.L188
+	.half	.L263-.L262
 	.byte	3,1,1,5,49,9
-	.half	.L190-.L189
+	.half	.L264-.L263
 	.byte	1,5,25,9
-	.half	.L191-.L190
+	.half	.L265-.L264
 	.byte	1,5,9,9
-	.half	.L192-.L191
+	.half	.L266-.L265
 	.byte	3,2,1,5,1,9
-	.half	.L193-.L192
+	.half	.L267-.L266
 	.byte	3,3,1,7,9
-	.half	.L75-.L193
+	.half	.L91-.L267
 	.byte	0,1,1
-.L177:
+.L251:
 	.sdecl	'.debug_ranges',debug,cluster('robotInit')
 	.sect	'.debug_ranges'
-.L74:
-	.word	-1,.L48,0,.L75-.L48,0,0
+.L90:
+	.word	-1,.L58,0,.L91-.L58,0,0
 	.sdecl	'.debug_info',debug,cluster('RobotDrawLine')
 	.sect	'.debug_info'
-.L76:
+.L92:
 	.word	480
 	.half	3
-	.word	.L77
+	.word	.L93
 	.byte	4,1
 	.byte	'../code/src/robot.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1
-	.word	.L79,.L78
+	.word	.L95,.L94
 	.byte	2
-	.word	.L67
+	.word	.L83
 	.byte	3
 	.byte	'RobotDrawLine',0,1,52,6
-	.word	.L126
+	.word	.L157
 	.byte	1,1,1
-	.word	.L52,.L127,.L51
+	.word	.L62,.L158,.L61
 	.byte	4
 	.byte	'PosTarget',0,1,52,29
-	.word	.L128,.L129
+	.word	.L159,.L160
 	.byte	4
 	.byte	'reachTime',0,1,52,46
-	.word	.L130,.L131
+	.word	.L161,.L162
 	.byte	5
-	.word	.L52,.L127
+	.word	.L62,.L158
 	.byte	6
-	.word	.L132,.L133,.L11
+	.word	.L163,.L164,.L11
 	.byte	7
-	.word	.L134,.L135
+	.word	.L165,.L166
 	.byte	7
-	.word	.L136,.L137
+	.word	.L167,.L168
 	.byte	7
-	.word	.L138,.L139
+	.word	.L169,.L170
 	.byte	8
-	.word	.L140,.L133,.L11
+	.word	.L171,.L164,.L11
 	.byte	0,6
-	.word	.L132,.L141,.L14
+	.word	.L163,.L172,.L14
 	.byte	7
-	.word	.L134,.L135
+	.word	.L165,.L166
 	.byte	7
-	.word	.L136,.L137
+	.word	.L167,.L168
 	.byte	7
-	.word	.L138,.L139
+	.word	.L169,.L170
 	.byte	8
-	.word	.L140,.L141,.L14
+	.word	.L171,.L172,.L14
 	.byte	0,6
-	.word	.L132,.L142,.L17
+	.word	.L163,.L173,.L17
 	.byte	7
-	.word	.L134,.L135
+	.word	.L165,.L166
 	.byte	7
-	.word	.L136,.L137
+	.word	.L167,.L168
 	.byte	7
-	.word	.L138,.L139
+	.word	.L169,.L170
 	.byte	8
-	.word	.L140,.L142,.L17
+	.word	.L171,.L173,.L17
 	.byte	0,6
-	.word	.L132,.L143,.L20
+	.word	.L163,.L174,.L20
 	.byte	7
-	.word	.L134,.L135
+	.word	.L165,.L166
 	.byte	7
-	.word	.L136,.L137
+	.word	.L167,.L168
 	.byte	7
-	.word	.L138,.L139
+	.word	.L169,.L170
 	.byte	8
-	.word	.L140,.L143,.L20
+	.word	.L171,.L174,.L20
 	.byte	0,0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('RobotDrawLine')
 	.sect	'.debug_abbrev'
-.L77:
+.L93:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
 	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
 	.byte	29,1,49,16,17,1,18,1,0,0,7,5,0,49,16,2,6,0,0,8,11,0,49,16,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('RobotDrawLine')
 	.sect	'.debug_line'
-.L78:
-	.word	.L195-.L194
-.L194:
+.L94:
+	.word	.L269-.L268
+.L268:
 	.half	3
-	.word	.L197-.L196
-.L196:
+	.word	.L271-.L270
+.L270:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
 	.byte	'D:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\code\\\\inc',0,0
 	.byte	'../code/src/robot.c',0,0,0,0
 	.byte	'MathLib.h',0,1,0,0,0
-.L197:
+.L271:
 	.byte	5,10,7,0,5,2
-	.word	.L52
+	.word	.L62
 	.byte	3,55,1,5,24,9
-	.half	.L198-.L52
+	.half	.L272-.L62
 	.byte	1,5,8,9
-	.half	.L199-.L198
+	.half	.L273-.L272
 	.byte	3,1,1,9
-	.half	.L200-.L199
-	.byte	3,17,1,9
-	.half	.L201-.L200
-	.byte	3,24,1,5,4,9
-	.half	.L2-.L201
-	.byte	3,89,1,5,27,9
-	.half	.L202-.L2
-	.byte	1,5,4,9
-	.half	.L203-.L202
-	.byte	3,1,1,5,29,9
-	.half	.L204-.L203
-	.byte	1,5,27,9
-	.half	.L205-.L204
-	.byte	1,5,4,9
-	.half	.L206-.L205
-	.byte	3,2,1,5,9,9
-	.half	.L207-.L206
-	.byte	1,5,27,9
-	.half	.L208-.L207
-	.byte	1,5,4,9
-	.half	.L209-.L208
-	.byte	3,1,1,5,9,9
-	.half	.L210-.L209
-	.byte	1,5,27,9
-	.half	.L211-.L210
-	.byte	1,5,4,9
-	.half	.L212-.L211
-	.byte	3,2,1,5,9,9
-	.half	.L213-.L212
-	.byte	1,5,26,9
-	.half	.L214-.L213
-	.byte	1,5,4,9
-	.half	.L215-.L214
-	.byte	3,1,1,5,9,9
-	.half	.L216-.L215
-	.byte	1,5,27,9
-	.half	.L217-.L216
-	.byte	1,5,4,9
-	.half	.L218-.L217
-	.byte	3,2,1,5,9,9
-	.half	.L219-.L218
-	.byte	1,5,47,9
-	.half	.L220-.L219
-	.byte	1,5,52,9
-	.half	.L221-.L220
-	.byte	1,5,57,9
-	.half	.L222-.L221
-	.byte	1,5,70,9
-	.half	.L164-.L222
-	.byte	1,5,75,9
-	.half	.L223-.L164
-	.byte	1,5,80,9
-	.half	.L224-.L223
-	.byte	1,5,27,9
-	.half	.L165-.L224
-	.byte	1,5,4,9
-	.half	.L225-.L165
-	.byte	3,1,1,5,9,9
-	.half	.L226-.L225
-	.byte	1,5,47,9
-	.half	.L227-.L226
-	.byte	1,5,52,9
-	.half	.L228-.L227
-	.byte	1,5,58,9
-	.half	.L229-.L228
-	.byte	1,5,71,9
-	.half	.L230-.L229
-	.byte	1,5,76,9
-	.half	.L231-.L230
-	.byte	1,5,82,9
-	.half	.L232-.L231
-	.byte	1,5,27,9
-	.half	.L233-.L232
-	.byte	1,5,15,9
-	.half	.L234-.L233
-	.byte	3,2,1,5,20,9
-	.half	.L235-.L234
-	.byte	1,5,4,9
-	.half	.L236-.L235
-	.byte	3,1,1,5,8,9
-	.half	.L3-.L236
-	.byte	3,4,1,5,19,9
-	.half	.L237-.L3
-	.byte	1,5,30,9
-	.half	.L238-.L237
-	.byte	1,5,41,9
-	.half	.L239-.L238
-	.byte	1,5,28,9
-	.half	.L240-.L239
-	.byte	1,5,4,9
-	.half	.L241-.L240
-	.byte	1,5,9,7,9
-	.half	.L242-.L241
-	.byte	3,1,1,5,23,9
-	.half	.L243-.L242
-	.byte	1,5,5,9
-	.half	.L244-.L243
-	.byte	1,5,14,7,9
-	.half	.L245-.L244
-	.byte	3,2,1,5,19,9
-	.half	.L246-.L245
-	.byte	1,5,34,9
-	.half	.L247-.L246
-	.byte	1,5,38,9
-	.half	.L248-.L247
-	.byte	1,5,43,9
-	.half	.L249-.L248
-	.byte	1,5,59,9
-	.half	.L250-.L249
-	.byte	1,5,63,9
-	.half	.L251-.L250
-	.byte	1,5,74,9
-	.half	.L252-.L251
-	.byte	1,5,85,9
-	.half	.L253-.L252
-	.byte	1,5,96,9
-	.half	.L254-.L253
-	.byte	1,5,83,9
-	.half	.L255-.L254
-	.byte	1,4,2,5,2,9
-	.half	.L133-.L255
-	.byte	3,48,1,5,14,9
-	.half	.L10-.L133
-	.byte	3,1,1,5,27,9
-	.half	.L256-.L10
-	.byte	1,5,2,9
-	.half	.L257-.L256
-	.byte	1,4,1,5,6,9
-	.half	.L11-.L257
-	.byte	3,78,1,5,11,9
-	.half	.L258-.L11
-	.byte	1,5,7,9
-	.half	.L259-.L258
-	.byte	3,1,1,5,14,9
-	.half	.L260-.L259
-	.byte	3,2,1,5,19,9
-	.half	.L261-.L260
-	.byte	1,5,34,9
-	.half	.L262-.L261
-	.byte	1,5,38,9
-	.half	.L263-.L262
-	.byte	1,5,43,9
-	.half	.L264-.L263
-	.byte	1,5,59,9
-	.half	.L265-.L264
-	.byte	1,5,63,9
-	.half	.L266-.L265
-	.byte	1,5,74,9
-	.half	.L267-.L266
-	.byte	1,5,85,9
-	.half	.L268-.L267
-	.byte	1,5,96,9
-	.half	.L269-.L268
-	.byte	1,5,83,9
-	.half	.L270-.L269
-	.byte	1,4,2,5,2,9
-	.half	.L141-.L270
-	.byte	3,46,1,5,14,9
-	.half	.L13-.L141
-	.byte	3,1,1,5,27,9
-	.half	.L271-.L13
-	.byte	1,5,2,9
-	.half	.L272-.L271
-	.byte	1,4,1,5,6,9
-	.half	.L14-.L272
-	.byte	3,80,1,5,11,9
-	.half	.L273-.L14
-	.byte	1,5,7,9
 	.half	.L274-.L273
-	.byte	3,1,1,5,14,9
+	.byte	3,17,1,9
 	.half	.L275-.L274
-	.byte	3,3,1,5,19,9
-	.half	.L276-.L275
-	.byte	1,5,35,9
-	.half	.L277-.L276
-	.byte	1,5,39,9
-	.half	.L278-.L277
-	.byte	1,5,44,9
-	.half	.L279-.L278
-	.byte	1,5,61,9
-	.half	.L280-.L279
-	.byte	1,5,65,9
-	.half	.L281-.L280
-	.byte	1,5,76,9
-	.half	.L282-.L281
-	.byte	1,5,87,9
-	.half	.L283-.L282
-	.byte	1,5,98,9
-	.half	.L284-.L283
-	.byte	1,5,85,9
-	.half	.L285-.L284
-	.byte	1,4,2,5,2,9
-	.half	.L142-.L285
-	.byte	3,43,1,5,14,9
-	.half	.L16-.L142
-	.byte	3,1,1,5,27,9
-	.half	.L286-.L16
-	.byte	1,5,2,9
-	.half	.L287-.L286
-	.byte	1,4,1,5,6,9
-	.half	.L17-.L287
-	.byte	3,83,1,5,11,9
-	.half	.L288-.L17
-	.byte	1,5,7,9
-	.half	.L289-.L288
-	.byte	3,1,1,5,14,9
-	.half	.L290-.L289
-	.byte	3,2,1,5,19,9
-	.half	.L291-.L290
-	.byte	1,5,35,9
-	.half	.L292-.L291
-	.byte	1,5,39,9
-	.half	.L293-.L292
-	.byte	1,5,44,9
-	.half	.L294-.L293
-	.byte	1,5,61,9
-	.half	.L295-.L294
-	.byte	1,5,65,9
-	.half	.L296-.L295
-	.byte	1,5,76,9
-	.half	.L297-.L296
-	.byte	1,5,87,9
-	.half	.L298-.L297
-	.byte	1,5,98,9
-	.half	.L299-.L298
-	.byte	1,5,85,9
-	.half	.L300-.L299
-	.byte	1,4,2,5,2,9
-	.half	.L143-.L300
-	.byte	3,41,1,5,14,9
-	.half	.L19-.L143
-	.byte	3,1,1,5,27,9
-	.half	.L301-.L19
-	.byte	1,5,2,9
-	.half	.L302-.L301
-	.byte	1,4,1,5,6,9
-	.half	.L20-.L302
-	.byte	3,85,1,5,11,9
-	.half	.L303-.L20
-	.byte	1,5,7,9
-	.half	.L304-.L303
-	.byte	3,1,1,5,20,9
-	.half	.L8-.L304
-	.byte	3,3,1,5,25,9
-	.half	.L305-.L8
-	.byte	1,5,32,9
-	.half	.L306-.L305
-	.byte	1,5,37,9
-	.half	.L307-.L306
-	.byte	1,5,42,9
-	.half	.L308-.L307
-	.byte	1,5,20,9
-	.half	.L167-.L308
-	.byte	3,1,1,5,25,9
-	.half	.L309-.L167
-	.byte	1,5,33,9
-	.half	.L310-.L309
-	.byte	1,5,38,9
-	.half	.L311-.L310
-	.byte	1,5,44,9
-	.half	.L312-.L311
-	.byte	1,5,51,9
-	.half	.L313-.L312
-	.byte	3,127,1,5,17,9
-	.half	.L7-.L313
-	.byte	3,4,1,5,22,9
-	.half	.L314-.L7
+	.byte	3,24,1,5,4,9
+	.half	.L2-.L275
+	.byte	3,89,1,5,27,9
+	.half	.L276-.L2
 	.byte	1,5,4,9
-	.half	.L21-.L314
+	.half	.L277-.L276
+	.byte	3,1,1,5,29,9
+	.half	.L278-.L277
+	.byte	1,5,27,9
+	.half	.L279-.L278
+	.byte	1,5,4,9
+	.half	.L280-.L279
+	.byte	3,2,1,5,9,9
+	.half	.L281-.L280
+	.byte	1,5,27,9
+	.half	.L282-.L281
+	.byte	1,5,4,9
+	.half	.L283-.L282
+	.byte	3,1,1,5,9,9
+	.half	.L284-.L283
+	.byte	1,5,27,9
+	.half	.L285-.L284
+	.byte	1,5,4,9
+	.half	.L286-.L285
+	.byte	3,2,1,5,9,9
+	.half	.L287-.L286
+	.byte	1,5,26,9
+	.half	.L288-.L287
+	.byte	1,5,4,9
+	.half	.L289-.L288
+	.byte	3,1,1,5,9,9
+	.half	.L290-.L289
+	.byte	1,5,27,9
+	.half	.L291-.L290
+	.byte	1,5,4,9
+	.half	.L292-.L291
+	.byte	3,2,1,5,9,9
+	.half	.L293-.L292
+	.byte	1,5,47,9
+	.half	.L294-.L293
+	.byte	1,5,52,9
+	.half	.L295-.L294
+	.byte	1,5,57,9
+	.half	.L296-.L295
+	.byte	1,5,70,9
+	.half	.L217-.L296
+	.byte	1,5,75,9
+	.half	.L297-.L217
+	.byte	1,5,80,9
+	.half	.L298-.L297
+	.byte	1,5,27,9
+	.half	.L218-.L298
+	.byte	1,5,4,9
+	.half	.L299-.L218
+	.byte	3,1,1,5,9,9
+	.half	.L300-.L299
+	.byte	1,5,47,9
+	.half	.L301-.L300
+	.byte	1,5,52,9
+	.half	.L302-.L301
+	.byte	1,5,58,9
+	.half	.L303-.L302
+	.byte	1,5,71,9
+	.half	.L304-.L303
+	.byte	1,5,76,9
+	.half	.L305-.L304
+	.byte	1,5,82,9
+	.half	.L306-.L305
+	.byte	1,5,27,9
+	.half	.L307-.L306
+	.byte	1,5,15,9
+	.half	.L308-.L307
+	.byte	3,2,1,5,20,9
+	.half	.L309-.L308
+	.byte	1,5,4,9
+	.half	.L310-.L309
+	.byte	3,1,1,5,8,9
+	.half	.L3-.L310
+	.byte	3,4,1,5,19,9
+	.half	.L311-.L3
+	.byte	1,5,30,9
+	.half	.L312-.L311
+	.byte	1,5,41,9
+	.half	.L313-.L312
+	.byte	1,5,28,9
+	.half	.L314-.L313
+	.byte	1,5,4,9
+	.half	.L315-.L314
+	.byte	1,5,9,7,9
+	.half	.L316-.L315
+	.byte	3,1,1,5,23,9
+	.half	.L317-.L316
+	.byte	1,5,5,9
+	.half	.L318-.L317
+	.byte	1,5,14,7,9
+	.half	.L319-.L318
+	.byte	3,2,1,5,19,9
+	.half	.L320-.L319
+	.byte	1,5,34,9
+	.half	.L321-.L320
+	.byte	1,5,38,9
+	.half	.L322-.L321
+	.byte	1,5,43,9
+	.half	.L323-.L322
+	.byte	1,5,59,9
+	.half	.L324-.L323
+	.byte	1,5,63,9
+	.half	.L325-.L324
+	.byte	1,5,74,9
+	.half	.L326-.L325
+	.byte	1,5,85,9
+	.half	.L327-.L326
+	.byte	1,5,96,9
+	.half	.L328-.L327
+	.byte	1,5,83,9
+	.half	.L329-.L328
+	.byte	1,4,2,5,2,9
+	.half	.L164-.L329
+	.byte	3,48,1,5,14,9
+	.half	.L10-.L164
+	.byte	3,1,1,5,27,9
+	.half	.L330-.L10
+	.byte	1,5,2,9
+	.half	.L331-.L330
+	.byte	1,4,1,5,6,9
+	.half	.L11-.L331
+	.byte	3,78,1,5,11,9
+	.half	.L332-.L11
+	.byte	1,5,7,9
+	.half	.L333-.L332
+	.byte	3,1,1,5,14,9
+	.half	.L334-.L333
+	.byte	3,2,1,5,19,9
+	.half	.L335-.L334
+	.byte	1,5,34,9
+	.half	.L336-.L335
+	.byte	1,5,38,9
+	.half	.L337-.L336
+	.byte	1,5,43,9
+	.half	.L338-.L337
+	.byte	1,5,59,9
+	.half	.L339-.L338
+	.byte	1,5,63,9
+	.half	.L340-.L339
+	.byte	1,5,74,9
+	.half	.L341-.L340
+	.byte	1,5,85,9
+	.half	.L342-.L341
+	.byte	1,5,96,9
+	.half	.L343-.L342
+	.byte	1,5,83,9
+	.half	.L344-.L343
+	.byte	1,4,2,5,2,9
+	.half	.L172-.L344
+	.byte	3,46,1,5,14,9
+	.half	.L13-.L172
+	.byte	3,1,1,5,27,9
+	.half	.L345-.L13
+	.byte	1,5,2,9
+	.half	.L346-.L345
+	.byte	1,4,1,5,6,9
+	.half	.L14-.L346
+	.byte	3,80,1,5,11,9
+	.half	.L347-.L14
+	.byte	1,5,7,9
+	.half	.L348-.L347
+	.byte	3,1,1,5,14,9
+	.half	.L349-.L348
+	.byte	3,3,1,5,19,9
+	.half	.L350-.L349
+	.byte	1,5,35,9
+	.half	.L351-.L350
+	.byte	1,5,39,9
+	.half	.L352-.L351
+	.byte	1,5,44,9
+	.half	.L353-.L352
+	.byte	1,5,61,9
+	.half	.L354-.L353
+	.byte	1,5,65,9
+	.half	.L355-.L354
+	.byte	1,5,76,9
+	.half	.L356-.L355
+	.byte	1,5,87,9
+	.half	.L357-.L356
+	.byte	1,5,98,9
+	.half	.L358-.L357
+	.byte	1,5,85,9
+	.half	.L359-.L358
+	.byte	1,4,2,5,2,9
+	.half	.L173-.L359
+	.byte	3,43,1,5,14,9
+	.half	.L16-.L173
+	.byte	3,1,1,5,27,9
+	.half	.L360-.L16
+	.byte	1,5,2,9
+	.half	.L361-.L360
+	.byte	1,4,1,5,6,9
+	.half	.L17-.L361
+	.byte	3,83,1,5,11,9
+	.half	.L362-.L17
+	.byte	1,5,7,9
+	.half	.L363-.L362
+	.byte	3,1,1,5,14,9
+	.half	.L364-.L363
+	.byte	3,2,1,5,19,9
+	.half	.L365-.L364
+	.byte	1,5,35,9
+	.half	.L366-.L365
+	.byte	1,5,39,9
+	.half	.L367-.L366
+	.byte	1,5,44,9
+	.half	.L368-.L367
+	.byte	1,5,61,9
+	.half	.L369-.L368
+	.byte	1,5,65,9
+	.half	.L370-.L369
+	.byte	1,5,76,9
+	.half	.L371-.L370
+	.byte	1,5,87,9
+	.half	.L372-.L371
+	.byte	1,5,98,9
+	.half	.L373-.L372
+	.byte	1,5,85,9
+	.half	.L374-.L373
+	.byte	1,4,2,5,2,9
+	.half	.L174-.L374
+	.byte	3,41,1,5,14,9
+	.half	.L19-.L174
+	.byte	3,1,1,5,27,9
+	.half	.L375-.L19
+	.byte	1,5,2,9
+	.half	.L376-.L375
+	.byte	1,4,1,5,6,9
+	.half	.L20-.L376
+	.byte	3,85,1,5,11,9
+	.half	.L377-.L20
+	.byte	1,5,7,9
+	.half	.L378-.L377
+	.byte	3,1,1,5,20,9
+	.half	.L8-.L378
+	.byte	3,3,1,5,25,9
+	.half	.L379-.L8
+	.byte	1,5,32,9
+	.half	.L380-.L379
+	.byte	1,5,37,9
+	.half	.L381-.L380
+	.byte	1,5,42,9
+	.half	.L382-.L381
+	.byte	1,5,20,9
+	.half	.L220-.L382
+	.byte	3,1,1,5,25,9
+	.half	.L383-.L220
+	.byte	1,5,33,9
+	.half	.L384-.L383
+	.byte	1,5,38,9
+	.half	.L385-.L384
+	.byte	1,5,44,9
+	.half	.L386-.L385
+	.byte	1,5,51,9
+	.half	.L387-.L386
+	.byte	3,127,1,5,17,9
+	.half	.L7-.L387
+	.byte	3,4,1,5,22,9
+	.half	.L388-.L7
+	.byte	1,5,4,9
+	.half	.L21-.L388
 	.byte	3,3,1,5,11,9
 	.half	.L4-.L21
 	.byte	3,3,1,5,4,9
-	.half	.L315-.L4
+	.half	.L389-.L4
 	.byte	1,5,9,9
-	.half	.L6-.L315
+	.half	.L6-.L389
 	.byte	3,2,1,5,2,9
-	.half	.L316-.L6
+	.half	.L390-.L6
 	.byte	1,5,1,9
-	.half	.L23-.L316
+	.half	.L23-.L390
 	.byte	3,1,1,7,9
-	.half	.L80-.L23
+	.half	.L96-.L23
 	.byte	0,1,1
-.L195:
+.L269:
 	.sdecl	'.debug_ranges',debug,cluster('RobotDrawLine')
 	.sect	'.debug_ranges'
-.L79:
-	.word	-1,.L52,0,.L80-.L52,0,0
+.L95:
+	.word	-1,.L62,0,.L96-.L62,0,0
 	.sdecl	'.debug_info',debug,cluster('RobotJumpLine')
 	.sect	'.debug_info'
-.L81:
+.L97:
 	.word	248
 	.half	3
-	.word	.L82
+	.word	.L98
 	.byte	4,1
 	.byte	'../code/src/robot.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1
-	.word	.L84,.L83
+	.word	.L100,.L99
 	.byte	2
-	.word	.L67
+	.word	.L83
 	.byte	3
 	.byte	'RobotJumpLine',0,1,110,6
-	.word	.L126
+	.word	.L157
 	.byte	1,1,1
-	.word	.L54,.L144,.L53
+	.word	.L64,.L175,.L63
 	.byte	4
-	.word	.L54,.L144
+	.word	.L64,.L175
 	.byte	5
 	.byte	'JumpLineState',0,1,112,12
-	.word	.L145
+	.word	.L176
 	.byte	5,3
 	.word	_999001_JumpLineState
 	.byte	0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('RobotJumpLine')
 	.sect	'.debug_abbrev'
-.L82:
+.L98:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
 	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
 	.sdecl	'.debug_line',debug,cluster('RobotJumpLine')
 	.sect	'.debug_line'
-.L83:
-	.word	.L318-.L317
-.L317:
+.L99:
+	.word	.L392-.L391
+.L391:
 	.half	3
-	.word	.L320-.L319
-.L319:
+	.word	.L394-.L393
+.L393:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/src/robot.c',0,0,0,0,0
-.L320:
+.L394:
 	.byte	5,10,7,0,5,2
-	.word	.L54
+	.word	.L64
 	.byte	3,241,0,1,5,8,9
-	.half	.L321-.L54
+	.half	.L395-.L64
 	.byte	3,1,1,9
-	.half	.L322-.L321
+	.half	.L396-.L395
 	.byte	3,11,1,9
-	.half	.L323-.L322
+	.half	.L397-.L396
 	.byte	3,8,1,9
-	.half	.L324-.L323
+	.half	.L398-.L397
 	.byte	3,8,1,9
-	.half	.L325-.L324
+	.half	.L399-.L398
 	.byte	3,7,1,9
-	.half	.L326-.L325
+	.half	.L400-.L399
 	.byte	3,5,1,5,4,9
-	.half	.L25-.L326
+	.half	.L25-.L400
 	.byte	3,90,1,5,28,9
-	.half	.L327-.L25
+	.half	.L401-.L25
 	.byte	1,5,26,9
-	.half	.L328-.L327
+	.half	.L402-.L401
 	.byte	1,5,4,9
-	.half	.L329-.L328
+	.half	.L403-.L402
 	.byte	3,1,1,5,28,9
-	.half	.L330-.L329
+	.half	.L404-.L403
 	.byte	1,5,26,9
-	.half	.L331-.L330
+	.half	.L405-.L404
 	.byte	1,5,4,9
-	.half	.L332-.L331
+	.half	.L406-.L405
 	.byte	3,1,1,5,49,9
-	.half	.L333-.L332
+	.half	.L407-.L406
 	.byte	1,5,65,9
-	.half	.L334-.L333
+	.half	.L408-.L407
 	.byte	1,5,26,9
-	.half	.L335-.L334
+	.half	.L409-.L408
 	.byte	1,5,4,9
-	.half	.L336-.L335
+	.half	.L410-.L409
 	.byte	3,1,1,5,53,9
-	.half	.L337-.L336
+	.half	.L411-.L410
 	.byte	1,5,67,9
-	.half	.L338-.L337
+	.half	.L412-.L411
 	.byte	1,5,26,9
-	.half	.L339-.L338
+	.half	.L413-.L412
 	.byte	1,5,4,9
-	.half	.L340-.L339
+	.half	.L414-.L413
 	.byte	3,1,1,5,46,9
-	.half	.L341-.L340
+	.half	.L415-.L414
 	.byte	1,5,53,9
-	.half	.L342-.L341
+	.half	.L416-.L415
 	.byte	1,5,26,9
-	.half	.L343-.L342
+	.half	.L417-.L416
 	.byte	1,5,4,9
-	.half	.L344-.L343
+	.half	.L418-.L417
 	.byte	3,3,1,5,17,9
-	.half	.L345-.L344
+	.half	.L419-.L418
 	.byte	1,5,4,9
-	.half	.L346-.L345
+	.half	.L420-.L419
 	.byte	3,1,1,5,22,9
-	.half	.L26-.L346
+	.half	.L26-.L420
 	.byte	3,4,1,5,40,9
-	.half	.L347-.L26
+	.half	.L421-.L26
 	.byte	1,5,45,9
-	.half	.L348-.L347
+	.half	.L422-.L421
 	.byte	1,5,4,9
-	.half	.L349-.L348
+	.half	.L423-.L422
 	.byte	1,5,5,7,9
-	.half	.L350-.L349
+	.half	.L424-.L423
 	.byte	3,1,1,5,27,9
-	.half	.L351-.L350
+	.half	.L425-.L424
 	.byte	1,5,25,9
-	.half	.L352-.L351
+	.half	.L426-.L425
 	.byte	1,5,5,9
-	.half	.L353-.L352
+	.half	.L427-.L426
 	.byte	3,1,1,5,18,9
-	.half	.L354-.L353
+	.half	.L428-.L427
 	.byte	1,5,5,9
-	.half	.L355-.L354
+	.half	.L429-.L428
 	.byte	3,1,1,5,28,9
-	.half	.L356-.L355
+	.half	.L430-.L429
 	.byte	1,5,26,9
-	.half	.L357-.L356
+	.half	.L431-.L430
 	.byte	1,5,4,9
-	.half	.L33-.L357
+	.half	.L33-.L431
 	.byte	3,2,1,5,22,9
 	.half	.L27-.L33
 	.byte	3,3,1,5,40,9
-	.half	.L358-.L27
+	.half	.L432-.L27
 	.byte	1,5,45,9
-	.half	.L359-.L358
+	.half	.L433-.L432
 	.byte	1,5,4,9
-	.half	.L360-.L359
+	.half	.L434-.L433
 	.byte	1,5,5,7,9
-	.half	.L361-.L360
+	.half	.L435-.L434
 	.byte	3,1,1,5,27,9
-	.half	.L362-.L361
+	.half	.L436-.L435
 	.byte	1,5,25,9
-	.half	.L363-.L362
+	.half	.L437-.L436
 	.byte	1,5,5,9
-	.half	.L364-.L363
+	.half	.L438-.L437
 	.byte	3,1,1,5,18,9
-	.half	.L365-.L364
+	.half	.L439-.L438
 	.byte	1,5,5,9
-	.half	.L366-.L365
+	.half	.L440-.L439
 	.byte	3,1,1,5,28,9
-	.half	.L367-.L366
+	.half	.L441-.L440
 	.byte	1,5,26,9
-	.half	.L368-.L367
+	.half	.L442-.L441
 	.byte	1,5,4,9
-	.half	.L35-.L368
+	.half	.L35-.L442
 	.byte	3,2,1,5,22,9
 	.half	.L28-.L35
 	.byte	3,3,1,5,40,9
-	.half	.L369-.L28
+	.half	.L443-.L28
 	.byte	1,5,45,9
-	.half	.L370-.L369
+	.half	.L444-.L443
 	.byte	1,5,4,9
-	.half	.L371-.L370
+	.half	.L445-.L444
 	.byte	1,5,5,7,9
-	.half	.L372-.L371
+	.half	.L446-.L445
 	.byte	3,1,1,5,18,9
-	.half	.L373-.L372
+	.half	.L447-.L446
 	.byte	1,5,5,9
-	.half	.L374-.L373
+	.half	.L448-.L447
 	.byte	3,1,1,5,28,9
-	.half	.L375-.L374
+	.half	.L449-.L448
 	.byte	1,5,26,9
-	.half	.L376-.L375
+	.half	.L450-.L449
 	.byte	1,5,4,9
-	.half	.L37-.L376
+	.half	.L37-.L450
 	.byte	3,2,1,9
 	.half	.L29-.L37
 	.byte	3,4,1,5,17,9
-	.half	.L377-.L29
+	.half	.L451-.L29
 	.byte	1,5,4,9
-	.half	.L378-.L377
+	.half	.L452-.L451
 	.byte	3,1,1,9
-	.half	.L30-.L378
+	.half	.L30-.L452
 	.byte	3,4,1,5,17,9
-	.half	.L379-.L30
+	.half	.L453-.L30
 	.byte	1,5,4,9
-	.half	.L380-.L379
+	.half	.L454-.L453
 	.byte	3,1,1,9
-	.half	.L31-.L380
+	.half	.L31-.L454
 	.byte	3,5,1,5,20,9
-	.half	.L381-.L31
+	.half	.L455-.L31
 	.byte	1,5,18,9
-	.half	.L382-.L381
+	.half	.L456-.L455
 	.byte	1,5,11,9
-	.half	.L383-.L382
+	.half	.L457-.L456
 	.byte	3,1,1,5,4,9
-	.half	.L384-.L383
+	.half	.L458-.L457
 	.byte	1,5,17,9
-	.half	.L32-.L384
+	.half	.L32-.L458
 	.byte	3,3,1,5,21,9
-	.half	.L385-.L32
+	.half	.L459-.L32
 	.byte	1,5,24,9
-	.half	.L386-.L385
+	.half	.L460-.L459
 	.byte	1,5,39,9
-	.half	.L387-.L386
+	.half	.L461-.L460
 	.byte	1,5,9,9
-	.half	.L388-.L387
+	.half	.L462-.L461
 	.byte	3,2,1,5,2,9
-	.half	.L389-.L388
+	.half	.L463-.L462
 	.byte	1,5,1,9
-	.half	.L41-.L389
+	.half	.L41-.L463
 	.byte	3,1,1,7,9
-	.half	.L85-.L41
+	.half	.L101-.L41
 	.byte	0,1,1
-.L318:
+.L392:
 	.sdecl	'.debug_ranges',debug,cluster('RobotJumpLine')
 	.sect	'.debug_ranges'
-.L84:
-	.word	-1,.L54,0,.L85-.L54,0,0
+.L100:
+	.word	-1,.L64,0,.L101-.L64,0,0
 	.sdecl	'.debug_info',debug,cluster('RobotJumpLineInit')
 	.sect	'.debug_info'
-.L86:
+.L102:
 	.word	219
 	.half	3
-	.word	.L87
+	.word	.L103
 	.byte	4,1
 	.byte	'../code/src/robot.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1
-	.word	.L89,.L88
+	.word	.L105,.L104
 	.byte	2
-	.word	.L67
+	.word	.L83
 	.byte	3
 	.byte	'RobotJumpLineInit',0,1,32,6,1,1,1
-	.word	.L50,.L146,.L49
+	.word	.L60,.L177,.L59
 	.byte	4
-	.word	.L50,.L146
+	.word	.L60,.L177
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('RobotJumpLineInit')
 	.sect	'.debug_abbrev'
-.L87:
+.L103:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('RobotJumpLineInit')
 	.sect	'.debug_line'
-.L88:
-	.word	.L391-.L390
-.L390:
+.L104:
+	.word	.L465-.L464
+.L464:
 	.half	3
-	.word	.L393-.L392
-.L392:
+	.word	.L467-.L466
+.L466:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/src/robot.c',0,0,0,0,0
-.L393:
+.L467:
 	.byte	5,2,7,0,5,2
-	.word	.L50
+	.word	.L60
 	.byte	3,34,1,5,28,9
-	.half	.L394-.L50
+	.half	.L468-.L60
 	.byte	1,5,26,9
-	.half	.L395-.L394
+	.half	.L469-.L468
 	.byte	1,5,2,9
-	.half	.L396-.L395
+	.half	.L470-.L469
 	.byte	3,1,1,5,28,9
-	.half	.L397-.L396
+	.half	.L471-.L470
 	.byte	1,5,26,9
-	.half	.L398-.L397
+	.half	.L472-.L471
 	.byte	1,5,2,9
-	.half	.L399-.L398
+	.half	.L473-.L472
 	.byte	3,2,1,5,28,9
-	.half	.L400-.L399
+	.half	.L474-.L473
 	.byte	1,5,26,9
-	.half	.L401-.L400
+	.half	.L475-.L474
 	.byte	1,5,2,9
-	.half	.L402-.L401
+	.half	.L476-.L475
 	.byte	3,1,1,5,28,9
-	.half	.L403-.L402
+	.half	.L477-.L476
 	.byte	1,5,26,9
-	.half	.L404-.L403
+	.half	.L478-.L477
 	.byte	1,5,2,9
-	.half	.L405-.L404
+	.half	.L479-.L478
 	.byte	3,2,1,5,28,9
-	.half	.L406-.L405
+	.half	.L480-.L479
 	.byte	1,5,26,9
-	.half	.L407-.L406
+	.half	.L481-.L480
 	.byte	1,5,2,9
-	.half	.L408-.L407
+	.half	.L482-.L481
 	.byte	3,1,1,5,28,9
-	.half	.L409-.L408
+	.half	.L483-.L482
 	.byte	1,5,26,9
-	.half	.L410-.L409
+	.half	.L484-.L483
 	.byte	1,5,2,9
-	.half	.L411-.L410
+	.half	.L485-.L484
 	.byte	3,2,1,5,28,9
-	.half	.L412-.L411
+	.half	.L486-.L485
 	.byte	1,5,26,9
-	.half	.L413-.L412
+	.half	.L487-.L486
 	.byte	1,5,2,9
-	.half	.L414-.L413
+	.half	.L488-.L487
 	.byte	3,1,1,5,28,9
-	.half	.L415-.L414
+	.half	.L489-.L488
 	.byte	1,5,26,9
-	.half	.L416-.L415
+	.half	.L490-.L489
 	.byte	1,5,2,9
-	.half	.L417-.L416
+	.half	.L491-.L490
 	.byte	3,2,1,5,28,9
-	.half	.L418-.L417
+	.half	.L492-.L491
 	.byte	1,5,26,9
-	.half	.L419-.L418
+	.half	.L493-.L492
 	.byte	1,5,2,9
-	.half	.L420-.L419
+	.half	.L494-.L493
 	.byte	3,1,1,5,28,9
-	.half	.L421-.L420
+	.half	.L495-.L494
 	.byte	1,5,26,9
-	.half	.L422-.L421
+	.half	.L496-.L495
 	.byte	1,5,1,9
-	.half	.L423-.L422
+	.half	.L497-.L496
 	.byte	3,2,1,7,9
-	.half	.L90-.L423
+	.half	.L106-.L497
 	.byte	0,1,1
-.L391:
+.L465:
 	.sdecl	'.debug_ranges',debug,cluster('RobotJumpLineInit')
 	.sect	'.debug_ranges'
-.L89:
-	.word	-1,.L50,0,.L90-.L50,0,0
+.L105:
+	.word	-1,.L60,0,.L106-.L60,0,0
 	.sdecl	'.debug_info',debug,cluster('RobotError')
 	.sect	'.debug_info'
-.L91:
+.L107:
 	.word	239
 	.half	3
-	.word	.L92
+	.word	.L108
 	.byte	4,1
 	.byte	'../code/src/robot.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1
-	.word	.L94,.L93
+	.word	.L110,.L109
 	.byte	2
-	.word	.L67
+	.word	.L83
 	.byte	3
 	.byte	'RobotError',0,1,176,1,6,1,1,1
-	.word	.L56,.L147,.L55
+	.word	.L66,.L178,.L65
 	.byte	4
-	.word	.L56,.L147
+	.word	.L66,.L178
 	.byte	4
 	.word	.L44,.L43
 	.byte	5
 	.byte	'i',0,1,179,1,15
-	.word	.L148,.L149
+	.word	.L179,.L180
 	.byte	0,0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('RobotError')
 	.sect	'.debug_abbrev'
-.L92:
+.L108:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
 	.sdecl	'.debug_line',debug,cluster('RobotError')
 	.sect	'.debug_line'
-.L93:
-	.word	.L425-.L424
-.L424:
+.L109:
+	.word	.L499-.L498
+.L498:
 	.half	3
-	.word	.L427-.L426
-.L426:
+	.word	.L501-.L500
+.L500:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/src/robot.c',0,0,0,0,0
-.L427:
+.L501:
 	.byte	5,8,7,0,5,2
-	.word	.L56
+	.word	.L66
 	.byte	3,177,1,1,5,17,9
-	.half	.L44-.L56
+	.half	.L44-.L66
 	.byte	3,1,1,5,27,9
-	.half	.L168-.L44
+	.half	.L221-.L44
 	.byte	1,5,53,9
-	.half	.L46-.L168
+	.half	.L46-.L221
 	.byte	1,5,60,9
-	.half	.L428-.L46
+	.half	.L502-.L46
 	.byte	1,5,30,9
-	.half	.L170-.L428
+	.half	.L223-.L502
 	.byte	1,5,27,9
-	.half	.L45-.L170
+	.half	.L45-.L223
 	.byte	1,5,8,7,9
 	.half	.L43-.L45
 	.byte	3,127,1,5,1,9
-	.half	.L429-.L43
+	.half	.L503-.L43
 	.byte	3,2,1,7,9
-	.half	.L95-.L429
+	.half	.L111-.L503
 	.byte	0,1,1
-.L425:
+.L499:
 	.sdecl	'.debug_ranges',debug,cluster('RobotError')
 	.sect	'.debug_ranges'
-.L94:
-	.word	-1,.L56,0,.L95-.L56,0,0
+.L110:
+	.word	-1,.L66,0,.L111-.L66,0,0
 	.sdecl	'.debug_info',debug,cluster('Start')
 	.sect	'.debug_info'
-.L96:
+.L112:
 	.word	230
 	.half	3
-	.word	.L97
+	.word	.L113
 	.byte	4,1
 	.byte	'../code/src/robot.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1
-	.word	.L99,.L98
+	.word	.L115,.L114
 	.byte	2
-	.word	.L67
+	.word	.L83
 	.byte	3
 	.byte	'Start',0,1,184,1,6,1,1,1
-	.word	.L58,.L150,.L57
+	.word	.L68,.L181,.L67
 	.byte	4
 	.byte	'pipeline',0,1,184,1,26
-	.word	.L151,.L152
+	.word	.L182,.L183
 	.byte	5
-	.word	.L58,.L150
+	.word	.L68,.L181
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('Start')
 	.sect	'.debug_abbrev'
-.L97:
+.L113:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('Start')
 	.sect	'.debug_line'
-.L98:
-	.word	.L431-.L430
-.L430:
+.L114:
+	.word	.L505-.L504
+.L504:
 	.half	3
-	.word	.L433-.L432
-.L432:
+	.word	.L507-.L506
+.L506:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/src/robot.c',0,0,0,0,0
-.L433:
+.L507:
 	.byte	5,20,7,0,5,2
-	.word	.L58
+	.word	.L68
 	.byte	3,185,1,1,5,18,9
-	.half	.L434-.L58
+	.half	.L508-.L68
 	.byte	1,5,20,9
-	.half	.L435-.L434
+	.half	.L509-.L508
 	.byte	3,1,1,5,18,9
-	.half	.L436-.L435
+	.half	.L510-.L509
 	.byte	1,5,1,9
-	.half	.L437-.L436
+	.half	.L511-.L510
 	.byte	3,1,1,7,9
-	.half	.L100-.L437
+	.half	.L116-.L511
 	.byte	0,1,1
-.L431:
+.L505:
 	.sdecl	'.debug_ranges',debug,cluster('Start')
 	.sect	'.debug_ranges'
-.L99:
-	.word	-1,.L58,0,.L100-.L58,0,0
+.L115:
+	.word	-1,.L68,0,.L116-.L68,0,0
 	.sdecl	'.debug_info',debug,cluster('Prepared')
 	.sect	'.debug_info'
-.L101:
+.L117:
 	.word	233
 	.half	3
-	.word	.L102
+	.word	.L118
 	.byte	4,1
 	.byte	'../code/src/robot.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1
-	.word	.L104,.L103
+	.word	.L120,.L119
 	.byte	2
-	.word	.L67
+	.word	.L83
 	.byte	3
 	.byte	'Prepared',0,1,190,1,6,1,1,1
-	.word	.L60,.L153,.L59
+	.word	.L70,.L184,.L69
 	.byte	4
 	.byte	'pipeline',0,1,190,1,29
-	.word	.L151,.L154
+	.word	.L182,.L185
 	.byte	5
-	.word	.L60,.L153
+	.word	.L70,.L184
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('Prepared')
 	.sect	'.debug_abbrev'
-.L102:
+.L118:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('Prepared')
 	.sect	'.debug_line'
-.L103:
-	.word	.L439-.L438
-.L438:
+.L119:
+	.word	.L513-.L512
+.L512:
 	.half	3
-	.word	.L441-.L440
-.L440:
+	.word	.L515-.L514
+.L514:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/src/robot.c',0,0,0,0,0
-.L441:
+.L515:
 	.byte	5,20,7,0,5,2
-	.word	.L60
+	.word	.L70
 	.byte	3,191,1,1,5,18,9
-	.half	.L442-.L60
+	.half	.L516-.L70
 	.byte	1,5,1,9
-	.half	.L443-.L442
+	.half	.L517-.L516
 	.byte	3,1,1,7,9
-	.half	.L105-.L443
+	.half	.L121-.L517
 	.byte	0,1,1
-.L439:
+.L513:
 	.sdecl	'.debug_ranges',debug,cluster('Prepared')
 	.sect	'.debug_ranges'
-.L104:
-	.word	-1,.L60,0,.L105-.L60,0,0
+.L120:
+	.word	-1,.L70,0,.L121-.L70,0,0
 	.sdecl	'.debug_info',debug,cluster('Processed')
 	.sect	'.debug_info'
-.L106:
+.L122:
 	.word	234
 	.half	3
-	.word	.L107
+	.word	.L123
 	.byte	4,1
 	.byte	'../code/src/robot.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1
-	.word	.L109,.L108
+	.word	.L125,.L124
 	.byte	2
-	.word	.L67
+	.word	.L83
 	.byte	3
 	.byte	'Processed',0,1,195,1,6,1,1,1
-	.word	.L62,.L155,.L61
+	.word	.L72,.L186,.L71
 	.byte	4
 	.byte	'pipeline',0,1,195,1,30
-	.word	.L151,.L156
+	.word	.L182,.L187
 	.byte	5
-	.word	.L62,.L155
+	.word	.L72,.L186
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('Processed')
 	.sect	'.debug_abbrev'
-.L107:
+.L123:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('Processed')
 	.sect	'.debug_line'
-.L108:
-	.word	.L445-.L444
-.L444:
+.L124:
+	.word	.L519-.L518
+.L518:
 	.half	3
-	.word	.L447-.L446
-.L446:
+	.word	.L521-.L520
+.L520:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/src/robot.c',0,0,0,0,0
-.L447:
+.L521:
 	.byte	5,20,7,0,5,2
-	.word	.L62
+	.word	.L72
 	.byte	3,196,1,1,5,18,9
-	.half	.L448-.L62
+	.half	.L522-.L72
 	.byte	1,5,20,9
-	.half	.L449-.L448
+	.half	.L523-.L522
 	.byte	3,1,1,5,18,9
-	.half	.L450-.L449
+	.half	.L524-.L523
 	.byte	1,5,1,9
-	.half	.L451-.L450
+	.half	.L525-.L524
 	.byte	3,1,1,7,9
-	.half	.L110-.L451
+	.half	.L126-.L525
 	.byte	0,1,1
-.L445:
+.L519:
 	.sdecl	'.debug_ranges',debug,cluster('Processed')
 	.sect	'.debug_ranges'
-.L109:
-	.word	-1,.L62,0,.L110-.L62,0,0
+.L125:
+	.word	-1,.L72,0,.L126-.L72,0,0
 	.sdecl	'.debug_info',debug,cluster('BalanceInit')
 	.sect	'.debug_info'
-.L111:
+.L127:
 	.word	214
 	.half	3
-	.word	.L112
+	.word	.L128
 	.byte	4,1
 	.byte	'../code/src/robot.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1
-	.word	.L114,.L113
+	.word	.L130,.L129
 	.byte	2
-	.word	.L67
+	.word	.L83
 	.byte	3
 	.byte	'BalanceInit',0,1,207,1,6,1,1,1
-	.word	.L64,.L157,.L63
+	.word	.L74,.L188,.L73
 	.byte	4
-	.word	.L64,.L157
+	.word	.L74,.L188
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('BalanceInit')
 	.sect	'.debug_abbrev'
-.L112:
+.L128:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('BalanceInit')
 	.sect	'.debug_line'
-.L113:
-	.word	.L453-.L452
-.L452:
+.L129:
+	.word	.L527-.L526
+.L526:
 	.half	3
-	.word	.L455-.L454
-.L454:
+	.word	.L529-.L528
+.L528:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/src/robot.c',0,0,0,0,0
-.L455:
+.L529:
 	.byte	5,6,7,0,5,2
-	.word	.L64
+	.word	.L74
 	.byte	3,206,1,1,5,54,9
-	.half	.L171-.L64
+	.half	.L224-.L74
 	.byte	3,3,1,5,15,9
-	.half	.L456-.L171
+	.half	.L530-.L224
 	.byte	1,5,20,9
-	.half	.L457-.L456
+	.half	.L531-.L530
 	.byte	1,5,31,9
-	.half	.L458-.L457
+	.half	.L532-.L531
 	.byte	1,5,36,9
-	.half	.L459-.L458
+	.half	.L533-.L532
 	.byte	1,5,41,9
-	.half	.L460-.L459
+	.half	.L534-.L533
 	.byte	1,5,46,9
-	.half	.L461-.L460
+	.half	.L535-.L534
 	.byte	1,5,53,9
-	.half	.L462-.L461
+	.half	.L536-.L535
 	.byte	3,1,1,5,15,9
-	.half	.L463-.L462
+	.half	.L537-.L536
 	.byte	1,5,20,9
-	.half	.L464-.L463
+	.half	.L538-.L537
 	.byte	1,5,30,9
-	.half	.L465-.L464
+	.half	.L539-.L538
 	.byte	1,5,35,9
-	.half	.L466-.L465
+	.half	.L540-.L539
 	.byte	1,5,40,9
-	.half	.L467-.L466
+	.half	.L541-.L540
 	.byte	1,5,45,9
-	.half	.L468-.L467
+	.half	.L542-.L541
 	.byte	1,5,52,9
-	.half	.L469-.L468
+	.half	.L543-.L542
 	.byte	3,1,1,5,15,9
-	.half	.L470-.L469
+	.half	.L544-.L543
 	.byte	1,5,20,9
-	.half	.L471-.L470
+	.half	.L545-.L544
 	.byte	1,5,29,9
-	.half	.L472-.L471
+	.half	.L546-.L545
 	.byte	1,5,34,9
-	.half	.L473-.L472
+	.half	.L547-.L546
 	.byte	1,5,39,9
-	.half	.L474-.L473
+	.half	.L548-.L547
 	.byte	1,5,44,9
-	.half	.L475-.L474
+	.half	.L549-.L548
 	.byte	1,5,1,9
-	.half	.L476-.L475
+	.half	.L550-.L549
 	.byte	3,1,1,7,9
-	.half	.L115-.L476
+	.half	.L131-.L550
 	.byte	0,1,1
-.L453:
+.L527:
 	.sdecl	'.debug_ranges',debug,cluster('BalanceInit')
 	.sect	'.debug_ranges'
-.L114:
-	.word	-1,.L64,0,.L115-.L64,0,0
+.L130:
+	.word	-1,.L74,0,.L131-.L74,0,0
 	.sdecl	'.debug_info',debug,cluster('BalancePitch')
 	.sect	'.debug_info'
-.L116:
+.L132:
 	.word	215
 	.half	3
-	.word	.L117
+	.word	.L133
 	.byte	4,1
 	.byte	'../code/src/robot.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1
-	.word	.L119,.L118
+	.word	.L135,.L134
 	.byte	2
-	.word	.L67
+	.word	.L83
 	.byte	3
 	.byte	'BalancePitch',0,1,226,1,6,1,1,1
-	.word	.L66,.L158,.L65
+	.word	.L76,.L189,.L75
 	.byte	4
-	.word	.L66,.L158
+	.word	.L76,.L189
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('BalancePitch')
 	.sect	'.debug_abbrev'
-.L117:
+.L133:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('BalancePitch')
 	.sect	'.debug_line'
-.L118:
-	.word	.L478-.L477
-.L477:
+.L134:
+	.word	.L552-.L551
+.L551:
 	.half	3
-	.word	.L480-.L479
-.L479:
+	.word	.L554-.L553
+.L553:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/src/robot.c',0,0,0,0,0
-.L480:
+.L554:
 	.byte	5,1,7,0,5,2
-	.word	.L66
-	.byte	3,230,1,1,7,9
-	.half	.L120-.L66
+	.word	.L76
+	.byte	3,228,1,1,7,9
+	.half	.L136-.L76
 	.byte	0,1,1
-.L478:
+.L552:
 	.sdecl	'.debug_ranges',debug,cluster('BalancePitch')
 	.sect	'.debug_ranges'
-.L119:
-	.word	-1,.L66,0,.L120-.L66,0,0
+.L135:
+	.word	-1,.L76,0,.L136-.L76,0,0
+	.sdecl	'.debug_info',debug,cluster('Balance')
+	.sect	'.debug_info'
+.L137:
+	.word	368
+	.half	3
+	.word	.L138
+	.byte	4,1
+	.byte	'../code/src/robot.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1
+	.word	.L140,.L139
+	.byte	2
+	.word	.L83
+	.byte	3
+	.byte	'Balance',0,1,240,1,7
+	.word	.L161
+	.byte	1,1,1
+	.word	.L78,.L190,.L77
+	.byte	4
+	.byte	'Angle',0,1,240,1,21
+	.word	.L161,.L191
+	.byte	4
+	.byte	'Gyro',0,1,240,1,34
+	.word	.L161,.L192
+	.byte	5
+	.word	.L78,.L190
+	.byte	6
+	.byte	'Balance_KP',0,1,242,1,8
+	.word	.L193,.L194
+	.byte	6
+	.byte	'Balance_KD',0,1,242,1,24
+	.word	.L193,.L195
+	.byte	6
+	.byte	'Angle_bias',0,1,243,1,8
+	.word	.L161,.L196
+	.byte	6
+	.byte	'Gyro_bias',0,1,243,1,20
+	.word	.L161,.L197
+	.byte	6
+	.byte	'balance',0,1,244,1,8
+	.word	.L161,.L198
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Balance')
+	.sect	'.debug_abbrev'
+.L138:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Balance')
+	.sect	'.debug_line'
+.L139:
+	.word	.L556-.L555
+.L555:
+	.half	3
+	.word	.L558-.L557
+.L557:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../code/src/robot.c',0,0,0,0,0
+.L558:
+	.byte	5,15,7,0,5,2
+	.word	.L78
+	.byte	3,245,1,1,5,39,9
+	.half	.L559-.L78
+	.byte	1,5,17,9
+	.half	.L226-.L559
+	.byte	3,1,1,5,13,9
+	.half	.L228-.L226
+	.byte	3,2,1,9
+	.half	.L230-.L228
+	.byte	3,1,1,5,16,9
+	.half	.L232-.L230
+	.byte	3,1,1,5,30,9
+	.half	.L560-.L232
+	.byte	1,5,28,9
+	.half	.L561-.L560
+	.byte	1,5,34,9
+	.half	.L562-.L561
+	.byte	1,5,61,9
+	.half	.L563-.L562
+	.byte	1,5,59,9
+	.half	.L227-.L563
+	.byte	1,5,74,9
+	.half	.L564-.L227
+	.byte	1,5,72,9
+	.half	.L229-.L564
+	.byte	1,5,47,9
+	.half	.L565-.L229
+	.byte	1,5,2,9
+	.half	.L231-.L565
+	.byte	3,1,1,5,1,9
+	.half	.L47-.L231
+	.byte	3,1,1,7,9
+	.half	.L141-.L47
+	.byte	0,1,1
+.L556:
+	.sdecl	'.debug_ranges',debug,cluster('Balance')
+	.sect	'.debug_ranges'
+.L140:
+	.word	-1,.L78,0,.L141-.L78,0,0
+	.sdecl	'.debug_info',debug,cluster('Velocity')
+	.sect	'.debug_info'
+.L142:
+	.word	432
+	.half	3
+	.word	.L143
+	.byte	4,1
+	.byte	'../code/src/robot.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1
+	.word	.L145,.L144
+	.byte	2
+	.word	.L83
+	.byte	3
+	.byte	'Velocity',0,1,134,2,7
+	.word	.L161
+	.byte	1,1,1
+	.word	.L80,.L199,.L79
+	.byte	4
+	.byte	'encoder_left',0,1,134,2,20
+	.word	.L193,.L200
+	.byte	4
+	.byte	'encoder_right',0,1,134,2,38
+	.word	.L193,.L201
+	.byte	5
+	.word	.L80,.L199
+	.byte	6
+	.byte	'Velocity_KP',0,1,136,2,6
+	.word	.L193,.L202
+	.byte	6
+	.byte	'Velocity_KI',0,1,136,2,23
+	.word	.L193,.L203
+	.byte	7
+	.byte	'velocity',0,1,138,2,15
+	.word	.L161
+	.byte	5,3
+	.word	_999002_velocity
+	.byte	7
+	.byte	'Encoder_Least',0,1,138,2,29
+	.word	.L161
+	.byte	5,3
+	.word	_999003_Encoder_Least
+	.byte	7
+	.byte	'Encoder_bias',0,1,138,2,48
+	.word	.L161
+	.byte	5,3
+	.word	_999004_Encoder_bias
+	.byte	7
+	.byte	'Encoder_Integral',0,1,139,2,15
+	.word	.L161
+	.byte	5,3
+	.word	_999005_Encoder_Integral
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Velocity')
+	.sect	'.debug_abbrev'
+.L143:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,7,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Velocity')
+	.sect	'.debug_line'
+.L144:
+	.word	.L567-.L566
+.L566:
+	.half	3
+	.word	.L569-.L568
+.L568:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../code/src/robot.c',0,0,0,0,0
+.L569:
+	.byte	5,7,7,0,5,2
+	.word	.L80
+	.byte	3,133,2,1,5,18,9
+	.half	.L233-.L80
+	.byte	3,2,1,5,35,9
+	.half	.L235-.L233
+	.byte	1,5,2,9
+	.half	.L237-.L235
+	.byte	3,5,1,5,36,9
+	.half	.L570-.L237
+	.byte	1,5,20,9
+	.half	.L571-.L570
+	.byte	1,5,16,9
+	.half	.L572-.L571
+	.byte	1,5,2,9
+	.half	.L573-.L572
+	.byte	3,1,1,5,19,9
+	.half	.L574-.L573
+	.byte	1,5,16,9
+	.half	.L575-.L574
+	.byte	1,5,2,9
+	.half	.L576-.L575
+	.byte	3,1,1,5,19,9
+	.half	.L577-.L576
+	.byte	1,5,35,9
+	.half	.L578-.L577
+	.byte	1,5,2,9
+	.half	.L579-.L578
+	.byte	1,5,16,9
+	.half	.L580-.L579
+	.byte	1,5,2,9
+	.half	.L581-.L580
+	.byte	3,1,1,5,22,9
+	.half	.L582-.L581
+	.byte	1,5,19,9
+	.half	.L583-.L582
+	.byte	1,5,2,9
+	.half	.L584-.L583
+	.byte	3,2,1,9
+	.half	.L52-.L584
+	.byte	3,2,1,5,14,9
+	.half	.L585-.L52
+	.byte	1,5,29,9
+	.half	.L586-.L585
+	.byte	1,5,27,9
+	.half	.L587-.L586
+	.byte	1,5,43,9
+	.half	.L588-.L587
+	.byte	1,5,41,9
+	.half	.L589-.L588
+	.byte	1,5,49,9
+	.half	.L590-.L589
+	.byte	1,5,68,9
+	.half	.L591-.L590
+	.byte	1,5,66,9
+	.half	.L592-.L591
+	.byte	1,5,82,9
+	.half	.L593-.L592
+	.byte	1,5,80,9
+	.half	.L594-.L593
+	.byte	1,5,47,9
+	.half	.L595-.L594
+	.byte	1,5,11,9
+	.half	.L596-.L595
+	.byte	1,5,9,9
+	.half	.L597-.L596
+	.byte	3,1,1,5,2,9
+	.half	.L236-.L597
+	.byte	1,5,1,9
+	.half	.L55-.L236
+	.byte	3,1,1,7,9
+	.half	.L146-.L55
+	.byte	0,1,1
+.L567:
+	.sdecl	'.debug_ranges',debug,cluster('Velocity')
+	.sect	'.debug_ranges'
+.L145:
+	.word	-1,.L80,0,.L146-.L80,0,0
+	.sdecl	'.debug_info',debug,cluster('Turn')
+	.sect	'.debug_info'
+.L147:
+	.word	356
+	.half	3
+	.word	.L148
+	.byte	4,1
+	.byte	'../code/src/robot.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1
+	.word	.L150,.L149
+	.byte	2
+	.word	.L83
+	.byte	3
+	.byte	'Turn',0,1,159,2,7
+	.word	.L161
+	.byte	1,1,1
+	.word	.L82,.L204,.L81
+	.byte	4
+	.byte	'Angle',0,1,159,2,18
+	.word	.L161,.L205
+	.byte	4
+	.byte	'Gyro',0,1,159,2,31
+	.word	.L161,.L206
+	.byte	5
+	.word	.L82,.L204
+	.byte	6
+	.byte	'Turn_KP',0,1,161,2,8
+	.word	.L193,.L207
+	.byte	6
+	.byte	'Turn_KD',0,1,161,2,21
+	.word	.L193,.L208
+	.byte	6
+	.byte	'Angle_bias',0,1,162,2,8
+	.word	.L161,.L209
+	.byte	6
+	.byte	'Gyro_bias',0,1,162,2,20
+	.word	.L161,.L210
+	.byte	6
+	.byte	'turn',0,1,163,2,8
+	.word	.L161,.L211
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Turn')
+	.sect	'.debug_abbrev'
+.L148:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Turn')
+	.sect	'.debug_line'
+.L149:
+	.word	.L599-.L598
+.L598:
+	.half	3
+	.word	.L601-.L600
+.L600:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../code/src/robot.c',0,0,0,0,0
+.L601:
+	.byte	5,16,7,0,5,2
+	.word	.L82
+	.byte	3,160,2,1,5,29,9
+	.half	.L239-.L82
+	.byte	1,5,17,9
+	.half	.L241-.L239
+	.byte	3,3,1,9
+	.half	.L243-.L241
+	.byte	3,1,1,5,13,9
+	.half	.L245-.L243
+	.byte	3,1,1,5,24,9
+	.half	.L602-.L245
+	.byte	1,5,22,9
+	.half	.L603-.L602
+	.byte	1,5,28,9
+	.half	.L604-.L603
+	.byte	1,5,55,9
+	.half	.L605-.L604
+	.byte	1,5,53,9
+	.half	.L240-.L605
+	.byte	1,5,65,9
+	.half	.L606-.L240
+	.byte	1,5,63,9
+	.half	.L242-.L606
+	.byte	1,5,41,9
+	.half	.L607-.L242
+	.byte	1,5,2,9
+	.half	.L244-.L607
+	.byte	3,2,1,5,1,9
+	.half	.L56-.L244
+	.byte	3,1,1,7,9
+	.half	.L151-.L56
+	.byte	0,1,1
+.L599:
+	.sdecl	'.debug_ranges',debug,cluster('Turn')
+	.sect	'.debug_ranges'
+.L150:
+	.word	-1,.L82,0,.L151-.L82,0,0
 	.sdecl	'.debug_info',debug,cluster('robot')
 	.sect	'.debug_info'
-.L121:
+.L152:
 	.word	185
 	.half	3
-	.word	.L122
+	.word	.L153
 	.byte	4,1
 	.byte	'../code/src/robot.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1,2
-	.word	.L67
+	.word	.L83
 	.byte	3
 	.byte	'robot',0,32,3,11
-	.word	.L159
+	.word	.L212
 	.byte	1,5,3
 	.word	robot
 	.byte	0
 	.sdecl	'.debug_abbrev',debug,cluster('robot')
 	.sect	'.debug_abbrev'
-.L122:
+.L153:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
-	.sdecl	'.debug_loc',debug,cluster('BalanceInit')
+	.sdecl	'.debug_loc',debug,cluster('Balance')
 	.sect	'.debug_loc'
-.L63:
-	.word	-1,.L64,0,.L171-.L64
+.L191:
+	.word	-1,.L78,0,.L225-.L78
+	.half	1
+	.byte	84
+	.word	0,0
+.L196:
+	.word	-1,.L78,.L226-.L78,.L227-.L78
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+.L77:
+	.word	-1,.L78,0,.L190-.L78
 	.half	2
 	.byte	138,0
-	.word	.L171-.L64,.L157-.L64
+	.word	0,0
+.L195:
+	.word	-1,.L78,.L232-.L78,.L190-.L78
+	.half	1
+	.byte	83
+	.word	0,0
+.L194:
+	.word	-1,.L78,.L230-.L78,.L231-.L78
+	.half	1
+	.byte	82
+	.word	0,0
+.L192:
+	.word	-1,.L78,0,.L225-.L78
+	.half	1
+	.byte	85
+	.word	0,0
+.L197:
+	.word	-1,.L78,.L228-.L78,.L229-.L78
+	.half	1
+	.byte	81
+	.word	0,0
+.L198:
+	.word	-1,.L78,.L231-.L78,.L190-.L78
+	.half	1
+	.byte	82
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('BalanceInit')
+	.sect	'.debug_loc'
+.L73:
+	.word	-1,.L74,0,.L224-.L74
+	.half	2
+	.byte	138,0
+	.word	.L224-.L74,.L188-.L74
 	.half	2
 	.byte	138,8
-	.word	.L157-.L64,.L157-.L64
+	.word	.L188-.L74,.L188-.L74
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('BalancePitch')
 	.sect	'.debug_loc'
-.L65:
-	.word	-1,.L66,0,.L158-.L66
+.L75:
+	.word	-1,.L76,0,.L189-.L76
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('Prepared')
 	.sect	'.debug_loc'
-.L59:
-	.word	-1,.L60,0,.L153-.L60
+.L69:
+	.word	-1,.L70,0,.L184-.L70
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L154:
-	.word	-1,.L60,0,.L153-.L60
+.L185:
+	.word	-1,.L70,0,.L184-.L70
 	.half	1
 	.byte	100
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('Processed')
 	.sect	'.debug_loc'
-.L61:
-	.word	-1,.L62,0,.L155-.L62
+.L71:
+	.word	-1,.L72,0,.L186-.L72
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L156:
-	.word	-1,.L62,0,.L155-.L62
+.L187:
+	.word	-1,.L72,0,.L186-.L72
 	.half	1
 	.byte	100
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('RobotDrawLine')
 	.sect	'.debug_loc'
-.L129:
-	.word	-1,.L52,0,.L164-.L52
+.L160:
+	.word	-1,.L62,0,.L217-.L62
 	.half	2
 	.byte	144,34
-	.word	.L3-.L52,.L166-.L52
+	.word	.L3-.L62,.L219-.L62
 	.half	2
 	.byte	144,34
-	.word	.L7-.L52,.L21-.L52
+	.word	.L7-.L62,.L21-.L62
 	.half	2
 	.byte	144,34
-	.word	.L4-.L52,.L6-.L52
+	.word	.L4-.L62,.L6-.L62
 	.half	2
 	.byte	144,34
 	.word	0,0
-.L51:
-	.word	-1,.L52,0,.L127-.L52
+.L61:
+	.word	-1,.L62,0,.L158-.L62
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L137:
+.L168:
 	.word	0,0
-.L131:
-	.word	-1,.L52,0,.L165-.L52
+.L162:
+	.word	-1,.L62,0,.L218-.L62
 	.half	1
 	.byte	86
-	.word	.L3-.L52,.L167-.L52
+	.word	.L3-.L62,.L220-.L62
 	.half	1
 	.byte	86
-	.word	.L7-.L52,.L21-.L52
+	.word	.L7-.L62,.L21-.L62
 	.half	1
 	.byte	86
-	.word	.L4-.L52,.L6-.L52
+	.word	.L4-.L62,.L6-.L62
 	.half	1
 	.byte	86
 	.word	0,0
-.L135:
+.L166:
 	.word	0,0
-.L139:
+.L170:
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('RobotError')
 	.sect	'.debug_loc'
-.L55:
-	.word	-1,.L56,0,.L147-.L56
+.L65:
+	.word	-1,.L66,0,.L178-.L66
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L149:
-	.word	-1,.L56,.L168-.L56,.L43-.L56
+.L180:
+	.word	-1,.L66,.L221-.L66,.L43-.L66
 	.half	1
 	.byte	95
-	.word	.L169-.L56,.L170-.L56
+	.word	.L222-.L66,.L223-.L66
 	.half	1
 	.byte	85
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('RobotJumpLine')
 	.sect	'.debug_loc'
-.L53:
-	.word	-1,.L54,0,.L144-.L54
+.L63:
+	.word	-1,.L64,0,.L175-.L64
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('RobotJumpLineInit')
 	.sect	'.debug_loc'
-.L49:
-	.word	-1,.L50,0,.L146-.L50
+.L59:
+	.word	-1,.L60,0,.L177-.L60
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('Start')
 	.sect	'.debug_loc'
-.L57:
-	.word	-1,.L58,0,.L150-.L58
+.L67:
+	.word	-1,.L68,0,.L181-.L68
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L152:
-	.word	-1,.L58,0,.L150-.L58
+.L183:
+	.word	-1,.L68,0,.L181-.L68
 	.half	1
 	.byte	100
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Turn')
+	.sect	'.debug_loc'
+.L205:
+	.word	-1,.L82,0,.L238-.L82
+	.half	1
+	.byte	84
+	.word	0,0
+.L209:
+	.word	-1,.L82,.L243-.L82,.L244-.L82
+	.half	1
+	.byte	82
+	.word	0,0
+.L206:
+	.word	-1,.L82,0,.L238-.L82
+	.half	1
+	.byte	85
+	.word	0,0
+.L210:
+	.word	-1,.L82,.L245-.L82,.L204-.L82
+	.half	1
+	.byte	83
+	.word	0,0
+.L81:
+	.word	-1,.L82,0,.L204-.L82
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L208:
+	.word	-1,.L82,.L241-.L82,.L242-.L82
+	.half	1
+	.byte	81
+	.word	0,0
+.L207:
+	.word	-1,.L82,.L239-.L82,.L240-.L82
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+.L211:
+	.word	-1,.L82,.L244-.L82,.L204-.L82
+	.half	1
+	.byte	82
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Velocity')
+	.sect	'.debug_loc'
+.L79:
+	.word	-1,.L80,0,.L199-.L80
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L203:
+	.word	-1,.L80,.L237-.L80,.L199-.L80
+	.half	1
+	.byte	83
+	.word	0,0
+.L202:
+	.word	-1,.L80,.L235-.L80,.L236-.L80
+	.half	1
+	.byte	82
+	.word	0,0
+.L200:
+	.word	-1,.L80,0,.L199-.L80
+	.half	1
+	.byte	84
+	.word	.L233-.L80,.L234-.L80
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+.L201:
+	.word	-1,.L80,0,.L199-.L80
+	.half	1
+	.byte	85
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('robotInit')
 	.sect	'.debug_loc'
-.L125:
-	.word	-1,.L48,0,.L160-.L48
+.L156:
+	.word	-1,.L58,0,.L213-.L58
 	.half	1
 	.byte	100
-	.word	.L161-.L48,.L123-.L48
+	.word	.L214-.L58,.L154-.L58
 	.half	1
 	.byte	108
-	.word	.L162-.L48,.L163-.L48
+	.word	.L215-.L58,.L216-.L58
 	.half	1
 	.byte	100
 	.word	0,0
-.L47:
-	.word	-1,.L48,0,.L123-.L48
+.L57:
+	.word	-1,.L58,0,.L154-.L58
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_frame',debug
 	.sect	'.debug_frame'
-.L481:
+.L608:
 	.word	48
 	.word	-1
 	.byte	3,0,2,1,27,12,26,0,8,26,8,27,8,30,8,29,8,28,8,16,8,17,8,24,8,25,8,31,8,32,8,33,8,34,8,35,8,36,8,37,8,38
@@ -22522,51 +23260,66 @@ _999001_JumpLineState:	.type	object
 	.sdecl	'.debug_frame',debug,cluster('robotInit')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L481,.L48,.L123-.L48
+	.word	.L608,.L58,.L154-.L58
 	.sdecl	'.debug_frame',debug,cluster('RobotJumpLineInit')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L481,.L50,.L146-.L50
+	.word	.L608,.L60,.L177-.L60
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	.sdecl	'.debug_frame',debug,cluster('RobotDrawLine')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L481,.L52,.L127-.L52
+	.word	.L608,.L62,.L158-.L62
 	.sdecl	'.debug_frame',debug,cluster('RobotJumpLine')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L481,.L54,.L144-.L54
+	.word	.L608,.L64,.L175-.L64
 	.sdecl	'.debug_frame',debug,cluster('RobotError')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L481,.L56,.L147-.L56
+	.word	.L608,.L66,.L178-.L66
 	.sdecl	'.debug_frame',debug,cluster('Start')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L481,.L58,.L150-.L58
+	.word	.L608,.L68,.L181-.L68
 	.byte	8,18,8,19,8,21,8,22,8,23,0,0
 	.sdecl	'.debug_frame',debug,cluster('Prepared')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L481,.L60,.L153-.L60
+	.word	.L608,.L70,.L184-.L70
 	.byte	8,18,8,19,8,21,8,22,8,23,0,0
 	.sdecl	'.debug_frame',debug,cluster('Processed')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L481,.L62,.L155-.L62
+	.word	.L608,.L72,.L186-.L72
 	.byte	8,18,8,19,8,21,8,22,8,23,0,0
 	.sdecl	'.debug_frame',debug,cluster('BalanceInit')
 	.sect	'.debug_frame'
 	.word	36
-	.word	.L481,.L64,.L157-.L64
+	.word	.L608,.L74,.L188-.L74
 	.byte	4
-	.word	(.L171-.L64)/2
+	.word	(.L224-.L74)/2
 	.byte	19,8,22,26,3,19,138,8,4
-	.word	(.L157-.L171)/2
+	.word	(.L188-.L224)/2
 	.byte	19,0,8,26,0,0
 	.sdecl	'.debug_frame',debug,cluster('BalancePitch')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L481,.L66,.L158-.L66
+	.word	.L608,.L76,.L189-.L76
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('Balance')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L608,.L78,.L190-.L78
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('Velocity')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L608,.L80,.L199-.L80
+	.byte	8,19,8,20,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('Turn')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L608,.L82,.L204-.L82
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	; Module end

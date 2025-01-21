@@ -44,12 +44,6 @@ int		 core0_main(void)
 		// 	Cnt1 = 0;
 		// }
 
-		// Servo[Bl].angleLeg = 90 + 45;
-		// Servo[Fl].angleLeg = 90;
-
-		// Servo[Bl].angleLeg = 90;
-		// Servo[Fl].angleLeg = 90;
-
 		Servo[Bl].angleLeg = 90;
 		Servo[Fl].angleLeg = 90;
 		// Servo[Br].angleLeg = 90;
@@ -64,7 +58,7 @@ int		 core0_main(void)
 		AngleCalculate(robot.right, robot.jumpLine.Pos[0]);
 #endif
 
-#if 0
+#if 1
 		static bool OnceFlag = true;
 		if (OnceFlag) {	   // Ö´ÐÐÒ»´Î
 			OnceFlag			 = false;
