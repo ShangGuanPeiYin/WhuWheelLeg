@@ -29,8 +29,6 @@ typedef struct _leg {
 	Vector2f PosNow, PosSet;	// 实际足端坐标 与 设定足端坐标。单位mm。除非线性插值，否则Set就是控制点
 	Vector2f PosStart, PosTarget;	 // 直线两端
 
-	// Vector2f PosZero;	 //  零点
-
 	float reachTime;	// 设定移动到目标位置的移动时间(ms)
 
 	uint64_t* RunTime;	  // 腿部的运行时钟

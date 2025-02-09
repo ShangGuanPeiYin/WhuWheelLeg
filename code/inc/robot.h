@@ -34,9 +34,11 @@ typedef struct _robot {
 	ParamType	 param;
 	JumpLineType jumpLine;
 
-	PIDType pitchPID, rollPID, yawPID;	  // 平衡PID
+	PIDType rollPID, yawPID;							  // 平衡PID
+	PIDType pitchSpeedPID, pitchAnglePID, pitchVecPID;	  // 速度环，角度环，角速度环 俯仰平衡PID
 
-	float K1, K2;
+	float left_Torque, right_Torque;
+	float speedNow, speedSet;	 // 机身速度，左右速度均值
 
 	// TODO: CameraType
 
@@ -59,12 +61,9 @@ void Prepared(PipelineType* pipeline);	   // 已准备好
 void Processed(PipelineType* pipeline);	   // 已进行完
 
 void BalanceInit(void);		// PID
-void BalanceYaw(void);		// 偏航角平衡 TODO
+void BalanceYaw(void);		// 偏航角，转向环
 void BalanceRoll(void);		// 横滚角平衡 TODO
 void BalancePitch(void);	// 俯仰角平衡 TODO
-
-float Balance(float Angle, float Gyro);
-float Velocity(int encoder_left, int encoder_right);
-float Turn(float Angle, float Gyro);
+void Balance(void);
 
 #endif

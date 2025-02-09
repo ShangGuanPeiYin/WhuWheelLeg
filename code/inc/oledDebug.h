@@ -4,4 +4,5 @@
 #include "zf_common_typedef.h"
 
 void OLedDebug(void);
+void FunctionTest(void);
 #endif

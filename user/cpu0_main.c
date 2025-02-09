@@ -35,38 +35,7 @@ int		 core0_main(void)
 		// 尝试写个任务调度 不过无法实现任务抢占
 		system_delay_ms(1);
 
-		// TODO ：接收上位机消息
-		//		static u8 _temp = 0;
-		// static u8 Cnt1	= 0;
-		// if (++Cnt1 > 5) {
-		// 	while (deQueue(&usart2_rec_list, &_temp)) //
-		// 	ReadMsg(&U2data, _temp);
-		// 	Cnt1 = 0;
-		// }
-
-		Servo[Bl].angleLeg = 90;
-		Servo[Fl].angleLeg = 90;
-		// Servo[Br].angleLeg = 90;
-		// Servo[Fr].angleLeg = 90;
-
-#if 0
-		robot.jumpLine.Pos[0]	= ForwardKinematics(PI * (5 / 4), PI * (-1 / 4));
-
-		robot.jumpLine.Pos[0].x = 0;
-		robot.jumpLine.Pos[0].y = 25;
-		AngleCalculate(robot.left, robot.jumpLine.Pos[0]);	  // 更新舵机角
-		AngleCalculate(robot.right, robot.jumpLine.Pos[0]);
-#endif
-
-#if 1
-		static bool OnceFlag = true;
-		if (OnceFlag) {	   // 执行一次
-			OnceFlag			 = false;
-			robot.pipeline.state = StatePreparing;
-		}
-		RobotJumpLine();
-
-#endif
+		Balance();
 	}
 }
 

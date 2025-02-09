@@ -54,3 +54,30 @@ void OLedDebug(void)
 
 #endif
 };
+
+void FunctionTest(void)
+{
+	// TODO ：接收上位机消息
+	//		static u8 _temp = 0;
+	// static u8 Cnt1	= 0;
+	// if (++Cnt1 > 5) {
+	// 	while (deQueue(&usart2_rec_list, &_temp)) //
+	// 	ReadMsg(&U2data, _temp);
+	// 	Cnt1 = 0;
+	// }
+
+	//		Servo[Bl].angleLeg = 90;
+	//		Servo[Fl].angleLeg = 90;
+	//		Servo[Br].angleLeg = 90;
+	// Servo[Fr].angleLeg = 90;
+
+#if 0	 // 跳跃测试
+	static bool OnceFlag = true;
+	if (OnceFlag) {	   // 执行一次
+		OnceFlag			 = false;
+		robot.pipeline.state = StatePreparing;
+	}
+	RobotJumpLine();
+
+#endif
+}

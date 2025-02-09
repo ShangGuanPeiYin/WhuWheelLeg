@@ -25,6 +25,7 @@ void robotInit(RobotType* robot)
 	robot->param.PosZero   = ForwardKinematics(PI, 0);
 
 	LegInit();
+	BalanceInit();
 
 	// LegReset();	   // 运动到初始零点
 };
@@ -118,7 +119,7 @@ bool RobotJumpLine(void)
 
 			robot.jumpLine.Pos[0] = ForwardKinematics(PI * (5 / 4.f), PI * (-1 / 4.f));
 			robot.jumpLine.Pos[1] = ForwardKinematics(PI * 1 / 2.f, PI * 1 / 2.f);
-			robot.jumpLine.Pos[2] = ForwardKinematics(PI, PI * 0);
+			robot.jumpLine.Pos[2] = ForwardKinematics(PI * (5 / 4.f), PI * (-1 / 4.f));
 			// robot.jumpLine.Pos[3] = 0;
 			// robot.jumpLine.Pos[4] = 0;
 			JumpLineState++;
@@ -127,22 +128,22 @@ bool RobotJumpLine(void)
 		case 1:
 
 			if (RobotDrawLine(robot.jumpLine.Pos[0], 500)) {
-				robot.jumpLine.Lerp = true;
+				robot.jumpLine.Lerp = 0;
 				JumpLineState++;
 				robot.pipeline.state = StatePreparing;
 			}
 			break;
 		case 2:
 
-			if (RobotDrawLine(robot.jumpLine.Pos[1], 300)) {
-				robot.jumpLine.Lerp = true;
+			if (RobotDrawLine(robot.jumpLine.Pos[1], 800)) {
+				robot.jumpLine.Lerp = 0;
 				JumpLineState++;
 				robot.pipeline.state = StatePreparing;
 			}
 			break;
 		case 3:
 
-			if (RobotDrawLine(robot.jumpLine.Pos[2], 300)) {
+			if (RobotDrawLine(robot.jumpLine.Pos[2], 800)) {
 				JumpLineState++;
 				robot.pipeline.state = StatePreparing;
 			}
@@ -162,6 +163,7 @@ bool RobotJumpLine(void)
 			/* code */
 
 			JumpLineState = 0XFF;
+			// JumpLineState = 0;
 			return true;
 	}
 
@@ -208,91 +210,61 @@ void Processed(PipelineType* pipeline)	  // 进行完毕，进入结束状态
 void BalanceInit(void)	  // PID
 {
 	// TODO：
-	PIDTypeInit(&robot.pitchPID, 0.f, 0.f, 0.f, PIDINC, 0);
+	float Kp_1 = 0.f;
+	float Ki_1 = 0.f;
+	float Kd_1 = 0.f;
+
+	float Kp_2 = 62.f;
+	float Kd_2 = 20.5f;
+
+	float Kp_3 = 0.f;
+	float Kd_3 = 0.f;
+
+	PIDTypeInit(&robot.pitchSpeedPID, Kp_1, Ki_1, Kd_1, PIDPOS, 0);	   // 俯仰PID类型
+	PIDTypeInit(&robot.pitchAnglePID, Kp_2, 0.f, Kd_2, PIDPOS, 0);	   // PD控制
+	PIDTypeInit(&robot.pitchVecPID, Kp_3, 0.f, Kd_3, PIDPOS, 0);	   // PD控制
+
+	PIDTypeInit(&robot.yawPID, 0.f, 0.f, 0.f, PIDPOS, 0);
 	PIDTypeInit(&robot.rollPID, 0.f, 0.f, 0.f, PIDINC, 0);
-	PIDTypeInit(&robot.yawPID, 0.f, 0.f, 0.f, PIDINC, 0);
 };
 
 /**
- * @brief 俯仰角平衡 TODO
- * 		  解算关系式： PitchSet = K1 * ( SpeedSet - SpeedNow )
- * 		            TorqueSet = K2 * ( PitchSet - PitchNow )
- * 		            TorqueSet 即扭矩，对应电机的电流，即电机的PWM
- * 		  注意方向问题！！！
- * 		  目前方向：轮腿站立，从右边看： 顺时针为Speed>0 ,Torque>0。
- * 				  K1和K2 用RobotType里面的	float K1, K2;
- *       机体解算时所用到的角度力矩方向都是顺时针为正（从右侧看,右为轮腿前），
+ * @brief  转向环
  *
+ */
+void BalanceYaw(void)
+{
+	float turn			= PIDOperation(&robot.yawPID, robot.posture->dataOri.yaw, robot.posture->dataSet.yaw);	  // 平衡环Pwm
+
+	robot.right_Torque += turn;
+	robot.left_Torque  -= turn;
+}
+
+/**
+ * @brief 俯仰角平衡 三环嵌套， 先调外两环
  */
 void BalancePitch(void)
 {
-	// 先读注释，再写
-}
+	robot.speedNow = (Motor[0].valueNow.speed + Motor[1].valueNow.speed) / 2;
 
-/********************************************** 平衡函数TEST ********************************************************** */
+	robot.posture->dataSet.pitch = PIDOperation(&robot.pitchSpeedPID, robot.speedNow, robot.speedSet);	  // 直接修改speedSet即可
 
-/**
- * @brief 平衡环
- *
- * @param Angle
- * @param Gyro
- * @return float
- */
-float Balance(float Angle, float Gyro)
-{
-	int	  Balance_KP = 0, Balance_KD = 0;
-	float Angle_bias, Gyro_bias;	// 角度偏差 角速度偏差
-	float balance;					// 平衡环Pwm
+	// robot.posture->dataSet.angle.x = PIDOperation(&robot.pitchAnglePID, robot.posture->dataOri.pitch,
+	// robot.posture->dataSet.pitch); robot.right_Torque			   = robot.left_Torque = PIDOperation(&robot.pitchVecPID,
+	// robot.posture->dataOri.angle.x, robot.posture->dataSet.angle.x);
 
-	Angle_bias = 14 /*经验值，重心位置*/ - Angle;	 // 求出平衡的角度中值和机械相关
-	Gyro_bias  = 0 - Gyro;
-
-	Balance_KP = 5000;
-	Balance_KD = 1200;
-	balance	   = (-Balance_KP / 100 * Angle_bias - Gyro_bias * Balance_KD / 100);	 // 计算平衡控制的电机PWM PD 控制
-	return balance;
+	robot.right_Torque = robot.left_Torque
+		= PIDOperation(&robot.pitchAnglePID, robot.posture->dataOri.pitch, robot.posture->dataSet.pitch);
 }
 
 /**
- * @brief 速度环
+ * @brief 平衡函数
  *
- * @param encoder_left
- * @param encoder_right
- * @return float
  */
-float Velocity(int encoder_left, int encoder_right)
+void Balance(void)
 {
-	int Velocity_KP = 0, Velocity_KI = 0;
+	BalancePitch();	   // 计算维持平衡的力矩
+	BalanceYaw();	   // 再计算转向需要的力矩
 
-	static float velocity = 0, Encoder_Least = 0, Encoder_bias = 0;
-	static float Encoder_Integral = 0;
-
-	Encoder_Least = 0 - (encoder_left + encoder_right);	   // 获取最新速度偏差=目标速度（此处为零）-测量速度（左右编码器之和）
-	Encoder_bias	 *= 0.8;							   // 一阶低通滤波器
-	Encoder_bias	 += Encoder_Least * 0.2;	// 一阶低通滤波器
-	Encoder_Integral += Encoder_bias;			// 积分出位移 积分时间：10ms
-
-	PEAK(Encoder_Integral, 10000);	  // 积分限幅
-
-	velocity = (Encoder_bias * Velocity_KP / 100 + Encoder_Integral * Velocity_KI / 100);	 // 速度PI控制
-	return velocity;
-}
-
-/**
- * @brief 转向环
- *
- * @param Angle
- * @param Gyro
- * @return float
- */
-float Turn(float Angle, float Gyro)
-{
-	int	  Turn_KP = 0, Turn_KD = 0;
-	float Angle_bias, Gyro_bias;	// 角度偏差 角速度偏差
-	float turn;						// 平衡环Pwm
-	Angle_bias = 0 - Angle;			// 求出平衡的角度中值和机械相关
-	Gyro_bias  = 0 - Gyro;
-	turn	   = (-Turn_KP / 100 * Angle_bias - Gyro_bias * Turn_KD / 100);	   // 计算平衡控制的电机PWM PD 控制
-
-	return turn;	// 转向环 PWM 右转为正，左转为负
+	BldcSetCurrent(robot.left_Torque, robot.right_Torque);
 }

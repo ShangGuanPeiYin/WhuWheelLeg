@@ -20,8 +20,10 @@ typedef struct _IMUParam {
 } IMUParam;
 
 typedef struct _Imu {
-	IMUParam dataOri;	 // 原始数据
+	IMUParam dataOri;	 // 原始数据  机体真实值
 	IMUParam dataRaw;	 // 偏移数据
+
+	IMUParam dataSet;	 // 设定值
 
 	float G;				   // 当地重力加速度
 	bool  calibration_flag;	   // 完成俯仰角校准的标志
@@ -31,7 +33,7 @@ extern IMUType IMUdata;
 
 void IMU_init(void);	// INIT
 void IMU_getdata(void);
-bool IMU_ang_calibration(void);	   // 校准陀螺仪总函数，静止状态调用，阻塞线程//加速度角速度作用
+bool IMU_ang_calibration(void);	   // 校准陀螺仪总函数，静止状态调用，阻塞线程 加速度角速度作用
 void IMU_correct(void);
 
 bool IMU_ang_integ(void);	 // 对角速度进行积分，这部分放在中断里
