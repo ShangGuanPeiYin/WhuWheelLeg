@@ -50,19 +50,19 @@ IFX_INTERRUPT(cc60_pit_ch0_isr, 0, CCU6_0_CH0_ISR_PRIORITY)
 	robot.param.runTime	  += 1.f;	 // 1ms
 
 	static int ServoCnt	   = 0;
-	if (++ServoCnt > 5) {	 // 1k -> 200Hz
+	if (++ServoCnt >= 5) {	  // 1k -> 200Hz
 		ServoFunc();
 		ServoCnt = 0;
 	}
 
 	static u8 BldcCnt = 0;	  // 1k -> 100Hz
-	if (++BldcCnt > 10) {
+	if (++BldcCnt >= 10) {
 		BldcFunc();
 		BldcCnt = 0;
 	}
 
-	static u8 IMUCnt = 1;	 // 1k -> 200Hz 与舵机错开
-	if (++IMUCnt > irq_interval) {
+	static u8 IMUCnt = 0;	 // 1k -> 200Hz 与舵机错开
+	if (++IMUCnt >= irq_interval) {
 		IMU_ang_integ();
 		IMUCnt = 0;
 	}

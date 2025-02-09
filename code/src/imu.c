@@ -15,8 +15,8 @@ void IMU_init(void)
 
 	// TODO: 初值要测量后填入
 	IMUdata.dataRaw.accel.x	 = 0;	 // 三个方向上的加速度飘移
-	IMUdata.dataRaw.accel.y	 = 0;
-	IMUdata.dataRaw.accel.z	 = 1;
+	IMUdata.dataRaw.accel.y	 = 1;
+	IMUdata.dataRaw.accel.z	 = 0;
 
 	IMUdata.dataRaw.angle.x	 = 0;	 // 三个方向上的角速度飘移
 	IMUdata.dataRaw.angle.y	 = 0;
@@ -101,13 +101,13 @@ void IMU_ang_ori(void)
 	IMUdata.dataRaw.yaw = x;	// 由于初值有重力场方向确定，自由度为1，无法结算出初始的航向角(回转角)，要由平衡后赛道循迹确定
 
 	// 重力场角度为（0,IMUdata.G,0）可由此和初始acc值联合结算初始角度，这样可以使车辆自平衡，后期可人为测量填充flash写死数据，或多次优化数据，定死imu平衡角度
-	x = (IMUdata.dataRaw.accel.x > 0 ? 1 : -1) * IMUdata.dataRaw.accel.y
-		/ sqrtf(IMUdata.dataRaw.accel.y * IMUdata.dataRaw.accel.y + IMUdata.dataRaw.accel.x * IMUdata.dataRaw.accel.x);
+	x = (IMUdata.dataRaw.accel.y > 0 ? 1 : -1) * IMUdata.dataRaw.accel.z
+		/ sqrtf(IMUdata.dataRaw.accel.z * IMUdata.dataRaw.accel.z + IMUdata.dataRaw.accel.y * IMUdata.dataRaw.accel.y);
 	IMUdata.dataRaw.pitch = 180 / PI * acosf(x);
 
 	// 初始俯仰角
-	x					  = (IMUdata.dataRaw.accel.z > 0 ? -1 : 1) * IMUdata.dataRaw.accel.y
-		/ sqrtf(IMUdata.dataRaw.accel.y * IMUdata.dataRaw.accel.y + IMUdata.dataRaw.accel.z * IMUdata.dataRaw.accel.z);
+	x					  = (IMUdata.dataRaw.accel.x > 0 ? -1 : 1) * IMUdata.dataRaw.accel.z
+		/ sqrtf(IMUdata.dataRaw.accel.z * IMUdata.dataRaw.accel.z + IMUdata.dataRaw.accel.x * IMUdata.dataRaw.accel.x);
 	IMUdata.dataRaw.roll = 180 / PI * acosf(x);
 
 	// 初始滚摆角//由于陀螺仪位置原因，初始正负性相反
@@ -166,18 +166,18 @@ void IMU_getdata(void)
 	imu963ra_get_gyro();	// 获取 IMU963RA 陀螺仪数据
 	imu963ra_get_mag();		// 获取 IMU963RA 磁力计数据
 
-	// 数据转化
-	IMUdata.dataOri.accel.x = imu963ra_acc_transition(imu963ra_acc_x);
-	IMUdata.dataOri.accel.y = imu963ra_acc_transition(imu963ra_acc_y);
-	IMUdata.dataOri.accel.z = imu963ra_acc_transition(imu963ra_acc_z);
+	// 数据转化//x=-z;y=x;z=-y
+	IMUdata.dataOri.accel.x = -imu963ra_acc_transition(imu963ra_acc_z);
+	IMUdata.dataOri.accel.y = imu963ra_acc_transition(imu963ra_acc_x);
+	IMUdata.dataOri.accel.z = -imu963ra_acc_transition(imu963ra_acc_y);
 
-	IMUdata.dataOri.angle.x = imu963ra_gyro_transition(imu963ra_gyro_x) - IMUdata.dataRaw.angle.x;
-	IMUdata.dataOri.angle.y = imu963ra_gyro_transition(imu963ra_gyro_y) - IMUdata.dataRaw.angle.y;
-	IMUdata.dataOri.angle.z = imu963ra_gyro_transition(imu963ra_gyro_z) - IMUdata.dataRaw.angle.z;
+	IMUdata.dataOri.angle.x = -(imu963ra_gyro_transition(imu963ra_gyro_z) - IMUdata.dataRaw.angle.z);
+	IMUdata.dataOri.angle.y = imu963ra_gyro_transition(imu963ra_gyro_x) - IMUdata.dataRaw.angle.x;
+	IMUdata.dataOri.angle.z = -(imu963ra_gyro_transition(imu963ra_gyro_y) - IMUdata.dataRaw.angle.y);
 
-	IMUdata.dataOri.mag.x	= imu963ra_mag_transition(imu963ra_mag_x);
-	IMUdata.dataOri.mag.y	= imu963ra_mag_transition(imu963ra_mag_y);
-	IMUdata.dataOri.mag.z	= imu963ra_mag_transition(imu963ra_mag_z);
+	IMUdata.dataOri.mag.x	= -imu963ra_mag_transition(imu963ra_mag_z);
+	IMUdata.dataOri.mag.y	= imu963ra_mag_transition(imu963ra_mag_x);
+	IMUdata.dataOri.mag.z	= -imu963ra_mag_transition(imu963ra_mag_y);
 }
 
 /**
@@ -192,9 +192,9 @@ bool IMU_ang_integ(void)
 	if (IMUdata.calibration_flag) {
 		IMU_getdata();
 
-		IMUdata.dataOri.pitch += IMUdata.dataOri.angle.z * irq_interval / 1000;
-		IMUdata.dataOri.roll  += IMUdata.dataOri.angle.x * irq_interval / 1000;
-		IMUdata.dataOri.yaw	  += IMUdata.dataOri.angle.y * irq_interval / 1000;
+		IMUdata.dataOri.pitch += -IMUdata.dataOri.angle.y * irq_interval / 1000;
+		IMUdata.dataOri.roll  += -IMUdata.dataOri.angle.x * irq_interval / 1000;
+		IMUdata.dataOri.yaw	  += IMUdata.dataOri.angle.z * irq_interval / 1000;
 	}
 
 	return IMUdata.calibration_flag;	// 返回0表示未完成校准，或正在校准
@@ -211,15 +211,15 @@ void IMU_correct(void)
 	IMU_getdata();
 	current_G = sqrtf(IMUdata.dataOri.accel.x * IMUdata.dataOri.accel.x + IMUdata.dataOri.accel.y * IMUdata.dataOri.accel.y
 					  + IMUdata.dataOri.accel.z * IMUdata.dataOri.accel.z);
-	if (fabsf(current_G - IMUdata.G) < IMUERR * fabsf(IMUdata.G))	 // 这个决定了刷新的严苛成度，需要调整范围
+	// if (fabsf(current_G - IMUdata.G) < IMUERR * fabsf(IMUdata.G))	 // 这个决定了刷新的严苛成度，需要调整范围
 	{
 		IMUdata.calibration_flag = 0;
 
-		x						 = (IMUdata.dataOri.accel.x > 0 ? 1 : -1) * IMUdata.dataOri.accel.y
-			/ sqrtf(IMUdata.dataOri.accel.y * IMUdata.dataOri.accel.y + IMUdata.dataOri.accel.x * IMUdata.dataOri.accel.x);
+		x						 = (IMUdata.dataOri.accel.y > 0 ? -1 : 1) * IMUdata.dataOri.accel.z
+			/ sqrtf(IMUdata.dataOri.accel.z * IMUdata.dataOri.accel.z + IMUdata.dataOri.accel.y * IMUdata.dataOri.accel.y);
 		IMUdata.dataOri.pitch = 180 / PI * acosf(x);
-		x					  = (IMUdata.dataOri.accel.z > 0 ? -1 : 1) * IMUdata.dataOri.accel.y
-			/ sqrtf(IMUdata.dataOri.accel.y * IMUdata.dataOri.accel.y + IMUdata.dataOri.accel.z * IMUdata.dataOri.accel.z);
+		x					  = (IMUdata.dataOri.accel.x > 0 ? -1 : 1) * IMUdata.dataOri.accel.z
+			/ sqrtf(IMUdata.dataOri.accel.z * IMUdata.dataOri.accel.z + IMUdata.dataOri.accel.x * IMUdata.dataOri.accel.x);
 		IMUdata.dataOri.roll = 180 / PI * acosf(x);
 		if (IMUdata.dataOri.pitch > 90)
 			IMUdata.dataOri.pitch -= 180;
@@ -243,10 +243,11 @@ void IMU_correct(void)
 bool IMU_ang_calibration(void)
 {
 	IMUdata.calibration_flag = 0;
-	IMU_acc_Offset();		 // 测量加速度受重力影响初值（三轴方向飘移）
-	IMUANG_Offset();		 // 测量角速度初值（三轴方向飘移）
-	IMU_ang_ori();			 // 计算车辆姿态初值（三轴方向飘移）//函数应在重力加速度校准后调用
-	IMU_ang_get_oridat();	 // 将车辆姿态初值赋值给三轴角度//函数应在校准或静止时与上函数同时调用
+	IMU_acc_Offset();	 // 测量加速度受重力影响初值（三轴方向飘移）
+	IMUANG_Offset();	 // 测量角速度初值（三轴方向飘移）
+	// IMU_ang_ori();			 // 计算车辆姿态初值（三轴方向飘移）//函数应在重力加速度校准后调用
+	// IMU_ang_get_oridat();	 // 将车辆姿态初值赋值给三轴角度//函数应在校准或静止时与上函数同时调用
+	IMU_correct();
 	IMUdata.calibration_flag = 1;
 
 	return IMUdata.calibration_flag;
