@@ -313,10 +313,10 @@ void BldcFunc(void)
 						BldcPositionMode(&Motor[i]);
 						break;
 					case RPM:
-						BldcSpeedMode(&Motor[i]);	 // 常用
+						BldcSpeedMode(&Motor[i]);
 						break;
 					case CURRENT:
-						BldcCurrentMode(&Motor[i]);
+						BldcCurrentMode(&Motor[i]);	   // 常用
 						break;
 
 					default:

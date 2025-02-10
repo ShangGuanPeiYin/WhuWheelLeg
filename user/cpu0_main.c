@@ -34,8 +34,8 @@ int		 core0_main(void)
 	while (TRUE) {
 		// 尝试写个任务调度 不过无法实现任务抢占
 		system_delay_ms(1);
-
-		Balance();
+		;
+		;
 	}
 }
 
@@ -49,7 +49,7 @@ IFX_INTERRUPT(cc60_pit_ch0_isr, 0, CCU6_0_CH0_ISR_PRIORITY)
 	robot.param.rightTime += 1;		 // 1ms
 	robot.param.runTime	  += 1.f;	 // 1ms
 
-	static u8 BalanceCnt   = 0;	   // 1k -> 100Hz  用bldc控制平衡，所以频率和bldc同步
+	static u8 BalanceCnt   = 0;	   // 1k -> 100Hz  用bldc控制平衡，所以频率和bldc同步 最好在bldc上面
 	if (++BalanceCnt >= 10) {
 		Balance();
 		BalanceCnt = 0;
