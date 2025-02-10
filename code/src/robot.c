@@ -249,12 +249,13 @@ void BalancePitch(void)
 
 	robot.posture->dataSet.pitch = PIDOperation(&robot.pitchSpeedPID, robot.speedNow, robot.speedSet);	  // 直接修改speedSet即可
 
-	// robot.posture->dataSet.angle.x = PIDOperation(&robot.pitchAnglePID, robot.posture->dataOri.pitch,
-	// robot.posture->dataSet.pitch); robot.right_Torque			   = robot.left_Torque = PIDOperation(&robot.pitchVecPID,
-	// robot.posture->dataOri.angle.x, robot.posture->dataSet.angle.x);
+	robot.posture->dataSet.angle.x = PIDOperation(&robot.pitchAnglePID, robot.posture->dataOri.pitch, robot.posture->dataSet.pitch);
 
-	robot.right_Torque = robot.left_Torque
-		= PIDOperation(&robot.pitchAnglePID, robot.posture->dataOri.pitch, robot.posture->dataSet.pitch);
+	robot.right_Torque			   = robot.left_Torque
+		= PIDOperation(&robot.pitchVecPID, robot.posture->dataOri.angle.x, robot.posture->dataSet.angle.x);
+
+	// robot.right_Torque = robot.left_Torque
+	// 	= PIDOperation(&robot.pitchAnglePID, robot.posture->dataOri.pitch, robot.posture->dataSet.pitch);
 }
 
 /**
