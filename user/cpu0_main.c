@@ -49,9 +49,11 @@ IFX_INTERRUPT(cc60_pit_ch0_isr, 0, CCU6_0_CH0_ISR_PRIORITY)
 	robot.param.rightTime += 1;		 // 1ms
 	robot.param.runTime	  += 1.f;	 // 1ms
 
+    CH1_LOOP();
+
 	static u8 BalanceCnt   = 0;	   // 1k -> 100Hz  用bldc控制平衡，所以频率和bldc同步 最好在bldc上面
-	if (++BalanceCnt >= 10) {
-		Balance();
+	if (++BalanceCnt >= 1) {
+		//Balance();
 		BalanceCnt = 0;
 	}
 
@@ -67,9 +69,9 @@ IFX_INTERRUPT(cc60_pit_ch0_isr, 0, CCU6_0_CH0_ISR_PRIORITY)
 		ServoCnt = 0;
 	}
 
-	static u8 IMUCnt = 1;	 // 1k -> 200Hz 与舵机错开
+	static u8 IMUCnt = 0;	 // 1k -> 200Hz 与舵机错开
 	if (++IMUCnt >= irq_interval) {
-		IMU_ang_integ();
+	    Get_Attitude();
 		IMUCnt = 0;
 	}
 

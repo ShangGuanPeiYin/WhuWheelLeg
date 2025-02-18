@@ -31,7 +31,7 @@ void BldcTypeInit(void)
 		Motor[i].begin	   = true;
 
 		Motor[i].setZero   = false;
-		Motor[i].mode	   = RPM;	 // 速度模式
+		Motor[i].mode	   = CURRENT;	 // 力矩模式
 		Motor[i].reachTime = 0.f;
 
 		// 增量式PID初始化
