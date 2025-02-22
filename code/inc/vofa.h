@@ -9,7 +9,7 @@
 //变量
 #define JFCH_COUNT 10        //发送float型个数
 extern uint8_t RxBuffer[1];//串口接收缓冲
-extern uint8_t DataBuff[200];//指令内容
+extern uint8_t DataBuff[20];//指令内容
 extern float f2;
 extern float data_return; // 解析得到的数据
 extern uint8_t FH_flag;

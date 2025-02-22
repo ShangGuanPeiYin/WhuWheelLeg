@@ -115,12 +115,12 @@ void Get_Attitude()
     IMU.Gyro.z = last_ZPitchrate * Za + IMU.Gyro.z * (1 - Za);
     last_ZPitchrate = IMU.Gyro.z;
 
-    IMUdata.dataOri.pitch=(IMU.Angle.y+4.6);///TODO:测量机械中值
+    IMUdata.dataOri.pitch=(IMU.Angle.y+2.6);///TODO:测量机械中值
     IMUdata.dataOri.roll=IMU.Angle.x;
     IMUdata.dataOri.yaw=-IMU.Angle.z;
 
 
-    IMUdata.dataOri.angle.x=IMU.Gyro.y+0.22;//TODO:测量细致化零漂
+    IMUdata.dataOri.angle.x=IMU.Gyro.y-0.1;//TODO:测量细致化零漂
     IMUdata.dataOri.angle.y=IMU.Gyro.x;
     IMUdata.dataOri.angle.z=IMU.Gyro.z;
 }

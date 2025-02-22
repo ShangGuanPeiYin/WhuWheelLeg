@@ -201,6 +201,7 @@ void Processed(PipelineType* pipeline)	  // 进行完毕，进入结束状态
 	pipeline->isRun = false;
 	pipeline->state = StateEnd;
 }
+float tiaocan[9];
 
 /********************************************** 平衡函数 ********************************************************** */
 
@@ -211,20 +212,20 @@ void Processed(PipelineType* pipeline)	  // 进行完毕，进入结束状态
 void BalanceInit(void)	  // PID
 {
 	// TODO：
-	float Kp_1 = 0.005f;
+	float Kp_1 = 0.f;
 	float Ki_1 = 0.f;
-	float Kd_1 = 0.001f;
+	float Kd_1 = 0.f;
 
-	float Kp_2 = 4.5f;//62.f;
-	float Kd_2 = 0.f;//20.5f;
+	float Kp_2 = tiaocan[0];//62.f;
+	float Kd_2 = tiaocan[1];//20.5f;
 
-	float Kp_3 = 4.5f;
-	float Ki_3 = 0.145f;
-	float Kd_3 = 0.45f;
+	float Kp_3 = tiaocan[2];
+	float Ki_3 = 0.f;
+	float Kd_3 = tiaocan[3];
 
-	PIDTypeInit(&robot.pitchSpeedPID, Kp_1, Ki_1, Kd_1, PIDINC, 0);	   // 俯仰PID类型
+	PIDTypeInit(&robot.pitchSpeedPID, Kp_1, Ki_1, Kd_1, PIDPOS, 0);	   // 俯仰PID类型
 	PIDTypeInit(&robot.pitchAnglePID, Kp_2, 0.f, Kd_2, PIDPOS, 0);	   // PD控制
-	PIDTypeInit(&robot.pitchVecPID, Kp_3, Ki_3, Kd_3, PIDINC, 0);	   // PD控制
+	PIDTypeInit(&robot.pitchVecPID, Kp_3, Ki_3, Kd_3, PIDPOS, 0);	   // PD控制
 
 	PIDTypeInit(&robot.yawPID, 0.f, 0.f, 0.f, PIDPOS, 0);
 	PIDTypeInit(&robot.rollPID, 0.f, 0.f, 0.f, PIDINC, 0);
@@ -248,14 +249,14 @@ void BalanceYaw(void)
 void BalancePitch(void)
 {
     //robot->posture=&IMUdata;
-	robot.speedNow = (Motor[0].valueNow.speed + Motor[1].valueNow.speed) / 2;
+	robot.speedNow = -(Motor[0].valueNow.speed + Motor[1].valueNow.speed) / 2;
 
 	robot.posture->dataSet.pitch = PIDOperation(&robot.pitchSpeedPID, robot.speedNow, robot.speedSet);	  // 直接修改speedSet即可
 
-	robot.posture->dataSet.angle.x = PIDOperation(&robot.pitchAnglePID, robot.posture->dataOri.pitch, robot.posture->dataSet.pitch);
+	robot.posture->dataSet.angle.x = PIDOperation(&robot.pitchAnglePID, -IMUdata.dataOri.pitch, robot.posture->dataSet.pitch);
 
-	robot.right_Torque			   = PIDOperation(&robot.pitchVecPID, robot.posture->dataOri.angle.x, robot.posture->dataSet.angle.x);
-	robot.left_Torque              = PIDOperation(&robot.pitchVecPID, robot.posture->dataOri.angle.x, robot.posture->dataSet.angle.x);
+	robot.right_Torque			   = PIDOperation(&robot.pitchVecPID, -IMUdata.dataOri.angle.x, robot.posture->dataSet.angle.x);
+	robot.left_Torque              =    robot.right_Torque;
 
 	// robot.right_Torque = robot.left_Torque
 	// 	= PIDOperation(&robot.pitchAnglePID, robot.posture->dataOri.pitch, robot.posture->dataSet.pitch);
@@ -274,6 +275,21 @@ void BalancePitch(void)
  */
 void Balance(void)
 {
+        float Kp_1 = 0.1;
+        float Ki_1 = 0.f;
+        float Kd_1 = 0.f;
+
+        float Kp_2 = 46.f;//62.f;
+        float Kd_2 = -25.f;//20.5f;
+
+        float Kp_3 = 11.7;//15;
+        float Ki_3 = 0.f;
+        float Kd_3 = -5;//.6;
+
+        PIDTypeInit(&robot.pitchSpeedPID, Kp_1, Ki_1, Kd_1, PIDPOS, 0);    // 俯仰PID类型
+        PIDTypeInit(&robot.pitchAnglePID, Kp_2, 0.f, Kd_2, PIDPOS, 0);     // PD控制
+        PIDTypeInit(&robot.pitchVecPID, Kp_3, Ki_3, Kd_3, PIDPOS, 0);
+
 	BalancePitch();	   // 计算维持平衡的力矩
 	//BalanceYaw();	   // 再计算转向需要的力矩
 

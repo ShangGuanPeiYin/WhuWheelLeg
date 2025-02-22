@@ -18,8 +18,8 @@ void CH1_LOOP(void)//ÖĞ¶ÏÊÇ1ms£¬ÉèÖÃangle_countºÍspeed_count,Ê¹Á½¸ö¼ÆËãÖÜÆÚ·Ö±ğÎ
     if(speed_count %50 == 0)
    {
      //ËÙ¶È»·
-     LeftSpeed_output = PID_Speed1(Motor[0].valueNow.speed,0);//×óÂÖPIDÊä³ö
-     RightSpeed_output = PID_Speed2(Motor[1].valueNow.speed,0);//ÓÒÂÖPIDÊä³ö
+     LeftSpeed_output =0;// PID_Speed1(Motor[0].valueNow.speed,0);//×óÂÖPIDÊä³ö
+     RightSpeed_output =0;// PID_Speed2(Motor[1].valueNow.speed,0);//ÓÒÂÖPIDÊä³ö
      speed_count = 0;
     }
      if(angle_count %5 == 0)

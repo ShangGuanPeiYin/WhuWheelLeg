@@ -14,8 +14,8 @@ void PID_init(void)//初始化所有参数
     pid_init.pid_roll_speed.ek1 = 0;
     pid_init.pid_roll_speed.ek2 = 0;
     pid_init.pid_roll_speed.kp = 4.5;
-    pid_init.pid_roll_speed.ki = 0.145;
-    pid_init.pid_roll_speed.kd = 0.45;
+    pid_init.pid_roll_speed.ki = 0;//0.145;
+    pid_init.pid_roll_speed.kd = 0;//0.45;
     pid_init.pid_roll_speed.integral = 0;
     pid_init.pid_roll_speed.output = 0;
 
@@ -23,7 +23,7 @@ void PID_init(void)//初始化所有参数
     pid_init.pid_roll.target = 0;
     pid_init.pid_roll.ek = 0;
     pid_init.pid_roll.ek1 = 0;
-    pid_init.pid_roll.kp = 4.5;
+    pid_init.pid_roll.kp = 0;//4.5;
     pid_init.pid_roll.ki = 0;
     pid_init.pid_roll.kd = 0;
     pid_init.pid_roll.integral = 0;
@@ -34,8 +34,8 @@ void PID_init(void)//初始化所有参数
     pid_init.pid_speed1.ek = 0;
     pid_init.pid_speed1.ek1 = 0;
     pid_init.pid_speed1.ek2 = 0;
-    pid_init.pid_speed1.kp = 0.005;
-    pid_init.pid_speed1.ki = 0.001;
+    pid_init.pid_speed1.kp = 0;//0.005;
+    pid_init.pid_speed1.ki = 0;//0.001;
     pid_init.pid_speed1.kd = 0;
     pid_init.pid_speed1.integral = 0;
     pid_init.pid_speed1.output = 0;
@@ -45,8 +45,8 @@ void PID_init(void)//初始化所有参数
     pid_init.pid_speed2.ek = 0;
     pid_init.pid_speed2.ek1 = 0;
     pid_init.pid_speed2.ek2 = 0;
-    pid_init.pid_speed2.kp = 0.005;
-    pid_init.pid_speed2.ki = 0.001;
+    pid_init.pid_speed2.kp = 0;//0.005;
+    pid_init.pid_speed2.ki = 0;//0.001;
     pid_init.pid_speed2.kd = 0;
     pid_init.pid_speed2.integral = 0;
     pid_init.pid_speed2.output = 0;

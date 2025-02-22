@@ -45,6 +45,7 @@ typedef struct _robot {
 } RobotType;
 
 extern RobotType robot;
+extern float tiaocan[9];
 
 void robotInit(RobotType* robot);
 
