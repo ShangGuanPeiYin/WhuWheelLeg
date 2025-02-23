@@ -71,7 +71,7 @@ void FunctionTest(void)
 	//		Servo[Br].angleLeg = 90;
 	// Servo[Fr].angleLeg = 90;
 
-#if 0	 // Ã¯‘æ≤‚ ‘
+#if 1	 // Ã¯‘æ≤‚ ‘
 	static bool OnceFlag = true;
 	if (OnceFlag) {	   // ÷¥––“ª¥Œ
 		OnceFlag			 = false;

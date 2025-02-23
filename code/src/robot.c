@@ -118,7 +118,7 @@ bool RobotJumpLine(void)
 			robot.pipeline.state  = StatePreparing;
 			robot.jumpLine.Lerp	  = false;	  // 下一阶段是否线性插值
 
-			robot.jumpLine.Pos[0] = ForwardKinematics(PI * (5 / 4.f), PI * (-1 / 4.f));
+			robot.jumpLine.Pos[0] = ForwardKinematics(PI ,0.f);
 			robot.jumpLine.Pos[1] = ForwardKinematics(PI * 1 / 2.f, PI * 1 / 2.f);
 			robot.jumpLine.Pos[2] = ForwardKinematics(PI * (5 / 4.f), PI * (-1 / 4.f));
 			// robot.jumpLine.Pos[3] = 0;
@@ -212,16 +212,16 @@ float tiaocan[9];
 void BalanceInit(void)	  // PID
 {
 	// TODO：
-	float Kp_1 = 0.f;
-	float Ki_1 = 0.f;
-	float Kd_1 = 0.f;
+    float Kp_1 = 0.03;
+    float Ki_1 = 0.f;
+    float Kd_1 = -0.005f;
 
-	float Kp_2 = tiaocan[0];//62.f;
-	float Kd_2 = tiaocan[1];//20.5f;
+    float Kp_2 = 31.f;//62.f;
+    float Kd_2 = 32.f;//20.5f;
 
-	float Kp_3 = tiaocan[2];
-	float Ki_3 = 0.f;
-	float Kd_3 = tiaocan[3];
+    float Kp_3 = 7.7;//15;
+    float Ki_3 = 0.f;
+    float Kd_3 = 8.5;//.6;
 
 	PIDTypeInit(&robot.pitchSpeedPID, Kp_1, Ki_1, Kd_1, PIDPOS, 0);	   // 俯仰PID类型
 	PIDTypeInit(&robot.pitchAnglePID, Kp_2, 0.f, Kd_2, PIDPOS, 0);	   // PD控制
@@ -237,7 +237,7 @@ void BalanceInit(void)	  // PID
  */
 void BalanceYaw(void)
 {
-	float turn			= 0;// PIDOperation(&robot.yawPID, robot.posture->dataOri.yaw, robot.posture->dataSet.yaw);	  // 平衡环Pwm
+	float turn			= ServoControlOut;// PIDOperation(&robot.yawPID, robot.posture->dataOri.yaw, robot.posture->dataSet.yaw);	  // 平衡环Pwm
 
 	robot.right_Torque += turn;
 	robot.left_Torque  -= turn;
@@ -248,6 +248,7 @@ void BalanceYaw(void)
  */
 void BalancePitch(void)
 {
+    robot.speedSet=120;
     //robot->posture=&IMUdata;
 	robot.speedNow = -(Motor[0].valueNow.speed + Motor[1].valueNow.speed) / 2;
 
@@ -275,23 +276,10 @@ void BalancePitch(void)
  */
 void Balance(void)
 {
-        float Kp_1 = 0.1;
-        float Ki_1 = 0.f;
-        float Kd_1 = 0.f;
 
-        float Kp_2 = 46.f;//62.f;
-        float Kd_2 = -25.f;//20.5f;
-
-        float Kp_3 = 11.7;//15;
-        float Ki_3 = 0.f;
-        float Kd_3 = -5;//.6;
-
-        PIDTypeInit(&robot.pitchSpeedPID, Kp_1, Ki_1, Kd_1, PIDPOS, 0);    // 俯仰PID类型
-        PIDTypeInit(&robot.pitchAnglePID, Kp_2, 0.f, Kd_2, PIDPOS, 0);     // PD控制
-        PIDTypeInit(&robot.pitchVecPID, Kp_3, Ki_3, Kd_3, PIDPOS, 0);
 
 	BalancePitch();	   // 计算维持平衡的力矩
-	//BalanceYaw();	   // 再计算转向需要的力矩
+	BalanceYaw();	   // 再计算转向需要的力矩
 
 	BldcSetCurrent(robot.left_Torque, robot.right_Torque);
 }

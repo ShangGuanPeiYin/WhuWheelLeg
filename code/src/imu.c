@@ -115,7 +115,7 @@ void Get_Attitude()
     IMU.Gyro.z = last_ZPitchrate * Za + IMU.Gyro.z * (1 - Za);
     last_ZPitchrate = IMU.Gyro.z;
 
-    IMUdata.dataOri.pitch=(IMU.Angle.y+2.6);///TODO:测量机械中值
+    IMUdata.dataOri.pitch=(IMU.Angle.y+1.6);///TODO:测量机械中值
     IMUdata.dataOri.roll=IMU.Angle.x;
     IMUdata.dataOri.yaw=-IMU.Angle.z;
 

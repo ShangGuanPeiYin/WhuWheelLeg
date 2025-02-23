@@ -111,7 +111,7 @@ s32 BytesToInt32(u8* buff, int index)
 /// @param slope 斜率
 /// @param intercept 截距
 /// @return
-bool Regression(int Line[], int start, int end, float* slope, float* intercept)
+int Regression(int Line[], int start, int end, float* slope, float* intercept)
 {
 	int i, SumLines;
 	// 起点终点无所谓
@@ -207,4 +207,22 @@ uint8_t LineMono(uint8_t X1, uint8_t X2, int Line[])
 	}
 
 	return 0;
+}
+float LimitBoth_float(float a,float min,float max)
+{
+    if(a<min)
+         return min;
+    else if(a>max)
+         return max;
+    else return a;
+
+}
+int LimitBoth_int(int a,int min,int max)
+{
+    if(a<min)
+         return min;
+    else if(a>max)
+         return max;
+    else return a;
+
 }
