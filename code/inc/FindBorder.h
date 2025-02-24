@@ -14,7 +14,7 @@ extern int LeftLine_lost[ROW],RightLine_lost[ROW];
 extern int Original_RightLine[ROW],Original_LeftLine[ROW];
 extern int Valid_Left,Valid_Right;
 
-
+void FindBorder(void);
 
 
 #endif /* CODE_FINDBORDER_H_ */

@@ -237,7 +237,7 @@ void BalanceInit(void)	  // PID
  */
 void BalanceYaw(void)
 {
-	float turn			= ServoControlOut;// PIDOperation(&robot.yawPID, robot.posture->dataOri.yaw, robot.posture->dataSet.yaw);	  // 平衡环Pwm
+	float turn			= (float)ServoControlOut;// PIDOperation(&robot.yawPID, robot.posture->dataOri.yaw, robot.posture->dataSet.yaw);	  // 平衡环Pwm
 
 	robot.right_Torque += turn;
 	robot.left_Torque  -= turn;

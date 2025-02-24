@@ -76,10 +76,13 @@ int		 core0_main(void)
 			RealEndRow = EndRow;
 			// 修正截止行
 			CorrectEndRow();
+
 			// 找边界
 			FindBorder();
+
 			// 算中线
 			Find_MidLine();
+
 			// 找控制行
 			FindControlRow();
 

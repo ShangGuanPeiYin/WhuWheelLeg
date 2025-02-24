@@ -208,21 +208,21 @@ uint8_t LineMono(uint8_t X1, uint8_t X2, int Line[])
 
 	return 0;
 }
-float LimitBoth_float(float a,float min,float max)
+float LimitBoth_float(float a, float min, float max)
 {
-    if(a<min)
-         return min;
-    else if(a>max)
-         return max;
-    else return a;
-
+	if (a < min)
+		return min;
+	else if (a > max)
+		return max;
+	else
+		return a;
 }
-int LimitBoth_int(int a,int min,int max)
+int LimitBoth_int(int a, int min, int max)
 {
-    if(a<min)
-         return min;
-    else if(a>max)
-         return max;
-    else return a;
-
+	if (a < min)
+		return min;
+	else if (a > max)
+		return max;
+	else
+		return a;
 }

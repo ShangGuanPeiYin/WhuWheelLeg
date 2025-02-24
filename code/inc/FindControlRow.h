@@ -1,9 +1,4 @@
-#include "zf_common_typedef.h"/*
-/*
- * FindControlRow.h
- * Created on: 2024Δκ10ΤΒ11ΘΥ
- * Author: Αυγε
- */
+#include "zf_common_typedef.h"
 
 #ifndef CODE_FINDCONTROLROW_H_
 #define CODE_FINDCONTROLROW_H_
