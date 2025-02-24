@@ -348,3 +348,19 @@ cpu1_main.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\queue
 "D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\queue.h" :
 cpu1_main.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\robot.h"
 "D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\robot.h" :
+cpu1_main.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\beiyoucontrol.h"
+"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\beiyoucontrol.h" :
+cpu1_main.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\beiyoupid.h"
+"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\beiyoupid.h" :
+cpu1_main.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\vofa.h"
+"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\vofa.h" :
+cpu1_main.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\servo.h"
+"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\servo.h" :
+cpu1_main.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\FindBorder.h"
+"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\FindBorder.h" :
+cpu1_main.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\FindControlRow.h"
+"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\FindControlRow.h" :
+cpu1_main.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\FindEndrow.h"
+"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\FindEndrow.h" :
+cpu1_main.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\FindMidline.h"
+"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\FindMidline.h" :

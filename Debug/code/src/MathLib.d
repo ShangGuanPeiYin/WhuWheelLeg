@@ -348,3 +348,19 @@ MathLib.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\queue.h
 "D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\queue.h" :
 MathLib.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\robot.h"
 "D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\robot.h" :
+MathLib.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\beiyoucontrol.h"
+"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\beiyoucontrol.h" :
+MathLib.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\beiyoupid.h"
+"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\beiyoupid.h" :
+MathLib.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\vofa.h"
+"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\vofa.h" :
+MathLib.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\servo.h"
+"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\servo.h" :
+MathLib.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\FindBorder.h"
+"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\FindBorder.h" :
+MathLib.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\FindControlRow.h"
+"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\FindControlRow.h" :
+MathLib.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\FindEndrow.h"
+"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\FindEndrow.h" :
+MathLib.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\FindMidline.h"
+"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\FindMidline.h" :

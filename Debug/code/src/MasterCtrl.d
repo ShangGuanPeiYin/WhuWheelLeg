@@ -348,3 +348,19 @@ MasterCtrl.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\queu
 "D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\queue.h" :
 MasterCtrl.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\robot.h"
 "D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\robot.h" :
+MasterCtrl.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\beiyoucontrol.h"
+"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\beiyoucontrol.h" :
+MasterCtrl.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\beiyoupid.h"
+"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\beiyoupid.h" :
+MasterCtrl.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\vofa.h"
+"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\vofa.h" :
+MasterCtrl.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\servo.h"
+"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\servo.h" :
+MasterCtrl.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\FindBorder.h"
+"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\FindBorder.h" :
+MasterCtrl.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\FindControlRow.h"
+"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\FindControlRow.h" :
+MasterCtrl.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\FindEndrow.h"
+"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\FindEndrow.h" :
+MasterCtrl.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\FindMidline.h"
+"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\FindMidline.h" :

@@ -94,6 +94,15 @@
 #include "queue.h"
 #include "robot.h"
 #include "vector.h"
+
+#include "beiyoucontrol.h"
+#include "beiyoupid.h"
+#include "vofa.h"
+#include "servo.h"
+#include "FindBorder.h"
+#include "FindControlRow.h"
+#include "FindEndrow.h"
+#include "FindMidline.h"
 //=====================================================”√ªß≤„======================================================
 
 #endif
