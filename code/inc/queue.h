@@ -9,17 +9,17 @@ typedef struct {
 	int			   size;	 // 队列长度
 	int			   count;	 // 用于判断队满还是空
 	unsigned char* data;	 // 申请一片内存，data实际上是数组首地址
-} Queue;
+} QueueType;
 
-extern Queue usart1_rec_list;
-extern Queue usart2_rec_list;
-extern Queue usart3_rec_list;
+extern QueueType usart1_rec_list;
+extern QueueType usart2_rec_list;
+extern QueueType usart3_rec_list;
 
-void clear(Queue* queue);						  // 擦除
-bool QueueInit(Queue* queue, int _size);		  // 初始化
-bool enQueue(Queue* queue, unsigned char ch);	  // 入队
-bool deQueue(Queue* queue, unsigned char* ch);	  // 出队 一次 n 个
-bool isFull(Queue* queue);						  // 判断是否满队
-bool isEmpty(Queue* queue);
+void clear(QueueType* queue);						  // 擦除
+bool QueueInit(QueueType* queue, int _size);		  // 初始化
+bool enQueue(QueueType* queue, unsigned char ch);	  // 入队
+bool deQueue(QueueType* queue, unsigned char* ch);	  // 出队 一次 n 个
+bool isFull(QueueType* queue);						  // 判断是否满队
+bool isEmpty(QueueType* queue);
 
 #endif

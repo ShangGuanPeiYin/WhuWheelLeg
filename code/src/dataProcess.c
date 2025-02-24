@@ -35,15 +35,15 @@ void ReadMsg(DataProcessType* data, uint8 temp)
 				// 	}
 				// }
 				break;
-				// case 2:
-				// 	/* code */
-				// 	break;
-				// case 3:
-				// 	/* code */
-				// 	break;
-				// case 4:
-				// 	/* code */
-				// 	break;
+			case 2:
+				/* code */
+				break;
+			case 3:
+				/* code */
+				break;
+			case 4:
+				/* code */
+				break;
 
 			default:
 				clearFlag(data);

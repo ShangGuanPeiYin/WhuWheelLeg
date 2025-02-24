@@ -1,8 +1,3 @@
-/*
- * Servo.c
- * Created on: 2024年10月11日
- * Author: 刘沐
- */
 #include "zf_common_headfile.h"
 
 ServoType Servo[4];
@@ -73,39 +68,3 @@ void ServoFunc(void)
 		pwm_set_duty(Servo[id].pin, Servo[id].PWMSet);	  // 设置PWM占空比
 	}
 };
-
-float directionError = 0;
-int	  direction_Kp = 120, direction_Kd = 0;	   // 舵机PD,循迹主要需要调的参数 109 405
-int	  ServoControlOut = 0;					   // 舵机实际输出值
-
-void Get_Direction_Error()
-{
-	// 计算误差并归一化
-	directionError	= ((float) (MidLine[ControlRow] - (COL / 2))) / COL;
-
-	directionError *= -3.0;	   // 放大和限幅范围由车实际情况调整
-
-	// directionError= LimitBoth_float(directionError,-1.0,1.0);
-
-	oled_show_float(60, 1, directionError, 2, 2);
-}
-
-void Direction_Control_Error(void)
-{
-	static float P, D, error_pre;
-	/*
-	 刘沐：简单写个舵机PID来位置闭环，这个舵机PID将是校内赛你们需要花最多时间进行调试的地方，加油捏
-	 */
-	Get_Direction_Error();
-	P				= directionError;
-	D				= directionError - error_pre;
-	error_pre		= directionError;
-	ServoControlOut = (direction_Kp * P) + (direction_Kd * D);
-	if (StopFlag)
-		ServoControlOut = 0;
-	/*
-	 刘沐：
-	 下面是停车时把舵机打正，防止舵机乱晃
-	 不想要可以删掉只保留 pwm_set_duty(SERVO_PWM,ServoControlOut);就行
-	*/
-}

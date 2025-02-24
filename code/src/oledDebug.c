@@ -78,6 +78,5 @@ void FunctionTest(void)
 		robot.pipeline.state = StatePreparing;
 	}
 	RobotJumpLine();
-
 #endif
 }

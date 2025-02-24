@@ -41,11 +41,13 @@ typedef struct _robot {
 	float speedNow, speedSet;	 // 机身速度，左右速度均值
 
 	// TODO: CameraType
+	Vector2f ZeroPoint;
 
 } RobotType;
 
 extern RobotType robot;
-extern float tiaocan[9];
+extern float	 tiaocan[9];
+extern float	 YawCtrlOut;
 
 void robotInit(RobotType* robot);
 
@@ -64,7 +66,7 @@ void Processed(PipelineType* pipeline);	   // 已进行完
 void BalanceInit(void);		// PID
 void BalanceYaw(void);		// 偏航角，转向环
 void BalanceRoll(void);		// 横滚角平衡 TODO
-void BalancePitch(void);	// 俯仰角平衡 TODO
+void BalancePitch(void);	// 俯仰角平衡
 void Balance(void);
 
 #endif

@@ -1,6 +1,6 @@
 	; Module start
 	.compiler_version	"TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler v1.1r8 Build 22011964"
-	.compiler_invocation	"ctc -f cc26032a --dep-file=code/src/dataProcess.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc26xb -D__CPU_TC26XB__ --core=tc1.6.x --fp-model=+float -D__CPU__=tc26xb -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\code -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\code\\\\inc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Configurations -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B\\\\_Reg -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If\\\\Ccu6If -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\StdIf -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Math -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Asc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6 -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Timer -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\CStart -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Irq -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Dma -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12 -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\IncrEnc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\SpiMaster -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Adc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Impl -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib\\\\DataHandling -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_PinMap -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_common -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_components -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_device -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_driver -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\user -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o code/src/dataProcess.src ../code/src/dataProcess.c"
+	.compiler_invocation	"ctc -f cc19412a --dep-file=code/src/dataProcess.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc26xb -D__CPU_TC26XB__ --core=tc1.6.x --fp-model=+float -D__CPU__=tc26xb -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\code -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\code\\\\inc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Configurations -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B\\\\_Reg -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If\\\\Ccu6If -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\StdIf -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Math -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Asc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6 -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Timer -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\CStart -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Irq -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Dma -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12 -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\IncrEnc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\SpiMaster -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Adc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Impl -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib\\\\DataHandling -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_PinMap -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_common -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_components -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_device -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_driver -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\user -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o code/src/dataProcess.src ../code/src/dataProcess.c"
 	.compiler_name		"ctc"
 	;source	'../code/src/dataProcess.c'
 
@@ -13,22 +13,22 @@ $TC16X
 	
 	.global	DataProcessInit
 ; Function DataProcessInit
-.L19:
+.L25:
 DataProcessInit:	.type	func
 	movh.a	a4,#@his(U2data)
 	lea	a4,[a4]@los(U2data)
-.L102:
+.L108:
 	mov	d4,#0
-.L103:
+.L109:
 	mov	d5,#272
 	call	memset
-.L104:
+.L110:
 	ret
-.L63:
+.L69:
 	
 __DataProcessInit_function_end:
 	.size	DataProcessInit,__DataProcessInit_function_end-DataProcessInit
-.L36:
+.L42:
 	; End of function
 	
 	.sdecl	'.text.dataProcess.ReadMsg',code,cluster('ReadMsg')
@@ -37,37 +37,55 @@ __DataProcessInit_function_end:
 	
 	.global	ReadMsg
 ; Function ReadMsg
-.L21:
+.L27:
 ReadMsg:	.type	func
 	mov.aa	a15,a4
-.L88:
+.L94:
 	mov.aa	a4,a15
 	call	getHeadMsg
-.L87:
+.L93:
 	jeq	d2,#0,.L2
-.L109:
+.L115:
 	ld.b	d15,[a15]268
-.L110:
+.L116:
 	mov	d0,#1
 	jeq	d15,d0,.L3
-	j	.L4
+.L117:
+	mov	d0,#2
+	jeq	d15,d0,.L4
+.L118:
+	mov	d0,#3
+	jeq	d15,d0,.L5
+.L119:
+	mov	d0,#4
+	jeq	d15,d0,.L6
+	j	.L7
 .L3:
-	j	.L5
+	j	.L8
 .L4:
-	mov.aa	a4,a15
-.L89:
-	call	clearFlag
-.L90:
-	j	.L6
-.L6:
+	j	.L9
 .L5:
+	j	.L10
+.L6:
+	j	.L11
+.L7:
+	mov.aa	a4,a15
+.L95:
+	call	clearFlag
+.L96:
+	j	.L12
+.L12:
+.L11:
+.L10:
+.L9:
+.L8:
 .L2:
 	ret
-.L64:
+.L70:
 	
 __ReadMsg_function_end:
 	.size	ReadMsg,__ReadMsg_function_end-ReadMsg
-.L41:
+.L47:
 	; End of function
 	
 	.sdecl	'.text.dataProcess.getHeadMsg',code,cluster('getHeadMsg')
@@ -76,75 +94,75 @@ __ReadMsg_function_end:
 	
 	.global	getHeadMsg
 ; Function getHeadMsg
-.L23:
+.L29:
 getHeadMsg:	.type	func
 	ld.bu	d15,[a4]
-.L115:
-	jne	d15,#0,.L7
-.L116:
-	ld.b	d15,[a4]4
-.L117:
-	st.b	[a4]3,d15
-.L118:
-	st.b	[a4]4,d4
-.L119:
-	ld.b	d15,[a4]3
-.L120:
-	movh.a	a15,#@his(head_char)
-	lea	a15,[a15]@los(head_char)
-.L121:
-	ld.b	d0,[a15]0
-.L122:
-	jne	d15,d0,.L8
-.L123:
-	extr	d15,d4,#0,#8
 .L124:
+	jne	d15,#0,.L13
+.L125:
+	ld.b	d15,[a4]4
+.L126:
+	st.b	[a4]3,d15
+.L127:
+	st.b	[a4]4,d4
+.L128:
+	ld.b	d15,[a4]3
+.L129:
 	movh.a	a15,#@his(head_char)
 	lea	a15,[a15]@los(head_char)
-.L125:
-	ld.b	d0,[a15]1
-.L126:
-	jne	d15,d0,.L9
-.L127:
-	mov	d15,#1
-.L128:
-	st.b	[a4],d15
-.L129:
-	mov	d15,#0
 .L130:
-	st.w	[a4]264,d15
-.L9:
-.L8:
-	j	.L10
-.L7:
-	ld.bu	d15,[a4]2
+	ld.b	d0,[a15]0
 .L131:
-	jne	d15,#0,.L11
+	jne	d15,d0,.L14
 .L132:
-	st.b	[a4]268,d4
+	extr	d15,d4,#0,#8
 .L133:
-	mov	d15,#1
+	movh.a	a15,#@his(head_char)
+	lea	a15,[a15]@los(head_char)
 .L134:
-	st.b	[a4]2,d15
+	ld.b	d0,[a15]1
 .L135:
-	j	.L12
-.L11:
-	ld.bu	d2,[a4]2
+	jne	d15,d0,.L15
 .L136:
-	j	.L13
-.L12:
-.L10:
-	mov	d2,#0
+	mov	d15,#1
 .L137:
-	j	.L14
+	st.b	[a4],d15
+.L138:
+	mov	d15,#0
+.L139:
+	st.w	[a4]264,d15
+.L15:
 .L14:
+	j	.L16
 .L13:
+	ld.bu	d15,[a4]2
+.L140:
+	jne	d15,#0,.L17
+.L141:
+	st.b	[a4]268,d4
+.L142:
+	mov	d15,#1
+.L143:
+	st.b	[a4]2,d15
+.L144:
+	j	.L18
+.L17:
+	ld.bu	d2,[a4]2
+.L145:
+	j	.L19
+.L18:
+.L16:
+	mov	d2,#0
+.L146:
+	j	.L20
+.L20:
+.L19:
 	ret
-.L70:
+.L76:
 	
 __getHeadMsg_function_end:
 	.size	getHeadMsg,__getHeadMsg_function_end-getHeadMsg
-.L46:
+.L52:
 	; End of function
 	
 	.sdecl	'.text.dataProcess.checkSum',code,cluster('checkSum')
@@ -153,33 +171,33 @@ __getHeadMsg_function_end:
 	
 	.global	checkSum
 ; Function checkSum
-.L25:
+.L31:
 checkSum:	.type	func
 	mov	d2,#0
-.L80:
+.L86:
 	mov	d15,#0
-.L92:
-	j	.L15
-.L16:
+.L98:
+	j	.L21
+.L22:
 	addsc.a	a15,a4,d15,#0
 	ld.b	d0,[a15]0
-.L142:
+.L151:
 	add	d2,d0
-.L91:
+.L97:
 	extr	d2,d2,#0,#8
-.L93:
+.L99:
 	add	d15,#1
-.L15:
-	jlt	d15,d4,.L16
-.L81:
-	j	.L17
-.L17:
+.L21:
+	jlt	d15,d4,.L22
+.L87:
+	j	.L23
+.L23:
 	ret
-.L74:
+.L80:
 	
 __checkSum_function_end:
 	.size	checkSum,__checkSum_function_end-checkSum
-.L51:
+.L57:
 	; End of function
 	
 	.sdecl	'.text.dataProcess.clearFlag',code,cluster('clearFlag')
@@ -188,40 +206,40 @@ __checkSum_function_end:
 	
 	.global	clearFlag
 ; Function clearFlag
-.L27:
+.L33:
 clearFlag:	.type	func
 	mov	d15,#32
 	st.b	[a4]4,d15
-.L147:
+.L156:
 	st.b	[a4]3,d15
-.L148:
+.L157:
 	mov	d15,#32
 	st.b	[a4]6,d15
-.L149:
-	st.b	[a4]5,d15
-.L150:
-	mov	d15,#0
-.L151:
-	st.b	[a4]2,d15
-.L152:
-	mov	d15,#0
-.L153:
-	st.b	[a4],d15
-.L154:
-	mov	d15,#0
-.L155:
-	st.b	[a4]1,d15
-.L156:
-	mov	d15,#0
-.L157:
-	st.w	[a4]264,d15
 .L158:
+	st.b	[a4]5,d15
+.L159:
+	mov	d15,#0
+.L160:
+	st.b	[a4]2,d15
+.L161:
+	mov	d15,#0
+.L162:
+	st.b	[a4],d15
+.L163:
+	mov	d15,#0
+.L164:
+	st.b	[a4]1,d15
+.L165:
+	mov	d15,#0
+.L166:
+	st.w	[a4]264,d15
+.L167:
 	ret
-.L83:
+.L89:
 	
 __clearFlag_function_end:
 	.size	clearFlag,__clearFlag_function_end-clearFlag
-.L56:
+.L62:
 	; End of function
 	
 	.sdecl	'.data.dataProcess.head_char',data,cluster('head_char')
@@ -254,17 +272,17 @@ U2data:	.type	object
 	.calls	'clearFlag','',0
 	.sdecl	'.debug_info',debug
 	.sect	'.debug_info'
-.L29:
+.L35:
 	.word	147239
 	.half	3
-	.word	.L30
+	.word	.L36
 	.byte	4
-.L28:
+.L34:
 	.byte	1
 	.byte	'../code/src/dataProcess.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1
-	.word	.L31
+	.word	.L37
 	.byte	2,1,1,3
 	.word	172
 	.byte	4
@@ -299,10 +317,10 @@ U2data:	.type	object
 	.word	318
 	.byte	6,0,7
 	.byte	'unsigned int',0,4,7
-.L77:
+.L83:
 	.byte	7
 	.byte	'int',0,4,5
-.L67:
+.L73:
 	.byte	7
 	.byte	'unsigned char',0,1,8,10
 	.byte	'_Ifx_SRC_SRCR_Bits',0,4,45,16,4,11
@@ -5683,19 +5701,19 @@ U2data:	.type	object
 	.byte	24
 	.word	32782
 	.byte	6,0
-.L69:
+.L75:
 	.byte	7
 	.byte	'_Bool',0,1,2
-.L73:
+.L79:
 	.byte	7
 	.byte	'char',0,1,6
-.L86:
+.L92:
 	.byte	18,2
 	.word	33799
 	.byte	19,1,0,18,128,1
 	.word	33799
 	.byte	19,127,0
-.L85:
+.L91:
 	.byte	10
 	.byte	'_dataProcess',0,21,7,16,144,2,13
 	.byte	'get_head',0
@@ -5725,10 +5743,10 @@ U2data:	.type	object
 	.byte	'head_id',0
 	.word	33799
 	.byte	1,3,35,140,2,0
-.L65:
+.L71:
 	.byte	3
 	.word	33826
-.L75:
+.L81:
 	.byte	3
 	.word	33799
 	.byte	28
@@ -19933,286 +19951,7 @@ U2data:	.type	object
 	.byte	4,2,35,24,0,28
 	.byte	'ServoType',0,55,40,3
 	.word	145241
-	.byte	15,56,27,9,1,16
-	.byte	'Left',0,0,16
-	.byte	'Right',0,1,0,28
-	.byte	'LegNum',0,56,27,30
-	.word	145414
-	.byte	34
-	.byte	'_BldcMode',0,56,30,14,1,16
-	.byte	'CURRENT',0,0,16
-	.byte	'RPM',0,1,16
-	.byte	'POSITION',0,2,0,28
-	.byte	'BldcMode',0,56,34,3
-	.word	145450
-	.byte	14
-	.word	232
-	.byte	14
-	.word	232
-	.byte	14
-	.word	32471
-	.byte	10
-	.byte	'_Value',0,56,37,16,12,13
-	.byte	'speed',0
-	.word	145510
-	.byte	4,2,35,0,13
-	.byte	'angle',0
-	.word	145515
-	.byte	4,2,35,4,13
-	.byte	'current',0
-	.word	145520
-	.byte	2,2,35,8,0,28
-	.byte	'ValueType',0,56,41,3
-	.word	145525
-	.byte	14
-	.word	1010
-	.byte	14
-	.word	1010
-	.byte	14
-	.word	1010
-	.byte	14
-	.word	452
-	.byte	14
-	.word	452
-	.byte	10
-	.byte	'_PulseType',0,56,44,16,16,13
-	.byte	'pulseRead',0
-	.word	145603
-	.byte	2,2,35,0,13
-	.byte	'pulseLast',0
-	.word	145608
-	.byte	2,2,35,2,13
-	.byte	'Distanse',0
-	.word	145613
-	.byte	2,2,35,4,13
-	.byte	'pulseTotal',0
-	.word	145618
-	.byte	4,2,35,6,13
-	.byte	'pulseLock',0
-	.word	145623
-	.byte	4,2,35,10,0,28
-	.byte	'PulseType',0,56,51,3
-	.word	145628
-	.byte	20,56,54,9,12,13
-	.byte	'direct',0
-	.word	145414
-	.byte	1,2,35,0,13
-	.byte	'sign',0
-	.word	34140
-	.byte	1,2,35,1,13
-	.byte	'reductionRatio',0
-	.word	232
-	.byte	4,2,35,2,13
-	.byte	'currentLimit',0
-	.word	232
-	.byte	4,2,35,6,0,28
-	.byte	'MotorParamType',0,56,60,3
-	.word	145758
-	.byte	20,56,63,9,12,13
-	.byte	'isStuck',0
-	.word	33790
-	.byte	1,2,35,0,13
-	.byte	'currentLimitFlag',0
-	.word	33790
-	.byte	1,2,35,1,13
-	.byte	'rpmLimitFlag',0
-	.word	33790
-	.byte	1,2,35,2,13
-	.byte	'posLimitFlag',0
-	.word	33790
-	.byte	1,2,35,3,13
-	.byte	'maxCurrent',0
-	.word	232
-	.byte	4,2,35,4,13
-	.byte	'maxRPM',0
-	.word	232
-	.byte	4,2,35,8,0,28
-	.byte	'MotorLimit',0,56,73,3
-	.word	145863
-	.byte	10
-	.byte	'_Bldc',0,56,76,16,240,1,13
-	.byte	'enable',0
-	.word	33790
-	.byte	1,2,35,0,13
-	.byte	'begin',0
-	.word	33790
-	.byte	1,2,35,1,13
-	.byte	'setZero',0
-	.word	33790
-	.byte	1,2,35,2,13
-	.byte	'mode',0
-	.word	145450
-	.byte	1,2,35,3,13
-	.byte	'valueLast',0
-	.word	145525
-	.byte	12,2,35,4,13
-	.byte	'valueNow',0
-	.word	145525
-	.byte	12,2,35,16,13
-	.byte	'valueSet',0
-	.word	145525
-	.byte	12,2,35,28,13
-	.byte	'reachTime',0
-	.word	232
-	.byte	4,2,35,40,13
-	.byte	'pulse',0
-	.word	145628
-	.byte	16,2,35,44,13
-	.byte	'param',0
-	.word	145758
-	.byte	12,2,35,60,13
-	.byte	'limit',0
-	.word	145863
-	.byte	12,2,35,72,13
-	.byte	'posPID',0
-	.word	144835
-	.byte	52,2,35,84,13
-	.byte	'rpmPID',0
-	.word	144835
-	.byte	52,3,35,136,1,13
-	.byte	'currentPID',0
-	.word	144835
-	.byte	52,3,35,188,1,0,28
-	.byte	'BldcType',0,56,89,3
-	.word	146011
-	.byte	28
-	.byte	'DataProcessType',0,21,17,3
-	.word	33826
-	.byte	10
-	.byte	'_IMUParam',0,57,9,16,48,13
-	.byte	'accel',0
-	.word	144089
-	.byte	12,2,35,0,13
-	.byte	'angle',0
-	.word	144089
-	.byte	12,2,35,12,13
-	.byte	'mag',0
-	.word	144089
-	.byte	12,2,35,24,13
-	.byte	'pitch',0
-	.word	232
-	.byte	4,2,35,36,13
-	.byte	'roll',0
-	.word	232
-	.byte	4,2,35,40,13
-	.byte	'yaw',0
-	.word	232
-	.byte	4,2,35,44,0,28
-	.byte	'IMUParam',0,57,18,3
-	.word	146300
-	.byte	10
-	.byte	'_Imu',0,57,20,16,152,1,13
-	.byte	'dataOri',0
-	.word	146300
-	.byte	48,2,35,0,13
-	.byte	'dataRaw',0
-	.word	146300
-	.byte	48,2,35,48,13
-	.byte	'dataSet',0
-	.word	146300
-	.byte	48,2,35,96,13
-	.byte	'G',0
-	.word	232
-	.byte	4,3,35,144,1,13
-	.byte	'calibration_flag',0
-	.word	33790
-	.byte	1,3,35,148,1,0,28
-	.byte	'IMUType',0,57,28,3
-	.word	146418
-	.byte	10
-	.byte	'_Attitude_',0,57,47,16,12,13
-	.byte	'x',0
-	.word	232
-	.byte	4,2,35,0,13
-	.byte	'y',0
-	.word	232
-	.byte	4,2,35,4,13
-	.byte	'z',0
-	.word	232
-	.byte	4,2,35,8,0,28
-	.byte	'_Attitude',0,57,51,2
-	.word	146536
-	.byte	3
-	.word	145241
-	.byte	3
-	.word	146011
-	.byte	3
-	.word	318
-	.byte	10
-	.byte	'_leg',0,58,18,16,216,1,13
-	.byte	'num',0
-	.word	145414
-	.byte	1,2,35,0,13
-	.byte	'front',0
-	.word	146604
-	.byte	4,2,35,4,13
-	.byte	'behind',0
-	.word	146604
-	.byte	4,2,35,8,13
-	.byte	'wheel',0
-	.word	146609
-	.byte	4,2,35,12,13
-	.byte	'angle1Set',0
-	.word	232
-	.byte	4,2,35,16,13
-	.byte	'angle4Set',0
-	.word	232
-	.byte	4,2,35,20,13
-	.byte	'PosNow',0
-	.word	144159
-	.byte	8,2,35,24,13
-	.byte	'PosSet',0
-	.word	144159
-	.byte	8,2,35,32,13
-	.byte	'PosStart',0
-	.word	144159
-	.byte	8,2,35,40,13
-	.byte	'PosTarget',0
-	.word	144159
-	.byte	8,2,35,48,13
-	.byte	'reachTime',0
-	.word	232
-	.byte	4,2,35,56,13
-	.byte	'RunTime',0
-	.word	146614
-	.byte	4,2,35,60,13
-	.byte	'motion',0
-	.word	144615
-	.byte	152,1,2,35,64,0,28
-	.byte	'LegType',0,58,38,3
-	.word	146619
-	.byte	34
-	.byte	'StateEnum',0,59,8,6,1,16
-	.byte	'StatePreparing',0,0,16
-	.byte	'StateProcessing',0,1,16
-	.byte	'StateEnd',0,2,0,10
-	.byte	'_Pipeline',0,59,15,16,2,13
-	.byte	'isRun',0
-	.word	33790
-	.byte	1,2,35,0,13
-	.byte	'state',0
-	.word	146866
-	.byte	1,2,35,1,0,28
-	.byte	'PipelineType',0,59,18,3
-	.word	146928
-	.byte	18,40
-	.word	144159
-	.byte	19,4,0,18,20
-	.word	232
-	.byte	19,4,0,10
-	.byte	'_JumpLineType',0,59,20,16,64,13
-	.byte	'Pos',0
-	.word	146995
-	.byte	40,2,35,0,13
-	.byte	'reachTime',0
-	.word	147004
-	.byte	20,2,35,40,13
-	.byte	'Lerp',0
-	.word	33790
-	.byte	1,2,35,60,0,28
-	.byte	'JumpLineType',0,59,24,3
-	.word	147013
-	.byte	20,60,5,9,36,13
+	.byte	20,56,5,9,36,13
 	.byte	'target',0
 	.word	232
 	.byte	4,2,35,0,13
@@ -20240,12 +19979,291 @@ U2data:	.type	object
 	.byte	'output',0
 	.word	232
 	.byte	4,2,35,32,0,28
-	.byte	'PID',0,60,14,2
-	.word	147100
+	.byte	'PID',0,56,14,2
+	.word	145414
+	.byte	15,57,27,9,1,16
+	.byte	'Left',0,0,16
+	.byte	'Right',0,1,0,28
+	.byte	'LegNum',0,57,27,30
+	.word	145556
+	.byte	34
+	.byte	'_BldcMode',0,57,30,14,1,16
+	.byte	'CURRENT',0,0,16
+	.byte	'RPM',0,1,16
+	.byte	'POSITION',0,2,0,28
+	.byte	'BldcMode',0,57,34,3
+	.word	145592
+	.byte	14
+	.word	232
+	.byte	14
+	.word	232
+	.byte	14
+	.word	32471
+	.byte	10
+	.byte	'_Value',0,57,37,16,12,13
+	.byte	'speed',0
+	.word	145652
+	.byte	4,2,35,0,13
+	.byte	'angle',0
+	.word	145657
+	.byte	4,2,35,4,13
+	.byte	'current',0
+	.word	145662
+	.byte	2,2,35,8,0,28
+	.byte	'ValueType',0,57,41,3
+	.word	145667
+	.byte	14
+	.word	1010
+	.byte	14
+	.word	1010
+	.byte	14
+	.word	1010
+	.byte	14
+	.word	452
+	.byte	14
+	.word	452
+	.byte	10
+	.byte	'_PulseType',0,57,44,16,16,13
+	.byte	'pulseRead',0
+	.word	145745
+	.byte	2,2,35,0,13
+	.byte	'pulseLast',0
+	.word	145750
+	.byte	2,2,35,2,13
+	.byte	'Distanse',0
+	.word	145755
+	.byte	2,2,35,4,13
+	.byte	'pulseTotal',0
+	.word	145760
+	.byte	4,2,35,6,13
+	.byte	'pulseLock',0
+	.word	145765
+	.byte	4,2,35,10,0,28
+	.byte	'PulseType',0,57,51,3
+	.word	145770
+	.byte	20,57,54,9,12,13
+	.byte	'direct',0
+	.word	145556
+	.byte	1,2,35,0,13
+	.byte	'sign',0
+	.word	34140
+	.byte	1,2,35,1,13
+	.byte	'reductionRatio',0
+	.word	232
+	.byte	4,2,35,2,13
+	.byte	'currentLimit',0
+	.word	232
+	.byte	4,2,35,6,0,28
+	.byte	'MotorParamType',0,57,60,3
+	.word	145900
+	.byte	20,57,63,9,12,13
+	.byte	'isStuck',0
+	.word	33790
+	.byte	1,2,35,0,13
+	.byte	'currentLimitFlag',0
+	.word	33790
+	.byte	1,2,35,1,13
+	.byte	'rpmLimitFlag',0
+	.word	33790
+	.byte	1,2,35,2,13
+	.byte	'posLimitFlag',0
+	.word	33790
+	.byte	1,2,35,3,13
+	.byte	'maxCurrent',0
+	.word	232
+	.byte	4,2,35,4,13
+	.byte	'maxRPM',0
+	.word	232
+	.byte	4,2,35,8,0,28
+	.byte	'MotorLimit',0,57,73,3
+	.word	146005
+	.byte	10
+	.byte	'_Bldc',0,57,76,16,240,1,13
+	.byte	'enable',0
+	.word	33790
+	.byte	1,2,35,0,13
+	.byte	'begin',0
+	.word	33790
+	.byte	1,2,35,1,13
+	.byte	'setZero',0
+	.word	33790
+	.byte	1,2,35,2,13
+	.byte	'mode',0
+	.word	145592
+	.byte	1,2,35,3,13
+	.byte	'valueLast',0
+	.word	145667
+	.byte	12,2,35,4,13
+	.byte	'valueNow',0
+	.word	145667
+	.byte	12,2,35,16,13
+	.byte	'valueSet',0
+	.word	145667
+	.byte	12,2,35,28,13
+	.byte	'reachTime',0
+	.word	232
+	.byte	4,2,35,40,13
+	.byte	'pulse',0
+	.word	145770
+	.byte	16,2,35,44,13
+	.byte	'param',0
+	.word	145900
+	.byte	12,2,35,60,13
+	.byte	'limit',0
+	.word	146005
+	.byte	12,2,35,72,13
+	.byte	'posPID',0
+	.word	144835
+	.byte	52,2,35,84,13
+	.byte	'rpmPID',0
+	.word	144835
+	.byte	52,3,35,136,1,13
+	.byte	'currentPID',0
+	.word	144835
+	.byte	52,3,35,188,1,0,28
+	.byte	'BldcType',0,57,89,3
+	.word	146153
+	.byte	28
+	.byte	'DataProcessType',0,21,17,3
+	.word	33826
+	.byte	10
+	.byte	'_IMUParam',0,58,9,16,48,13
+	.byte	'accel',0
+	.word	144089
+	.byte	12,2,35,0,13
+	.byte	'angle',0
+	.word	144089
+	.byte	12,2,35,12,13
+	.byte	'mag',0
+	.word	144089
+	.byte	12,2,35,24,13
+	.byte	'pitch',0
+	.word	232
+	.byte	4,2,35,36,13
+	.byte	'roll',0
+	.word	232
+	.byte	4,2,35,40,13
+	.byte	'yaw',0
+	.word	232
+	.byte	4,2,35,44,0,28
+	.byte	'IMUParam',0,58,18,3
+	.word	146442
+	.byte	10
+	.byte	'_Imu',0,58,20,16,152,1,13
+	.byte	'dataOri',0
+	.word	146442
+	.byte	48,2,35,0,13
+	.byte	'dataRaw',0
+	.word	146442
+	.byte	48,2,35,48,13
+	.byte	'dataSet',0
+	.word	146442
+	.byte	48,2,35,96,13
+	.byte	'G',0
+	.word	232
+	.byte	4,3,35,144,1,13
+	.byte	'calibration_flag',0
+	.word	33790
+	.byte	1,3,35,148,1,0,28
+	.byte	'IMUType',0,58,28,3
+	.word	146560
+	.byte	10
+	.byte	'_Attitude_',0,58,41,16,12,13
+	.byte	'x',0
+	.word	232
+	.byte	4,2,35,0,13
+	.byte	'y',0
+	.word	232
+	.byte	4,2,35,4,13
+	.byte	'z',0
+	.word	232
+	.byte	4,2,35,8,0,28
+	.byte	'_Attitude',0,58,45,3
+	.word	146678
+	.byte	3
+	.word	145241
+	.byte	3
+	.word	146153
+	.byte	3
+	.word	318
+	.byte	10
+	.byte	'_leg',0,59,18,16,216,1,13
+	.byte	'num',0
+	.word	145556
+	.byte	1,2,35,0,13
+	.byte	'front',0
+	.word	146746
+	.byte	4,2,35,4,13
+	.byte	'behind',0
+	.word	146746
+	.byte	4,2,35,8,13
+	.byte	'wheel',0
+	.word	146751
+	.byte	4,2,35,12,13
+	.byte	'angle1Set',0
+	.word	232
+	.byte	4,2,35,16,13
+	.byte	'angle4Set',0
+	.word	232
+	.byte	4,2,35,20,13
+	.byte	'PosNow',0
+	.word	144159
+	.byte	8,2,35,24,13
+	.byte	'PosSet',0
+	.word	144159
+	.byte	8,2,35,32,13
+	.byte	'PosStart',0
+	.word	144159
+	.byte	8,2,35,40,13
+	.byte	'PosTarget',0
+	.word	144159
+	.byte	8,2,35,48,13
+	.byte	'reachTime',0
+	.word	232
+	.byte	4,2,35,56,13
+	.byte	'RunTime',0
+	.word	146756
+	.byte	4,2,35,60,13
+	.byte	'motion',0
+	.word	144615
+	.byte	152,1,2,35,64,0,28
+	.byte	'LegType',0,59,38,3
+	.word	146761
+	.byte	34
+	.byte	'StateEnum',0,60,8,6,1,16
+	.byte	'StatePreparing',0,0,16
+	.byte	'StateProcessing',0,1,16
+	.byte	'StateEnd',0,2,0,10
+	.byte	'_Pipeline',0,60,15,16,2,13
+	.byte	'isRun',0
+	.word	33790
+	.byte	1,2,35,0,13
+	.byte	'state',0
+	.word	147008
+	.byte	1,2,35,1,0,28
+	.byte	'PipelineType',0,60,18,3
+	.word	147070
+	.byte	18,40
+	.word	144159
+	.byte	19,4,0,18,20
+	.word	232
+	.byte	19,4,0,10
+	.byte	'_JumpLineType',0,60,20,16,64,13
+	.byte	'Pos',0
+	.word	147137
+	.byte	40,2,35,0,13
+	.byte	'reachTime',0
+	.word	147146
+	.byte	20,2,35,40,13
+	.byte	'Lerp',0
+	.word	33790
+	.byte	1,2,35,60,0,28
+	.byte	'JumpLineType',0,60,24,3
+	.word	147155
 	.byte	0
 	.sdecl	'.debug_abbrev',debug
 	.sect	'.debug_abbrev'
-.L30:
+.L36:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,21,0,54,15,39,12,0,0,3,15,0,73,19,0,0,4,46,1,3,8,32,13
 	.byte	58,15,59,15,57,15,54,15,39,12,0,0,5,5,0,3,8,58,15,59,15,57,15,73,19,0,0,6,11,0,0,0,7,36,0,3,8,11,15,62
 	.byte	15,0,0,8,46,1,3,8,32,13,58,15,59,15,57,15,73,19,54,15,39,12,0,0,9,59,0,3,8,0,0,10,19,1,3,8,58,15,59,15
@@ -20258,12 +20276,12 @@ U2data:	.type	object
 	.byte	39,12,0,0,34,4,1,3,8,58,15,59,15,57,15,11,15,0,0,0
 	.sdecl	'.debug_line',debug
 	.sect	'.debug_line'
-.L31:
-	.word	.L95-.L94
-.L94:
+.L37:
+	.word	.L101-.L100
+.L100:
 	.half	3
-	.word	.L97-.L96
-.L96:
+	.word	.L103-.L102
+.L102:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
 	.byte	'D:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B\\\\_Reg',0
 	.byte	'D:\\Software 1\\ADS\\ADS\\AURIX-Studio-1.10.6\\tools\\Compilers\\Tasking_1.1r8\\ctc\\include\\',0
@@ -20354,166 +20372,97 @@ U2data:	.type	object
 	.byte	'MathLib.h',0,3,0,0
 	.byte	'Pid.h',0,3,0,0
 	.byte	'Servo.h',0,3,0,0
+	.byte	'beiyoupid.h',0,3,0,0
 	.byte	'bldc.h',0,3,0,0
 	.byte	'imu.h',0,3,0,0
 	.byte	'leg.h',0,3,0,0
-	.byte	'robot.h',0,3,0,0
-	.byte	'beiyoupid.h',0,3,0,0,0
-.L97:
-.L95:
+	.byte	'robot.h',0,3,0,0,0
+.L103:
+.L101:
 	.sdecl	'.debug_info',debug,cluster('DataProcessInit')
 	.sect	'.debug_info'
-.L32:
+.L38:
 	.word	223
 	.half	3
-	.word	.L33
+	.word	.L39
 	.byte	4,1
 	.byte	'../code/src/dataProcess.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1
-	.word	.L35,.L34
+	.word	.L41,.L40
 	.byte	2
-	.word	.L28
+	.word	.L34
 	.byte	3
 	.byte	'DataProcessInit',0,1,12,6,1,1,1
-	.word	.L19,.L63,.L18
+	.word	.L25,.L69,.L24
 	.byte	4
-	.word	.L19,.L63
+	.word	.L25,.L69
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('DataProcessInit')
 	.sect	'.debug_abbrev'
-.L33:
+.L39:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('DataProcessInit')
 	.sect	'.debug_line'
-.L34:
-	.word	.L99-.L98
-.L98:
+.L40:
+	.word	.L105-.L104
+.L104:
 	.half	3
-	.word	.L101-.L100
-.L100:
+	.word	.L107-.L106
+.L106:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/src/dataProcess.c',0,0,0,0,0
-.L101:
+.L107:
 	.byte	5,38,7,0,5,2
-	.word	.L19
+	.word	.L25
 	.byte	3,11,1,5,46,9
-	.half	.L102-.L19
+	.half	.L108-.L25
 	.byte	1,5,49,9
-	.half	.L103-.L102
+	.half	.L109-.L108
 	.byte	1,5,75,9
-	.half	.L104-.L103
+	.half	.L110-.L109
 	.byte	1,7,9
-	.half	.L36-.L104
+	.half	.L42-.L110
 	.byte	0,1,1
-.L99:
+.L105:
 	.sdecl	'.debug_ranges',debug,cluster('DataProcessInit')
 	.sect	'.debug_ranges'
-.L35:
-	.word	-1,.L19,0,.L36-.L19,0,0
+.L41:
+	.word	-1,.L25,0,.L42-.L25,0,0
 	.sdecl	'.debug_info',debug,cluster('ReadMsg')
 	.sect	'.debug_info'
-.L37:
+.L43:
 	.word	249
 	.half	3
-	.word	.L38
+	.word	.L44
 	.byte	4,1
 	.byte	'../code/src/dataProcess.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1
-	.word	.L40,.L39
+	.word	.L46,.L45
 	.byte	2
-	.word	.L28
+	.word	.L34
 	.byte	3
 	.byte	'ReadMsg',0,1,20,6,1,1,1
-	.word	.L21,.L64,.L20
+	.word	.L27,.L70,.L26
 	.byte	4
 	.byte	'data',0,1,20,31
-	.word	.L65,.L66
+	.word	.L71,.L72
 	.byte	4
 	.byte	'temp',0,1,20,43
-	.word	.L67,.L68
+	.word	.L73,.L74
 	.byte	5
-	.word	.L21,.L64
+	.word	.L27,.L70
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('ReadMsg')
 	.sect	'.debug_abbrev'
-.L38:
+.L44:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('ReadMsg')
 	.sect	'.debug_line'
-.L39:
-	.word	.L106-.L105
-.L105:
-	.half	3
-	.word	.L108-.L107
-.L107:
-	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
-	.byte	'../code/src/dataProcess.c',0,0,0,0,0
-.L108:
-	.byte	5,6,7,0,5,2
-	.word	.L21
-	.byte	3,19,1,5,23,9
-	.half	.L88-.L21
-	.byte	3,2,1,5,2,9
-	.half	.L87-.L88
-	.byte	1,5,15,7,9
-	.half	.L109-.L87
-	.byte	3,1,1,5,9,9
-	.half	.L110-.L109
-	.byte	3,2,1,5,5,9
-	.half	.L3-.L110
-	.byte	3,12,1,5,15,9
-	.half	.L4-.L3
-	.byte	3,12,1,5,5,9
-	.half	.L90-.L4
-	.byte	3,1,1,5,1,9
-	.half	.L2-.L90
-	.byte	3,3,1,7,9
-	.half	.L41-.L2
-	.byte	0,1,1
-.L106:
-	.sdecl	'.debug_ranges',debug,cluster('ReadMsg')
-	.sect	'.debug_ranges'
-.L40:
-	.word	-1,.L21,0,.L41-.L21,0,0
-	.sdecl	'.debug_info',debug,cluster('getHeadMsg')
-	.sect	'.debug_info'
-.L42:
-	.word	255
-	.half	3
-	.word	.L43
-	.byte	4,1
-	.byte	'../code/src/dataProcess.c',0
-	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
-	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1
-	.word	.L45,.L44
-	.byte	2
-	.word	.L28
-	.byte	3
-	.byte	'getHeadMsg',0,1,63,6
-	.word	.L69
-	.byte	1,1,1
-	.word	.L23,.L70,.L22
-	.byte	4
-	.byte	'data',0,1,63,34
-	.word	.L65,.L71
-	.byte	4
-	.byte	'_ch',0,1,63,43
-	.word	.L67,.L72
-	.byte	5
-	.word	.L23,.L70
-	.byte	0,0
-	.sdecl	'.debug_abbrev',debug,cluster('getHeadMsg')
-	.sect	'.debug_abbrev'
-.L43:
-	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
-	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
-	.sdecl	'.debug_line',debug,cluster('getHeadMsg')
-	.sect	'.debug_line'
-.L44:
+.L45:
 	.word	.L112-.L111
 .L111:
 	.half	3
@@ -20522,380 +20471,461 @@ U2data:	.type	object
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/src/dataProcess.c',0,0,0,0,0
 .L114:
-	.byte	5,11,7,0,5,2
-	.word	.L23
-	.byte	3,192,0,1,5,7,9
-	.half	.L115-.L23
-	.byte	1,5,37,7,9
-	.half	.L116-.L115
-	.byte	3,1,1,5,21,9
-	.half	.L117-.L116
-	.byte	1,9
-	.half	.L118-.L117
-	.byte	3,1,1,9
-	.half	.L119-.L118
-	.byte	3,2,1,5,28,9
-	.half	.L120-.L119
-	.byte	1,5,37,9
-	.half	.L121-.L120
-	.byte	1,5,7,9
-	.half	.L122-.L121
-	.byte	1,5,58,7,9
-	.half	.L123-.L122
-	.byte	1,5,65,9
-	.half	.L124-.L123
-	.byte	1,5,74,9
-	.half	.L125-.L124
-	.byte	1,5,62,9
-	.half	.L126-.L125
-	.byte	1,5,21,7,9
-	.half	.L127-.L126
-	.byte	3,1,1,5,19,9
-	.half	.L128-.L127
-	.byte	1,5,21,9
-	.half	.L129-.L128
-	.byte	3,1,1,5,19,9
-	.half	.L130-.L129
-	.byte	1,5,77,9
-	.half	.L8-.L130
-	.byte	3,126,1,5,18,9
-	.half	.L7-.L8
-	.byte	3,4,1,5,14,9
-	.half	.L131-.L7
-	.byte	1,5,19,7,9
-	.half	.L132-.L131
-	.byte	3,1,1,5,23,9
-	.half	.L133-.L132
-	.byte	3,1,1,5,21,9
-	.half	.L134-.L133
-	.byte	1,5,24,9
-	.half	.L135-.L134
-	.byte	3,127,1,5,14,9
-	.half	.L11-.L135
-	.byte	3,4,1,5,3,9
-	.half	.L136-.L11
-	.byte	1,5,9,9
-	.half	.L10-.L136
+	.byte	5,6,7,0,5,2
+	.word	.L27
+	.byte	3,19,1,5,23,9
+	.half	.L94-.L27
 	.byte	3,2,1,5,2,9
-	.half	.L137-.L10
-	.byte	1,5,1,9
-	.half	.L13-.L137
-	.byte	3,1,1,7,9
-	.half	.L46-.L13
+	.half	.L93-.L94
+	.byte	1,5,15,7,9
+	.half	.L115-.L93
+	.byte	3,1,1,5,9,9
+	.half	.L116-.L115
+	.byte	3,2,1,9
+	.half	.L117-.L116
+	.byte	3,13,1,9
+	.half	.L118-.L117
+	.byte	3,3,1,9
+	.half	.L119-.L118
+	.byte	3,3,1,5,5,9
+	.half	.L3-.L119
+	.byte	3,121,1,9
+	.half	.L4-.L3
+	.byte	3,3,1,9
+	.half	.L5-.L4
+	.byte	3,3,1,9
+	.half	.L6-.L5
+	.byte	3,3,1,5,15,9
+	.half	.L7-.L6
+	.byte	3,3,1,5,5,9
+	.half	.L96-.L7
+	.byte	3,1,1,5,1,9
+	.half	.L2-.L96
+	.byte	3,3,1,7,9
+	.half	.L47-.L2
 	.byte	0,1,1
 .L112:
-	.sdecl	'.debug_ranges',debug,cluster('getHeadMsg')
+	.sdecl	'.debug_ranges',debug,cluster('ReadMsg')
 	.sect	'.debug_ranges'
-.L45:
-	.word	-1,.L23,0,.L46-.L23,0,0
-	.sdecl	'.debug_info',debug,cluster('checkSum')
+.L46:
+	.word	-1,.L27,0,.L47-.L27,0,0
+	.sdecl	'.debug_info',debug,cluster('getHeadMsg')
 	.sect	'.debug_info'
-.L47:
-	.word	291
+.L48:
+	.word	255
 	.half	3
-	.word	.L48
+	.word	.L49
 	.byte	4,1
 	.byte	'../code/src/dataProcess.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1
-	.word	.L50,.L49
+	.word	.L51,.L50
 	.byte	2
-	.word	.L28
+	.word	.L34
+	.byte	3
+	.byte	'getHeadMsg',0,1,63,6
+	.word	.L75
+	.byte	1,1,1
+	.word	.L29,.L76,.L28
+	.byte	4
+	.byte	'data',0,1,63,34
+	.word	.L71,.L77
+	.byte	4
+	.byte	'_ch',0,1,63,43
+	.word	.L73,.L78
+	.byte	5
+	.word	.L29,.L76
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('getHeadMsg')
+	.sect	'.debug_abbrev'
+.L49:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('getHeadMsg')
+	.sect	'.debug_line'
+.L50:
+	.word	.L121-.L120
+.L120:
+	.half	3
+	.word	.L123-.L122
+.L122:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../code/src/dataProcess.c',0,0,0,0,0
+.L123:
+	.byte	5,11,7,0,5,2
+	.word	.L29
+	.byte	3,192,0,1,5,7,9
+	.half	.L124-.L29
+	.byte	1,5,37,7,9
+	.half	.L125-.L124
+	.byte	3,1,1,5,21,9
+	.half	.L126-.L125
+	.byte	1,9
+	.half	.L127-.L126
+	.byte	3,1,1,9
+	.half	.L128-.L127
+	.byte	3,2,1,5,28,9
+	.half	.L129-.L128
+	.byte	1,5,37,9
+	.half	.L130-.L129
+	.byte	1,5,7,9
+	.half	.L131-.L130
+	.byte	1,5,58,7,9
+	.half	.L132-.L131
+	.byte	1,5,65,9
+	.half	.L133-.L132
+	.byte	1,5,74,9
+	.half	.L134-.L133
+	.byte	1,5,62,9
+	.half	.L135-.L134
+	.byte	1,5,21,7,9
+	.half	.L136-.L135
+	.byte	3,1,1,5,19,9
+	.half	.L137-.L136
+	.byte	1,5,21,9
+	.half	.L138-.L137
+	.byte	3,1,1,5,19,9
+	.half	.L139-.L138
+	.byte	1,5,77,9
+	.half	.L14-.L139
+	.byte	3,126,1,5,18,9
+	.half	.L13-.L14
+	.byte	3,4,1,5,14,9
+	.half	.L140-.L13
+	.byte	1,5,19,7,9
+	.half	.L141-.L140
+	.byte	3,1,1,5,23,9
+	.half	.L142-.L141
+	.byte	3,1,1,5,21,9
+	.half	.L143-.L142
+	.byte	1,5,24,9
+	.half	.L144-.L143
+	.byte	3,127,1,5,14,9
+	.half	.L17-.L144
+	.byte	3,4,1,5,3,9
+	.half	.L145-.L17
+	.byte	1,5,9,9
+	.half	.L16-.L145
+	.byte	3,2,1,5,2,9
+	.half	.L146-.L16
+	.byte	1,5,1,9
+	.half	.L19-.L146
+	.byte	3,1,1,7,9
+	.half	.L52-.L19
+	.byte	0,1,1
+.L121:
+	.sdecl	'.debug_ranges',debug,cluster('getHeadMsg')
+	.sect	'.debug_ranges'
+.L51:
+	.word	-1,.L29,0,.L52-.L29,0,0
+	.sdecl	'.debug_info',debug,cluster('checkSum')
+	.sect	'.debug_info'
+.L53:
+	.word	291
+	.half	3
+	.word	.L54
+	.byte	4,1
+	.byte	'../code/src/dataProcess.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1
+	.word	.L56,.L55
+	.byte	2
+	.word	.L34
 	.byte	3
 	.byte	'checkSum',0,1,90,6
-	.word	.L73
+	.word	.L79
 	.byte	1,1,1
-	.word	.L25,.L74,.L24
+	.word	.L31,.L80,.L30
 	.byte	4
 	.byte	'ch',0,1,90,21
-	.word	.L75,.L76
+	.word	.L81,.L82
 	.byte	4
 	.byte	'n',0,1,90,29
-	.word	.L77,.L78
+	.word	.L83,.L84
 	.byte	5
-	.word	.L25,.L74
+	.word	.L31,.L80
 	.byte	6
 	.byte	'_sum',0,1,92,7
-	.word	.L73,.L79
+	.word	.L79,.L85
 	.byte	5
-	.word	.L80,.L81
+	.word	.L86,.L87
 	.byte	6
 	.byte	'i',0,1,93,11
-	.word	.L77,.L82
+	.word	.L83,.L88
 	.byte	0,0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('checkSum')
 	.sect	'.debug_abbrev'
-.L48:
+.L54:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
 	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
 	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
 	.sdecl	'.debug_line',debug,cluster('checkSum')
 	.sect	'.debug_line'
-.L49:
-	.word	.L139-.L138
-.L138:
+.L55:
+	.word	.L148-.L147
+.L147:
 	.half	3
-	.word	.L141-.L140
-.L140:
+	.word	.L150-.L149
+.L149:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/src/dataProcess.c',0,0,0,0,0
-.L141:
+.L150:
 	.byte	5,12,7,0,5,2
-	.word	.L25
+	.word	.L31
 	.byte	3,219,0,1,5,13,9
-	.half	.L80-.L25
+	.half	.L86-.L31
 	.byte	3,1,1,5,23,9
-	.half	.L92-.L80
+	.half	.L98-.L86
 	.byte	1,5,40,9
-	.half	.L16-.L92
+	.half	.L22-.L98
 	.byte	1,5,35,9
-	.half	.L142-.L16
+	.half	.L151-.L22
 	.byte	1,5,26,9
-	.half	.L93-.L142
+	.half	.L99-.L151
 	.byte	1,5,23,9
-	.half	.L15-.L93
+	.half	.L21-.L99
 	.byte	1,5,2,7,9
-	.half	.L81-.L15
+	.half	.L87-.L21
 	.byte	3,1,1,5,1,9
-	.half	.L17-.L81
+	.half	.L23-.L87
 	.byte	3,1,1,7,9
-	.half	.L51-.L17
+	.half	.L57-.L23
 	.byte	0,1,1
-.L139:
+.L148:
 	.sdecl	'.debug_ranges',debug,cluster('checkSum')
 	.sect	'.debug_ranges'
-.L50:
-	.word	-1,.L25,0,.L51-.L25,0,0
+.L56:
+	.word	-1,.L31,0,.L57-.L31,0,0
 	.sdecl	'.debug_info',debug,cluster('clearFlag')
 	.sect	'.debug_info'
-.L52:
+.L58:
 	.word	234
 	.half	3
-	.word	.L53
+	.word	.L59
 	.byte	4,1
 	.byte	'../code/src/dataProcess.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1
-	.word	.L55,.L54
+	.word	.L61,.L60
 	.byte	2
-	.word	.L28
+	.word	.L34
 	.byte	3
 	.byte	'clearFlag',0,1,101,6,1,1,1
-	.word	.L27,.L83,.L26
+	.word	.L33,.L89,.L32
 	.byte	4
 	.byte	'data',0,1,101,33
-	.word	.L65,.L84
+	.word	.L71,.L90
 	.byte	5
-	.word	.L27,.L83
+	.word	.L33,.L89
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('clearFlag')
 	.sect	'.debug_abbrev'
-.L53:
+.L59:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('clearFlag')
 	.sect	'.debug_line'
-.L54:
-	.word	.L144-.L143
-.L143:
+.L60:
+	.word	.L153-.L152
+.L152:
 	.half	3
-	.word	.L146-.L145
-.L145:
+	.word	.L155-.L154
+.L154:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/src/dataProcess.c',0,0,0,0,0
-.L146:
+.L155:
 	.byte	5,40,7,0,5,2
-	.word	.L27
+	.word	.L33
 	.byte	3,230,0,1,5,20,9
-	.half	.L147-.L27
+	.half	.L156-.L33
 	.byte	1,5,38,9
-	.half	.L148-.L147
-	.byte	3,1,1,5,19,9
-	.half	.L149-.L148
-	.byte	1,5,26,9
-	.half	.L150-.L149
-	.byte	3,2,1,5,24,9
-	.half	.L151-.L150
-	.byte	1,9
-	.half	.L152-.L151
-	.byte	3,1,1,5,22,9
-	.half	.L153-.L152
-	.byte	1,5,23,9
-	.half	.L154-.L153
-	.byte	3,1,1,5,21,9
-	.half	.L155-.L154
-	.byte	1,5,23,9
-	.half	.L156-.L155
-	.byte	3,2,1,5,21,9
 	.half	.L157-.L156
-	.byte	1,5,1,9
+	.byte	3,1,1,5,19,9
 	.half	.L158-.L157
+	.byte	1,5,26,9
+	.half	.L159-.L158
+	.byte	3,2,1,5,24,9
+	.half	.L160-.L159
+	.byte	1,9
+	.half	.L161-.L160
+	.byte	3,1,1,5,22,9
+	.half	.L162-.L161
+	.byte	1,5,23,9
+	.half	.L163-.L162
+	.byte	3,1,1,5,21,9
+	.half	.L164-.L163
+	.byte	1,5,23,9
+	.half	.L165-.L164
+	.byte	3,2,1,5,21,9
+	.half	.L166-.L165
+	.byte	1,5,1,9
+	.half	.L167-.L166
 	.byte	3,1,1,7,9
-	.half	.L56-.L158
+	.half	.L62-.L167
 	.byte	0,1,1
-.L144:
+.L153:
 	.sdecl	'.debug_ranges',debug,cluster('clearFlag')
 	.sect	'.debug_ranges'
-.L55:
-	.word	-1,.L27,0,.L56-.L27,0,0
+.L61:
+	.word	-1,.L33,0,.L62-.L33,0,0
 	.sdecl	'.debug_info',debug,cluster('U2data')
 	.sect	'.debug_info'
-.L57:
+.L63:
 	.word	192
 	.half	3
-	.word	.L58
+	.word	.L64
 	.byte	4,1
 	.byte	'../code/src/dataProcess.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1,2
-	.word	.L28
+	.word	.L34
 	.byte	3
 	.byte	'U2data',0,22,9,17
-	.word	.L85
+	.word	.L91
 	.byte	1,5,3
 	.word	U2data
 	.byte	0
 	.sdecl	'.debug_abbrev',debug,cluster('U2data')
 	.sect	'.debug_abbrev'
-.L58:
+.L64:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
 	.sdecl	'.debug_info',debug,cluster('head_char')
 	.sect	'.debug_info'
-.L59:
+.L65:
 	.word	195
 	.half	3
-	.word	.L60
+	.word	.L66
 	.byte	4,1
 	.byte	'../code/src/dataProcess.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1,2
-	.word	.L28
+	.word	.L34
 	.byte	3
 	.byte	'head_char',0,22,6,6
-	.word	.L86
+	.word	.L92
 	.byte	1,5,3
 	.word	head_char
 	.byte	0
 	.sdecl	'.debug_abbrev',debug,cluster('head_char')
 	.sect	'.debug_abbrev'
-.L60:
+.L66:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
 	.sdecl	'.debug_info',debug,cluster('end_char')
 	.sect	'.debug_info'
-.L61:
+.L67:
 	.word	194
 	.half	3
-	.word	.L62
+	.word	.L68
 	.byte	4,1
 	.byte	'../code/src/dataProcess.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1,2
-	.word	.L28
+	.word	.L34
 	.byte	3
 	.byte	'end_char',0,22,7,6
-	.word	.L86
+	.word	.L92
 	.byte	1,5,3
 	.word	end_char
 	.byte	0
 	.sdecl	'.debug_abbrev',debug,cluster('end_char')
 	.sect	'.debug_abbrev'
-.L62:
+.L68:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
 	.sdecl	'.debug_loc',debug,cluster('DataProcessInit')
 	.sect	'.debug_loc'
-.L18:
-	.word	-1,.L19,0,.L63-.L19
+.L24:
+	.word	-1,.L25,0,.L69-.L25
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('ReadMsg')
 	.sect	'.debug_loc'
-.L20:
-	.word	-1,.L21,0,.L64-.L21
+.L26:
+	.word	-1,.L27,0,.L70-.L27
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L66:
-	.word	-1,.L21,0,.L87-.L21
+.L72:
+	.word	-1,.L27,0,.L93-.L27
 	.half	1
 	.byte	100
-	.word	.L88-.L21,.L64-.L21
+	.word	.L94-.L27,.L70-.L27
 	.half	1
 	.byte	111
-	.word	.L89-.L21,.L90-.L21
+	.word	.L95-.L27,.L96-.L27
 	.half	1
 	.byte	100
 	.word	0,0
-.L68:
-	.word	-1,.L21,0,.L87-.L21
+.L74:
+	.word	-1,.L27,0,.L93-.L27
 	.half	1
 	.byte	84
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('checkSum')
 	.sect	'.debug_loc'
-.L79:
-	.word	-1,.L25,.L80-.L25,.L91-.L25
+.L85:
+	.word	-1,.L31,.L86-.L31,.L97-.L31
 	.half	1
 	.byte	82
-	.word	.L93-.L25,.L74-.L25
+	.word	.L99-.L31,.L80-.L31
 	.half	1
 	.byte	82
 	.word	0,0
-.L76:
-	.word	-1,.L25,0,.L74-.L25
+.L82:
+	.word	-1,.L31,0,.L80-.L31
 	.half	1
 	.byte	100
 	.word	0,0
-.L24:
-	.word	-1,.L25,0,.L74-.L25
+.L30:
+	.word	-1,.L31,0,.L80-.L31
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L82:
-	.word	-1,.L25,.L92-.L25,.L74-.L25
+.L88:
+	.word	-1,.L31,.L98-.L31,.L80-.L31
 	.half	1
 	.byte	95
 	.word	0,0
-.L78:
-	.word	-1,.L25,0,.L74-.L25
+.L84:
+	.word	-1,.L31,0,.L80-.L31
 	.half	1
 	.byte	84
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('clearFlag')
 	.sect	'.debug_loc'
-.L26:
-	.word	-1,.L27,0,.L83-.L27
+.L32:
+	.word	-1,.L33,0,.L89-.L33
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L84:
-	.word	-1,.L27,0,.L83-.L27
+.L90:
+	.word	-1,.L33,0,.L89-.L33
 	.half	1
 	.byte	100
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('getHeadMsg')
 	.sect	'.debug_loc'
-.L72:
-	.word	-1,.L23,0,.L70-.L23
+.L78:
+	.word	-1,.L29,0,.L76-.L29
 	.half	1
 	.byte	84
 	.word	0,0
-.L71:
-	.word	-1,.L23,0,.L70-.L23
+.L77:
+	.word	-1,.L29,0,.L76-.L29
 	.half	1
 	.byte	100
 	.word	0,0
-.L22:
-	.word	-1,.L23,0,.L70-.L23
+.L28:
+	.word	-1,.L29,0,.L76-.L29
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_frame',debug
 	.sect	'.debug_frame'
-.L159:
+.L168:
 	.word	48
 	.word	-1
 	.byte	3,0,2,1,27,12,26,0,8,26,8,27,8,30,8,29,8,28,8,16,8,17,8,24,8,25,8,31,8,32,8,33,8,34,8,35,8,36,8,37,8,38
@@ -20903,24 +20933,24 @@ U2data:	.type	object
 	.sdecl	'.debug_frame',debug,cluster('DataProcessInit')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L159,.L19,.L63-.L19
+	.word	.L168,.L25,.L69-.L25
 	.sdecl	'.debug_frame',debug,cluster('ReadMsg')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L159,.L21,.L64-.L21
+	.word	.L168,.L27,.L70-.L27
 	.sdecl	'.debug_frame',debug,cluster('getHeadMsg')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L159,.L23,.L70-.L23
+	.word	.L168,.L29,.L76-.L29
 	.byte	8,18,8,19,8,21,8,22,8,23,0,0
 	.sdecl	'.debug_frame',debug,cluster('checkSum')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L159,.L25,.L74-.L25
+	.word	.L168,.L31,.L80-.L31
 	.byte	8,18,8,19,8,21,8,22,8,23,0,0
 	.sdecl	'.debug_frame',debug,cluster('clearFlag')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L159,.L27,.L83-.L27
+	.word	.L168,.L33,.L89-.L33
 	.byte	8,18,8,19,8,21,8,22,8,23,0,0
 	; Module end

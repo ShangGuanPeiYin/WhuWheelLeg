@@ -1,9 +1,3 @@
-/*
- * FindEndrow.c
- * Created on: 2024Δκ10ΤΒ11ΘΥ
- * Author: Αυγε
- */
-
 #include "zf_common_headfile.h"
 
 int16 Maxcolum = 0, EndRow = 0;

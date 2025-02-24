@@ -1,8 +1,8 @@
 #include "zf_common_headfile.h"
 
-Queue usart1_rec_list;	  // 记得初始化
-Queue usart2_rec_list;
-Queue usart3_rec_list;
+QueueType usart1_rec_list;	  // 记得初始化
+QueueType usart2_rec_list;
+QueueType usart3_rec_list;
 
 /**
  * @brief 用户队列初始化
@@ -19,7 +19,7 @@ void user_queue_init(void)
 /// @param ch 队列数据类型
 /// @param _size 队列数据长度
 /// @return
-bool QueueInit(Queue* queue, int _size)	   // 初始化
+bool QueueInit(QueueType* queue, int _size)	   // 初始化
 {
 	if (queue == NULL || _size <= 0) {
 		return false;	 // 错误处理，可以改为设置错误码或抛出异常
@@ -49,7 +49,7 @@ bool QueueInit(Queue* queue, int _size)	   // 初始化
  * @return true
  * @return false
  */
-bool enQueue(Queue* queue, unsigned char ch)
+bool enQueue(QueueType* queue, unsigned char ch)
 {
 	if (queue->count < queue->size) {
 		(queue->data[queue->rear]) = ch;
@@ -69,7 +69,7 @@ bool enQueue(Queue* queue, unsigned char ch)
  * @return true
  * @return false
  */
-bool deQueue(Queue* queue, unsigned char* ch)
+bool deQueue(QueueType* queue, unsigned char* ch)
 {
 	if (queue->count > 0) {
 		*ch			 = queue->data[queue->front];
@@ -85,7 +85,7 @@ bool deQueue(Queue* queue, unsigned char* ch)
  *
  * @param queue
  */
-void clear(Queue* queue)
+void clear(QueueType* queue)
 {
 	queue->front = 0;
 	queue->rear	 = 0;
@@ -99,7 +99,7 @@ void clear(Queue* queue)
  * @return true
  * @return false
  */
-bool isFull(Queue* queue) { return queue->count == queue->size; }
+bool isFull(QueueType* queue) { return queue->count == queue->size; }
 
 /**
  * @brief 判断队空
@@ -108,4 +108,4 @@ bool isFull(Queue* queue) { return queue->count == queue->size; }
  * @return true
  * @return false
  */
-bool isEmpty(Queue* queue) { return queue->count == 0; }
+bool isEmpty(QueueType* queue) { return queue->count == 0; }

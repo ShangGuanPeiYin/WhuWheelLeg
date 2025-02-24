@@ -11,7 +11,7 @@ typedef struct _Ctrl {
 	float runTime;
 	float reachTime;
 
-	Vector2f PosZero;
+	Vector2f PosZero;	 // Áãµã×ø±ê
 
 } ParamType;
 

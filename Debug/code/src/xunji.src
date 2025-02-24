@@ -742,8 +742,8 @@ Direction_Control_Error:	.type	func
 .L317:
 	st.w	[a15],d15
 .L318:
-	movh.a	a15,#@his(ServoControlOut)
-	lea	a15,[a15]@los(ServoControlOut)
+	movh.a	a15,#@his(YawControlOut)
+	lea	a15,[a15]@los(YawControlOut)
 .L319:
 	mov	d15,#10
 	itof	d15,d15
@@ -890,11 +890,11 @@ Original_MidLine:	.type	object
 Original_Error:	.type	object
 	.size	Original_Error,400
 	.space	400
-	.sdecl	'.data.xunji.ServoControlOut',data,cluster('ServoControlOut')
-	.sect	'.data.xunji.ServoControlOut'
+	.sdecl	'.data.xunji.YawControlOut',data,cluster('YawControlOut')
+	.sect	'.data.xunji.YawControlOut'
 	.align	2
-ServoControlOut:	.type	object
-	.size	ServoControlOut,4
+YawControlOut:	.type	object
+	.size	YawControlOut,4
 	.space	4
 	.sdecl	'.data.xunji.direction_Kp',data,cluster('direction_Kp')
 	.sect	'.data.xunji.direction_Kp'
@@ -22236,7 +22236,7 @@ _999003_error_pre:	.type	object
 	.sect	'.debug_abbrev'
 .L122:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
-	.sdecl	'.debug_info',debug,cluster('ServoControlOut')
+	.sdecl	'.debug_info',debug,cluster('YawControlOut')
 	.sect	'.debug_info'
 .L123:
 	.word	190
@@ -22248,12 +22248,12 @@ _999003_error_pre:	.type	object
 	.byte	'E:\\zheshiche\\code_new\\WhuWheelLeg-main\\Debug\\',0,12,1,2
 	.word	.L52
 	.byte	3
-	.byte	'ServoControlOut',0,20,153,1,15
+	.byte	'YawControlOut',0,20,153,1,15
 	.word	.L149
 	.byte	5,3
-	.word	ServoControlOut
+	.word	YawControlOut
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('ServoControlOut')
+	.sdecl	'.debug_abbrev',debug,cluster('YawControlOut')
 	.sect	'.debug_abbrev'
 .L124:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0

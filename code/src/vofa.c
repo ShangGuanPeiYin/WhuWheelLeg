@@ -1,42 +1,48 @@
-#include "Vofa.h"
-
-#include "robot.h"
-
-#include <stdio.h>
-#include <string.h>
-uint8_t	  RxBuffer[1]	 = {0};	   // 串口接收缓冲
-uint8_t	  DataBuff[20]	 = {0};	   // 指令内容
-uint8_t	  data_Start_Num = 0;	   // 记录数据位开始的地方
-uint8_t	  data_End_Num	 = 0;	   // 记录数据位结束的地方
-uint8_t	  data_Num		 = 0;	   // 记录数据位数
-uint32_t  read_length	 = 0;
-float	  f2			 = 0;
-float	  data_return	 = 0;	 // 解析得到的数据
-uint8_t	  data_flag		 = 0;
-uint8_t	  FH_flag		 = 0;	 // 初始化帧头标志
 /************************************************
 *文件说明：          基于vofa+上位机开发，发送及接收函数（JustFloat），发送图片。
 *时    间：            2021.11.26
 *备    注：            未经过大量测试，可能会有bug，注释已码好，可自行修复
 								上位机下载地址https://www.vofa.plus/
 ***************************************************/
+
+#include "Vofa.h"
+
+#include "robot.h"
+
+#include <stdio.h>
+#include <string.h>
+
+uint8_t	 RxBuffer[1]	= {0};	  // 串口接收缓冲
+uint8_t	 DataBuff[20]	= {0};	  // 指令内容
+uint8_t	 data_Start_Num = 0;	  // 记录数据位开始的地方
+uint8_t	 data_End_Num	= 0;	  // 记录数据位结束的地方
+uint8_t	 data_Num		= 0;	  // 记录数据位数
+uint32_t read_length	= 0;
+float	 f2				= 0;
+float	 data_return	= 0;	// 解析得到的数据
+uint8_t	 data_flag		= 0;
+uint8_t	 FH_flag		= 0;	// 初始化帧头标志
+
 JustFloat UploadDataJF;
-/*************************************************
- *   函数功能: VOFA+发送函数，用来显示波形
- *   使用方法:   VOFAplusUpload_JustFloat(&UploadDataJF);
- *   备注    : UploadDataJF是全局变量，直接赋值发送即可，
- *                 如：UploadDataJF.CH_Data[0] = 1;
- **************************************************/
+/**
+ * @brief  VOFA+发送函数，用来显示波形
+ * 使用方法: VOFAplusUpload_JustFloat(&UploadDataJF);
+ * 备注   : UploadDataJF是全局变量，直接赋值发送即可，
+ *      如：UploadDataJF.CH_Data[0] = 1;
+ *
+ * @param sendbuffer
+ */
 void	  VOFAplusUpload_JustFloat(JustFloat* sendbuffer)
 {
 	uint8 Tail[4] = {0x00, 0x00, 0x80, 0x7f};
 	VofaSendStr((uint8*) sendbuffer->CH_Data, sizeof(float) * JFCH_COUNT);
 	VofaSendStr(Tail, sizeof(Tail));
 }
-/*************************************************
- *   函数功能: VOFA+发送函数，整合所有要发送的数据
- *   使用方法: Vofasend;
- **************************************************/
+
+/**
+ * @brief VOFA+发送函数，整合所有要发送的数据
+ *
+ */
 void vofa_send(void)	// vofa波形发送整合
 {
 	UploadDataJF.CH_Data[0] = tiaocan[0];
@@ -126,7 +132,7 @@ float Pow_invert(uint8_t X, uint8_t n)	  // x除以n次10
 	float result = X;
 	while (n--) { result /= 10; }
 	return result;
-}
+};
 
 void USART_PID_Adjust(uint8_t Motor_n)
 {
@@ -164,7 +170,7 @@ void USART_PID_Adjust(uint8_t Motor_n)
 			tiaocan[1] = data_Get / 100;
 		else if (select_channel == 2)	 // 角速度环I
 			tiaocan[2] = data_Get / 10;
-		else if (select_channel == 3)	 // 角度环P//中三位位置式角度环pid
+		else if (select_channel == 3)	 // 角度环P //中三位位置式角度环pid
 			tiaocan[3] = data_Get / 200;
 		else if (select_channel == 4)	 // 角度环I
 			tiaocan[4] = data_Get / 10;
@@ -186,7 +192,7 @@ void USART_PID_Adjust(uint8_t Motor_n)
 		head_position = sizeof(DataBuff);
 	}
 
-	//    if(Motor_n==2)//行进轮
+	//    if(Motor_n==2)   //行进轮
 	//       {
 	//           if(DataBuff[1]=='+' && DataBuff[2]=='1') // 角速度环P
 	//               NULL = data_Get;
@@ -214,4 +220,4 @@ void USART_PID_Adjust(uint8_t Motor_n)
 	//               NULL = data_Get;
 	//
 	//       }
-}
+};

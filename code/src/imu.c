@@ -33,6 +33,7 @@ static float invSqrt(float x)
 	y			= y * (1.5f - (halfx * y * y));
 	return y;
 }
+
 void IMU_getdata(void)
 {
 	imu963ra_get_acc();		// 获取 IMU963RA 加速度计数据
@@ -83,6 +84,7 @@ void Get_Attitude()
 	//    IMU.Gyro.x = IMU.T_Gyro.x * Radian_2_Degree;// - Balance_Correct_GyroX;//TODO:硬件位置补偿
 	//    IMU.Gyro.y = IMU.T_Gyro.y * Radian_2_Degree;// - Balance_Correct_GyroY;
 	//    IMU.Gyro.z = IMU.T_Gyro.z * Radian_2_Degree;
+
 	imu660ra_get_acc();
 	imu660ra_get_gyro();
 	/******************陀螺仪加速度AD值 转换成 米/平方秒 ******************/
@@ -270,7 +272,8 @@ void  IMUupdate(_Attitude* Gyr_rad, _Attitude* Acc_filt, _Attitude* Mag_filt, _A
 	Att_Angle->z = atan2(2.f * (q1q2 + q0q3), q0q0 + q1q1 - q2q2 - q3q3) * Radian_2_Degree;		   // yaw
 	Att_Angle->y = -asin(2.f * (q1q3 - q0q2)) * Radian_2_Degree;								   // pitch(负号要注意)
 	Att_Angle->x = atan2(2.f * q2q3 + 2.f * q0q1, q0q0 - q1q1 - q2q2 + q3q3) * Radian_2_Degree;	   // roll
-}
+};
+
 void IMUANG_Offset(void)	// 测量角速度初值（三轴方向飘移）
 {
 	int	  times		  = 20000;

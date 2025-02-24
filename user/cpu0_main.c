@@ -35,8 +35,6 @@ int		 core0_main(void)
 	cpu_wait_event_ready();	   // 等待所有核心初始化完毕
 	system_delay_ms(500);
 	while (TRUE) {
-		//	    static int x=0;
-		// 尝试写个任务调度 不过无法实现任务抢占
 		// vofa_send();
 		// vofa_receive();
 
@@ -56,11 +54,12 @@ int		 core0_main(void)
 		oled_show_float(60, 5, robot.left_Torque, 2, 2);
 		oled_show_float(60, 7, Motor[0].valueNow.speed, 2, 2);
 
-//		oled_show_float(60,5,IMUdata.dataOri.pitch,2,2);
+		//		oled_show_float(60,5,IMUdata.dataOri.pitch,2,2);
 
-//		oled_show_uint(60,1,x,3);
-//		oled_show_int(60,3,(int)Motor[0].pulse.pulseRead*10000,3);
-// Bldc_SetDuty(2000,2000);
+		//		oled_show_uint(60,1,x,3);
+		//		oled_show_int(60,3,(int)Motor[0].pulse.pulseRead*10000,3);
+		// Bldc_SetDuty(2000,2000);
+
 #if 1
 		if (mt9v03x_finish_flag)	// 摄像头采集完成标志位
 		{
@@ -86,7 +85,8 @@ int		 core0_main(void)
 			// 找控制行
 			FindControlRow();
 
-			Direction_Control_Error();
+			// Direction_Control_Error();
+			YawCtrlOut = -3.f * PIDOperation(&robot.yawPID, (COL / 2.f) / COL, (float) MidLine[ControlRow]);	// 平衡环Pwm
 		}
 #endif
 	}
@@ -101,8 +101,6 @@ IFX_INTERRUPT(cc60_pit_ch0_isr, 0, CCU6_0_CH0_ISR_PRIORITY)
 	robot.param.leftTime  += 1;		 // 1ms
 	robot.param.rightTime += 1;		 // 1ms
 	robot.param.runTime	  += 1.f;	 // 1ms
-
-	// CH1_LOOP();
 
 	static u8 BalanceCnt   = 0;	   // 1k -> 100Hz  用bldc控制平衡，所以频率和bldc同步 最好在bldc上面
 	if (++BalanceCnt >= 5) {

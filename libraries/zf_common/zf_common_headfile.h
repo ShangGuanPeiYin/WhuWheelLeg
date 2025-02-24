@@ -81,10 +81,16 @@
 //=====================================================用户层======================================================
 #include "Camera.h"
 #include "Filter.h"
+#include "FindBorder.h"
+#include "FindControlRow.h"
+#include "FindEndrow.h"
+#include "FindMidline.h"
 #include "MasterCtrl.h"
 #include "MathLib.h"
 #include "Pid.h"
 #include "Servo.h"
+#include "beiyoucontrol.h"
+#include "beiyoupid.h"
 #include "bldc.h"
 #include "dataProcess.h"
 #include "imu.h"
@@ -93,16 +99,9 @@
 #include "oledDebug.h"
 #include "queue.h"
 #include "robot.h"
-#include "vector.h"
-
-#include "beiyoucontrol.h"
-#include "beiyoupid.h"
-#include "vofa.h"
 #include "servo.h"
-#include "FindBorder.h"
-#include "FindControlRow.h"
-#include "FindEndrow.h"
-#include "FindMidline.h"
+#include "vector.h"
+#include "vofa.h"
 //=====================================================用户层======================================================
 
 #endif

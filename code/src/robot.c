@@ -18,12 +18,14 @@ void robotInit(RobotType* robot)
 	RobotJumpLineInit();
 
 	// TODO IMU: robot->posture = &( );
-	robot->posture=&(IMUdata);
+	robot->posture		   = &(IMUdata);
 	// TODO jumpLine
 
 	robot->param.leftTime  = 0;
 	robot->param.rightTime = 0;
 	robot->param.PosZero   = ForwardKinematics(PI, 0);
+	robot->left->PosSet	   = robot->param.PosZero;
+	robot->right->PosSet   = robot->param.PosZero;
 
 	LegInit();
 	BalanceInit();
@@ -53,8 +55,6 @@ void RobotJumpLineInit(void)
 
 bool RobotDrawLine(Vector2f PosTarget, float reachTime)
 {
-	// return (LegDrawLine(&legLeft, PosTarget, reachTime) && LegDrawLine(&legRight, PosTarget, reachTime));
-
 	switch (robot.pipeline.state) {
 		case StatePreparing:
 
@@ -118,7 +118,7 @@ bool RobotJumpLine(void)
 			robot.pipeline.state  = StatePreparing;
 			robot.jumpLine.Lerp	  = false;	  // 下一阶段是否线性插值
 
-			robot.jumpLine.Pos[0] = ForwardKinematics(PI ,0.f);
+			robot.jumpLine.Pos[0] = ForwardKinematics(PI, 0.f);
 			robot.jumpLine.Pos[1] = ForwardKinematics(PI * 1 / 2.f, PI * 1 / 2.f);
 			robot.jumpLine.Pos[2] = ForwardKinematics(PI * (5 / 4.f), PI * (-1 / 4.f));
 			// robot.jumpLine.Pos[3] = 0;
@@ -212,35 +212,62 @@ float tiaocan[9];
 void BalanceInit(void)	  // PID
 {
 	// TODO：
-    float Kp_1 = 0.03;
-    float Ki_1 = 0.f;
-    float Kd_1 = -0.005f;
+	float Kp_1 = 0.03;
+	float Ki_1 = 0.f;
+	float Kd_1 = -0.005f;
 
-    float Kp_2 = 31.f;//62.f;
-    float Kd_2 = 32.f;//20.5f;
+	float Kp_2 = 31.f;	  // 62.f;
+	float Kd_2 = 32.f;	  // 20.5f;
 
-    float Kp_3 = 7.7;//15;
-    float Ki_3 = 0.f;
-    float Kd_3 = 8.5;//.6;
+	float Kp_3 = 7.7;	 // 15;
+	float Ki_3 = 0.f;
+	float Kd_3 = 8.5;	 //.6;
 
 	PIDTypeInit(&robot.pitchSpeedPID, Kp_1, Ki_1, Kd_1, PIDPOS, 0);	   // 俯仰PID类型
 	PIDTypeInit(&robot.pitchAnglePID, Kp_2, 0.f, Kd_2, PIDPOS, 0);	   // PD控制
 	PIDTypeInit(&robot.pitchVecPID, Kp_3, Ki_3, Kd_3, PIDPOS, 0);	   // PD控制
 
-	PIDTypeInit(&robot.yawPID, 0.f, 0.f, 0.f, PIDPOS, 0);
+	PIDTypeInit(&robot.yawPID, 120.f, 0.f, 0.f, PIDPOS, 0);
 	PIDTypeInit(&robot.rollPID, 0.f, 0.f, 0.f, PIDINC, 0);
 };
 
+const float RobotWidth = 20.f;	  // 待测量
+/**
+ * @brief 横滚角平衡 从后往前看顺时针为正
+ *
+ */
+void		BalanceRoll(void)
+{
+	float rollOut		   = 0.5f * RobotWidth * sinf(IMUdata.dataOri.roll);
+	robot.right->PosSet.y += rollOut;
+	robot.left->PosSet.y  -= rollOut;
+
+	float ZeroY			   = robot.param.PosZero.y;
+
+	// 调整左右位置，确保不低于 PosZero.y
+	robot.right->PosSet.y  = fmax(robot.right->PosSet.y, ZeroY);
+	robot.left->PosSet.y   = fmax(robot.left->PosSet.y, ZeroY);
+
+	// 如果都大于，则降低重心
+	if (robot.right->PosSet.y > ZeroY && robot.left->PosSet.y > ZeroY) {
+		float delta			   = MIN(robot.right->PosSet.y, robot.left->PosSet.y) - ZeroY;
+		robot.right->PosSet.y -= delta;
+		robot.left->PosSet.y  -= delta;
+	}
+
+	AngleCalculate(robot.left, robot.left->PosSet);	   // 更新舵机角
+	AngleCalculate(robot.right, robot.right->PosSet);
+};
+
+float YawCtrlOut = 0;
 /**
  * @brief  转向环
  *
  */
-void BalanceYaw(void)
+void  BalanceYaw(void)
 {
-	float turn			= (float)ServoControlOut;// PIDOperation(&robot.yawPID, robot.posture->dataOri.yaw, robot.posture->dataSet.yaw);	  // 平衡环Pwm
-
-	robot.right_Torque += turn;
-	robot.left_Torque  -= turn;
+	robot.right_Torque += YawCtrlOut;
+	robot.left_Torque  -= YawCtrlOut;
 }
 
 /**
@@ -248,8 +275,9 @@ void BalanceYaw(void)
  */
 void BalancePitch(void)
 {
-    robot.speedSet=120;
-    //robot->posture=&IMUdata;
+	robot.speedSet = 120;
+
+	// robot->posture=&IMUdata;
 	robot.speedNow = -(Motor[0].valueNow.speed + Motor[1].valueNow.speed) / 2;
 
 	robot.posture->dataSet.pitch = PIDOperation(&robot.pitchSpeedPID, robot.speedNow, robot.speedSet);	  // 直接修改speedSet即可
@@ -257,18 +285,8 @@ void BalancePitch(void)
 	robot.posture->dataSet.angle.x = PIDOperation(&robot.pitchAnglePID, -IMUdata.dataOri.pitch, robot.posture->dataSet.pitch);
 
 	robot.right_Torque			   = PIDOperation(&robot.pitchVecPID, -IMUdata.dataOri.angle.x, robot.posture->dataSet.angle.x);
-	robot.left_Torque              =    robot.right_Torque;
-
-	// robot.right_Torque = robot.left_Torque
-	// 	= PIDOperation(&robot.pitchAnglePID, robot.posture->dataOri.pitch, robot.posture->dataSet.pitch);
+	robot.left_Torque			   = robot.right_Torque;
 }
-
-
-
-
-
-
-
 
 /**
  * @brief 平衡函数
@@ -276,8 +294,6 @@ void BalancePitch(void)
  */
 void Balance(void)
 {
-
-
 	BalancePitch();	   // 计算维持平衡的力矩
 	BalanceYaw();	   // 再计算转向需要的力矩
 

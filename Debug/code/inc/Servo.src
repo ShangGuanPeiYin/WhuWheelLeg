@@ -181,8 +181,8 @@ Direction_Control_Error:	.type	func
 .L119:
 	st.w	[a15],d15
 .L120:
-	movh.a	a15,#@his(ServoControlOut)
-	lea	a15,[a15]@los(ServoControlOut)
+	movh.a	a15,#@his(YawControlOut)
+	lea	a15,[a15]@los(YawControlOut)
 .L121:
 	movh.a	a2,#@his(direction_Kd)
 	lea	a2,[a2]@los(direction_Kd)
@@ -214,11 +214,11 @@ Direction_Control_Error:	.type	func
 .L128:
 	st.w	[a15],d15
 .L129:
-	movh.a	a12,#@his(ServoControlOut)
-	lea	a12,[a12]@los(ServoControlOut)
+	movh.a	a12,#@his(YawControlOut)
+	lea	a12,[a12]@los(YawControlOut)
 .L130:
-	movh.a	a15,#@his(ServoControlOut)
-	lea	a15,[a15]@los(ServoControlOut)
+	movh.a	a15,#@his(YawControlOut)
+	lea	a15,[a15]@los(YawControlOut)
 	ld.w	d4,[a15]
 .L131:
 	movh.a	a15,#@his(ServoMid)
@@ -261,8 +261,8 @@ Direction_Control_Error:	.type	func
 .L2:
 	mov	d4,#63
 .L143:
-	movh.a	a15,#@his(ServoControlOut)
-	lea	a15,[a15]@los(ServoControlOut)
+	movh.a	a15,#@his(YawControlOut)
+	lea	a15,[a15]@los(YawControlOut)
 	ld.w	d5,[a15]
 	call	pwm_set_duty
 .L3:
@@ -316,12 +316,12 @@ direction_Kp:	.type	object
 direction_Kd:	.type	object
 	.size	direction_Kd,4
 	.word	410
-	.sdecl	'.data.Servo.ServoControlOut',data,cluster('ServoControlOut')
-	.sect	'.data.Servo.ServoControlOut'
-	.global	ServoControlOut
+	.sdecl	'.data.Servo.YawControlOut',data,cluster('YawControlOut')
+	.sect	'.data.Servo.YawControlOut'
+	.global	YawControlOut
 	.align	2
-ServoControlOut:	.type	object
-	.size	ServoControlOut,4
+YawControlOut:	.type	object
+	.size	YawControlOut,4
 	.space	4
 	.sdecl	'.bss.Servo._999001_P',data,cluster('_999001_P')
 	.sect	'.bss.Servo._999001_P'
@@ -20926,7 +20926,7 @@ _999003_error_pre:	.type	object
 .L47:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('ServoControlOut')
+	.sdecl	'.debug_info',debug,cluster('YawControlOut')
 	.sect	'.debug_info'
 .L48:
 	.word	190
@@ -20938,12 +20938,12 @@ _999003_error_pre:	.type	object
 	.byte	'E:\\zheshiche\\code_new\\WhuWheelLeg-main\\Debug\\',0,12,1,2
 	.word	.L12
 	.byte	3
-	.byte	'ServoControlOut',0,22,16,5
+	.byte	'YawControlOut',0,22,16,5
 	.word	.L57
 	.byte	1,5,3
-	.word	ServoControlOut
+	.word	YawControlOut
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('ServoControlOut')
+	.sdecl	'.debug_abbrev',debug,cluster('YawControlOut')
 	.sect	'.debug_abbrev'
 .L49:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9

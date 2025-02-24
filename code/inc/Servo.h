@@ -44,13 +44,4 @@ extern ServoType Servo[4];
 void ServoInit(void);
 void ServoFunc(void);
 
-void Get_Direction_Error(void);
-
-void Direction_Control_Error(void);
-
-extern int ServoControlOut;
-extern int direction_Kp;
-extern int direction_Kd;
-extern float directionError;
-
 #endif

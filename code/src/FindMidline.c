@@ -1,9 +1,3 @@
-/*
- * FindMidline.c
- * Created on: 2024Äê10ÔÂ11ÈÕ
- * Author: Áõãå
- */
-
 #include "zf_common_headfile.h"
 
 int32 MidLine[ROW] = {0};
