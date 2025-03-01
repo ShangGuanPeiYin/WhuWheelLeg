@@ -275,7 +275,7 @@ void  BalanceYaw(void)
  */
 void BalancePitch(void)
 {
-	robot.speedSet = 120;
+	robot.speedSet = 150;
 
 	// robot->posture=&IMUdata;
 	robot.speedNow = -(Motor[0].valueNow.speed + Motor[1].valueNow.speed) / 2;
@@ -296,6 +296,10 @@ void Balance(void)
 {
 	BalancePitch();	   // 计算维持平衡的力矩
 	BalanceYaw();	   // 再计算转向需要的力矩
-
+	if(StopFlag == 1)
+	{
+		robot.right_Torque = 0;
+		robot.left_Torque = 0;
+	}
 	BldcSetCurrent(robot.left_Torque, robot.right_Torque);
 }

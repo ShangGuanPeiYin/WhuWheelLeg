@@ -1,20 +1,13 @@
-/*
- * FindBorder.h
- *
- * Created on: 2024ƒÍ10‘¬11»’
- * Author: ¡ı„Â
- */
-#include "zf_common_typedef.h"
-#ifndef CODE_FINDBORDER_H_
-#define CODE_FINDBORDER_H_
+#ifndef FIND_BORDER_H
+#define FIND_BORDER_H
 
+#include "zf_common_typedef.h"
 
 extern int LeftLine[ROW],RightLine[ROW];
-extern int LeftLine_lost[ROW],RightLine_lost[ROW];
+extern int LeftLine1[ROW],RightLine1[ROW];
 extern int Original_RightLine[ROW],Original_LeftLine[ROW];
-extern int Valid_Left,Valid_Right;
-
+extern int ValidRow;
 void FindBorder(void);
+void FindBorder1(void);
 
-
-#endif /* CODE_FINDBORDER_H_ */
+#endif

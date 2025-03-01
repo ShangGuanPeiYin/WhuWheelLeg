@@ -1,6 +1,6 @@
 	; Module start
 	.compiler_version	"TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler v1.1r8 Build 22011964"
-	.compiler_invocation	"ctc -f cc3668a --dep-file=code/src/Camera.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc26xb -D__CPU_TC26XB__ --core=tc1.6.x --fp-model=+float -D__CPU__=tc26xb -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\code -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\code\\\\inc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Configurations -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B\\\\_Reg -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If\\\\Ccu6If -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\StdIf -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Math -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Asc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6 -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Timer -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\CStart -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Irq -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Dma -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12 -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\IncrEnc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\SpiMaster -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Adc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Impl -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib\\\\DataHandling -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_PinMap -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_common -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_components -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_device -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_driver -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\user -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o code/src/Camera.src ../code/src/Camera.c"
+	.compiler_invocation	"ctc -f cc25228a --dep-file=code/src/Camera.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc26xb -D__CPU_TC26XB__ --core=tc1.6.x --fp-model=+float -D__CPU__=tc26xb -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\code -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\code\\\\inc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Configurations -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B\\\\_Reg -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If\\\\Ccu6If -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\StdIf -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Math -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Asc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6 -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Timer -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\CStart -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Irq -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Dma -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12 -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\IncrEnc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\SpiMaster -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Adc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Impl -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib\\\\DataHandling -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_PinMap -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_common -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_components -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_device -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_driver -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\user -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o code/src/Camera.src ../code/src/Camera.c"
 	.compiler_name		"ctc"
 	;source	'../code/src/Camera.c'
 
@@ -18,134 +18,134 @@ Binary_Img:	.type	func
 	movh.a	a15,#@his(LightPoint)
 	lea	a15,[a15]@los(LightPoint)
 	ld.w	d15,[a15]
-.L137:
+.L142:
 	mov	d0,#10000
-.L138:
+.L143:
 	jlt	d15,d0,.L2
-.L139:
+.L144:
 	movh.a	a15,#@his(LightPoint)
 	lea	a15,[a15]@los(LightPoint)
-.L140:
+.L145:
 	movh.a	a2,#@his(LightPoint)
 	lea	a2,[a2]@los(LightPoint)
 	ld.w	d15,[a2]
-.L141:
+.L146:
 	addi	d15,d15,#-10000
-.L142:
+.L147:
 	rsub	d15,#0
-.L143:
+.L148:
 	st.w	[a15],d15
 .L2:
 	movh.a	a15,#@his(staticBinary)
 	lea	a15,[a15]@los(staticBinary)
 	ld.h	d15,[a15]
-.L144:
+.L149:
 	jne	d15,#0,.L3
-.L145:
+.L150:
 	movh.a	a15,#@his(dynamicBinary)
 	lea	a15,[a15]@los(dynamicBinary)
-.L146:
+.L151:
 	movh.a	a2,#@his(LightPoint)
 	lea	a2,[a2]@los(LightPoint)
 	ld.w	d15,[a2]
-.L147:
+.L152:
 	movh.a	a4,#@his(mt9v03x_image)
 	lea	a4,[a4]@los(mt9v03x_image)
-.L148:
+.L153:
 	mov	d4,#120
-.L149:
+.L154:
 	mov	d5,#188
 	call	Fast_OTSU
-.L150:
+.L155:
 	add	d15,d2
-.L151:
+.L156:
 	st.h	[a15],d15
-.L152:
+.L157:
 	j	.L4
 .L3:
 	movh.a	a15,#@his(dynamicBinary)
 	lea	a15,[a15]@los(dynamicBinary)
-.L153:
+.L158:
 	movh.a	a2,#@his(staticBinary)
 	lea	a2,[a2]@los(staticBinary)
 	ld.h	d15,[a2]
-.L154:
+.L159:
 	st.h	[a15],d15
 .L4:
 	mov	d0,#0
-.L102:
+.L107:
 	j	.L5
 .L6:
 	movh.a	a15,#@his(trans)
 	lea	a15,[a15]@los(trans)
 	ld.w	d15,[a15]
-.L155:
+.L160:
 	rsub	d15,d15,#14
 	extr	d1,d15,#0,#16
-.L103:
+.L108:
 	j	.L7
 .L8:
 	mul	d15,d0,#188
-.L156:
+.L161:
 	movh.a	a15,#@his(mt9v03x_image)
 	lea	a15,[a15]@los(mt9v03x_image)
-.L157:
+.L162:
 	addsc.a	a15,a15,d15,#0
-.L158:
+.L163:
 	addsc.a	a15,a15,d1,#0
 	ld.bu	d15,[a15]
-.L159:
+.L164:
 	movh.a	a15,#@his(dynamicBinary)
 	lea	a15,[a15]@los(dynamicBinary)
 	ld.h	d2,[a15]
-.L160:
+.L165:
 	jge	d15,d2,.L9
-.L161:
+.L166:
 	mov	d2,#0
-.L162:
+.L167:
 	j	.L10
 .L9:
 	mov	d2,#1
 .L10:
 	mul	d15,d0,#152
-.L163:
+.L168:
 	movh.a	a15,#@his(videoData)
 	lea	a15,[a15]@los(videoData)
-.L164:
+.L169:
 	addsc.a	a15,a15,d15,#0
-.L165:
+.L170:
 	add	d15,d1,#-14
-.L166:
+.L171:
 	movh.a	a2,#@his(trans)
 	lea	a2,[a2]@los(trans)
 	ld.w	d3,[a2]
-.L167:
+.L172:
 	add	d15,d3
-.L168:
+.L173:
 	addsc.a	a15,a15,d15,#0
-.L169:
+.L174:
 	st.b	[a15],d2
-.L170:
+.L175:
 	add	d1,#1
-.L104:
+.L109:
 	extr	d1,d1,#0,#16
 .L7:
 	movh.a	a15,#@his(trans)
 	lea	a15,[a15]@los(trans)
 	ld.w	d15,[a15]
-.L171:
+.L176:
 	rsub	d15,d15,#166
-.L172:
+.L177:
 	jlt	d1,d15,.L8
-.L173:
+.L178:
 	add	d0,#1
 .L5:
 	mov	d15,#100
-.L174:
+.L179:
 	jlt	d0,d15,.L6
-.L65:
+.L69:
 	ret
-.L64:
+.L68:
 	
 __Binary_Img_function_end:
 	.size	Binary_Img,__Binary_Img_function_end-Binary_Img
@@ -161,249 +161,249 @@ __Binary_Img_function_end:
 .L39:
 Fast_OTSU:	.type	func
 	lea	a10,[a10]-1024
-.L105:
-	mov	d0,d4
-.L108:
-	mov	d4,#0
-.L107:
-	mov	d6,#255
 .L110:
+	mov	d0,d4
+.L113:
+	mov	d4,#0
+.L112:
+	mov	d6,#255
+.L115:
 	movh.a	a15,#@his(.1.ini)
 	lea	a15,[a15]@los(.1.ini)
 	lea	a15,[a15]0
-.L179:
+.L184:
 	lea	a2,[a10]0
 	lea	a5,255
 .L11:
 	ld.w	d1,[a15+]
 	st.w	[a2+],d1
 	loop	a5,.L11
-.L112:
+.L117:
 	mul	d0,d5
-.L109:
-	mov	d3,#0
-.L113:
-	mov	d5,#0
-.L106:
-	mov	d7,#0
 .L114:
+	mov	d3,#0
+.L118:
+	mov	d5,#0
+.L111:
+	mov	d7,#0
+.L119:
 	movh	d8,#49024
-.L94:
+.L98:
 	mov	d1,#0
-.L115:
+.L120:
 	j	.L12
 .L13:
 	addsc.a	a15,a4,d1,#0
 	ld.bu	d2,[a15]
-.L180:
+.L185:
 	mul	d15,d2,#4
 	addsc.a	a15,a10,d15,#0
-.L181:
+.L186:
 	addsc.a	a2,a4,d1,#0
 	ld.bu	d2,[a2]
-.L182:
+.L187:
 	mul	d15,d2,#4
 	addsc.a	a2,a10,d15,#0
 	ld.w	d2,[a2]
-.L183:
+.L188:
 	add	d2,#1
 	st.w	[a15],d2
-.L184:
+.L189:
 	add	d1,#1
 .L12:
 	jlt	d1,d0,.L13
-.L95:
+.L99:
 	j	.L14
 .L15:
 	add	d4,#1
 .L14:
 	mov	d1,#256
-.L185:
+.L190:
 	jge	d4,d1,.L16
-.L186:
+.L191:
 	mul	d15,d4,#4
 	addsc.a	a15,a10,d15,#0
 	ld.w	d15,[a15]
-.L187:
+.L192:
 	jeq	d15,#0,.L15
 .L16:
 	j	.L17
 .L18:
 	add	d6,#-1
-.L111:
+.L116:
 	extr	d6,d6,#0,#16
 .L17:
 	jlt	d6,d4,.L19
-.L188:
+.L193:
 	mul	d15,d6,#4
 	addsc.a	a15,a10,d15,#0
 	ld.w	d15,[a15]
-.L189:
+.L194:
 	jeq	d15,#0,.L18
 .L19:
 	sub	d15,d6,d4
-.L190:
+.L195:
 	jge	d15,#2,.L20
-.L191:
+.L196:
 	extr.u	d2,d4,#0,#8
-.L192:
+.L197:
 	j	.L21
 .L20:
 	mov	d1,d4
-.L116:
+.L121:
 	j	.L22
 .L23:
 	mul	d15,d1,#4
 	addsc.a	a15,a10,d15,#0
 	ld.w	d15,[a15]
-.L193:
+.L198:
 	madd	d3,d3,d1,d15
-.L194:
+.L199:
 	add	d1,#1
-.L117:
+.L122:
 	extr	d1,d1,#0,#16
 .L22:
 	jge	d6,d1,.L23
-.L97:
+.L101:
 	mov	d1,d4
-.L118:
+.L123:
 	j	.L24
 .L25:
 	mul	d15,d1,#4
 	addsc.a	a15,a10,d15,#0
 	ld.w	d15,[a15]
-.L195:
+.L200:
 	add	d5,d15
-.L196:
+.L201:
 	mul	d15,d1,#4
 	addsc.a	a15,a10,d15,#0
 	ld.w	d15,[a15]
-.L197:
+.L202:
 	madd	d7,d7,d1,d15
-.L198:
+.L203:
 	movh.a	a15,#@his(_999001_isFirstBinary)
 	lea	a15,[a15]@los(_999001_isFirstBinary)
 	ld.h	d15,[a15]
-.L199:
+.L204:
 	jne	d15,#1,.L26
-.L200:
+.L205:
 	j	.L27
 .L26:
 	movh.a	a15,#@his(_999002_threshold)
 	lea	a15,[a15]@los(_999002_threshold)
 	ld.h	d15,[a15]
-.L201:
+.L206:
 	add	d15,#-5
-.L202:
+.L207:
 	jge	d1,d15,.L28
-.L203:
+.L208:
 	movh.a	a15,#@his(_999002_threshold)
 	lea	a15,[a15]@los(_999002_threshold)
 	ld.h	d15,[a15]
-.L204:
+.L209:
 	jge	d15,d6,.L29
-.L205:
+.L210:
 	j	.L30
 .L29:
 .L28:
 	movh.a	a15,#@his(_999002_threshold)
 	lea	a15,[a15]@los(_999002_threshold)
 	ld.h	d15,[a15]
-.L206:
-	add	d15,#5
-.L207:
-	jge	d15,d1,.L31
-.L208:
-	movh.a	a15,#@his(_999002_threshold)
-	lea	a15,[a15]@los(_999002_threshold)
-	ld.h	d15,[a15]
-.L209:
-	jge	d4,d15,.L32
-.L210:
-	movh.a	a15,#@his(_999002_threshold)
-	lea	a15,[a15]@los(_999002_threshold)
-	ld.h	d15,[a15]
 .L211:
-	extr.u	d2,d15,#0,#8
+	add	d15,#5
 .L212:
+	jge	d15,d1,.L31
+.L213:
+	movh.a	a15,#@his(_999002_threshold)
+	lea	a15,[a15]@los(_999002_threshold)
+	ld.h	d15,[a15]
+.L214:
+	jge	d4,d15,.L32
+.L215:
+	movh.a	a15,#@his(_999002_threshold)
+	lea	a15,[a15]@los(_999002_threshold)
+	ld.h	d15,[a15]
+.L216:
+	extr.u	d2,d15,#0,#8
+.L217:
 	j	.L33
 .L32:
 .L31:
 .L27:
 	sub	d10,d0,d5
-.L120:
-	sub	d9,d3,d7
-.L121:
-	itof	d15,d5
-.L213:
-	itof	d2,d0
-.L214:
-	div.f	d11,d15,d2
-.L123:
-	movh	d15,#16256
-.L215:
-	sub.f	d12,d15,d11
-.L124:
-	itof	d15,d7
-.L216:
-	itof	d2,d5
-.L217:
-	div.f	d13,d15,d2
 .L125:
-	itof	d15,d9
-.L218:
-	itof	d2,d10
-.L219:
-	div.f	d15,d15,d2
+	sub	d9,d3,d7
 .L126:
-	mul.f	d2,d11,d12
-.L220:
-	sub.f	d9,d13,d15
-.L122:
-	mul.f	d2,d2,d9
-.L221:
-	sub.f	d15,d13,d15
-.L127:
-	mul.f	d2,d2,d15
+	itof	d15,d5
+.L218:
+	itof	d2,d0
+.L219:
+	div.f	d11,d15,d2
 .L128:
+	movh	d15,#16256
+.L220:
+	sub.f	d12,d15,d11
+.L129:
+	itof	d15,d7
+.L221:
+	itof	d2,d5
+.L222:
+	div.f	d13,d15,d2
+.L130:
+	itof	d15,d9
+.L223:
+	itof	d2,d10
+.L224:
+	div.f	d15,d15,d2
+.L131:
+	mul.f	d2,d11,d12
+.L225:
+	sub.f	d9,d13,d15
+.L127:
+	mul.f	d2,d2,d9
+.L226:
+	sub.f	d15,d13,d15
+.L132:
+	mul.f	d2,d2,d15
+.L133:
 	cmp.f	d15,d2,d8
 	extr.u	d15,d15,#2,#1
-.L222:
+.L227:
 	jeq	d15,#0,.L34
-.L223:
+.L228:
 	mov	d8,d2
-.L224:
+.L229:
 	movh.a	a15,#@his(_999002_threshold)
 	lea	a15,[a15]@los(_999002_threshold)
-.L225:
+.L230:
 	st.h	[a15],d1
 .L34:
 .L30:
 	add	d1,#1
-.L119:
+.L124:
 	extr	d1,d1,#0,#16
 .L24:
 	jge	d6,d1,.L25
-.L99:
+.L103:
 	movh.a	a15,#@his(_999001_isFirstBinary)
 	lea	a15,[a15]@los(_999001_isFirstBinary)
-.L226:
+.L231:
 	mov	d15,#0
-.L227:
+.L232:
 	st.h	[a15],d15
-.L228:
+.L233:
 	movh.a	a15,#@his(_999002_threshold)
 	lea	a15,[a15]@los(_999002_threshold)
 	ld.h	d15,[a15]
-.L229:
+.L234:
 	extr.u	d2,d15,#0,#8
-.L230:
+.L235:
 	j	.L35
 .L35:
 .L33:
 .L21:
 	ret
-.L70:
+.L74:
 	
 __Fast_OTSU_function_end:
 	.size	Fast_OTSU,__Fast_OTSU_function_end-Fast_OTSU
@@ -430,6 +430,13 @@ dynamicBinary:	.type	object
 staticBinary:	.type	object
 	.size	staticBinary,2
 	.space	2
+	.sdecl	'.data.Camera.MainCount',data,cluster('MainCount')
+	.sect	'.data.Camera.MainCount'
+	.global	MainCount
+	.align	2
+MainCount:	.type	object
+	.size	MainCount,4
+	.space	4
 	.sdecl	'.data.Camera.LightPoint',data,cluster('LightPoint')
 	.sect	'.data.Camera.LightPoint'
 	.global	LightPoint
@@ -443,7 +450,14 @@ LightPoint:	.type	object
 	.align	2
 trans:	.type	object
 	.size	trans,4
-	.word	-5
+	.word	-8
+	.sdecl	'.data.Camera.ImageFlag',data,cluster('ImageFlag')
+	.sect	'.data.Camera.ImageFlag'
+	.global	ImageFlag
+	.align	2
+ImageFlag:	.type	object
+	.size	ImageFlag,4
+	.word	1
 	.sdecl	'.data.Camera._999001_isFirstBinary',data,cluster('_999001_isFirstBinary')
 	.sect	'.data.Camera._999001_isFirstBinary'
 	.align	2
@@ -487,7 +501,7 @@ _999002_threshold:	.type	object
 	.word	170
 	.byte	6,0,7
 	.byte	'__fract',0,4,128,1
-.L87:
+.L91:
 	.byte	7
 	.byte	'float',0,4,4,8
 	.byte	'Ifx__float_to_fract',0,3,1,152,2,18
@@ -515,10 +529,10 @@ _999002_threshold:	.type	object
 	.word	313
 	.byte	6,0,7
 	.byte	'unsigned int',0,4,7
-.L81:
+.L85:
 	.byte	7
 	.byte	'int',0,4,5
-.L69:
+.L73:
 	.byte	7
 	.byte	'unsigned char',0,1,8,10
 	.byte	'_Ifx_SRC_SRCR_Bits',0,4,45,16,4,11
@@ -5515,9 +5529,11 @@ _999002_threshold:	.type	object
 	.byte	'alti',0,17,191,18,82
 	.word	32174
 	.byte	6,0
-.L66:
+.L70:
 	.byte	7
-	.byte	'short int',0,2,5,7
+	.byte	'short int',0,2,5
+.L106:
+	.byte	7
 	.byte	'long int',0,4,5,20,19,60,9,12,13
 	.byte	'count',0
 	.word	32466
@@ -5892,14 +5908,14 @@ _999002_threshold:	.type	object
 	.byte	22
 	.word	32777
 	.byte	6,0
-.L71:
+.L75:
 	.byte	3
 	.word	454
-.L77:
+.L81:
 	.byte	18,128,8
 	.word	447
 	.byte	19,255,1,0
-.L79:
+.L83:
 	.byte	26
 	.word	447
 	.byte	27
@@ -19869,7 +19885,7 @@ _999002_threshold:	.type	object
 	.byte	18,152,1
 	.word	454
 	.byte	19,151,1,0
-.L101:
+.L105:
 	.byte	18,224,118
 	.word	143862
 	.byte	19,99,0,10
@@ -20141,17 +20157,17 @@ _999002_threshold:	.type	object
 	.byte	4,2,35,32,0,27
 	.byte	'PID',0,54,14,2
 	.word	145197
-	.byte	15,55,27,9,1,16
+	.byte	15,55,29,9,1,16
 	.byte	'Left',0,0,16
 	.byte	'Right',0,1,0,27
-	.byte	'LegNum',0,55,27,30
+	.byte	'LegNum',0,55,29,30
 	.word	145339
 	.byte	33
-	.byte	'_BldcMode',0,55,30,14,1,16
+	.byte	'_BldcMode',0,55,32,14,1,16
 	.byte	'CURRENT',0,0,16
 	.byte	'RPM',0,1,16
 	.byte	'POSITION',0,2,0,27
-	.byte	'BldcMode',0,55,34,3
+	.byte	'BldcMode',0,55,36,3
 	.word	145375
 	.byte	14
 	.word	227
@@ -20160,7 +20176,7 @@ _999002_threshold:	.type	object
 	.byte	14
 	.word	32466
 	.byte	10
-	.byte	'_Value',0,55,37,16,12,13
+	.byte	'_Value',0,55,39,16,12,13
 	.byte	'speed',0
 	.word	145435
 	.byte	4,2,35,0,13
@@ -20170,7 +20186,7 @@ _999002_threshold:	.type	object
 	.byte	'current',0
 	.word	145445
 	.byte	2,2,35,8,0,27
-	.byte	'ValueType',0,55,41,3
+	.byte	'ValueType',0,55,43,3
 	.word	145450
 	.byte	14
 	.word	1005
@@ -20183,7 +20199,7 @@ _999002_threshold:	.type	object
 	.byte	14
 	.word	447
 	.byte	10
-	.byte	'_PulseType',0,55,44,16,16,13
+	.byte	'_PulseType',0,55,46,16,16,13
 	.byte	'pulseRead',0
 	.word	145528
 	.byte	2,2,35,0,13
@@ -20199,9 +20215,9 @@ _999002_threshold:	.type	object
 	.byte	'pulseLock',0
 	.word	145548
 	.byte	4,2,35,10,0,27
-	.byte	'PulseType',0,55,51,3
+	.byte	'PulseType',0,55,53,3
 	.word	145553
-	.byte	20,55,54,9,12,13
+	.byte	20,55,56,9,12,13
 	.byte	'direct',0
 	.word	145339
 	.byte	1,2,35,0,13
@@ -20214,10 +20230,10 @@ _999002_threshold:	.type	object
 	.byte	'currentLimit',0
 	.word	227
 	.byte	4,2,35,6,0,27
-	.byte	'MotorParamType',0,55,60,3
+	.byte	'MotorParamType',0,55,62,3
 	.word	145683
 	.byte	7
-	.byte	'_Bool',0,1,2,20,55,63,9,12,13
+	.byte	'_Bool',0,1,2,20,55,65,9,12,13
 	.byte	'isStuck',0
 	.word	145788
 	.byte	1,2,35,0,13
@@ -20236,10 +20252,10 @@ _999002_threshold:	.type	object
 	.byte	'maxRPM',0
 	.word	227
 	.byte	4,2,35,8,0,27
-	.byte	'MotorLimit',0,55,73,3
+	.byte	'MotorLimit',0,55,75,3
 	.word	145797
 	.byte	10
-	.byte	'_Bldc',0,55,76,16,240,1,13
+	.byte	'_Bldc',0,55,78,16,240,1,13
 	.byte	'enable',0
 	.word	145788
 	.byte	1,2,35,0,13
@@ -20282,7 +20298,7 @@ _999002_threshold:	.type	object
 	.byte	'currentPID',0
 	.word	144618
 	.byte	52,3,35,188,1,0,27
-	.byte	'BldcType',0,55,89,3
+	.byte	'BldcType',0,55,91,3
 	.word	145945
 	.byte	10
 	.byte	'_IMUParam',0,56,9,16,48,13
@@ -20435,11 +20451,11 @@ _999002_threshold:	.type	object
 	.sdecl	'.debug_line',debug
 	.sect	'.debug_line'
 .L43:
-	.word	.L130-.L129
-.L129:
+	.word	.L135-.L134
+.L134:
 	.half	3
-	.word	.L132-.L131
-.L131:
+	.word	.L137-.L136
+.L136:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
 	.byte	'D:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B\\\\_Reg',0
 	.byte	'D:\\Software 1\\ADS\\ADS\\AURIX-Studio-1.10.6\\tools\\Compilers\\Tasking_1.1r8\\ctc\\include\\',0
@@ -20533,8 +20549,8 @@ _999002_threshold:	.type	object
 	.byte	'imu.h',0,10,0,0
 	.byte	'leg.h',0,10,0,0
 	.byte	'robot.h',0,10,0,0,0
-.L132:
-.L130:
+.L137:
+.L135:
 	.sdecl	'.debug_info',debug,cluster('Binary_Img')
 	.sect	'.debug_info'
 .L44:
@@ -20549,18 +20565,18 @@ _999002_threshold:	.type	object
 	.byte	2
 	.word	.L40
 	.byte	3
-	.byte	'Binary_Img',0,1,29,6,1,1,1
-	.word	.L37,.L64,.L36
+	.byte	'Binary_Img',0,1,37,6,1,1,1
+	.word	.L37,.L68,.L36
 	.byte	4
-	.word	.L37,.L64
+	.word	.L37,.L68
 	.byte	4
-	.word	.L4,.L65
+	.word	.L4,.L69
 	.byte	5
-	.byte	'row',0,1,42,13
-	.word	.L66,.L67
+	.byte	'row',0,1,50,13
+	.word	.L70,.L71
 	.byte	5
-	.byte	'col',0,1,42,22
-	.word	.L66,.L68
+	.byte	'col',0,1,50,22
+	.word	.L70,.L72
 	.byte	0,0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('Binary_Img')
 	.sect	'.debug_abbrev'
@@ -20570,120 +20586,120 @@ _999002_threshold:	.type	object
 	.sdecl	'.debug_line',debug,cluster('Binary_Img')
 	.sect	'.debug_line'
 .L46:
-	.word	.L134-.L133
-.L133:
+	.word	.L139-.L138
+.L138:
 	.half	3
-	.word	.L136-.L135
-.L135:
+	.word	.L141-.L140
+.L140:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/src/Camera.c',0,0,0,0,0
-.L136:
+.L141:
 	.byte	5,6,7,0,5,2
 	.word	.L37
-	.byte	3,30,1,5,20,9
-	.half	.L137-.L37
+	.byte	3,38,1,5,20,9
+	.half	.L142-.L37
 	.byte	1,5,2,9
-	.half	.L138-.L137
-	.byte	1,5,3,7,9
-	.half	.L139-.L138
-	.byte	3,1,1,5,18,9
-	.half	.L140-.L139
-	.byte	1,5,29,9
-	.half	.L141-.L140
-	.byte	1,5,16,9
-	.half	.L142-.L141
-	.byte	1,5,14,9
 	.half	.L143-.L142
-	.byte	1,5,11,9
-	.half	.L2-.L143
-	.byte	3,2,1,5,2,9
-	.half	.L144-.L2
 	.byte	1,5,3,7,9
+	.half	.L144-.L143
+	.byte	3,1,1,5,18,9
 	.half	.L145-.L144
-	.byte	3,2,1,5,71,9
-	.half	.L146-.L145
 	.byte	1,5,29,9
+	.half	.L146-.L145
+	.byte	1,5,16,9
 	.half	.L147-.L146
-	.byte	1,5,47,9
+	.byte	1,5,14,9
 	.half	.L148-.L147
-	.byte	1,5,58,9
-	.half	.L149-.L148
-	.byte	1,5,69,9
+	.byte	1,5,11,9
+	.half	.L2-.L148
+	.byte	3,2,1,5,2,9
+	.half	.L149-.L2
+	.byte	1,5,3,7,9
 	.half	.L150-.L149
-	.byte	1,5,17,9
+	.byte	3,2,1,5,71,9
 	.half	.L151-.L150
-	.byte	1,5,81,9
+	.byte	1,5,29,9
 	.half	.L152-.L151
-	.byte	1,5,3,9
-	.half	.L3-.L152
-	.byte	3,3,1,5,19,9
-	.half	.L153-.L3
-	.byte	1,5,17,9
+	.byte	1,5,47,9
+	.half	.L153-.L152
+	.byte	1,5,58,9
 	.half	.L154-.L153
-	.byte	1,9
-	.half	.L4-.L154
-	.byte	3,3,1,5,36,9
-	.half	.L102-.L4
-	.byte	1,5,28,9
-	.half	.L6-.L102
-	.byte	3,2,1,5,26,9
-	.half	.L155-.L6
-	.byte	1,5,66,9
-	.half	.L103-.L155
-	.byte	1,5,21,9
-	.half	.L8-.L103
-	.byte	3,3,1,5,8,9
-	.half	.L156-.L8
-	.byte	1,5,21,9
+	.byte	1,5,69,9
+	.half	.L155-.L154
+	.byte	1,5,17,9
+	.half	.L156-.L155
+	.byte	1,5,81,9
 	.half	.L157-.L156
-	.byte	1,5,26,9
-	.half	.L158-.L157
-	.byte	1,5,34,9
+	.byte	1,5,3,9
+	.half	.L3-.L157
+	.byte	3,3,1,5,19,9
+	.half	.L158-.L3
+	.byte	1,5,17,9
 	.half	.L159-.L158
-	.byte	1,5,7,9
-	.half	.L160-.L159
-	.byte	1,5,49,7,9
-	.half	.L161-.L160
-	.byte	1,5,57,9
+	.byte	1,9
+	.half	.L4-.L159
+	.byte	3,3,1,5,36,9
+	.half	.L107-.L4
+	.byte	1,5,31,9
+	.half	.L6-.L107
+	.byte	3,2,1,5,29,9
+	.half	.L160-.L6
+	.byte	1,5,72,9
+	.half	.L108-.L160
+	.byte	1,5,21,9
+	.half	.L8-.L108
+	.byte	3,3,1,5,8,9
+	.half	.L161-.L8
+	.byte	1,5,21,9
 	.half	.L162-.L161
+	.byte	1,5,26,9
+	.half	.L163-.L162
+	.byte	1,5,34,9
+	.half	.L164-.L163
+	.byte	1,5,7,9
+	.half	.L165-.L164
+	.byte	1,5,49,7,9
+	.half	.L166-.L165
+	.byte	1,5,57,9
+	.half	.L167-.L166
 	.byte	1,5,49,9
-	.half	.L9-.L162
+	.half	.L9-.L167
 	.byte	1,5,13,9
 	.half	.L10-.L9
 	.byte	3,127,1,5,4,9
-	.half	.L163-.L10
+	.half	.L168-.L10
 	.byte	1,5,13,9
-	.half	.L164-.L163
-	.byte	1,5,23,9
-	.half	.L165-.L164
-	.byte	1,5,39,9
-	.half	.L166-.L165
-	.byte	1,5,37,9
-	.half	.L167-.L166
-	.byte	1,5,18,9
-	.half	.L168-.L167
-	.byte	1,5,5,9
 	.half	.L169-.L168
-	.byte	3,1,1,5,68,9
+	.byte	1,5,23,9
 	.half	.L170-.L169
-	.byte	3,125,1,5,61,9
-	.half	.L7-.L170
-	.byte	1,5,59,9
-	.half	.L171-.L7
-	.byte	1,5,66,9
+	.byte	1,5,42,9
+	.half	.L171-.L170
+	.byte	1,5,40,9
 	.half	.L172-.L171
-	.byte	1,5,38,7,9
+	.byte	1,5,18,9
 	.half	.L173-.L172
+	.byte	1,5,5,9
+	.half	.L174-.L173
+	.byte	3,1,1,5,74,9
+	.half	.L175-.L174
+	.byte	3,125,1,5,67,9
+	.half	.L7-.L175
+	.byte	1,5,65,9
+	.half	.L176-.L7
+	.byte	1,5,72,9
+	.half	.L177-.L176
+	.byte	1,5,38,7,9
+	.half	.L178-.L177
 	.byte	3,126,1,5,33,9
-	.half	.L5-.L173
+	.half	.L5-.L178
 	.byte	1,5,36,9
-	.half	.L174-.L5
+	.half	.L179-.L5
 	.byte	1,5,1,7,9
-	.half	.L65-.L174
+	.half	.L69-.L179
 	.byte	3,8,1,7,9
-	.half	.L48-.L65
+	.half	.L48-.L69
 	.byte	0,1,1
-.L134:
+.L139:
 	.sdecl	'.debug_ranges',debug,cluster('Binary_Img')
 	.sect	'.debug_ranges'
 .L47:
@@ -20702,91 +20718,91 @@ _999002_threshold:	.type	object
 	.byte	2
 	.word	.L40
 	.byte	3
-	.byte	'Fast_OTSU',0,1,63,7
-	.word	.L69
+	.byte	'Fast_OTSU',0,1,71,7
+	.word	.L73
 	.byte	1,1,1
-	.word	.L39,.L70,.L38
+	.word	.L39,.L74,.L38
 	.byte	4
-	.byte	'img',0,1,63,24
-	.word	.L71,.L72
+	.byte	'img',0,1,71,24
+	.word	.L75,.L76
 	.byte	4
-	.byte	'row',0,1,63,35
-	.word	.L66,.L73
+	.byte	'row',0,1,71,35
+	.word	.L70,.L77
 	.byte	4
-	.byte	'col',0,1,63,46
-	.word	.L66,.L74
+	.byte	'col',0,1,71,46
+	.word	.L70,.L78
 	.byte	5
-	.word	.L39,.L70
+	.word	.L39,.L74
 	.byte	6
-	.byte	'isFirstBinary',0,1,65,15
-	.word	.L66
+	.byte	'isFirstBinary',0,1,73,15
+	.word	.L70
 	.byte	5,3
 	.word	_999001_isFirstBinary
 	.byte	6
-	.byte	'threshold',0,1,66,15
-	.word	.L66
+	.byte	'threshold',0,1,74,15
+	.word	.L70
 	.byte	5,3
 	.word	_999002_threshold
 	.byte	7
-	.byte	'minGrayValue',0,1,67,10
-	.word	.L66,.L75
+	.byte	'minGrayValue',0,1,75,10
+	.word	.L70,.L79
 	.byte	7
-	.byte	'maxGrayValue',0,1,67,28
-	.word	.L66,.L76
+	.byte	'maxGrayValue',0,1,75,28
+	.word	.L70,.L80
 	.byte	7
-	.byte	'grayHist',0,1,71,6
-	.word	.L77,.L78
-	.byte	7
-	.byte	'sumOfPixel',0,1,72,14
-	.word	.L79,.L80
-	.byte	7
-	.byte	'sumOfGrayValue',0,1,73,9
+	.byte	'grayHist',0,1,79,6
 	.word	.L81,.L82
 	.byte	7
-	.byte	'sumOfBackPixel',0,1,74,9
-	.word	.L81,.L83
+	.byte	'sumOfPixel',0,1,80,14
+	.word	.L83,.L84
 	.byte	7
-	.byte	'sumOfForcePixel',0,1,74,29
-	.word	.L81,.L84
+	.byte	'sumOfGrayValue',0,1,81,9
+	.word	.L85,.L86
 	.byte	7
-	.byte	'sumOfBackGray',0,1,75,9
-	.word	.L81,.L85
+	.byte	'sumOfBackPixel',0,1,82,9
+	.word	.L85,.L87
 	.byte	7
-	.byte	'sumOfForceGray',0,1,75,28
-	.word	.L81,.L86
+	.byte	'sumOfForcePixel',0,1,82,29
+	.word	.L85,.L88
 	.byte	7
-	.byte	'w0',0,1,77,8
-	.word	.L87,.L88
+	.byte	'sumOfBackGray',0,1,83,9
+	.word	.L85,.L89
 	.byte	7
-	.byte	'w1',0,1,77,12
-	.word	.L87,.L89
+	.byte	'sumOfForceGray',0,1,83,28
+	.word	.L85,.L90
 	.byte	7
-	.byte	'u0',0,1,77,16
-	.word	.L87,.L90
+	.byte	'w0',0,1,85,8
+	.word	.L91,.L92
 	.byte	7
-	.byte	'u1',0,1,77,20
-	.word	.L87,.L91
+	.byte	'w1',0,1,85,12
+	.word	.L91,.L93
 	.byte	7
-	.byte	'maxVariance',0,1,78,8
-	.word	.L87,.L92
+	.byte	'u0',0,1,85,16
+	.word	.L91,.L94
 	.byte	7
-	.byte	'tmpVariance',0,1,78,26
-	.word	.L87,.L93
+	.byte	'u1',0,1,85,20
+	.word	.L91,.L95
+	.byte	7
+	.byte	'maxVariance',0,1,86,8
+	.word	.L91,.L96
+	.byte	7
+	.byte	'tmpVariance',0,1,86,26
+	.word	.L91,.L97
 	.byte	5
-	.word	.L94,.L95
+	.word	.L98,.L99
 	.byte	7
-	.byte	'i',0,1,80,11
-	.word	.L81,.L96
+	.byte	'i',0,1,88,11
+	.word	.L85,.L100
 	.byte	0,5
-	.word	.L20,.L97
+	.word	.L20,.L101
 	.byte	7
-	.byte	'i',0,1,96,13
-	.word	.L66,.L98
+	.byte	'i',0,1,104,13
+	.word	.L70,.L102
 	.byte	0,5
-	.word	.L97,.L99
+	.word	.L101,.L103
 	.byte	7
-	.byte	'i',0,1,99,13
-	.word	.L66,.L100
+	.byte	'i',0,1,107,13
+	.word	.L70,.L104
 	.byte	0,0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('Fast_OTSU')
 	.sect	'.debug_abbrev'
@@ -20797,208 +20813,208 @@ _999002_threshold:	.type	object
 	.sdecl	'.debug_line',debug,cluster('Fast_OTSU')
 	.sect	'.debug_line'
 .L51:
-	.word	.L176-.L175
-.L175:
+	.word	.L181-.L180
+.L180:
 	.half	3
-	.word	.L178-.L177
-.L177:
+	.word	.L183-.L182
+.L182:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/src/Camera.c',0,0,0,0,0
-.L178:
+.L183:
 	.byte	5,7,7,0,5,2
 	.word	.L39
-	.byte	3,62,1,5,23,9
-	.half	.L108-.L39
+	.byte	3,198,0,1,5,23,9
+	.half	.L113-.L39
 	.byte	3,4,1,5,41,9
-	.half	.L107-.L108
+	.half	.L112-.L113
 	.byte	1,5,22,9
-	.half	.L110-.L107
+	.half	.L115-.L112
 	.byte	3,4,1,5,20,9
-	.half	.L179-.L110
+	.half	.L184-.L115
 	.byte	1,5,34,9
-	.half	.L112-.L179
+	.half	.L117-.L184
 	.byte	3,1,1,5,24,9
-	.half	.L109-.L112
+	.half	.L114-.L117
 	.byte	3,1,1,9
-	.half	.L113-.L109
+	.half	.L118-.L114
 	.byte	3,1,1,5,23,9
-	.half	.L106-.L113
+	.half	.L111-.L118
 	.byte	3,1,1,5,22,9
-	.half	.L114-.L106
+	.half	.L119-.L111
 	.byte	3,3,1,5,13,9
-	.half	.L94-.L114
+	.half	.L98-.L119
 	.byte	3,2,1,5,32,9
-	.half	.L115-.L94
+	.half	.L120-.L98
 	.byte	1,5,17,9
-	.half	.L13-.L115
+	.half	.L13-.L120
 	.byte	3,2,1,5,13,9
-	.half	.L180-.L13
+	.half	.L185-.L13
 	.byte	1,5,17,9
-	.half	.L181-.L180
+	.half	.L186-.L185
 	.byte	1,5,13,9
-	.half	.L182-.L181
+	.half	.L187-.L186
 	.byte	1,5,3,9
-	.half	.L183-.L182
+	.half	.L188-.L187
 	.byte	1,5,34,9
-	.half	.L184-.L183
+	.half	.L189-.L188
 	.byte	3,126,1,5,32,9
-	.half	.L12-.L184
+	.half	.L12-.L189
 	.byte	1,5,58,7,9
-	.half	.L95-.L12
+	.half	.L99-.L12
 	.byte	3,4,1,5,3,9
-	.half	.L15-.L95
+	.half	.L15-.L99
 	.byte	3,2,1,5,24,9
 	.half	.L14-.L15
 	.byte	3,126,1,5,9,9
-	.half	.L185-.L14
+	.half	.L190-.L14
 	.byte	1,5,44,7,9
-	.half	.L186-.L185
+	.half	.L191-.L190
 	.byte	1,5,33,9
-	.half	.L187-.L186
+	.half	.L192-.L191
 	.byte	1,5,68,7,9
-	.half	.L16-.L187
+	.half	.L16-.L192
 	.byte	3,4,1,5,3,9
 	.half	.L18-.L16
 	.byte	3,2,1,5,9,9
 	.half	.L17-.L18
 	.byte	3,126,1,5,54,7,9
-	.half	.L188-.L17
+	.half	.L193-.L17
 	.byte	1,5,43,9
-	.half	.L189-.L188
-	.byte	1,5,19,7,9
-	.half	.L19-.L189
-	.byte	3,4,1,5,2,9
-	.half	.L190-.L19
-	.byte	1,5,10,7,9
-	.half	.L191-.L190
-	.byte	3,2,1,5,3,9
-	.half	.L192-.L191
-	.byte	1,5,15,9
-	.half	.L20-.L192
-	.byte	3,2,1,5,48,9
-	.half	.L116-.L20
-	.byte	1,5,33,9
-	.half	.L23-.L116
-	.byte	3,1,1,5,18,9
-	.half	.L193-.L23
-	.byte	1,5,50,9
 	.half	.L194-.L193
-	.byte	3,127,1,5,48,9
-	.half	.L22-.L194
-	.byte	1,5,15,7,9
-	.half	.L97-.L22
-	.byte	3,3,1,5,48,9
-	.half	.L118-.L97
-	.byte	1,5,29,9
-	.half	.L25-.L118
-	.byte	3,2,1,5,18,9
-	.half	.L195-.L25
-	.byte	1,5,33,9
+	.byte	1,5,19,7,9
+	.half	.L19-.L194
+	.byte	3,4,1,5,2,9
+	.half	.L195-.L19
+	.byte	1,5,10,7,9
 	.half	.L196-.L195
-	.byte	3,1,1,5,18,9
+	.byte	3,2,1,5,3,9
 	.half	.L197-.L196
-	.byte	1,5,12,9
-	.half	.L198-.L197
-	.byte	3,1,1,5,3,9
+	.byte	1,5,15,9
+	.half	.L20-.L197
+	.byte	3,2,1,5,48,9
+	.half	.L121-.L20
+	.byte	1,5,33,9
+	.half	.L23-.L121
+	.byte	3,1,1,5,18,9
+	.half	.L198-.L23
+	.byte	1,5,50,9
 	.half	.L199-.L198
-	.byte	1,5,4,7,9
-	.half	.L200-.L199
-	.byte	3,2,1,5,12,9
-	.half	.L26-.L200
-	.byte	3,3,1,5,22,9
-	.half	.L201-.L26
-	.byte	1,5,8,9
+	.byte	3,127,1,5,48,9
+	.half	.L22-.L199
+	.byte	1,5,15,7,9
+	.half	.L101-.L22
+	.byte	3,3,1,5,48,9
+	.half	.L123-.L101
+	.byte	1,5,29,9
+	.half	.L25-.L123
+	.byte	3,2,1,5,18,9
+	.half	.L200-.L25
+	.byte	1,5,33,9
+	.half	.L201-.L200
+	.byte	3,1,1,5,18,9
 	.half	.L202-.L201
-	.byte	1,5,44,7,9
+	.byte	1,5,12,9
 	.half	.L203-.L202
-	.byte	1,5,42,9
+	.byte	3,1,1,5,3,9
 	.half	.L204-.L203
-	.byte	1,5,5,7,9
+	.byte	1,5,4,7,9
 	.half	.L205-.L204
 	.byte	3,2,1,5,12,9
-	.half	.L28-.L205
-	.byte	3,2,1,5,22,9
-	.half	.L206-.L28
+	.half	.L26-.L205
+	.byte	3,3,1,5,22,9
+	.half	.L206-.L26
 	.byte	1,5,8,9
 	.half	.L207-.L206
 	.byte	1,5,44,7,9
 	.half	.L208-.L207
 	.byte	1,5,42,9
 	.half	.L209-.L208
-	.byte	1,5,20,7,9
+	.byte	1,5,5,7,9
 	.half	.L210-.L209
-	.byte	3,1,1,5,12,9
-	.half	.L211-.L210
-	.byte	1,5,5,9
+	.byte	3,2,1,5,12,9
+	.half	.L28-.L210
+	.byte	3,2,1,5,22,9
+	.half	.L211-.L28
+	.byte	1,5,8,9
 	.half	.L212-.L211
-	.byte	1,5,32,9
-	.half	.L27-.L212
-	.byte	3,4,1,5,35,9
-	.half	.L120-.L27
-	.byte	3,1,1,5,11,9
-	.half	.L121-.L120
-	.byte	3,1,1,5,36,9
-	.half	.L213-.L121
-	.byte	1,5,34,9
+	.byte	1,5,44,7,9
+	.half	.L213-.L212
+	.byte	1,5,42,9
 	.half	.L214-.L213
-	.byte	1,5,11,9
-	.half	.L123-.L214
-	.byte	3,1,1,5,13,9
-	.half	.L215-.L123
-	.byte	1,5,11,9
-	.half	.L124-.L215
-	.byte	3,1,1,5,35,9
-	.half	.L216-.L124
-	.byte	1,5,33,9
+	.byte	1,5,20,7,9
+	.half	.L215-.L214
+	.byte	3,1,1,5,12,9
+	.half	.L216-.L215
+	.byte	1,5,5,9
 	.half	.L217-.L216
-	.byte	1,5,11,9
-	.half	.L125-.L217
+	.byte	1,5,32,9
+	.half	.L27-.L217
+	.byte	3,4,1,5,35,9
+	.half	.L125-.L27
+	.byte	3,1,1,5,11,9
+	.half	.L126-.L125
 	.byte	3,1,1,5,36,9
-	.half	.L218-.L125
+	.half	.L218-.L126
 	.byte	1,5,34,9
 	.half	.L219-.L218
-	.byte	1,5,21,9
-	.half	.L126-.L219
-	.byte	3,2,1,5,32,9
-	.half	.L220-.L126
-	.byte	1,5,26,9
-	.half	.L122-.L220
-	.byte	1,5,44,9
-	.half	.L221-.L122
-	.byte	1,5,38,9
-	.half	.L127-.L221
-	.byte	1,5,19,9
-	.half	.L128-.L127
-	.byte	3,1,1,5,3,9
-	.half	.L222-.L128
-	.byte	1,5,16,7,9
-	.half	.L223-.L222
-	.byte	3,1,1,5,4,9
+	.byte	1,5,11,9
+	.half	.L128-.L219
+	.byte	3,1,1,5,13,9
+	.half	.L220-.L128
+	.byte	1,5,11,9
+	.half	.L129-.L220
+	.byte	3,1,1,5,35,9
+	.half	.L221-.L129
+	.byte	1,5,33,9
+	.half	.L222-.L221
+	.byte	1,5,11,9
+	.half	.L130-.L222
+	.byte	3,1,1,5,36,9
+	.half	.L223-.L130
+	.byte	1,5,34,9
 	.half	.L224-.L223
+	.byte	1,5,21,9
+	.half	.L131-.L224
+	.byte	3,2,1,5,32,9
+	.half	.L225-.L131
+	.byte	1,5,26,9
+	.half	.L127-.L225
+	.byte	1,5,44,9
+	.half	.L226-.L127
+	.byte	1,5,38,9
+	.half	.L132-.L226
+	.byte	1,5,19,9
+	.half	.L133-.L132
+	.byte	3,1,1,5,3,9
+	.half	.L227-.L133
+	.byte	1,5,16,7,9
+	.half	.L228-.L227
+	.byte	3,1,1,5,4,9
+	.half	.L229-.L228
 	.byte	3,1,1,5,14,9
-	.half	.L225-.L224
+	.half	.L230-.L229
 	.byte	1,5,50,9
-	.half	.L30-.L225
+	.half	.L30-.L230
 	.byte	3,100,1,5,48,9
 	.half	.L24-.L30
 	.byte	1,5,2,7,9
-	.half	.L99-.L24
+	.half	.L103-.L24
 	.byte	3,31,1,5,18,9
-	.half	.L226-.L99
+	.half	.L231-.L103
 	.byte	1,5,16,9
-	.half	.L227-.L226
+	.half	.L232-.L231
 	.byte	1,5,17,9
-	.half	.L228-.L227
+	.half	.L233-.L232
 	.byte	3,1,1,5,9,9
-	.half	.L229-.L228
+	.half	.L234-.L233
 	.byte	1,5,2,9
-	.half	.L230-.L229
+	.half	.L235-.L234
 	.byte	1,5,1,9
-	.half	.L21-.L230
+	.half	.L21-.L235
 	.byte	3,1,1,7,9
 	.half	.L53-.L21
 	.byte	0,1,1
-.L176:
+.L181:
 	.sdecl	'.debug_ranges',debug,cluster('Fast_OTSU')
 	.sect	'.debug_ranges'
 .L52:
@@ -21015,8 +21031,8 @@ _999002_threshold:	.type	object
 	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1,2
 	.word	.L40
 	.byte	3
-	.byte	'trans',0,20,8,5
-	.word	.L81
+	.byte	'trans',0,20,9,5
+	.word	.L85
 	.byte	1,5,3
 	.word	trans
 	.byte	0
@@ -21038,7 +21054,7 @@ _999002_threshold:	.type	object
 	.word	.L40
 	.byte	3
 	.byte	'videoData',0,20,3,7
-	.word	.L101
+	.word	.L105
 	.byte	1,5,3
 	.word	videoData
 	.byte	0
@@ -21060,7 +21076,7 @@ _999002_threshold:	.type	object
 	.word	.L40
 	.byte	3
 	.byte	'dynamicBinary',0,20,4,7
-	.word	.L66
+	.word	.L70
 	.byte	1,5,3
 	.word	dynamicBinary
 	.byte	0
@@ -21082,7 +21098,7 @@ _999002_threshold:	.type	object
 	.word	.L40
 	.byte	3
 	.byte	'staticBinary',0,20,5,7
-	.word	.L66
+	.word	.L70
 	.byte	1,5,3
 	.word	staticBinary
 	.byte	0
@@ -21103,8 +21119,8 @@ _999002_threshold:	.type	object
 	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1,2
 	.word	.L40
 	.byte	3
-	.byte	'LightPoint',0,20,7,5
-	.word	.L81
+	.byte	'LightPoint',0,20,8,5
+	.word	.L85
 	.byte	1,5,3
 	.word	LightPoint
 	.byte	0
@@ -21113,159 +21129,203 @@ _999002_threshold:	.type	object
 .L63:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('MainCount')
+	.sect	'.debug_info'
+.L64:
+	.word	190
+	.half	3
+	.word	.L65
+	.byte	4,1
+	.byte	'../code/src/Camera.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1,2
+	.word	.L40
+	.byte	3
+	.byte	'MainCount',0,20,6,6
+	.word	.L106
+	.byte	1,5,3
+	.word	MainCount
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('MainCount')
+	.sect	'.debug_abbrev'
+.L65:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('ImageFlag')
+	.sect	'.debug_info'
+.L66:
+	.word	190
+	.half	3
+	.word	.L67
+	.byte	4,1
+	.byte	'../code/src/Camera.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1,2
+	.word	.L40
+	.byte	3
+	.byte	'ImageFlag',0,20,11,5
+	.word	.L85
+	.byte	1,5,3
+	.word	ImageFlag
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('ImageFlag')
+	.sect	'.debug_abbrev'
+.L67:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
 	.sdecl	'.debug_loc',debug,cluster('Binary_Img')
 	.sect	'.debug_loc'
 .L36:
-	.word	-1,.L37,0,.L64-.L37
+	.word	-1,.L37,0,.L68-.L37
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L68:
-	.word	-1,.L37,.L103-.L37,.L104-.L37
+.L72:
+	.word	-1,.L37,.L108-.L37,.L109-.L37
 	.half	1
 	.byte	81
 	.word	.L7-.L37,.L5-.L37
 	.half	1
 	.byte	81
 	.word	0,0
-.L67:
-	.word	-1,.L37,.L102-.L37,.L64-.L37
+.L71:
+	.word	-1,.L37,.L107-.L37,.L68-.L37
 	.half	5
 	.byte	144,32,157,32,0
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('Fast_OTSU')
 	.sect	'.debug_loc'
 .L38:
-	.word	-1,.L39,0,.L105-.L39
+	.word	-1,.L39,0,.L110-.L39
 	.half	2
 	.byte	138,0
-	.word	.L105-.L39,.L70-.L39
+	.word	.L110-.L39,.L74-.L39
 	.half	3
 	.byte	138,128,8
-	.word	.L70-.L39,.L70-.L39
+	.word	.L74-.L39,.L74-.L39
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L74:
-	.word	-1,.L39,0,.L106-.L39
+.L78:
+	.word	-1,.L39,0,.L111-.L39
 	.half	1
 	.byte	85
 	.word	0,0
-.L78:
-	.word	-1,.L39,0,.L70-.L39
+.L82:
+	.word	-1,.L39,0,.L74-.L39
 	.half	3
 	.byte	145,128,120
 	.word	0,0
-.L96:
-	.word	-1,.L39,.L115-.L39,.L15-.L39
-	.half	1
-	.byte	81
-	.word	0,0
-.L98:
-	.word	-1,.L39,.L116-.L39,.L117-.L39
-	.half	1
-	.byte	81
-	.word	.L22-.L39,.L118-.L39
-	.half	1
-	.byte	81
-	.word	0,0
 .L100:
-	.word	-1,.L39,.L118-.L39,.L119-.L39
+	.word	-1,.L39,.L120-.L39,.L15-.L39
+	.half	1
+	.byte	81
+	.word	0,0
+.L102:
+	.word	-1,.L39,.L121-.L39,.L122-.L39
+	.half	1
+	.byte	81
+	.word	.L22-.L39,.L123-.L39
+	.half	1
+	.byte	81
+	.word	0,0
+.L104:
+	.word	-1,.L39,.L123-.L39,.L124-.L39
 	.half	1
 	.byte	81
 	.word	.L24-.L39,.L21-.L39
 	.half	1
 	.byte	81
 	.word	0,0
-.L72:
-	.word	-1,.L39,0,.L70-.L39
+.L76:
+	.word	-1,.L39,0,.L74-.L39
 	.half	1
 	.byte	100
 	.word	0,0
-.L76:
-	.word	-1,.L39,.L110-.L39,.L111-.L39
+.L80:
+	.word	-1,.L39,.L115-.L39,.L116-.L39
 	.half	1
 	.byte	86
-	.word	.L17-.L39,.L70-.L39
+	.word	.L17-.L39,.L74-.L39
 	.half	1
 	.byte	86
 	.word	0,0
-.L92:
-	.word	-1,.L39,.L94-.L39,.L70-.L39
+.L96:
+	.word	-1,.L39,.L98-.L39,.L74-.L39
 	.half	1
 	.byte	88
 	.word	0,0
-.L75:
-	.word	-1,.L39,.L107-.L39,.L70-.L39
+.L79:
+	.word	-1,.L39,.L112-.L39,.L74-.L39
 	.half	1
 	.byte	84
 	.word	0,0
-.L73:
-	.word	-1,.L39,0,.L107-.L39
+.L77:
+	.word	-1,.L39,0,.L112-.L39
 	.half	1
 	.byte	84
-	.word	.L108-.L39,.L109-.L39
+	.word	.L113-.L39,.L114-.L39
 	.half	5
 	.byte	144,32,157,32,0
 	.word	0,0
-.L85:
-	.word	-1,.L39,.L114-.L39,.L70-.L39
+.L89:
+	.word	-1,.L39,.L119-.L39,.L74-.L39
 	.half	1
 	.byte	87
 	.word	0,0
-.L83:
-	.word	-1,.L39,.L106-.L39,.L70-.L39
+.L87:
+	.word	-1,.L39,.L111-.L39,.L74-.L39
 	.half	1
 	.byte	85
 	.word	0,0
-.L86:
-	.word	-1,.L39,.L121-.L39,.L122-.L39
+.L90:
+	.word	-1,.L39,.L126-.L39,.L127-.L39
 	.half	1
 	.byte	89
 	.word	0,0
-.L84:
-	.word	-1,.L39,.L120-.L39,.L30-.L39
+.L88:
+	.word	-1,.L39,.L125-.L39,.L30-.L39
 	.half	1
 	.byte	90
 	.word	0,0
-.L82:
-	.word	-1,.L39,.L113-.L39,.L70-.L39
+.L86:
+	.word	-1,.L39,.L118-.L39,.L74-.L39
 	.half	1
 	.byte	83
 	.word	0,0
-.L80:
-	.word	-1,.L39,.L112-.L39,.L70-.L39
+.L84:
+	.word	-1,.L39,.L117-.L39,.L74-.L39
 	.half	5
 	.byte	144,32,157,32,0
 	.word	0,0
-.L93:
-	.word	-1,.L39,.L128-.L39,.L30-.L39
+.L97:
+	.word	-1,.L39,.L133-.L39,.L30-.L39
 	.half	1
 	.byte	82
 	.word	0,0
-.L90:
-	.word	-1,.L39,.L125-.L39,.L30-.L39
+.L94:
+	.word	-1,.L39,.L130-.L39,.L30-.L39
 	.half	1
 	.byte	93
 	.word	0,0
-.L91:
-	.word	-1,.L39,.L126-.L39,.L127-.L39
+.L95:
+	.word	-1,.L39,.L131-.L39,.L132-.L39
 	.half	1
 	.byte	95
 	.word	0,0
-.L88:
-	.word	-1,.L39,.L123-.L39,.L30-.L39
+.L92:
+	.word	-1,.L39,.L128-.L39,.L30-.L39
 	.half	1
 	.byte	91
 	.word	0,0
-.L89:
-	.word	-1,.L39,.L124-.L39,.L30-.L39
+.L93:
+	.word	-1,.L39,.L129-.L39,.L30-.L39
 	.half	1
 	.byte	92
 	.word	0,0
 	.sdecl	'.debug_frame',debug
 	.sect	'.debug_frame'
-.L231:
+.L236:
 	.word	48
 	.word	-1
 	.byte	3,0,2,1,27,12,26,0,8,26,8,27,8,30,8,29,8,28,8,16,8,17,8,24,8,25,8,31,8,32,8,33,8,34,8,35,8,36,8,37,8,38
@@ -21273,14 +21333,14 @@ _999002_threshold:	.type	object
 	.sdecl	'.debug_frame',debug,cluster('Binary_Img')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L231,.L37,.L64-.L37
+	.word	.L236,.L37,.L68-.L37
 	.sdecl	'.debug_frame',debug,cluster('Fast_OTSU')
 	.sect	'.debug_frame'
 	.word	44
-	.word	.L231,.L39,.L70-.L39
+	.word	.L236,.L39,.L74-.L39
 	.byte	8,19,8,22,8,23,4
-	.word	(.L105-.L39)/2
+	.word	(.L110-.L39)/2
 	.byte	19,128,8,22,26,4,19,138,128,8,4
-	.word	(.L70-.L105)/2
+	.word	(.L74-.L110)/2
 	.byte	19,0,8,26,0,0
 	; Module end

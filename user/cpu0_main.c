@@ -50,9 +50,9 @@ int		 core0_main(void)
 		//         oled_show_float(60,3,Motor[1].valueNow.speed,4,2);
 		// oled_show_float(60,3,Motor[1].valueNow.speed,4,2);
 
-		oled_show_float(60, 3, IMUdata.dataOri.angle.x, 2, 2);
-		oled_show_float(60, 5, robot.left_Torque, 2, 2);
-		oled_show_float(60, 7, Motor[0].valueNow.speed, 2, 2);
+		//oled_show_float(60, 3, IMUdata.dataOri.angle.x, 2, 2);
+		//oled_show_float(60, 5, robot.left_Torque, 2, 2);
+		//oled_show_float(60, 7, Motor[0].valueNow.speed, 2, 2);
 
 		//		oled_show_float(60,5,IMUdata.dataOri.pitch,2,2);
 
@@ -63,30 +63,30 @@ int		 core0_main(void)
 #if 1
 		if (mt9v03x_finish_flag)	// 摄像头采集完成标志位
 		{
-			// 清零摄像头标志位
 			mt9v03x_finish_flag = 0;
-			// 二值化计算
-			Binary_Img();
-			// 屏幕显示二值化图像
-			OLED_Print_Img128X64(videoData);
-			// 算截止行
-			Find_EndRow();
-			// 记录真实截止行
-			RealEndRow = EndRow;
-			// 修正截止行
-			CorrectEndRow();
+			Binary_Img();	
+			MainCount++;
+			if(MainCount>8)
+			{
+				Image_To_Warp();
+				YawCtrlOut = 3.f * PIDOperation(&robot.yawPID, RealWarp, 0.f);	// 平衡环Pwm
+				DrawMidLine_Simple();
+				OLED_Print_Img128X64(videoData);
 
-			// 找边界
-			FindBorder();
-
-			// 算中线
-			Find_MidLine();
-
-			// 找控制行
-			FindControlRow();
-
-			// Direction_Control_Error();
-			YawCtrlOut = -3.f * PIDOperation(&robot.yawPID, (COL / 2.f) / COL, (float) MidLine[ControlRow]);	// 平衡环Pwm
+				/*
+				Binary_Img();
+				Find_EndRow();
+				CorrectEndRow();
+				RealEndRow = EndRow;		// 记录真实截止行
+				FindBorder();
+				Find_MidLine();
+				DrawMidLine_Simple();
+				OLED_Print_Img128X64(videoData);
+				if(StopFlag)
+				BldcSetSpeed(0,0);
+				YawCtrlOut = -3.f * PIDOperation(&robot.yawPID, (COL / 2.f) / COL, (float) MidLine[ControlRow]);	// 平衡环Pwm
+				*/
+			}
 		}
 #endif
 	}

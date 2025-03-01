@@ -1,14 +1,12 @@
+#ifndef FIND_ENDROW_H
+#define FIND_ENDROW_H
+
 #include "zf_common_typedef.h"
-#ifndef CODE_FINDENDROW_H_
-#define CODE_FINDENDROW_H_
 
-
-
-extern int16 Maxcolum,EndRow;
+extern int EndRow,Maxcolumn;
 extern int RealEndRow,CorrectedEndRow;
-extern int StopFlag;
+extern int ControlRow;
 
 void Find_EndRow(void);
 void CorrectEndRow(void);
-
-#endif /* CODE_FINDENDROW_H_ */
+#endif

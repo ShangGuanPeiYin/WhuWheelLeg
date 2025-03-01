@@ -1,6 +1,6 @@
 	; Module start
 	.compiler_version	"TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler v1.1r8 Build 22011964"
-	.compiler_invocation	"ctc -f cc26388a --dep-file=code/src/FindBorder.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc26xb -D__CPU_TC26XB__ --core=tc1.6.x --fp-model=+float -D__CPU__=tc26xb -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\code -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\code\\\\inc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Configurations -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B\\\\_Reg -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If\\\\Ccu6If -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\StdIf -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Math -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Asc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6 -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Timer -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\CStart -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Irq -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Dma -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12 -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\IncrEnc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\SpiMaster -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Adc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Impl -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib\\\\DataHandling -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_PinMap -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_common -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_components -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_device -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_driver -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\user -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o code/src/FindBorder.src ../code/src/FindBorder.c"
+	.compiler_invocation	"ctc -f cc1020a --dep-file=code/src/FindBorder.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc26xb -D__CPU_TC26XB__ --core=tc1.6.x --fp-model=+float -D__CPU__=tc26xb -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\code -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\code\\\\inc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Configurations -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B\\\\_Reg -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If\\\\Ccu6If -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\StdIf -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Math -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Asc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6 -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Timer -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\CStart -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Irq -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Dma -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12 -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\IncrEnc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\SpiMaster -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Adc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Impl -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib\\\\DataHandling -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_PinMap -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_common -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_components -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_device -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_driver -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\user -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o code/src/FindBorder.src ../code/src/FindBorder.c"
 	.compiler_name		"ctc"
 	;source	'../code/src/FindBorder.c'
 
@@ -13,298 +13,874 @@ $TC16X
 	
 	.global	FindBorder
 ; Function FindBorder
-.L23:
-FindBorder:	.type	func
-	movh.a	a15,#@his(Valid_Left)
-	lea	a15,[a15]@los(Valid_Left)
-.L74:
-	mov	d15,#0
-.L75:
-	st.w	[a15],d15
 .L76:
-	movh.a	a15,#@his(Valid_Right)
-	lea	a15,[a15]@los(Valid_Right)
-.L77:
-	mov	d15,#0
-.L78:
-	st.w	[a15],d15
-.L50:
-	mov	d3,#99
-.L60:
+FindBorder:	.type	func
+	mov	d1,#99
+.L115:
 	j	.L2
 .L3:
-	mov	d4,#0
-.L61:
-	mov	d2,#0
-.L56:
-	movh.a	a15,#@his(Maxcolum)
-	lea	a15,[a15]@los(Maxcolum)
-	ld.h	d0,[a15]
-.L62:
+	movh.a	a15,#@his(Maxcolumn)
+	lea	a15,[a15]@los(Maxcolumn)
+	ld.w	d15,[a15]
+.L116:
 	j	.L4
 .L5:
-	mul	d15,d3,#152
-.L79:
+	mul	d0,d1,#152
+.L134:
 	movh.a	a15,#@his(videoData)
 	lea	a15,[a15]@los(videoData)
-.L80:
-	addsc.a	a15,a15,d15,#0
-.L81:
+.L135:
 	addsc.a	a15,a15,d0,#0
-	ld.bu	d1,[a15]
-.L82:
-	jne	d1,#1,.L6
-.L83:
-	mul	d15,d3,#152
-.L84:
+.L136:
+	addsc.a	a15,a15,d15,#0
+	ld.bu	d0,[a15]-2
+.L137:
+	jne	d0,#0,.L6
+.L138:
+	mul	d0,d1,#152
+.L139:
 	movh.a	a15,#@his(videoData)
 	lea	a15,[a15]@los(videoData)
-.L85:
-	addsc.a	a15,a15,d15,#0
-.L86:
+.L140:
 	addsc.a	a15,a15,d0,#0
-	ld.bu	d15,[a15]-1
-.L87:
-	jne	d15,#0,.L7
-.L88:
-	mul	d15,d3,#152
-.L89:
+.L141:
+	addsc.a	a15,a15,d15,#0
+	ld.bu	d0,[a15]-1
+.L142:
+	jne	d0,#0,.L7
+.L143:
+	mul	d0,d1,#152
+.L144:
 	movh.a	a15,#@his(videoData)
 	lea	a15,[a15]@los(videoData)
-.L90:
-	addsc.a	a15,a15,d15,#0
-.L91:
+.L145:
 	addsc.a	a15,a15,d0,#0
-	ld.bu	d15,[a15]-2
-.L92:
-	jne	d15,#0,.L8
-.L93:
-	mul	d15,d3,#4
-.L94:
+.L146:
+	addsc.a	a15,a15,d15,#0
+	ld.bu	d0,[a15]
+.L147:
+	jne	d0,#0,.L8
+.L148:
+	mul	d0,d1,#4
+.L149:
 	movh.a	a15,#@his(LeftLine)
 	lea	a15,[a15]@los(LeftLine)
-.L95:
-	addsc.a	a15,a15,d15,#0
-.L96:
+.L150:
+	addsc.a	a15,a15,d0,#0
+.L151:
+	add	d0,d15,#1
+.L152:
 	st.w	[a15],d0
-.L97:
-	mov	d4,#1
-.L98:
-	mul	d15,d3,#4
-.L99:
-	movh.a	a15,#@his(LeftLine_lost)
-	lea	a15,[a15]@los(LeftLine_lost)
-.L100:
-	addsc.a	a15,a15,d15,#0
-.L101:
-	mov	d0,#0
-.L63:
-	st.w	[a15],d0
-.L102:
+.L153:
 	j	.L9
 .L8:
 .L7:
 .L6:
-	jge	d0,#2,.L10
-.L103:
-	mul	d15,d3,#4
-.L104:
+	add	d15,#-1
+.L4:
+	jge	d15,#2,.L5
+.L9:
+	jne	d15,#1,.L10
+.L154:
+	j	.L11
+.L12:
+	mul	d0,d1,#152
+.L155:
+	movh.a	a15,#@his(videoData)
+	lea	a15,[a15]@los(videoData)
+.L156:
+	addsc.a	a15,a15,d0,#0
+.L157:
+	addsc.a	a15,a15,d15,#0
+	ld.bu	d0,[a15]
+.L158:
+	jne	d0,#0,.L13
+.L159:
+	mul	d0,d1,#4
+.L160:
 	movh.a	a15,#@his(LeftLine)
 	lea	a15,[a15]@los(LeftLine)
-.L105:
-	addsc.a	a15,a15,d15,#0
-.L106:
+.L161:
+	addsc.a	a15,a15,d0,#0
+.L162:
+	add	d0,d15,#1
+.L163:
 	st.w	[a15],d0
-.L107:
-	mul	d15,d3,#4
-.L108:
-	movh.a	a15,#@his(LeftLine_lost)
-	lea	a15,[a15]@los(LeftLine_lost)
-.L109:
-	addsc.a	a15,a15,d15,#0
-.L110:
-	mov	d0,#1
-.L64:
-	st.w	[a15],d0
-.L111:
-	j	.L11
+.L164:
+	j	.L14
+.L13:
+	add	d15,#-1
+.L11:
+	jge	d15,#0,.L12
+.L14:
 .L10:
-	mul	d15,d3,#4
-.L112:
+	jne	d15,#-1,.L15
+.L165:
+	mul	d15,d1,#4
+.L117:
+	movh.a	a15,#@his(LeftLine)
+	lea	a15,[a15]@los(LeftLine)
+.L166:
+	addsc.a	a15,a15,d15,#0
+.L167:
+	mov	d0,#0
+.L168:
+	st.w	[a15],d0
+.L15:
+	movh.a	a15,#@his(Maxcolumn)
+	lea	a15,[a15]@los(Maxcolumn)
+	ld.w	d2,[a15]
+.L118:
+	j	.L16
+.L17:
+	mul	d0,d1,#152
+.L169:
+	movh.a	a15,#@his(videoData)
+	lea	a15,[a15]@los(videoData)
+.L170:
+	addsc.a	a15,a15,d0,#0
+.L171:
+	addsc.a	a15,a15,d2,#0
+	ld.bu	d15,[a15]2
+.L172:
+	jne	d15,#0,.L18
+.L173:
+	mul	d0,d1,#152
+.L174:
+	movh.a	a15,#@his(videoData)
+	lea	a15,[a15]@los(videoData)
+.L175:
+	addsc.a	a15,a15,d0,#0
+.L176:
+	addsc.a	a15,a15,d2,#0
+	ld.bu	d15,[a15]1
+.L177:
+	jne	d15,#0,.L19
+.L178:
+	mul	d0,d1,#152
+.L179:
+	movh.a	a15,#@his(videoData)
+	lea	a15,[a15]@los(videoData)
+.L180:
+	addsc.a	a15,a15,d0,#0
+.L181:
+	addsc.a	a15,a15,d2,#0
+	ld.bu	d0,[a15]
+.L182:
+	jne	d0,#0,.L20
+.L183:
+	mul	d0,d1,#4
+.L184:
+	movh.a	a15,#@his(RightLine)
+	lea	a15,[a15]@los(RightLine)
+.L185:
+	addsc.a	a15,a15,d0,#0
+.L186:
+	add	d0,d2,#-1
+.L187:
+	st.w	[a15],d0
+.L188:
+	j	.L21
+.L20:
+.L19:
+.L18:
+	add	d2,#1
+.L16:
+	mov	d0,#150
+.L189:
+	jlt	d2,d0,.L17
+.L21:
+	mov	d0,#150
+.L190:
+	jne	d2,d0,.L22
+.L191:
+	j	.L23
+.L24:
+	mul	d0,d1,#152
+.L192:
+	movh.a	a15,#@his(videoData)
+	lea	a15,[a15]@los(videoData)
+.L193:
+	addsc.a	a15,a15,d0,#0
+.L194:
+	addsc.a	a15,a15,d2,#0
+	ld.bu	d0,[a15]
+.L195:
+	jne	d0,#0,.L25
+.L196:
+	mul	d0,d1,#4
+.L197:
+	movh.a	a15,#@his(RightLine)
+	lea	a15,[a15]@los(RightLine)
+.L198:
+	addsc.a	a15,a15,d0,#0
+.L199:
+	add	d0,d2,#-1
+.L200:
+	st.w	[a15],d0
+.L201:
+	j	.L26
+.L25:
+	add	d2,#1
+.L23:
+	mov	d15,#152
+.L202:
+	jlt	d2,d15,.L24
+.L26:
+.L22:
+	mov	d15,#152
+.L203:
+	jne	d15,d2,.L27
+.L204:
+	mul	d15,d1,#4
+.L205:
+	movh.a	a15,#@his(RightLine)
+	lea	a15,[a15]@los(RightLine)
+.L206:
+	addsc.a	a15,a15,d15,#0
+.L207:
+	mov	d15,#151
+.L208:
+	st.w	[a15],d15
+.L27:
+	mul	d15,d1,#4
+.L209:
 	movh.a	a15,#@his(Original_LeftLine)
 	lea	a15,[a15]@los(Original_LeftLine)
-.L113:
+.L210:
 	addsc.a	a15,a15,d15,#0
-.L114:
-	mul	d15,d3,#4
-.L115:
+.L211:
+	mul	d15,d1,#4
+.L212:
 	movh.a	a2,#@his(LeftLine)
 	lea	a2,[a2]@los(LeftLine)
-.L116:
+.L213:
 	addsc.a	a2,a2,d15,#0
 	ld.w	d15,[a2]
-.L117:
+.L214:
 	st.w	[a15],d15
-.L118:
-	add	d0,#-1
-.L4:
-	jge	d0,#2,.L5
-.L11:
-.L9:
-	movh.a	a15,#@his(Maxcolum)
-	lea	a15,[a15]@los(Maxcolum)
-	ld.h	d1,[a15]
-.L65:
-	j	.L12
-.L13:
-	mul	d15,d3,#152
-.L119:
-	movh.a	a15,#@his(videoData)
-	lea	a15,[a15]@los(videoData)
-.L120:
-	addsc.a	a15,a15,d15,#0
-.L121:
-	addsc.a	a15,a15,d1,#0
-	ld.bu	d0,[a15]
-.L122:
-	jne	d0,#1,.L14
-.L123:
-	mul	d15,d3,#152
-.L124:
-	movh.a	a15,#@his(videoData)
-	lea	a15,[a15]@los(videoData)
-.L125:
-	addsc.a	a15,a15,d15,#0
-.L126:
-	addsc.a	a15,a15,d1,#0
-	ld.bu	d15,[a15]1
-.L127:
-	jne	d15,#0,.L15
-.L128:
-	mul	d15,d3,#152
-.L129:
-	movh.a	a15,#@his(videoData)
-	lea	a15,[a15]@los(videoData)
-.L130:
-	addsc.a	a15,a15,d15,#0
-.L131:
-	addsc.a	a15,a15,d1,#0
-	ld.bu	d15,[a15]2
-.L132:
-	jne	d15,#0,.L16
-.L133:
-	mul	d15,d3,#4
-.L134:
-	movh.a	a15,#@his(RightLine)
-	lea	a15,[a15]@los(RightLine)
-.L135:
-	addsc.a	a15,a15,d15,#0
-.L136:
-	st.w	[a15],d1
-.L137:
-	mov	d2,#1
-.L138:
-	mul	d15,d3,#4
-.L139:
-	movh.a	a15,#@his(RightLine_lost)
-	lea	a15,[a15]@los(RightLine_lost)
-.L140:
-	addsc.a	a15,a15,d15,#0
-.L141:
-	mov	d15,#0
-.L142:
-	st.w	[a15],d15
-.L143:
-	j	.L17
-.L16:
-.L15:
-.L14:
-	mov	d15,#149
-.L144:
-	jge	d15,d1,.L18
-.L145:
-	mul	d15,d3,#4
-.L146:
-	movh.a	a15,#@his(RightLine)
-	lea	a15,[a15]@los(RightLine)
-.L147:
-	addsc.a	a15,a15,d15,#0
-.L148:
-	st.w	[a15],d1
-.L149:
-	mul	d15,d3,#4
-.L150:
-	movh.a	a15,#@his(RightLine_lost)
-	lea	a15,[a15]@los(RightLine_lost)
-.L151:
-	addsc.a	a15,a15,d15,#0
-.L152:
-	mov	d15,#1
-.L153:
-	st.w	[a15],d15
-.L154:
-	j	.L19
-.L18:
-	mul	d15,d3,#4
-.L155:
+.L215:
+	mul	d15,d1,#4
+.L216:
 	movh.a	a15,#@his(Original_RightLine)
 	lea	a15,[a15]@los(Original_RightLine)
-.L156:
+.L217:
 	addsc.a	a15,a15,d15,#0
-.L157:
-	mul	d15,d3,#4
-.L158:
+.L218:
+	mul	d15,d1,#4
+.L219:
 	movh.a	a2,#@his(RightLine)
 	lea	a2,[a2]@los(RightLine)
-.L159:
+.L220:
 	addsc.a	a2,a2,d15,#0
-	ld.w	d0,[a2]
-.L160:
-	st.w	[a15],d0
-.L161:
-	add	d1,#1
-.L12:
-	mov	d15,#149
-.L162:
-	jge	d15,d1,.L13
-.L19:
-.L17:
-	jeq	d4,#0,.L20
-.L163:
-	movh.a	a15,#@his(Valid_Left)
-	lea	a15,[a15]@los(Valid_Left)
-	movh.a	a2,#@his(Valid_Left)
-	lea	a2,[a2]@los(Valid_Left)
 	ld.w	d15,[a2]
-.L164:
-	add	d15,#1
+.L221:
 	st.w	[a15],d15
-.L20:
-	jeq	d2,#0,.L21
-.L165:
-	movh.a	a15,#@his(Valid_Right)
-	lea	a15,[a15]@los(Valid_Right)
-	movh.a	a2,#@his(Valid_Right)
-	lea	a2,[a2]@los(Valid_Right)
-	ld.w	d15,[a2]
-.L166:
-	add	d15,#1
-	st.w	[a15],d15
-.L21:
-	add	d3,#-1
+.L222:
+	add	d1,#-1
 .L2:
-	movh.a	a15,#@his(RealEndRow)
-	lea	a15,[a15]@los(RealEndRow)
+	movh.a	a15,#@his(ValidRow)
+	lea	a15,[a15]@los(ValidRow)
 	ld.w	d15,[a15]
-.L167:
-	jge	d3,d15,.L3
-.L51:
+.L223:
+	add	d15,#-1
+.L224:
+	jlt	d15,d1,.L3
+.L225:
 	ret
-.L49:
+.L107:
 	
 __FindBorder_function_end:
 	.size	FindBorder,__FindBorder_function_end-FindBorder
+.L87:
+	; End of function
+	
+	.sdecl	'.text.FindBorder.FindBorder1',code,cluster('FindBorder1')
+	.sect	'.text.FindBorder.FindBorder1'
+	.align	2
+	
+	.global	FindBorder1
+; Function FindBorder1
+.L78:
+FindBorder1:	.type	func
+	movh.a	a15,#@his(LeftLine1)
+	lea	a15,[a15]@los(LeftLine1)
+.L230:
+	mov	d15,#0
+.L231:
+	st.w	[a15]396,d15
+.L232:
+	movh.a	a15,#@his(RightLine1)
+	lea	a15,[a15]@los(RightLine1)
+.L233:
+	mov	d15,#151
+.L234:
+	st.w	[a15]396,d15
+.L235:
+	mov	d1,#98
+.L119:
+	j	.L28
+.L29:
+	mul	d15,d1,#152
+.L236:
+	movh.a	a15,#@his(videoData)
+	lea	a15,[a15]@los(videoData)
+.L237:
+	addsc.a	a15,a15,d15,#0
+.L238:
+	add	d15,d1,#1
+.L239:
+	mul	d15,d15,#4
+.L240:
+	movh.a	a2,#@his(LeftLine1)
+	lea	a2,[a2]@los(LeftLine1)
+.L241:
+	addsc.a	a2,a2,d15,#0
+	ld.w	d15,[a2]
+.L242:
+	addsc.a	a15,a15,d15,#0
+	ld.bu	d15,[a15]
+.L243:
+	jne	d15,#0,.L30
+.L244:
+	add	d15,d1,#1
+.L245:
+	mul	d15,d15,#4
+.L246:
+	movh.a	a15,#@his(LeftLine1)
+	lea	a15,[a15]@los(LeftLine1)
+.L247:
+	addsc.a	a15,a15,d15,#0
+	ld.w	d0,[a15]
+.L120:
+	add	d0,#1
+.L248:
+	j	.L31
 .L32:
+	mul	d15,d1,#152
+.L249:
+	movh.a	a15,#@his(videoData)
+	lea	a15,[a15]@los(videoData)
+.L250:
+	addsc.a	a15,a15,d15,#0
+.L251:
+	addsc.a	a15,a15,d0,#0
+	ld.bu	d15,[a15]2
+.L252:
+	jne	d15,#1,.L33
+.L253:
+	mul	d15,d1,#152
+.L254:
+	movh.a	a15,#@his(videoData)
+	lea	a15,[a15]@los(videoData)
+.L255:
+	addsc.a	a15,a15,d15,#0
+.L256:
+	addsc.a	a15,a15,d0,#0
+	ld.bu	d15,[a15]1
+.L257:
+	jne	d15,#1,.L34
+.L258:
+	mul	d15,d1,#152
+.L259:
+	movh.a	a15,#@his(videoData)
+	lea	a15,[a15]@los(videoData)
+.L260:
+	addsc.a	a15,a15,d15,#0
+.L261:
+	addsc.a	a15,a15,d0,#0
+	ld.bu	d15,[a15]
+.L262:
+	jne	d15,#1,.L35
+.L263:
+	mul	d15,d1,#4
+.L264:
+	movh.a	a15,#@his(LeftLine1)
+	lea	a15,[a15]@los(LeftLine1)
+.L265:
+	addsc.a	a15,a15,d15,#0
+.L266:
+	st.w	[a15],d0
+.L267:
+	j	.L36
+.L35:
+.L34:
+.L33:
+	add	d0,#1
+.L31:
+	mov	d15,#150
+.L268:
+	jlt	d0,d15,.L32
+.L36:
+	mov	d15,#150
+.L269:
+	jlt	d0,d15,.L37
+.L270:
+	mul	d15,d1,#4
+.L271:
+	movh.a	a15,#@his(LeftLine1)
+	lea	a15,[a15]@los(LeftLine1)
+.L272:
+	addsc.a	a15,a15,d15,#0
+.L273:
+	mov	d15,#76
+.L274:
+	st.w	[a15],d15
+.L37:
+	j	.L38
+.L30:
+	mul	d15,d1,#152
+.L275:
+	movh.a	a15,#@his(videoData)
+	lea	a15,[a15]@los(videoData)
+.L276:
+	addsc.a	a15,a15,d15,#0
+.L277:
+	add	d15,d1,#1
+.L278:
+	mul	d15,d15,#4
+.L279:
+	movh.a	a2,#@his(LeftLine1)
+	lea	a2,[a2]@los(LeftLine1)
+.L280:
+	addsc.a	a2,a2,d15,#0
+	ld.w	d15,[a2]
+.L281:
+	addsc.a	a15,a15,d15,#0
+	ld.bu	d15,[a15]
+.L282:
+	jne	d15,#1,.L39
+.L283:
+	mul	d15,d1,#4
+.L284:
+	movh.a	a15,#@his(LeftLine1)
+	lea	a15,[a15]@los(LeftLine1)
+.L285:
+	addsc.a	a15,a15,d15,#0
+.L286:
+	mov	d15,#0
+.L287:
+	st.w	[a15],d15
+.L288:
+	add	d15,d1,#1
+.L289:
+	mul	d15,d15,#4
+.L290:
+	movh.a	a15,#@his(LeftLine1)
+	lea	a15,[a15]@los(LeftLine1)
+.L291:
+	addsc.a	a15,a15,d15,#0
+	ld.w	d15,[a15]
+.L121:
+	add	d15,#-1
+.L292:
+	j	.L40
+.L41:
+	mul	d0,d1,#152
+.L293:
+	movh.a	a15,#@his(videoData)
+	lea	a15,[a15]@los(videoData)
+.L294:
+	addsc.a	a15,a15,d0,#0
+.L295:
+	addsc.a	a15,a15,d15,#0
+	ld.bu	d0,[a15]-2
+.L296:
+	jne	d0,#0,.L42
+.L297:
+	mul	d0,d1,#152
+.L298:
+	movh.a	a15,#@his(videoData)
+	lea	a15,[a15]@los(videoData)
+.L299:
+	addsc.a	a15,a15,d0,#0
+.L300:
+	addsc.a	a15,a15,d15,#0
+	ld.bu	d0,[a15]-1
+.L301:
+	jne	d0,#0,.L43
+.L302:
+	mul	d0,d1,#152
+.L303:
+	movh.a	a15,#@his(videoData)
+	lea	a15,[a15]@los(videoData)
+.L304:
+	addsc.a	a15,a15,d0,#0
+.L305:
+	addsc.a	a15,a15,d15,#0
+	ld.bu	d0,[a15]
+.L306:
+	jne	d0,#0,.L44
+.L307:
+	mul	d0,d1,#4
+.L308:
+	movh.a	a15,#@his(LeftLine1)
+	lea	a15,[a15]@los(LeftLine1)
+.L309:
+	addsc.a	a15,a15,d0,#0
+.L310:
+	add	d0,d15,#1
+.L311:
+	st.w	[a15],d0
+.L312:
+	j	.L45
+.L44:
+.L43:
+.L42:
+	add	d15,#-1
+.L40:
+	jge	d15,#2,.L41
+.L45:
+	jne	d15,#1,.L46
+.L313:
+	j	.L47
+.L48:
+	mul	d0,d1,#152
+.L314:
+	movh.a	a15,#@his(videoData)
+	lea	a15,[a15]@los(videoData)
+.L315:
+	addsc.a	a15,a15,d0,#0
+.L316:
+	addsc.a	a15,a15,d15,#0
+	ld.bu	d0,[a15]
+.L317:
+	jne	d0,#0,.L49
+.L318:
+	mul	d0,d1,#4
+.L319:
+	movh.a	a15,#@his(LeftLine1)
+	lea	a15,[a15]@los(LeftLine1)
+.L320:
+	addsc.a	a15,a15,d0,#0
+.L321:
+	add	d15,#1
+.L122:
+	st.w	[a15],d15
+.L322:
+	j	.L50
+.L49:
+	mul	d0,d1,#4
+.L323:
+	movh.a	a15,#@his(LeftLine1)
+	lea	a15,[a15]@los(LeftLine1)
+.L324:
+	addsc.a	a15,a15,d0,#0
+.L325:
+	mov	d0,#0
+.L326:
+	st.w	[a15],d0
+.L327:
+	add	d15,#-1
+.L47:
+	jge	d15,#0,.L48
+.L50:
+.L46:
+.L39:
+.L38:
+	mul	d15,d1,#152
+.L328:
+	movh.a	a15,#@his(videoData)
+	lea	a15,[a15]@los(videoData)
+.L329:
+	addsc.a	a15,a15,d15,#0
+.L330:
+	add	d15,d1,#1
+.L331:
+	mul	d15,d15,#4
+.L332:
+	movh.a	a2,#@his(RightLine1)
+	lea	a2,[a2]@los(RightLine1)
+.L333:
+	addsc.a	a2,a2,d15,#0
+	ld.w	d15,[a2]
+.L334:
+	addsc.a	a15,a15,d15,#0
+	ld.bu	d15,[a15]
+.L335:
+	jne	d15,#1,.L51
+.L336:
+	mul	d15,d1,#4
+.L337:
+	movh.a	a15,#@his(RightLine1)
+	lea	a15,[a15]@los(RightLine1)
+.L338:
+	addsc.a	a15,a15,d15,#0
+.L339:
+	mov	d15,#151
+.L340:
+	st.w	[a15],d15
+.L341:
+	add	d15,d1,#1
+.L342:
+	mul	d15,d15,#4
+.L343:
+	movh.a	a15,#@his(RightLine1)
+	lea	a15,[a15]@los(RightLine1)
+.L344:
+	addsc.a	a15,a15,d15,#0
+	ld.w	d15,[a15]
+.L345:
+	add	d0,d15,#1
+.L123:
+	j	.L52
+.L53:
+	mul	d15,d1,#152
+.L346:
+	movh.a	a15,#@his(videoData)
+	lea	a15,[a15]@los(videoData)
+.L347:
+	addsc.a	a15,a15,d15,#0
+.L348:
+	addsc.a	a15,a15,d0,#0
+	ld.bu	d15,[a15]2
+.L349:
+	jne	d15,#0,.L54
+.L350:
+	mul	d15,d1,#152
+.L351:
+	movh.a	a15,#@his(videoData)
+	lea	a15,[a15]@los(videoData)
+.L352:
+	addsc.a	a15,a15,d15,#0
+.L353:
+	addsc.a	a15,a15,d0,#0
+	ld.bu	d15,[a15]1
+.L354:
+	jne	d15,#0,.L55
+.L355:
+	mul	d15,d1,#152
+.L356:
+	movh.a	a15,#@his(videoData)
+	lea	a15,[a15]@los(videoData)
+.L357:
+	addsc.a	a15,a15,d15,#0
+.L358:
+	addsc.a	a15,a15,d0,#0
+	ld.bu	d15,[a15]
+.L359:
+	jne	d15,#0,.L56
+.L360:
+	mul	d15,d1,#4
+.L361:
+	movh.a	a15,#@his(RightLine1)
+	lea	a15,[a15]@los(RightLine1)
+.L362:
+	addsc.a	a15,a15,d15,#0
+.L363:
+	st.w	[a15],d0
+.L364:
+	j	.L57
+.L56:
+.L55:
+.L54:
+	add	d0,#1
+.L52:
+	mov	d15,#150
+.L365:
+	jlt	d0,d15,.L53
+.L57:
+	mov	d15,#150
+.L366:
+	jne	d15,d0,.L58
+.L367:
+	j	.L59
+.L60:
+	mul	d15,d1,#152
+.L368:
+	movh.a	a15,#@his(videoData)
+	lea	a15,[a15]@los(videoData)
+.L369:
+	addsc.a	a15,a15,d15,#0
+.L370:
+	addsc.a	a15,a15,d0,#0
+	ld.bu	d15,[a15]
+.L371:
+	jne	d15,#0,.L61
+.L372:
+	mul	d15,d1,#4
+.L373:
+	movh.a	a15,#@his(RightLine1)
+	lea	a15,[a15]@los(RightLine1)
+.L374:
+	addsc.a	a15,a15,d15,#0
+.L375:
+	add	d15,d0,#-1
+.L376:
+	st.w	[a15],d15
+.L377:
+	j	.L62
+.L61:
+	mul	d15,d1,#4
+.L378:
+	movh.a	a15,#@his(RightLine1)
+	lea	a15,[a15]@los(RightLine1)
+.L379:
+	addsc.a	a15,a15,d15,#0
+.L380:
+	mov	d15,#151
+.L381:
+	st.w	[a15],d15
+.L382:
+	add	d0,#1
+.L59:
+	mov	d15,#152
+.L383:
+	jlt	d0,d15,.L60
+.L62:
+.L58:
+	j	.L63
+.L51:
+	mul	d15,d1,#152
+.L384:
+	movh.a	a15,#@his(videoData)
+	lea	a15,[a15]@los(videoData)
+.L385:
+	addsc.a	a15,a15,d15,#0
+.L386:
+	add	d15,d1,#1
+.L387:
+	mul	d15,d15,#4
+.L388:
+	movh.a	a2,#@his(RightLine1)
+	lea	a2,[a2]@los(RightLine1)
+.L389:
+	addsc.a	a2,a2,d15,#0
+	ld.w	d15,[a2]
+.L390:
+	addsc.a	a15,a15,d15,#0
+	ld.bu	d15,[a15]
+.L391:
+	jne	d15,#0,.L64
+.L392:
+	add	d15,d1,#1
+.L393:
+	mul	d15,d15,#4
+.L394:
+	movh.a	a15,#@his(RightLine1)
+	lea	a15,[a15]@los(RightLine1)
+.L395:
+	addsc.a	a15,a15,d15,#0
+	ld.w	d15,[a15]
+.L124:
+	add	d15,#-1
+.L396:
+	j	.L65
+.L66:
+	mul	d0,d1,#152
+.L397:
+	movh.a	a15,#@his(videoData)
+	lea	a15,[a15]@los(videoData)
+.L398:
+	addsc.a	a15,a15,d0,#0
+.L399:
+	addsc.a	a15,a15,d15,#0
+	ld.bu	d0,[a15]-2
+.L400:
+	jne	d0,#1,.L67
+.L401:
+	mul	d0,d1,#152
+.L402:
+	movh.a	a15,#@his(videoData)
+	lea	a15,[a15]@los(videoData)
+.L403:
+	addsc.a	a15,a15,d0,#0
+.L404:
+	addsc.a	a15,a15,d15,#0
+	ld.bu	d0,[a15]-1
+.L405:
+	jne	d0,#1,.L68
+.L406:
+	mul	d0,d1,#152
+.L407:
+	movh.a	a15,#@his(videoData)
+	lea	a15,[a15]@los(videoData)
+.L408:
+	addsc.a	a15,a15,d0,#0
+.L409:
+	addsc.a	a15,a15,d15,#0
+	ld.bu	d0,[a15]
+.L410:
+	jne	d0,#1,.L69
+.L411:
+	mul	d0,d1,#4
+.L412:
+	movh.a	a15,#@his(RightLine1)
+	lea	a15,[a15]@los(RightLine1)
+.L413:
+	addsc.a	a15,a15,d0,#0
+.L414:
+	st.w	[a15],d15
+.L415:
+	j	.L70
+.L69:
+.L68:
+.L67:
+	add	d15,#-1
+.L65:
+	jge	d15,#2,.L66
+.L70:
+	jge	d15,#2,.L71
+.L416:
+	mul	d15,d1,#4
+.L125:
+	movh.a	a15,#@his(RightLine1)
+	lea	a15,[a15]@los(RightLine1)
+.L417:
+	addsc.a	a15,a15,d15,#0
+.L418:
+	mov	d15,#76
+.L419:
+	st.w	[a15],d15
+.L71:
+.L64:
+.L63:
+	mul	d15,d1,#4
+.L420:
+	movh.a	a15,#@his(LeftLine1)
+	lea	a15,[a15]@los(LeftLine1)
+.L421:
+	addsc.a	a15,a15,d15,#0
+	ld.w	d0,[a15]
+.L422:
+	mul	d15,d1,#4
+.L423:
+	movh.a	a15,#@his(RightLine1)
+	lea	a15,[a15]@los(RightLine1)
+.L424:
+	addsc.a	a15,a15,d15,#0
+	ld.w	d15,[a15]
+.L425:
+	jlt	d0,d15,.L72
+.L426:
+	movh.a	a15,#@his(ValidRow)
+	lea	a15,[a15]@los(ValidRow)
+.L427:
+	add	d15,d1,#1
+.L428:
+	st.w	[a15],d15
+.L429:
+	j	.L73
+.L72:
+	add	d1,#-1
+.L28:
+	jge	d1,#0,.L29
+.L73:
+	jge	d1,#1,.L74
+.L430:
+	movh.a	a15,#@his(ValidRow)
+	lea	a15,[a15]@los(ValidRow)
+.L431:
+	mov	d15,#0
+.L432:
+	st.w	[a15],d15
+.L74:
+	ret
+.L111:
+	
+__FindBorder1_function_end:
+	.size	FindBorder1,__FindBorder1_function_end-FindBorder1
+.L92:
 	; End of function
 	
 	.sdecl	'.data.FindBorder.LeftLine',data,cluster('LeftLine')
@@ -335,51 +911,44 @@ Original_RightLine:	.type	object
 Original_LeftLine:	.type	object
 	.size	Original_LeftLine,400
 	.space	400
-	.sdecl	'.bss.FindBorder.LeftLine_lost',data,cluster('LeftLine_lost')
-	.sect	'.bss.FindBorder.LeftLine_lost'
-	.global	LeftLine_lost
+	.sdecl	'.bss.FindBorder.LeftLine1',data,cluster('LeftLine1')
+	.sect	'.bss.FindBorder.LeftLine1'
+	.global	LeftLine1
 	.align	2
-LeftLine_lost:	.type	object
-	.size	LeftLine_lost,400
+LeftLine1:	.type	object
+	.size	LeftLine1,400
 	.space	400
-	.sdecl	'.bss.FindBorder.RightLine_lost',data,cluster('RightLine_lost')
-	.sect	'.bss.FindBorder.RightLine_lost'
-	.global	RightLine_lost
+	.sdecl	'.bss.FindBorder.RightLine1',data,cluster('RightLine1')
+	.sect	'.bss.FindBorder.RightLine1'
+	.global	RightLine1
 	.align	2
-RightLine_lost:	.type	object
-	.size	RightLine_lost,400
+RightLine1:	.type	object
+	.size	RightLine1,400
 	.space	400
-	.sdecl	'.data.FindBorder.Valid_Left',data,cluster('Valid_Left')
-	.sect	'.data.FindBorder.Valid_Left'
-	.global	Valid_Left
+	.sdecl	'.data.FindBorder.ValidRow',data,cluster('ValidRow')
+	.sect	'.data.FindBorder.ValidRow'
+	.global	ValidRow
 	.align	2
-Valid_Left:	.type	object
-	.size	Valid_Left,4
+ValidRow:	.type	object
+	.size	ValidRow,4
 	.space	4
-	.sdecl	'.data.FindBorder.Valid_Right',data,cluster('Valid_Right')
-	.sect	'.data.FindBorder.Valid_Right'
-	.global	Valid_Right
-	.align	2
-Valid_Right:	.type	object
-	.size	Valid_Right,4
-	.space	4
-	.extern	videoData
-	.extern	Maxcolum
-	.extern	RealEndRow
 	.calls	'FindBorder','',0
+	.extern	videoData
+	.extern	Maxcolumn
+	.calls	'FindBorder1','',0
 	.sdecl	'.debug_info',debug
 	.sect	'.debug_info'
-.L25:
-	.word	147013
+.L80:
+	.word	146993
 	.half	3
-	.word	.L26
+	.word	.L81
 	.byte	4
-.L24:
+.L79:
 	.byte	1
 	.byte	'../code/src/FindBorder.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1
-	.word	.L27
+	.word	.L82
 	.byte	2,1,1,3
 	.word	171
 	.byte	4
@@ -414,7 +983,7 @@ Valid_Right:	.type	object
 	.word	317
 	.byte	6,0,7
 	.byte	'unsigned int',0,4,7
-.L52:
+.L108:
 	.byte	7
 	.byte	'int',0,4,5,7
 	.byte	'unsigned char',0,1,8,10
@@ -19748,17 +20317,14 @@ Valid_Right:	.type	object
 	.byte	19,151,1,0,18,224,118
 	.word	143798
 	.byte	19,99,0,32
-	.byte	'videoData',0,49,13,14
+	.byte	'videoData',0,49,15,14
 	.word	143809
 	.byte	1,1
-.L59:
+.L114:
 	.byte	18,144,3
 	.word	451
 	.byte	19,99,0,32
-	.byte	'Maxcolum',0,50,7,14
-	.word	32470
-	.byte	1,1,32
-	.byte	'RealEndRow',0,50,8,12
+	.byte	'Maxcolumn',0,50,6,19
 	.word	451
 	.byte	1,1,10
 	.byte	'_Vector3fType',0,51,6,16,12,13
@@ -19772,7 +20338,7 @@ Valid_Right:	.type	object
 	.word	231
 	.byte	4,2,35,8,0,26
 	.byte	'Vector3f',0,51,11,3
-	.word	143889
+	.word	143869
 	.byte	10
 	.byte	'_Vector2fType',0,51,13,16,8,13
 	.byte	'x',0
@@ -19782,7 +20348,7 @@ Valid_Right:	.type	object
 	.word	231
 	.byte	4,2,35,4,0,26
 	.byte	'Vector2f',0,51,17,3
-	.word	143959
+	.word	143939
 	.byte	10
 	.byte	'_Ctrl',0,52,7,16,32,13
 	.byte	'leftTime',0
@@ -19798,10 +20364,10 @@ Valid_Right:	.type	object
 	.word	231
 	.byte	4,2,35,20,13
 	.byte	'PosZero',0
-	.word	143959
+	.word	143939
 	.byte	8,2,35,24,0,26
 	.byte	'ParamType',0,52,16,3
-	.word	144018
+	.word	143998
 	.byte	10
 	.byte	'_BoundParamType',0,52,18,16,56,13
 	.byte	'x0',0
@@ -19847,9 +20413,9 @@ Valid_Right:	.type	object
 	.word	231
 	.byte	4,2,35,52,0,26
 	.byte	'BoundParamType',0,52,25,3
-	.word	144138
+	.word	144118
 	.byte	18,88
-	.word	143959
+	.word	143939
 	.byte	19,10,0,10
 	.byte	'_Motion',0,52,28,16,152,1,13
 	.byte	't',0
@@ -19859,20 +20425,20 @@ Valid_Right:	.type	object
 	.word	458
 	.byte	1,2,35,4,13
 	.byte	'CtrlPoint',0
-	.word	144406
+	.word	144386
 	.byte	88,2,35,8,13
 	.byte	'boundParam',0
-	.word	144138
+	.word	144118
 	.byte	56,2,35,96,0,26
 	.byte	'MotionType',0,52,35,3
-	.word	144415
+	.word	144395
 	.byte	33
 	.byte	'_PIDMode',0,53,18,14,1,16
 	.byte	'PIDPOS',0,0,16
 	.byte	'PIDINC',0,1,16
 	.byte	'PIDFuzzy',0,2,0,26
 	.byte	'PIDMode',0,53,22,3
-	.word	144515
+	.word	144495
 	.byte	14
 	.word	231
 	.byte	14
@@ -19888,93 +20454,93 @@ Valid_Right:	.type	object
 	.byte	18,12
 	.word	231
 	.byte	19,2,0,14
-	.word	144605
+	.word	144585
 	.byte	14
 	.word	231
 	.byte	10
 	.byte	'_PID',0,53,25,16,52,13
 	.byte	'mode',0
-	.word	144515
+	.word	144495
 	.byte	1,2,35,0,13
 	.byte	'kp',0
-	.word	144575
+	.word	144555
 	.byte	4,2,35,2,13
 	.byte	'ki',0
-	.word	144580
+	.word	144560
 	.byte	4,2,35,6,13
 	.byte	'kd',0
-	.word	144585
+	.word	144565
 	.byte	4,2,35,10,13
 	.byte	'pOut',0
-	.word	144590
+	.word	144570
 	.byte	4,2,35,14,13
 	.byte	'iOut',0
-	.word	144595
+	.word	144575
 	.byte	4,2,35,18,13
 	.byte	'dOut',0
-	.word	144600
+	.word	144580
 	.byte	4,2,35,22,13
 	.byte	'err',0
-	.word	144614
+	.word	144594
 	.byte	12,2,35,26,13
 	.byte	'outputThreshold',0
 	.word	231
 	.byte	4,2,35,38,13
 	.byte	'output',0
-	.word	144619
+	.word	144599
 	.byte	4,2,35,42,13
 	.byte	'kiScale',0
 	.word	231
 	.byte	4,2,35,46,0,26
 	.byte	'PIDType',0,53,43,3
-	.word	144624
+	.word	144604
 	.byte	18,8
 	.word	451
 	.byte	19,1,0,10
 	.byte	'_DMFType',0,53,46,16,32,13
 	.byte	'EF',0
-	.word	144814
+	.word	144794
 	.byte	8,2,35,0,13
 	.byte	'En',0
-	.word	144814
+	.word	144794
 	.byte	8,2,35,8,13
 	.byte	'DF',0
-	.word	144814
+	.word	144794
 	.byte	8,2,35,16,13
 	.byte	'Dn',0
-	.word	144814
+	.word	144794
 	.byte	8,2,35,24,0,26
 	.byte	'DMFType',0,53,51,3
-	.word	144823
+	.word	144803
 	.byte	18,28
 	.word	231
 	.byte	19,6,0,10
 	.byte	'_UFFType',0,53,53,16,84,13
 	.byte	'UFF_P',0
-	.word	144902
+	.word	144882
 	.byte	28,2,35,0,13
 	.byte	'UFF_I',0
-	.word	144902
+	.word	144882
 	.byte	28,2,35,28,13
 	.byte	'UFF_D',0
-	.word	144902
+	.word	144882
 	.byte	28,2,35,56,0,26
 	.byte	'UFFType',0,53,57,3
-	.word	144911
+	.word	144891
 	.byte	15,54,26,9,1,16
 	.byte	'Fl',0,0,16
 	.byte	'Fr',0,1,16
 	.byte	'Bl',0,2,16
 	.byte	'Br',0,3,0,26
 	.byte	'JointNum',0,54,26,33
-	.word	144987
+	.word	144967
 	.byte	10
 	.byte	'_Servo',0,54,29,16,28,13
 	.byte	'pin',0
 	.word	130867
 	.byte	1,2,35,0,13
 	.byte	'num',0
-	.word	144987
+	.word	144967
 	.byte	1,2,35,1,13
 	.byte	'angleSet',0
 	.word	231
@@ -19998,7 +20564,7 @@ Valid_Right:	.type	object
 	.word	451
 	.byte	4,2,35,24,0,26
 	.byte	'ServoType',0,54,40,3
-	.word	145030
+	.word	145010
 	.byte	20,55,5,9,36,13
 	.byte	'target',0
 	.word	231
@@ -20028,19 +20594,19 @@ Valid_Right:	.type	object
 	.word	231
 	.byte	4,2,35,32,0,26
 	.byte	'PID',0,55,14,2
-	.word	145203
-	.byte	15,56,27,9,1,16
+	.word	145183
+	.byte	15,56,29,9,1,16
 	.byte	'Left',0,0,16
 	.byte	'Right',0,1,0,26
-	.byte	'LegNum',0,56,27,30
-	.word	145345
+	.byte	'LegNum',0,56,29,30
+	.word	145325
 	.byte	33
-	.byte	'_BldcMode',0,56,30,14,1,16
+	.byte	'_BldcMode',0,56,32,14,1,16
 	.byte	'CURRENT',0,0,16
 	.byte	'RPM',0,1,16
 	.byte	'POSITION',0,2,0,26
-	.byte	'BldcMode',0,56,34,3
-	.word	145381
+	.byte	'BldcMode',0,56,36,3
+	.word	145361
 	.byte	14
 	.word	231
 	.byte	14
@@ -20048,18 +20614,18 @@ Valid_Right:	.type	object
 	.byte	14
 	.word	32470
 	.byte	10
-	.byte	'_Value',0,56,37,16,12,13
+	.byte	'_Value',0,56,39,16,12,13
 	.byte	'speed',0
-	.word	145441
+	.word	145421
 	.byte	4,2,35,0,13
 	.byte	'angle',0
-	.word	145446
+	.word	145426
 	.byte	4,2,35,4,13
 	.byte	'current',0
-	.word	145451
+	.word	145431
 	.byte	2,2,35,8,0,26
-	.byte	'ValueType',0,56,41,3
-	.word	145456
+	.byte	'ValueType',0,56,43,3
+	.word	145436
 	.byte	14
 	.word	1009
 	.byte	14
@@ -20071,27 +20637,27 @@ Valid_Right:	.type	object
 	.byte	14
 	.word	451
 	.byte	10
-	.byte	'_PulseType',0,56,44,16,16,13
+	.byte	'_PulseType',0,56,46,16,16,13
 	.byte	'pulseRead',0
-	.word	145534
+	.word	145514
 	.byte	2,2,35,0,13
 	.byte	'pulseLast',0
-	.word	145539
+	.word	145519
 	.byte	2,2,35,2,13
 	.byte	'Distanse',0
-	.word	145544
+	.word	145524
 	.byte	2,2,35,4,13
 	.byte	'pulseTotal',0
-	.word	145549
+	.word	145529
 	.byte	4,2,35,6,13
 	.byte	'pulseLock',0
-	.word	145554
+	.word	145534
 	.byte	4,2,35,10,0,26
-	.byte	'PulseType',0,56,51,3
-	.word	145559
-	.byte	20,56,54,9,12,13
+	.byte	'PulseType',0,56,53,3
+	.word	145539
+	.byte	20,56,56,9,12,13
 	.byte	'direct',0
-	.word	145345
+	.word	145325
 	.byte	1,2,35,0,13
 	.byte	'sign',0
 	.word	33864
@@ -20102,21 +20668,21 @@ Valid_Right:	.type	object
 	.byte	'currentLimit',0
 	.word	231
 	.byte	4,2,35,6,0,26
-	.byte	'MotorParamType',0,56,60,3
-	.word	145689
+	.byte	'MotorParamType',0,56,62,3
+	.word	145669
 	.byte	7
-	.byte	'_Bool',0,1,2,20,56,63,9,12,13
+	.byte	'_Bool',0,1,2,20,56,65,9,12,13
 	.byte	'isStuck',0
-	.word	145794
+	.word	145774
 	.byte	1,2,35,0,13
 	.byte	'currentLimitFlag',0
-	.word	145794
+	.word	145774
 	.byte	1,2,35,1,13
 	.byte	'rpmLimitFlag',0
-	.word	145794
+	.word	145774
 	.byte	1,2,35,2,13
 	.byte	'posLimitFlag',0
-	.word	145794
+	.word	145774
 	.byte	1,2,35,3,13
 	.byte	'maxCurrent',0
 	.word	231
@@ -20124,64 +20690,64 @@ Valid_Right:	.type	object
 	.byte	'maxRPM',0
 	.word	231
 	.byte	4,2,35,8,0,26
-	.byte	'MotorLimit',0,56,73,3
-	.word	145803
+	.byte	'MotorLimit',0,56,75,3
+	.word	145783
 	.byte	10
-	.byte	'_Bldc',0,56,76,16,240,1,13
+	.byte	'_Bldc',0,56,78,16,240,1,13
 	.byte	'enable',0
-	.word	145794
+	.word	145774
 	.byte	1,2,35,0,13
 	.byte	'begin',0
-	.word	145794
+	.word	145774
 	.byte	1,2,35,1,13
 	.byte	'setZero',0
-	.word	145794
+	.word	145774
 	.byte	1,2,35,2,13
 	.byte	'mode',0
-	.word	145381
+	.word	145361
 	.byte	1,2,35,3,13
 	.byte	'valueLast',0
-	.word	145456
+	.word	145436
 	.byte	12,2,35,4,13
 	.byte	'valueNow',0
-	.word	145456
+	.word	145436
 	.byte	12,2,35,16,13
 	.byte	'valueSet',0
-	.word	145456
+	.word	145436
 	.byte	12,2,35,28,13
 	.byte	'reachTime',0
 	.word	231
 	.byte	4,2,35,40,13
 	.byte	'pulse',0
-	.word	145559
+	.word	145539
 	.byte	16,2,35,44,13
 	.byte	'param',0
-	.word	145689
+	.word	145669
 	.byte	12,2,35,60,13
 	.byte	'limit',0
-	.word	145803
+	.word	145783
 	.byte	12,2,35,72,13
 	.byte	'posPID',0
-	.word	144624
+	.word	144604
 	.byte	52,2,35,84,13
 	.byte	'rpmPID',0
-	.word	144624
+	.word	144604
 	.byte	52,3,35,136,1,13
 	.byte	'currentPID',0
-	.word	144624
+	.word	144604
 	.byte	52,3,35,188,1,0,26
-	.byte	'BldcType',0,56,89,3
-	.word	145951
+	.byte	'BldcType',0,56,91,3
+	.word	145931
 	.byte	10
 	.byte	'_IMUParam',0,57,9,16,48,13
 	.byte	'accel',0
-	.word	143889
+	.word	143869
 	.byte	12,2,35,0,13
 	.byte	'angle',0
-	.word	143889
+	.word	143869
 	.byte	12,2,35,12,13
 	.byte	'mag',0
-	.word	143889
+	.word	143869
 	.byte	12,2,35,24,13
 	.byte	'pitch',0
 	.word	231
@@ -20193,26 +20759,26 @@ Valid_Right:	.type	object
 	.word	231
 	.byte	4,2,35,44,0,26
 	.byte	'IMUParam',0,57,18,3
-	.word	146216
+	.word	146196
 	.byte	10
 	.byte	'_Imu',0,57,20,16,152,1,13
 	.byte	'dataOri',0
-	.word	146216
+	.word	146196
 	.byte	48,2,35,0,13
 	.byte	'dataRaw',0
-	.word	146216
+	.word	146196
 	.byte	48,2,35,48,13
 	.byte	'dataSet',0
-	.word	146216
+	.word	146196
 	.byte	48,2,35,96,13
 	.byte	'G',0
 	.word	231
 	.byte	4,3,35,144,1,13
 	.byte	'calibration_flag',0
-	.word	145794
+	.word	145774
 	.byte	1,3,35,148,1,0,26
 	.byte	'IMUType',0,57,28,3
-	.word	146334
+	.word	146314
 	.byte	10
 	.byte	'_Attitude_',0,57,41,16,12,13
 	.byte	'x',0
@@ -20225,26 +20791,26 @@ Valid_Right:	.type	object
 	.word	231
 	.byte	4,2,35,8,0,26
 	.byte	'_Attitude',0,57,45,3
-	.word	146452
+	.word	146432
 	.byte	3
-	.word	145030
+	.word	145010
 	.byte	3
-	.word	145951
+	.word	145931
 	.byte	3
 	.word	317
 	.byte	10
 	.byte	'_leg',0,58,18,16,216,1,13
 	.byte	'num',0
-	.word	145345
+	.word	145325
 	.byte	1,2,35,0,13
 	.byte	'front',0
-	.word	146520
+	.word	146500
 	.byte	4,2,35,4,13
 	.byte	'behind',0
-	.word	146520
+	.word	146500
 	.byte	4,2,35,8,13
 	.byte	'wheel',0
-	.word	146525
+	.word	146505
 	.byte	4,2,35,12,13
 	.byte	'angle1Set',0
 	.word	231
@@ -20253,28 +20819,28 @@ Valid_Right:	.type	object
 	.word	231
 	.byte	4,2,35,20,13
 	.byte	'PosNow',0
-	.word	143959
+	.word	143939
 	.byte	8,2,35,24,13
 	.byte	'PosSet',0
-	.word	143959
+	.word	143939
 	.byte	8,2,35,32,13
 	.byte	'PosStart',0
-	.word	143959
+	.word	143939
 	.byte	8,2,35,40,13
 	.byte	'PosTarget',0
-	.word	143959
+	.word	143939
 	.byte	8,2,35,48,13
 	.byte	'reachTime',0
 	.word	231
 	.byte	4,2,35,56,13
 	.byte	'RunTime',0
-	.word	146530
+	.word	146510
 	.byte	4,2,35,60,13
 	.byte	'motion',0
-	.word	144415
+	.word	144395
 	.byte	152,1,2,35,64,0,26
 	.byte	'LegType',0,58,38,3
-	.word	146535
+	.word	146515
 	.byte	33
 	.byte	'StateEnum',0,59,8,6,1,16
 	.byte	'StatePreparing',0,0,16
@@ -20282,34 +20848,34 @@ Valid_Right:	.type	object
 	.byte	'StateEnd',0,2,0,10
 	.byte	'_Pipeline',0,59,15,16,2,13
 	.byte	'isRun',0
-	.word	145794
+	.word	145774
 	.byte	1,2,35,0,13
 	.byte	'state',0
-	.word	146782
+	.word	146762
 	.byte	1,2,35,1,0,26
 	.byte	'PipelineType',0,59,18,3
-	.word	146844
+	.word	146824
 	.byte	18,40
-	.word	143959
+	.word	143939
 	.byte	19,4,0,18,20
 	.word	231
 	.byte	19,4,0,10
 	.byte	'_JumpLineType',0,59,20,16,64,13
 	.byte	'Pos',0
-	.word	146911
+	.word	146891
 	.byte	40,2,35,0,13
 	.byte	'reachTime',0
-	.word	146920
+	.word	146900
 	.byte	20,2,35,40,13
 	.byte	'Lerp',0
-	.word	145794
+	.word	145774
 	.byte	1,2,35,60,0,26
 	.byte	'JumpLineType',0,59,24,3
-	.word	146929
+	.word	146909
 	.byte	0
 	.sdecl	'.debug_abbrev',debug
 	.sect	'.debug_abbrev'
-.L26:
+.L81:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,21,0,54,15,39,12,0,0,3,15,0,73,19,0,0,4,46,1,3,8,32,13
 	.byte	58,15,59,15,57,15,54,15,39,12,0,0,5,5,0,3,8,58,15,59,15,57,15,73,19,0,0,6,11,0,0,0,7,36,0,3,8,11,15,62
 	.byte	15,0,0,8,46,1,3,8,32,13,58,15,59,15,57,15,73,19,54,15,39,12,0,0,9,59,0,3,8,0,0,10,19,1,3,8,58,15,59,15
@@ -20322,12 +20888,12 @@ Valid_Right:	.type	object
 	.byte	0,0,0
 	.sdecl	'.debug_line',debug
 	.sect	'.debug_line'
-.L27:
-	.word	.L67-.L66
-.L66:
+.L82:
+	.word	.L127-.L126
+.L126:
 	.half	3
-	.word	.L69-.L68
-.L68:
+	.word	.L129-.L128
+.L128:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
 	.byte	'D:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B\\\\_Reg',0
 	.byte	'D:\\Software 1\\ADS\\ADS\\AURIX-Studio-1.10.6\\tools\\Compilers\\Tasking_1.1r8\\ctc\\include\\',0
@@ -20422,527 +20988,1034 @@ Valid_Right:	.type	object
 	.byte	'imu.h',0,10,0,0
 	.byte	'leg.h',0,10,0,0
 	.byte	'robot.h',0,10,0,0,0
-.L69:
-.L67:
+.L129:
+.L127:
 	.sdecl	'.debug_info',debug,cluster('FindBorder')
 	.sect	'.debug_info'
-.L28:
-	.word	351
+.L83:
+	.word	246
 	.half	3
-	.word	.L29
+	.word	.L84
 	.byte	4,1
 	.byte	'../code/src/FindBorder.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1
-	.word	.L31,.L30
+	.word	.L86,.L85
 	.byte	2
-	.word	.L24
+	.word	.L79
 	.byte	3
-	.byte	'FindBorder',0,1,15,6,1,1,1
-	.word	.L23,.L49,.L22
+	.byte	'FindBorder',0,1,10,6,1,1,1
+	.word	.L76,.L107,.L75
 	.byte	4
-	.word	.L23,.L49
-	.byte	4
-	.word	.L50,.L51
+	.word	.L76,.L107
 	.byte	5
-	.byte	'row',0,1,19,11
-	.word	.L52,.L53
-	.byte	4
-	.word	.L3,.L21
+	.byte	'i',0,1,12,7
+	.word	.L108,.L109
 	.byte	5
-	.byte	'leftFound',0,1,21,7
-	.word	.L52,.L54
-	.byte	5
-	.byte	'rightFound',0,1,22,7
-	.word	.L52,.L55
-	.byte	4
-	.word	.L56,.L9
-	.byte	5
-	.byte	'col',0,1,25,12
-	.word	.L52,.L57
-	.byte	0,4
-	.word	.L9,.L17
-	.byte	5
-	.byte	'col',0,1,42,12
-	.word	.L52,.L58
-	.byte	0,0,0,0,0,0
+	.byte	'j',0,1,12,9
+	.word	.L108,.L110
+	.byte	0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('FindBorder')
 	.sect	'.debug_abbrev'
-.L29:
+.L84:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
 	.sdecl	'.debug_line',debug,cluster('FindBorder')
 	.sect	'.debug_line'
-.L30:
-	.word	.L71-.L70
-.L70:
+.L85:
+	.word	.L131-.L130
+.L130:
 	.half	3
-	.word	.L73-.L72
-.L72:
+	.word	.L133-.L132
+.L132:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/src/FindBorder.c',0,0,0,0,0
-.L73:
-	.byte	5,2,7,0,5,2
-	.word	.L23
-	.byte	3,16,1,5,15,9
-	.half	.L74-.L23
-	.byte	1,5,13,9
-	.half	.L75-.L74
-	.byte	1,5,2,9
-	.half	.L76-.L75
-	.byte	3,1,1,5,16,9
-	.half	.L77-.L76
+.L133:
+	.byte	5,10,7,0,5,2
+	.word	.L76
+	.byte	3,12,1,5,33,9
+	.half	.L115-.L76
 	.byte	1,5,14,9
-	.half	.L78-.L77
-	.byte	1,5,15,9
-	.half	.L50-.L78
-	.byte	3,1,1,5,43,9
-	.half	.L60-.L50
-	.byte	1,5,18,9
-	.half	.L3-.L60
-	.byte	3,2,1,9
-	.half	.L61-.L3
-	.byte	3,1,1,9
-	.half	.L56-.L61
-	.byte	3,3,1,5,36,9
-	.half	.L62-.L56
-	.byte	1,5,17,9
-	.half	.L5-.L62
-	.byte	3,1,1,5,8,9
-	.half	.L79-.L5
-	.byte	1,5,17,9
-	.half	.L80-.L79
-	.byte	1,5,22,9
-	.half	.L81-.L80
-	.byte	1,5,8,9
-	.half	.L82-.L81
-	.byte	1,5,49,7,9
-	.half	.L83-.L82
-	.byte	1,5,40,9
-	.half	.L84-.L83
-	.byte	1,5,49,9
-	.half	.L85-.L84
-	.byte	1,5,54,9
-	.half	.L86-.L85
-	.byte	1,5,64,9
-	.half	.L87-.L86
-	.byte	1,5,17,7,9
-	.half	.L88-.L87
-	.byte	3,1,1,5,8,9
-	.half	.L89-.L88
-	.byte	1,5,17,9
-	.half	.L90-.L89
-	.byte	1,5,22,9
-	.half	.L91-.L90
-	.byte	1,5,32,9
-	.half	.L92-.L91
-	.byte	1,5,13,7,9
-	.half	.L93-.L92
-	.byte	3,2,1,5,5,9
-	.half	.L94-.L93
-	.byte	1,5,13,9
-	.half	.L95-.L94
-	.byte	1,5,22,9
-	.half	.L96-.L95
+	.half	.L3-.L115
+	.byte	3,2,1,5,31,9
+	.half	.L116-.L3
 	.byte	1,5,19,9
-	.half	.L97-.L96
-	.byte	3,1,1,5,18,9
-	.half	.L98-.L97
-	.byte	3,1,1,5,5,9
-	.half	.L99-.L98
-	.byte	1,5,18,9
-	.half	.L100-.L99
-	.byte	1,5,26,9
-	.half	.L101-.L100
-	.byte	1,5,24,9
-	.half	.L63-.L101
-	.byte	1,5,5,9
-	.half	.L102-.L63
-	.byte	3,1,1,5,11,9
-	.half	.L6-.L102
-	.byte	3,1,1,5,13,7,9
-	.half	.L103-.L6
-	.byte	3,1,1,5,5,9
-	.half	.L104-.L103
-	.byte	1,5,13,9
-	.half	.L105-.L104
-	.byte	1,5,22,9
-	.half	.L106-.L105
-	.byte	1,5,18,9
-	.half	.L107-.L106
-	.byte	3,1,1,5,5,9
-	.half	.L108-.L107
-	.byte	1,5,18,9
-	.half	.L109-.L108
-	.byte	1,5,26,9
-	.half	.L110-.L109
-	.byte	1,5,24,9
-	.half	.L64-.L110
-	.byte	1,5,5,9
-	.half	.L111-.L64
-	.byte	3,1,1,5,21,9
-	.half	.L10-.L111
-	.byte	3,2,1,5,4,9
-	.half	.L112-.L10
-	.byte	1,5,21,9
-	.half	.L113-.L112
-	.byte	1,5,37,9
-	.half	.L114-.L113
-	.byte	1,5,29,9
-	.half	.L115-.L114
-	.byte	1,5,37,9
-	.half	.L116-.L115
-	.byte	1,5,27,9
-	.half	.L117-.L116
-	.byte	1,5,41,9
-	.half	.L118-.L117
-	.byte	3,115,1,5,36,9
-	.half	.L4-.L118
-	.byte	1,5,18,7,9
-	.half	.L9-.L4
-	.byte	3,17,1,5,46,9
-	.half	.L65-.L9
-	.byte	1,5,17,9
-	.half	.L13-.L65
-	.byte	3,1,1,5,8,9
-	.half	.L119-.L13
-	.byte	1,5,17,9
-	.half	.L120-.L119
-	.byte	1,5,22,9
-	.half	.L121-.L120
-	.byte	1,5,8,9
-	.half	.L122-.L121
-	.byte	1,5,49,7,9
-	.half	.L123-.L122
-	.byte	1,5,40,9
-	.half	.L124-.L123
-	.byte	1,5,49,9
-	.half	.L125-.L124
-	.byte	1,5,54,9
-	.half	.L126-.L125
-	.byte	1,5,64,9
-	.half	.L127-.L126
-	.byte	1,5,17,7,9
-	.half	.L128-.L127
-	.byte	3,1,1,5,8,9
-	.half	.L129-.L128
-	.byte	1,5,17,9
-	.half	.L130-.L129
-	.byte	1,5,22,9
-	.half	.L131-.L130
-	.byte	1,5,32,9
-	.half	.L132-.L131
-	.byte	1,5,14,7,9
-	.half	.L133-.L132
-	.byte	3,2,1,5,5,9
-	.half	.L134-.L133
-	.byte	1,5,14,9
+	.half	.L5-.L116
+	.byte	3,2,1,5,10,9
+	.half	.L134-.L5
+	.byte	1,5,19,9
 	.half	.L135-.L134
-	.byte	1,5,21,9
-	.half	.L136-.L135
-	.byte	1,5,18,9
-	.half	.L137-.L136
-	.byte	3,1,1,5,19,9
-	.half	.L138-.L137
-	.byte	3,1,1,5,5,9
-	.half	.L139-.L138
-	.byte	1,5,19,9
-	.half	.L140-.L139
-	.byte	1,5,27,9
-	.half	.L141-.L140
-	.byte	1,5,25,9
-	.half	.L142-.L141
-	.byte	1,5,5,9
-	.half	.L143-.L142
-	.byte	3,1,1,5,29,9
-	.half	.L14-.L143
-	.byte	3,1,1,5,11,9
-	.half	.L144-.L14
-	.byte	1,5,14,7,9
-	.half	.L145-.L144
-	.byte	3,1,1,5,5,9
-	.half	.L146-.L145
-	.byte	1,5,14,9
-	.half	.L147-.L146
-	.byte	1,5,21,9
-	.half	.L148-.L147
-	.byte	1,5,19,9
-	.half	.L149-.L148
-	.byte	3,1,1,5,5,9
-	.half	.L150-.L149
-	.byte	1,5,19,9
-	.half	.L151-.L150
-	.byte	1,5,27,9
-	.half	.L152-.L151
-	.byte	1,5,25,9
-	.half	.L153-.L152
-	.byte	1,5,5,9
-	.half	.L154-.L153
-	.byte	3,1,1,5,22,9
-	.half	.L18-.L154
-	.byte	3,2,1,5,4,9
-	.half	.L155-.L18
 	.byte	1,5,22,9
-	.half	.L156-.L155
-	.byte	1,5,39,9
-	.half	.L157-.L156
-	.byte	1,5,30,9
-	.half	.L158-.L157
-	.byte	1,5,39,9
-	.half	.L159-.L158
-	.byte	1,5,28,9
-	.half	.L160-.L159
-	.byte	1,5,51,9
-	.half	.L161-.L160
-	.byte	3,115,1,5,43,9
-	.half	.L12-.L161
-	.byte	1,5,46,9
-	.half	.L162-.L12
-	.byte	1,5,3,7,9
-	.half	.L17-.L162
-	.byte	3,17,1,5,4,7,9
-	.half	.L163-.L17
-	.byte	3,1,1,5,14,9
-	.half	.L164-.L163
-	.byte	1,5,3,9
-	.half	.L20-.L164
-	.byte	3,2,1,5,4,7,9
-	.half	.L165-.L20
-	.byte	3,1,1,5,15,9
-	.half	.L166-.L165
+	.half	.L136-.L135
+	.byte	1,5,10,9
+	.half	.L137-.L136
+	.byte	1,5,45,7,9
+	.half	.L138-.L137
+	.byte	1,5,36,9
+	.half	.L139-.L138
+	.byte	1,5,45,9
+	.half	.L140-.L139
 	.byte	1,5,48,9
-	.half	.L21-.L166
-	.byte	3,84,1,5,33,9
-	.half	.L2-.L21
-	.byte	1,5,43,9
-	.half	.L167-.L2
+	.half	.L141-.L140
+	.byte	1,5,54,9
+	.half	.L142-.L141
+	.byte	1,5,71,7,9
+	.half	.L143-.L142
+	.byte	1,5,62,9
+	.half	.L144-.L143
+	.byte	1,5,71,9
+	.half	.L145-.L144
+	.byte	1,5,74,9
+	.half	.L146-.L145
+	.byte	1,5,78,9
+	.half	.L147-.L146
+	.byte	1,5,17,7,9
+	.half	.L148-.L147
+	.byte	3,2,1,5,9,9
+	.half	.L149-.L148
+	.byte	1,5,17,9
+	.half	.L150-.L149
+	.byte	1,5,24,9
+	.half	.L151-.L150
+	.byte	1,5,21,9
+	.half	.L152-.L151
+	.byte	1,5,9,9
+	.half	.L153-.L152
+	.byte	3,1,1,5,34,9
+	.half	.L6-.L153
+	.byte	3,123,1,5,31,9
+	.half	.L4-.L6
+	.byte	1,5,5,7,9
+	.half	.L9-.L4
+	.byte	3,10,1,5,16,7,9
+	.half	.L154-.L9
+	.byte	3,2,1,5,21,9
+	.half	.L12-.L154
+	.byte	3,2,1,5,12,9
+	.half	.L155-.L12
+	.byte	1,5,21,9
+	.half	.L156-.L155
+	.byte	1,5,24,9
+	.half	.L157-.L156
+	.byte	1,5,9,9
+	.half	.L158-.L157
+	.byte	1,5,19,7,9
+	.half	.L159-.L158
+	.byte	3,2,1,5,11,9
+	.half	.L160-.L159
+	.byte	1,5,19,9
+	.half	.L161-.L160
+	.byte	1,5,26,9
+	.half	.L162-.L161
+	.byte	1,5,23,9
+	.half	.L163-.L162
+	.byte	1,5,11,9
+	.half	.L164-.L163
+	.byte	3,1,1,5,18,9
+	.half	.L13-.L164
+	.byte	3,123,1,5,16,9
+	.half	.L11-.L13
+	.byte	1,5,5,7,9
+	.half	.L10-.L11
+	.byte	3,9,1,5,23,7,9
+	.half	.L165-.L10
+	.byte	1,5,15,9
+	.half	.L117-.L165
+	.byte	1,5,23,9
+	.half	.L166-.L117
+	.byte	1,5,28,9
+	.half	.L167-.L166
+	.byte	1,5,27,9
+	.half	.L168-.L167
+	.byte	1,5,14,9
+	.half	.L15-.L168
+	.byte	3,2,1,5,38,9
+	.half	.L118-.L15
+	.byte	1,5,19,9
+	.half	.L17-.L118
+	.byte	3,2,1,5,10,9
+	.half	.L169-.L17
+	.byte	1,5,19,9
+	.half	.L170-.L169
+	.byte	1,5,22,9
+	.half	.L171-.L170
+	.byte	1,5,10,9
+	.half	.L172-.L171
+	.byte	1,5,45,7,9
+	.half	.L173-.L172
+	.byte	1,5,36,9
+	.half	.L174-.L173
+	.byte	1,5,45,9
+	.half	.L175-.L174
+	.byte	1,5,48,9
+	.half	.L176-.L175
+	.byte	1,5,54,9
+	.half	.L177-.L176
+	.byte	1,5,71,7,9
+	.half	.L178-.L177
+	.byte	1,5,62,9
+	.half	.L179-.L178
+	.byte	1,5,71,9
+	.half	.L180-.L179
+	.byte	1,5,74,9
+	.half	.L181-.L180
+	.byte	1,5,78,9
+	.half	.L182-.L181
+	.byte	1,5,18,7,9
+	.half	.L183-.L182
+	.byte	3,2,1,5,9,9
+	.half	.L184-.L183
+	.byte	1,5,18,9
+	.half	.L185-.L184
+	.byte	1,5,25,9
+	.half	.L186-.L185
+	.byte	1,5,22,9
+	.half	.L187-.L186
+	.byte	1,5,9,9
+	.half	.L188-.L187
+	.byte	3,1,1,5,41,9
+	.half	.L18-.L188
+	.byte	3,123,1,5,35,9
+	.half	.L16-.L18
+	.byte	1,5,38,9
+	.half	.L189-.L16
+	.byte	1,5,17,7,9
+	.half	.L21-.L189
+	.byte	3,10,1,5,5,9
+	.half	.L190-.L21
+	.byte	1,5,20,7,9
+	.half	.L191-.L190
+	.byte	3,2,1,5,21,9
+	.half	.L24-.L191
+	.byte	3,2,1,5,12,9
+	.half	.L192-.L24
+	.byte	1,5,21,9
+	.half	.L193-.L192
+	.byte	1,5,24,9
+	.half	.L194-.L193
+	.byte	1,5,9,9
+	.half	.L195-.L194
+	.byte	1,5,20,7,9
+	.half	.L196-.L195
+	.byte	3,2,1,5,11,9
+	.half	.L197-.L196
+	.byte	1,5,20,9
+	.half	.L198-.L197
+	.byte	1,5,27,9
+	.half	.L199-.L198
+	.byte	1,5,24,9
+	.half	.L200-.L199
+	.byte	1,5,11,9
+	.half	.L201-.L200
+	.byte	3,1,1,5,22,9
+	.half	.L25-.L201
+	.byte	3,123,1,5,14,9
+	.half	.L23-.L25
+	.byte	1,5,20,9
+	.half	.L202-.L23
+	.byte	1,5,11,7,9
+	.half	.L22-.L202
+	.byte	3,9,1,5,5,9
+	.half	.L203-.L22
+	.byte	1,5,28,7,9
+	.half	.L204-.L203
+	.byte	1,5,19,9
+	.half	.L205-.L204
+	.byte	1,5,28,9
+	.half	.L206-.L205
+	.byte	1,5,40,9
+	.half	.L207-.L206
+	.byte	1,5,32,9
+	.half	.L208-.L207
+	.byte	1,5,22,9
+	.half	.L27-.L208
+	.byte	3,2,1,5,5,9
+	.half	.L209-.L27
+	.byte	1,5,22,9
+	.half	.L210-.L209
+	.byte	1,5,36,9
+	.half	.L211-.L210
+	.byte	1,5,28,9
+	.half	.L212-.L211
+	.byte	1,5,36,9
+	.half	.L213-.L212
+	.byte	1,5,26,9
+	.half	.L214-.L213
+	.byte	1,5,23,9
+	.half	.L215-.L214
+	.byte	3,1,1,5,5,9
+	.half	.L216-.L215
+	.byte	1,5,23,9
+	.half	.L217-.L216
+	.byte	1,5,38,9
+	.half	.L218-.L217
+	.byte	1,5,29,9
+	.half	.L219-.L218
+	.byte	1,5,38,9
+	.half	.L220-.L219
+	.byte	1,5,27,9
+	.half	.L221-.L220
+	.byte	1,5,36,9
+	.half	.L222-.L221
+	.byte	3,79,1,5,23,9
+	.half	.L2-.L222
+	.byte	1,5,31,9
+	.half	.L223-.L2
+	.byte	1,5,33,9
+	.half	.L224-.L223
 	.byte	1,5,1,7,9
-	.half	.L51-.L167
-	.byte	3,47,1,7,9
-	.half	.L32-.L51
+	.half	.L225-.L224
+	.byte	3,51,1,7,9
+	.half	.L87-.L225
 	.byte	0,1,1
-.L71:
+.L131:
 	.sdecl	'.debug_ranges',debug,cluster('FindBorder')
 	.sect	'.debug_ranges'
-.L31:
-	.word	-1,.L23,0,.L32-.L23,0,0
+.L86:
+	.word	-1,.L76,0,.L87-.L76,0,0
+	.sdecl	'.debug_info',debug,cluster('FindBorder1')
+	.sect	'.debug_info'
+.L88:
+	.word	247
+	.half	3
+	.word	.L89
+	.byte	4,1
+	.byte	'../code/src/FindBorder.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1
+	.word	.L91,.L90
+	.byte	2
+	.word	.L79
+	.byte	3
+	.byte	'FindBorder1',0,1,69,6,1,1,1
+	.word	.L78,.L111,.L77
+	.byte	4
+	.word	.L78,.L111
+	.byte	5
+	.byte	'i',0,1,71,7
+	.word	.L108,.L112
+	.byte	5
+	.byte	'j',0,1,71,11
+	.word	.L108,.L113
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('FindBorder1')
+	.sect	'.debug_abbrev'
+.L89:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('FindBorder1')
+	.sect	'.debug_line'
+.L90:
+	.word	.L227-.L226
+.L226:
+	.half	3
+	.word	.L229-.L228
+.L228:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../code/src/FindBorder.c',0,0,0,0,0
+.L229:
+	.byte	5,3,7,0,5,2
+	.word	.L78
+	.byte	3,202,0,1,5,20,9
+	.half	.L230-.L78
+	.byte	1,5,19,9
+	.half	.L231-.L230
+	.byte	1,5,3,9
+	.half	.L232-.L231
+	.byte	3,1,1,5,27,9
+	.half	.L233-.L232
+	.byte	1,5,20,9
+	.half	.L234-.L233
+	.byte	1,5,8,9
+	.half	.L235-.L234
+	.byte	3,5,1,5,19,9
+	.half	.L119-.L235
+	.byte	1,5,17,9
+	.half	.L29-.L119
+	.byte	3,3,1,5,8,9
+	.half	.L236-.L29
+	.byte	1,5,17,9
+	.half	.L237-.L236
+	.byte	1,5,32,9
+	.half	.L238-.L237
+	.byte	1,5,30,9
+	.half	.L239-.L238
+	.byte	1,5,21,9
+	.half	.L240-.L239
+	.byte	1,5,30,9
+	.half	.L241-.L240
+	.byte	1,5,20,9
+	.half	.L242-.L241
+	.byte	1,5,5,9
+	.half	.L243-.L242
+	.byte	1,5,24,7,9
+	.half	.L244-.L243
+	.byte	3,2,1,5,22,9
+	.half	.L245-.L244
+	.byte	1,5,13,9
+	.half	.L246-.L245
+	.byte	1,5,22,9
+	.half	.L247-.L246
+	.byte	1,5,27,9
+	.half	.L120-.L247
+	.byte	1,5,40,9
+	.half	.L248-.L120
+	.byte	1,5,21,9
+	.half	.L32-.L248
+	.byte	3,2,1,5,12,9
+	.half	.L249-.L32
+	.byte	1,5,21,9
+	.half	.L250-.L249
+	.byte	1,5,24,9
+	.half	.L251-.L250
+	.byte	1,5,12,9
+	.half	.L252-.L251
+	.byte	1,5,47,7,9
+	.half	.L253-.L252
+	.byte	1,5,38,9
+	.half	.L254-.L253
+	.byte	1,5,47,9
+	.half	.L255-.L254
+	.byte	1,5,50,9
+	.half	.L256-.L255
+	.byte	1,5,56,9
+	.half	.L257-.L256
+	.byte	1,5,73,7,9
+	.half	.L258-.L257
+	.byte	1,5,64,9
+	.half	.L259-.L258
+	.byte	1,5,73,9
+	.half	.L260-.L259
+	.byte	1,5,76,9
+	.half	.L261-.L260
+	.byte	1,5,80,9
+	.half	.L262-.L261
+	.byte	1,5,20,7,9
+	.half	.L263-.L262
+	.byte	3,2,1,5,11,9
+	.half	.L264-.L263
+	.byte	1,5,20,9
+	.half	.L265-.L264
+	.byte	1,5,23,9
+	.half	.L266-.L265
+	.byte	1,5,11,9
+	.half	.L267-.L266
+	.byte	3,1,1,5,42,9
+	.half	.L33-.L267
+	.byte	3,123,1,5,38,9
+	.half	.L31-.L33
+	.byte	1,5,40,9
+	.half	.L268-.L31
+	.byte	1,5,19,7,9
+	.half	.L36-.L268
+	.byte	3,8,1,5,7,9
+	.half	.L269-.L36
+	.byte	1,5,18,7,9
+	.half	.L270-.L269
+	.byte	3,1,1,5,9,9
+	.half	.L271-.L270
+	.byte	1,5,18,9
+	.half	.L272-.L271
+	.byte	1,5,28,9
+	.half	.L273-.L272
+	.byte	1,5,21,9
+	.half	.L274-.L273
+	.byte	1,5,7,9
+	.half	.L37-.L274
+	.byte	3,127,1,5,22,9
+	.half	.L30-.L37
+	.byte	3,4,1,5,13,9
+	.half	.L275-.L30
+	.byte	1,5,22,9
+	.half	.L276-.L275
+	.byte	1,5,37,9
+	.half	.L277-.L276
+	.byte	1,5,35,9
+	.half	.L278-.L277
+	.byte	1,5,26,9
+	.half	.L279-.L278
+	.byte	1,5,35,9
+	.half	.L280-.L279
+	.byte	1,5,25,9
+	.half	.L281-.L280
+	.byte	1,5,10,9
+	.half	.L282-.L281
+	.byte	1,5,16,7,9
+	.half	.L283-.L282
+	.byte	3,2,1,5,7,9
+	.half	.L284-.L283
+	.byte	1,5,16,9
+	.half	.L285-.L284
+	.byte	1,5,20,9
+	.half	.L286-.L285
+	.byte	1,5,19,9
+	.half	.L287-.L286
+	.byte	1,5,24,9
+	.half	.L288-.L287
+	.byte	3,1,1,5,22,9
+	.half	.L289-.L288
+	.byte	1,5,13,9
+	.half	.L290-.L289
+	.byte	1,5,22,9
+	.half	.L291-.L290
+	.byte	1,5,27,9
+	.half	.L121-.L291
+	.byte	1,5,33,9
+	.half	.L292-.L121
+	.byte	1,5,21,9
+	.half	.L41-.L292
+	.byte	3,2,1,5,12,9
+	.half	.L293-.L41
+	.byte	1,5,21,9
+	.half	.L294-.L293
+	.byte	1,5,24,9
+	.half	.L295-.L294
+	.byte	1,5,12,9
+	.half	.L296-.L295
+	.byte	1,5,47,7,9
+	.half	.L297-.L296
+	.byte	1,5,38,9
+	.half	.L298-.L297
+	.byte	1,5,47,9
+	.half	.L299-.L298
+	.byte	1,5,50,9
+	.half	.L300-.L299
+	.byte	1,5,56,9
+	.half	.L301-.L300
+	.byte	1,5,73,7,9
+	.half	.L302-.L301
+	.byte	1,5,64,9
+	.half	.L303-.L302
+	.byte	1,5,73,9
+	.half	.L304-.L303
+	.byte	1,5,76,9
+	.half	.L305-.L304
+	.byte	1,5,80,9
+	.half	.L306-.L305
+	.byte	1,5,20,7,9
+	.half	.L307-.L306
+	.byte	3,2,1,5,11,9
+	.half	.L308-.L307
+	.byte	1,5,20,9
+	.half	.L309-.L308
+	.byte	1,5,25,9
+	.half	.L310-.L309
+	.byte	1,5,23,9
+	.half	.L311-.L310
+	.byte	1,5,11,9
+	.half	.L312-.L311
+	.byte	3,1,1,5,35,9
+	.half	.L42-.L312
+	.byte	3,123,1,5,33,9
+	.half	.L40-.L42
+	.byte	1,5,7,7,9
+	.half	.L45-.L40
+	.byte	3,8,1,5,18,7,9
+	.half	.L313-.L45
+	.byte	3,2,1,5,23,9
+	.half	.L48-.L313
+	.byte	3,2,1,5,14,9
+	.half	.L314-.L48
+	.byte	1,5,23,9
+	.half	.L315-.L314
+	.byte	1,5,26,9
+	.half	.L316-.L315
+	.byte	1,5,11,9
+	.half	.L317-.L316
+	.byte	1,5,22,7,9
+	.half	.L318-.L317
+	.byte	3,2,1,5,13,9
+	.half	.L319-.L318
+	.byte	1,5,22,9
+	.half	.L320-.L319
+	.byte	1,5,29,9
+	.half	.L321-.L320
+	.byte	1,5,26,9
+	.half	.L122-.L321
+	.byte	1,5,13,9
+	.half	.L322-.L122
+	.byte	3,1,1,5,20,9
+	.half	.L49-.L322
+	.byte	3,2,1,5,11,9
+	.half	.L323-.L49
+	.byte	1,5,20,9
+	.half	.L324-.L323
+	.byte	1,5,26,9
+	.half	.L325-.L324
+	.byte	1,5,24,9
+	.half	.L326-.L325
+	.byte	1,5,20,9
+	.half	.L327-.L326
+	.byte	3,121,1,5,18,9
+	.half	.L47-.L327
+	.byte	1,5,17,7,9
+	.half	.L38-.L47
+	.byte	3,12,1,5,8,9
+	.half	.L328-.L38
+	.byte	1,5,17,9
+	.half	.L329-.L328
+	.byte	1,5,33,9
+	.half	.L330-.L329
+	.byte	1,5,31,9
+	.half	.L331-.L330
+	.byte	1,5,21,9
+	.half	.L332-.L331
+	.byte	1,5,31,9
+	.half	.L333-.L332
+	.byte	1,5,20,9
+	.half	.L334-.L333
+	.byte	1,5,5,9
+	.half	.L335-.L334
+	.byte	1,5,17,7,9
+	.half	.L336-.L335
+	.byte	3,2,1,5,7,9
+	.half	.L337-.L336
+	.byte	1,5,17,9
+	.half	.L338-.L337
+	.byte	1,5,27,9
+	.half	.L339-.L338
+	.byte	1,5,20,9
+	.half	.L340-.L339
+	.byte	1,5,25,9
+	.half	.L341-.L340
+	.byte	3,1,1,5,23,9
+	.half	.L342-.L341
+	.byte	1,5,13,9
+	.half	.L343-.L342
+	.byte	1,5,23,9
+	.half	.L344-.L343
+	.byte	1,5,28,9
+	.half	.L345-.L344
+	.byte	1,5,41,9
+	.half	.L123-.L345
+	.byte	1,5,21,9
+	.half	.L53-.L123
+	.byte	3,2,1,5,12,9
+	.half	.L346-.L53
+	.byte	1,5,21,9
+	.half	.L347-.L346
+	.byte	1,5,24,9
+	.half	.L348-.L347
+	.byte	1,5,12,9
+	.half	.L349-.L348
+	.byte	1,5,47,7,9
+	.half	.L350-.L349
+	.byte	1,5,38,9
+	.half	.L351-.L350
+	.byte	1,5,47,9
+	.half	.L352-.L351
+	.byte	1,5,50,9
+	.half	.L353-.L352
+	.byte	1,5,56,9
+	.half	.L354-.L353
+	.byte	1,5,73,7,9
+	.half	.L355-.L354
+	.byte	1,5,64,9
+	.half	.L356-.L355
+	.byte	1,5,73,9
+	.half	.L357-.L356
+	.byte	1,5,76,9
+	.half	.L358-.L357
+	.byte	1,5,80,9
+	.half	.L359-.L358
+	.byte	1,5,21,7,9
+	.half	.L360-.L359
+	.byte	3,2,1,5,11,9
+	.half	.L361-.L360
+	.byte	1,5,21,9
+	.half	.L362-.L361
+	.byte	1,5,24,9
+	.half	.L363-.L362
+	.byte	1,5,11,9
+	.half	.L364-.L363
+	.byte	3,1,1,5,43,9
+	.half	.L54-.L364
+	.byte	3,123,1,5,39,9
+	.half	.L52-.L54
+	.byte	1,5,41,9
+	.half	.L365-.L52
+	.byte	1,5,19,7,9
+	.half	.L57-.L365
+	.byte	3,8,1,5,7,9
+	.half	.L366-.L57
+	.byte	1,5,22,7,9
+	.half	.L367-.L366
+	.byte	3,2,1,5,23,9
+	.half	.L60-.L367
+	.byte	3,2,1,5,14,9
+	.half	.L368-.L60
+	.byte	1,5,23,9
+	.half	.L369-.L368
+	.byte	1,5,26,9
+	.half	.L370-.L369
+	.byte	1,5,11,9
+	.half	.L371-.L370
+	.byte	1,5,23,7,9
+	.half	.L372-.L371
+	.byte	3,2,1,5,13,9
+	.half	.L373-.L372
+	.byte	1,5,23,9
+	.half	.L374-.L373
+	.byte	1,5,30,9
+	.half	.L375-.L374
+	.byte	1,5,27,9
+	.half	.L376-.L375
+	.byte	1,5,13,9
+	.half	.L377-.L376
+	.byte	3,1,1,5,21,9
+	.half	.L61-.L377
+	.byte	3,2,1,5,11,9
+	.half	.L378-.L61
+	.byte	1,5,21,9
+	.half	.L379-.L378
+	.byte	1,5,33,9
+	.half	.L380-.L379
+	.byte	1,5,25,9
+	.half	.L381-.L380
+	.byte	1,5,24,9
+	.half	.L382-.L381
+	.byte	3,121,1,5,16,9
+	.half	.L59-.L382
+	.byte	1,5,22,9
+	.half	.L383-.L59
+	.byte	1,5,7,7,9
+	.half	.L58-.L383
+	.byte	3,126,1,5,22,9
+	.half	.L51-.L58
+	.byte	3,14,1,5,13,9
+	.half	.L384-.L51
+	.byte	1,5,22,9
+	.half	.L385-.L384
+	.byte	1,5,38,9
+	.half	.L386-.L385
+	.byte	1,5,36,9
+	.half	.L387-.L386
+	.byte	1,5,26,9
+	.half	.L388-.L387
+	.byte	1,5,36,9
+	.half	.L389-.L388
+	.byte	1,5,25,9
+	.half	.L390-.L389
+	.byte	1,5,10,9
+	.half	.L391-.L390
+	.byte	1,5,25,7,9
+	.half	.L392-.L391
+	.byte	3,2,1,5,23,9
+	.half	.L393-.L392
+	.byte	1,5,13,9
+	.half	.L394-.L393
+	.byte	1,5,23,9
+	.half	.L395-.L394
+	.byte	1,5,28,9
+	.half	.L124-.L395
+	.byte	1,5,34,9
+	.half	.L396-.L124
+	.byte	1,5,21,9
+	.half	.L66-.L396
+	.byte	3,2,1,5,12,9
+	.half	.L397-.L66
+	.byte	1,5,21,9
+	.half	.L398-.L397
+	.byte	1,5,24,9
+	.half	.L399-.L398
+	.byte	1,5,12,9
+	.half	.L400-.L399
+	.byte	1,5,47,7,9
+	.half	.L401-.L400
+	.byte	1,5,38,9
+	.half	.L402-.L401
+	.byte	1,5,47,9
+	.half	.L403-.L402
+	.byte	1,5,50,9
+	.half	.L404-.L403
+	.byte	1,5,56,9
+	.half	.L405-.L404
+	.byte	1,5,73,7,9
+	.half	.L406-.L405
+	.byte	1,5,64,9
+	.half	.L407-.L406
+	.byte	1,5,73,9
+	.half	.L408-.L407
+	.byte	1,5,76,9
+	.half	.L409-.L408
+	.byte	1,5,80,9
+	.half	.L410-.L409
+	.byte	1,5,21,7,9
+	.half	.L411-.L410
+	.byte	3,2,1,5,11,9
+	.half	.L412-.L411
+	.byte	1,5,21,9
+	.half	.L413-.L412
+	.byte	1,5,24,9
+	.half	.L414-.L413
+	.byte	1,5,11,9
+	.half	.L415-.L414
+	.byte	3,1,1,5,36,9
+	.half	.L67-.L415
+	.byte	3,123,1,5,34,9
+	.half	.L65-.L67
+	.byte	1,5,7,7,9
+	.half	.L70-.L65
+	.byte	3,8,1,5,19,7,9
+	.half	.L416-.L70
+	.byte	3,2,1,5,9,9
+	.half	.L125-.L416
+	.byte	1,5,19,9
+	.half	.L417-.L125
+	.byte	1,5,29,9
+	.half	.L418-.L417
+	.byte	1,5,22,9
+	.half	.L419-.L418
+	.byte	1,5,17,9
+	.half	.L63-.L419
+	.byte	3,3,1,5,8,9
+	.half	.L420-.L63
+	.byte	1,5,17,9
+	.half	.L421-.L420
+	.byte	1,5,32,9
+	.half	.L422-.L421
+	.byte	1,5,22,9
+	.half	.L423-.L422
+	.byte	1,5,32,9
+	.half	.L424-.L423
+	.byte	1,5,5,9
+	.half	.L425-.L424
+	.byte	1,5,8,7,9
+	.half	.L426-.L425
+	.byte	3,2,1,5,18,9
+	.half	.L427-.L426
+	.byte	1,5,16,9
+	.half	.L428-.L427
+	.byte	1,5,8,9
+	.half	.L429-.L428
+	.byte	3,1,1,5,21,9
+	.half	.L72-.L429
+	.byte	3,171,127,1,5,19,9
+	.half	.L28-.L72
+	.byte	1,5,3,7,9
+	.half	.L73-.L28
+	.byte	3,217,0,1,5,5,7,9
+	.half	.L430-.L73
+	.byte	3,2,1,5,14,9
+	.half	.L431-.L430
+	.byte	1,5,13,9
+	.half	.L432-.L431
+	.byte	1,5,1,9
+	.half	.L74-.L432
+	.byte	3,2,1,7,9
+	.half	.L92-.L74
+	.byte	0,1,1
+.L227:
+	.sdecl	'.debug_ranges',debug,cluster('FindBorder1')
+	.sect	'.debug_ranges'
+.L91:
+	.word	-1,.L78,0,.L92-.L78,0,0
 	.sdecl	'.debug_info',debug,cluster('LeftLine')
 	.sect	'.debug_info'
-.L33:
+.L93:
 	.word	193
 	.half	3
-	.word	.L34
+	.word	.L94
 	.byte	4,1
 	.byte	'../code/src/FindBorder.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1,2
-	.word	.L24
+	.word	.L79
 	.byte	3
-	.byte	'LeftLine',0,20,2,5
-	.word	.L59
+	.byte	'LeftLine',0,20,3,5
+	.word	.L114
 	.byte	1,5,3
 	.word	LeftLine
 	.byte	0
 	.sdecl	'.debug_abbrev',debug,cluster('LeftLine')
 	.sect	'.debug_abbrev'
-.L34:
+.L94:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
 	.sdecl	'.debug_info',debug,cluster('RightLine')
 	.sect	'.debug_info'
-.L35:
+.L95:
 	.word	194
 	.half	3
-	.word	.L36
+	.word	.L96
 	.byte	4,1
 	.byte	'../code/src/FindBorder.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1,2
-	.word	.L24
+	.word	.L79
 	.byte	3
-	.byte	'RightLine',0,20,2,26
-	.word	.L59
+	.byte	'RightLine',0,20,3,25
+	.word	.L114
 	.byte	1,5,3
 	.word	RightLine
 	.byte	0
 	.sdecl	'.debug_abbrev',debug,cluster('RightLine')
 	.sect	'.debug_abbrev'
-.L36:
+.L96:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('LeftLine_lost')
+	.sdecl	'.debug_info',debug,cluster('LeftLine1')
 	.sect	'.debug_info'
-.L37:
-	.word	198
+.L97:
+	.word	194
 	.half	3
-	.word	.L38
+	.word	.L98
 	.byte	4,1
 	.byte	'../code/src/FindBorder.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1,2
-	.word	.L24
+	.word	.L79
 	.byte	3
-	.byte	'LeftLine_lost',0,20,4,5
-	.word	.L59
+	.byte	'LeftLine1',0,20,5,6
+	.word	.L114
 	.byte	1,5,3
-	.word	LeftLine_lost
+	.word	LeftLine1
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('LeftLine_lost')
+	.sdecl	'.debug_abbrev',debug,cluster('LeftLine1')
 	.sect	'.debug_abbrev'
-.L38:
+.L98:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('RightLine_lost')
+	.sdecl	'.debug_info',debug,cluster('RightLine1')
 	.sect	'.debug_info'
-.L39:
-	.word	199
+.L99:
+	.word	195
 	.half	3
-	.word	.L40
+	.word	.L100
 	.byte	4,1
 	.byte	'../code/src/FindBorder.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1,2
-	.word	.L24
+	.word	.L79
 	.byte	3
-	.byte	'RightLine_lost',0,20,4,25
-	.word	.L59
+	.byte	'RightLine1',0,20,5,21
+	.word	.L114
 	.byte	1,5,3
-	.word	RightLine_lost
+	.word	RightLine1
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('RightLine_lost')
+	.sdecl	'.debug_abbrev',debug,cluster('RightLine1')
 	.sect	'.debug_abbrev'
-.L40:
+.L100:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
 	.sdecl	'.debug_info',debug,cluster('Original_RightLine')
 	.sect	'.debug_info'
-.L41:
+.L101:
 	.word	203
 	.half	3
-	.word	.L42
+	.word	.L102
 	.byte	4,1
 	.byte	'../code/src/FindBorder.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1,2
-	.word	.L24
+	.word	.L79
 	.byte	3
-	.byte	'Original_RightLine',0,20,3,5
-	.word	.L59
+	.byte	'Original_RightLine',0,20,4,5
+	.word	.L114
 	.byte	1,5,3
 	.word	Original_RightLine
 	.byte	0
 	.sdecl	'.debug_abbrev',debug,cluster('Original_RightLine')
 	.sect	'.debug_abbrev'
-.L42:
+.L102:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
 	.sdecl	'.debug_info',debug,cluster('Original_LeftLine')
 	.sect	'.debug_info'
-.L43:
+.L103:
 	.word	202
 	.half	3
-	.word	.L44
+	.word	.L104
 	.byte	4,1
 	.byte	'../code/src/FindBorder.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1,2
-	.word	.L24
+	.word	.L79
 	.byte	3
-	.byte	'Original_LeftLine',0,20,3,30
-	.word	.L59
+	.byte	'Original_LeftLine',0,20,4,29
+	.word	.L114
 	.byte	1,5,3
 	.word	Original_LeftLine
 	.byte	0
 	.sdecl	'.debug_abbrev',debug,cluster('Original_LeftLine')
 	.sect	'.debug_abbrev'
-.L44:
+.L104:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('Valid_Left')
+	.sdecl	'.debug_info',debug,cluster('ValidRow')
 	.sect	'.debug_info'
-.L45:
-	.word	195
+.L105:
+	.word	193
 	.half	3
-	.word	.L46
+	.word	.L106
 	.byte	4,1
 	.byte	'../code/src/FindBorder.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1,2
-	.word	.L24
+	.word	.L79
 	.byte	3
-	.byte	'Valid_Left',0,20,5,5
-	.word	.L52
+	.byte	'ValidRow',0,20,6,5
+	.word	.L108
 	.byte	1,5,3
-	.word	Valid_Left
+	.word	ValidRow
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('Valid_Left')
+	.sdecl	'.debug_abbrev',debug,cluster('ValidRow')
 	.sect	'.debug_abbrev'
-.L46:
-	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
-	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('Valid_Right')
-	.sect	'.debug_info'
-.L47:
-	.word	196
-	.half	3
-	.word	.L48
-	.byte	4,1
-	.byte	'../code/src/FindBorder.c',0
-	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
-	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1,2
-	.word	.L24
-	.byte	3
-	.byte	'Valid_Right',0,20,5,21
-	.word	.L52
-	.byte	1,5,3
-	.word	Valid_Right
-	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('Valid_Right')
-	.sect	'.debug_abbrev'
-.L48:
+.L106:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
 	.sdecl	'.debug_loc',debug,cluster('FindBorder')
 	.sect	'.debug_loc'
-.L22:
-	.word	-1,.L23,0,.L49-.L23
+.L75:
+	.word	-1,.L76,0,.L107-.L76
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L57:
-	.word	-1,.L23,.L62-.L23,.L63-.L23
-	.half	5
-	.byte	144,32,157,32,0
-	.word	.L6-.L23,.L64-.L23
-	.half	5
-	.byte	144,32,157,32,0
-	.word	.L10-.L23,.L9-.L23
-	.half	5
-	.byte	144,32,157,32,0
-	.word	0,0
-.L58:
-	.word	-1,.L23,.L65-.L23,.L2-.L23
+.L109:
+	.word	-1,.L76,.L115-.L76,.L107-.L76
 	.half	1
 	.byte	81
 	.word	0,0
-.L54:
-	.word	-1,.L23,.L61-.L23,.L2-.L23
+.L110:
+	.word	-1,.L76,.L116-.L76,.L117-.L76
 	.half	1
-	.byte	84
-	.word	0,0
-.L55:
-	.word	-1,.L23,.L56-.L23,.L2-.L23
+	.byte	95
+	.word	.L118-.L76,.L2-.L76
 	.half	1
 	.byte	82
 	.word	0,0
-.L53:
-	.word	-1,.L23,.L60-.L23,.L49-.L23
+	.sdecl	'.debug_loc',debug,cluster('FindBorder1')
+	.sect	'.debug_loc'
+.L77:
+	.word	-1,.L78,0,.L111-.L78
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L112:
+	.word	-1,.L78,.L119-.L78,.L111-.L78
 	.half	1
-	.byte	83
+	.byte	81
+	.word	0,0
+.L113:
+	.word	-1,.L78,.L120-.L78,.L30-.L78
+	.half	5
+	.byte	144,32,157,32,0
+	.word	.L121-.L78,.L122-.L78
+	.half	1
+	.byte	95
+	.word	.L49-.L78,.L38-.L78
+	.half	1
+	.byte	95
+	.word	.L123-.L78,.L51-.L78
+	.half	5
+	.byte	144,32,157,32,0
+	.word	.L124-.L78,.L125-.L78
+	.half	1
+	.byte	95
 	.word	0,0
 	.sdecl	'.debug_frame',debug
 	.sect	'.debug_frame'
-.L168:
+.L433:
 	.word	48
 	.word	-1
 	.byte	3,0,2,1,27,12,26,0,8,26,8,27,8,30,8,29,8,28,8,16,8,17,8,24,8,25,8,31,8,32,8,33,8,34,8,35,8,36,8,37,8,38
@@ -20950,6 +22023,11 @@ Valid_Right:	.type	object
 	.sdecl	'.debug_frame',debug,cluster('FindBorder')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L168,.L23,.L49-.L23
+	.word	.L433,.L76,.L107-.L76
+	.byte	8,19,8,20,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('FindBorder1')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L433,.L78,.L111-.L78
 	.byte	8,19,8,20,8,21,8,22,8,23,0,0
 	; Module end

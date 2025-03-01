@@ -102,6 +102,18 @@
 #include "servo.h"
 #include "vector.h"
 #include "vofa.h"
+#include "Correct.h"
+#include "GetSlope.h"
+#include "CommonFunction.h"
+#include "JudgeCross.h"
+#include "JudgeRamp.h"
+#include "JudgeSnakeBending.h"
+#include "JudgeStartLine.h"
+#include "JudgeRoundabout.h"
+#include "JudgeRoadBarrier.h"
+#include "GetVariance.h"
+#include "RoadJudge.h"
+#include "GetDistance.h"
 //=====================================================”√ªß≤„======================================================
 
 #endif

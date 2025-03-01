@@ -1,66 +1,175 @@
 #include "zf_common_headfile.h"
-int LeftLine[ROW] = {0}, RightLine[ROW] = {0};	  // 左右边界存储数组
-int Original_RightLine[ROW], Original_LeftLine[ROW];
-int LeftLine_lost[ROW], RightLine_lost[ROW];
-int Valid_Left = 0, Valid_Right = 0;
 
-/*
- 刘沐：需要自己写一份找边界函数，边界尽量放在LeftLine[ROW]和RightLine[ROW]中，加油捏
- */
-/*
- * FindBorder.c
- * Created on: 2024年10月11日
- * Author: 刘沐
+int LeftLine[ROW] = {0},RightLine[ROW] = {0};
+int Original_RightLine[ROW],Original_LeftLine[ROW];
+int  LeftLine1[ROW],RightLine1[ROW];
+int ValidRow=0;
+/**
+ * @brief 行扫描法找边界
  */
 void FindBorder(void)
 {
-	Valid_Left	= 0;
-	Valid_Right = 0;
-	for (int row = ROW - 1; row >= RealEndRow; row--)	 // 遍历每一行
-	{
-		int leftFound  = 0;	   // 左边界是否找到
-		int rightFound = 0;	   // 右边界是否找到
-
-		// 向左寻找
-		for (int col = Maxcolum; col >= 2; col--) {
-			if (videoData[row][col] == WHITE && videoData[row][col - 1] == BLACK
-				&& videoData[row][col - 2] == BLACK)	// 找到黑黑白
-			{
-				LeftLine[row]	   = col;	 // 左边界位置
-				leftFound		   = 1;		 // 标记找到左边界
-				LeftLine_lost[row] = 0;
-				break;	  // 退出循环，左边界已找到
-			} else if (col < 2) {
-				LeftLine[row]	   = col;
-				LeftLine_lost[row] = 1;
-				break;
-			}
-			Original_LeftLine[row] = LeftLine[row];	   // 原始左边界
-		}
-
-		// 向右寻找
-		for (int col = Maxcolum; col <= COL - 1 - 2; col++) {
-			if (videoData[row][col] == WHITE && videoData[row][col + 1] == BLACK
-				&& videoData[row][col + 2] == BLACK)	// 找到白黑黑
-			{
-				RightLine[row]		= col;	  // 右边界位置
-				rightFound			= 1;	  // 标记找到右边界
-				RightLine_lost[row] = 0;
-				break;	  // 退出循环，右边界已找到
-			} else if (col > COL - 1 - 2) {
-				RightLine[row]		= col;
-				RightLine_lost[row] = 1;
-				break;
-			}
-			Original_RightLine[row] = RightLine[row];	 // 原始右边界
-		}
-
-		// 如果左右边界都找到了，统计为有效行
-		if (leftFound) {
-			Valid_Left++;
-		}
-		if (rightFound) {
-			Valid_Right++;
-		}
-	}
+  int i,j;
+  for (i = ROW-1; i > ValidRow-1; i--)		//寻找边线，中线
+  {
+    for (j = Maxcolumn; j > 1 ; j--)
+    {
+      if(videoData[i][j-2] == 0 && videoData[i][j-1] == 0 && videoData[i][j] == 0)
+      {
+        LeftLine[i] = j+1;
+        break;
+      }
+      //else if(j == 2) LeftLine[i] = 0;
+    }
+    
+    if(j==1)
+    {
+      for(;j>-1;j--)
+      {
+        if(videoData[i][j]==0)
+        {
+          LeftLine[i] = j+1;
+          break;
+        }
+      }
+    }
+    if(j==-1) LeftLine[i] =0;
+    
+    for (j = Maxcolumn; j < COLUMN-2 ; j++)
+    {
+      if(videoData[i][j+2] == 0 && videoData[i][j+1] == 0 && videoData[i][j] == 0)
+      {
+        RightLine[i] = j-1;
+        break;
+      }
+      //else if(j == COLUMN - 3) RightLine[i] = COLUMN -1;
+    } 
+    
+    if(j==COLUMN-2)
+    {
+      for(;j<COLUMN;j++)
+      {
+        if(videoData[i][j]==0)
+        {
+          RightLine[i] = j-1;
+          break;
+        }
+      }
+    }
+    if(j==COLUMN) RightLine[i] = COLUMN-1;
+    
+    Original_LeftLine[i] = LeftLine[i];
+    Original_RightLine[i] = RightLine[i];
+  }
 }
+
+/**
+ * @brief 领域法找边界
+ */
+void FindBorder1(void)
+{
+  int i=0,j=0;
+  /*****************************
+  最近一行的边线
+  *****************************/
+  LeftLine1[ROW-1]=0;
+  RightLine1[ROW-1]=COLUMN-1;
+
+  /***********************
+  根据上一行边线位置寻线
+  ***********************/
+  for(i=ROW-2;i>-1;i--)
+  {
+    //上一个左边界的后一个点是黑点，则往右找
+    if(videoData[i][LeftLine1[i+1]]==0)
+    {
+      for(j=LeftLine1[i+1]+1;j<COLUMN-2;j++)
+      {
+        if(videoData[i][j+2] == 1 && videoData[i][j+1] == 1 && videoData[i][j] == 1)
+        {
+          LeftLine1[i]=j;
+          break;
+        }
+      }
+      if(j>=COLUMN-2)
+        LeftLine1[i]=COLUMN/2;
+    }
+    //上一个左边界的后一个点是白点，则往左找
+    else if(videoData[i][LeftLine1[i+1]]==1)
+    {    
+      LeftLine1[i]=0;
+      for(j=LeftLine1[i+1]-1;j>1;j--)
+      {
+        if(videoData[i][j-2] == 0 && videoData[i][j-1] == 0 && videoData[i][j] == 0)
+        {
+          LeftLine1[i]=j+1;
+          break;
+        }
+      }
+      if(j==1)
+      {
+        for(;j>-1;j--)
+        {
+          if(videoData[i][j]==0)
+          {
+            LeftLine1[i] = j+1;
+            break;
+          }
+          LeftLine1[i] = 0;
+        }
+      }
+    }
+    //上一个右边界的后一个点是白点，则往右找
+    if(videoData[i][RightLine1[i+1]]==1)
+    {
+      RightLine1[i]=COLUMN-1;
+      for(j=RightLine1[i+1]+1;j<COLUMN-2;j++)
+      {
+        if(videoData[i][j+2] == 0 && videoData[i][j+1] == 0 && videoData[i][j] == 0)
+        {
+          RightLine1[i]=j;
+          break;
+        }
+      }
+      if(j==COLUMN-2)
+      {
+        for(;j<COLUMN;j++)
+        {
+          if(videoData[i][j]==0)
+          {
+            RightLine1[i] = j-1;
+            break;
+          }
+          RightLine1[i] = COLUMN-1;
+        }
+      }
+    }
+    //上一个右边界的后一个点是黑点，则往左找
+    else if(videoData[i][RightLine1[i+1]]==0)
+    {      
+      for(j=RightLine1[i+1]-1;j>1;j--)
+      {
+        if(videoData[i][j-2] == 1 && videoData[i][j-1] == 1 && videoData[i][j] == 1)
+        {
+          RightLine1[i]=j;
+          break;
+        }
+      }
+      if(j<=1)
+      {
+        RightLine1[i]=COLUMN/2;
+      }
+    }
+    if(LeftLine1[i]>=RightLine1[i])
+    {
+       ValidRow=i+1;
+       break;
+    }
+    
+  }
+  if(i<=0)
+  {
+    ValidRow=0;
+  }
+}
+
