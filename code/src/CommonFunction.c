@@ -22,6 +22,7 @@ int GetMax(int x1, int x2)
 	else
 		return x2;
 }
+
 // 找两个数的小值
 int GetMin(int x1, int x2)
 {
@@ -30,6 +31,7 @@ int GetMin(int x1, int x2)
 	else
 		return x1;
 }
+
 // 检验截止行是否在所给范围
 int AssertEndRow(int endrow, int min, int max)
 {
@@ -39,6 +41,7 @@ int AssertEndRow(int endrow, int min, int max)
 		return 0;
 	}
 }
+
 // 判断两点之间的距离是否在一定范围
 int AssertLength(int x1, int y1, int x2, int y2, int min, int max, float* length)
 {
@@ -78,6 +81,7 @@ float LimitBothSides(float a, float min, float max)
 	else
 		return a;
 }
+
 /************************************************************************/
 /*
  *函数名：void Draw_a_Line(int Start_Row,int End_Row,int line[ROW])
