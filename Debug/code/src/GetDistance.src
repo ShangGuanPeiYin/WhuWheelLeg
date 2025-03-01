@@ -1,6 +1,6 @@
 	; Module start
 	.compiler_version	"TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler v1.1r8 Build 22011964"
-	.compiler_invocation	"ctc -f cc17160a --dep-file=code/src/GetDistance.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc26xb -D__CPU_TC26XB__ --core=tc1.6.x --fp-model=+float -D__CPU__=tc26xb -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\code -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\code\\\\inc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Configurations -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B\\\\_Reg -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If\\\\Ccu6If -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\StdIf -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Math -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Asc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6 -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Timer -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\CStart -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Irq -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Dma -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12 -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\IncrEnc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\SpiMaster -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Adc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Impl -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib\\\\DataHandling -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_PinMap -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_common -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_components -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_device -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_driver -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\user -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o code/src/GetDistance.src ../code/src/GetDistance.c"
+	.compiler_invocation	"ctc -f cc26860a --dep-file=code/src/GetDistance.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc26xb -D__CPU_TC26XB__ --core=tc1.6.x --fp-model=+float -D__CPU__=tc26xb -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\code -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\code\\\\inc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Configurations -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B\\\\_Reg -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If\\\\Ccu6If -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\StdIf -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Math -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Asc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6 -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Timer -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\CStart -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Irq -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Dma -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12 -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\IncrEnc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\SpiMaster -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Adc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Impl -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib\\\\DataHandling -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_PinMap -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_common -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_components -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_device -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_driver -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\user -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o code/src/GetDistance.src ../code/src/GetDistance.c"
 	.compiler_name		"ctc"
 	;source	'../code/src/GetDistance.c'
 
@@ -794,7 +794,7 @@ TurningRadius:	.type	object
 	.sdecl	'.debug_info',debug
 	.sect	'.debug_info'
 .L52:
-	.word	147340
+	.word	147198
 	.half	3
 	.word	.L53
 	.byte	4
@@ -20208,7 +20208,7 @@ TurningRadius:	.type	object
 	.byte	'RealMidLine1',0,55,7,14
 	.word	143998
 	.byte	1,1,37
-	.byte	'RealMidLine2',0,55,7,34
+	.byte	'RealMidLine2',0,55,7,37
 	.word	143998
 	.byte	1,1,10
 	.byte	'_Vector3fType',0,56,6,16,12,13
@@ -20449,48 +20449,18 @@ TurningRadius:	.type	object
 	.byte	4,2,35,24,0,31
 	.byte	'ServoType',0,59,40,3
 	.word	145195
-	.byte	20,60,5,9,36,13
-	.byte	'target',0
-	.word	232
-	.byte	4,2,35,0,13
-	.byte	'ek',0
-	.word	232
-	.byte	4,2,35,4,13
-	.byte	'ek1',0
-	.word	232
-	.byte	4,2,35,8,13
-	.byte	'ek2',0
-	.word	232
-	.byte	4,2,35,12,13
-	.byte	'kp',0
-	.word	232
-	.byte	4,2,35,16,13
-	.byte	'ki',0
-	.word	232
-	.byte	4,2,35,20,13
-	.byte	'kd',0
-	.word	232
-	.byte	4,2,35,24,13
-	.byte	'integral',0
-	.word	232
-	.byte	4,2,35,28,13
-	.byte	'output',0
-	.word	232
-	.byte	4,2,35,32,0,31
-	.byte	'PID',0,60,14,2
-	.word	145368
-	.byte	15,61,29,9,1,16
+	.byte	15,60,29,9,1,16
 	.byte	'Left',0,0,16
 	.byte	'Right',0,1,0,31
-	.byte	'LegNum',0,61,29,30
-	.word	145510
+	.byte	'LegNum',0,60,29,30
+	.word	145368
 	.byte	38
-	.byte	'_BldcMode',0,61,32,14,1,16
+	.byte	'_BldcMode',0,60,32,14,1,16
 	.byte	'CURRENT',0,0,16
 	.byte	'RPM',0,1,16
 	.byte	'POSITION',0,2,0,31
-	.byte	'BldcMode',0,61,36,3
-	.word	145546
+	.byte	'BldcMode',0,60,36,3
+	.word	145404
 	.byte	14
 	.word	232
 	.byte	14
@@ -20498,18 +20468,18 @@ TurningRadius:	.type	object
 	.byte	14
 	.word	32471
 	.byte	10
-	.byte	'_Value',0,61,39,16,12,13
+	.byte	'_Value',0,60,39,16,12,13
 	.byte	'speed',0
-	.word	145606
+	.word	145464
 	.byte	4,2,35,0,13
 	.byte	'angle',0
-	.word	145611
+	.word	145469
 	.byte	4,2,35,4,13
 	.byte	'current',0
-	.word	145616
+	.word	145474
 	.byte	2,2,35,8,0,31
-	.byte	'ValueType',0,61,43,3
-	.word	145621
+	.byte	'ValueType',0,60,43,3
+	.word	145479
 	.byte	14
 	.word	1010
 	.byte	14
@@ -20521,27 +20491,27 @@ TurningRadius:	.type	object
 	.byte	14
 	.word	452
 	.byte	10
-	.byte	'_PulseType',0,61,46,16,16,13
+	.byte	'_PulseType',0,60,46,16,16,13
 	.byte	'pulseRead',0
-	.word	145699
+	.word	145557
 	.byte	2,2,35,0,13
 	.byte	'pulseLast',0
-	.word	145704
+	.word	145562
 	.byte	2,2,35,2,13
 	.byte	'Distanse',0
-	.word	145709
+	.word	145567
 	.byte	2,2,35,4,13
 	.byte	'pulseTotal',0
-	.word	145714
+	.word	145572
 	.byte	4,2,35,6,13
 	.byte	'pulseLock',0
-	.word	145719
+	.word	145577
 	.byte	4,2,35,10,0,31
-	.byte	'PulseType',0,61,53,3
-	.word	145724
-	.byte	20,61,56,9,12,13
+	.byte	'PulseType',0,60,53,3
+	.word	145582
+	.byte	20,60,56,9,12,13
 	.byte	'direct',0
-	.word	145510
+	.word	145368
 	.byte	1,2,35,0,13
 	.byte	'sign',0
 	.word	33969
@@ -20552,21 +20522,21 @@ TurningRadius:	.type	object
 	.byte	'currentLimit',0
 	.word	232
 	.byte	4,2,35,6,0,31
-	.byte	'MotorParamType',0,61,62,3
-	.word	145854
+	.byte	'MotorParamType',0,60,62,3
+	.word	145712
 	.byte	7
-	.byte	'_Bool',0,1,2,20,61,65,9,12,13
+	.byte	'_Bool',0,1,2,20,60,65,9,12,13
 	.byte	'isStuck',0
-	.word	145959
+	.word	145817
 	.byte	1,2,35,0,13
 	.byte	'currentLimitFlag',0
-	.word	145959
+	.word	145817
 	.byte	1,2,35,1,13
 	.byte	'rpmLimitFlag',0
-	.word	145959
+	.word	145817
 	.byte	1,2,35,2,13
 	.byte	'posLimitFlag',0
-	.word	145959
+	.word	145817
 	.byte	1,2,35,3,13
 	.byte	'maxCurrent',0
 	.word	232
@@ -20574,42 +20544,42 @@ TurningRadius:	.type	object
 	.byte	'maxRPM',0
 	.word	232
 	.byte	4,2,35,8,0,31
-	.byte	'MotorLimit',0,61,75,3
-	.word	145968
+	.byte	'MotorLimit',0,60,75,3
+	.word	145826
 	.byte	10
-	.byte	'_Bldc',0,61,78,16,240,1,13
+	.byte	'_Bldc',0,60,78,16,240,1,13
 	.byte	'enable',0
-	.word	145959
+	.word	145817
 	.byte	1,2,35,0,13
 	.byte	'begin',0
-	.word	145959
+	.word	145817
 	.byte	1,2,35,1,13
 	.byte	'setZero',0
-	.word	145959
+	.word	145817
 	.byte	1,2,35,2,13
 	.byte	'mode',0
-	.word	145546
+	.word	145404
 	.byte	1,2,35,3,13
 	.byte	'valueLast',0
-	.word	145621
+	.word	145479
 	.byte	12,2,35,4,13
 	.byte	'valueNow',0
-	.word	145621
+	.word	145479
 	.byte	12,2,35,16,13
 	.byte	'valueSet',0
-	.word	145621
+	.word	145479
 	.byte	12,2,35,28,13
 	.byte	'reachTime',0
 	.word	232
 	.byte	4,2,35,40,13
 	.byte	'pulse',0
-	.word	145724
+	.word	145582
 	.byte	16,2,35,44,13
 	.byte	'param',0
-	.word	145854
+	.word	145712
 	.byte	12,2,35,60,13
 	.byte	'limit',0
-	.word	145968
+	.word	145826
 	.byte	12,2,35,72,13
 	.byte	'posPID',0
 	.word	144789
@@ -20620,10 +20590,10 @@ TurningRadius:	.type	object
 	.byte	'currentPID',0
 	.word	144789
 	.byte	52,3,35,188,1,0,31
-	.byte	'BldcType',0,61,91,3
-	.word	146116
+	.byte	'BldcType',0,60,91,3
+	.word	145974
 	.byte	10
-	.byte	'_IMUParam',0,62,9,16,48,13
+	.byte	'_IMUParam',0,61,9,16,48,13
 	.byte	'accel',0
 	.word	144054
 	.byte	12,2,35,0,13
@@ -20642,29 +20612,29 @@ TurningRadius:	.type	object
 	.byte	'yaw',0
 	.word	232
 	.byte	4,2,35,44,0,31
-	.byte	'IMUParam',0,62,18,3
-	.word	146381
+	.byte	'IMUParam',0,61,18,3
+	.word	146239
 	.byte	10
-	.byte	'_Imu',0,62,20,16,152,1,13
+	.byte	'_Imu',0,61,20,16,152,1,13
 	.byte	'dataOri',0
-	.word	146381
+	.word	146239
 	.byte	48,2,35,0,13
 	.byte	'dataRaw',0
-	.word	146381
+	.word	146239
 	.byte	48,2,35,48,13
 	.byte	'dataSet',0
-	.word	146381
+	.word	146239
 	.byte	48,2,35,96,13
 	.byte	'G',0
 	.word	232
 	.byte	4,3,35,144,1,13
 	.byte	'calibration_flag',0
-	.word	145959
+	.word	145817
 	.byte	1,3,35,148,1,0,31
-	.byte	'IMUType',0,62,28,3
-	.word	146499
+	.byte	'IMUType',0,61,28,3
+	.word	146357
 	.byte	10
-	.byte	'_Attitude_',0,62,41,16,12,13
+	.byte	'_Attitude_',0,61,41,16,12,13
 	.byte	'x',0
 	.word	232
 	.byte	4,2,35,0,13
@@ -20674,27 +20644,27 @@ TurningRadius:	.type	object
 	.byte	'z',0
 	.word	232
 	.byte	4,2,35,8,0,31
-	.byte	'_Attitude',0,62,45,3
-	.word	146617
+	.byte	'_Attitude',0,61,45,3
+	.word	146475
 	.byte	3
 	.word	145195
 	.byte	3
-	.word	146116
+	.word	145974
 	.byte	3
 	.word	318
 	.byte	10
-	.byte	'_leg',0,63,18,16,216,1,13
+	.byte	'_leg',0,62,18,16,216,1,13
 	.byte	'num',0
-	.word	145510
+	.word	145368
 	.byte	1,2,35,0,13
 	.byte	'front',0
-	.word	146685
+	.word	146543
 	.byte	4,2,35,4,13
 	.byte	'behind',0
-	.word	146685
+	.word	146543
 	.byte	4,2,35,8,13
 	.byte	'wheel',0
-	.word	146690
+	.word	146548
 	.byte	4,2,35,12,13
 	.byte	'angle1Set',0
 	.word	232
@@ -20718,67 +20688,67 @@ TurningRadius:	.type	object
 	.word	232
 	.byte	4,2,35,56,13
 	.byte	'RunTime',0
-	.word	146695
+	.word	146553
 	.byte	4,2,35,60,13
 	.byte	'motion',0
 	.word	144580
 	.byte	152,1,2,35,64,0,31
-	.byte	'LegType',0,63,38,3
-	.word	146700
+	.byte	'LegType',0,62,38,3
+	.word	146558
 	.byte	38
-	.byte	'StateEnum',0,64,8,6,1,16
+	.byte	'StateEnum',0,63,8,6,1,16
 	.byte	'StatePreparing',0,0,16
 	.byte	'StateProcessing',0,1,16
 	.byte	'StateEnd',0,2,0,10
-	.byte	'_Pipeline',0,64,15,16,2,13
+	.byte	'_Pipeline',0,63,15,16,2,13
 	.byte	'isRun',0
-	.word	145959
+	.word	145817
 	.byte	1,2,35,0,13
 	.byte	'state',0
-	.word	146947
+	.word	146805
 	.byte	1,2,35,1,0,31
-	.byte	'PipelineType',0,64,18,3
-	.word	147009
+	.byte	'PipelineType',0,63,18,3
+	.word	146867
 	.byte	18,40
 	.word	144124
 	.byte	19,4,0,18,20
 	.word	232
 	.byte	19,4,0,10
-	.byte	'_JumpLineType',0,64,20,16,64,13
+	.byte	'_JumpLineType',0,63,20,16,64,13
 	.byte	'Pos',0
-	.word	147076
+	.word	146934
 	.byte	40,2,35,0,13
 	.byte	'reachTime',0
-	.word	147085
+	.word	146943
 	.byte	20,2,35,40,13
 	.byte	'Lerp',0
-	.word	145959
+	.word	145817
 	.byte	1,2,35,60,0,31
-	.byte	'JumpLineType',0,64,24,3
-	.word	147094
+	.byte	'JumpLineType',0,63,24,3
+	.word	146952
 .L97:
 	.byte	18,144,3
 	.word	232
 	.byte	19,99,0,37
 	.byte	'RealMidSlope',0,21,7,15
-	.word	147181
+	.word	147039
 	.byte	1,1,37
-	.byte	'InflexionFar',0,65,6,26
+	.byte	'InflexionFar',0,64,6,27
 	.word	452
 	.byte	1,1,37
-	.byte	'SnakeFlag1',0,66,7,12
+	.byte	'SnakeFlag1',0,65,7,12
 	.word	452
 	.byte	1,1,37
-	.byte	'OutStartLineRow',0,67,8,12
+	.byte	'OutStartLineRow',0,66,8,12
 	.word	452
 	.byte	1,1,37
-	.byte	'MidLineSlopeVariance',0,68,11,15
+	.byte	'MidLineSlopeVariance',0,67,11,15
 	.word	232
 	.byte	1,1,18,36
 	.word	452
 	.byte	19,8,0,37
-	.byte	'RoadFlag',0,68,12,12
-	.word	147315
+	.byte	'RoadFlag',0,67,12,12
+	.word	147173
 	.byte	1,1,0
 	.sdecl	'.debug_abbrev',debug
 	.sect	'.debug_abbrev'
@@ -20897,7 +20867,6 @@ TurningRadius:	.type	object
 	.byte	'MasterCtrl.h',0,3,0,0
 	.byte	'Pid.h',0,3,0,0
 	.byte	'Servo.h',0,3,0,0
-	.byte	'beiyoupid.h',0,3,0,0
 	.byte	'bldc.h',0,3,0,0
 	.byte	'imu.h',0,3,0,0
 	.byte	'leg.h',0,3,0,0
@@ -20930,7 +20899,7 @@ TurningRadius:	.type	object
 	.byte	'row1',0,1,16,29
 	.word	.L86,.L87
 	.byte	4
-	.byte	'row2',0,1,16,38
+	.byte	'row2',0,1,16,39
 	.word	.L86,.L88
 	.byte	5
 	.word	.L46,.L85
@@ -20951,71 +20920,71 @@ TurningRadius:	.type	object
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/src/GetDistance.c',0,0,0,0,0
 .L120:
-	.byte	5,31,7,0,5,2
+	.byte	5,30,7,0,5,2
 	.word	.L46
-	.byte	3,17,1,5,19,9
+	.byte	3,17,1,5,18,9
 	.half	.L121-.L46
-	.byte	1,5,31,9
+	.byte	1,5,30,9
 	.half	.L122-.L121
-	.byte	1,5,50,9
+	.byte	1,5,51,9
 	.half	.L123-.L122
-	.byte	1,5,38,9
+	.byte	1,5,39,9
 	.half	.L124-.L123
-	.byte	1,5,50,9
+	.byte	1,5,51,9
 	.half	.L125-.L124
 	.byte	1,5,37,9
 	.half	.L126-.L125
-	.byte	1,5,27,9
+	.byte	1,5,74,9
 	.half	.L127-.L126
-	.byte	3,1,1,5,15,9
+	.byte	1,5,62,9
 	.half	.L128-.L127
-	.byte	1,5,27,9
+	.byte	1,5,74,9
 	.half	.L129-.L128
-	.byte	1,5,46,9
+	.byte	1,5,95,9
 	.half	.L130-.L129
-	.byte	1,5,34,9
+	.byte	1,5,83,9
 	.half	.L131-.L130
-	.byte	1,5,46,9
+	.byte	1,5,95,9
 	.half	.L132-.L131
-	.byte	1,5,33,9
+	.byte	1,5,81,9
 	.half	.L133-.L132
-	.byte	1,5,29,9
+	.byte	1,5,23,9
 	.half	.L134-.L133
-	.byte	3,1,1,5,17,9
+	.byte	3,1,1,5,11,9
 	.half	.L135-.L134
-	.byte	1,5,29,9
+	.byte	1,5,23,9
 	.half	.L136-.L135
-	.byte	1,5,48,9
+	.byte	1,5,44,9
 	.half	.L137-.L136
-	.byte	1,5,36,9
+	.byte	1,5,32,9
 	.half	.L138-.L137
-	.byte	1,5,48,9
+	.byte	1,5,44,9
 	.half	.L139-.L138
-	.byte	1,5,35,9
+	.byte	1,5,30,9
 	.half	.L140-.L139
-	.byte	1,5,31,9
+	.byte	1,5,67,9
 	.half	.L141-.L140
-	.byte	3,1,1,5,19,9
+	.byte	1,5,55,9
 	.half	.L142-.L141
-	.byte	1,5,31,9
+	.byte	1,5,67,9
 	.half	.L143-.L142
-	.byte	1,5,50,9
+	.byte	1,5,88,9
 	.half	.L144-.L143
-	.byte	1,5,38,9
+	.byte	1,5,76,9
 	.half	.L145-.L144
-	.byte	1,5,50,9
+	.byte	1,5,88,9
 	.half	.L146-.L145
-	.byte	1,5,37,9
+	.byte	1,5,74,9
 	.half	.L147-.L146
-	.byte	1,5,17,9
+	.byte	1,5,52,9
 	.half	.L148-.L147
-	.byte	1,5,15,9
+	.byte	1,5,8,9
 	.half	.L149-.L148
-	.byte	3,127,1,5,3,9
+	.byte	1,5,2,9
 	.half	.L99-.L149
-	.byte	3,126,1,5,1,9
+	.byte	3,127,1,5,1,9
 	.half	.L2-.L99
-	.byte	3,4,1,7,9
+	.byte	3,2,1,7,9
 	.half	.L59-.L2
 	.byte	0,1,1
 .L118:
@@ -21026,7 +20995,7 @@ TurningRadius:	.type	object
 	.sdecl	'.debug_info',debug,cluster('GetStraightDistance')
 	.sect	'.debug_info'
 .L60:
-	.word	363
+	.word	362
 	.half	3
 	.word	.L61
 	.byte	4,1
@@ -21037,33 +21006,33 @@ TurningRadius:	.type	object
 	.byte	2
 	.word	.L51
 	.byte	3
-	.byte	'GetStraightDistance',0,1,38,6,1,1,1
+	.byte	'GetStraightDistance',0,1,36,8,1,1,1
 	.word	.L48,.L89,.L47
 	.byte	4
 	.word	.L48,.L89
 	.byte	5
-	.byte	'i',0,1,40,7
+	.byte	'i',0,1,38,10
 	.word	.L86,.L90
 	.byte	5
-	.byte	'checkRow',0,1,42,7
+	.byte	'checkRow',0,1,40,10
 	.word	.L86,.L91
 	.byte	5
-	.byte	'checkRow1',0,1,42,16
+	.byte	'checkRow1',0,1,40,20
 	.word	.L86,.L92
 	.byte	6
-	.byte	'Flag11',0,1,44,14
+	.byte	'Flag11',0,1,42,13
 	.word	.L86
 	.byte	5,3
 	.word	_999001_Flag11
 	.byte	4
 	.word	.L93,.L29
 	.byte	5
-	.byte	'j',0,1,124,11
+	.byte	'j',0,1,107,8
 	.word	.L86,.L94
 	.byte	4
 	.word	.L33,.L32
 	.byte	5
-	.byte	'distance1',0,1,141,1,19
+	.byte	'distance1',0,1,120,13
 	.word	.L84,.L95
 	.byte	0,0,0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('GetStraightDistance')
@@ -21083,43 +21052,43 @@ TurningRadius:	.type	object
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/src/GetDistance.c',0,0,0,0,0
 .L153:
-	.byte	5,11,7,0,5,2
+	.byte	5,14,7,0,5,2
 	.word	.L48
-	.byte	3,45,1,5,18,9
+	.byte	3,43,1,5,17,9
 	.half	.L100-.L48
-	.byte	3,2,1,5,13,9
+	.byte	3,2,1,5,14,9
 	.half	.L154-.L100
-	.byte	3,2,1,5,21,9
+	.byte	3,2,1,5,23,9
 	.half	.L155-.L154
 	.byte	1,5,6,9
 	.half	.L101-.L155
-	.byte	3,2,1,5,15,9
+	.byte	3,2,1,5,17,9
 	.half	.L156-.L101
-	.byte	1,5,3,9
+	.byte	1,5,2,9
 	.half	.L157-.L156
-	.byte	1,5,5,7,9
+	.byte	1,5,3,7,9
 	.half	.L158-.L157
-	.byte	3,2,1,5,12,9
+	.byte	3,1,1,5,12,9
 	.half	.L159-.L158
-	.byte	1,5,11,9
+	.byte	1,5,10,9
 	.half	.L160-.L159
 	.byte	1,5,6,9
 	.half	.L3-.L160
-	.byte	3,3,1,5,16,9
+	.byte	3,3,1,5,17,9
 	.half	.L161-.L3
-	.byte	1,5,20,9
+	.byte	1,5,24,9
 	.half	.L162-.L161
-	.byte	1,5,26,9
+	.byte	1,5,31,9
 	.half	.L163-.L162
-	.byte	1,5,3,9
+	.byte	1,5,2,9
 	.half	.L164-.L163
-	.byte	1,5,5,7,9
+	.byte	1,5,3,7,9
 	.half	.L165-.L164
-	.byte	3,2,1,5,22,9
+	.byte	3,1,1,5,22,9
 	.half	.L166-.L165
-	.byte	1,5,21,9
+	.byte	1,5,20,9
 	.half	.L167-.L166
-	.byte	1,5,5,9
+	.byte	1,5,3,9
 	.half	.L168-.L167
 	.byte	3,1,1,5,6,9
 	.half	.L4-.L168
@@ -21127,271 +21096,271 @@ TurningRadius:	.type	object
 	.half	.L169-.L4
 	.byte	1,5,6,9
 	.half	.L170-.L169
-	.byte	1,5,26,7,9
+	.byte	1,5,30,7,9
 	.half	.L171-.L170
-	.byte	1,5,32,9
+	.byte	1,5,37,9
 	.half	.L172-.L171
-	.byte	1,5,8,7,9
-	.half	.L6-.L172
-	.byte	3,2,1,5,16,9
-	.half	.L173-.L6
-	.byte	1,5,5,9
-	.half	.L174-.L173
 	.byte	1,5,7,7,9
+	.half	.L6-.L172
+	.byte	3,1,1,5,15,9
+	.half	.L173-.L6
+	.byte	1,5,3,9
+	.half	.L174-.L173
+	.byte	1,5,4,7,9
 	.half	.L175-.L174
-	.byte	3,2,1,5,14,9
+	.byte	3,1,1,5,13,9
 	.half	.L176-.L175
-	.byte	1,5,13,9
+	.byte	1,5,11,9
 	.half	.L177-.L176
-	.byte	1,5,8,9
+	.byte	1,5,7,9
 	.half	.L8-.L177
-	.byte	3,3,1,5,23,9
+	.byte	3,3,1,5,24,9
 	.half	.L178-.L8
-	.byte	1,5,31,9
+	.byte	1,5,32,9
 	.half	.L179-.L178
-	.byte	1,5,38,9
+	.byte	1,5,40,9
 	.half	.L180-.L179
-	.byte	1,5,9,7,9
+	.byte	1,5,4,7,9
 	.half	.L181-.L180
-	.byte	3,2,1,5,52,9
+	.byte	3,1,1,5,50,9
 	.half	.L182-.L181
 	.byte	1,5,55,9
 	.half	.L102-.L182
-	.byte	1,5,25,9
+	.byte	1,5,21,9
 	.half	.L183-.L102
-	.byte	1,5,9,9
+	.byte	1,5,4,9
 	.half	.L184-.L183
-	.byte	3,1,1,5,10,9
+	.byte	3,1,1,5,8,9
 	.half	.L9-.L184
-	.byte	3,5,1,5,18,9
+	.byte	3,3,1,5,16,9
 	.half	.L185-.L9
-	.byte	1,5,7,9
+	.byte	1,5,4,9
 	.half	.L186-.L185
-	.byte	1,5,18,7,9
+	.byte	1,5,16,7,9
 	.half	.L187-.L186
-	.byte	3,1,1,5,30,9
+	.byte	3,1,1,5,28,9
 	.half	.L188-.L187
-	.byte	1,5,18,9
+	.byte	1,5,16,9
 	.half	.L12-.L188
-	.byte	3,3,1,5,7,9
+	.byte	3,3,1,5,4,9
 	.half	.L13-.L12
 	.byte	3,127,1,5,11,9
 	.half	.L7-.L13
-	.byte	3,5,1,5,31,9
+	.byte	3,5,1,5,34,9
 	.half	.L189-.L7
-	.byte	1,5,8,9
+	.byte	1,5,7,9
 	.half	.L190-.L189
 	.byte	1,5,14,7,9
 	.half	.L191-.L190
-	.byte	3,2,1,5,29,9
+	.byte	3,1,1,5,29,9
 	.half	.L192-.L191
 	.byte	1,5,11,9
 	.half	.L15-.L192
-	.byte	3,3,1,5,8,9
+	.byte	3,3,1,5,7,9
 	.half	.L193-.L15
 	.byte	1,7,9
 	.half	.L194-.L193
-	.byte	3,2,1,5,5,9
+	.byte	3,1,1,5,3,9
 	.half	.L195-.L194
-	.byte	1,5,9,7,9
+	.byte	1,5,4,7,9
 	.half	.L196-.L195
-	.byte	3,2,1,5,52,9
+	.byte	3,1,1,5,50,9
 	.half	.L197-.L196
 	.byte	1,5,55,9
 	.half	.L103-.L197
-	.byte	1,5,25,9
-	.half	.L198-.L103
-	.byte	1,5,9,9
-	.half	.L199-.L198
-	.byte	3,1,1,5,5,9
-	.half	.L18-.L199
-	.byte	3,125,1,5,11,9
-	.half	.L17-.L18
-	.byte	3,7,1,5,8,9
-	.half	.L200-.L17
-	.byte	1,5,5,7,9
-	.half	.L201-.L200
-	.byte	3,2,1,5,22,9
-	.half	.L202-.L201
 	.byte	1,5,21,9
+	.half	.L198-.L103
+	.byte	1,5,4,9
+	.half	.L199-.L198
+	.byte	3,1,1,5,3,9
+	.half	.L18-.L199
+	.byte	3,126,1,5,11,9
+	.half	.L17-.L18
+	.byte	3,6,1,5,7,9
+	.half	.L200-.L17
+	.byte	1,5,3,7,9
+	.half	.L201-.L200
+	.byte	3,1,1,5,22,9
+	.half	.L202-.L201
+	.byte	1,5,20,9
 	.half	.L203-.L202
-	.byte	1,5,5,9
+	.byte	1,5,3,9
 	.half	.L204-.L203
 	.byte	3,1,1,5,11,9
 	.half	.L21-.L204
-	.byte	3,3,1,5,18,9
+	.byte	3,3,1,5,20,9
 	.half	.L205-.L21
-	.byte	1,5,8,9
+	.byte	1,5,7,9
 	.half	.L206-.L205
-	.byte	1,5,5,7,9
+	.byte	1,5,3,7,9
 	.half	.L207-.L206
 	.byte	3,2,1,5,22,9
 	.half	.L208-.L207
-	.byte	1,5,21,9
+	.byte	1,5,20,9
 	.half	.L209-.L208
-	.byte	1,5,5,9
+	.byte	1,5,3,9
 	.half	.L210-.L209
-	.byte	3,1,1,5,11,9
+	.byte	3,1,1,5,13,9
 	.half	.L23-.L210
-	.byte	3,2,1,5,32,9
+	.byte	3,1,1,5,36,9
 	.half	.L211-.L23
-	.byte	1,5,31,9
+	.byte	1,5,34,9
 	.half	.L212-.L211
-	.byte	1,5,8,9
+	.byte	1,5,9,9
 	.half	.L213-.L212
-	.byte	1,5,5,7,9
+	.byte	1,5,3,7,9
 	.half	.L214-.L213
-	.byte	3,2,1,5,22,9
+	.byte	3,1,1,5,22,9
 	.half	.L215-.L214
-	.byte	1,5,21,9
+	.byte	1,5,20,9
 	.half	.L216-.L215
-	.byte	1,5,5,9
+	.byte	1,5,3,9
 	.half	.L217-.L216
-	.byte	3,1,1,5,8,9
+	.byte	3,1,1,5,9,9
 	.half	.L14-.L217
-	.byte	3,3,1,5,29,9
+	.byte	3,3,1,5,34,9
 	.half	.L105-.L14
-	.byte	1,5,20,9
+	.byte	1,5,18,9
 	.half	.L28-.L105
-	.byte	3,3,1,5,5,9
+	.byte	3,2,1,5,3,9
 	.half	.L218-.L28
-	.byte	1,5,20,9
+	.byte	1,5,18,9
 	.half	.L219-.L218
-	.byte	1,5,37,9
+	.byte	1,5,36,9
 	.half	.L220-.L219
-	.byte	1,5,25,9
+	.byte	1,5,24,9
 	.half	.L221-.L220
-	.byte	1,5,37,9
+	.byte	1,5,36,9
 	.half	.L222-.L221
-	.byte	1,5,55,9
+	.byte	1,5,57,9
 	.half	.L223-.L222
-	.byte	1,5,53,9
+	.byte	1,5,54,9
 	.half	.L224-.L223
-	.byte	1,5,41,9
+	.byte	1,5,42,9
 	.half	.L225-.L224
-	.byte	1,5,53,9
+	.byte	1,5,54,9
 	.half	.L226-.L225
 	.byte	1,5,40,9
 	.half	.L227-.L226
-	.byte	1,5,73,9
+	.byte	1,5,79,9
 	.half	.L228-.L227
-	.byte	1,5,71,9
-	.half	.L229-.L228
-	.byte	1,5,59,9
-	.half	.L230-.L229
-	.byte	1,5,71,9
-	.half	.L231-.L230
-	.byte	1,5,58,9
-	.half	.L232-.L231
-	.byte	1,5,91,9
-	.half	.L233-.L232
-	.byte	1,5,89,9
-	.half	.L234-.L233
-	.byte	1,5,77,9
-	.half	.L235-.L234
-	.byte	1,5,89,9
-	.half	.L236-.L235
 	.byte	1,5,76,9
+	.half	.L229-.L228
+	.byte	1,5,64,9
+	.half	.L230-.L229
+	.byte	1,5,76,9
+	.half	.L231-.L230
+	.byte	1,5,62,9
+	.half	.L232-.L231
+	.byte	1,5,101,9
+	.half	.L233-.L232
+	.byte	1,5,98,9
+	.half	.L234-.L233
+	.byte	1,5,86,9
+	.half	.L235-.L234
+	.byte	1,5,98,9
+	.half	.L236-.L235
+	.byte	1,5,84,9
 	.half	.L237-.L236
-	.byte	1,5,23,9
+	.byte	1,5,22,9
 	.half	.L238-.L237
-	.byte	1,5,8,9
+	.byte	1,5,7,9
 	.half	.L239-.L238
-	.byte	3,2,1,5,54,9
+	.byte	3,2,1,5,59,9
 	.half	.L240-.L239
-	.byte	1,5,53,9
-	.half	.L241-.L240
-	.byte	1,5,5,9
-	.half	.L242-.L241
-	.byte	1,5,14,7,9
-	.half	.L93-.L242
-	.byte	3,5,1,5,27,9
-	.half	.L107-.L93
-	.byte	1,5,12,9
-	.half	.L31-.L107
-	.byte	3,2,1,5,58,9
-	.half	.L243-.L31
 	.byte	1,5,57,9
-	.half	.L244-.L243
+	.half	.L241-.L240
+	.byte	1,5,3,9
+	.half	.L242-.L241
+	.byte	1,5,15,7,9
+	.half	.L93-.L242
+	.byte	3,4,1,5,32,9
+	.half	.L107-.L93
 	.byte	1,5,9,9
+	.half	.L31-.L107
+	.byte	3,1,1,5,61,9
+	.half	.L243-.L31
+	.byte	1,5,59,9
+	.half	.L244-.L243
+	.byte	1,5,5,9
 	.half	.L245-.L244
-	.byte	1,5,11,7,9
+	.byte	1,5,6,7,9
 	.half	.L246-.L245
-	.byte	3,2,1,5,20,9
+	.byte	3,1,1,5,16,9
 	.half	.L247-.L246
-	.byte	1,5,15,9
+	.byte	1,5,12,9
 	.half	.L248-.L247
 	.byte	3,2,1,5,19,9
 	.half	.L249-.L248
-	.byte	1,5,11,9
+	.byte	1,5,6,9
 	.half	.L250-.L249
-	.byte	1,5,13,7,9
+	.byte	1,5,7,7,9
 	.half	.L251-.L250
-	.byte	3,2,1,5,48,9
+	.byte	3,1,1,5,45,9
 	.half	.L252-.L251
-	.byte	1,5,51,9
+	.byte	1,5,50,9
 	.half	.L104-.L252
-	.byte	1,5,29,9
+	.byte	1,5,24,9
 	.half	.L106-.L104
-	.byte	1,5,13,9
+	.byte	1,5,7,9
 	.half	.L253-.L106
-	.byte	3,1,1,5,42,9
+	.byte	3,1,1,5,40,9
 	.half	.L33-.L253
-	.byte	3,6,1,5,45,9
+	.byte	3,5,1,5,45,9
 	.half	.L108-.L33
-	.byte	1,5,23,9
+	.byte	1,5,20,9
 	.half	.L109-.L108
-	.byte	1,5,26,9
+	.byte	1,5,23,9
 	.half	.L110-.L109
-	.byte	3,1,1,5,25,9
+	.byte	3,1,1,5,21,9
 	.half	.L254-.L110
-	.byte	1,5,13,9
+	.byte	1,5,7,9
 	.half	.L255-.L254
-	.byte	1,5,15,7,9
+	.byte	1,5,8,7,9
 	.half	.L256-.L255
-	.byte	3,2,1,5,31,9
+	.byte	3,1,1,5,25,9
 	.half	.L257-.L256
-	.byte	1,5,15,9
+	.byte	1,5,8,9
 	.half	.L258-.L257
 	.byte	3,1,1,9
 	.half	.L35-.L258
-	.byte	3,4,1,5,32,9
+	.byte	3,2,1,5,27,9
 	.half	.L259-.L35
-	.byte	1,5,31,9
+	.byte	1,5,25,9
 	.half	.L260-.L259
-	.byte	1,5,15,9
+	.byte	1,5,8,9
 	.half	.L261-.L260
-	.byte	3,1,1,5,29,9
+	.byte	3,1,1,5,35,9
 	.half	.L32-.L261
-	.byte	3,104,1,5,27,9
+	.byte	3,111,1,5,32,9
 	.half	.L30-.L32
-	.byte	1,5,31,7,9
+	.byte	1,5,38,7,9
 	.half	.L29-.L30
-	.byte	3,118,1,5,29,9
+	.byte	3,120,1,5,34,9
 	.half	.L27-.L29
-	.byte	1,5,3,7,9
+	.byte	1,5,2,7,9
 	.half	.L262-.L27
-	.byte	3,42,1,5,7,7,9
+	.byte	3,33,1,5,3,7,9
 	.half	.L263-.L262
-	.byte	3,2,1,5,50,9
+	.byte	3,1,1,5,49,9
 	.half	.L264-.L263
-	.byte	1,5,53,9
+	.byte	1,5,54,9
 	.half	.L111-.L264
-	.byte	1,5,23,9
+	.byte	1,5,20,9
 	.half	.L112-.L111
-	.byte	1,5,7,9
+	.byte	1,5,3,9
 	.half	.L265-.L112
-	.byte	3,1,1,5,5,9
+	.byte	3,1,1,9
 	.half	.L38-.L265
-	.byte	3,4,1,5,22,9
+	.byte	3,2,1,5,22,9
 	.half	.L266-.L38
-	.byte	1,5,21,9
+	.byte	1,5,20,9
 	.half	.L267-.L266
-	.byte	1,5,5,9
+	.byte	1,5,3,9
 	.half	.L268-.L267
 	.byte	3,1,1,5,1,9
 	.half	.L5-.L268
-	.byte	3,3,1,7,9
+	.byte	3,2,1,7,9
 	.half	.L64-.L5
 	.byte	0,1,1
 .L151:
@@ -21413,7 +21382,7 @@ TurningRadius:	.type	object
 	.byte	2
 	.word	.L51
 	.byte	3
-	.byte	'GetTurningRadius',0,1,186,1,6,1,1,1
+	.byte	'GetTurningRadius',0,1,158,1,8,1,1,1
 	.word	.L50,.L96,.L49
 	.byte	4
 	.word	.L50,.L96
@@ -21434,111 +21403,111 @@ TurningRadius:	.type	object
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/src/GetDistance.c',0,0,0,0,0
 .L272:
-	.byte	5,7,7,0,5,2
+	.byte	5,6,7,0,5,2
 	.word	.L50
-	.byte	3,187,1,1,5,13,9
+	.byte	3,159,1,1,5,14,9
 	.half	.L273-.L50
 	.byte	1,5,12,9
 	.half	.L274-.L273
-	.byte	1,5,3,9
+	.byte	1,5,2,9
 	.half	.L275-.L274
-	.byte	1,5,5,7,9
+	.byte	1,5,3,7,9
 	.half	.L276-.L275
-	.byte	3,2,1,5,19,9
+	.byte	3,1,1,5,19,9
 	.half	.L277-.L276
-	.byte	1,5,33,9
+	.byte	1,5,35,9
 	.half	.L278-.L277
-	.byte	1,5,28,9
+	.byte	1,5,29,9
 	.half	.L279-.L278
-	.byte	1,5,40,9
+	.byte	1,5,44,9
 	.half	.L280-.L279
-	.byte	1,5,49,9
+	.byte	1,5,55,9
 	.half	.L281-.L280
-	.byte	1,5,48,9
+	.byte	1,5,53,9
 	.half	.L282-.L281
-	.byte	1,5,39,9
+	.byte	1,5,42,9
 	.half	.L283-.L282
-	.byte	1,5,18,9
+	.byte	1,5,17,9
 	.half	.L284-.L283
-	.byte	1,5,5,9
+	.byte	1,5,3,9
 	.half	.L285-.L284
 	.byte	3,1,1,5,27,9
 	.half	.L286-.L285
-	.byte	1,5,41,9
+	.byte	1,5,43,9
 	.half	.L287-.L286
-	.byte	1,5,55,9
+	.byte	1,5,59,9
 	.half	.L288-.L287
-	.byte	1,5,65,9
+	.byte	1,5,71,9
 	.half	.L289-.L288
-	.byte	1,5,64,9
+	.byte	1,5,69,9
 	.half	.L290-.L289
-	.byte	1,5,75,9
+	.byte	1,5,83,9
 	.half	.L291-.L290
-	.byte	1,5,74,9
+	.byte	1,5,81,9
 	.half	.L292-.L291
-	.byte	1,5,54,9
+	.byte	1,5,57,9
 	.half	.L293-.L292
-	.byte	1,5,18,9
+	.byte	1,5,17,9
 	.half	.L294-.L293
-	.byte	1,5,52,9
+	.byte	1,5,58,9
 	.half	.L295-.L294
-	.byte	3,127,1,5,11,9
+	.byte	3,127,1,5,13,9
 	.half	.L41-.L295
-	.byte	3,3,1,5,17,9
+	.byte	3,2,1,5,21,9
 	.half	.L296-.L41
-	.byte	1,5,8,9
+	.byte	1,5,9,9
 	.half	.L297-.L296
-	.byte	1,5,6,9
+	.byte	1,5,3,9
 	.half	.L298-.L297
-	.byte	3,7,1,5,20,9
+	.byte	3,4,1,5,19,9
 	.half	.L299-.L298
-	.byte	1,5,19,9
+	.byte	1,5,17,9
 	.half	.L300-.L299
-	.byte	1,5,53,9
+	.byte	1,5,59,9
 	.half	.L301-.L300
-	.byte	3,123,1,5,5,9
+	.byte	3,125,1,5,3,9
 	.half	.L43-.L301
 	.byte	1,5,19,9
 	.half	.L302-.L43
-	.byte	1,5,34,9
+	.byte	1,5,36,9
 	.half	.L303-.L302
-	.byte	1,5,33,9
+	.byte	1,5,35,9
 	.half	.L304-.L303
-	.byte	1,5,28,9
+	.byte	1,5,29,9
 	.half	.L305-.L304
-	.byte	1,5,41,9
+	.byte	1,5,45,9
 	.half	.L306-.L305
-	.byte	1,5,50,9
+	.byte	1,5,56,9
 	.half	.L307-.L306
-	.byte	1,5,49,9
+	.byte	1,5,54,9
 	.half	.L308-.L307
-	.byte	1,5,40,9
+	.byte	1,5,43,9
 	.half	.L309-.L308
-	.byte	1,5,18,9
+	.byte	1,5,17,9
 	.half	.L310-.L309
-	.byte	1,5,5,9
+	.byte	1,5,3,9
 	.half	.L311-.L310
 	.byte	3,1,1,5,27,9
 	.half	.L312-.L311
-	.byte	1,5,41,9
+	.byte	1,5,43,9
 	.half	.L313-.L312
-	.byte	1,5,55,9
+	.byte	1,5,59,9
 	.half	.L314-.L313
-	.byte	1,5,65,9
+	.byte	1,5,71,9
 	.half	.L315-.L314
-	.byte	1,5,64,9
+	.byte	1,5,69,9
 	.half	.L316-.L315
-	.byte	1,5,75,9
+	.byte	1,5,83,9
 	.half	.L317-.L316
-	.byte	1,5,74,9
+	.byte	1,5,81,9
 	.half	.L318-.L317
-	.byte	1,5,54,9
+	.byte	1,5,57,9
 	.half	.L319-.L318
-	.byte	1,5,18,9
+	.byte	1,5,17,9
 	.half	.L320-.L319
 	.byte	1,5,1,9
 	.half	.L42-.L320
-	.byte	3,6,1,7,9
+	.byte	3,4,1,7,9
 	.half	.L69-.L42
 	.byte	0,1,1
 .L270:
@@ -21558,7 +21527,7 @@ TurningRadius:	.type	object
 	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1,2
 	.word	.L51
 	.byte	3
-	.byte	'straightDistance',0,23,36,8
+	.byte	'straightDistance',0,23,34,8
 	.word	.L84
 	.byte	1,5,3
 	.word	straightDistance
@@ -21580,7 +21549,7 @@ TurningRadius:	.type	object
 	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1,2
 	.word	.L51
 	.byte	3
-	.byte	'TurningRadius',0,23,185,1,8
+	.byte	'TurningRadius',0,23,157,1,8
 	.word	.L84
 	.byte	1,5,3
 	.word	TurningRadius
@@ -21624,7 +21593,7 @@ TurningRadius:	.type	object
 	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1,2
 	.word	.L51
 	.byte	3
-	.byte	'ruwanhang',0,23,3,5
+	.byte	'ruwanhang',0,23,3,8
 	.word	.L86
 	.byte	1,5,3
 	.word	ruwanhang
@@ -21646,7 +21615,7 @@ TurningRadius:	.type	object
 	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1,2
 	.word	.L51
 	.byte	3
-	.byte	'RealMidSlopeSum',0,23,37,8
+	.byte	'RealMidSlopeSum',0,23,35,8
 	.word	.L97
 	.byte	1,5,3
 	.word	RealMidSlopeSum
@@ -21668,7 +21637,7 @@ TurningRadius:	.type	object
 	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1,2
 	.word	.L51
 	.byte	3
-	.byte	'CarWidth',0,23,183,1,5
+	.byte	'CarWidth',0,23,155,1,8
 	.word	.L86
 	.byte	1,5,3
 	.word	CarWidth
@@ -21690,7 +21659,7 @@ TurningRadius:	.type	object
 	.byte	'D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\Debug\\',0,12,1,2
 	.word	.L51
 	.byte	3
-	.byte	'CarLength',0,23,183,1,20
+	.byte	'CarLength',0,23,155,1,24
 	.word	.L86
 	.byte	1,5,3
 	.word	CarLength

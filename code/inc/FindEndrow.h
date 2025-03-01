@@ -3,8 +3,8 @@
 
 #include "zf_common_typedef.h"
 
-extern int EndRow,Maxcolumn;
-extern int RealEndRow,CorrectedEndRow;
+extern int EndRow, Maxcolumn;
+extern int RealEndRow, CorrectedEndRow;
 extern int ControlRow;
 
 void Find_EndRow(void);

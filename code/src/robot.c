@@ -231,16 +231,17 @@ void BalanceInit(void)	  // PID
 	PIDTypeInit(&robot.rollPID, 0.f, 0.f, 0.f, PIDINC, 0);
 };
 
-const float RobotWidth = 20.f;	  // 待测量
+const float RobotWidth = 155.f;	   // mm
 /**
- * @brief 横滚角平衡 从后往前看顺时针为正
+ * @brief （腿高平衡）横滚角平衡 从后往前看顺时针为正
  *
  */
 void		BalanceRoll(void)
 {
+#if 0	 // 平衡策略一
 	float rollOut		   = 0.5f * RobotWidth * sinf(IMUdata.dataOri.roll);
 	robot.right->PosSet.y += rollOut;
-	robot.left->PosSet.y  -= rollOut;
+	robot.left->PosSet.y  -= rollOut;	 // 可以用线性插值，可能并不需要
 
 	float ZeroY			   = robot.param.PosZero.y;
 
@@ -254,6 +255,17 @@ void		BalanceRoll(void)
 		robot.right->PosSet.y -= delta;
 		robot.left->PosSet.y  -= delta;
 	}
+
+#else	 // 平衡策略二
+	static float roll	   = 0.f;
+	static float Roll_Kp   = 0.f;	 // 转换系数
+
+	roll				  += Roll_Kp * (0 - IMUdata.dataOri.roll);
+
+	float rollOut		   = 0.5f * RobotWidth * sinf(roll);	// 系数可以修正
+	robot.right->PosSet.y  = robot.param.PosZero.y + rollOut;
+	robot.left->PosSet.y   = robot.param.PosZero.y - rollOut;	 // 正负有待检测
+#endif
 
 	AngleCalculate(robot.left, robot.left->PosSet);	   // 更新舵机角
 	AngleCalculate(robot.right, robot.right->PosSet);
@@ -296,10 +308,9 @@ void Balance(void)
 {
 	BalancePitch();	   // 计算维持平衡的力矩
 	BalanceYaw();	   // 再计算转向需要的力矩
-	if(StopFlag == 1)
-	{
+	if (StopFlag == 1) {
 		robot.right_Torque = 0;
-		robot.left_Torque = 0;
+		robot.left_Torque  = 0;
 	}
 	BldcSetCurrent(robot.left_Torque, robot.right_Torque);
 }
