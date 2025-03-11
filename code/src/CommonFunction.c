@@ -103,7 +103,7 @@ void Draw_a_Line(int Start_Row,int End_Row,int line[ROW])
 {
   uint8 i = 0;
   
-  for(i = Start_Row;i<=End_Row;i++)
+  for(i = (uint8)Start_Row;i<=(uint8)End_Row;i++)
   {
     videoData[i][line[i]] = 0;
     if(line[i]-1>=0) videoData[i][line[i]-1] = 0;

@@ -32,7 +32,7 @@ void GetSlope()
 /**
  * @brief 计算真实赛道中线斜率
  */
-void GetRealMidSlope()
+void GetRealMidSlope(void)
 {
   int i=0;
   for(i=ROW-5;i>ValidRow+2;i--) //ROW-3 ValidRow+1
