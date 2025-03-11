@@ -1,43 +1,39 @@
 #include "zf_common_headfile.h"
 
-float Correct_Offset_x = 0;
-float Correct_Offset_y = 0;
+float Correct_Offset_x=0;
+float Correct_Offset_y=0;
 
-float Trans_Form[8]	   = {1.98033099303538,
-						  -0.0311372797647050,
-						  -149.962278873731,
-						  -1.83351615321276e-16,
-						  -0.798671225964742,
-						  221.131230504030,
-						  -6.95870761865348e-18,
-						  0.0526220028023551};
-/**
- * @brief  ×ø±ê×ª»»
- * @param  coordinate_x  ÏñËØ×ø±êx
- * @param  coordinate_y  ÏñËØ×ø±êy
- * @param  Coordinate    ×ª»»ºóµÄ×ø±ê
- */
-void  Real_Location(int coordinate_x, int coordinate_y, float Coordinate[1][2])
+float Trans_Form[8]=
 {
-	float Correct_Coordinate_x, Correct_Coordinate_y;
-	Correct_Coordinate_x = (Trans_Form[0] * coordinate_x + Trans_Form[1] * coordinate_y + Trans_Form[2])
-						   / (Trans_Form[6] * coordinate_x + Trans_Form[7] * coordinate_y + 1.0);
-	Correct_Coordinate_y = (Trans_Form[3] * coordinate_x + Trans_Form[4] * coordinate_y + Trans_Form[5])
-						   / (Trans_Form[6] * coordinate_x + Trans_Form[7] * coordinate_y + 1.0);
-	Coordinate[0][0] = Correct_Coordinate_x;
-	Coordinate[0][1] = Correct_Coordinate_y;
+  1.98033099303538,	-0.0311372797647050,	-149.962278873731,
+-1.83351615321276e-16,	-0.798671225964742,	221.131230504030,
+-6.95870761865348e-18,	0.0526220028023551	
+};
+/**
+ * @brief  åæ ‡è½¬æ¢
+ * @param  coordinate_x  åƒç´ åæ ‡x
+ * @param  coordinate_y  åƒç´ åæ ‡y
+ * @param  Coordinate    è½¬æ¢åçš„åæ ‡
+ */
+void Real_Location(int coordinate_x,int coordinate_y,float Coordinate[1][2])
+{
+  float Correct_Coordinate_x,Correct_Coordinate_y;
+  Correct_Coordinate_x=(Trans_Form[0]*coordinate_x+Trans_Form[1]*coordinate_y+Trans_Form[2])/(Trans_Form[6]*coordinate_x+Trans_Form[7]*coordinate_y+1.0);
+  Correct_Coordinate_y=(Trans_Form[3]*coordinate_x+Trans_Form[4]*coordinate_y+Trans_Form[5])/(Trans_Form[6]*coordinate_x+Trans_Form[7]*coordinate_y+1.0);
+  Coordinate[0][0]=Correct_Coordinate_x;
+  Coordinate[0][1]=Correct_Coordinate_y;
 }
 
 /**
- * @brief  ¼ÆËãÁ½µãÖ®¼äµÄ¾àÀë
- * @param  coordinate1  µÚÒ»¸öµãµÄ×ø±ê
- * @param  coordinate2  µÚ¶ş¸öµãµÄ×ø±ê
- * @retval Á½µãÖ®¼äµÄ¾àÀë
+ * @brief  è®¡ç®—ä¸¤ç‚¹ä¹‹é—´çš„è·ç¦»
+ * @param  coordinate1  ç¬¬ä¸€ä¸ªç‚¹çš„åæ ‡
+ * @param  coordinate2  ç¬¬äºŒä¸ªç‚¹çš„åæ ‡
+ * @retval ä¸¤ç‚¹ä¹‹é—´çš„è·ç¦»
  */
-float GetDistance(float coordinate1[1][2], float coordinate2[1][2])
+float GetDistance(float coordinate1[1][2],float coordinate2[1][2])
 {
-	float distance;
-	distance = InvSqrt((coordinate1[0][0] - coordinate2[0][0]) * (coordinate1[0][0] - coordinate2[0][0])
-					   + (coordinate1[0][1] - coordinate2[0][1]) * (coordinate1[0][1] - coordinate2[0][1]));
-	return distance;
+  float distance;
+  distance = InvSqrt((coordinate1[0][0]-coordinate2[0][0])*(coordinate1[0][0]-coordinate2[0][0])
+                     +(coordinate1[0][1]-coordinate2[0][1])*(coordinate1[0][1]-coordinate2[0][1]));
+  return distance;
 }

@@ -17,6 +17,7 @@ void robotInit(RobotType* robot)
 	Start(&(robot->pipeline));
 	RobotJumpLineInit();
 
+	// TODO IMU: robot->posture = &( );
 	robot->posture		   = &(IMUdata);
 	// TODO jumpLine
 
@@ -153,6 +154,12 @@ bool RobotJumpLine(void)
 
 			JumpLineState++;
 			break;
+		case 5:
+			/* code */
+
+			JumpLineState++;
+			break;
+
 		default:
 			/* code */
 
@@ -161,7 +168,7 @@ bool RobotJumpLine(void)
 			return true;
 	}
 
-	// oled_show_uint(80, 5, JumpLineState, 3);
+	oled_show_uint(80, 5, JumpLineState, 3);
 
 	return false;
 }
@@ -224,38 +231,22 @@ void BalanceInit(void)	  // PID
 	PIDTypeInit(&robot.rollPID, 0.f, 0.f, 0.f, PIDINC, 0);
 };
 
-const float RobotWidth = 155.f;	   // mm
+const float RobotWidth = 20.f;	  // 待测量
 /**
- * @brief （腿高平衡）横滚角平衡 从后往前看顺时针为正
+ * @brief 横滚角平衡 从后往前看顺时针为正
  *
  */
 void		BalanceRoll(void)
 {
-#if 1	 // 平衡策略一
-
-	static float roll_Kp   = 1.f;	 // 转换系数
-	float		 rollOut   = roll_Kp * 0.5f * RobotWidth * sinf(IMUdata.dataOri.roll);
-
+	float rollOut		   = 0.5f * RobotWidth * sinf(IMUdata.dataOri.roll);
 	robot.right->PosSet.y += rollOut;
 	robot.left->PosSet.y  -= rollOut;
 
 	float ZeroY			   = robot.param.PosZero.y;
 
-#else	 // 平衡策略二
-	static float roll	   = 0.f;
-	static float Roll_Kp   = 0.1f;	  // 转换系数
-
-	roll				  += Roll_Kp * (0 - IMUdata.dataOri.roll);	  // 可以增加一个PID控制器
-
-	float rollOut		   = 0.5f * RobotWidth * sinf(roll);	// 系数可以修正
-	robot.right->PosSet.y  = robot.param.PosZero.y + rollOut;
-	robot.left->PosSet.y   = robot.param.PosZero.y - rollOut;	 // 正负有待检测
-
-#endif
-
 	// 调整左右位置，确保不低于 PosZero.y
-	robot.right->PosSet.y = fmax(robot.right->PosSet.y, ZeroY);
-	robot.left->PosSet.y  = fmax(robot.left->PosSet.y, ZeroY);
+	robot.right->PosSet.y  = fmax(robot.right->PosSet.y, ZeroY);
+	robot.left->PosSet.y   = fmax(robot.left->PosSet.y, ZeroY);
 
 	// 如果都大于，则降低重心
 	if (robot.right->PosSet.y > ZeroY && robot.left->PosSet.y > ZeroY) {
@@ -275,7 +266,7 @@ float YawCtrlOut = 0;
  */
 void  BalanceYaw(void)
 {
-	robot.right_Torque += YawCtrlOut;	 // 角速度
+	robot.right_Torque += YawCtrlOut;
 	robot.left_Torque  -= YawCtrlOut;
 }
 
@@ -304,10 +295,10 @@ void Balance(void)
 {
 	BalancePitch();	   // 计算维持平衡的力矩
 	BalanceYaw();	   // 再计算转向需要的力矩
-
-	if (StopFlag == 1) {
+	if(StopFlag == 1)
+	{
 		robot.right_Torque = 0;
-		robot.left_Torque  = 0;
+		robot.left_Torque = 0;
 	}
 	BldcSetCurrent(robot.left_Torque, robot.right_Torque);
 }

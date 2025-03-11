@@ -2,7 +2,7 @@
 
 BldcType Motor[2];
 
-double Stretch_Left = 0, Stretch_Right = 0, Stretch = 0;
+double Stretch_Left=0,Stretch_Right=0,Stretch=0;
 
 // 无刷电机初始化
 void BldcInit(void)
