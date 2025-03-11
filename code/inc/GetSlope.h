@@ -6,9 +6,9 @@
 extern double Left_Slope[ROW],Right_Slope[ROW],MidLine_Slope[ROW];
 extern double RealMidSlope[ROW],RealLeftSlope[ROW],RealRightSlope[ROW];
 
-void GetSlope();
-void GetRealMidSlope();
-void GetRealLeftSlope();
-void GetRealRightSlope();
+void GetSlope(void);
+void GetRealMidSlope(void);
+void GetRealLeftSlope(void);
+void GetRealRightSlope(void);
 
 #endif

@@ -29,7 +29,6 @@ int		 core0_main(void)
 	robotInit(&robot);
 	pit_ms_init(CCU60_CH0, 1);	  // CCU60_CH0通道，中断初始化周期为1ms 中断初始化在前面
 
-	PID_init();
 	// 此处编写用户代码 例如外设初始化代码等
 	wireless_uart_init();
 	cpu_wait_event_ready();	   // 等待所有核心初始化完毕
@@ -50,9 +49,9 @@ int		 core0_main(void)
 		//         oled_show_float(60,3,Motor[1].valueNow.speed,4,2);
 		// oled_show_float(60,3,Motor[1].valueNow.speed,4,2);
 
-		//oled_show_float(60, 3, IMUdata.dataOri.angle.x, 2, 2);
-		//oled_show_float(60, 5, robot.left_Torque, 2, 2);
-		//oled_show_float(60, 7, Motor[0].valueNow.speed, 2, 2);
+		// oled_show_float(60, 3, IMUdata.dataOri.angle.x, 2, 2);
+		// oled_show_float(60, 5, robot.left_Torque, 2, 2);
+		// oled_show_float(60, 7, Motor[0].valueNow.speed, 2, 2);
 
 		//		oled_show_float(60,5,IMUdata.dataOri.pitch,2,2);
 
@@ -64,12 +63,11 @@ int		 core0_main(void)
 		if (mt9v03x_finish_flag)	// 摄像头采集完成标志位
 		{
 			mt9v03x_finish_flag = 0;
-			Binary_Img();	
+			Binary_Img();
 			MainCount++;
-			if(MainCount>8)
-			{
+			if (MainCount > 8) {
 				Image_To_Warp();
-				YawCtrlOut = 3.f * PIDOperation(&robot.yawPID, RealWarp, 0.f);	// 平衡环Pwm
+				YawCtrlOut = 3.f * PIDOperation(&robot.yawPID, RealWarp, 0.f);	  // 平衡环Pwm
 				DrawMidLine_Simple();
 				OLED_Print_Img128X64(videoData);
 

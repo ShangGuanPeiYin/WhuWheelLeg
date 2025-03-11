@@ -182,7 +182,7 @@ void GetCrossStartPoint(int LeftStart[1][2],int RightStart[1][2])
 {
   if(LeftFound!=0&&RightFound!=0)
   {
-    if(fabs(LeftFound-RightFound)<30)
+    if(fabs(LeftFound-RightFound)<30.f)
     {
       LeftStart[0][0]=LeftLine[LeftFound];
       LeftStart[0][1]=LeftFound;
