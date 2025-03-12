@@ -340,10 +340,6 @@ Filter.o :	"D:\\Documents\\Smart_Car\\AURIX-Studio-1.10.2_workspace\\WheelLeg\\c
 "D:\\Documents\\Smart_Car\\AURIX-Studio-1.10.2_workspace\\WheelLeg\\code\\inc\Pid.h" :
 Filter.o :	"D:\\Documents\\Smart_Car\\AURIX-Studio-1.10.2_workspace\\WheelLeg\\code\\inc\Servo.h"
 "D:\\Documents\\Smart_Car\\AURIX-Studio-1.10.2_workspace\\WheelLeg\\code\\inc\Servo.h" :
-Filter.o :	"D:\\Documents\\Smart_Car\\AURIX-Studio-1.10.2_workspace\\WheelLeg\\code\\inc\beiyoucontrol.h"
-"D:\\Documents\\Smart_Car\\AURIX-Studio-1.10.2_workspace\\WheelLeg\\code\\inc\beiyoucontrol.h" :
-Filter.o :	"D:\\Documents\\Smart_Car\\AURIX-Studio-1.10.2_workspace\\WheelLeg\\code\\inc\beiyoupid.h"
-"D:\\Documents\\Smart_Car\\AURIX-Studio-1.10.2_workspace\\WheelLeg\\code\\inc\beiyoupid.h" :
 Filter.o :	"D:\\Documents\\Smart_Car\\AURIX-Studio-1.10.2_workspace\\WheelLeg\\code\\inc\bldc.h"
 "D:\\Documents\\Smart_Car\\AURIX-Studio-1.10.2_workspace\\WheelLeg\\code\\inc\bldc.h" :
 Filter.o :	"D:\\Documents\\Smart_Car\\AURIX-Studio-1.10.2_workspace\\WheelLeg\\code\\inc\dataProcess.h"

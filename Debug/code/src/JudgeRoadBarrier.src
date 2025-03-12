@@ -1,6 +1,6 @@
 	; Module start
 	.compiler_version	"TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler v1.1r8 Build 22011964"
-	.compiler_invocation	"ctc -f cc33516a --dep-file=JudgeRoadBarrier.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc26xb -D__CPU_TC26XB__ --core=tc1.6.x --fp-model=+float -D__CPU__=tc26xb -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\code -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\code\\\\inc -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Configurations -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B\\\\_Reg -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If\\\\Ccu6If -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\StdIf -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Math -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Asc -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Std -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6 -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Std -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Timer -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\CStart -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Irq -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Std -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Dma -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Std -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash\\\\Std -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12 -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\IncrEnc -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\Std -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Std -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu\\\\Std -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port\\\\Std -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\SpiMaster -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\Std -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu\\\\Std -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src\\\\Std -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm\\\\Std -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Adc -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Std -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Impl -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib\\\\DataHandling -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_PinMap -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\zf_common -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\zf_components -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\zf_device -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\zf_driver -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\user -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o code/src/JudgeRoadBarrier.src ../code/src/JudgeRoadBarrier.c"
+	.compiler_invocation	"ctc -f cc17884a --dep-file=JudgeRoadBarrier.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc26xb -D__CPU_TC26XB__ --core=tc1.6.x --fp-model=+float -D__CPU__=tc26xb -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\code -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\code\\\\inc -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Configurations -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B\\\\_Reg -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If\\\\Ccu6If -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\StdIf -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Math -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Asc -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Std -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6 -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Std -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Timer -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\CStart -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Irq -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Std -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Dma -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Std -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash\\\\Std -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12 -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\IncrEnc -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\Std -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Std -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu\\\\Std -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port\\\\Std -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\SpiMaster -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\Std -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu\\\\Std -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src\\\\Std -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm\\\\Std -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Adc -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Std -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Impl -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib\\\\DataHandling -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_PinMap -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\zf_common -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\zf_components -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\zf_device -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\libraries\\\\zf_driver -ID:\\\\Documents\\\\Smart_Car\\\\AURIX-Studio-1.10.2_workspace\\\\WheelLeg\\\\user -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o code/src/JudgeRoadBarrier.src ../code/src/JudgeRoadBarrier.c"
 	.compiler_name		"ctc"
 	;source	'../code/src/JudgeRoadBarrier.c'
 
@@ -513,7 +513,7 @@ BarrierDir:	.type	object
 	.sdecl	'.debug_info',debug
 	.sect	'.debug_info'
 .L26:
-	.word	147234
+	.word	147092
 	.half	3
 	.word	.L27
 	.byte	4
@@ -5932,22 +5932,22 @@ BarrierDir:	.type	object
 	.byte	22
 	.word	32805
 	.byte	6,0,26
-	.byte	'GetLeftVariance',0,20,9,8
+	.byte	'GetLeftVariance',0,20,9,11
 	.word	255
 	.byte	1,1,1,1,5
-	.byte	'row0',0,20,9,28
+	.byte	'row0',0,20,9,31
 	.word	475
 	.byte	5
-	.byte	'row1',0,20,9,37
+	.byte	'row1',0,20,9,41
 	.word	475
 	.byte	0,26
-	.byte	'GetRightVariance',0,20,10,8
+	.byte	'GetRightVariance',0,20,10,11
 	.word	255
 	.byte	1,1,1,1,5
-	.byte	'row0',0,20,10,29
+	.byte	'row0',0,20,10,32
 	.word	475
 	.byte	5
-	.byte	'row1',0,20,10,38
+	.byte	'row1',0,20,10,42
 	.word	475
 	.byte	0,27
 	.byte	'__wchar_t',0,21,1,1
@@ -19907,7 +19907,7 @@ BarrierDir:	.type	object
 	.byte	'seekfree_assistant_image_type_enum',0,49,86,2
 	.word	143712
 	.byte	33
-	.byte	'MainCount',0,50,19,13
+	.byte	'MainCount',0,50,19,14
 	.word	32507
 	.byte	1,1,33
 	.byte	'RealWidth',0,51,6,19
@@ -19921,7 +19921,7 @@ BarrierDir:	.type	object
 	.byte	1,1,18,144,3
 	.word	475
 	.byte	19,99,0,33
-	.byte	'MidLine',0,53,6,12
+	.byte	'MidLine',0,53,6,13
 	.word	144011
 	.byte	1,1,10
 	.byte	'_Vector3fType',0,54,6,16,12,13
@@ -20162,51 +20162,21 @@ BarrierDir:	.type	object
 	.byte	4,2,35,24,0,27
 	.byte	'ServoType',0,57,40,3
 	.word	145180
-	.byte	20,58,5,9,36,13
-	.byte	'target',0
-	.word	255
-	.byte	4,2,35,0,13
-	.byte	'ek',0
-	.word	255
-	.byte	4,2,35,4,13
-	.byte	'ek1',0
-	.word	255
-	.byte	4,2,35,8,13
-	.byte	'ek2',0
-	.word	255
-	.byte	4,2,35,12,13
-	.byte	'kp',0
-	.word	255
-	.byte	4,2,35,16,13
-	.byte	'ki',0
-	.word	255
-	.byte	4,2,35,20,13
-	.byte	'kd',0
-	.word	255
-	.byte	4,2,35,24,13
-	.byte	'integral',0
-	.word	255
-	.byte	4,2,35,28,13
-	.byte	'output',0
-	.word	255
-	.byte	4,2,35,32,0,27
-	.byte	'PID',0,58,14,2
-	.word	145353
 	.byte	33
-	.byte	'Stretch',0,59,27,42
+	.byte	'Stretch',0,58,27,42
 	.word	255
-	.byte	1,1,15,59,29,9,1,16
+	.byte	1,1,15,58,29,9,1,16
 	.byte	'Left',0,0,16
 	.byte	'Right',0,1,0,27
-	.byte	'LegNum',0,59,29,30
-	.word	145513
+	.byte	'LegNum',0,58,29,30
+	.word	145371
 	.byte	34
-	.byte	'_BldcMode',0,59,32,14,1,16
+	.byte	'_BldcMode',0,58,32,14,1,16
 	.byte	'CURRENT',0,0,16
 	.byte	'RPM',0,1,16
 	.byte	'POSITION',0,2,0,27
-	.byte	'BldcMode',0,59,36,3
-	.word	145549
+	.byte	'BldcMode',0,58,36,3
+	.word	145407
 	.byte	14
 	.word	255
 	.byte	14
@@ -20214,18 +20184,18 @@ BarrierDir:	.type	object
 	.byte	14
 	.word	32494
 	.byte	10
-	.byte	'_Value',0,59,39,16,12,13
+	.byte	'_Value',0,58,39,16,12,13
 	.byte	'speed',0
-	.word	145609
+	.word	145467
 	.byte	4,2,35,0,13
 	.byte	'angle',0
-	.word	145614
+	.word	145472
 	.byte	4,2,35,4,13
 	.byte	'current',0
-	.word	145619
+	.word	145477
 	.byte	2,2,35,8,0,27
-	.byte	'ValueType',0,59,43,3
-	.word	145624
+	.byte	'ValueType',0,58,43,3
+	.word	145482
 	.byte	14
 	.word	1033
 	.byte	14
@@ -20237,27 +20207,27 @@ BarrierDir:	.type	object
 	.byte	14
 	.word	475
 	.byte	10
-	.byte	'_PulseType',0,59,46,16,16,13
+	.byte	'_PulseType',0,58,46,16,16,13
 	.byte	'pulseRead',0
-	.word	145702
+	.word	145560
 	.byte	2,2,35,0,13
 	.byte	'pulseLast',0
-	.word	145707
+	.word	145565
 	.byte	2,2,35,2,13
 	.byte	'Distanse',0
-	.word	145712
+	.word	145570
 	.byte	2,2,35,4,13
 	.byte	'pulseTotal',0
-	.word	145717
+	.word	145575
 	.byte	4,2,35,6,13
 	.byte	'pulseLock',0
-	.word	145722
+	.word	145580
 	.byte	4,2,35,10,0,27
-	.byte	'PulseType',0,59,53,3
-	.word	145727
-	.byte	20,59,56,9,12,13
+	.byte	'PulseType',0,58,53,3
+	.word	145585
+	.byte	20,58,56,9,12,13
 	.byte	'direct',0
-	.word	145513
+	.word	145371
 	.byte	1,2,35,0,13
 	.byte	'sign',0
 	.word	33999
@@ -20268,21 +20238,21 @@ BarrierDir:	.type	object
 	.byte	'currentLimit',0
 	.word	255
 	.byte	4,2,35,6,0,27
-	.byte	'MotorParamType',0,59,62,3
-	.word	145857
+	.byte	'MotorParamType',0,58,62,3
+	.word	145715
 	.byte	7
-	.byte	'_Bool',0,1,2,20,59,65,9,12,13
+	.byte	'_Bool',0,1,2,20,58,65,9,12,13
 	.byte	'isStuck',0
-	.word	145962
+	.word	145820
 	.byte	1,2,35,0,13
 	.byte	'currentLimitFlag',0
-	.word	145962
+	.word	145820
 	.byte	1,2,35,1,13
 	.byte	'rpmLimitFlag',0
-	.word	145962
+	.word	145820
 	.byte	1,2,35,2,13
 	.byte	'posLimitFlag',0
-	.word	145962
+	.word	145820
 	.byte	1,2,35,3,13
 	.byte	'maxCurrent',0
 	.word	255
@@ -20290,42 +20260,42 @@ BarrierDir:	.type	object
 	.byte	'maxRPM',0
 	.word	255
 	.byte	4,2,35,8,0,27
-	.byte	'MotorLimit',0,59,75,3
-	.word	145971
+	.byte	'MotorLimit',0,58,75,3
+	.word	145829
 	.byte	10
-	.byte	'_Bldc',0,59,78,16,240,1,13
+	.byte	'_Bldc',0,58,78,16,240,1,13
 	.byte	'enable',0
-	.word	145962
+	.word	145820
 	.byte	1,2,35,0,13
 	.byte	'begin',0
-	.word	145962
+	.word	145820
 	.byte	1,2,35,1,13
 	.byte	'setZero',0
-	.word	145962
+	.word	145820
 	.byte	1,2,35,2,13
 	.byte	'mode',0
-	.word	145549
+	.word	145407
 	.byte	1,2,35,3,13
 	.byte	'valueLast',0
-	.word	145624
+	.word	145482
 	.byte	12,2,35,4,13
 	.byte	'valueNow',0
-	.word	145624
+	.word	145482
 	.byte	12,2,35,16,13
 	.byte	'valueSet',0
-	.word	145624
+	.word	145482
 	.byte	12,2,35,28,13
 	.byte	'reachTime',0
 	.word	255
 	.byte	4,2,35,40,13
 	.byte	'pulse',0
-	.word	145727
+	.word	145585
 	.byte	16,2,35,44,13
 	.byte	'param',0
-	.word	145857
+	.word	145715
 	.byte	12,2,35,60,13
 	.byte	'limit',0
-	.word	145971
+	.word	145829
 	.byte	12,2,35,72,13
 	.byte	'posPID',0
 	.word	144774
@@ -20336,10 +20306,10 @@ BarrierDir:	.type	object
 	.byte	'currentPID',0
 	.word	144774
 	.byte	52,3,35,188,1,0,27
-	.byte	'BldcType',0,59,91,3
-	.word	146119
+	.byte	'BldcType',0,58,91,3
+	.word	145977
 	.byte	10
-	.byte	'_IMUParam',0,60,9,16,48,13
+	.byte	'_IMUParam',0,59,9,16,48,13
 	.byte	'accel',0
 	.word	144039
 	.byte	12,2,35,0,13
@@ -20358,29 +20328,29 @@ BarrierDir:	.type	object
 	.byte	'yaw',0
 	.word	255
 	.byte	4,2,35,44,0,27
-	.byte	'IMUParam',0,60,18,3
-	.word	146384
+	.byte	'IMUParam',0,59,18,3
+	.word	146242
 	.byte	10
-	.byte	'_Imu',0,60,20,16,152,1,13
+	.byte	'_Imu',0,59,20,16,152,1,13
 	.byte	'dataOri',0
-	.word	146384
+	.word	146242
 	.byte	48,2,35,0,13
 	.byte	'dataRaw',0
-	.word	146384
+	.word	146242
 	.byte	48,2,35,48,13
 	.byte	'dataSet',0
-	.word	146384
+	.word	146242
 	.byte	48,2,35,96,13
 	.byte	'G',0
 	.word	255
 	.byte	4,3,35,144,1,13
 	.byte	'calibration_flag',0
-	.word	145962
+	.word	145820
 	.byte	1,3,35,148,1,0,27
-	.byte	'IMUType',0,60,28,3
-	.word	146502
+	.byte	'IMUType',0,59,28,3
+	.word	146360
 	.byte	10
-	.byte	'_Attitude_',0,60,41,16,12,13
+	.byte	'_Attitude_',0,59,41,16,12,13
 	.byte	'x',0
 	.word	255
 	.byte	4,2,35,0,13
@@ -20390,27 +20360,27 @@ BarrierDir:	.type	object
 	.byte	'z',0
 	.word	255
 	.byte	4,2,35,8,0,27
-	.byte	'_Attitude',0,60,45,3
-	.word	146620
+	.byte	'_Attitude',0,59,45,3
+	.word	146478
 	.byte	3
 	.word	145180
 	.byte	3
-	.word	146119
+	.word	145977
 	.byte	3
 	.word	341
 	.byte	10
-	.byte	'_leg',0,61,18,16,216,1,13
+	.byte	'_leg',0,60,18,16,216,1,13
 	.byte	'num',0
-	.word	145513
+	.word	145371
 	.byte	1,2,35,0,13
 	.byte	'front',0
-	.word	146688
+	.word	146546
 	.byte	4,2,35,4,13
 	.byte	'behind',0
-	.word	146688
+	.word	146546
 	.byte	4,2,35,8,13
 	.byte	'wheel',0
-	.word	146693
+	.word	146551
 	.byte	4,2,35,12,13
 	.byte	'angle1Set',0
 	.word	255
@@ -20434,52 +20404,52 @@ BarrierDir:	.type	object
 	.word	255
 	.byte	4,2,35,56,13
 	.byte	'RunTime',0
-	.word	146698
+	.word	146556
 	.byte	4,2,35,60,13
 	.byte	'motion',0
 	.word	144565
 	.byte	152,1,2,35,64,0,27
-	.byte	'LegType',0,61,38,3
-	.word	146703
+	.byte	'LegType',0,60,38,3
+	.word	146561
 	.byte	34
-	.byte	'StateEnum',0,62,8,6,1,16
+	.byte	'StateEnum',0,61,8,6,1,16
 	.byte	'StatePreparing',0,0,16
 	.byte	'StateProcessing',0,1,16
 	.byte	'StateEnd',0,2,0,10
-	.byte	'_Pipeline',0,62,15,16,2,13
+	.byte	'_Pipeline',0,61,15,16,2,13
 	.byte	'isRun',0
-	.word	145962
+	.word	145820
 	.byte	1,2,35,0,13
 	.byte	'state',0
-	.word	146950
+	.word	146808
 	.byte	1,2,35,1,0,27
-	.byte	'PipelineType',0,62,18,3
-	.word	147012
+	.byte	'PipelineType',0,61,18,3
+	.word	146870
 	.byte	18,40
 	.word	144109
 	.byte	19,4,0,18,20
 	.word	255
 	.byte	19,4,0,10
-	.byte	'_JumpLineType',0,62,20,16,64,13
+	.byte	'_JumpLineType',0,61,20,16,64,13
 	.byte	'Pos',0
-	.word	147079
+	.word	146937
 	.byte	40,2,35,0,13
 	.byte	'reachTime',0
-	.word	147088
+	.word	146946
 	.byte	20,2,35,40,13
 	.byte	'Lerp',0
-	.word	145962
+	.word	145820
 	.byte	1,2,35,60,0,27
-	.byte	'JumpLineType',0,62,24,3
-	.word	147097
+	.byte	'JumpLineType',0,61,24,3
+	.word	146955
 	.byte	18,144,3
 	.word	255
 	.byte	19,99,0,33
-	.byte	'Left_Slope',0,63,6,15
-	.word	147184
+	.byte	'Left_Slope',0,62,6,15
+	.word	147042
 	.byte	1,1,33
-	.byte	'Right_Slope',0,63,6,31
-	.word	147184
+	.byte	'Right_Slope',0,62,6,31
+	.word	147042
 	.byte	1,1,0
 	.sdecl	'.debug_abbrev',debug
 	.sect	'.debug_abbrev'
@@ -20595,7 +20565,6 @@ BarrierDir:	.type	object
 	.byte	'MasterCtrl.h',0,2,0,0
 	.byte	'Pid.h',0,2,0,0
 	.byte	'Servo.h',0,2,0,0
-	.byte	'beiyoupid.h',0,2,0,0
 	.byte	'bldc.h',0,2,0,0
 	.byte	'imu.h',0,2,0,0
 	.byte	'leg.h',0,2,0,0
@@ -20617,7 +20586,7 @@ BarrierDir:	.type	object
 	.byte	2
 	.word	.L25
 	.byte	3
-	.byte	'JudgeRoadBarrier',0,1,18,5
+	.byte	'JudgeRoadBarrier',0,1,17,5
 	.word	.L64
 	.byte	1,1,1
 	.word	.L24,.L65,.L23
@@ -20640,277 +20609,277 @@ BarrierDir:	.type	object
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/src/JudgeRoadBarrier.c',0,0,0,0,0
 .L74:
-	.byte	5,8,7,0,5,2
+	.byte	5,6,7,0,5,2
 	.word	.L24
-	.byte	3,19,1,5,5,9
+	.byte	3,18,1,5,2,9
 	.half	.L75-.L24
-	.byte	1,5,10,7,9
+	.byte	1,5,7,7,9
 	.half	.L76-.L75
-	.byte	3,2,1,5,20,9
+	.byte	3,1,1,5,19,9
 	.half	.L77-.L76
-	.byte	1,5,10,9
+	.byte	1,5,7,9
 	.half	.L78-.L77
-	.byte	1,5,26,7,9
+	.byte	1,5,25,7,9
 	.half	.L79-.L78
-	.byte	1,5,34,9
+	.byte	1,5,35,9
 	.half	.L80-.L79
 	.byte	1,5,32,9
 	.half	.L81-.L80
-	.byte	1,5,40,7,9
+	.byte	1,5,41,7,9
 	.half	.L82-.L81
-	.byte	1,5,48,9
+	.byte	1,5,51,9
 	.half	.L83-.L82
-	.byte	1,5,46,9
+	.byte	1,5,48,9
 	.half	.L84-.L83
-	.byte	1,5,12,7,9
+	.byte	1,5,8,7,9
 	.half	.L85-.L84
-	.byte	3,2,1,5,23,9
+	.byte	3,1,1,5,21,9
 	.half	.L86-.L85
-	.byte	1,5,12,9
+	.byte	1,5,8,9
 	.half	.L87-.L86
 	.byte	1,5,27,7,9
 	.half	.L88-.L87
-	.byte	1,5,38,9
+	.byte	1,5,40,9
 	.half	.L89-.L88
-	.byte	1,5,36,9
-	.half	.L90-.L89
-	.byte	1,5,50,7,9
-	.half	.L91-.L90
-	.byte	1,5,49,9
-	.half	.L92-.L91
-	.byte	1,5,42,9
-	.half	.L93-.L92
-	.byte	1,5,49,9
-	.half	.L94-.L93
-	.byte	1,5,62,9
-	.half	.L95-.L94
-	.byte	1,5,61,9
-	.half	.L96-.L95
-	.byte	1,5,74,7,9
-	.half	.L97-.L96
-	.byte	1,5,73,9
-	.half	.L98-.L97
-	.byte	1,5,66,9
-	.half	.L99-.L98
-	.byte	1,5,73,9
-	.half	.L100-.L99
-	.byte	1,5,86,9
-	.half	.L101-.L100
-	.byte	1,5,85,9
-	.half	.L102-.L101
-	.byte	1,5,26,7,9
-	.half	.L103-.L102
-	.byte	3,2,1,5,25,9
-	.half	.L104-.L103
-	.byte	1,5,14,9
-	.half	.L105-.L104
-	.byte	1,5,25,9
-	.half	.L106-.L105
-	.byte	1,5,38,9
-	.half	.L107-.L106
 	.byte	1,5,37,9
-	.half	.L108-.L107
-	.byte	1,5,14,9
-	.half	.L109-.L108
-	.byte	1,5,58,7,9
-	.half	.L110-.L109
-	.byte	1,5,57,9
-	.half	.L111-.L110
+	.half	.L90-.L89
+	.byte	1,5,54,7,9
+	.half	.L91-.L90
+	.byte	1,5,53,9
+	.half	.L92-.L91
 	.byte	1,5,46,9
+	.half	.L93-.L92
+	.byte	1,5,53,9
+	.half	.L94-.L93
+	.byte	1,5,68,9
+	.half	.L95-.L94
+	.byte	1,5,66,9
+	.half	.L96-.L95
+	.byte	1,5,16,7,9
+	.half	.L97-.L96
+	.byte	3,1,1,5,15,9
+	.half	.L98-.L97
+	.byte	1,5,8,9
+	.half	.L99-.L98
+	.byte	1,5,15,9
+	.half	.L100-.L99
+	.byte	1,5,30,9
+	.half	.L101-.L100
+	.byte	1,5,28,9
+	.half	.L102-.L101
+	.byte	1,5,21,7,9
+	.half	.L103-.L102
+	.byte	3,2,1,5,20,9
+	.half	.L104-.L103
+	.byte	1,5,9,9
+	.half	.L105-.L104
+	.byte	1,5,20,9
+	.half	.L106-.L105
+	.byte	1,5,35,9
+	.half	.L107-.L106
+	.byte	1,5,33,9
+	.half	.L108-.L107
+	.byte	1,5,9,9
+	.half	.L109-.L108
+	.byte	1,5,55,7,9
+	.half	.L110-.L109
+	.byte	1,5,54,9
+	.half	.L111-.L110
+	.byte	1,5,43,9
 	.half	.L112-.L111
-	.byte	1,5,57,9
+	.byte	1,5,54,9
 	.half	.L113-.L112
-	.byte	1,5,71,9
+	.byte	1,5,70,9
 	.half	.L114-.L113
-	.byte	1,5,69,9
+	.byte	1,5,67,9
 	.half	.L115-.L114
-	.byte	1,5,87,9
+	.byte	1,5,86,9
 	.half	.L116-.L115
-	.byte	1,5,86,9
+	.byte	1,5,85,9
 	.half	.L117-.L116
-	.byte	1,5,76,9
+	.byte	1,5,75,9
 	.half	.L118-.L117
-	.byte	1,5,86,9
+	.byte	1,5,85,9
 	.half	.L119-.L118
-	.byte	1,5,99,9
+	.byte	1,5,100,9
 	.half	.L120-.L119
 	.byte	1,5,98,9
 	.half	.L121-.L120
-	.byte	1,5,117,9
+	.byte	1,5,20,9
 	.half	.L122-.L121
-	.byte	1,5,116,9
+	.byte	3,1,1,5,19,9
 	.half	.L123-.L122
-	.byte	1,5,106,9
+	.byte	1,5,9,9
 	.half	.L124-.L123
-	.byte	1,5,116,9
+	.byte	1,5,19,9
 	.half	.L125-.L124
-	.byte	1,5,130,1,9
+	.byte	1,5,35,9
 	.half	.L126-.L125
-	.byte	1,5,128,1,9
+	.byte	1,5,32,9
 	.half	.L127-.L126
-	.byte	1,5,13,9
+	.byte	1,5,6,9
 	.half	.L128-.L127
-	.byte	3,2,1,5,59,9
+	.byte	3,1,1,5,53,9
 	.half	.L129-.L128
-	.byte	1,5,62,9
+	.byte	1,5,58,9
 	.half	.L130-.L129
 	.byte	1,5,74,9
 	.half	.L131-.L130
-	.byte	1,5,73,9
+	.byte	1,5,72,9
 	.half	.L132-.L131
-	.byte	1,5,82,9
+	.byte	1,5,84,9
 	.half	.L133-.L132
-	.byte	1,5,81,9
+	.byte	1,5,82,9
 	.half	.L134-.L133
-	.byte	1,5,68,9
+	.byte	1,5,65,9
 	.half	.L135-.L134
-	.byte	1,5,38,9
+	.byte	1,5,31,9
 	.half	.L136-.L135
-	.byte	1,5,16,9
+	.byte	1,5,10,9
 	.half	.L137-.L136
-	.byte	3,1,1,5,41,9
+	.byte	3,1,1,5,37,9
 	.half	.L138-.L137
-	.byte	1,5,40,9
+	.byte	1,5,35,9
 	.half	.L139-.L138
-	.byte	1,5,13,9
+	.byte	1,5,6,9
 	.half	.L140-.L139
-	.byte	1,5,15,7,9
+	.byte	1,5,7,7,9
 	.half	.L141-.L140
-	.byte	3,2,1,5,63,9
+	.byte	3,1,1,5,56,9
 	.half	.L142-.L141
-	.byte	1,5,66,9
+	.byte	1,5,61,9
 	.half	.L143-.L142
-	.byte	1,5,78,9
-	.half	.L144-.L143
 	.byte	1,5,77,9
+	.half	.L144-.L143
+	.byte	1,5,75,9
 	.half	.L145-.L144
-	.byte	1,5,86,9
+	.byte	1,5,87,9
 	.half	.L146-.L145
 	.byte	1,5,85,9
 	.half	.L147-.L146
-	.byte	1,5,72,9
+	.byte	1,5,68,9
 	.half	.L148-.L147
-	.byte	1,5,41,9
-	.half	.L149-.L148
-	.byte	1,5,18,9
-	.half	.L150-.L149
-	.byte	3,1,1,5,44,9
-	.half	.L151-.L150
-	.byte	1,5,43,9
-	.half	.L152-.L151
-	.byte	1,5,15,9
-	.half	.L153-.L152
-	.byte	1,5,17,7,9
-	.half	.L154-.L153
-	.byte	3,2,1,5,35,9
-	.half	.L155-.L154
 	.byte	1,5,33,9
-	.half	.L156-.L155
-	.byte	1,5,17,9
-	.half	.L157-.L156
-	.byte	3,1,1,5,30,9
-	.half	.L158-.L157
-	.byte	1,5,29,9
-	.half	.L159-.L158
-	.byte	1,5,17,9
-	.half	.L160-.L159
-	.byte	3,1,1,5,28,9
-	.half	.L161-.L160
-	.byte	1,5,26,9
-	.half	.L162-.L161
-	.byte	1,5,17,9
-	.half	.L163-.L162
-	.byte	3,1,1,5,32,9
-	.half	.L164-.L163
-	.byte	1,5,30,9
-	.half	.L165-.L164
-	.byte	1,5,24,9
-	.half	.L166-.L165
-	.byte	3,1,1,5,17,9
-	.half	.L167-.L166
-	.byte	1,5,21,9
-	.half	.L15-.L167
-	.byte	3,2,1,5,30,9
-	.half	.L168-.L15
-	.byte	1,5,29,9
-	.half	.L169-.L168
-	.byte	1,5,32,9
-	.half	.L170-.L169
-	.byte	1,5,47,9
-	.half	.L171-.L170
-	.byte	1,5,45,9
-	.half	.L172-.L171
-	.byte	1,5,56,9
-	.half	.L173-.L172
-	.byte	1,5,49,9
-	.half	.L174-.L173
-	.byte	1,5,19,9
-	.half	.L14-.L174
-	.byte	3,2,1,5,28,9
-	.half	.L175-.L14
-	.byte	1,5,27,9
-	.half	.L176-.L175
-	.byte	1,5,30,9
-	.half	.L177-.L176
-	.byte	1,5,45,9
-	.half	.L178-.L177
-	.byte	1,5,43,9
-	.half	.L179-.L178
-	.byte	1,5,54,9
-	.half	.L180-.L179
-	.byte	1,5,47,9
-	.half	.L181-.L180
-	.byte	1,5,17,9
-	.half	.L10-.L181
-	.byte	3,2,1,5,26,9
-	.half	.L182-.L10
-	.byte	1,5,25,9
-	.half	.L183-.L182
-	.byte	1,5,28,9
-	.half	.L184-.L183
-	.byte	1,5,43,9
-	.half	.L185-.L184
-	.byte	1,5,41,9
-	.half	.L186-.L185
-	.byte	1,5,52,9
-	.half	.L187-.L186
-	.byte	1,5,45,9
-	.half	.L188-.L187
-	.byte	1,5,15,9
-	.half	.L6-.L188
-	.byte	3,2,1,5,24,9
-	.half	.L189-.L6
-	.byte	1,5,23,9
-	.half	.L190-.L189
-	.byte	1,5,26,9
-	.half	.L191-.L190
-	.byte	1,5,41,9
-	.half	.L192-.L191
-	.byte	1,5,39,9
-	.half	.L193-.L192
-	.byte	1,5,50,9
-	.half	.L194-.L193
-	.byte	1,5,43,9
-	.half	.L195-.L194
-	.byte	1,5,13,9
-	.half	.L3-.L195
-	.byte	3,2,1,5,22,9
-	.half	.L196-.L3
-	.byte	1,5,21,9
-	.half	.L197-.L196
-	.byte	1,5,24,9
-	.half	.L198-.L197
-	.byte	1,5,39,9
-	.half	.L199-.L198
+	.half	.L149-.L148
+	.byte	1,5,11,9
+	.half	.L150-.L149
+	.byte	3,1,1,5,39,9
+	.half	.L151-.L150
 	.byte	1,5,37,9
+	.half	.L152-.L151
+	.byte	1,5,7,9
+	.half	.L153-.L152
+	.byte	1,5,8,7,9
+	.half	.L154-.L153
+	.byte	3,1,1,5,26,9
+	.half	.L155-.L154
+	.byte	1,5,24,9
+	.half	.L156-.L155
+	.byte	1,5,8,9
+	.half	.L157-.L156
+	.byte	3,1,1,5,23,9
+	.half	.L158-.L157
+	.byte	1,5,21,9
+	.half	.L159-.L158
+	.byte	1,5,8,9
+	.half	.L160-.L159
+	.byte	3,1,1,5,20,9
+	.half	.L161-.L160
+	.byte	1,5,18,9
+	.half	.L162-.L161
+	.byte	1,5,8,9
+	.half	.L163-.L162
+	.byte	3,1,1,5,23,9
+	.half	.L164-.L163
+	.byte	1,5,21,9
+	.half	.L165-.L164
+	.byte	1,5,15,9
+	.half	.L166-.L165
+	.byte	3,1,1,5,8,9
+	.half	.L167-.L166
+	.byte	1,9
+	.half	.L15-.L167
+	.byte	3,2,1,5,20,9
+	.half	.L168-.L15
+	.byte	1,5,18,9
+	.half	.L169-.L168
+	.byte	1,5,8,9
+	.half	.L170-.L169
+	.byte	3,1,1,5,23,9
+	.half	.L171-.L170
+	.byte	1,5,21,9
+	.half	.L172-.L171
+	.byte	1,5,15,9
+	.half	.L173-.L172
+	.byte	3,1,1,5,8,9
+	.half	.L174-.L173
+	.byte	1,5,7,9
+	.half	.L14-.L174
+	.byte	3,3,1,5,19,9
+	.half	.L175-.L14
+	.byte	1,5,17,9
+	.half	.L176-.L175
+	.byte	1,5,7,9
+	.half	.L177-.L176
+	.byte	3,1,1,5,22,9
+	.half	.L178-.L177
+	.byte	1,5,20,9
+	.half	.L179-.L178
+	.byte	1,5,14,9
+	.half	.L180-.L179
+	.byte	3,1,1,5,7,9
+	.half	.L181-.L180
+	.byte	1,5,6,9
+	.half	.L10-.L181
+	.byte	3,3,1,5,18,9
+	.half	.L182-.L10
+	.byte	1,5,16,9
+	.half	.L183-.L182
+	.byte	1,5,6,9
+	.half	.L184-.L183
+	.byte	3,1,1,5,21,9
+	.half	.L185-.L184
+	.byte	1,5,19,9
+	.half	.L186-.L185
+	.byte	1,5,13,9
+	.half	.L187-.L186
+	.byte	3,1,1,5,6,9
+	.half	.L188-.L187
+	.byte	1,5,5,9
+	.half	.L6-.L188
+	.byte	3,3,1,5,17,9
+	.half	.L189-.L6
+	.byte	1,5,15,9
+	.half	.L190-.L189
+	.byte	1,5,5,9
+	.half	.L191-.L190
+	.byte	3,1,1,5,20,9
+	.half	.L192-.L191
+	.byte	1,5,18,9
+	.half	.L193-.L192
+	.byte	1,5,12,9
+	.half	.L194-.L193
+	.byte	3,1,1,5,5,9
+	.half	.L195-.L194
+	.byte	1,5,4,9
+	.half	.L3-.L195
+	.byte	3,3,1,5,16,9
+	.half	.L196-.L3
+	.byte	1,5,14,9
+	.half	.L197-.L196
+	.byte	1,5,4,9
+	.half	.L198-.L197
+	.byte	3,1,1,5,19,9
+	.half	.L199-.L198
+	.byte	1,5,17,9
 	.half	.L200-.L199
-	.byte	1,5,48,9
+	.byte	1,5,11,9
 	.half	.L201-.L200
-	.byte	1,5,41,9
+	.byte	3,1,1,5,4,9
 	.half	.L202-.L201
-	.byte	1,5,10,9
+	.byte	1,5,9,9
 	.half	.L2-.L202
-	.byte	3,2,1,5,3,9
+	.byte	3,3,1,5,2,9
 	.half	.L203-.L2
 	.byte	1,5,1,9
 	.half	.L16-.L203
@@ -20934,7 +20903,7 @@ BarrierDir:	.type	object
 	.byte	'D:\\Documents\\Smart_Car\\AURIX-Studio-1.10.2_workspace\\WheelLeg\\Debug\\',0,12,1,2
 	.word	.L25
 	.byte	3
-	.byte	'BarrierError',0,21,6,18
+	.byte	'BarrierError',0,21,6,22
 	.word	.L64
 	.byte	1,5,3
 	.word	BarrierError
@@ -20956,7 +20925,7 @@ BarrierDir:	.type	object
 	.byte	'D:\\Documents\\Smart_Car\\AURIX-Studio-1.10.2_workspace\\WheelLeg\\Debug\\',0,12,1,2
 	.word	.L25
 	.byte	3
-	.byte	'Barrier_flag',0,21,7,5
+	.byte	'Barrier_flag',0,21,7,8
 	.word	.L64
 	.byte	1,5,3
 	.word	Barrier_flag
@@ -20978,7 +20947,7 @@ BarrierDir:	.type	object
 	.byte	'D:\\Documents\\Smart_Car\\AURIX-Studio-1.10.2_workspace\\WheelLeg\\Debug\\',0,12,1,2
 	.word	.L25
 	.byte	3
-	.byte	'BarrierCount',0,21,7,20
+	.byte	'BarrierCount',0,21,7,26
 	.word	.L64
 	.byte	1,5,3
 	.word	BarrierCount
@@ -21000,7 +20969,7 @@ BarrierDir:	.type	object
 	.byte	'D:\\Documents\\Smart_Car\\AURIX-Studio-1.10.2_workspace\\WheelLeg\\Debug\\',0,12,1,2
 	.word	.L25
 	.byte	3
-	.byte	'Ba_Stretch1',0,21,5,5
+	.byte	'Ba_Stretch1',0,21,5,8
 	.word	.L64
 	.byte	1,5,3
 	.word	Ba_Stretch1
@@ -21022,7 +20991,7 @@ BarrierDir:	.type	object
 	.byte	'D:\\Documents\\Smart_Car\\AURIX-Studio-1.10.2_workspace\\WheelLeg\\Debug\\',0,12,1,2
 	.word	.L25
 	.byte	3
-	.byte	'Ba_Stretch2',0,21,5,22
+	.byte	'Ba_Stretch2',0,21,5,26
 	.word	.L64
 	.byte	1,5,3
 	.word	Ba_Stretch2
@@ -21044,7 +21013,7 @@ BarrierDir:	.type	object
 	.byte	'D:\\Documents\\Smart_Car\\AURIX-Studio-1.10.2_workspace\\WheelLeg\\Debug\\',0,12,1,2
 	.word	.L25
 	.byte	3
-	.byte	'Ba_Stretch3',0,21,5,40
+	.byte	'Ba_Stretch3',0,21,5,45
 	.word	.L64
 	.byte	1,5,3
 	.word	Ba_Stretch3
@@ -21088,7 +21057,7 @@ BarrierDir:	.type	object
 	.byte	'D:\\Documents\\Smart_Car\\AURIX-Studio-1.10.2_workspace\\WheelLeg\\Debug\\',0,12,1,2
 	.word	.L25
 	.byte	3
-	.byte	'in_Barrier_Stretch',0,21,4,29
+	.byte	'in_Barrier_Stretch',0,21,4,31
 	.word	.L66
 	.byte	1,5,3
 	.word	in_Barrier_Stretch
@@ -21110,7 +21079,7 @@ BarrierDir:	.type	object
 	.byte	'D:\\Documents\\Smart_Car\\AURIX-Studio-1.10.2_workspace\\WheelLeg\\Debug\\',0,12,1,2
 	.word	.L25
 	.byte	3
-	.byte	'Barrier_record',0,21,8,5
+	.byte	'Barrier_record',0,21,8,8
 	.word	.L64
 	.byte	1,5,3
 	.word	Barrier_record
@@ -21132,7 +21101,7 @@ BarrierDir:	.type	object
 	.byte	'D:\\Documents\\Smart_Car\\AURIX-Studio-1.10.2_workspace\\WheelLeg\\Debug\\',0,12,1,2
 	.word	.L25
 	.byte	3
-	.byte	'Barrier_record1',0,21,8,24
+	.byte	'Barrier_record1',0,21,8,28
 	.word	.L64
 	.byte	1,5,3
 	.word	Barrier_record1
@@ -21154,7 +21123,7 @@ BarrierDir:	.type	object
 	.byte	'D:\\Documents\\Smart_Car\\AURIX-Studio-1.10.2_workspace\\WheelLeg\\Debug\\',0,12,1,2
 	.word	.L25
 	.byte	3
-	.byte	'BarrierDir',0,21,10,5
+	.byte	'BarrierDir',0,21,10,8
 	.word	.L64
 	.byte	1,5,3
 	.word	BarrierDir
@@ -21198,7 +21167,7 @@ BarrierDir:	.type	object
 	.byte	'D:\\Documents\\Smart_Car\\AURIX-Studio-1.10.2_workspace\\WheelLeg\\Debug\\',0,12,1,2
 	.word	.L25
 	.byte	3
-	.byte	'BarrierRightSlopeVariance',0,21,3,37
+	.byte	'BarrierRightSlopeVariance',0,21,3,38
 	.word	.L66
 	.byte	1,5,3
 	.word	BarrierRightSlopeVariance
@@ -21220,7 +21189,7 @@ BarrierDir:	.type	object
 	.byte	'D:\\Documents\\Smart_Car\\AURIX-Studio-1.10.2_workspace\\WheelLeg\\Debug\\',0,12,1,2
 	.word	.L25
 	.byte	3
-	.byte	'discount',0,21,6,5
+	.byte	'discount',0,21,6,8
 	.word	.L64
 	.byte	1,5,3
 	.word	discount
@@ -21242,7 +21211,7 @@ BarrierDir:	.type	object
 	.byte	'D:\\Documents\\Smart_Car\\AURIX-Studio-1.10.2_workspace\\WheelLeg\\Debug\\',0,12,1,2
 	.word	.L25
 	.byte	3
-	.byte	'Length_end_last',0,21,9,5
+	.byte	'Length_end_last',0,21,9,8
 	.word	.L64
 	.byte	1,5,3
 	.word	Length_end_last

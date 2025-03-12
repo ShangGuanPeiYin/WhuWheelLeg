@@ -178,16 +178,16 @@ void USART_PID_Adjust(uint8_t Motor_n)
 			tiaocan[5] = data_Get / 10;
 		else if (select_channel == 6)	 // 速度环P
 		{
-//			pid_init.pid_speed1.kp = data_Get / 1000;
-//			pid_init.pid_speed2.kp = data_Get / 1000;
+			//			pid_init.pid_speed1.kp = data_Get / 1000;
+			//			pid_init.pid_speed2.kp = data_Get / 1000;
 		} else if (select_channel == 7)	   // 速度环I
 		{
-//			pid_init.pid_speed1.ki = data_Get / 1000;
-//			pid_init.pid_speed2.ki = data_Get / 1000;
+			//			pid_init.pid_speed1.ki = data_Get / 1000;
+			//			pid_init.pid_speed2.ki = data_Get / 1000;
 		} else if (select_channel == 8)	   // 速度环D
 		{
-//			pid_init.pid_speed1.kd = data_Get / 1000;
-//			pid_init.pid_speed2.kd = data_Get / 1000;
+			//			pid_init.pid_speed1.kd = data_Get / 1000;
+			//			pid_init.pid_speed2.kd = data_Get / 1000;
 		}
 		head_position = sizeof(DataBuff);
 	}

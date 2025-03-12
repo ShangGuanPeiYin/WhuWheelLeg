@@ -280,12 +280,13 @@ Vector2f ForwardKinematics(float angle1, float angle4)
  */
 void LegReset(void)
 {
-	Vector2f point0 = ForwardKinematics(PI, 0);
+	Vector2f point0 = ForwardKinematics(PI, 0.f);
 
 	legLeft.PosSet	= point0;
 	legRight.PosSet = point0;
 
 	AngleCalculate(&legLeft, legLeft.PosSet);	 // 解算
 	AngleCalculate(&legRight, legRight.PosSet);
+
 	// TODO：需要线性差值 增加时间戳，不然无法判断是否到位
 };

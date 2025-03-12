@@ -44,7 +44,7 @@ typedef struct _robot {
 	Vector2f ZeroPoint;
 
 } RobotType;
-
+extern int jump_flag;
 extern RobotType robot;
 extern float	 tiaocan[9];
 extern float	 YawCtrlOut;

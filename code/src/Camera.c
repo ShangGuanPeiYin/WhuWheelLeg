@@ -3,12 +3,12 @@
 uint8 videoData[ROW][COL];	  // 图像存储数组
 int16 dynamicBinary;		  // 图像动态二值化阈值
 int16 staticBinary = 0;		  // 图像固定二值化阈值
-long MainCount=0;
+long  MainCount	   = 0;
 
 int LightPoint	   = 20;	// 阈值补偿
 int trans		   = -8;	// 图像裁剪左右偏移 5
 
-int ImageFlag = 1;
+int ImageFlag	   = 1;
 // int trans		   = -4;	// 图像裁剪左右偏移 3
 // int trans		   = 0;	   // 图像裁剪左右偏移 5
 
@@ -30,7 +30,6 @@ int ImageFlag = 1;
 	|<------------MT9V03X_W------------->|
 */
 
-
 /**
  * @brief 二值化图像，保存到videoData中，用于识别
  */
@@ -49,7 +48,7 @@ void Binary_Img(void)
 
 	for (int16 row = 0, col; row < ROW; ++row)	  // 去掉近处的行
 	{
-		for (col = COLUMN_DIS / 2 - trans; col < COL + COLUMN_DIS / 2 - trans; ++col)	   // 去掉多余的行列
+		for (col = COLUMN_DIS / 2 - trans; col < COL + COLUMN_DIS / 2 - trans; ++col)	 // 去掉多余的行列
 		{	 // 灰度值小于阈值，认为是黑色（黑色灰度值=0，白色灰度值=255）
 			videoData[row][col - COLUMN_DIS / 2 + trans]
 				= (mt9v03x_image[row][col] < dynamicBinary) ? BLACK : WHITE;	// Data里面存 01,不是0和255
@@ -64,7 +63,7 @@ void Binary_Img(void)
 *功能：大津法计算二值化阈值（优化版）,参考 https://www.cnblogs.com/ranjiewen/p/6385564.html
 *作者：朱俊宇 2018/11/26
 *备注：经测试，优化前：180MHZ二值化188x120-33.8ms，152x100-32.4ms，
-			   优化后：180MHZ二值化188x120- 3.0ms，152x100-2.2ms,128x64- 1.2ms
+			优化后：180MHZ二值化188x120- 3.0ms，152x100-2.2ms,128x64- 1.2ms
 					   200MHZ二值化152x100- 1.8ms，220MHZ二值化152x100- 1.6ms
 					   200MHZ二值化188x70- 1.35ms
 */

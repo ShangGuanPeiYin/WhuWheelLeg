@@ -17,7 +17,6 @@ int		 core0_main(void)
 	mt9v03x_set_exposure_time(200);
 
 	KeyInit();	  // 按键初始化
-	// DataProcessInit();	  // 通讯初始化
 
 	ServoInit();	// 舵机控制初始化
 	BldcInit();		// 无刷电机初始化
@@ -33,6 +32,7 @@ int		 core0_main(void)
 	wireless_uart_init();
 	cpu_wait_event_ready();	   // 等待所有核心初始化完毕
 	system_delay_ms(500);
+
 	while (TRUE) {
 		// vofa_send();
 		// vofa_receive();
@@ -58,8 +58,25 @@ int		 core0_main(void)
 		//		oled_show_uint(60,1,x,3);
 		//		oled_show_int(60,3,(int)Motor[0].pulse.pulseRead*10000,3);
 		// Bldc_SetDuty(2000,2000);
-
 #if 1
+//	    oled_show_float(60, 3, IMUdata.dataOri.angle.x, 2, 2);
+        oled_show_float(60, 1, IMUdata.dataOri.pitch, 2, 2);
+        oled_show_float(60, 3, IMUdata.dataOri.roll, 2, 2);
+        oled_show_float(60, 5, IMUdata.dataOri.yaw, 2, 2);
+
+
+#endif
+static int zsc=0;
+#if 1
+system_delay_ms(10);
+zsc++;
+if(zsc%60==1)
+   RobotJumpLine();
+
+
+#endif
+
+#if 0
 		if (mt9v03x_finish_flag)	// 摄像头采集完成标志位
 		{
 			mt9v03x_finish_flag = 0;
