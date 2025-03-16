@@ -288,7 +288,7 @@ void  BalanceYaw(void)
  */
 void BalancePitch(void)
 {
-	robot.speedSet = 0;
+	robot.speedSet = 150;
 
 	// robot->posture=&IMUdata;
 	robot.speedNow = -(Motor[0].valueNow.speed + Motor[1].valueNow.speed) / 2;

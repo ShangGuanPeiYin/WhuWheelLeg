@@ -6,7 +6,7 @@ int16 staticBinary = 0;		  // Í¼Ïñ¹Ì¶¨¶şÖµ»¯ãĞÖµ
 long  MainCount	   = 0;
 
 int LightPoint	   = 20;	// ãĞÖµ²¹³¥
-int trans		   = -8;	// Í¼Ïñ²Ã¼ô×óÓÒÆ«ÒÆ 5
+int trans		   = -5;	// Í¼Ïñ²Ã¼ô×óÓÒÆ«ÒÆ 5
 
 int ImageFlag	   = 1;
 // int trans		   = -4;	// Í¼Ïñ²Ã¼ô×óÓÒÆ«ÒÆ 3
