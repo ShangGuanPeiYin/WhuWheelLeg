@@ -399,7 +399,6 @@ void seekfree_assistant_data_analysis (void)
 
     // 这里使用uint32进行定义，目的是为了保证数组四字节对齐
     uint32  temp_buffer[SEEKFREE_ASSISTANT_BUFFER_SIZE / 4];
-
     // 尝试读取数据, 如果不是自定义的传输方式则从接收回调中读取数据
     read_length = seekfree_assistant_receive_callback((uint8 *)temp_buffer, SEEKFREE_ASSISTANT_BUFFER_SIZE);
     if(read_length)

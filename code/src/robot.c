@@ -224,16 +224,17 @@ void BalanceInit(void)	  // PID
 	PIDTypeInit(&robot.pitchAnglePID, Kp_2, 0.f, Kd_2, PIDPOS, 0);	   // PD控制
 	PIDTypeInit(&robot.pitchVecPID, Kp_3, Ki_3, Kd_3, PIDPOS, 0);	   // PD控制
 
-	PIDTypeInit(&robot.yawPID, 120.f, 0.f, 0.f, PIDPOS, 0);
-	PIDTypeInit(&robot.rollPID, 0.f, 0.f, 0.f, PIDINC, 0);
+	PIDTypeInit(&robot.YawVecPID, 0.f, 0.f, 0.f, PIDPOS, 0);
+	PIDTypeInit(&robot.YawTorPID, 0.f, 0.f, 0.f, PIDINC, 0);
 };
+
 
 const float RobotWidth = 155.f;	   // mm
 /**
  * @brief （腿高平衡）横滚角平衡 从后往前看顺时针为正
  *
  */
-void		BalanceRoll(void)
+void BalanceRoll(void)
 {
 #if 1	 // 平衡策略一
 
@@ -272,24 +273,31 @@ void		BalanceRoll(void)
 	AngleCalculate(robot.right, robot.right->PosSet);
 };
 
-float YawCtrlOut = 0;
+float YawVecOut = 0;
+float YawTorOut = 0;
 /**
  * @brief  转向环
- *
+ *外环：误差角度->角速度
+ *内环：角速度->力矩
  */
-void  BalanceYaw(void)
+void BalanceYaw(void)
 {
-	robot.right_Torque += YawCtrlOut;	 // 角速度
-	robot.left_Torque  -= YawCtrlOut;
+	float LeftSpeedNow = rpmToMmPerSec(Motor[0].valueNow.speed);
+	float RightSpeedNow = rpmToMmPerSec(Motor[1].valueNow.speed);
+	float RealYawVec = (LeftSpeedNow - RightSpeedNow)/RobotWidth;
+	//YawVecOut = PIDOperation(&robot.YawVecPID, RealWarp, 0.f);	 			// 转向角速度
+	
+	YawTorOut = PIDOperation(&robot.YawTorPID, RealYawVec, YawVecOut);	 	// 转向力矩
+	robot.right_Torque -= YawTorOut;
+	robot.left_Torque  += YawTorOut;
 }
 
 /**
- * @brief 俯仰角平衡 三环嵌套， 先调外两环
+ * @brief 俯仰角平衡 三环嵌套
  */
 void BalancePitch(void)
 {
-	robot.speedSet = 150;
-
+	robot.speedSet = 0;
 	// robot->posture=&IMUdata;
 	robot.speedNow = -(Motor[0].valueNow.speed + Motor[1].valueNow.speed) / 2;
 
@@ -310,15 +318,10 @@ void Balance(void)
 	BalancePitch();	   // 计算维持平衡的力矩
 	BalanceYaw();	   // 再计算转向需要的力矩
 
-	if (StopFlag == 1) {
-		robot.right_Torque = 0;
-		robot.left_Torque  = 0;
-	}
-
-//    if (jump_flag == 1) {
-//        robot.right_Torque = 0;
-//        robot.left_Torque  = 0;
-//    }
+	// if (StopFlag == 1) {
+	// 	robot.right_Torque = 0;
+	// 	robot.left_Torque  = 0;
+	// }
 
 	BldcSetCurrent(robot.left_Torque, robot.right_Torque);
 }

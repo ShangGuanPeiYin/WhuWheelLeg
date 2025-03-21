@@ -1,4 +1,5 @@
 #include "zf_common_headfile.h"
+#define M_PI 3.14159265358979323846f
 // ¼ÆËã¿ª·½
 float InvSqrt(float x)
 {
@@ -100,4 +101,8 @@ void Draw_a_Line(int Start_Row, int End_Row, int line[ROW])
 		if (line[i] - 1 >= 0)
 			videoData[i][line[i] - 1] = 0;
 	}
+}
+
+float rpmToMmPerSec(float rpm) {
+    return (rpm * M_PI * WHEELR) / 60;
 }
