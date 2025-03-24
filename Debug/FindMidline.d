@@ -384,3 +384,5 @@ FindMidline.o :	"D:\\Documents\\Smart_Car\\AURIX-Studio-1.10.2_workspace\\WheelL
 "D:\\Documents\\Smart_Car\\AURIX-Studio-1.10.2_workspace\\WheelLeg\\code\\inc\RoadJudge.h" :
 FindMidline.o :	"D:\\Documents\\Smart_Car\\AURIX-Studio-1.10.2_workspace\\WheelLeg\\code\\inc\GetDistance.h"
 "D:\\Documents\\Smart_Car\\AURIX-Studio-1.10.2_workspace\\WheelLeg\\code\\inc\GetDistance.h" :
+FindMidline.o :	"D:\\Documents\\Smart_Car\\AURIX-Studio-1.10.2_workspace\\WheelLeg\\code\\inc\SeekFree.h"
+"D:\\Documents\\Smart_Car\\AURIX-Studio-1.10.2_workspace\\WheelLeg\\code\\inc\SeekFree.h" :

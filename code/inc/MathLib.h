@@ -143,7 +143,8 @@ s32		BytesToInt32(u8* buff, int index);
 
 // 数学计算
 int	Regression(int Line[], int start, int end, float* slope, float* intercept);	   // 回归
-double	CalculateVariance(int Line[], int start, int end);							   // 方差
-uint8_t LineMono(uint8_t X1, uint8_t X2, int Line[]);								   // 判断是否单调
+double	CalculateVariance(int Line[], int start, int end);						   // 方差
+uint8_t LineMono(uint8_t X1, uint8_t X2, int Line[]);							   // 判断是否单调
+float LimitBoth_float(float a, float min, float max);							   // 限幅
 
 #endif

@@ -384,3 +384,5 @@ FindBorder.o :	"D:\\Documents\\Smart_Car\\AURIX-Studio-1.10.2_workspace\\WheelLe
 "D:\\Documents\\Smart_Car\\AURIX-Studio-1.10.2_workspace\\WheelLeg\\code\\inc\RoadJudge.h" :
 FindBorder.o :	"D:\\Documents\\Smart_Car\\AURIX-Studio-1.10.2_workspace\\WheelLeg\\code\\inc\GetDistance.h"
 "D:\\Documents\\Smart_Car\\AURIX-Studio-1.10.2_workspace\\WheelLeg\\code\\inc\GetDistance.h" :
+FindBorder.o :	"D:\\Documents\\Smart_Car\\AURIX-Studio-1.10.2_workspace\\WheelLeg\\code\\inc\SeekFree.h"
+"D:\\Documents\\Smart_Car\\AURIX-Studio-1.10.2_workspace\\WheelLeg\\code\\inc\SeekFree.h" :

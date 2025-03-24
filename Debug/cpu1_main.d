@@ -384,3 +384,5 @@ cpu1_main.o :	"D:\\Documents\\Smart_Car\\AURIX-Studio-1.10.2_workspace\\WheelLeg
 "D:\\Documents\\Smart_Car\\AURIX-Studio-1.10.2_workspace\\WheelLeg\\code\\inc\RoadJudge.h" :
 cpu1_main.o :	"D:\\Documents\\Smart_Car\\AURIX-Studio-1.10.2_workspace\\WheelLeg\\code\\inc\GetDistance.h"
 "D:\\Documents\\Smart_Car\\AURIX-Studio-1.10.2_workspace\\WheelLeg\\code\\inc\GetDistance.h" :
+cpu1_main.o :	"D:\\Documents\\Smart_Car\\AURIX-Studio-1.10.2_workspace\\WheelLeg\\code\\inc\SeekFree.h"
+"D:\\Documents\\Smart_Car\\AURIX-Studio-1.10.2_workspace\\WheelLeg\\code\\inc\SeekFree.h" :

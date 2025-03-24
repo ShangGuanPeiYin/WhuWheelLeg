@@ -384,3 +384,5 @@ vector.o :	"D:\\Documents\\Smart_Car\\AURIX-Studio-1.10.2_workspace\\WheelLeg\\c
 "D:\\Documents\\Smart_Car\\AURIX-Studio-1.10.2_workspace\\WheelLeg\\code\\inc\RoadJudge.h" :
 vector.o :	"D:\\Documents\\Smart_Car\\AURIX-Studio-1.10.2_workspace\\WheelLeg\\code\\inc\GetDistance.h"
 "D:\\Documents\\Smart_Car\\AURIX-Studio-1.10.2_workspace\\WheelLeg\\code\\inc\GetDistance.h" :
+vector.o :	"D:\\Documents\\Smart_Car\\AURIX-Studio-1.10.2_workspace\\WheelLeg\\code\\inc\SeekFree.h"
+"D:\\Documents\\Smart_Car\\AURIX-Studio-1.10.2_workspace\\WheelLeg\\code\\inc\SeekFree.h" :

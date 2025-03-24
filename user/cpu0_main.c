@@ -4,7 +4,7 @@
 
 float	 angletemp = 0.f;
 Vector2f point_temp;
-uint8 image_copy[ROW][COL];
+extern float YawVecOut;
 int		 core0_main(void)
 {
 	clock_init();	 // 获取时钟频率<务必保留>
@@ -18,35 +18,27 @@ int		 core0_main(void)
 	ServoInit();	// 舵机控制初始化
 	BldcInit();		// 无刷电机初始化
 	IMU_init();		// IMU初始化
-	// U2
-	//uart_init(UART_2, 115200, UART2_TX_P10_5, UART2_RX_P10_6);	  // 串口2初始化
 	robotInit(&robot);
 	pit_ms_init(CCU60_CH0, 1);	  // CCU60_CH0通道，中断初始化周期为1ms 中断初始化在前面
 
 	// 此处编写用户代码 例如外设初始化代码等
 	wireless_uart_init();
+	seekfree_assistant_interface_init(SEEKFREE_ASSISTANT_WIRELESS_UART);	//选择逐飞助手调试串口
+	seekfree_assistant_oscilloscope_data.channel_num = 2;					//示波器通道数
+	//seekfree_assistant_camera_information_config(SEEKFREE_ASSISTANT_MT9V03X, image_copy[0], COL, ROW);	//设置摄像头信息给上位机显示
 	cpu_wait_event_ready();	   // 等待所有核心初始化完毕
 	system_delay_ms(500);
-	seekfree_assistant_interface_init(SEEKFREE_ASSISTANT_WIRELESS_UART);
-	seekfree_assistant_oscilloscope_data.channel_num = 2;
-	//seekfree_assistant_camera_information_config(SEEKFREE_ASSISTANT_MT9V03X, image_copy[0], COL, ROW);
-	float received_data = 0;
+
 	while (TRUE) {
-		seekfree_assistant_data_analysis();
-		for (int i = 0; i < SEEKFREE_ASSISTANT_SET_PARAMETR_COUNT; i++)
-        {
-            if (seekfree_assistant_parameter_update_flag[i])
-            {
-                received_data = seekfree_assistant_parameter[i];
-                // 处理完后清除更新标志位
-                seekfree_assistant_parameter_update_flag[i] = 0;
-            }
-        }
-		oled_show_float(60,3,received_data,4,2);
-		//示波器显示左右电机力矩
-		// seekfree_assistant_oscilloscope_data.data[0] = robot.left_Torque;
-		// seekfree_assistant_oscilloscope_data.data[1] = robot.right_Torque;
-		// seekfree_assistant_oscilloscope_send(&seekfree_assistant_oscilloscope_data);
+//调试Yaw环
+#if 1
+		ShowTorque();
+        AdjustPID(&robot.YawTorPID);
+		YawVecOut = AdjustTarget();
+        // printf("P : %f	I : %f 	D : %f	Target : %f",robot.YawTorPID.kp,robot.YawTorPID.ki,robot.YawTorPID.kd,YawVecOut);
+    	// printf("\r\n");
+#endif
+
 #if 0
 		vofa_send();
 		vofa_receive();
@@ -79,21 +71,6 @@ int		 core0_main(void)
 		{
 			mt9v03x_finish_flag = 0;
 			Binary_Img();
-//上位机接收图像
-#if 0
-
-			//将image_copy中的像素为1的置为255，像素为0的置为0
-			memcpy(image_copy[0], videoData[0], Video_IMAGE_SIZE);
-			//image_copy中像素为1则置为255，像素为0则置为0
-			for (int i = 0; i < ROW; i++) {
-				for (int j = 0; j < COL; j++) {
-					if (image_copy[i][j] == 1) {
-						image_copy[i][j] = 255;	
-					}	
-				}		
-			}
-			seekfree_assistant_camera_send();
-#endif
 			MainCount++;
 			if (MainCount > 8) {
 				Image_To_Warp();

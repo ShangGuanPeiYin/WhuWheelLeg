@@ -208,17 +208,16 @@ float tiaocan[9];
  */
 void BalanceInit(void)	  // PID
 {
-	// TODO：
-	float Kp_1 = 0.04f;
+	float Kp_1 = 0.086f;
 	float Ki_1 = 0.f;
-	float Kd_1 = -0.005f;
+	float Kd_1 = -0.04f;
 
-	float Kp_2 = 31.f;	  // 62.f;
-	float Kd_2 = 32.f;	  // 20.5f;
+	float Kp_2 = 30.f;	  // 62.f;
+	float Kd_2 = 35.f;	  // 20.5f;
 
-	float Kp_3 = 7.7;	 // 15;
+	float Kp_3 = 8.7;	 // 15;
 	float Ki_3 = 0.f;
-	float Kd_3 = 8.5;	 //.6;
+	float Kd_3 = 10.5;	 //.6;
 
 	PIDTypeInit(&robot.pitchSpeedPID, Kp_1, Ki_1, Kd_1, PIDPOS, 0);	   // 俯仰PID类型
 	PIDTypeInit(&robot.pitchAnglePID, Kp_2, 0.f, Kd_2, PIDPOS, 0);	   // PD控制
@@ -287,7 +286,7 @@ void BalanceYaw(void)
 	float RealYawVec = (LeftSpeedNow - RightSpeedNow)/RobotWidth;
 	//YawVecOut = PIDOperation(&robot.YawVecPID, RealWarp, 0.f);	 			// 转向角速度
 	
-	YawTorOut = PIDOperation(&robot.YawTorPID, RealYawVec, YawVecOut);	 	// 转向力矩
+	YawTorOut = PIDOperation(&robot.YawTorPID, RealYawVec, YawTorOut);	 	// 转向力矩
 	robot.right_Torque -= YawTorOut;
 	robot.left_Torque  += YawTorOut;
 }
@@ -300,11 +299,9 @@ void BalancePitch(void)
 	robot.speedSet = 0;
 	// robot->posture=&IMUdata;
 	robot.speedNow = -(Motor[0].valueNow.speed + Motor[1].valueNow.speed) / 2;
-
 	robot.posture->dataSet.pitch = PIDOperation(&robot.pitchSpeedPID, robot.speedNow, robot.speedSet);	  // 直接修改speedSet即可
-
+	robot.posture->dataSet.pitch = LimitBoth_float(robot.posture->dataSet.pitch, -8, 35);
 	robot.posture->dataSet.angle.x = PIDOperation(&robot.pitchAnglePID, -IMUdata.dataOri.pitch, robot.posture->dataSet.pitch);
-
 	robot.right_Torque			   = PIDOperation(&robot.pitchVecPID, -IMUdata.dataOri.angle.x, robot.posture->dataSet.angle.x);
 	robot.left_Torque			   = robot.right_Torque;
 }

@@ -113,6 +113,7 @@
 #include "GetVariance.h"
 #include "RoadJudge.h"
 #include "GetDistance.h"
+#include "SeekFree.h"
 //=====================================================”√ªß≤„======================================================
 
 #endif
