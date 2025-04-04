@@ -340,10 +340,6 @@ MasterCtrl.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\Pid.
 "D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\Pid.h" :
 MasterCtrl.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\Servo.h"
 "D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\Servo.h" :
-MasterCtrl.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\beiyoucontrol.h"
-"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\beiyoucontrol.h" :
-MasterCtrl.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\beiyoupid.h"
-"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\beiyoupid.h" :
 MasterCtrl.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\bldc.h"
 "D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\bldc.h" :
 MasterCtrl.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\dataProcess.h"
@@ -364,3 +360,29 @@ MasterCtrl.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\serv
 "D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\servo.h" :
 MasterCtrl.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\vofa.h"
 "D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\vofa.h" :
+MasterCtrl.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\Correct.h"
+"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\Correct.h" :
+MasterCtrl.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\GetSlope.h"
+"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\GetSlope.h" :
+MasterCtrl.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\CommonFunction.h"
+"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\CommonFunction.h" :
+MasterCtrl.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\JudgeCross.h"
+"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\JudgeCross.h" :
+MasterCtrl.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\JudgeRamp.h"
+"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\JudgeRamp.h" :
+MasterCtrl.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\JudgeSnakeBending.h"
+"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\JudgeSnakeBending.h" :
+MasterCtrl.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\JudgeStartLine.h"
+"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\JudgeStartLine.h" :
+MasterCtrl.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\JudgeRoundabout.h"
+"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\JudgeRoundabout.h" :
+MasterCtrl.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\JudgeRoadBarrier.h"
+"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\JudgeRoadBarrier.h" :
+MasterCtrl.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\GetVariance.h"
+"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\GetVariance.h" :
+MasterCtrl.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\RoadJudge.h"
+"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\RoadJudge.h" :
+MasterCtrl.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\GetDistance.h"
+"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\GetDistance.h" :
+MasterCtrl.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\SeekFree.h"
+"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\SeekFree.h" :

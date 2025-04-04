@@ -94,10 +94,10 @@ IfxQspi_SpiMaster.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\librari
 "D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\IfxCpu_Intrinsics.h" :
 IfxQspi_SpiMaster.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Dma\Dma\IfxDma_Dma.h"
 "D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Dma\Dma\IfxDma_Dma.h" :
-IfxQspi_SpiMaster.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\_Impl\IfxDma_cfg.h"
-"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\_Impl\IfxDma_cfg.h" :
 IfxQspi_SpiMaster.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Dma\Std\IfxDma.h"
 "D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Dma\Std\IfxDma.h" :
+IfxQspi_SpiMaster.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\_Impl\IfxDma_cfg.h"
+"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\_Impl\IfxDma_cfg.h" :
 IfxQspi_SpiMaster.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\libraries\\infineon_libraries\\Infra\\Sfr\\TC26B\\_Reg\IfxDma_bf.h"
 "D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\libraries\\infineon_libraries\\Infra\\Sfr\\TC26B\\_Reg\IfxDma_bf.h" :
 IfxQspi_SpiMaster.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\IfxCpu_Intrinsics.h"

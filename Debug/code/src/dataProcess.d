@@ -340,10 +340,6 @@ dataProcess.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\Pid
 "D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\Pid.h" :
 dataProcess.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\Servo.h"
 "D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\Servo.h" :
-dataProcess.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\beiyoucontrol.h"
-"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\beiyoucontrol.h" :
-dataProcess.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\beiyoupid.h"
-"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\beiyoupid.h" :
 dataProcess.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\bldc.h"
 "D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\bldc.h" :
 dataProcess.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\dataProcess.h"
@@ -364,3 +360,29 @@ dataProcess.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\ser
 "D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\servo.h" :
 dataProcess.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\vofa.h"
 "D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\vofa.h" :
+dataProcess.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\Correct.h"
+"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\Correct.h" :
+dataProcess.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\GetSlope.h"
+"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\GetSlope.h" :
+dataProcess.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\CommonFunction.h"
+"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\CommonFunction.h" :
+dataProcess.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\JudgeCross.h"
+"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\JudgeCross.h" :
+dataProcess.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\JudgeRamp.h"
+"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\JudgeRamp.h" :
+dataProcess.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\JudgeSnakeBending.h"
+"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\JudgeSnakeBending.h" :
+dataProcess.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\JudgeStartLine.h"
+"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\JudgeStartLine.h" :
+dataProcess.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\JudgeRoundabout.h"
+"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\JudgeRoundabout.h" :
+dataProcess.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\JudgeRoadBarrier.h"
+"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\JudgeRoadBarrier.h" :
+dataProcess.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\GetVariance.h"
+"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\GetVariance.h" :
+dataProcess.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\RoadJudge.h"
+"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\RoadJudge.h" :
+dataProcess.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\GetDistance.h"
+"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\GetDistance.h" :
+dataProcess.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\SeekFree.h"
+"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\code\\inc\SeekFree.h" :

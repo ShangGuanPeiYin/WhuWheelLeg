@@ -3,7 +3,7 @@
 int RowSet = 48,RealWidth,EndRowNotFind=0,CameraStopFlag=0,ADStopFlag=0,StopFlag=0;
 int Control_Straightflag = 1;
 //弯道控制行和直道控制行
-int RowSet_S = 48,RowSet_C = 51;
+int RowSet_S = 38,RowSet_C = 41;
 
 /**
  * @brief 找控制行  RowSet_S为直道控制行，RowSet_C为弯道控制行，RowSet在液晶调参上应与RowSet_S一致，作为RowSet_S的初值

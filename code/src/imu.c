@@ -92,7 +92,7 @@ void Get_Attitude()
 	IMU.T_Acc.y	 = (float) imu660ra_acc_y * Acc_Gain * G;
 	IMU.T_Acc.z	 = (float) imu660ra_acc_z * Acc_Gain * G;
 	/******************陀螺仪角速度AD值 转换成 弧度/秒（并且作零飘处理） ******************/
-	IMU.T_Gyro.x = (float) imu660ra_gyro_x * Gyro_Gr - 0.3/Radian_2_Degree;
+	IMU.T_Gyro.x = (float) imu660ra_gyro_x * Gyro_Gr - 0.22/Radian_2_Degree;
 	IMU.T_Gyro.y = (float) imu660ra_gyro_y * Gyro_Gr + 0.5/Radian_2_Degree;
 	IMU.T_Gyro.z = (float) imu660ra_gyro_z * Gyro_Gr + 0.03/Radian_2_Degree;
 	/******************获取姿态角度 ******************/
@@ -119,7 +119,7 @@ void Get_Attitude()
 	IMU.Gyro.z					 = last_ZPitchrate * Za + IMU.Gyro.z * (1 - Za);
 	last_ZPitchrate				 = IMU.Gyro.z;
 
-	IMUdata.dataOri.pitch		 = IMU.Angle.x+4.3;	   /// TODO:测量机械中值
+	IMUdata.dataOri.pitch		 = IMU.Angle.x+5.1;	   /// TODO:测量机械中值
 	IMUdata.dataOri.roll		 = IMU.Angle.y;
 	IMUdata.dataOri.yaw			 = -IMU.Angle.z;
 

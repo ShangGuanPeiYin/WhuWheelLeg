@@ -1,5 +1,5 @@
 ################################################################################
-# Automatically-generated file. Do not edit!
+# ????????????????????
 ################################################################################
 
 -include ../makefile.init
@@ -84,27 +84,27 @@ SECONDARY_SIZE += \
 WheelLeg.siz \
 
 
-# All Target
+# ???????
 all: main-build
 
-# Main-build Target
+# ?????????
 main-build: WheelLeg.elf secondary-outputs
 
-# Tool invocations
+# ???????
 WheelLeg.elf: $(OBJS) makefile $(OPTIONAL_TOOL_DEPS)
-	@echo 'Building target: $@'
-	@echo 'Invoking: TASKING Linker'
-	cctc --lsl-file="../Lcf_Tasking_Tricore_Tc.lsl" -Wl-Oc -Wl-OL -Wl-Ot -Wl-Ox -Wl-Oy "D:\Documents\Smart_Car\AURIX-Studio-1.10.2_workspace\WheelLeg\libraries\zf_device\zf_device_config.a" -Wl--map-file="WheelLeg.map" -Wl-mc -Wl-mf -Wl-mi -Wl-mk -Wl-ml -Wl-mm -Wl-md -Wl-mr -Wl-mu --no-warnings= -Wl--error-limit=42 --fp-model=3 -lcs_fpu -lfp_fpu -lrt --lsl-core=vtc --exceptions --strict --anachronisms --force-c++ -Ctc26xb -o"WheelLeg.elf" -Wl-o"WheelLeg.hex:IHEX" $(OBJS)
-	@echo 'Finished building target: $@'
+	@echo '?????????? $@'
+	@echo '???????? TASKING Linker'
+	cctc --lsl-file="../Lcf_Tasking_Tricore_Tc.lsl" -Wl-Oc -Wl-OL -Wl-Ot -Wl-Ox -Wl-Oy "D:\files\Desktop\Car\ADS_Workspace\WheelLeg\libraries\zf_device\zf_device_config.a" -Wl--map-file="WheelLeg.map" -Wl-mc -Wl-mf -Wl-mi -Wl-mk -Wl-ml -Wl-mm -Wl-md -Wl-mr -Wl-mu --no-warnings= -Wl--error-limit=42 --fp-model=3 -lcs_fpu -lfp_fpu -lrt --lsl-core=vtc --exceptions --strict --anachronisms --force-c++ -Ctc26xb -o"WheelLeg.elf" -Wl-o"WheelLeg.hex:IHEX" $(OBJS)
+	@echo '???????????? $@'
 	@echo ' '
 
 WheelLeg.siz: WheelLeg.elf makefile $(OPTIONAL_TOOL_DEPS)
-	@echo 'Invoking: Print Size'
+	@echo '???????? Print Size'
 	elfsize  "WheelLeg.elf"
-	@echo 'Finished building: $@'
+	@echo '??????????? $@'
 	@echo ' '
 
-# Other Targets
+# ???????
 clean:
 	-$(RM) WheelLeg.siz WheelLeg.elf
 	-@echo ' '

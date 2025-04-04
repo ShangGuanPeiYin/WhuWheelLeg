@@ -15,6 +15,5 @@ float LimitMax(float a, float max);
 float LimitMin(float a, float min);
 float LimitBothSides(float a, float min, float max);
 void  Draw_a_Line(int Start_Row, int End_Row, int line[ROW]);
-float rpmToMmPerSec(float rpm);
 
 #endif

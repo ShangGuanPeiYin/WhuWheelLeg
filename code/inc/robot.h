@@ -34,9 +34,9 @@ typedef struct _robot {
 	ParamType	 param;
 	JumpLineType jumpLine;
 
-	PIDType pitchSpeedPID, pitchAnglePID, pitchVecPID;	  //平衡速度环，角度环，角速度环 俯仰平衡PID
-	PIDType YawVecPID,YawTorPID;						  //转向角速度环，力矩环
-	
+	PIDType rollPID, yawPID;							  // 平衡PID
+	PIDType pitchSpeedPID, pitchAnglePID, pitchVecPID;	  // 速度环，角度环，角速度环 俯仰平衡PID
+
 	float left_Torque, right_Torque;
 	float speedNow, speedSet;	 // 机身速度，左右速度均值
 
@@ -44,10 +44,11 @@ typedef struct _robot {
 	Vector2f ZeroPoint;
 
 } RobotType;
-extern int jump_flag;
+
 extern RobotType robot;
 extern float	 tiaocan[9];
 extern float	 YawCtrlOut;
+
 
 void robotInit(RobotType* robot);
 

@@ -3,7 +3,7 @@
 #include "vector.h"
 #include "zf_common_typedef.h"
 
-#define Sampling_Time (5. / 1000.)			  // 采样周期
+#define Sampling_Time (1. / 1000.)			  // 采样周期
 #define irq_interval  Sampling_Time * 1000	  // 中断周期，单位为ms，此处示例为5ms
 
 typedef struct _IMUParam {

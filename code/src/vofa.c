@@ -45,11 +45,11 @@ void	  VOFAplusUpload_JustFloat(JustFloat* sendbuffer)
  */
 void vofa_send(void)	// vofa波形发送整合
 {
-	UploadDataJF.CH_Data[0] = tiaocan[0];
-	UploadDataJF.CH_Data[1] = tiaocan[1];
-	UploadDataJF.CH_Data[2] = tiaocan[2];
-	UploadDataJF.CH_Data[3] = tiaocan[3];
-	UploadDataJF.CH_Data[4] = tiaocan[4];
+	UploadDataJF.CH_Data[0] = robot.speedNow;
+	UploadDataJF.CH_Data[1] = robot.posture->dataSet.pitch;
+	UploadDataJF.CH_Data[2] = IMUdata.dataOri.angle.x;
+	UploadDataJF.CH_Data[3] = robot.posture->dataSet.angle.x;
+	UploadDataJF.CH_Data[4] = robot.speedNow;
 	UploadDataJF.CH_Data[5] = tiaocan[5];
 	UploadDataJF.CH_Data[6] = tiaocan[6];
 	UploadDataJF.CH_Data[7] = tiaocan[7];

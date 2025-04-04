@@ -89,7 +89,6 @@
 #include "MathLib.h"
 #include "Pid.h"
 #include "Servo.h"
-
 #include "bldc.h"
 #include "dataProcess.h"
 #include "imu.h"
@@ -113,7 +112,6 @@
 #include "GetVariance.h"
 #include "RoadJudge.h"
 #include "GetDistance.h"
-#include "SeekFree.h"
 //=====================================================”√ªß≤„======================================================
 
 #endif

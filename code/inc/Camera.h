@@ -5,11 +5,10 @@
 
 #define ROW		   100
 #define ROW_DIS	   30
-#define COLUMN   	   152	  // 列数
+#define COLUMN	   152	  // 列数
 #define COLUMN_DIS 28	  // 舍弃的点
 #define BLACK	   0
 #define WHITE	   1
-#define Video_IMAGE_SIZE (ROW * COL)
 
 extern int trans;
 
