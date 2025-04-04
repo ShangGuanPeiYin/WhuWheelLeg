@@ -11,31 +11,30 @@ int		 core0_main(void)
 
 	system_delay_ms(500);
 	// 此处编写用户代码 例如外设初始化代码等
-//	{
-//     pwm_init(FL_CHANNEL, 50, 460);
-//     pwm_init(FR_CHANNEL, 50, 460);
-//     pwm_init(BL_CHANNEL, 50, 460);
-//     pwm_init(BR_CHANNEL, 50, 460);
-//     cpu_wait_event_ready();    // 等待所有核心初始化完毕
-//     pwm_set_duty(FL_CHANNEL,400);
-//      pwm_set_duty(FR_CHANNEL,400);
-//      pwm_set_duty(BL_CHANNEL,400);
-//      pwm_set_duty(BR_CHANNEL,400);
-//     system_delay_ms(500);
-//     system_delay_ms(1000);
-//     static int pwm=400;
-//	    while (TRUE) {
-//	        system_delay_ms(1200);
-//	        pwm_set_duty(FL_CHANNEL,pwm);
-//            pwm_set_duty(FR_CHANNEL,pwm);
-//            pwm_set_duty(BL_CHANNEL,pwm);
-//            pwm_set_duty(BR_CHANNEL,pwm);
-//            if(pwm<800)
-//                pwm+=50;
-//	    }
-//
-//	}
-
+	//	{
+	//     pwm_init(FL_CHANNEL, 50, 460);
+	//     pwm_init(FR_CHANNEL, 50, 460);
+	//     pwm_init(BL_CHANNEL, 50, 460);
+	//     pwm_init(BR_CHANNEL, 50, 460);
+	//     cpu_wait_event_ready();    // 等待所有核心初始化完毕
+	//     pwm_set_duty(FL_CHANNEL,400);
+	//      pwm_set_duty(FR_CHANNEL,400);
+	//      pwm_set_duty(BL_CHANNEL,400);
+	//      pwm_set_duty(BR_CHANNEL,400);
+	//     system_delay_ms(500);
+	//     system_delay_ms(1000);
+	//     static int pwm=400;
+	//	    while (TRUE) {
+	//	        system_delay_ms(1200);
+	//	        pwm_set_duty(FL_CHANNEL,pwm);
+	//            pwm_set_duty(FR_CHANNEL,pwm);
+	//            pwm_set_duty(BL_CHANNEL,pwm);
+	//            pwm_set_duty(BR_CHANNEL,pwm);
+	//            if(pwm<800)
+	//                pwm+=50;
+	//	    }
+	//
+	//	}
 
 	oled_init();	// 屏幕初始化
 
@@ -53,16 +52,12 @@ int		 core0_main(void)
 
 	robotInit(&robot);
 
-
 	pit_ms_init(CCU60_CH0, 1);	  // CCU60_CH0通道，中断初始化周期为1ms 中断初始化在前面
 
 	// 此处编写用户代码 例如外设初始化代码等
 	wireless_uart_init();
 	cpu_wait_event_ready();	   // 等待所有核心初始化完毕
 	system_delay_ms(500);
-
-
-
 
 	while (TRUE) {
 		// vofa_send();
@@ -90,14 +85,12 @@ int		 core0_main(void)
 		//		oled_show_int(60,3,(int)Motor[0].pulse.pulseRead*10000,3);
 		// Bldc_SetDuty(2000,2000);
 #if 1
-//	    oled_show_float(60, 3, IMUdata.dataOri.angle.x, 2, 2);
-        oled_show_float(60, 1, IMUdata.dataOri.pitch, 2, 2);
-        oled_show_float(60, 3, IMUdata.dataOri.roll, 2, 2);
-        oled_show_float(60, 5, robot.posture->dataSet.pitch, 2, 2);
-
+		//	    oled_show_float(60, 3, IMUdata.dataOri.angle.x, 2, 2);
+		oled_show_float(60, 1, IMUdata.dataOri.pitch, 2, 2);
+		oled_show_float(60, 3, IMUdata.dataOri.roll, 2, 2);
+		oled_show_float(60, 5, robot.posture->dataSet.pitch, 2, 2);
 
 #endif
-
 
 #if 1
 		if (mt9v03x_finish_flag)	// 摄像头采集完成标志位
@@ -107,14 +100,14 @@ int		 core0_main(void)
 			MainCount++;
 			if (MainCount > 8) {
 				Image_To_Warp();
-				robot.yawPID.kp=120+260*fabs((float)RealWarp);
-				robot.yawPID.kd=60+140*fabs((float)RealWarp);
+				robot.yawPID.kp = 120 + 260 * fabs((float) RealWarp);
+				robot.yawPID.kd = 60 + 140 * fabs((float) RealWarp);
 
-				YawCtrlOut = 3.f * PIDOperation(&robot.yawPID, RealWarp, 0.f);	  // 平衡环Pwm
+				YawCtrlOut		= 3.f * PIDOperation(&robot.yawPID, RealWarp, 0.f);	   // 平衡环Pwm
 				DrawMidLine_Simple();
 				OLED_Print_Img128X64(videoData);
-		        oled_show_float(60, 7, (float)RealWarp, 3, 2);
-		        vofa_send();
+				oled_show_float(60, 7, (float) RealWarp, 3, 2);
+				vofa_send();
 				/*
 				Binary_Img();
 				Find_EndRow();
@@ -145,9 +138,9 @@ IFX_INTERRUPT(cc60_pit_ch0_isr, 0, CCU6_0_CH0_ISR_PRIORITY)
 	robot.param.runTime	  += 1.f;	 // 1ms
 
 	static u8 BalanceCnt   = 0;	   // 1k -> 100Hz  用bldc控制平衡，所以频率和bldc同步 最好在bldc上面
-    Get_Attitude();
-		Balance();
-		BalanceCnt = 0;
+	Get_Attitude();
+	Balance();
+	BalanceCnt		  = 0;
 
 	static u8 BldcCnt = 0;	  // 1k -> 100Hz
 	if (++BldcCnt >= 1) {
@@ -156,7 +149,7 @@ IFX_INTERRUPT(cc60_pit_ch0_isr, 0, CCU6_0_CH0_ISR_PRIORITY)
 	}
 
 	static int ServoCnt = 0;
-	if (++ServoCnt >= 150) {	   // 1k -> 200Hz
+	if (++ServoCnt >= 150) {	// 1k -> 200Hz
 
 		ServoFunc();
 		ServoCnt = 0;
@@ -164,7 +157,6 @@ IFX_INTERRUPT(cc60_pit_ch0_isr, 0, CCU6_0_CH0_ISR_PRIORITY)
 
 	static u8 IMUCnt = 0;	 // 1k -> 200Hz 与舵机错开
 	if (++IMUCnt >= irq_interval) {
-
 		IMUCnt = 0;
 	}
 

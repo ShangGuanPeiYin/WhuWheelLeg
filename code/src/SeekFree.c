@@ -1,100 +1,98 @@
 #include "zf_common_headfile.h"
 uint8 image_copy[ROW][COL];
 /**
- * @brief æ˜¾ç¤ºå›¾åƒ
- *éœ€è®¾ç½®seekfree_assistant_camera_information_config(SEEKFREE_ASSISTANT_MT9V03X, image_copy[0], COL, ROW);è®¾ç½®æ‘„åƒå¤´ä¿¡æ¯ç»™ä¸Šä½æœºæ˜¾ç¤º
+ * @brief ÏÔÊ¾Í¼Ïñ
+ *ĞèÉèÖÃseekfree_assistant_camera_information_config(SEEKFREE_ASSISTANT_MT9V03X, image_copy[0], COL,
+ *ROW);ÉèÖÃÉãÏñÍ·ĞÅ??¸øÉÏÎ»»úÏÔÊ¾
  */
-void ShowImage(void)
+void  ShowImage(void)
 {
-    //å°†image_copyä¸­çš„åƒç´ ä¸º1çš„ç½®ä¸º255ï¼Œåƒç´ ä¸º0çš„ç½®ä¸º0
-    memcpy(image_copy[0], videoData[0], Video_IMAGE_SIZE);
-    //image_copyä¸­åƒç´ ä¸º1åˆ™ç½®ä¸º255ï¼Œåƒç´ ä¸º0åˆ™ç½®ä¸º0
-    for (int i = 0; i < ROW; i++) {
-        for (int j = 0; j < COL; j++) {
-            if (image_copy[i][j] == 1) {
-                image_copy[i][j] = 255;	
-            }	
-        }		
-    }
-    seekfree_assistant_camera_send();
+	// ½«image_copy??µÄÏñËØÎª1µÄÖÃ??255£¬ÏñËØÎª0µÄÖÃ??0
+	memcpy(image_copy[0], videoData[0], sizeof(videoData));
+	// image_copy??ÏñËØ??1ÔòÖÃ??255£¬ÏñËØÎª0ÔòÖÃ??0
+	for (int i = 0; i < ROW; i++) {
+		for (int j = 0; j < COL; j++) {
+			if (image_copy[i][j] == 1) {
+				image_copy[i][j] = 255;
+			}
+		}
+	}
+	seekfree_assistant_camera_send();
 }
 
 /**
- * @brief æ˜¾ç¤ºå·¦å³ç”µæœºåŠ›çŸ©
- *éœ€è®¾ç½®seekfree_assistant_oscilloscope_data.channel_num;ç¤ºæ³¢å™¨é€šé“æ•°
+ * @brief ÏÔÊ¾×óÓÒµç»úÁ¦¾Ø
+ *ĞèÉèÖÃseekfree_assistant_oscilloscope_data.channel_num;Ê¾²¨Æ÷Í¨µÀ??
  */
 void ShowTorque(void)
 {
-    seekfree_assistant_oscilloscope_data.data[0] = robot.left_Torque;
-    seekfree_assistant_oscilloscope_data.data[1] = robot.right_Torque;
-    seekfree_assistant_oscilloscope_send(&seekfree_assistant_oscilloscope_data);
+	seekfree_assistant_oscilloscope_data.data[0] = robot.left_Torque;
+	seekfree_assistant_oscilloscope_data.data[1] = robot.right_Torque;
+	seekfree_assistant_oscilloscope_send(&seekfree_assistant_oscilloscope_data);
 }
 
 /**
- * @brief è·å–PIDå‚æ•°
+ * @brief »ñÈ¡PID²ÎÊı
  * pid[0] = kp
  * pid[1] = ki
  * pid[2] = kd
- * 3~7ä¸ºä¿ç•™ä½
- * @return float* pidå‚æ•°æ•°ç»„
+ * 3~7Îª±£ÁôÎ»
+ * @return float* pid²ÎÊıÊı×é
  */
 float* ReceivePID(void)
 {
-    static float pid[8];
-    seekfree_assistant_data_analysis();
-    for (int i = 0; i < SEEKFREE_ASSISTANT_SET_PARAMETR_COUNT; i++)
-    {
-        if (seekfree_assistant_parameter_update_flag[i])
-        {
-            // æ¸…é™¤æ›´æ–°æ ‡å¿—ä½
-            seekfree_assistant_parameter_update_flag[i] = 0;
-            switch(i)
-            {
-                case 0:
-                    pid[0] = seekfree_assistant_parameter[i];
-                    break; 
-                case 1:
-                    pid[1] = seekfree_assistant_parameter[i];
-                    break;
-                case 2:
-                    pid[2] = seekfree_assistant_parameter[i];
-                    break;
-                case 3:
-                    pid[3] = seekfree_assistant_parameter[i];
-                    break;
-                case 4:
-                    pid[4] = seekfree_assistant_parameter[i];
-                    break;
-                case 5:
-                    pid[5] = seekfree_assistant_parameter[i];
-                    break;
-                case 6:
-                    pid[6] = seekfree_assistant_parameter[i];
-                    break;
-                case 7:
-                    pid[7] = seekfree_assistant_parameter[i];
-                    break;
-                default:
-                    break;
-            }
-        }
-    }
-    return pid;
+	static float pid[8];
+	seekfree_assistant_data_analysis();
+	for (int i = 0; i < SEEKFREE_ASSISTANT_SET_PARAMETR_COUNT; i++) {
+		if (seekfree_assistant_parameter_update_flag[i]) {
+			// Çå³ı¸üĞÂ±êÖ¾??
+			seekfree_assistant_parameter_update_flag[i] = 0;
+			switch (i) {
+				case 0:
+					pid[0] = seekfree_assistant_parameter[i];
+					break;
+				case 1:
+					pid[1] = seekfree_assistant_parameter[i];
+					break;
+				case 2:
+					pid[2] = seekfree_assistant_parameter[i];
+					break;
+				case 3:
+					pid[3] = seekfree_assistant_parameter[i];
+					break;
+				case 4:
+					pid[4] = seekfree_assistant_parameter[i];
+					break;
+				case 5:
+					pid[5] = seekfree_assistant_parameter[i];
+					break;
+				case 6:
+					pid[6] = seekfree_assistant_parameter[i];
+					break;
+				case 7:
+					pid[7] = seekfree_assistant_parameter[i];
+					break;
+				default:
+					break;
+			}
+		}
+	}
+	return pid;
 }
 
 /**
- * @brief è°ƒæ•´PIDå‚æ•°
- * @param pid PIDç»“æ„ä½“æŒ‡é’ˆ
+ * @brief µ÷ÕûPID²ÎÊı
+ * @param pid PID½á¹¹ÌåÖ¸??
  */
 void AdjustPID(PIDType* pid)
 {
-    float* pid_value = ReceivePID();
-    pid->kp = pid_value[0];
-    pid->ki = pid_value[1];
-    pid->kd = pid_value[2];
+	float* pid_value = ReceivePID();
+	pid->kp			 = pid_value[0];
+	pid->ki			 = pid_value[1];
+	pid->kd			 = pid_value[2];
 }
 float AdjustTarget()
 {
-    float* value = ReceivePID();
-    return value[3];
+	float* value = ReceivePID();
+	return value[3];
 }
