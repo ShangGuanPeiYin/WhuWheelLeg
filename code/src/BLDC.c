@@ -59,7 +59,7 @@ void BldcSetZero(BldcType* motor)
 /// @param motor
 void BldcCulculate(BldcType* motor)
 {
-	motor->pulse.Distanse = motor->pulse.pulseRead - motor->pulse.pulseLast;	// 计算每次的脉冲数之差，对应每次转过的角度
+	motor->pulse.Distanse  = motor->pulse.pulseRead - motor->pulse.pulseLast;	 // 计算每次的脉冲数之差，对应每次转过的角度
 	motor->pulse.pulseLast = motor->pulse.pulseRead;
 
 	if (ABS(motor->pulse.Distanse) > PULSEPERROUND / 2) {	 // 用来判断电机应该正转还是反转，修正distance

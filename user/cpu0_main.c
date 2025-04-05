@@ -2,7 +2,7 @@
 #pragma section all "cpu0_dsram"
 // 将本语句与#pragma section all restore语句之间的全局变量都放在CPU0的RAM中
 
-float	 angletemp = 0.f;
+float	 DebugTemp = 0.f;
 Vector2f point_temp;
 int		 core0_main(void)
 {
@@ -10,32 +10,6 @@ int		 core0_main(void)
 	debug_init();	 // 初始化默认调试串口
 
 	system_delay_ms(500);
-	// 此处编写用户代码 例如外设初始化代码等
-	//	{
-	//     pwm_init(FL_CHANNEL, 50, 460);
-	//     pwm_init(FR_CHANNEL, 50, 460);
-	//     pwm_init(BL_CHANNEL, 50, 460);
-	//     pwm_init(BR_CHANNEL, 50, 460);
-	//     cpu_wait_event_ready();    // 等待所有核心初始化完毕
-	//     pwm_set_duty(FL_CHANNEL,400);
-	//      pwm_set_duty(FR_CHANNEL,400);
-	//      pwm_set_duty(BL_CHANNEL,400);
-	//      pwm_set_duty(BR_CHANNEL,400);
-	//     system_delay_ms(500);
-	//     system_delay_ms(1000);
-	//     static int pwm=400;
-	//	    while (TRUE) {
-	//	        system_delay_ms(1200);
-	//	        pwm_set_duty(FL_CHANNEL,pwm);
-	//            pwm_set_duty(FR_CHANNEL,pwm);
-	//            pwm_set_duty(BL_CHANNEL,pwm);
-	//            pwm_set_duty(BR_CHANNEL,pwm);
-	//            if(pwm<800)
-	//                pwm+=50;
-	//	    }
-	//
-	//	}
-
 	oled_init();	// 屏幕初始化
 
 	mt9v03x_init();	   // 摄像头初始化
@@ -60,6 +34,8 @@ int		 core0_main(void)
 	system_delay_ms(500);
 
 	while (TRUE) {
+
+
 		// vofa_send();
 		// vofa_receive();
 
@@ -84,6 +60,7 @@ int		 core0_main(void)
 		//		oled_show_uint(60,1,x,3);
 		//		oled_show_int(60,3,(int)Motor[0].pulse.pulseRead*10000,3);
 		// Bldc_SetDuty(2000,2000);
+
 #if 1
 		//	    oled_show_float(60, 3, IMUdata.dataOri.angle.x, 2, 2);
 		oled_show_float(60, 1, IMUdata.dataOri.pitch, 2, 2);
@@ -92,65 +69,70 @@ int		 core0_main(void)
 
 #endif
 
-#if 1
+#if 0
 		if (mt9v03x_finish_flag)	// 摄像头采集完成标志位
 		{
 			mt9v03x_finish_flag = 0;
 			Binary_Img();
 			MainCount++;
-			if (MainCount > 8) {
-				Image_To_Warp();
-				robot.yawPID.kp = 120 + 260 * fabs((float) RealWarp);
-				robot.yawPID.kd = 60 + 140 * fabs((float) RealWarp);
+			OLED_Print_Img128X64(videoData);
 
-				YawCtrlOut		= 3.f * PIDOperation(&robot.yawPID, RealWarp, 0.f);	   // 平衡环Pwm
-				DrawMidLine_Simple();
-				OLED_Print_Img128X64(videoData);
-				oled_show_float(60, 7, (float) RealWarp, 3, 2);
-				vofa_send();
-				/*
-				Binary_Img();
-				Find_EndRow();
-				CorrectEndRow();
-				RealEndRow = EndRow;		// 记录真实截止行
-				FindBorder();
-				Find_MidLine();
-				DrawMidLine_Simple();
-				OLED_Print_Img128X64(videoData);
-				if(StopFlag)
-				BldcSetSpeed(0,0);
-				YawCtrlOut = -3.f * PIDOperation(&robot.yawPID, (COL / 2.f) / COL, (float) MidLine[ControlRow]);	// 平衡环Pwm
-				*/
-			}
+			// if (MainCount > 8) {
+			// 	Image_To_Warp();
+			// 	robot.yawPID.kp = 120 + 260 * fabs((float) RealWarp);
+			// 	robot.yawPID.kd = 60 + 140 * fabs((float) RealWarp);
+
+			// 	YawCtrlOut		= 3.f * PIDOperation(&robot.yawPID, RealWarp, 0.f);	   // 平衡环Pwm
+			// 	DrawMidLine_Simple();
+			// 	OLED_Print_Img128X64(videoData);
+			// 	oled_show_float(60, 7, (float) RealWarp, 3, 2);
+			// 	vofa_send();
+			// 	/*
+			// 	Binary_Img();
+			// 	Find_EndRow();
+			// 	CorrectEndRow();
+			// 	RealEndRow = EndRow;		// 记录真实截止行
+			// 	FindBorder();
+			// 	Find_MidLine();
+			// 	DrawMidLine_Simple();
+			// 	OLED_Print_Img128X64(videoData);
+			// 	if(StopFlag)
+			// 	BldcSetSpeed(0,0);
+			// 	YawCtrlOut = -3.f * PIDOperation(&robot.yawPID, (COL / 2.f) / COL, (float) MidLine[ControlRow]);	// 平衡环Pwm
+			// 	*/
+			// }
 		}
 #endif
+		;
+		;
 	}
-}
+};
 
 /*------------------------------------------------- 定时器1 -------------------------------------------------------*/
 IFX_INTERRUPT(cc60_pit_ch0_isr, 0, CCU6_0_CH0_ISR_PRIORITY)
 {
 	interrupt_global_enable(0);	   // 开启中断嵌套
 
-	// 计数器计时
+	//	 计数器计时
 	robot.param.leftTime  += 1;		 // 1ms
 	robot.param.rightTime += 1;		 // 1ms
 	robot.param.runTime	  += 1.f;	 // 1ms
 
 	static u8 BalanceCnt   = 0;	   // 1k -> 100Hz  用bldc控制平衡，所以频率和bldc同步 最好在bldc上面
-	Get_Attitude();
-	Balance();
-	BalanceCnt		  = 0;
+	{
+		Get_Attitude();
+		// Balance();
+		BalanceCnt = 0;
+	}
 
-	static u8 BldcCnt = 0;	  // 1k -> 100Hz
+	static u8 BldcCnt = 0;	  // 1k -> 500Hz
 	if (++BldcCnt >= 1) {
-		BldcFunc();
+		// BldcFunc();
 		BldcCnt = 0;
 	}
 
 	static int ServoCnt = 0;
 	if (++ServoCnt >= 150) {	// 1k -> 200Hz
-
 		ServoFunc();
 		ServoCnt = 0;
 	}

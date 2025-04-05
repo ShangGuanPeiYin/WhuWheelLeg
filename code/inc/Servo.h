@@ -3,18 +3,6 @@
 
 #include "zf_common_typedef.h"
 #include "zf_driver_pwm.h"
-/*
-180度舵机实际转动范围稍微大于180，0-180度实际也不是0-1w，而是大约1300-6200，并且各个舵机有所不同
-
-舵机的在轮腿的0-180度角对应PWM范围：
-左前：1250 - 3700 - 6150   右前：1500 - 3950 - 6400
-左后：1000 - 3400 - 5800   右后：1150 - 3650 - 6150
-差为5000恒定
-
- 换算关系为：
- PWMSet = PWMmin + angleSet * (PWMmax - PWMmin) / 180;
-
-*/
 
 // 舵机初始化
 #define FL_CHANNEL ATOM0_CH3_P14_2	   // 前左舵机pwm引脚
@@ -30,11 +18,12 @@ typedef struct _Servo {
 	pwm_channel_enum pin;	 // PWM 引脚
 	JointNum		 num;
 
-	float	angleSet;	 // 舵机的实际转角 舵机均采用角度制 ° （0-180°）
-	float	angleAdj;	 // 解算的调整值
-	float	angleLeg;	 // 在Leg上的换算角度，即Leg.h的∠1与∠4
-	int8	sign;		 // 正负号，结算用
-	int32_t PWMmin, PWMmax;
+	float angleSet;	   // 舵机的实际转角 舵机均采用角度制 ° （0-180°）
+	float angleAdj;	   // 解算的调整值
+	float angleLeg;	   // 在Leg上的换算角度，即Leg.h的∠1与∠4
+	int8  sign;		   // 正负号，结算用
+
+	float deltaAngle;	 // 消除安装误差。角度制 ° （0-180°）
 
 	int32_t PWMSet;
 } ServoType;

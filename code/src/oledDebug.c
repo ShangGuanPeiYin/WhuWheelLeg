@@ -1,6 +1,6 @@
 #include "zf_common_headfile.h"
 
-extern float	angletemp;
+extern float	DebugTemp;
 extern Vector2f point_temp;
 
 /**
@@ -9,29 +9,29 @@ extern Vector2f point_temp;
  */
 void OLedDebug(void)
 {
-#if 0	 // ∂Êª˙≤‚ ‘
+#if 1	 // ∂Êª˙≤‚ ‘
 
 	OLED_Key_Scan();
 
 	if (keyflag1 == 1)	  // ◊Û
 	{
-		angletemp -= 10.f;
+		DebugTemp -= 10.f;
 	} else if (keyflag2 == 1)	 // ”“
 	{
-		angletemp += 10.f;
+		DebugTemp += 10.f;
 	}
-	Limit(angletemp, 0, 180);
+	Limit(DebugTemp, 0, 180);
 
-	Servo[Fl].angleSet = angletemp;
-	Servo[Fr].angleSet = angletemp;
-	Servo[Bl].angleSet = angletemp;
-	Servo[Br].angleSet = angletemp;
+	Servo[Fl].angleSet = DebugTemp;
+	Servo[Fr].angleSet = DebugTemp;
+	Servo[Bl].angleSet = DebugTemp;
+	Servo[Br].angleSet = DebugTemp;
 
-	oled_show_float(50, 5, angletemp, 4, 2);
+	oled_show_float(50, 5, DebugTemp, 4, 2);
 
 #endif
 
-#if 1	 // ŒÂ¡¨∏À≤‚ ‘
+#if 0	 // ŒÂ¡¨∏À≤‚ ‘
 
 	OLED_Key_Scan();
 

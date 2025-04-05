@@ -92,9 +92,9 @@ void Get_Attitude()
 	IMU.T_Acc.y	 = (float) imu660ra_acc_y * Acc_Gain * G;
 	IMU.T_Acc.z	 = (float) imu660ra_acc_z * Acc_Gain * G;
 	/******************陀螺仪角速度AD值 转换成 弧度/秒（并且作零飘处理） ******************/
-	IMU.T_Gyro.x = (float) imu660ra_gyro_x * Gyro_Gr - 0.22/Radian_2_Degree;
-	IMU.T_Gyro.y = (float) imu660ra_gyro_y * Gyro_Gr + 0.5/Radian_2_Degree;
-	IMU.T_Gyro.z = (float) imu660ra_gyro_z * Gyro_Gr + 0.03/Radian_2_Degree;
+	IMU.T_Gyro.x = (float) imu660ra_gyro_x * Gyro_Gr - 0.22 / Radian_2_Degree;
+	IMU.T_Gyro.y = (float) imu660ra_gyro_y * Gyro_Gr + 0.5 / Radian_2_Degree;
+	IMU.T_Gyro.z = (float) imu660ra_gyro_z * Gyro_Gr + 0.03 / Radian_2_Degree;
 	/******************获取姿态角度 ******************/
 	IMUupdate(&(IMU.T_Gyro), &(IMU.T_Acc), &(IMU.T_Mag), &(IMU.Angle));
 	/******************获取姿态角速度 ******************/
@@ -119,11 +119,11 @@ void Get_Attitude()
 	IMU.Gyro.z					 = last_ZPitchrate * Za + IMU.Gyro.z * (1 - Za);
 	last_ZPitchrate				 = IMU.Gyro.z;
 
-	IMUdata.dataOri.pitch		 = IMU.Angle.x+5.1;	   /// TODO:测量机械中值
+	IMUdata.dataOri.pitch		 = IMU.Angle.x + 5.1;	 /// TODO:测量机械中值
 	IMUdata.dataOri.roll		 = IMU.Angle.y;
 	IMUdata.dataOri.yaw			 = -IMU.Angle.z;
 
-	IMUdata.dataOri.angle.x		 = IMU.Gyro.x;	// TODO:测量细致化零漂
+	IMUdata.dataOri.angle.x		 = IMU.Gyro.x;	  // TODO:测量细致化零漂
 	IMUdata.dataOri.angle.y		 = IMU.Gyro.y;
 	IMUdata.dataOri.angle.z		 = IMU.Gyro.z;
 }
@@ -207,10 +207,10 @@ void  IMUupdate(_Attitude* Gyr_rad, _Attitude* Acc_filt, _Attitude* Mag_filt, _A
 		return;
 
 	// 加速度计测量的重力向量(机体坐标系)
-	norm	 = invSqrt(ax * ax + ay * ay + az * az);
-	ax		 = ax * norm;
-	ay		 = ay * norm;
-	az		 = az * norm;
+	norm		 = invSqrt(ax * ax + ay * ay + az * az);
+	ax			 = ax * norm;
+	ay			 = ay * norm;
+	az			 = az * norm;
 
 	//    norm = invSqrt(mx * mx + my * my + mz * mz);
 	//    mx = mx / norm;
@@ -232,27 +232,27 @@ void  IMUupdate(_Attitude* Gyr_rad, _Attitude* Acc_filt, _Attitude* Mag_filt, _A
 	//    wz = 2 * bx * (q0q2 + q1q3) + 2 * bz * (0.5 - q1q1 - q2q2);
 
 	// 陀螺仪积分估计重力向量(机体坐标系)
-	float vx = 2 * (q1q3 - q0q2);
-	float vy = 2 * (q0q1 + q2q3);
-	float vz = q0q0 - q1q1 - q2q2 + q3q3;
+	float vx	 = 2 * (q1q3 - q0q2);
+	float vy	 = 2 * (q0q1 + q2q3);
+	float vz	 = q0q0 - q1q1 - q2q2 + q3q3;
 
 	// 测量的重力向量与估算的重力向量差积求出向量间的误差
 	//    ex = (ay*vz - az*vy) + (my*wz - mz*wy);
 	//    ey = (az*vx - ax*vz) + (mz*wx - mx*wz);
 	//    ez = (ax*vy - ay*vx) + (mx*wy - my*wx);
-	ex		 = (ay * vz - az * vy);
-	ey		 = (az * vx - ax * vz);
-	ez		 = (ax * vy - ay * vx);
+	ex			 = (ay * vz - az * vy);
+	ey			 = (az * vx - ax * vz);
+	ez			 = (ax * vy - ay * vx);
 
 	// 用上面求出误差进行积分
-	exInt	 = exInt + ex * Ki;
-	eyInt	 = eyInt + ey * Ki;
-	ezInt	 = ezInt + ez * Ki;
+	exInt		 = exInt + ex * Ki;
+	eyInt		 = eyInt + ey * Ki;
+	ezInt		 = ezInt + ez * Ki;
 
 	// 将误差PI后补偿到陀螺仪
-	gx		 = gx + Kp * ex + exInt;
-	gy		 = gy + Kp * ey + eyInt;
-	gz = gz + Kp * ez + ezInt;	  // 这里的gz由于没有观测者进行矫正会产生漂移，表现出来的就是积分自增或自减
+	gx			 = gx + Kp * ex + exInt;
+	gy			 = gy + Kp * ey + eyInt;
+	gz			 = gz + Kp * ez + ezInt;	// 这里的gz由于没有观测者进行矫正会产生漂移，表现出来的就是积分自增或自减
 
 	// 四元素的微分方程
 	q0			 = q0 + (-q1 * gx - q2 * gy - q3 * gz) * halfT;
