@@ -312,13 +312,13 @@ void BalancePitch(void)
 	// robot->posture=&IMUdata;
 	robot.speedNow				   = -(Motor[0].valueNow.speed + Motor[1].valueNow.speed) / 2;
 
+	// 20ms 正反馈
 	robot.posture->dataSet.pitch   = PIDOperation(&robot.pitchSpeedPID, robot.speedNow, robot.speedSet);
-	//+robot.posture->dataSet.pitch;	  // 直接修改speedSet即可
 
-	// robot.posture->dataSet.pitch=LimitBoth_float(robot.posture->dataSet.pitch,-8,16);
-
+	// 5ms 与角度的计算，一阶互补滤波相匹配
 	robot.posture->dataSet.angle.x = PIDOperation(&robot.pitchAnglePID, -IMUdata.dataOri.pitch, robot.posture->dataSet.pitch);
 
+	// 1kHz
 	robot.right_Torque			   = PIDOperation(&robot.pitchVecPID, -IMUdata.dataOri.angle.x, robot.posture->dataSet.angle.x);
 	robot.left_Torque			   = robot.right_Torque;
 }
@@ -372,8 +372,10 @@ void		 Angle_Control(void)
 void Balance(void)
 {
 	// BalancePitch();	   // 计算维持平衡的力矩
+
 	Angle_Control();
 	// BalanceSpeed();//计算速度需要的力矩
+
 	BalanceYaw();	 // 再计算转向需要的力矩
 
 	//	if (StopFlag == 1) {

@@ -34,8 +34,6 @@ int		 core0_main(void)
 	system_delay_ms(500);
 
 	while (TRUE) {
-
-
 		// vofa_send();
 		// vofa_receive();
 
@@ -65,7 +63,7 @@ int		 core0_main(void)
 		//	    oled_show_float(60, 3, IMUdata.dataOri.angle.x, 2, 2);
 		oled_show_float(60, 1, IMUdata.dataOri.pitch, 2, 2);
 		oled_show_float(60, 3, IMUdata.dataOri.roll, 2, 2);
-		oled_show_float(60, 5, robot.posture->dataSet.pitch, 2, 2);
+		// oled_show_float(60, 5, robot.posture->dataSet.pitch, 2, 2);
 
 #endif
 
@@ -118,14 +116,14 @@ IFX_INTERRUPT(cc60_pit_ch0_isr, 0, CCU6_0_CH0_ISR_PRIORITY)
 	robot.param.rightTime += 1;		 // 1ms
 	robot.param.runTime	  += 1.f;	 // 1ms
 
-	static u8 BalanceCnt   = 0;	   // 1k -> 100Hz  用bldc控制平衡，所以频率和bldc同步 最好在bldc上面
+	static u8 BalanceCnt   = 0;	   // 1kHz  用bldc控制平衡，所以频率和bldc同步 最好在bldc上面
 	{
 		Get_Attitude();
-		// Balance();
+		Balance();
 		BalanceCnt = 0;
 	}
 
-	static u8 BldcCnt = 0;	  // 1k -> 500Hz
+	static u8 BldcCnt = 0;	  // 1k -> 500Hz  TODO尝试改到1kHz
 	if (++BldcCnt >= 1) {
 		// BldcFunc();
 		BldcCnt = 0;

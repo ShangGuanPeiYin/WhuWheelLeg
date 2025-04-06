@@ -37,28 +37,22 @@ extern IMUType IMUdata;
 #define Radian_2_Degree 57.2957795f
 #define Degree_2_Radian 0.01745329f
 
-/*************位置结构体************/
-typedef struct _Attitude_ {
-	float x;
-	float y;
-	float z;
-} _Attitude;
-
 /*************IMU构体************/
 typedef struct _IMU_ {
-	_Attitude T_Acc;	 // 陀螺仪加速度AD值 转换成 米/平方秒
-	_Attitude T_Gyro;	 // 陀螺仪角速度AD值 转换成 弧度/秒
-	_Attitude T_Mag;
+	Vector3f T_Acc;		// 陀螺仪加速度AD值 转换成 米/平方秒
+	Vector3f T_Gyro;	// 陀螺仪角速度AD值 转换成 弧度/秒
+	Vector3f T_Mag;
 
-	_Attitude Gyro;		// 解算后姿态角速度
-	_Attitude Angle;	// 解算后姿态角度
+	Vector3f Gyro;	   // 解算后姿态角速度
+	Vector3f Angle;	   // 解算后姿态角度
 } _IMU;
 
-// extern _IMU IMU;
-//  extern float Yawrate;
+void IMU_getdata(void);
+
 void  IMU_init(void);
 void  Get_Attitude(void);
 float angle_calc(float angle_m, float gyro_m, int index);
-void  IMUupdate(_Attitude* Gyr_rad, _Attitude* Acc_filt, _Attitude* Mag_filt, _Attitude* Att_Angle);
+void  IMUupdate(Vector3f* Gyr_rad, Vector3f* Acc_filt, Vector3f* Mag_filt, Vector3f* Att_Angle);
 void  IMUANG_Offset(void);
+
 #endif

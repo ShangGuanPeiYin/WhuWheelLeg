@@ -63,9 +63,9 @@
 #include "zf_driver_spi.h"
 
 int16 imu963ra_gyro_x = 0, imu963ra_gyro_y = 0, imu963ra_gyro_z = 0;	// 三轴陀螺仪数据      GYRO (陀螺仪)
-int16 imu963ra_acc_x = 0, imu963ra_acc_y = 0, imu963ra_acc_z = 0;	 // 三轴加速度计数据     ACC  (accelerometer 加速度计)
-int16 imu963ra_mag_x = 0, imu963ra_mag_y = 0, imu963ra_mag_z = 0;	 // 三轴磁力计数据      MAG  (magnetometer 磁力计)
-float imu963ra_transition_factor[3] = {4098, 14.3, 3000};			 // 转换实际值的比例
+int16 imu963ra_acc_x = 0, imu963ra_acc_y = 0, imu963ra_acc_z = 0;		// 三轴加速度计数据     ACC  (accelerometer 加速度计)
+int16 imu963ra_mag_x = 0, imu963ra_mag_y = 0, imu963ra_mag_z = 0;		// 三轴磁力计数据      MAG  (magnetometer 磁力计)
+float imu963ra_transition_factor[3] = {4098, 14.3, 3000};				// 转换实际值的比例
 
 #if IMU963RA_USE_SOFT_IIC
 static soft_iic_info_struct imu963ra_iic_struct;
@@ -166,11 +166,11 @@ static uint8 imu963ra_write_mag_register(uint8 addr, uint8 reg, uint8 data)
 	uint16 timeout_count = 0;
 
 	addr				 = addr << 1;
-	imu963ra_write_acc_gyro_register(IMU963RA_SLV0_CONFIG, 0x00);	 // 从机0配置清除
-	imu963ra_write_acc_gyro_register(IMU963RA_SLV0_ADD, addr | 0);	  // 设置地磁计地址（注意这里需要设置8位的I2C地址） 0x2C
+	imu963ra_write_acc_gyro_register(IMU963RA_SLV0_CONFIG, 0x00);		// 从机0配置清除
+	imu963ra_write_acc_gyro_register(IMU963RA_SLV0_ADD, addr | 0);		// 设置地磁计地址（注意这里需要设置8位的I2C地址） 0x2C
 	imu963ra_write_acc_gyro_register(IMU963RA_SLV0_SUBADD, reg);		// 需要写入的寄存器地址
 	imu963ra_write_acc_gyro_register(IMU963RA_DATAWRITE_SLV0, data);	// 需要写入的数据
-	imu963ra_write_acc_gyro_register(IMU963RA_MASTER_CONFIG, 0x4C);	   // 仅在第一个周期启用通讯 开启上拉 I2C主机使能
+	imu963ra_write_acc_gyro_register(IMU963RA_MASTER_CONFIG, 0x4C);		// 仅在第一个周期启用通讯 开启上拉 I2C主机使能
 
 	// 等待通讯成功
 	while (0 == (0x80 & imu963ra_read_acc_gyro_register(IMU963RA_STATUS_MASTER))) {
@@ -197,7 +197,7 @@ static uint8 imu963ra_read_mag_register(uint8 addr, uint8 reg)
 
 	addr				 = addr << 1;
 	imu963ra_write_acc_gyro_register(IMU963RA_SLV0_ADD, addr | 1);	  // 设置地磁计地址（注意这里需要设置8位的I2C地址） 0x2C
-	imu963ra_write_acc_gyro_register(IMU963RA_SLV0_SUBADD, reg);	// 需要读取的寄存器地址
+	imu963ra_write_acc_gyro_register(IMU963RA_SLV0_SUBADD, reg);	  // 需要读取的寄存器地址
 	imu963ra_write_acc_gyro_register(IMU963RA_SLV0_CONFIG, 0x01);
 	imu963ra_write_acc_gyro_register(IMU963RA_MASTER_CONFIG, 0x4C);	   // 仅在第一个周期启用通讯 开启上拉 I2C主机使能
 
@@ -225,7 +225,7 @@ static void imu963ra_connect_mag(uint8 addr, uint8 reg)
 	addr = addr << 1;
 
 	imu963ra_write_acc_gyro_register(IMU963RA_SLV0_ADD, addr | 1);	  // 设置地磁计地址（注意这里需要设置8位的I2C地址） 0x2C
-	imu963ra_write_acc_gyro_register(IMU963RA_SLV0_SUBADD, reg);	// 需要读取的寄存器地址
+	imu963ra_write_acc_gyro_register(IMU963RA_SLV0_SUBADD, reg);	  // 需要读取的寄存器地址
 	imu963ra_write_acc_gyro_register(IMU963RA_SLV0_CONFIG, 0x06);
 	imu963ra_write_acc_gyro_register(IMU963RA_MASTER_CONFIG, 0x6C);	   // 仅在第一个周期启用通讯 开启上拉 I2C主机使能
 }
@@ -441,10 +441,10 @@ uint8 imu963ra_init(void)
 			break;
 		}
 
-		imu963ra_write_acc_gyro_register(IMU963RA_CTRL3_C, 0x44);	 // 使能陀螺仪数字低通滤波器
-		imu963ra_write_acc_gyro_register(IMU963RA_CTRL4_C, 0x02);	 // 使能数字低通滤波器
-		imu963ra_write_acc_gyro_register(IMU963RA_CTRL5_C, 0x00);	 // 加速度计与陀螺仪四舍五入
-		imu963ra_write_acc_gyro_register(IMU963RA_CTRL6_C, 0x00);	 // 开启加速度计高性能模式 陀螺仪低通滤波 133hz
+		imu963ra_write_acc_gyro_register(IMU963RA_CTRL3_C, 0x44);	  // 使能陀螺仪数字低通滤波器
+		imu963ra_write_acc_gyro_register(IMU963RA_CTRL4_C, 0x02);	  // 使能数字低通滤波器
+		imu963ra_write_acc_gyro_register(IMU963RA_CTRL5_C, 0x00);	  // 加速度计与陀螺仪四舍五入
+		imu963ra_write_acc_gyro_register(IMU963RA_CTRL6_C, 0x00);	  // 开启加速度计高性能模式 陀螺仪低通滤波 133hz
 		imu963ra_write_acc_gyro_register(IMU963RA_CTRL7_G, 0x00);	  // 开启陀螺仪高性能模式 关闭高通滤波
 		imu963ra_write_acc_gyro_register(IMU963RA_CTRL9_XL, 0x01);	  // 关闭I3C接口
 

@@ -1,21 +1,16 @@
 #include "zf_common_headfile.h"
-#define pi acos(-1.0)
 
 IMUType IMUdata;
-#include "imu.h"
-
-_IMU IMU;
+_IMU	IMU;
 
 void IMU_init(void)
 {
 	memset(&IMU, 0, sizeof(IMU));
+	memset(&IMUdata, 0, sizeof(IMUdata));
 
-	// imu963ra_init();                                    // 初始化 IMU963RA
 	imu660ra_init();
 }
 
-// float Yawrate = 0.0f;
-// float Turn_Speed=0.0f;
 /**************************实现函数*********************************************************************
 函  数：static float invSqrt(float x)
 功　能: 快速计算 1/Sqrt(x)
@@ -34,6 +29,10 @@ static float invSqrt(float x)
 	return y;
 }
 
+/**
+ * @brief 963IMU获取数据
+ *
+ */
 void IMU_getdata(void)
 {
 	imu963ra_get_acc();		// 获取 IMU963RA 加速度计数据
@@ -59,14 +58,13 @@ void IMU_getdata(void)
  * 函数功能: 获取陀螺仪原始数据，并进行初步处理
  * 函数输入参数:   无
  * 函数输出参数:   无
- * 使用方法：在user_c/isr.c文件 TIM7_IRQHandler
- *函数中调用，在本处修改即可实现中断任务（注意，在定时器中断初始化时，已经设置了抢占优先级设置为3,次优先级设置为1） 第一次修改日期
- *：   2023年04月07日 （魏灵洁）
+ * 使用方法：在中断函数中调用，在本处修改即可实现中断任务（注意，在定时器中断初始化时，已经设置了抢占优先级设置为3,次优先级设置为1）
+ *第一次修改日期 ：   2023年04月07日 （魏灵洁）
  ******************************************************************************
  */
 void Get_Attitude()
 {
-	//    //    static _Attitude Acc_filtold,Gyr_filtold;
+	//    //    static Vector3f Acc_filtold,Gyr_filtold;
 	//    /******************获取陀螺仪原始数据******************/
 	//    imu963ra_get_acc();                                     // 获取 IMU963RA 加速度计数据
 	//    imu963ra_get_gyro();                                     // 获取 IMU963RA 陀螺仪数据
@@ -119,8 +117,8 @@ void Get_Attitude()
 	IMU.Gyro.z					 = last_ZPitchrate * Za + IMU.Gyro.z * (1 - Za);
 	last_ZPitchrate				 = IMU.Gyro.z;
 
-	IMUdata.dataOri.pitch		 = IMU.Angle.x + 5.1;	 /// TODO:测量机械中值
-	IMUdata.dataOri.roll		 = IMU.Angle.y;
+	IMUdata.dataOri.pitch		 = IMU.Angle.x - 1.5f;	  /// TODO:测量机械中值
+	IMUdata.dataOri.roll		 = IMU.Angle.y - 2.1f;	  // 随着Yaw的改变，会造成最多-1°的偏差
 	IMUdata.dataOri.yaw			 = -IMU.Angle.z;
 
 	IMUdata.dataOri.angle.x		 = IMU.Gyro.x;	  // TODO:测量细致化零漂
@@ -182,7 +180,7 @@ float angle_calc(float angle_m, float gyro_m, int index)
 #define halfT (Sampling_Time / 2)		  // 采样周期的一半
 float q0 = 1, q1 = 0, q2 = 0, q3 = 0;	  // quaternion elements representing the estimated orientation
 float exInt = 0, eyInt = 0, ezInt = 0;	  // scaled integral error
-void  IMUupdate(_Attitude* Gyr_rad, _Attitude* Acc_filt, _Attitude* Mag_filt, _Attitude* Att_Angle)
+void  IMUupdate(Vector3f* Gyr_rad, Vector3f* Acc_filt, Vector3f* Mag_filt, Vector3f* Att_Angle)
 {
 	float ax = Acc_filt->x, ay = Acc_filt->y, az = Acc_filt->z;
 	float gx = Gyr_rad->x, gy = Gyr_rad->y, gz = Gyr_rad->z;

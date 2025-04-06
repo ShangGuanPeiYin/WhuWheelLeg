@@ -1,6 +1,6 @@
 	; Module start
 	.compiler_version	"TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler v1.1r8 Build 22011964"
-	.compiler_invocation	"ctc -f cc28568a --dep-file=code/src/JudgeRoadBarrier.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc26xb -D__CPU_TC26XB__ --core=tc1.6.x --fp-model=+float -D__CPU__=tc26xb -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\code -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\code\\\\inc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Configurations -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B\\\\_Reg -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If\\\\Ccu6If -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\StdIf -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Math -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Asc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6 -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Timer -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\CStart -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Irq -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Dma -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12 -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\IncrEnc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\SpiMaster -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Adc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Impl -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib\\\\DataHandling -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_PinMap -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_common -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_components -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_device -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_driver -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\user -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o code/src/JudgeRoadBarrier.src ../code/src/JudgeRoadBarrier.c"
+	.compiler_invocation	"ctc -f cc30108a --dep-file=code/src/JudgeRoadBarrier.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc26xb -D__CPU_TC26XB__ --core=tc1.6.x --fp-model=+float -D__CPU__=tc26xb -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\code -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\code\\\\inc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Configurations -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B\\\\_Reg -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If\\\\Ccu6If -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\StdIf -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Math -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Asc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6 -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Timer -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\CStart -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Irq -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Dma -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12 -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\IncrEnc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\SpiMaster -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Adc -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Std -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Impl -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib\\\\DataHandling -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_PinMap -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_common -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_components -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_device -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\libraries\\\\zf_driver -ID:\\\\files\\\\Desktop\\\\Car\\\\ADS_Workspace\\\\WheelLeg\\\\user -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o code/src/JudgeRoadBarrier.src ../code/src/JudgeRoadBarrier.c"
 	.compiler_name		"ctc"
 	;source	'../code/src/JudgeRoadBarrier.c'
 
@@ -504,11 +504,11 @@ BarrierDir:	.type	object
 	.extern	EndRow
 	.extern	ControlRow
 	.extern	MidLine
-	.extern	Stretch
 	.extern	Left_Slope
 	.extern	Right_Slope
 	.extern	GetLeftVariance
 	.extern	GetRightVariance
+	.extern	Stretch
 	.calls	'JudgeRoadBarrier','',0
 	.sdecl	'.debug_info',debug
 	.sect	'.debug_info'
@@ -19923,8 +19923,16 @@ BarrierDir:	.type	object
 	.byte	19,99,0,33
 	.byte	'MidLine',0,53,6,13
 	.word	143993
+	.byte	1,1,18,144,3
+	.word	237
+	.byte	19,99,0,33
+	.byte	'Left_Slope',0,54,6,15
+	.word	144021
+	.byte	1,1,33
+	.byte	'Right_Slope',0,54,6,31
+	.word	144021
 	.byte	1,1,10
-	.byte	'_Vector3fType',0,54,6,16,12,13
+	.byte	'_Vector3fType',0,55,6,16,12,13
 	.byte	'x',0
 	.word	237
 	.byte	4,2,35,0,13
@@ -19934,20 +19942,20 @@ BarrierDir:	.type	object
 	.byte	'z',0
 	.word	237
 	.byte	4,2,35,8,0,27
-	.byte	'Vector3f',0,54,11,3
-	.word	144021
+	.byte	'Vector3f',0,55,11,3
+	.word	144074
 	.byte	10
-	.byte	'_Vector2fType',0,54,13,16,8,13
+	.byte	'_Vector2fType',0,55,13,16,8,13
 	.byte	'x',0
 	.word	237
 	.byte	4,2,35,0,13
 	.byte	'y',0
 	.word	237
 	.byte	4,2,35,4,0,27
-	.byte	'Vector2f',0,54,17,3
-	.word	144091
+	.byte	'Vector2f',0,55,17,3
+	.word	144144
 	.byte	10
-	.byte	'_Ctrl',0,55,7,16,32,13
+	.byte	'_Ctrl',0,56,7,16,32,13
 	.byte	'leftTime',0
 	.word	323
 	.byte	8,2,35,0,13
@@ -19961,12 +19969,12 @@ BarrierDir:	.type	object
 	.word	237
 	.byte	4,2,35,20,13
 	.byte	'PosZero',0
-	.word	144091
+	.word	144144
 	.byte	8,2,35,24,0,27
-	.byte	'ParamType',0,55,16,3
-	.word	144150
+	.byte	'ParamType',0,56,16,3
+	.word	144203
 	.byte	10
-	.byte	'_BoundParamType',0,55,18,16,56,13
+	.byte	'_BoundParamType',0,56,18,16,56,13
 	.byte	'x0',0
 	.word	237
 	.byte	4,2,35,0,13
@@ -20009,12 +20017,12 @@ BarrierDir:	.type	object
 	.byte	'NonLinear',0
 	.word	237
 	.byte	4,2,35,52,0,27
-	.byte	'BoundParamType',0,55,25,3
-	.word	144270
+	.byte	'BoundParamType',0,56,25,3
+	.word	144323
 	.byte	18,88
-	.word	144091
+	.word	144144
 	.byte	19,10,0,10
-	.byte	'_Motion',0,55,28,16,152,1,13
+	.byte	'_Motion',0,56,28,16,152,1,13
 	.byte	't',0
 	.word	237
 	.byte	4,2,35,0,13
@@ -20022,20 +20030,20 @@ BarrierDir:	.type	object
 	.word	464
 	.byte	1,2,35,4,13
 	.byte	'CtrlPoint',0
-	.word	144538
+	.word	144591
 	.byte	88,2,35,8,13
 	.byte	'boundParam',0
-	.word	144270
+	.word	144323
 	.byte	56,2,35,96,0,27
-	.byte	'MotionType',0,55,35,3
-	.word	144547
+	.byte	'MotionType',0,56,35,3
+	.word	144600
 	.byte	34
-	.byte	'_PIDMode',0,56,18,14,1,16
+	.byte	'_PIDMode',0,57,18,14,1,16
 	.byte	'PIDPOS',0,0,16
 	.byte	'PIDINC',0,1,16
 	.byte	'PIDFuzzy',0,2,0,27
-	.byte	'PIDMode',0,56,22,3
-	.word	144647
+	.byte	'PIDMode',0,57,22,3
+	.word	144700
 	.byte	14
 	.word	237
 	.byte	14
@@ -20051,93 +20059,93 @@ BarrierDir:	.type	object
 	.byte	18,12
 	.word	237
 	.byte	19,2,0,14
-	.word	144737
+	.word	144790
 	.byte	14
 	.word	237
 	.byte	10
-	.byte	'_PID',0,56,25,16,52,13
+	.byte	'_PID',0,57,25,16,52,13
 	.byte	'mode',0
-	.word	144647
+	.word	144700
 	.byte	1,2,35,0,13
 	.byte	'kp',0
-	.word	144707
+	.word	144760
 	.byte	4,2,35,2,13
 	.byte	'ki',0
-	.word	144712
+	.word	144765
 	.byte	4,2,35,6,13
 	.byte	'kd',0
-	.word	144717
+	.word	144770
 	.byte	4,2,35,10,13
 	.byte	'pOut',0
-	.word	144722
+	.word	144775
 	.byte	4,2,35,14,13
 	.byte	'iOut',0
-	.word	144727
+	.word	144780
 	.byte	4,2,35,18,13
 	.byte	'dOut',0
-	.word	144732
+	.word	144785
 	.byte	4,2,35,22,13
 	.byte	'err',0
-	.word	144746
+	.word	144799
 	.byte	12,2,35,26,13
 	.byte	'outputThreshold',0
 	.word	237
 	.byte	4,2,35,38,13
 	.byte	'output',0
-	.word	144751
+	.word	144804
 	.byte	4,2,35,42,13
 	.byte	'kiScale',0
 	.word	237
 	.byte	4,2,35,46,0,27
-	.byte	'PIDType',0,56,43,3
-	.word	144756
+	.byte	'PIDType',0,57,43,3
+	.word	144809
 	.byte	18,8
 	.word	457
 	.byte	19,1,0,10
-	.byte	'_DMFType',0,56,46,16,32,13
+	.byte	'_DMFType',0,57,46,16,32,13
 	.byte	'EF',0
-	.word	144946
+	.word	144999
 	.byte	8,2,35,0,13
 	.byte	'En',0
-	.word	144946
+	.word	144999
 	.byte	8,2,35,8,13
 	.byte	'DF',0
-	.word	144946
+	.word	144999
 	.byte	8,2,35,16,13
 	.byte	'Dn',0
-	.word	144946
+	.word	144999
 	.byte	8,2,35,24,0,27
-	.byte	'DMFType',0,56,51,3
-	.word	144955
+	.byte	'DMFType',0,57,51,3
+	.word	145008
 	.byte	18,28
 	.word	237
 	.byte	19,6,0,10
-	.byte	'_UFFType',0,56,53,16,84,13
+	.byte	'_UFFType',0,57,53,16,84,13
 	.byte	'UFF_P',0
-	.word	145034
+	.word	145087
 	.byte	28,2,35,0,13
 	.byte	'UFF_I',0
-	.word	145034
+	.word	145087
 	.byte	28,2,35,28,13
 	.byte	'UFF_D',0
-	.word	145034
+	.word	145087
 	.byte	28,2,35,56,0,27
-	.byte	'UFFType',0,56,57,3
-	.word	145043
-	.byte	15,57,22,9,1,16
+	.byte	'UFFType',0,57,57,3
+	.word	145096
+	.byte	15,58,14,9,1,16
 	.byte	'Fl',0,0,16
 	.byte	'Fr',0,1,16
 	.byte	'Bl',0,2,16
 	.byte	'Br',0,3,0,27
-	.byte	'JointNum',0,57,22,33
-	.word	145119
+	.byte	'JointNum',0,58,14,33
+	.word	145172
 	.byte	10
-	.byte	'_Servo',0,57,25,16,24,13
+	.byte	'_Servo',0,58,17,16,24,13
 	.byte	'pin',0
 	.word	130984
 	.byte	1,2,35,0,13
 	.byte	'num',0
-	.word	145119
+	.word	145172
 	.byte	1,2,35,1,13
 	.byte	'angleSet',0
 	.word	237
@@ -20157,23 +20165,23 @@ BarrierDir:	.type	object
 	.byte	'PWMSet',0
 	.word	457
 	.byte	4,2,35,20,0,27
-	.byte	'ServoType',0,57,37,3
-	.word	145162
+	.byte	'ServoType',0,58,29,3
+	.word	145215
 	.byte	33
-	.byte	'Stretch',0,58,27,42
+	.byte	'Stretch',0,59,27,42
 	.word	237
-	.byte	1,1,15,58,29,9,1,16
+	.byte	1,1,15,59,29,9,1,16
 	.byte	'Left',0,0,16
 	.byte	'Right',0,1,0,27
-	.byte	'LegNum',0,58,29,30
-	.word	145341
+	.byte	'LegNum',0,59,29,30
+	.word	145394
 	.byte	34
-	.byte	'_BldcMode',0,58,32,14,1,16
+	.byte	'_BldcMode',0,59,32,14,1,16
 	.byte	'CURRENT',0,0,16
 	.byte	'RPM',0,1,16
 	.byte	'POSITION',0,2,0,27
-	.byte	'BldcMode',0,58,36,3
-	.word	145377
+	.byte	'BldcMode',0,59,36,3
+	.word	145430
 	.byte	14
 	.word	237
 	.byte	14
@@ -20181,18 +20189,18 @@ BarrierDir:	.type	object
 	.byte	14
 	.word	32476
 	.byte	10
-	.byte	'_Value',0,58,39,16,12,13
+	.byte	'_Value',0,59,39,16,12,13
 	.byte	'speed',0
-	.word	145437
+	.word	145490
 	.byte	4,2,35,0,13
 	.byte	'angle',0
-	.word	145442
+	.word	145495
 	.byte	4,2,35,4,13
 	.byte	'current',0
-	.word	145447
+	.word	145500
 	.byte	2,2,35,8,0,27
-	.byte	'ValueType',0,58,43,3
-	.word	145452
+	.byte	'ValueType',0,59,43,3
+	.word	145505
 	.byte	14
 	.word	1015
 	.byte	14
@@ -20204,27 +20212,27 @@ BarrierDir:	.type	object
 	.byte	14
 	.word	457
 	.byte	10
-	.byte	'_PulseType',0,58,46,16,16,13
+	.byte	'_PulseType',0,59,46,16,16,13
 	.byte	'pulseRead',0
-	.word	145530
+	.word	145583
 	.byte	2,2,35,0,13
 	.byte	'pulseLast',0
-	.word	145535
+	.word	145588
 	.byte	2,2,35,2,13
 	.byte	'Distanse',0
-	.word	145540
+	.word	145593
 	.byte	2,2,35,4,13
 	.byte	'pulseTotal',0
-	.word	145545
+	.word	145598
 	.byte	4,2,35,6,13
 	.byte	'pulseLock',0
-	.word	145550
+	.word	145603
 	.byte	4,2,35,10,0,27
-	.byte	'PulseType',0,58,53,3
-	.word	145555
-	.byte	20,58,56,9,12,13
+	.byte	'PulseType',0,59,53,3
+	.word	145608
+	.byte	20,59,56,9,12,13
 	.byte	'direct',0
-	.word	145341
+	.word	145394
 	.byte	1,2,35,0,13
 	.byte	'sign',0
 	.word	33981
@@ -20235,21 +20243,21 @@ BarrierDir:	.type	object
 	.byte	'currentLimit',0
 	.word	237
 	.byte	4,2,35,6,0,27
-	.byte	'MotorParamType',0,58,62,3
-	.word	145685
+	.byte	'MotorParamType',0,59,62,3
+	.word	145738
 	.byte	7
-	.byte	'_Bool',0,1,2,20,58,65,9,12,13
+	.byte	'_Bool',0,1,2,20,59,65,9,12,13
 	.byte	'isStuck',0
-	.word	145790
+	.word	145843
 	.byte	1,2,35,0,13
 	.byte	'currentLimitFlag',0
-	.word	145790
+	.word	145843
 	.byte	1,2,35,1,13
 	.byte	'rpmLimitFlag',0
-	.word	145790
+	.word	145843
 	.byte	1,2,35,2,13
 	.byte	'posLimitFlag',0
-	.word	145790
+	.word	145843
 	.byte	1,2,35,3,13
 	.byte	'maxCurrent',0
 	.word	237
@@ -20257,64 +20265,64 @@ BarrierDir:	.type	object
 	.byte	'maxRPM',0
 	.word	237
 	.byte	4,2,35,8,0,27
-	.byte	'MotorLimit',0,58,75,3
-	.word	145799
+	.byte	'MotorLimit',0,59,75,3
+	.word	145852
 	.byte	10
-	.byte	'_Bldc',0,58,78,16,240,1,13
+	.byte	'_Bldc',0,59,78,16,240,1,13
 	.byte	'enable',0
-	.word	145790
+	.word	145843
 	.byte	1,2,35,0,13
 	.byte	'begin',0
-	.word	145790
+	.word	145843
 	.byte	1,2,35,1,13
 	.byte	'setZero',0
-	.word	145790
+	.word	145843
 	.byte	1,2,35,2,13
 	.byte	'mode',0
-	.word	145377
+	.word	145430
 	.byte	1,2,35,3,13
 	.byte	'valueLast',0
-	.word	145452
+	.word	145505
 	.byte	12,2,35,4,13
 	.byte	'valueNow',0
-	.word	145452
+	.word	145505
 	.byte	12,2,35,16,13
 	.byte	'valueSet',0
-	.word	145452
+	.word	145505
 	.byte	12,2,35,28,13
 	.byte	'reachTime',0
 	.word	237
 	.byte	4,2,35,40,13
 	.byte	'pulse',0
-	.word	145555
+	.word	145608
 	.byte	16,2,35,44,13
 	.byte	'param',0
-	.word	145685
+	.word	145738
 	.byte	12,2,35,60,13
 	.byte	'limit',0
-	.word	145799
+	.word	145852
 	.byte	12,2,35,72,13
 	.byte	'posPID',0
-	.word	144756
+	.word	144809
 	.byte	52,2,35,84,13
 	.byte	'rpmPID',0
-	.word	144756
+	.word	144809
 	.byte	52,3,35,136,1,13
 	.byte	'currentPID',0
-	.word	144756
+	.word	144809
 	.byte	52,3,35,188,1,0,27
-	.byte	'BldcType',0,58,91,3
-	.word	145947
+	.byte	'BldcType',0,59,91,3
+	.word	146000
 	.byte	10
-	.byte	'_IMUParam',0,59,9,16,48,13
+	.byte	'_IMUParam',0,60,9,16,48,13
 	.byte	'accel',0
-	.word	144021
+	.word	144074
 	.byte	12,2,35,0,13
 	.byte	'angle',0
-	.word	144021
+	.word	144074
 	.byte	12,2,35,12,13
 	.byte	'mag',0
-	.word	144021
+	.word	144074
 	.byte	12,2,35,24,13
 	.byte	'pitch',0
 	.word	237
@@ -20325,29 +20333,29 @@ BarrierDir:	.type	object
 	.byte	'yaw',0
 	.word	237
 	.byte	4,2,35,44,0,27
-	.byte	'IMUParam',0,59,18,3
-	.word	146212
+	.byte	'IMUParam',0,60,18,3
+	.word	146265
 	.byte	10
-	.byte	'_Imu',0,59,20,16,152,1,13
+	.byte	'_Imu',0,60,20,16,152,1,13
 	.byte	'dataOri',0
-	.word	146212
+	.word	146265
 	.byte	48,2,35,0,13
 	.byte	'dataRaw',0
-	.word	146212
+	.word	146265
 	.byte	48,2,35,48,13
 	.byte	'dataSet',0
-	.word	146212
+	.word	146265
 	.byte	48,2,35,96,13
 	.byte	'G',0
 	.word	237
 	.byte	4,3,35,144,1,13
 	.byte	'calibration_flag',0
-	.word	145790
+	.word	145843
 	.byte	1,3,35,148,1,0,27
-	.byte	'IMUType',0,59,28,3
-	.word	146330
+	.byte	'IMUType',0,60,28,3
+	.word	146383
 	.byte	10
-	.byte	'_Attitude_',0,59,41,16,12,13
+	.byte	'_Attitude_',0,60,41,16,12,13
 	.byte	'x',0
 	.word	237
 	.byte	4,2,35,0,13
@@ -20357,27 +20365,27 @@ BarrierDir:	.type	object
 	.byte	'z',0
 	.word	237
 	.byte	4,2,35,8,0,27
-	.byte	'_Attitude',0,59,45,3
-	.word	146448
+	.byte	'_Attitude',0,60,45,3
+	.word	146501
 	.byte	3
-	.word	145162
+	.word	145215
 	.byte	3
-	.word	145947
+	.word	146000
 	.byte	3
 	.word	323
 	.byte	10
-	.byte	'_leg',0,60,18,16,216,1,13
+	.byte	'_leg',0,61,18,16,216,1,13
 	.byte	'num',0
-	.word	145341
+	.word	145394
 	.byte	1,2,35,0,13
 	.byte	'front',0
-	.word	146516
+	.word	146569
 	.byte	4,2,35,4,13
 	.byte	'behind',0
-	.word	146516
+	.word	146569
 	.byte	4,2,35,8,13
 	.byte	'wheel',0
-	.word	146521
+	.word	146574
 	.byte	4,2,35,12,13
 	.byte	'angle1Set',0
 	.word	237
@@ -20386,68 +20394,60 @@ BarrierDir:	.type	object
 	.word	237
 	.byte	4,2,35,20,13
 	.byte	'PosNow',0
-	.word	144091
+	.word	144144
 	.byte	8,2,35,24,13
 	.byte	'PosSet',0
-	.word	144091
+	.word	144144
 	.byte	8,2,35,32,13
 	.byte	'PosStart',0
-	.word	144091
+	.word	144144
 	.byte	8,2,35,40,13
 	.byte	'PosTarget',0
-	.word	144091
+	.word	144144
 	.byte	8,2,35,48,13
 	.byte	'reachTime',0
 	.word	237
 	.byte	4,2,35,56,13
 	.byte	'RunTime',0
-	.word	146526
+	.word	146579
 	.byte	4,2,35,60,13
 	.byte	'motion',0
-	.word	144547
+	.word	144600
 	.byte	152,1,2,35,64,0,27
-	.byte	'LegType',0,60,38,3
-	.word	146531
+	.byte	'LegType',0,61,38,3
+	.word	146584
 	.byte	34
-	.byte	'StateEnum',0,61,8,6,1,16
+	.byte	'StateEnum',0,62,8,6,1,16
 	.byte	'StatePreparing',0,0,16
 	.byte	'StateProcessing',0,1,16
 	.byte	'StateEnd',0,2,0,10
-	.byte	'_Pipeline',0,61,15,16,2,13
+	.byte	'_Pipeline',0,62,15,16,2,13
 	.byte	'isRun',0
-	.word	145790
+	.word	145843
 	.byte	1,2,35,0,13
 	.byte	'state',0
-	.word	146778
+	.word	146831
 	.byte	1,2,35,1,0,27
-	.byte	'PipelineType',0,61,18,3
-	.word	146840
+	.byte	'PipelineType',0,62,18,3
+	.word	146893
 	.byte	18,40
-	.word	144091
+	.word	144144
 	.byte	19,4,0,18,20
 	.word	237
 	.byte	19,4,0,10
-	.byte	'_JumpLineType',0,61,20,16,64,13
+	.byte	'_JumpLineType',0,62,20,16,64,13
 	.byte	'Pos',0
-	.word	146907
+	.word	146960
 	.byte	40,2,35,0,13
 	.byte	'reachTime',0
-	.word	146916
+	.word	146969
 	.byte	20,2,35,40,13
 	.byte	'Lerp',0
-	.word	145790
+	.word	145843
 	.byte	1,2,35,60,0,27
-	.byte	'JumpLineType',0,61,24,3
-	.word	146925
-	.byte	18,144,3
-	.word	237
-	.byte	19,99,0,33
-	.byte	'Left_Slope',0,62,6,15
-	.word	147012
-	.byte	1,1,33
-	.byte	'Right_Slope',0,62,6,31
-	.word	147012
-	.byte	1,1,0
+	.byte	'JumpLineType',0,62,24,3
+	.word	146978
+	.byte	0
 	.sdecl	'.debug_abbrev',debug
 	.sect	'.debug_abbrev'
 .L27:
@@ -20557,6 +20557,7 @@ BarrierDir:	.type	object
 	.byte	'FindControlRow.h',0,2,0,0
 	.byte	'FindEndrow.h',0,2,0,0
 	.byte	'FindMidline.h',0,2,0,0
+	.byte	'GetSlope.h',0,2,0,0
 	.byte	'vector.h',0,2,0,0
 	.byte	'MasterCtrl.h',0,2,0,0
 	.byte	'Pid.h',0,2,0,0
@@ -20564,8 +20565,7 @@ BarrierDir:	.type	object
 	.byte	'bldc.h',0,2,0,0
 	.byte	'imu.h',0,2,0,0
 	.byte	'leg.h',0,2,0,0
-	.byte	'robot.h',0,2,0,0
-	.byte	'GetSlope.h',0,2,0,0,0
+	.byte	'robot.h',0,2,0,0,0
 .L70:
 .L68:
 	.sdecl	'.debug_info',debug,cluster('JudgeRoadBarrier')
