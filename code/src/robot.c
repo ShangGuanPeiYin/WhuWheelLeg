@@ -4,8 +4,9 @@ RobotType robot;
 
 /**
  * @brief robot初始化
- *
- * @param robot
+ *1
+203.
+.00 0* @param robot
  */
 void robotInit(RobotType* robot)
 {
@@ -22,12 +23,19 @@ void robotInit(RobotType* robot)
 
 	robot->param.leftTime  = 0;
 	robot->param.rightTime = 0;
-	robot->param.PosZero   = ForwardKinematics(PI, 0);
+	robot->param.PosZero.x = 0;
+	robot->param.PosZero.y = 24.2739;	 // 39
 	robot->left->PosSet	   = robot->param.PosZero;
 	robot->right->PosSet   = robot->param.PosZero;
 
 	LegInit();
 	BalanceInit();
+
+	AngleCalculate(robot->left, robot->param.PosZero);	   // 更新舵机角
+	AngleCalculate(robot->right, robot->param.PosZero);	   // TODO：直接改PosSet
+
+	legLeft.PosSet	= robot->param.PosZero;
+	legRight.PosSet = robot->param.PosZero;
 
 	// LegReset();	   // 运动到初始零点
 };
@@ -108,18 +116,17 @@ bool RobotDrawLine(Vector2f PosTarget, float reachTime)
  * @return true
  * @return false
  */
-bool RobotJumpLine(void)
+extern u8 JumpLineState;
+bool	  RobotJumpLine(void)
 {
-	static u8 JumpLineState = 0;
-
 	switch (JumpLineState) {
 		case 0:;
-			robot.pipeline.state  = StatePreparing;
-			robot.jumpLine.Lerp	  = false;	  // 下一阶段是否线性插值
-
-			robot.jumpLine.Pos[0] = ForwardKinematics(PI, 0.f);
-			robot.jumpLine.Pos[1] = ForwardKinematics(PI * 1 / 2.f, PI * 1 / 2.f);
-			robot.jumpLine.Pos[2] = ForwardKinematics(PI * (5 / 4.f), PI * (-1 / 4.f));
+			robot.pipeline.state	= StatePreparing;
+			robot.jumpLine.Lerp		= false;	// 下一阶段是否线性插值
+			robot.jumpLine.Pos[0].x = 0;
+			robot.jumpLine.Pos[0].y = 25.2739;
+			robot.jumpLine.Pos[1]	= ForwardKinematics(PI * 1 / 2.f, PI * 1 / 2.f);
+			robot.jumpLine.Pos[2]	= robot.jumpLine.Pos[0];
 			// robot.jumpLine.Pos[3] = 0;
 			// robot.jumpLine.Pos[4] = 0;
 			JumpLineState++;
@@ -127,7 +134,7 @@ bool RobotJumpLine(void)
 
 		case 1:
 
-			if (RobotDrawLine(robot.jumpLine.Pos[0], 500)) {
+			if (RobotDrawLine(robot.jumpLine.Pos[0], 1000)) {
 				robot.jumpLine.Lerp = 0;
 				JumpLineState++;
 				robot.pipeline.state = StatePreparing;
@@ -135,7 +142,7 @@ bool RobotJumpLine(void)
 			break;
 		case 2:
 
-			if (RobotDrawLine(robot.jumpLine.Pos[1], 800)) {
+			if (RobotDrawLine(robot.jumpLine.Pos[1], 200)) {
 				robot.jumpLine.Lerp = 0;
 				JumpLineState++;
 				robot.pipeline.state = StatePreparing;
@@ -143,7 +150,7 @@ bool RobotJumpLine(void)
 			break;
 		case 3:
 
-			if (RobotDrawLine(robot.jumpLine.Pos[2], 800)) {
+			if (RobotDrawLine(robot.jumpLine.Pos[2], 200)) {
 				JumpLineState++;
 				robot.pipeline.state = StatePreparing;
 			}
@@ -203,31 +210,24 @@ float tiaocan[9];
  *
  */
 static PIDType speed_balance_zsc;
-
-void BalanceInit(void)	  // PID
+extern float   DebugTemp;
+void		   BalanceInit(void)	// PID
 {
-	// TODO：
-	float Kp_1 = 0.016f;
+	float Kp_1 = 1.f;
 	float Ki_1 = 0.f;
-	float Kd_1 = 0.015f;	// 0.006f;
+	float Kd_1 = 0.f;
 
-	//    float Kp_1 = 0.f            ;
-	//    float Ki_1 = 0.00016f;
-	//    float Kd_1 = 0.f;//0.006f;
+	float Kp_2 = 10.f;
+	float Ki_2 = 2.f;
+	float Kd_2 = 0.1f;
 
-	//	float Kp_2 = 30.f;	  // 62.f;
-	//	float Kd_2 = 36.f;	  // 20.5f;
+	float Kp_3 = 10.f;
+	float Ki_3 = 0.3f;
+	float Kd_3 = 0.1;
 
-	float Kp_2 = 25.f;	   // 62.f;
-	float Kd_2 = -28.f;	   // 20.5f;
-
-	float Kp_3 = 9.6;	 // 15;//18
-	float Ki_3 = 0.f;
-	float Kd_3 = 12.3;	  //.6;
-
-	PIDTypeInit(&robot.pitchSpeedPID, Kp_1, Ki_1, Kd_1, PIDPOS, 0);	   // 俯仰PID类型
-	PIDTypeInit(&robot.pitchAnglePID, Kp_2, 0.f, Kd_2, PIDPOS, 0);	   // PD控制
-	PIDTypeInit(&robot.pitchVecPID, Kp_3, Ki_3, Kd_3, PIDPOS, 0);	   // PD控制
+	PIDTypeInit(&robot.pitchSpeedPID, Kp_1 / 10, Ki_1, Kd_1, PIDPOS, 0);	// 俯仰PID类型
+	PIDTypeInit(&robot.pitchAnglePID, Kp_2, Ki_2, Kd_2, PIDINC, 0);			// PD控制
+	PIDTypeInit(&robot.pitchVecPID, Kp_3, Ki_3, Kd_3, PIDINC, 0);			// PD控制
 
 	PIDTypeInit(&robot.yawPID, 180.f, 0.f, 100.f, PIDPOS, 0);
 	PIDTypeInit(&robot.rollPID, 0.f, 0.f, 0.f, PIDINC, 0);
@@ -307,20 +307,36 @@ void BalanceSpeed(void)
  */
 void BalancePitch(void)
 {
-	robot.speedSet				   = 0;
+	static u32 BalanceCnt = 0;
+	robot.speedSet		  = 0;
 
-	// robot->posture=&IMUdata;
-	robot.speedNow				   = -(Motor[0].valueNow.speed + Motor[1].valueNow.speed) / 2;
+	if (BalanceCnt++ > 5 * 1000)	// 5s
+		robot.speedSet = 0;
 
-	// 20ms 正反馈
-	robot.posture->dataSet.pitch   = PIDOperation(&robot.pitchSpeedPID, robot.speedNow, robot.speedSet);
+	// 20ms 最小为5ms，舵机200Hz
+	robot.speedNow = (Motor[0].valueNow.speed + Motor[1].valueNow.speed) / 2;
+	if (BalanceCnt % 20 == 0)
+		robot.posture->dataSet.pitch = -PIDOperation(&robot.pitchSpeedPID, robot.speedNow, 0);
 
-	// 5ms 与角度的计算，一阶互补滤波相匹配
-	robot.posture->dataSet.angle.x = PIDOperation(&robot.pitchAnglePID, -IMUdata.dataOri.pitch, robot.posture->dataSet.pitch);
+	PEAK(robot.posture->dataSet.pitch, 20.f);
 
-	// 1kHz
-	robot.right_Torque			   = PIDOperation(&robot.pitchVecPID, -IMUdata.dataOri.angle.x, robot.posture->dataSet.angle.x);
-	robot.left_Torque			   = robot.right_Torque;
+	// 5ms 与角度的计算，一阶互补滤波相匹配。姿态结算为1khz
+	if (BalanceCnt % 5 == 0)
+		robot.posture->dataSet.angle.x = PIDOperation(&robot.pitchAnglePID, IMUdata.dataOri.pitch, 0);
+
+	robot.right_Torque += PIDOperation(&robot.pitchVecPID, IMUdata.dataOri.angle.x, robot.posture->dataSet.angle.x);
+
+	robot.left_Torque	= robot.right_Torque;
+
+	// LegHelpBalance();
+}
+
+void LegHelpBalance()
+{
+	robot.right->PosSet.x = robot.left->PosSet.x = -robot.left->PosSet.y * tanf(DEG2RAD * robot.posture->dataSet.pitch);
+
+	AngleCalculate(robot.left, robot.left->PosSet);	   // 更新舵机角
+	AngleCalculate(robot.right, robot.right->PosSet);
 }
 
 float		 zsc_angle_error;
@@ -371,16 +387,16 @@ void		 Angle_Control(void)
  */
 void Balance(void)
 {
-	// BalancePitch();	   // 计算维持平衡的力矩
+	BalancePitch();	   // 计算维持平衡的力矩
 
-	Angle_Control();
+	// Angle_Control();
 	// BalanceSpeed();//计算速度需要的力矩
 
 	BalanceYaw();	 // 再计算转向需要的力矩
 
 	//	if (StopFlag == 1) {
-	//		robot.right_Torque = 0;
-	//		robot.left_Torque  = 0;
+	// robot.right_Torque = 500;
+	// robot.left_Torque  = 500;
 	//	}
 
 	BldcSetCurrent(robot.left_Torque, robot.right_Torque);

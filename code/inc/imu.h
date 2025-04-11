@@ -8,7 +8,7 @@
 
 typedef struct _IMUParam {
 	Vector3f accel;	   // 三个方向上的加速度 m/s2
-	Vector3f angle;	   // 三个方向上的角度（欧拉角)  此处减去了偏移量  ° (deg)/s
+	Vector3f angle;	   // 三个方向上的角速度（欧拉角)  此处减去了偏移量  ° (deg)/s
 	Vector3f mag;	   // 三个方向上的磁场  Gauss
 
 	float pitch;	//  °(deg)

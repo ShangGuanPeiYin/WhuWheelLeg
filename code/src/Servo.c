@@ -1,10 +1,10 @@
 #include "zf_common_headfile.h"
 
-ServoType Servo[4];
-
+ServoType	 Servo[4];
+extern float DebugTemp;
 /// @brief 舵机初始化
 /// @param
-void ServoInit(void)
+void		 ServoInit(void)
 {
 	for (size_t i = 0; i < 4; i++) { memset(&Servo[i], 0, sizeof(ServoType)); }
 
@@ -18,22 +18,22 @@ void ServoInit(void)
 	Servo[0].num		= Fl;
 	Servo[0].angleAdj	= -270;
 	Servo[0].sign		= -1;
-	Servo[0].deltaAngle = +7;	 // 需要手动测量出安装误差
+	Servo[0].deltaAngle = -2;	 // 需要手动测量出安装误差
 
 	Servo[1].num		= Fr;
 	Servo[1].angleAdj	= -90;
 	Servo[1].sign		= +1;
-	Servo[1].deltaAngle = -1;
+	Servo[1].deltaAngle = -13;
 
 	Servo[2].num		= Bl;
 	Servo[2].angleAdj	= -90;
 	Servo[2].sign		= -1;
-	Servo[2].deltaAngle = -2;
+	Servo[2].deltaAngle = 7;
 
 	Servo[3].num		= Br;
 	Servo[3].angleAdj	= +90;
 	Servo[3].sign		= +1;
-	Servo[3].deltaAngle = -13;
+	Servo[3].deltaAngle = -1;
 
 	Servo[Fl].angleLeg	= 180.f;
 	Servo[Fr].angleLeg	= 180.f;
@@ -43,7 +43,7 @@ void ServoInit(void)
 	// 引脚初始化 PWM频率200Hz
 	for (size_t i = 0; i < 4; i++) {
 		Servo[i].angleSet = 90.f;
-		pwm_init(Servo[i].pin, 200, 4 * 750);
+		pwm_init(Servo[i].pin, 200, 4 * 750);	 // 5ms一次
 	}
 	ServoFunc();
 }

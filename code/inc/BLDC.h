@@ -24,7 +24,7 @@
 #define PULSEPERROUND	(32767)				 // 编码器采样最大值  32767
 #define PULSETIME		(0.01)				 // 两次读取脉冲数之间的时间，10ms
 
-extern double Stretch_Left,Stretch_Right,Stretch;
+extern double Stretch_Left, Stretch_Right, Stretch;
 
 typedef enum { Left, Right } LegNum;
 

@@ -28,6 +28,8 @@ seekfree_assistant.o :	"D:\Software 1\ADS\ADS\AURIX-Studio-1.10.6\tools\Compiler
 "D:\Software 1\ADS\ADS\AURIX-Studio-1.10.6\tools\Compilers\Tasking_1.1r8\ctc\include\typeinfo.h" :
 seekfree_assistant.o :	"D:\Software 1\ADS\ADS\AURIX-Studio-1.10.6\tools\Compilers\Tasking_1.1r8\ctc\include\stdarg.h"
 "D:\Software 1\ADS\ADS\AURIX-Studio-1.10.6\tools\Compilers\Tasking_1.1r8\ctc\include\stdarg.h" :
+seekfree_assistant.o :	"D:\Software 1\ADS\ADS\AURIX-Studio-1.10.6\tools\Compilers\Tasking_1.1r8\ctc\include\stdbool.h"
+"D:\Software 1\ADS\ADS\AURIX-Studio-1.10.6\tools\Compilers\Tasking_1.1r8\ctc\include\stdbool.h" :
 seekfree_assistant.o :	"D:\Software 1\ADS\ADS\AURIX-Studio-1.10.6\tools\Compilers\Tasking_1.1r8\ctc\include\stdint.h"
 "D:\Software 1\ADS\ADS\AURIX-Studio-1.10.6\tools\Compilers\Tasking_1.1r8\ctc\include\stdint.h" :
 seekfree_assistant.o :	"D:\Software 1\ADS\ADS\AURIX-Studio-1.10.6\tools\Compilers\Tasking_1.1r8\ctc\include\stdio.h"

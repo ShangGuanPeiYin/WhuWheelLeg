@@ -49,7 +49,6 @@ extern RobotType robot;
 extern float	 tiaocan[9];
 extern float	 YawCtrlOut;
 
-
 void robotInit(RobotType* robot);
 
 void robotRun(void);
@@ -69,5 +68,6 @@ void BalanceYaw(void);		// Æ«º½½Ç£¬×ªÏò»·
 void BalanceRoll(void);		// ºá¹ö½ÇÆ½ºâ TODO
 void BalancePitch(void);	// ¸©Ñö½ÇÆ½ºâ
 void Balance(void);
+void LegHelpBalance();
 
 #endif

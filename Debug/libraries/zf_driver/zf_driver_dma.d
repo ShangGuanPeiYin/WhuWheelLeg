@@ -126,6 +126,8 @@ zf_driver_dma.o :	"D:\Software 1\ADS\ADS\AURIX-Studio-1.10.6\tools\Compilers\Tas
 "D:\Software 1\ADS\ADS\AURIX-Studio-1.10.6\tools\Compilers\Tasking_1.1r8\ctc\include\typeinfo.h" :
 zf_driver_dma.o :	"D:\Software 1\ADS\ADS\AURIX-Studio-1.10.6\tools\Compilers\Tasking_1.1r8\ctc\include\stdarg.h"
 "D:\Software 1\ADS\ADS\AURIX-Studio-1.10.6\tools\Compilers\Tasking_1.1r8\ctc\include\stdarg.h" :
+zf_driver_dma.o :	"D:\Software 1\ADS\ADS\AURIX-Studio-1.10.6\tools\Compilers\Tasking_1.1r8\ctc\include\stdbool.h"
+"D:\Software 1\ADS\ADS\AURIX-Studio-1.10.6\tools\Compilers\Tasking_1.1r8\ctc\include\stdbool.h" :
 zf_driver_dma.o :	"D:\Software 1\ADS\ADS\AURIX-Studio-1.10.6\tools\Compilers\Tasking_1.1r8\ctc\include\stdint.h"
 "D:\Software 1\ADS\ADS\AURIX-Studio-1.10.6\tools\Compilers\Tasking_1.1r8\ctc\include\stdint.h" :
 zf_driver_dma.o :	"D:\Software 1\ADS\ADS\AURIX-Studio-1.10.6\tools\Compilers\Tasking_1.1r8\ctc\include\stdio.h"

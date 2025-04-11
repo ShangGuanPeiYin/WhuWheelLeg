@@ -15,23 +15,18 @@ void OLedDebug(void)
 
 	if (keyflag1 == 1)	  // ◊Û
 	{
-		DebugTemp -= 10.f;
+		DebugTemp -= 1.f;
 	} else if (keyflag2 == 1)	 // ”“
 	{
-		DebugTemp += 10.f;
+		DebugTemp += 1.f;
 	}
-	Limit(DebugTemp, 0, 180);
-
-	Servo[Fl].angleSet = DebugTemp;
-	Servo[Fr].angleSet = DebugTemp;
-	Servo[Bl].angleSet = DebugTemp;
-	Servo[Br].angleSet = DebugTemp;
+	Limit(DebugTemp, -200, 888);
 
 	oled_show_float(50, 5, DebugTemp, 4, 2);
 
 #endif
 
-#if 0	 // ŒÂ¡¨∏À≤‚ ‘
+#if 0	 //  ≤‚ ‘
 
 	OLED_Key_Scan();
 

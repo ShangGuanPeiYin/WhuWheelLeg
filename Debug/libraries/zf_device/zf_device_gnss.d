@@ -26,6 +26,8 @@ zf_device_gnss.o :	"D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\libraries\
 "D:\\files\\Desktop\\Car\\ADS_Workspace\\WheelLeg\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\\Cpu\\Std\Ifx_TypesTasking.h" :
 zf_device_gnss.o :	"D:\Software 1\ADS\ADS\AURIX-Studio-1.10.6\tools\Compilers\Tasking_1.1r8\ctc\include\stdarg.h"
 "D:\Software 1\ADS\ADS\AURIX-Studio-1.10.6\tools\Compilers\Tasking_1.1r8\ctc\include\stdarg.h" :
+zf_device_gnss.o :	"D:\Software 1\ADS\ADS\AURIX-Studio-1.10.6\tools\Compilers\Tasking_1.1r8\ctc\include\stdbool.h"
+"D:\Software 1\ADS\ADS\AURIX-Studio-1.10.6\tools\Compilers\Tasking_1.1r8\ctc\include\stdbool.h" :
 zf_device_gnss.o :	"D:\Software 1\ADS\ADS\AURIX-Studio-1.10.6\tools\Compilers\Tasking_1.1r8\ctc\include\stdint.h"
 "D:\Software 1\ADS\ADS\AURIX-Studio-1.10.6\tools\Compilers\Tasking_1.1r8\ctc\include\stdint.h" :
 zf_device_gnss.o :	"D:\Software 1\ADS\ADS\AURIX-Studio-1.10.6\tools\Compilers\Tasking_1.1r8\ctc\include\stdio.h"

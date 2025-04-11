@@ -121,10 +121,6 @@ void AngleCalculate(LegType* leg, Vector2f pos)
 	leg->angle4Set	  = angleleg.y;
 
 	AngleLeg2Servo(leg);
-
-	// } else {
-	// 	RobotError();
-	// };
 };
 
 /**

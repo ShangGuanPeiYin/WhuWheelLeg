@@ -117,13 +117,23 @@ void Get_Attitude()
 	IMU.Gyro.z					 = last_ZPitchrate * Za + IMU.Gyro.z * (1 - Za);
 	last_ZPitchrate				 = IMU.Gyro.z;
 
-	IMUdata.dataOri.pitch		 = IMU.Angle.x - 1.5f;	  /// TODO:测量机械中值
+	float unfilterPitch			 = IMU.Angle.x + 0.7f;	  /// TODO:测量机械中值
 	IMUdata.dataOri.roll		 = IMU.Angle.y - 2.1f;	  // 随着Yaw的改变，会造成最多-1°的偏差
 	IMUdata.dataOri.yaw			 = -IMU.Angle.z;
 
-	IMUdata.dataOri.angle.x		 = IMU.Gyro.x;	  // TODO:测量细致化零漂
-	IMUdata.dataOri.angle.y		 = IMU.Gyro.y;
-	IMUdata.dataOri.angle.z		 = IMU.Gyro.z;
+	// 平均值滤波：
+	static float PitchFilter[5]	 = {0};	   // 4是最新的
+	for (size_t i = 0; i < 4; i++) PitchFilter[i] = PitchFilter[i + 1];
+	PitchFilter[4] = unfilterPitch;
+
+	// 计算平均值
+	float sum	   = 0;
+	for (size_t i = 0; i < 5; i++) sum += PitchFilter[i];
+	IMUdata.dataOri.pitch	= sum / 5.0;	// 计算平均值
+
+	IMUdata.dataOri.angle.x = IMU.Gyro.x;	 // TODO:测量细致化零漂
+	IMUdata.dataOri.angle.y = IMU.Gyro.y;
+	IMUdata.dataOri.angle.z = IMU.Gyro.z;
 }
 
 float acc_ratio	 = 1.6;		// 加速度计比例
@@ -134,9 +144,8 @@ float gyro_ratio = 4.08;	// 陀螺仪比例
  * 函数功能: 获取陀螺仪原始数据，并进行初步处理
  * 函数输入参数:   无
  * 函数输出参数:   无
- * 使用方法：在user_c/isr.c文件 TIM7_IRQHandler
- *函数中调用，在本处修改即可实现中断任务（注意，在定时器中断初始化时，已经设置了抢占优先级设置为3,次优先级设置为1） 第一次修改日期
- *：   2023年04月07日 （魏灵洁）
+ * 使用方法：在中断函数中调用，在本处修改即可实现中断任务（注意，在定时器中断初始化时，已经设置了抢占优先级设置为3,次优先级设置为1）
+ *第一次修改日期 ：   2023年04月07日 （魏灵洁）
  ******************************************************************************
  */
 float angle_calc(float angle_m, float gyro_m, int index)

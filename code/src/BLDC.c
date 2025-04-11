@@ -121,7 +121,7 @@ void BldcSentCurrent(void)	  //
 	PEAK(Motor[0].valueSet.current, (int16) OUTPUT_DUTY_MAX);
 	PEAK(Motor[1].valueSet.current, (int16) OUTPUT_DUTY_MAX);
 
-	Bldc_SetDuty(Motor[0].valueSet.current * Motor[0].param.sign, Motor[1].valueSet.current * Motor[1].param.sign);
+	Bldc_SetDuty(-Motor[0].valueSet.current, -Motor[1].valueSet.current);
 	// Bldc_SetDuty_String(Motor[0].valueSet.current * Motor[0].param.sign, Motor[1].valueSet.current * Motor[1].param.sign);
 };
 
@@ -272,9 +272,9 @@ void Bldc_uart_init(void)
 
 	BldcData_init();	   // 结构体参数初始化
 	Bldc_SetDuty(0, 0);	   // 设置0占空比
-						   //	Bldc_SetDuty_String(0, 0);
 	Bldc_AskSpeed();	   // 获取实时速度数据
-						   //	Bldc_AskSpeed_String();
+
+	//	Bldc_AskSpeed_String();
 };
 
 /*********************************************** 通讯部分 ************************************************ */

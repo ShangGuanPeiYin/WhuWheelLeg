@@ -1,7 +1,7 @@
 #include "zf_common_headfile.h"
 
-int MidLine[ROW], Width[ROW], Error[ROW];
-int Original_MidLine[ROW], Original_Error[ROW];	   // 根据路况修改Error后，可能还需要原来的Error用于计算或判断
+int	  MidLine[ROW], Width[ROW], Error[ROW];
+int	  Original_MidLine[ROW], Original_Error[ROW];	 // 根据路况修改Error后，可能还需要原来的Error用于计算或判断
 float RealMidLine1[ROW - 1], RealMidLine2[ROW - 1], RealLeftLine1[ROW - 1], RealRightLine1[ROW - 1], RealLeftLine2[ROW - 1],
 	RealRightLine2[ROW - 1];
 float RealWidth1[ROW];	  // 每行赛道宽度

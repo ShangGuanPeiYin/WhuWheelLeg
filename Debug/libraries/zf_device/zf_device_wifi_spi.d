@@ -28,6 +28,8 @@ zf_device_wifi_spi.o :	"D:\Software 1\ADS\ADS\AURIX-Studio-1.10.6\tools\Compiler
 "D:\Software 1\ADS\ADS\AURIX-Studio-1.10.6\tools\Compilers\Tasking_1.1r8\ctc\include\math.h" :
 zf_device_wifi_spi.o :	"D:\Software 1\ADS\ADS\AURIX-Studio-1.10.6\tools\Compilers\Tasking_1.1r8\ctc\include\typeinfo.h"
 "D:\Software 1\ADS\ADS\AURIX-Studio-1.10.6\tools\Compilers\Tasking_1.1r8\ctc\include\typeinfo.h" :
+zf_device_wifi_spi.o :	"D:\Software 1\ADS\ADS\AURIX-Studio-1.10.6\tools\Compilers\Tasking_1.1r8\ctc\include\stdbool.h"
+"D:\Software 1\ADS\ADS\AURIX-Studio-1.10.6\tools\Compilers\Tasking_1.1r8\ctc\include\stdbool.h" :
 zf_device_wifi_spi.o :	"D:\Software 1\ADS\ADS\AURIX-Studio-1.10.6\tools\Compilers\Tasking_1.1r8\ctc\include\stdint.h"
 "D:\Software 1\ADS\ADS\AURIX-Studio-1.10.6\tools\Compilers\Tasking_1.1r8\ctc\include\stdint.h" :
 zf_device_wifi_spi.o :	"D:\Software 1\ADS\ADS\AURIX-Studio-1.10.6\tools\Compilers\Tasking_1.1r8\ctc\include\stdlib.h"
