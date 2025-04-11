@@ -218,12 +218,12 @@ void		   BalanceInit(void)	// PID
 	float Kd_1 = 0.f;
 
 	float Kp_2 = 10.f;
-	float Ki_2 = 2.f;
+	float Ki_2 = 1.9f;
 	float Kd_2 = 0.1f;
 
 	float Kp_3 = 10.f;
-	float Ki_3 = 0.3f;
-	float Kd_3 = 0.1;
+	float Ki_3 = 0.37f;
+	float Kd_3 = 0.12;
 
 	PIDTypeInit(&robot.pitchSpeedPID, Kp_1 / 10, Ki_1, Kd_1, PIDPOS, 0);	// ∏©—ˆPID¿‡–Õ
 	PIDTypeInit(&robot.pitchAnglePID, Kp_2, Ki_2, Kd_2, PIDINC, 0);			// PDøÿ÷∆
@@ -328,7 +328,7 @@ void BalancePitch(void)
 
 	robot.left_Torque	= robot.right_Torque;
 
-	// LegHelpBalance();
+	LegHelpBalance();
 }
 
 void LegHelpBalance()
